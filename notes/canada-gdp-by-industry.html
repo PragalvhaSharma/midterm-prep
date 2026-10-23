@@ -1,0 +1,732 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="prep-file" content="4505-Global-Macroeconomics-for-Managers/notes/canada-gdp-by-industry.html">
+<meta name="prep-session" content="active">
+<title>Canada&rsquo;s Industry Mix</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  color-scheme:light;
+  --paper:#FFFFFF; --surface:#FFFFFF; --surface-2:#F3F6F3; --surface-3:#E9EFEA;
+  --ink:#141F1C; --ink-2:#4C5A55; --ink-3:#7A8681;
+  --rule:#E0E6E1; --rule-strong:#A8B5AE;
+  --accent:#1B6B57; --accent-2:#2E9376; --accent-soft:#E2F0E9;
+  --credit:#A33A2C; --credit-soft:#FAE7E2;
+  --flag:#8A6A12; --flag-soft:#FAF2DC;
+  --shadow:0 1px 2px rgba(20,31,28,.05), 0 12px 28px -22px rgba(20,31,28,.5);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Public Sans","Helvetica Neue",Arial,sans-serif;font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Bitter,Georgia,serif;text-wrap:balance;margin:0;line-height:1.15}
+p{margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+.wrap{max-width:1400px;margin:0;padding-inline:34px}
+
+/* ---------- masthead ---------- */
+header{border-bottom:1px solid var(--rule)}
+.hd{max-width:1330px;padding-block:38px 28px;display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between;align-items:flex-end}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(30px,5.5vw,46px);font-weight:700;letter-spacing:-.025em;margin-top:10px}
+.gist{color:var(--ink-2);max-width:52ch;margin-top:10px}
+.hd .meta{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-2);border-left:2px solid var(--accent);padding-left:14px;line-height:2}
+.hd .meta b{color:var(--ink);font-weight:600}
+
+/* ---------- left contents rail ---------- */
+.cols{display:grid;grid-template-columns:236px minmax(0,1fr);gap:54px;align-items:start}
+nav.toc{position:sticky;top:22px;padding-block:34px 0;font-size:13.5px;max-height:calc(100vh - 44px);overflow-y:auto}
+nav.toc .toc-h{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-3);padding-bottom:9px;border-bottom:1px solid var(--rule);margin-bottom:8px}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px}
+nav.toc a{display:flex;gap:9px;align-items:baseline;padding:5px 10px;border-radius:6px;color:var(--ink-2);
+  text-decoration:none;border-left:2px solid transparent;line-height:1.35}
+nav.toc a .n{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3);min-width:15px}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{color:var(--accent);border-left-color:var(--accent);background:var(--accent-soft);font-weight:600}
+nav.toc a.on .n{color:var(--accent)}
+nav.toc a .io{font-size:10px;color:var(--accent);margin-left:auto;opacity:.75}
+nav.toc .grp{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-3);padding:16px 10px 5px}
+nav.toc .grp:first-child{padding-top:2px}
+
+main{display:flex;flex-direction:column;gap:26px;padding-block:34px 80px;min-width:0;max-width:1020px}
+
+/* ---------- plain-English opener ---------- */
+.oneline{display:flex;gap:14px;align-items:flex-start;background:var(--accent-soft);border-radius:10px;
+  padding:14px 18px;font-size:16px;color:var(--ink);max-width:76ch}
+.oneline .tag{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);white-space:nowrap;padding-top:5px}
+.oneline b{font-weight:600}
+
+/* ---------- group divider ---------- */
+.group{display:flex;align-items:center;gap:16px;margin-top:34px}
+.group:first-child{margin-top:0}
+.group h2{font-size:13px;font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent);border:none;padding:0;white-space:nowrap}
+.group .ln{flex:1;height:1px;background:var(--rule)}
+.group .ct{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+
+section{display:flex;flex-direction:column;gap:18px;scroll-margin-top:64px}
+section>h2{font-size:clamp(21px,3.2vw,27px);font-weight:600;letter-spacing:-.015em;display:flex;gap:12px;align-items:baseline}
+section>h2 .no{font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--accent);font-weight:500}
+h3{font-size:17px;font-weight:600;margin-top:8px}
+.lede{color:var(--ink-2);max-width:72ch;font-size:16px}
+.lede strong{color:var(--ink);font-weight:600}
+
+
+/* ---------- flow diagrams: CSS boxes, NOT SVG text ----------
+   Text wraps and boxes grow, so a long label can never overflow.
+   Use these for every box-and-arrow / one-to-many / spectrum diagram.
+   Reserve SVG for real charts only (bars, lines, curves).           */
+.flow{display:grid;gap:14px;align-items:center}
+.flow.f5{grid-template-columns:minmax(0,1.05fr) 22px minmax(0,.92fr) 58px minmax(0,1.2fr)}
+.flow.f3{grid-template-columns:minmax(0,.8fr) 22px minmax(0,1.25fr)}
+.fstack{display:flex;flex-direction:column;gap:10px;min-width:0}
+.fnode{border:1.5px solid var(--rule-strong);border-radius:11px;padding:11px 14px;background:var(--surface);
+  display:flex;flex-direction:column;gap:3px;min-width:0}
+.fnode b{font-size:14.5px;font-weight:600;line-height:1.3}
+.fnode span{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);line-height:1.55;overflow-wrap:anywhere}
+.fnode.acc{background:var(--accent-soft);border-color:var(--accent)}
+.fnode.acc b,.fnode.acc span{color:var(--accent)}
+.fnode.bad{background:var(--credit-soft);border-color:var(--credit)}
+.fnode.bad b,.fnode.bad span{color:var(--credit)}
+.fnode.flg{background:var(--flag-soft);border-color:var(--flag);text-align:center}
+.fnode.flg b,.fnode.flg span{color:var(--flag)}
+.fnode.mute{border-style:dashed;background:var(--surface-3)}
+.farr{color:var(--rule-strong);text-align:center;line-height:1;font-family:"IBM Plex Mono",monospace}
+.farr .ch{display:block;font-size:20px;line-height:1}
+.farr i{font-style:normal;display:block;font-size:9px;letter-spacing:.06em;color:var(--ink-3);margin-top:5px;text-transform:uppercase;white-space:nowrap}
+
+/* spectrum: ordered scale with a hard line somewhere in it */
+.spec{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px}
+.spec .sn{border:1.5px solid var(--rule-strong);border-radius:11px;padding:11px 13px;background:var(--surface);min-width:0}
+.spec .sn b{display:block;font-size:14.5px;font-weight:600;margin-bottom:3px}
+.spec .sn span{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);line-height:1.5;display:block}
+.spec .sn.ok{background:var(--accent-soft);border-color:var(--accent)}
+.spec .sn.ok b,.spec .sn.ok span{color:var(--accent)}
+.spec .sn.no{background:var(--credit-soft);border-color:var(--credit)}
+.spec .sn.no b,.spec .sn.no span{color:var(--credit)}
+.specline{grid-column:1/-1;display:flex;align-items:center;gap:12px;margin-top:2px}
+.specline .lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--credit);white-space:nowrap}
+.specline .rule{flex:1;height:0;border-top:2px dashed var(--credit)}
+
+/* horizontal labelled bars */
+.bars{display:flex;flex-direction:column;gap:11px}
+.bar{display:grid;grid-template-columns:132px minmax(0,1fr);gap:14px;align-items:center}
+.bar .bl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);text-align:right}
+.bar .bt{display:flex;align-items:center;gap:10px;min-width:0}
+.bar .bf{height:20px;border-radius:4px;flex:none}
+.bar .bc{font-size:13px;color:var(--ink-2);min-width:0;overflow-wrap:anywhere}
+.bar .bf.hi{background:var(--credit-soft);border:1.2px solid var(--credit)}
+.bar .bf.md{background:var(--flag-soft);border:1.2px solid var(--flag)}
+.bar .bf.lo{background:var(--accent-soft);border:1.2px solid var(--accent)}
+
+/* two-ended scales: where two things sit on one axis */
+.scales{display:flex;flex-direction:column;gap:13px}
+.scale{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;align-items:center}
+.scale .sl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);text-align:right}
+.scale .tr{position:relative;height:34px}
+.scale .tr .ln{position:absolute;top:22px;left:0;right:0;height:0;border-top:1.5px solid var(--rule-strong)}
+.scale .tr .e{position:absolute;top:0;font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3)}
+.scale .tr .e.l{left:0} .scale .tr .e.r{right:0}
+.scale .tr .dot{position:absolute;top:15px;width:15px;height:15px;border-radius:50%;transform:translateX(-50%)}
+.scale .tr .dot.s{background:var(--accent-soft);border:2px solid var(--accent)}
+.scale .tr .dot.b{background:var(--credit-soft);border:2px solid var(--credit)}
+.legend{display:flex;gap:20px;flex-wrap:wrap;align-items:center;margin-top:4px;font-family:"IBM Plex Mono",monospace;font-size:11px}
+.legend i{font-style:normal;display:inline-flex;align-items:center;gap:7px}
+.legend .dot{width:13px;height:13px;border-radius:50%;display:inline-block}
+.legend .dot.s{background:var(--accent-soft);border:2px solid var(--accent)}
+.legend .dot.b{background:var(--credit-soft);border:2px solid var(--credit)}
+
+/* ---------- diagram frame ---------- */
+figure{margin:0;display:flex;flex-direction:column;gap:10px;max-width:1020px}
+.dg{background:var(--surface-2);border:1px solid var(--rule);border-radius:14px;padding:24px}
+.dg.pad0{padding:18px}
+figcaption{color:var(--ink-3);font-size:13.5px;max-width:70ch}
+svg.d{width:100%;height:auto;display:block;overflow:visible}
+.d-box{fill:var(--surface);stroke:var(--rule-strong);stroke-width:1.5}
+.d-box.acc{fill:var(--accent-soft);stroke:var(--accent)}
+.d-box.bad{fill:var(--credit-soft);stroke:var(--credit)}
+.d-box.mute{fill:var(--surface-3);stroke:var(--rule-strong);stroke-dasharray:5 4}
+.d-t{font-family:"Public Sans",sans-serif;font-size:15px;font-weight:600;fill:var(--ink)}
+.d-t.t2{font-size:13.5px}
+.d-s{font-family:"IBM Plex Mono",monospace;font-size:11.5px;fill:var(--ink-3)}
+.d-lab{font-family:"IBM Plex Mono",monospace;font-size:11.5px;fill:var(--ink-2)}
+.d-link{fill:none;stroke:var(--rule-strong);stroke-width:1.6}
+.d-link.acc{stroke:var(--accent)}
+.d-link.bad{stroke:var(--credit)}
+
+/* ---------- interactive shell ---------- */
+.ia{max-width:1020px;background:var(--surface);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.ia-top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;
+  padding:12px 18px;border-bottom:1px solid var(--rule);background:var(--surface-2)}
+.ia-top .ttl{font-size:14px;font-weight:600}
+.ia-top .hint{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.ia-body{padding:20px 18px}
+
+.seg{display:inline-flex;border:1px solid var(--rule-strong);border-radius:8px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:13px;font-weight:500;cursor:pointer;border:0;background:transparent;
+  color:var(--ink-2);padding:6px 14px;border-right:1px solid var(--rule)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--accent);color:#fff;font-weight:600}
+.seg button:hover:not([aria-pressed="true"]){background:var(--accent-soft);color:var(--accent)}
+
+.slider{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.slider label{font-size:13.5px;color:var(--ink-2);min-width:130px}
+.slider input[type=range]{flex:1;min-width:180px;accent-color:var(--accent);height:22px}
+.slider .val{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:14px;
+  font-weight:600;min-width:96px;text-align:right;color:var(--ink)}
+
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:14px;margin-top:16px}
+.kpi{border-top:2px solid var(--rule-strong);padding-top:7px}
+.kpi.on{border-top-color:var(--accent)}
+.kpi.warn{border-top-color:var(--credit)}
+.kpi .k{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.kpi .v{font-family:Bitter,serif;font-size:21px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.25}
+.kpi.on .v{color:var(--accent)} .kpi.warn .v{color:var(--credit)}
+.kpi .s{font-size:12.5px;color:var(--ink-2)}
+
+/* ---------- example strip ---------- */
+.ex{max-width:1020px;border:1px solid var(--rule);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;
+  padding:14px 18px;background:var(--surface);font-size:15px;color:var(--ink-2);display:flex;flex-direction:column;gap:7px}
+.ex .lb{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.ex strong{color:var(--ink);font-weight:600}
+.calc-line{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink);
+  background:var(--surface-2);padding:7px 11px;border-radius:6px;align-self:flex-start;font-variant-numeric:tabular-nums}
+
+/* ---------- 2x2 classifier ---------- */
+.tray{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{font:inherit;font-size:13.5px;cursor:pointer;background:var(--surface);border:1.5px solid var(--rule-strong);
+  color:var(--ink);padding:7px 14px;border-radius:8px;transition:transform .12s ease,border-color .12s ease}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:600}
+.chip.done{opacity:.35;pointer-events:none;border-style:dashed}
+.grid22{display:grid;grid-template-columns:76px 1fr 1fr;gap:10px}
+.grid22 .hh{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-3);align-self:end;padding-bottom:4px;text-align:center}
+.grid22 .vh{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  display:flex;align-items:center;justify-content:center;text-align:center}
+.grid22 .vh.a{color:var(--accent)} .grid22 .vh.b{color:var(--credit)}
+.qd{min-height:104px;border:1.5px dashed var(--rule-strong);border-radius:12px;background:var(--surface-2);
+  padding:10px;cursor:pointer;display:flex;flex-direction:column;gap:6px;transition:background .15s,border-color .15s}
+.qd:hover{border-color:var(--accent);background:var(--accent-soft)}
+.qd.armed{border-color:var(--accent);border-style:solid}
+.qd.hit{animation:hit .4s ease} .qd.miss{animation:miss .4s ease}
+@keyframes hit{0%{background:var(--accent-soft)}100%{background:var(--surface-2)}}
+@keyframes miss{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.placed{background:var(--surface);border:1px solid var(--accent);border-left:3px solid var(--accent);
+  border-radius:6px;padding:7px 10px;font-size:13.5px}
+.placed b{display:block;font-weight:600}
+.placed span{font-size:12px;color:var(--ink-3)}
+.fb{font-size:13.5px;min-height:22px;color:var(--ink-2)}
+.fb.bad{color:var(--credit)} .fb.good{color:var(--accent)}
+
+/* ---------- vet bill ---------- */
+.bill{background:var(--surface);border:1px solid var(--rule-strong);border-radius:10px;overflow:hidden;font-size:14px;max-width:520px}
+.bill .top{padding:11px 16px;border-bottom:1px dashed var(--rule-strong);font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.bill .ln{display:grid;grid-template-columns:1fr 82px 76px;gap:10px;padding:9px 16px;align-items:center}
+.bill .ln+.ln{border-top:1px solid var(--rule)}
+.bill .amt{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;text-align:right}
+.bill .k{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.08em;padding:2px 0;border-radius:4px;
+  text-align:center;transition:background .25s,color .25s,border-color .25s}
+.bill .k.d{color:var(--accent);border:1px solid var(--accent);background:var(--accent-soft)}
+.bill .k.i{color:var(--credit);border:1px solid var(--credit);background:var(--credit-soft)}
+.bill .ttl{display:grid;grid-template-columns:1fr 82px 76px;gap:10px;padding:10px 16px;border-top:2px solid var(--rule-strong);
+  background:var(--surface-2);font-weight:600}
+
+/* ---------- question as asked ---------- */
+.qtext{max-width:1020px;border:1.5px dashed var(--rule-strong);border-radius:10px;padding:15px 19px;
+  background:var(--surface-2);display:flex;flex-direction:column;gap:9px}
+.qtext .lbl{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3)}
+.qtext .body{font-size:15.5px;color:var(--ink);line-height:1.55}
+.qtext ol{margin:4px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:5px;font-size:15px}
+.qtext ol li::marker{color:var(--accent);font-weight:600}
+.qtext .given{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink-2);
+  background:var(--surface);border:1px solid var(--rule);border-radius:7px;padding:10px 14px;
+  white-space:pre;overflow-x:auto;font-variant-numeric:tabular-nums;margin:0}
+
+/* ---------- worked process ---------- */
+.steps{max-width:1020px;display:flex;flex-direction:column}
+.step{display:grid;grid-template-columns:30px minmax(0,1fr);gap:16px;padding:18px 0;border-top:1px solid var(--rule)}
+.step:first-child{border-top:none;padding-top:6px}
+.step .num{width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);
+  border:1.5px solid var(--accent);display:flex;align-items:center;justify-content:center;
+  font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600}
+.step .sb{display:flex;flex-direction:column;gap:10px;min-width:0}
+.step h4{margin:0;font-size:15.5px;font-weight:600;font-family:"Public Sans",sans-serif;padding-top:4px}
+.step p{font-size:15px;color:var(--ink-2)}
+.step p strong{color:var(--ink);font-weight:600}
+pre.math{margin:0;font-family:"IBM Plex Mono",monospace;font-size:13.5px;line-height:1.9;
+  background:var(--surface-2);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;
+  padding:14px 18px;overflow-x:auto;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:pre}
+pre.math b{color:var(--accent);font-weight:600}
+pre.math i{color:var(--ink-3);font-style:normal}
+
+/* ---------- tables ---------- */
+.tw{overflow-x:auto;border:1px solid var(--rule);border-radius:12px;background:var(--surface);max-width:1020px}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+caption{text-align:left;padding:13px 17px 11px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);border-bottom:1px solid var(--rule)}
+th,td{padding:9px 16px;text-align:left;vertical-align:top}
+thead th{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ink-2);font-weight:500;border-bottom:1px solid var(--rule-strong);white-space:nowrap}
+tbody tr+tr td{border-top:1px solid var(--rule)}
+td.n,th.n{text-align:right;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.tot td{border-top:1px solid var(--rule-strong)!important;box-shadow:inset 0 -3px 0 -1px var(--rule-strong);
+  font-weight:600;background:var(--surface-2)}
+td.cr{color:var(--credit)}
+.sm{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3)}
+
+.pill{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  padding:3px 8px;border-radius:4px;border:1px solid var(--rule-strong);color:var(--ink-2);white-space:nowrap}
+.pill.v{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.pill.f{border-color:var(--credit);color:var(--credit);background:var(--credit-soft)}
+
+.note{max-width:1020px;border-left:3px solid var(--flag);background:var(--flag-soft);color:var(--ink);padding:12px 16px;border-radius:0 8px 8px 0;font-size:14.5px}
+.note.acc{border-left-color:var(--accent);background:var(--accent-soft)}
+.fx{font-family:"IBM Plex Mono",monospace;font-size:13.5px;color:var(--accent);background:var(--accent-soft);padding:4px 9px;border-radius:5px;display:inline-block}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;align-items:start;max-width:1020px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:1020px}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:9px}
+.card h4{margin:0;font-size:15px;font-weight:600}
+.card p{font-size:14px;color:var(--ink-2)}
+ul.t,ol.t{margin:0;padding-left:20px;color:var(--ink-2);font-size:14.5px;display:flex;flex-direction:column;gap:7px}
+ul.t strong,ol.t strong{color:var(--ink)}
+
+/* ---------- Q&A ---------- */
+.q{border:1px solid var(--rule);border-radius:12px;background:var(--surface);padding:18px 20px;display:flex;flex-direction:column;gap:13px}
+.q-meta{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+blockquote{margin:0;padding:13px 16px;background:var(--surface-2);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;font-size:15px}
+.wc{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+button.reveal{display:none;align-self:flex-start;font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+  background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent);padding:6px 14px;border-radius:6px}
+body.quiz .ans{display:none} body.quiz .ans.open{display:flex} body.quiz button.reveal{display:inline-block}
+body.quiz button.reveal.gone{display:none}
+.ans{display:flex;flex-direction:column;gap:12px}
+.toggle{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+  background:var(--surface);border:1px solid var(--rule-strong);color:var(--ink);padding:7px 14px;border-radius:8px;align-self:flex-start}
+.toggle .pip{width:8px;height:8px;border-radius:50%;background:var(--rule-strong)}
+body.quiz .toggle .pip{background:var(--accent)}
+
+/* ---------- car calc ---------- */
+.calc{display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);gap:24px;align-items:start}
+.irow{display:grid;grid-template-columns:1fr 78px 78px;gap:8px;align-items:center;padding:5px 0;border-top:1px solid var(--rule)}
+.irow:first-child{border-top:none}
+.irow label{font-size:13px;color:var(--ink-2)}
+.irow.hdr span{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);text-align:right}
+.irow.hdr span:first-child{text-align:left}
+.irow input{width:100%;font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-variant-numeric:tabular-nums;
+  text-align:right;padding:5px 8px;border:1px solid var(--rule);border-radius:5px;background:var(--surface-2);color:var(--ink)}
+.irow input:focus{border-color:var(--accent);background:var(--surface)}
+.irow.wide{grid-template-columns:1fr 164px}
+
+footer{border-top:1px solid var(--rule);padding-block:22px 48px;color:var(--ink-3);font-size:12px;font-family:"IBM Plex Mono",monospace}
+
+@media (max-width:960px){
+  .cols{grid-template-columns:1fr;gap:0}
+  nav.toc{position:static;max-height:none;overflow:visible;padding-block:16px 0;border-bottom:1px solid var(--rule)}
+  nav.toc ol{flex-direction:row;flex-wrap:wrap;gap:5px}
+  nav.toc a{border:1px solid var(--rule);border-radius:999px;padding:4px 11px;font-size:12.5px;border-left-width:1px}
+  nav.toc a.on{border-color:var(--accent)}
+  nav.toc a .io{display:none}
+  nav.toc .grp{width:100%;padding:10px 2px 2px}
+}
+@media (max-width:820px){
+  .flow.f5,.flow.f3{grid-template-columns:1fr}
+  .farr{margin:2px 0}
+  .farr .ch{transform:rotate(90deg)}
+  .spec{grid-template-columns:1fr}
+  .specline{flex-wrap:wrap;gap:7px}
+  .specline .lbl{white-space:normal}
+  .specline .rule{min-width:26px}
+  .bar,.scale{grid-template-columns:1fr;gap:5px}
+  .bar .bl,.scale .sl{text-align:left}
+}
+@media (max-width:700px){
+  .calc{grid-template-columns:1fr}
+  .grid22{grid-template-columns:1fr}
+  .grid22 .hh{display:none}
+  .grid22 .vh{writing-mode:horizontal-tb;justify-content:flex-start;padding-top:6px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ---------- page-specific ---------- */
+.src{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);max-width:74ch}
+.big{font-family:Bitter,serif;font-size:27px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1;color:var(--accent)}
+.vt{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;max-width:1020px}
+.vt .card{border-top:3px solid var(--accent);gap:5px}
+.vt .card.b{border-top-color:var(--credit)} .vt .card.b .big{color:var(--credit)}
+.vt .card.c{border-top-color:var(--flag)} .vt .card.c .big{color:var(--flag)}
+.vt .card .k{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.vt .card p{font-size:13px}
+.bar .bc{overflow-wrap:normal;word-break:normal}
+.deck{display:flex;flex-wrap:wrap;gap:8px}
+.deck .t{font-family:"IBM Plex Mono",monospace;font-size:11.5px;border:1px solid var(--rule-strong);border-radius:999px;padding:4px 12px;color:var(--ink-2)}
+.deck .t.a{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+td.gap-p{color:var(--accent);font-weight:600} td.gap-n{color:var(--credit);font-weight:600}
+</style>
+
+<header>
+  <div class="wrap hd">
+    <div>
+      <div class="eyebrow">4505 GMM &middot; Session 2 &middot; Reading the instructor&rsquo;s visualisation</div>
+      <h1>Canada&rsquo;s industry mix</h1>
+      <p class="gist">What the &ldquo;GDP by industry&rdquo; tool is actually showing you, every number in it, and the comparison it does not make &mdash; the same breakdown for the United States, which is where the interesting part is.</p>
+    </div>
+    <div class="meta">
+      Tool <b>GDP by industry</b><br>
+      Data <b>StatCan, May 2026</b><br>
+      Compared with <b>BEA, Q1 2026</b>
+    </div>
+  </div>
+</header>
+
+<div class="wrap cols">
+
+<nav class="toc" aria-label="Contents">
+  <div class="toc-h">On this page</div>
+  <ol id="toclist">
+    <li class="grp">Start here</li>
+    <li><a href="#big"><span class="n"></span><span>What the chart is</span></a></li>
+    <li class="grp">Reading it</li>
+    <li><a href="#read"><span class="n">1</span><span>The four words in the subtitle</span></a></li>
+    <li><a href="#nums"><span class="n">2</span><span>The Canadian numbers</span></a></li>
+    <li class="grp">The comparison</li>
+    <li><a href="#us"><span class="n">3</span><span>Canada vs the United States</span></a></li>
+    <li><a href="#mean"><span class="n">4</span><span>What the mix means</span></a></li>
+    <li class="grp">Reference</li>
+    <li><a href="#tools"><span class="n"></span><span>All four Canvas tools</span></a></li>
+    <li><a href="#traps"><span class="n"></span><span>Traps</span></a></li>
+    <li><a href="#log"><span class="n"></span><span>Q&amp;A log</span></a></li>
+  </ol>
+</nav>
+
+<main>
+
+<!-- ===== BIG PICTURE ===== -->
+<section id="big">
+  <h2>What that chart actually is</h2>
+  <p class="oneline"><span class="tag">In one line</span><span>It is the <b>production approach</b> to GDP, drawn as a donut. Every slice is one industry&rsquo;s <b>value added</b> &mdash; what it sold, minus what it bought from other firms &mdash; and the slices add to the whole economy because every dollar of output belongs to exactly one industry.</span></p>
+
+  <p class="lede">Primer 03 gives three ways to measure the same total: production, expenditure, and income. The expenditure one (<strong>C + I + G + NX</strong>) is what you see in most macro coverage. This tool is the <strong>production</strong> one &mdash; sum the value added at every stage, by industry. Same $2.36 trillion, different camera angle.</p>
+
+  <figure>
+    <div class="dg">
+      <div class="flow f3">
+        <div class="fstack">
+          <div class="fnode acc">
+            <b>One economy</b>
+            <span>$2,362,482 million at basic prices
+May 2026, annualised</span>
+          </div>
+        </div>
+        <div class="farr"><span class="ch">&rarr;</span><i>3 lenses</i></div>
+        <div class="fstack">
+          <div class="fnode">
+            <b>PRODUCTION &mdash; this tool</b>
+            <span>value added by each industry: real estate 13.2%, wholesale &amp; retail 10.7%, manufacturing 8.5%&hellip;</span>
+          </div>
+          <div class="fnode mute">
+            <b>EXPENDITURE &mdash; the other tool on Canvas</b>
+            <span>C + I + G + NX &mdash; who bought the output</span>
+          </div>
+          <div class="fnode mute">
+            <b>INCOME &mdash; not shown</b>
+            <span>wages, rent, interest, profit &mdash; who earned it</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <figcaption>The instructor&rsquo;s Canvas link is labelled &ldquo;GDP by industry <i>and component</i>&rdquo; &mdash; industry is this production view; component is the expenditure view in the companion tool. Statistics Canada measures all three independently and reconciles the difference into a small statistical discrepancy.</figcaption>
+  </figure>
+
+  <div class="note acc"><b>Why value added and not revenue.</b> If you summed every industry&rsquo;s sales you would count the same steel four times &mdash; once at the mill, again in the part, again in the car, again at the dealership. Value added strips out what each industry bought from the others, so the total is the economy rather than the sum of all invoices. It is the same &ldquo;don&rsquo;t double-count the flour&rdquo; rule from Primer 03, applied at national scale.</div>
+</section>
+
+<!-- ===== READING IT ===== -->
+<section id="read">
+  <h2><span class="no">1</span> The four words in the subtitle that change what you are looking at</h2>
+  <p class="lede">The tool&rsquo;s subtitle reads: &ldquo;<em>Share of gross domestic product <strong>at basic prices</strong>, by industry &mdash; <strong>chained (2017) dollars</strong>, <strong>seasonally adjusted</strong> at <strong>annual rates</strong>.</em>&rdquo; Every one of those is doing work, and three of them are places people misread the chart.</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>Term</th><th>What it means</th><th>What it changes</th></tr></thead>
+    <tbody>
+      <tr><td><b>At basic prices</b></td><td>Value added measured before taxes on products (GST, excise, duties) and after subsidies on products.</td><td>This is <b>not</b> the same $ figure as headline GDP at market prices, which is bigger. So do not compare $2.36T here against a &ldquo;Canada is a $3 trillion economy&rdquo; headline &mdash; different measure, not a revision.</td></tr>
+      <tr><td><b>Chained (2017) dollars</b></td><td>Real, not nominal &mdash; price changes stripped out, with each period valued at the previous period&rsquo;s prices and the growth rates linked together.</td><td>You are seeing <b>quantities</b>, not price effects. It also means the components <b>do not add exactly</b> to the total &mdash; which is why the tool&rsquo;s own footnote says shares are computed against the published all-industries total and sum to slightly less than 100%. That is the method, not an error.</td></tr>
+      <tr><td><b>Seasonally adjusted</b></td><td>The predictable calendar pattern &mdash; construction in February, retail in December &mdash; has been removed.</td><td>Lets you compare May to April without pretending winter is a recession.</td></tr>
+      <tr><td><b>At annual rates</b></td><td>One month&rsquo;s output multiplied up to a yearly pace.</td><td>$2.36T is <b>not</b> what Canada produced in May. It is what Canada would produce in a year at May&rsquo;s pace.</td></tr>
+      <tr><td><b>&ldquo;Other&rdquo;</b></td><td>The tool bundles other services (except public administration), arts/entertainment/recreation, and management of companies into one 2.75% slice.</td><td>Fine for a donut, but remember it when comparing against the U.S. table, which splits those three out.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="src">Source stated in the tool: Statistics Canada, Table 36-10-0434-01, <i>Gross domestic product (GDP) at basic prices, by industry, monthly</i>; figures as published in The Daily, July&nbsp;31,&nbsp;2026, reference month May&nbsp;2026.</p>
+
+  <div class="note"><b>The chained-dollar footnote is worth understanding, not skipping.</b> Under chain weighting each period is valued at the immediately preceding period&rsquo;s prices, so the weights stay current as the economy changes &mdash; but the arithmetic consequence is that real components stop being additive. If you add the seventeen industry figures you will not land exactly on 2,362,482. Every national statistical agency has this problem and every one of them handles it the same way. It is the price of keeping the weights honest.</div>
+</section>
+
+<!-- ===== THE NUMBERS ===== -->
+<section id="nums">
+  <h2><span class="no">2</span> The Canadian numbers, in full</h2>
+  <p class="lede">Seventeen industries, ranked. The useful way to read this is in three blocks: what is <strong>bigger than you expect</strong> at the top, the <strong>middle band</strong> where seven industries sit within two points of each other, and the tail.</p>
+
+  <figure>
+    <div class="dg">
+      <div class="bars">
+        <div class="bar"><span class="bl">Real estate</span><span class="bt"><span class="bf lo" style="width:62.0%"></span><span class="bc">13.20% &middot; $311,960M</span></span></div>
+        <div class="bar"><span class="bl">Wholesale &amp; retail</span><span class="bt"><span class="bf lo" style="width:50.3%"></span><span class="bc">10.71% &middot; $253,137M</span></span></div>
+        <div class="bar"><span class="bl">Manufacturing</span><span class="bt"><span class="bf md" style="width:39.7%"></span><span class="bc">8.45% &middot; $199,607M</span></span></div>
+        <div class="bar"><span class="bl">Health &amp; social</span><span class="bt"><span class="bf lo" style="width:38.3%"></span><span class="bc">8.16% &middot; $192,694M</span></span></div>
+        <div class="bar"><span class="bl">Finance &amp; insurance</span><span class="bt"><span class="bf lo" style="width:36.2%"></span><span class="bc">7.71% &middot; $182,117M</span></span></div>
+        <div class="bar"><span class="bl">Construction</span><span class="bt"><span class="bf hi" style="width:33.9%"></span><span class="bc">7.21% &middot; $170,284M</span></span></div>
+        <div class="bar"><span class="bl">Public administration</span><span class="bt"><span class="bf md" style="width:33.9%"></span><span class="bc">7.21% &middot; $170,274M</span></span></div>
+        <div class="bar"><span class="bl">Prof, sci &amp; technical</span><span class="bt"><span class="bf lo" style="width:33.3%"></span><span class="bc">7.10% &middot; $167,701M</span></span></div>
+        <div class="bar"><span class="bl">Mining, oil &amp; gas</span><span class="bt"><span class="bf hi" style="width:24.8%"></span><span class="bc">5.29% &middot; $125,028M</span></span></div>
+        <div class="bar"><span class="bl">Educational services</span><span class="bt"><span class="bf md" style="width:24.7%"></span><span class="bc">5.25% &middot; $123,956M</span></span></div>
+        <div class="bar"><span class="bl">Transport &amp; warehouse</span><span class="bt"><span class="bf lo" style="width:21.3%"></span><span class="bc">4.54% &middot; $107,345M</span></span></div>
+        <div class="bar"><span class="bl">Information &amp; culture</span><span class="bt"><span class="bf hi" style="width:16.6%"></span><span class="bc">3.53% &middot; $83,295M</span></span></div>
+        <div class="bar"><span class="bl">Other</span><span class="bt"><span class="bf lo" style="width:12.9%"></span><span class="bc">2.75% &middot; $64,853M</span></span></div>
+        <div class="bar"><span class="bl">Admin &amp; support</span><span class="bt"><span class="bf lo" style="width:12.2%"></span><span class="bc">2.59% &middot; $61,276M</span></span></div>
+        <div class="bar"><span class="bl">Accommodation &amp; food</span><span class="bt"><span class="bf lo" style="width:10.6%"></span><span class="bc">2.26% &middot; $53,494M</span></span></div>
+        <div class="bar"><span class="bl">Utilities</span><span class="bt"><span class="bf lo" style="width:9.7%"></span><span class="bc">2.06% &middot; $48,735M</span></span></div>
+        <div class="bar"><span class="bl">Agriculture &amp; forestry</span><span class="bt"><span class="bf lo" style="width:8.8%"></span><span class="bc">1.88% &middot; $44,461M</span></span></div>
+      </div>
+    </div>
+    <figcaption>All industries: <b>$2,362,482 million &middot; 100%</b>. Red bars mark the three industries where Canada differs most from the United States &mdash; two where it has much more, one where it has much less. That is &sect;3.</figcaption>
+  </figure>
+
+  <div class="vt">
+    <div class="card"><div class="k">Top slice</div><div class="big">13.2%</div><p><b>Real estate, rental &amp; leasing.</b> Mostly <i>imputed rent</i> &mdash; the rent homeowners notionally pay themselves, which Primer 03 flags as the single most important imputation in the accounts. It is not a measure of house sales.</p></div>
+    <div class="card b"><div class="k">The surprise</div><div class="big">7.2%</div><p><b>Construction is as big as the entire federal, provincial and municipal public administration.</b> Housing is not a sector of the Canadian economy; it is one of its load-bearing walls.</p></div>
+    <div class="card c"><div class="k">Services vs goods</div><div class="big">~70%</div><p>Add real estate, trade, health, finance, public admin, professional, education, transport, information, admin, accommodation and &ldquo;other&rdquo;: services dominate. Goods-producing industries &mdash; manufacturing, construction, mining, utilities, agriculture &mdash; are roughly a quarter.</p></div>
+    <div class="card b"><div class="k">The one to notice</div><div class="big">3.5%</div><p><b>Information &amp; cultural industries.</b> The entire tech, telecom, media and software sector is a third the size of real estate &mdash; and this is the number that matters most for the productivity argument.</p></div>
+  </div>
+</section>
+
+<div class="group"><h2>The comparison</h2><div class="ln"></div><span class="ct">same breakdown, two countries</span></div>
+
+<!-- ===== US COMPARISON ===== -->
+<section id="us">
+  <h2><span class="no">3</span> Canada vs the United States</h2>
+  <p class="oneline"><span class="tag">In one line</span><span>The two economies are far more alike than the &ldquo;Canada digs things up, America writes software&rdquo; story suggests &mdash; <b>finance, real estate and manufacturing are near-identical shares</b>. The real differences are exactly three, and each one explains something in the Session 2 debate.</span></p>
+
+  <figure>
+    <div class="dg">
+      <svg class="d" viewBox="0 0 820 348" role="img" aria-label="Diverging bar chart of each industry's share of GDP in Canada minus its share in the United States, in percentage points. Mining and construction are much larger in Canada; information and wholesale-retail are much larger in the United States.">
+        <line x1="180" y1="18" x2="180" y2="322" stroke="var(--rule)" stroke-dasharray="2 4"/>
+        <line x1="240" y1="18" x2="240" y2="322" stroke="var(--rule)" stroke-dasharray="2 4"/>
+        <line x1="300" y1="18" x2="300" y2="322" stroke="var(--rule)" stroke-dasharray="2 4"/>
+        <line x1="420" y1="18" x2="420" y2="322" stroke="var(--rule)" stroke-dasharray="2 4"/>
+        <line x1="480" y1="18" x2="480" y2="322" stroke="var(--rule)" stroke-dasharray="2 4"/>
+        <line x1="540" y1="18" x2="540" y2="322" stroke="var(--rule)" stroke-dasharray="2 4"/>
+        <line x1="360" y1="18" x2="360" y2="322" stroke="var(--rule-strong)" stroke-width="1.5"/>
+        <text class="d-s" x="340" y="12" text-anchor="end" fill="var(--credit)">&larr; bigger share in the U.S.</text>
+        <text class="d-s" x="380" y="12" fill="var(--accent)">bigger share in Canada &rarr;</text>
+
+        <text class="d-s" x="185" y="37" text-anchor="end">Mining, oil &amp; gas</text>
+        <rect x="360" y="26" width="233.4" height="14" rx="2" fill="var(--accent-soft)" stroke="var(--accent)"/>
+        <text class="d-s" x="600" y="37" fill="var(--accent)">+3.89</text>
+
+        <text class="d-s" x="185" y="58" text-anchor="end">Construction</text>
+        <rect x="360" y="47" width="174.6" height="14" rx="2" fill="var(--accent-soft)" stroke="var(--accent)"/>
+        <text class="d-s" x="542" y="58" fill="var(--accent)">+2.91</text>
+
+        <text class="d-s" x="185" y="79" text-anchor="end">Transport &amp; warehousing</text>
+        <rect x="360" y="68" width="74.4" height="14" rx="2" fill="var(--accent-soft)" stroke="var(--accent)"/>
+        <text class="d-s" x="442" y="79" fill="var(--accent)">+1.24</text>
+
+        <text class="d-s" x="185" y="100" text-anchor="end">Agriculture &amp; forestry</text>
+        <rect x="360" y="89" width="70.8" height="14" rx="2" fill="var(--accent-soft)" stroke="var(--accent)"/>
+        <text class="d-s" x="438" y="100" fill="var(--accent)">+1.18</text>
+
+        <text class="d-s" x="185" y="121" text-anchor="end">Utilities</text>
+        <rect x="360" y="110" width="33.6" height="14" rx="2" fill="var(--accent-soft)" stroke="var(--accent)"/>
+        <text class="d-s" x="401" y="121" fill="var(--accent)">+0.56</text>
+
+        <text class="d-s" x="185" y="142" text-anchor="end">Health &amp; social assistance</text>
+        <rect x="360" y="131" width="27.6" height="14" rx="2" fill="var(--accent-soft)" stroke="var(--accent)"/>
+        <text class="d-s" x="395" y="142" fill="var(--accent)">+0.46</text>
+
+        <text class="d-s" x="185" y="163" text-anchor="end">Finance &amp; insurance</text>
+        <rect x="342.6" y="152" width="17.4" height="14" rx="2" fill="var(--credit-soft)" stroke="var(--credit)"/>
+        <text class="d-s" x="335" y="163" text-anchor="end" fill="var(--credit)">&minus;0.29</text>
+
+        <text class="d-s" x="185" y="184" text-anchor="end">Real estate &amp; leasing</text>
+        <rect x="336" y="173" width="24" height="14" rx="2" fill="var(--credit-soft)" stroke="var(--credit)"/>
+        <text class="d-s" x="329" y="184" text-anchor="end" fill="var(--credit)">&minus;0.40</text>
+
+        <text class="d-s" x="185" y="205" text-anchor="end">Admin &amp; support</text>
+        <rect x="329.4" y="194" width="30.6" height="14" rx="2" fill="var(--credit-soft)" stroke="var(--credit)"/>
+        <text class="d-s" x="322" y="205" text-anchor="end" fill="var(--credit)">&minus;0.51</text>
+
+        <text class="d-s" x="185" y="226" text-anchor="end">Accommodation &amp; food</text>
+        <rect x="303.6" y="215" width="56.4" height="14" rx="2" fill="var(--credit-soft)" stroke="var(--credit)"/>
+        <text class="d-s" x="296" y="226" text-anchor="end" fill="var(--credit)">&minus;0.94</text>
+
+        <text class="d-s" x="185" y="247" text-anchor="end">Manufacturing</text>
+        <rect x="303" y="236" width="57" height="14" rx="2" fill="var(--credit-soft)" stroke="var(--credit)"/>
+        <text class="d-s" x="296" y="247" text-anchor="end" fill="var(--credit)">&minus;0.95</text>
+
+        <text class="d-s" x="185" y="268" text-anchor="end">Prof, sci &amp; technical</text>
+        <rect x="300" y="257" width="60" height="14" rx="2" fill="var(--credit-soft)" stroke="var(--credit)"/>
+        <text class="d-s" x="293" y="268" text-anchor="end" fill="var(--credit)">&minus;1.00</text>
+
+        <text class="d-s" x="185" y="289" text-anchor="end">Wholesale &amp; retail</text>
+        <rect x="246.6" y="278" width="113.4" height="14" rx="2" fill="var(--credit-soft)" stroke="var(--credit)"/>
+        <text class="d-s" x="239" y="289" text-anchor="end" fill="var(--credit)">&minus;1.89</text>
+
+        <text class="d-s" x="185" y="310" text-anchor="end">Information &amp; culture</text>
+        <rect x="235.8" y="299" width="124.2" height="14" rx="2" fill="var(--credit-soft)" stroke="var(--credit)"/>
+        <text class="d-s" x="229" y="310" text-anchor="end" fill="var(--credit)">&minus;2.07</text>
+
+        <text class="d-s" x="180" y="336" text-anchor="middle">&minus;3</text>
+        <text class="d-s" x="240" y="336" text-anchor="middle">&minus;2</text>
+        <text class="d-s" x="300" y="336" text-anchor="middle">&minus;1</text>
+        <text class="d-s" x="360" y="336" text-anchor="middle">0</text>
+        <text class="d-s" x="420" y="336" text-anchor="middle">+1</text>
+        <text class="d-s" x="480" y="336" text-anchor="middle">+2</text>
+        <text class="d-s" x="540" y="336" text-anchor="middle">+3</text>
+      </svg>
+    </div>
+    <figcaption>Percentage points of GDP: Canada&rsquo;s share minus the United States&rsquo;. Canada from Statistics Canada Table 36-10-0434-01, May 2026, at basic prices. United States from BEA value added by industry, Q1 2026, as a share of GDP. Public administration and education are left out of this chart on purpose &mdash; see the caveat below.</figcaption>
+  </figure>
+
+  <div class="tw"><table>
+    <caption>The full side by side</caption>
+    <thead><tr><th>Industry</th><th class="n">Canada</th><th class="n">U.S.</th><th class="n">Gap, pp</th><th>What it says</th></tr></thead>
+    <tbody>
+      <tr><td><b>Mining, quarrying, oil &amp; gas</b></td><td class="n">5.29%</td><td class="n">1.4%</td><td class="n gap-p">+3.89</td><td>Canada is <b>3.8&times;</b> more resource-intensive. The single biggest structural difference.</td></tr>
+      <tr><td><b>Construction</b></td><td class="n">7.21%</td><td class="n">4.3%</td><td class="n gap-p">+2.91</td><td>Canada is <b>1.7&times;</b> more construction-heavy. Housing is a far larger share of the economy.</td></tr>
+      <tr><td>Transportation &amp; warehousing</td><td class="n">4.54%</td><td class="n">3.3%</td><td class="n gap-p">+1.24</td><td>Moving resources a long way over a big country.</td></tr>
+      <tr><td>Agriculture, forestry &amp; fishing</td><td class="n">1.88%</td><td class="n">0.7%</td><td class="n gap-p">+1.18</td><td>2.7&times; &mdash; the same resource story.</td></tr>
+      <tr><td>Utilities</td><td class="n">2.06%</td><td class="n">1.5%</td><td class="n gap-p">+0.56</td><td>Hydro. Also why Canada pitches itself for data centres.</td></tr>
+      <tr><td>Health care &amp; social assistance</td><td class="n">8.16%</td><td class="n">7.7%</td><td class="n gap-p">+0.46</td><td>Similar sizes, very different funding models.</td></tr>
+      <tr><td>Finance &amp; insurance</td><td class="n">7.71%</td><td class="n">8.0%</td><td class="n gap-n">&minus;0.29</td><td><b>Essentially identical.</b> Canada is not an under-financialised economy.</td></tr>
+      <tr><td>Real estate, rental &amp; leasing</td><td class="n">13.20%</td><td class="n">13.6%</td><td class="n gap-n">&minus;0.40</td><td><b>Essentially identical</b> &mdash; and the largest single industry in both countries.</td></tr>
+      <tr><td>Administrative &amp; support</td><td class="n">2.59%</td><td class="n">3.1%</td><td class="n gap-n">&minus;0.51</td><td>Outsourced back-office work; slightly more of it in the U.S.</td></tr>
+      <tr><td>Accommodation &amp; food services</td><td class="n">2.26%</td><td class="n">3.2%</td><td class="n gap-n">&minus;0.94</td><td>A bigger consumer-services economy south of the border.</td></tr>
+      <tr><td><b>Manufacturing</b></td><td class="n">8.45%</td><td class="n">9.4%</td><td class="n gap-n">&minus;0.95</td><td><b>Close.</b> Canada makes roughly as much as the U.S. does, proportionally &mdash; it just sells it to one customer.</td></tr>
+      <tr><td>Professional, scientific &amp; technical</td><td class="n">7.10%</td><td class="n">8.1%</td><td class="n gap-n">&minus;1.00</td><td>Consulting, law, engineering, design. A real but modest gap.</td></tr>
+      <tr><td>Wholesale &amp; retail trade</td><td class="n">10.71%</td><td class="n">12.6%</td><td class="n gap-n">&minus;1.89</td><td>U.S. figure is wholesale 6.4 + retail 6.2. Scale and distribution efficiency.</td></tr>
+      <tr class="tot"><td><b>Information &amp; cultural industries</b></td><td class="n">3.53%</td><td class="n">5.6%</td><td class="n gap-n">&minus;2.07</td><td><b>The U.S. has 1.6&times; Canada&rsquo;s share.</b> Software, telecom, data, media &mdash; the sector that both builds AI and adopts it hardest.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="src">Canada: StatCan 36-10-0434-01, chained 2017 dollars, basic prices, May 2026. U.S.: BEA value added by industry as a percentage of GDP, Q1 2026. Gaps computed by me from the two published tables.</p>
+
+  <div class="note"><b>The caveat you must state if you use this in class.</b> The two series are not perfectly comparable, for two reasons. First, Canada&rsquo;s shares are of GDP <i>at basic prices</i>, the U.S. shares are of GDP at market prices &mdash; so the denominators differ slightly and every Canadian share is nudged marginally upward relative to its U.S. counterpart. Second, and more seriously, <b>the public sector is carved up differently</b>: Canada reports Public administration (7.21%) and Educational services (5.25%) separately, while the BEA reports a single Government sector (11.0%) that contains public schools and much public health delivery, leaving only private education in its 1.1% &ldquo;educational services&rdquo; line. Those rows are genuinely not comparable and I have left them out of the chart rather than pretend otherwise. The fourteen rows that remain are the same NAICS sectors on both sides.</div>
+</section>
+
+<!-- ===== WHAT IT MEANS ===== -->
+<section id="mean">
+  <h2><span class="no">4</span> What the mix means for the Session 2 debate</h2>
+  <p class="lede">Industry structure is not trivia. It determines how shocks travel, which is the whole question in <a href="session-02-headwinds-tailwinds.html">today&rsquo;s session</a>. Five things fall straight out of the comparison.</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>Finding</th><th>Why it matters today</th></tr></thead>
+    <tbody>
+      <tr><td><b>1 &middot; Mining, oil &amp; gas is 3.8&times; the U.S. share</b><br><span class="sm">5.29% vs 1.4%</span></td><td>This is why the Hormuz energy shock is <b>not</b> the same event in Ottawa as in Washington. For the U.S. it is a pure cost shock. For Canada it is a cost shock <i>and</i> a terms-of-trade gain &mdash; 5.3% of the economy is selling the thing that got expensive. It is also why the Canadian GDP deflator is far more oil-sensitive than Canadian CPI. <b>Use this to make the tailwind argument precise rather than hand-wavy.</b></td></tr>
+      <tr><td><b>2 &middot; Construction is 1.7&times; the U.S. share</b><br><span class="sm">7.21% vs 4.3% &mdash; and as large as all public administration</span></td><td>Monetary policy reaches the real economy through housing faster and harder in Canada than almost anywhere. A bigger construction sector plus mortgage interest sitting inside the CPI basket means rate moves transmit through a wider pipe. It is the mechanical reason the mortgage renewal wall is a national macro risk here and a sectoral story in the U.S.</td></tr>
+      <tr><td><b>3 &middot; The U.S. has 1.6&times; the Information share</b><br><span class="sm">5.6% vs 3.53%</span></td><td><b>The most important row in the table.</b> Statistics Canada found AI adoption is highest in information and cultural industries and in professional, scientific and technical services. The U.S. simply has more of its economy sitting in those sectors. So even with <i>identical</i> firm-level adoption behaviour, the U.S. gets a larger aggregate productivity gain purely from its mix. <b>The projected AI productivity boost &mdash; up to 1.5pp a year for the U.S. against 0.4&ndash;1.1pp for Canada &mdash; is not only a story about Canadian firms being slower. It is partly arithmetic.</b></td></tr>
+      <tr><td><b>4 &middot; Finance, real estate and manufacturing are near-identical</b><br><span class="sm">within one point on all three</span></td><td>Kills the lazy version of the pessimist case. Canada is not a resource colony with a real economy bolted on; it has a U.S.-sized financial sector, a U.S.-sized property sector, and proportionally almost as much manufacturing. <b>If you are arguing the optimist side, this is your structural evidence.</b> The Canadian problem is not what it makes &mdash; it is who it sells to and how much it produces per hour.</td></tr>
+      <tr class="tot"><td><b>5 &middot; The mix is tilted away from where productivity growth comes from</b><br><span class="sm">AI-exposed sectors: Canada ~20.9% vs U.S. ~24.8%</span></td><td>Adding information + professional/scientific/technical + finance &amp; insurance + administrative support, Canada has <b>20.9%</b> of its economy in the sectors with the highest AI adoption; the U.S. has <b>24.8%</b> &mdash; about a fifth more. Meanwhile Canada carries more construction, more resource extraction and a larger public administration, which are exactly the Baumol-bound sectors where measured productivity barely moves and where statisticians measure output by <i>cost</i>. <b>The industry mix is itself part of the productivity gap.</b></td></tr>
+    </tbody>
+  </table></div>
+  <p class="src">The 20.9% / 24.8% figures are my own sums from the two tables (Canada: 3.53 + 7.10 + 7.71 + 2.59; U.S.: 5.6 + 8.1 + 8.0 + 3.1). &ldquo;AI-exposed&rdquo; is my grouping, chosen to match the sectors StatCan identifies as highest-adopting &mdash; it is a reasonable definition, not an official one.</p>
+
+  <div class="ex">
+    <span class="lb">The line to use in class</span>
+    <div>&ldquo;People describe Canada as a resource economy and the U.S. as a tech economy, and the data only half agrees. <strong>Finance, real estate and manufacturing are within a point of each other.</strong> The real gaps are three: Canada has 3.8 times the mining share, 1.7 times the construction share, and <strong>the U.S. has 1.6 times the information share.</strong> That last one is why the AI productivity projections differ &mdash; it is not only that Canadian firms adopt more slowly, it is that Canada has less of the economy sitting in the sectors where adoption pays.&rdquo;</div>
+  </div>
+</section>
+
+<div class="group"><h2>Reference</h2><div class="ln"></div></div>
+
+<section id="tools">
+  <h2>All four Canvas visualisation tools</h2>
+  <p class="lede">The Session 2 Canvas page links four instructor-built tools. This page explains the first one. Here is what each is for and the one question to take to it.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Tool</th><th>What it shows</th><th>Take this question to it</th></tr></thead>
+    <tbody>
+      <tr><td><b><a href="https://claude.ai/code/artifact/805d1542-417a-4727-bee6-1a6c2fc9be97">GDP by industry and component</a></b><br><span class="sm">explained on this page</span></td><td>The production view &mdash; value added by each of 17 industries, May 2026, and the expenditure view (C, I, G, NX).</td><td>Which industries are big enough that a shock to them is a national event? Answer: real estate, trade, manufacturing, health, finance, construction.</td></tr>
+      <tr><td><b><a href="https://claude.ai/code/artifact/56936d22-2aae-49f6-a97f-e8520d127dff">GDP growth / contributions by industry and component</a></b></td><td>Not levels but <b>changes</b> &mdash; which industries and components are adding to or subtracting from growth.</td><td>What actually drove the +3.3% Q2 rebound? If it was exports and business investment, the optimist case is stronger than it looks.</td></tr>
+      <tr><td><b><a href="https://claude.ai/code/artifact/8feb5be3-1954-49b4-95ac-8d9e6e31bab2">Exports by country, 2015 to 2026</a></b></td><td>Where Canadian exports go, over eleven years.</td><td>Has the U.S. share actually fallen? The Spring Update claims non-U.S. exports are up 36% since 2024 &mdash; this is where you check whether that has moved the <i>share</i> or just the level.</td></tr>
+      <tr class="tot"><td><b><a href="https://claude.ai/code/artifact/8243dc05-61a3-4303-9ea0-0dd2dc2b1857">Trade by industry and country</a></b></td><td>The cross-tab: which industries trade with which countries.</td><td><b>The highest-value one for today.</b> Find which industry carries the tariff exposure. Walking in with one concrete number here beats a general opinion about tariffs.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="deck" style="margin-top:4px">
+    <span class="t a"><a href="session-02-headwinds-tailwinds.html">Session 2 debate brief</a></span>
+    <span class="t a"><a href="macro-foundations.html">Macro foundations</a></span>
+    <span class="t">Primer 03 &sect;3 &mdash; three approaches to GDP</span>
+    <span class="t">Primer 03 &sect;5 &mdash; chain weighting</span>
+  </div>
+</section>
+
+<section id="traps">
+  <h2>Traps when you quote this chart</h2>
+  <div class="tw"><table>
+    <tbody>
+      <tr><td>&ldquo;Canada&rsquo;s GDP is $2.36 trillion&rdquo;</td><td>That is GDP <b>at basic prices</b>, annualised from one month. Headline GDP at market prices is larger. Say which you mean.</td></tr>
+      <tr><td>Adding the industry figures to check the total</td><td>Chained dollars are not additive. The tool says so in its own footnote. Shares sum to slightly under 100%.</td></tr>
+      <tr><td>&ldquo;Real estate is 13% of GDP, the housing bubble is enormous&rdquo;</td><td>Most of that line is <b>imputed rent</b> &mdash; the rent homeowners notionally pay themselves. It is not transactions, and Primer 03 flags it as the accounts&rsquo; most important imputation.</td></tr>
+      <tr><td>Comparing Canadian public administration to U.S. government</td><td>Different carve-ups. The BEA&rsquo;s Government sector absorbs public education and much public health; Canada reports those separately.</td></tr>
+      <tr><td>&ldquo;Canada doesn&rsquo;t manufacture anything&rdquo;</td><td>8.45% vs 9.4% in the U.S. The problem is concentration of customers, not absence of industry.</td></tr>
+      <tr><td>Treating one month as a trend</td><td>May 2026, seasonally adjusted, and subject to revision. Primer 04: never build a strong conclusion on one release.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="log">
+  <h2>Q&amp;A log</h2>
+  <p class="lede">Follow-up questions get appended here, newest first.</p>
+  <div class="q">
+    <div class="q-meta">Q1 &middot; If real estate is the biggest industry in both countries, why does anyone call the U.S. a tech economy?</div>
+    <p class="lede">Because share of <strong>value added</strong> and share of <strong>growth</strong>, <strong>market capitalisation</strong> and <strong>productivity gains</strong> are four different things, and the tech story lives in the last three. Information is only 5.6% of U.S. value added &mdash; but it is a large share of the <i>increase</i> in output, an enormous share of the stock market, and the source of most measured productivity growth. A donut chart of levels is almost designed to hide that.</p>
+    <div class="ex">
+      <span class="lb">Example &mdash; why the levels chart understates it</span>
+      <div>The BEA&rsquo;s Q1 2026 release named <strong>information</strong> as one of the leading contributors to the rise in real GDP, alongside federal government and professional/scientific/technical services. A sector can be 5.6% of the level and a much larger share of the change &mdash; that is exactly the difference between this tool and the <a href="https://claude.ai/code/artifact/56936d22-2aae-49f6-a97f-e8520d127dff">contributions-to-growth tool</a> on the Canvas page.</div>
+      <div class="calc-line">Level share ≠ growth contribution ≠ market cap ≠ productivity impact</div>
+      <div>Which is the honest answer to &ldquo;is 2 percentage points of information share really such a big deal?&rdquo; On levels, it looks small. On growth and on where AI adoption concentrates, it is the whole argument.</div>
+    </div>
+  </div>
+</section>
+
+</main>
+</div>
+
+<div class="wrap">
+<footer>4505 GMM &middot; Session 2 &middot; Canadian figures from the instructor&rsquo;s Canvas tool (StatCan 36-10-0434-01, May 2026). U.S. figures from BEA, Q1 2026. Gaps and the &ldquo;AI-exposed&rdquo; grouping are my own calculations &mdash; check the definitional caveat in &sect;3 before quoting them.</footer>
+</div>
+
+<script>
+(function(){
+"use strict";
+var links=Array.prototype.slice.call(document.querySelectorAll("nav.toc a"));
+if(!links.length||!("IntersectionObserver" in window))return;
+var map={},targets=[];
+links.forEach(function(a){
+  var h=a.getAttribute("href");if(!h||h.charAt(0)!=="#")return;
+  var el=document.getElementById(h.slice(1));
+  if(el){map[h.slice(1)]=a;targets.push(el);}
+});
+var seen=[];
+var io=new IntersectionObserver(function(entries){
+  entries.forEach(function(ev){
+    var i=seen.indexOf(ev.target);
+    if(ev.isIntersecting&&i<0)seen.push(ev.target);
+    if(!ev.isIntersecting&&i>=0)seen.splice(i,1);
+  });
+  if(!seen.length)return;
+  seen.sort(function(a,b){return a.getBoundingClientRect().top-b.getBoundingClientRect().top;});
+  links.forEach(function(l){l.classList.remove("on");});
+  var a=map[seen[0].id];if(!a)return;
+  a.classList.add("on");
+  var nav=document.querySelector("nav.toc");
+  if(nav&&nav.scrollHeight>nav.clientHeight+4){var t=a.offsetTop-nav.clientHeight/2;if(t>0)nav.scrollTop=t;}
+},{rootMargin:"-72px 0px -55% 0px",threshold:0});
+targets.forEach(function(t){io.observe(t);});
+})();
+</script>

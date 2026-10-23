@@ -1,0 +1,883 @@
+[
+ {
+  "id": "wolf",
+  "kind": "text",
+  "title": "Overcoming the middle-income trap",
+  "short": "Wolf, FT",
+  "eyebrow": "Reading 1 · Session 6 · Financial Times column",
+  "sub": "Martin Wolf, Financial Times, September 10, 2024",
+  "lede_html": "<p>Martin Wolf's column on the World Bank's middle-income trap report, assigned for Session 6. Read it for two exam moves. Poor, middle-income and rich countries face different growth problems, which earns the first 2 marks of 2024 Q2c. And the gap that persists comes from using capital well or badly: TFP and the institutions under it, the story behind 2025 Q1 and Q2.</p>",
+  "source": "/Users/prag/Documents/PragPersonal/School/4505-Global-Macroeconomics-for-Managers/session-06/Reading_Wolf-FT_Overcoming-the-Middle-Income-Trap_2024-09-10.md",
+  "sourceHref": "../session-06/Reading_Wolf-FT_Overcoming-the-Middle-Income-Trap_2024-09-10.md",
+  "chunk": 3,
+  "skip_blocks_matching": "^(Overcoming the|Martin Wolf, Financial Times|Assigned reading|©)",
+  "notes": [
+   {
+    "id": "wolf-converge",
+    "type": "watch",
+    "quote": "middle-income countries have exhibited higher growth rates than all others since the mid-1980s",
+    "title": "A faster growth rate is not the same as catching up",
+    "body_html": "<p>Patel and co-authors use this line to call the trap an outdated idea. A fast rate from a low base still leaves a huge level gap: further down, Wolf notes that middle-income incomes have stayed below <span class='num'>10%</span> of the US every year since 1970.</p><p>The course reads convergence as conditional: the poorest countries of 1950 grew below the world average (S4). On 2025 Q3, file this fact under reasons to expect convergence and name the condition next to it.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 128' role='img' aria-label='Growth rate versus income level for middle-income countries'><rect class='bx-a' x='4' y='8' width='152' height='74' rx='4'/><text x='80' y='35.5' class='t-b' text-anchor='middle' style='font-size:10px'>Growth rate</text><text x='80' y='48.5' text-anchor='middle' style='font-size:10px'>middle-income: fastest</text><text x='80' y='61.5' text-anchor='middle' style='font-size:10px'>since the mid-1980s</text><rect class='bx-w' x='164' y='8' width='152' height='74' rx='4'/><text x='240' y='35.5' class='t-b' text-anchor='middle' style='font-size:10px'>Income level</text><text x='240' y='48.5' text-anchor='middle' style='font-size:10px'>below 10% of the US</text><text x='240' y='61.5' text-anchor='middle' style='font-size:10px'>every year since 1970</text><text x='160' y='104' class='t-b' text-anchor='middle' style='font-size:10px'>Rate: catching up. Level: not yet.</text><text x='160' y='120' text-anchor='middle' style='font-size:10px'>Convergence is conditional (S4)</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#c-conv",
+      "label": "Convergence is conditional"
+     },
+     {
+      "href": "midterm-past-exams.html#y25q3",
+      "label": "2025 Q3"
+     }
+    ]
+   },
+   {
+    "id": "wolf-108",
+    "type": "mean",
+    "quote": "108 middle-income countries with incomes per capita of between US$1,136 and US$13,845",
+    "title": "Middle income is a twelvefold band",
+    "body_html": "<p>The World Bank counts <span class='num'>108</span> middle-income countries, with income per person between <span class='num'>$1,136</span> and <span class='num'>$13,845</span> a year. The top of the band is about twelve times the bottom.</p><div class='calc'>13,845 ÷ 1,136 ≈ 12.2</div><p>That spread is why the WDR splits the band and prescribes a different strategy for each part.</p>",
+    "diagram_caption": "Band widths are schematic, not to scale.",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 104' role='img' aria-label='World Bank income bands from 1,136 to 13,845 dollars'><text x='4' y='14' style='font-size:10px'>World Bank bands, income per person a year</text><rect class='fl-g' x='4' y='26' width='50' height='24' rx='3'/><text x='29' y='42' text-anchor='middle' style='font-size:10px'>low</text><rect class='bx-m' x='54' y='26' width='208' height='24' rx='3'/><text x='158' y='42' class='t-b' text-anchor='middle' style='font-size:10px'>middle: 108 countries</text><rect class='bx-a' x='262' y='26' width='54' height='24' rx='3'/><text x='289' y='42' text-anchor='middle' style='font-size:10px'>high</text><text x='54' y='66' text-anchor='middle' style='font-size:10px'>$1,136</text><text x='262' y='66' text-anchor='middle' style='font-size:10px'>$13,845</text><text x='160' y='94' class='t-b' text-anchor='middle' style='font-size:10px'>13,845 ÷ 1,136 ≈ 12× bottom to top</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#c-conv",
+      "label": "Convergence is conditional"
+     },
+     {
+      "href": "midterm-past-exams.html#b-percap",
+      "label": "GDP vs GDP per person"
+     }
+    ]
+   },
+   {
+    "id": "wolf-pakistan",
+    "type": "watch",
+    "quote": "the total population of the 34 middle-income economies that transitioned to high-income status since 1990 is less than 250 million, the population of Pakistan",
+    "title": "34 countries escaped, but they hold under 250 million people",
+    "body_html": "<p>Count people, not countries. The 34 economies that reached high income since 1990 together hold fewer people than Pakistan. The WDR puts middle-income countries at about <span class='num'>6 billion</span> people, so the escapees are about 4% of them.</p><div class='calc'>0.25 billion ÷ 6 billion ≈ 4%</div><p>Use it as evidence that escape is rare, on the skeptical side of a convergence answer.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 116' role='img' aria-label='Six billion people in middle-income countries versus under 0.25 billion in those that escaped'><text x='4' y='14' style='font-size:10px'>People in middle-income countries (WDR)</text><rect class='bx-m' x='4' y='20' width='260' height='16' rx='2'/><text x='270' y='32' style='font-size:10px'>≈ 6 bn</text><text x='4' y='56' style='font-size:10px'>In the 34 that reached high income since 1990</text><rect class='fl-w' x='4' y='62' width='11' height='16' rx='2'/><text x='20' y='74' style='font-size:10px'>&lt; 0.25 bn, about one Pakistan</text><text x='160' y='104' class='t-b' text-anchor='middle' style='font-size:10px'>0.25 ÷ 6 ≈ 4% of the people</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#c-conv",
+      "label": "Convergence is conditional"
+     }
+    ]
+   },
+   {
+    "id": "wolf-avg",
+    "type": "watch",
+    "quote": "average incomes per head of middle-income countries have stayed below 10 per cent of US levels since 1970",
+    "title": "Wolf says average; the WDR says median",
+    "body_html": "<p>Wolf paraphrases the World Bank here. The report itself says the <b>median</b> income per capita of middle-income countries has never risen above <span class='num'>10%</span> of the US level since 1970. If you cite the number, use the WDR wording, as the Session 6 prep page does.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 112' role='img' aria-label='Wolf says average, the WDR says median'><rect class='bx' x='4' y='8' width='150' height='62' rx='4'/><text x='79' y='29.5' class='t-b' text-anchor='middle' style='font-size:10px'>Wolf, FT</text><text x='79' y='42.5' text-anchor='middle' style='font-size:10px'>average income</text><text x='79' y='55.5' text-anchor='middle' style='font-size:10px'>below 10% of US</text><rect class='bx-a' x='166' y='8' width='150' height='62' rx='4'/><text x='241' y='29.5' class='t-b' text-anchor='middle' style='font-size:10px'>WDR, the source</text><text x='241' y='42.5' text-anchor='middle' style='font-size:10px'>median income</text><text x='241' y='55.5' text-anchor='middle' style='font-size:10px'>never above 10%</text><text x='160' y='88' text-anchor='middle' style='font-size:10px'>Same fact, different statistic</text><text x='160' y='104' class='t-a' text-anchor='middle' style='font-size:10px'>Quote the WDR wording: median</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#c-conv",
+      "label": "Convergence is conditional"
+     }
+    ]
+   },
+   {
+    "id": "wolf-path",
+    "type": "mean",
+    "quote": "the path that works for low-income countries will not work for more advanced ones",
+    "title": "Different stages, different growth problems",
+    "body_html": "<p>This is the first move the 2024 Q2c key pays for: <span class='num'>2</span> marks for saying poor and middle-income countries face different growth problems from the US. A poor country still gains a lot from basic capital, because of diminishing returns. The key's own example: a water buffalo transforms a subsistence rice farm, while an expensive tractor barely moves a Canadian wheat farm.</p>",
+    "diagram_caption": "Illustrative curve. The same added capital (dashed) buys a large gain early and almost nothing late.",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 150' role='img' aria-label='Diminishing returns curve: a big gain for a poor farm, a tiny gain for a rich one'><path class='ln' d='M30 128 H306'/><path class='ln' d='M30 128 V14'/><path class='ln-a' d='M30 128 L36 117.7 L42 108.4 L48 100.1 L54 92.6 L60 86 L66 80 L72 74.6 L78 69.8 L84 65.5 L90 61.6 L96 58.1 L102 55 L108 52.2 L114 49.7 L120 47.5 L126 45.5 L132 43.7 L138 42 L144 40.6 L150 39.3 L156 38.1 L162 37.1 L168 36.1 L174 35.3 L180 34.5 L186 33.9 L192 33.3 L198 32.7 L204 32.2 L210 31.8 L216 31.4 L222 31 L228 30.7 L234 30.4 L240 30.2 L246 30 L252 29.8 L258 29.6 L264 29.4 L270 29.3 L276 29.1 L282 29 L288 28.9 L294 28.8 L300 28.7'/><path class='ln dash' d='M50 97.5 H75'/><path class='ln-w' d='M75 97.5 V72.1'/><path class='ln dash' d='M240 30.2 H265'/><path class='ln-w' d='M265 30.2 V29.4'/><circle class='fl-a' cx='50' cy='97.5' r='3'/><circle class='fl-a' cx='240' cy='30.2' r='3'/><text x='84' y='94' style='font-size:10px'>water buffalo on a</text><text x='84' y='106' class='t-a' style='font-size:10px'>rice farm: big jump</text><text x='150' y='54' style='font-size:10px'>next tractor on a wheat</text><text x='150' y='66' class='t-w' style='font-size:10px'>farm: tiny gain</text><text x='34' y='12' style='font-size:10px'>output per worker</text><text x='306' y='144' text-anchor='end' style='font-size:10px'>capital per worker</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#y24q2c",
+      "label": "2024 Q2c"
+     },
+     {
+      "href": "midterm-past-exams.html#b-dimret",
+      "label": "Diminishing returns"
+     }
+    ]
+   },
+   {
+    "id": "wolf-gap",
+    "type": "mean",
+    "quote": "the gap between GDP per worker in middle-income countries and the US is far greater than the gap in availability of physical and human capital",
+    "title": "The gap capital cannot explain is TFP",
+    "body_html": "<p>Output per worker differs far more than capital and skills do. In the growth model, the part left over is total factor productivity: the technology, methods and organization that decide how well each machine and worker is used. Institutions sit underneath it. 2025 Q1 has the same shape: Mozambique's land is about as good as Germany's, yet it realizes about <span class='num'>18%</span> of potential yield against about <span class='num'>83%</span>.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 120' role='img' aria-label='GDP per worker gap equals capital gap times TFP gap'><rect class='bx-w' x='4' y='10' width='94' height='60' rx='4'/><text x='51' y='30.5' class='t-b' text-anchor='middle' style='font-size:10px'>GDP per worker</text><text x='51' y='43.5' text-anchor='middle' style='font-size:10px'>gap vs the US</text><text x='51' y='56.5' text-anchor='middle' style='font-size:10px'>large</text><text x='105' y='45' class='t-b' text-anchor='middle' style='font-size:14px'>=</text><rect class='bx' x='112' y='10' width='94' height='60' rx='4'/><text x='159' y='30.5' text-anchor='middle' style='font-size:10px'>capital and</text><text x='159' y='43.5' text-anchor='middle' style='font-size:10px'>skills gap</text><text x='159' y='56.5' text-anchor='middle' style='font-size:10px'>smaller</text><text x='213' y='45' class='t-b' text-anchor='middle' style='font-size:14px'>×</text><rect class='bx-a' x='220' y='10' width='96' height='60' rx='4'/><text x='268' y='30.5' class='t-b' text-anchor='middle' style='font-size:10px'>TFP gap</text><text x='268' y='43.5' text-anchor='middle' style='font-size:10px'>how well it</text><text x='268' y='56.5' text-anchor='middle' style='font-size:10px'>gets used</text><text x='160' y='92' text-anchor='middle' style='font-size:10px'>2025 Q1: equally good land, yet</text><text x='160' y='108' class='t-b' text-anchor='middle' style='font-size:10px'>≈ 18% vs ≈ 83% of potential yield</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#b-tfp",
+      "label": "Innovation (TFP)"
+     },
+     {
+      "href": "midterm-past-exams.html#y25q1",
+      "label": "2025 Q1"
+     }
+    ]
+   },
+   {
+    "id": "wolf-poorly",
+    "type": "watch",
+    "quote": "the principal failure of middle-income countries lies not in accumulating too little capital, but in using it so poorly",
+    "title": "This line is about middle-income countries only",
+    "body_html": "<p>Do not carry it into an answer about Mozambique or Africa. For low-income countries the WDR says investment comes first, and the 2025 key describes Mozambican farmers stuck with outdated tools on small, fragmented plots. The 2024 Q2c key gives <span class='num'>5</span> marks for capital deepening in poor countries. Too little capital is still their main problem.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 130' role='img' aria-label='Low income has too little capital; middle income uses capital poorly'><text x='8' y='14' class='t-s' style='font-size:10px'>stage</text><text x='104' y='14' class='t-s' style='font-size:10px'>main problem</text><text x='236' y='14' class='t-s' style='font-size:10px'>strategy</text><rect class='bx-a' x='4' y='22' width='312' height='40' rx='4'/><text x='8' y='38' class='t-b' style='font-size:10px'>Low income</text><text x='104' y='38' style='font-size:10px'>too little capital</text><text x='236' y='38' class='t-b' style='font-size:10px'>1i: invest</text><text x='8' y='54' style='font-size:10px'>Mozambique, Africa</text><rect class='bx-m' x='4' y='68' width='312' height='40' rx='4'/><text x='8' y='84' class='t-b' style='font-size:10px'>Middle income</text><text x='104' y='84' style='font-size:10px'>capital used poorly</text><text x='236' y='84' class='t-b' style='font-size:10px'>2i, then 3i</text><text x='8' y='100' style='font-size:10px'>Wolf&#x27;s line</text><text x='160' y='124' class='t-w' text-anchor='middle' style='font-size:10px'>Wolf&#x27;s line is row 2. Mozambique is row 1.</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#c-capital",
+      "label": "Capital deepening"
+     },
+     {
+      "href": "midterm-past-exams.html#y24q2c",
+      "label": "2024 Q2c"
+     }
+    ]
+   },
+   {
+    "id": "wolf-infusion",
+    "type": "mean",
+    "quote": "openness to ideas from elsewhere (notably through direct investment and trade)",
+    "title": "Open trade carries ideas in",
+    "body_html": "<p>Infusion needs skilled people who can absorb new methods, and openness through foreign direct investment and trade. Korea's export focus sped it up. The 2025 Q2 model answer lists a relatively open set of trade relations among Germany's key institutions. When you name open trade on the exam, add this channel: it brings in the machines, methods and know-how that raise TFP.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 110' role='img' aria-label='Open trade and FDI bring foreign ideas that spread to firms and raise TFP'><rect class='bx' x='4' y='12' width='69' height='44' rx='4'/><text x='38.5' y='31' class='t-b' text-anchor='middle' style='font-size:10px'>open trade</text><text x='38.5' y='44' text-anchor='middle' style='font-size:10px'>and FDI</text><rect class='bx' x='85' y='12' width='69' height='44' rx='4'/><text x='119.5' y='31' class='t-b' text-anchor='middle' style='font-size:10px'>foreign</text><text x='119.5' y='44' text-anchor='middle' style='font-size:10px'>ideas in</text><rect class='bx' x='166' y='12' width='69' height='44' rx='4'/><text x='200.5' y='31' class='t-b' text-anchor='middle' style='font-size:10px'>spreads</text><text x='200.5' y='44' text-anchor='middle' style='font-size:10px'>to firms</text><rect class='bx-a' x='247' y='12' width='69' height='44' rx='4'/><text x='281.5' y='31' class='t-b' text-anchor='middle' style='font-size:10px'>TFP</text><text x='281.5' y='44' text-anchor='middle' style='font-size:10px'>rises</text><path class='ln-a flow' d='M74 34 L84 34 M155 34 L165 34 M236 34 L246 34'/><path class='ln-a' d='M78.8 37 L84 34 L78.8 31'/><path class='ln-a' d='M159.8 37 L165 34 L159.8 31'/><path class='ln-a' d='M240.8 37 L246 34 L240.8 31'/><text x='4' y='80' style='font-size:10px'>Korea: its export focus sped infusion</text><text x='4' y='98' class='t-a' style='font-size:10px'>2025 Q2 key lists open trade relations</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#c-inst",
+      "label": "Institutions"
+     },
+     {
+      "href": "midterm-past-exams.html#y25q2",
+      "label": "2025 Q2"
+     }
+    ]
+   },
+   {
+    "id": "wolf-compete",
+    "type": "mean",
+    "quote": "force incumbents to compete, encourage entrants and open the economy to those who were historically outsiders",
+    "title": "Creative destruction needs competition",
+    "body_html": "<p>Schumpeter's idea, as Aghion and Howitt updated it: growth comes when entrants push out weaker incumbents and capital and workers move to better firms. Sheltered incumbents have little reason to adopt new technology. This is the lack of competition cause in the 2024 Q2b key. Session 8 puts a number on it for Canada: the six largest banks hold <span class='num'>94%</span> of banking assets.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 126' role='img' aria-label='Entrants come in, weak firms exit, resources move to better firms'><text x='58' y='44' class='t-a' text-anchor='middle' style='font-size:10px'>entrants in</text><path class='ln-a flow' d='M10 55 L106 55'/><path class='ln-a' d='M100.8 58 L106 55 L100.8 52'/><rect class='bx' x='112' y='30' width='96' height='50' rx='4'/><text x='160' y='52' class='t-b' text-anchor='middle' style='font-size:10px'>incumbents</text><text x='160' y='65' text-anchor='middle' style='font-size:10px'>must compete</text><text x='262' y='44' class='t-w' text-anchor='middle' style='font-size:10px'>weak firms out</text><path class='ln-w' d='M214 55 L310 55'/><path class='ln-w' d='M304.8 58 L310 55 L304.8 52'/><text x='160' y='98' text-anchor='middle' style='font-size:10px'>capital and workers move to better firms</text><text x='160' y='116' class='t-b' text-anchor='middle' style='font-size:10px'>Canada: 6 banks hold 94% of bank assets</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#y24q2b",
+      "label": "2024 Q2b"
+     },
+     {
+      "href": "midterm-past-exams.html#c-canada",
+      "label": "Canada's growth"
+     }
+    ]
+   },
+   {
+    "id": "wolf-capital-cost",
+    "type": "mean",
+    "quote": "Part of the problem is the high cost of capital, itself the result of high levels of uncertainty",
+    "title": "Uncertainty makes capital expensive",
+    "body_html": "<p>When outcomes are unpredictable, lenders charge more and fewer projects pay off. The 2025 Q3 credit rating is this point as a number: Mozambique's CCC+ against Germany's AAA means farmers and the government borrow at high cost, if at all. Wolf's fix is the institutions answer: rules that make returns predictable and secure lower the cost of capital, so more tractors, irrigation and storage get bought.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 138' role='img' aria-label='Uncertainty raises the cost of capital; Mozambique CCC+ versus Germany AAA'><rect class='bx-w' x='4' y='8' width='96' height='42' rx='4'/><text x='52' y='26' class='t-b' text-anchor='middle' style='font-size:10px'>uncertainty</text><text x='52' y='39' text-anchor='middle' style='font-size:10px'>weak rules</text><rect class='bx-w' x='112' y='8' width='96' height='42' rx='4'/><text x='160' y='26' class='t-b' text-anchor='middle' style='font-size:10px'>high cost</text><text x='160' y='39' text-anchor='middle' style='font-size:10px'>of capital</text><rect class='bx-w' x='220' y='8' width='96' height='42' rx='4'/><text x='268' y='26' class='t-b' text-anchor='middle' style='font-size:10px'>fewer</text><text x='268' y='39' text-anchor='middle' style='font-size:10px'>projects pay</text><path class='ln-w' d='M100 29 L111 29 M208 29 L219 29'/><path class='ln-w' d='M105.8 32 L111 29 L105.8 26'/><path class='ln-w' d='M213.8 32 L219 29 L213.8 26'/><text x='4' y='72' class='t-b' style='font-size:10px'>2025 Q3 facts</text><rect class='bx-w' x='4' y='80' width='150' height='50' rx='4'/><text x='79' y='102' class='t-b' text-anchor='middle' style='font-size:10px'>Mozambique</text><text x='79' y='115' text-anchor='middle' style='font-size:10px'>CCC+ · debt 76.9%</text><rect class='bx-a' x='166' y='80' width='150' height='50' rx='4'/><text x='241' y='102' class='t-b' text-anchor='middle' style='font-size:10px'>Germany</text><text x='241' y='115' text-anchor='middle' style='font-size:10px'>AAA · debt 62.5%</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#b-fin",
+      "label": "Finance and country risk"
+     },
+     {
+      "href": "midterm-past-exams.html#y25q3",
+      "label": "2025 Q3"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "wdr",
+  "kind": "text",
+  "title": "World Development Report 2024: The Middle-Income Trap",
+  "short": "WDR 2024",
+  "eyebrow": "Reading 2 · Session 6 · World Bank main messages",
+  "sub": "World Bank, August 2024 · the report behind Wolf's column",
+  "lede_html": "<p>The World Bank report Wolf summarizes. Read it for one framework: a country needs a different growth strategy at each income stage, from investment alone (1i) to investment plus infusion (2i) to all three with innovation (3i). The staircase sorts the past questions. Mozambique and Africa sit on the first step, and Session 8's AI op-ed asks Canada to act like the second.</p>",
+  "source": "/Users/prag/Documents/PragPersonal/School/4505-Global-Macroeconomics-for-Managers/session-06/Reading_World-Bank_WDR-2024_Main-Messages.md",
+  "sourceHref": "../session-06/Reading_World-Bank_WDR-2024_Main-Messages.md",
+  "chunk": 6,
+  "skip_blocks_matching": "^(World Development Report 2024: The Middle-Income Trap, Main Messages|World Bank, August 2024|Background for GMM|Source: WDR)",
+  "notes": [
+   {
+    "id": "wdr-median",
+    "type": "mean",
+    "quote": "since 1970, the median income per capita of middle-income countries has never risen above 10 percent of the US level",
+    "title": "The trap in one number",
+    "body_html": "<p>For more than 50 years the typical middle-income country has stayed under a tenth of US income per person. Quote it as written: median, never above <span class='num'>10%</span>. It shows that faster growth for a while has not closed the level gap, which is why the course calls convergence conditional.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 104' role='img' aria-label='US income 100 versus median middle-income below 10'><text x='4' y='14' style='font-size:10px'>Income per person, % of the US level</text><text x='4' y='36' class='t-b' style='font-size:10px'>US</text><rect class='fl-g' x='74' y='24' width='200' height='16' rx='2'/><text x='278' y='36' style='font-size:10px'>100</text><text x='4' y='60' style='font-size:10px'>median</text><text x='4' y='72' style='font-size:10px'>mid-income</text><rect class='fl-w' x='74' y='56' width='20' height='16' rx='2'/><text x='98' y='68' style='font-size:10px'>&lt; 10, every year since 1970</text><text x='160' y='96' class='t-b' text-anchor='middle' style='font-size:10px'>A level gap of more than 10×</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#c-conv",
+      "label": "Convergence is conditional"
+     }
+    ]
+   },
+   {
+    "id": "wdr-2i",
+    "type": "mean",
+    "quote": "a 2i strategy that emphasizes both investment and infusion, in which a country brings technologies from abroad and diffuses them domestically",
+    "title": "Infusion means adopting, not inventing",
+    "body_html": "<p>Infusion is catch-up growth: bring in technology that already works abroad, then spread it across domestic firms. This answers Krugman in 2024 Q2c. The US sits at the frontier and must invent to grow; a poorer country can grow by copying. Session 8's op-ed asks Canada to treat AI the same way.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 122' role='img' aria-label='Infusion brings proven technology from abroad to a few firms, then diffusion spreads it to most firms'><rect class='bx' x='4' y='10' width='80' height='46' rx='4'/><text x='44' y='30' class='t-b' text-anchor='middle' style='font-size:10px'>abroad</text><text x='44' y='43' text-anchor='middle' style='font-size:10px'>proven tech</text><rect class='bx-m' x='120' y='10' width='80' height='46' rx='4'/><text x='160' y='30' class='t-b' text-anchor='middle' style='font-size:10px'>a few</text><text x='160' y='43' text-anchor='middle' style='font-size:10px'>firms adopt</text><rect class='bx-a' x='236' y='10' width='80' height='46' rx='4'/><text x='276' y='30' class='t-b' text-anchor='middle' style='font-size:10px'>most firms</text><text x='276' y='43' text-anchor='middle' style='font-size:10px'>use it</text><path class='ln-a flow' d='M86 33 L118 33 M202 33 L234 33'/><path class='ln-a' d='M112.8 36 L118 33 L112.8 30'/><path class='ln-a' d='M228.8 36 L234 33 L228.8 30'/><text x='102' y='72' class='t-a' text-anchor='middle' style='font-size:10px'>infusion</text><text x='218' y='72' class='t-a' text-anchor='middle' style='font-size:10px'>diffusion</text><text x='4' y='96' style='font-size:10px'>US: at the frontier, must invent (Krugman)</text><text x='4' y='112' class='t-a' style='font-size:10px'>Poorer country: can grow by copying</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#y24q2c",
+      "label": "2024 Q2c"
+     },
+     {
+      "href": "midterm-past-exams.html#b-conv",
+      "label": "Convergence"
+     }
+    ]
+   },
+   {
+    "id": "wdr-1i",
+    "type": "watch",
+    "quote": "Low-income countries can focus solely on policies designed to increase investment",
+    "title": "Low income: investment comes first",
+    "body_html": "<p>At low income the strategy is investment alone, because capital is scarce and each unit adds a lot of output. Mozambique and most of Africa sit on this step. An answer that prescribes innovation for them misses the <span class='num'>5</span> capital deepening marks in the 2024 Q2c key. Institutions still matter here: they decide whether anyone makes the investment.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 140' role='img' aria-label='The 1i 2i 3i staircase with Mozambique and Africa on the first step'><text x='4' y='16' style='font-size:10px'>Prescribe for the step a country is on</text><rect class='bx-w' x='4' y='98' width='100' height='36' rx='4'/><text x='54' y='112' class='t-b' text-anchor='middle' style='font-size:10px'>1i Investment</text><text x='54' y='126' text-anchor='middle' style='font-size:10px'>low income</text><rect class='bx' x='110' y='66' width='100' height='68' rx='4'/><text x='160' y='80' class='t-b' text-anchor='middle' style='font-size:10px'>2i + Infusion</text><text x='160' y='94' text-anchor='middle' style='font-size:10px'>lower-middle</text><rect class='bx' x='216' y='34' width='100' height='100' rx='4'/><text x='266' y='48' class='t-b' text-anchor='middle' style='font-size:10px'>3i + Innovation</text><text x='266' y='62' text-anchor='middle' style='font-size:10px'>upper-middle</text><text x='54' y='74' class='t-w' text-anchor='middle' style='font-size:10px'>Mozambique,</text><text x='54' y='88' class='t-w' text-anchor='middle' style='font-size:10px'>Africa: here</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#c-capital",
+      "label": "Capital deepening"
+     },
+     {
+      "href": "midterm-past-exams.html#y24q2c",
+      "label": "2024 Q2c"
+     }
+    ]
+   },
+   {
+    "id": "wdr-3i",
+    "type": "mean",
+    "quote": "At the upper-middle-income level, countries need to shift gears again to 3i",
+    "title": "The three i's in growth model terms",
+    "body_html": "<p>Translate the WDR's words before you use them. Investment is capital deepening and skills. Infusion and innovation both raise TFP: one by adopting known ideas, the other by inventing new ones. Only the last step depends on invention, and that is where Krugman's US sits when he says growth is largely driven by innovation.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 120' role='img' aria-label='WDR terms mapped to course terms'><text x='8' y='14' class='t-s' style='font-size:10px'>WDR term</text><text x='104' y='14' class='t-s' style='font-size:10px'>course term</text><rect class='bx' x='4' y='22' width='312' height='26' rx='4'/><text x='10' y='39' class='t-b' style='font-size:10px'>Investment</text><text x='104' y='39' style='font-size:10px'>capital deepening, skills</text><rect class='bx-m' x='4' y='54' width='312' height='26' rx='4'/><text x='10' y='71' class='t-b' style='font-size:10px'>Infusion</text><text x='104' y='71' style='font-size:10px'>TFP: adopt known ideas</text><rect class='bx-a' x='4' y='86' width='312' height='26' rx='4'/><text x='10' y='103' class='t-b' style='font-size:10px'>Innovation</text><text x='104' y='103' style='font-size:10px'>TFP: invent new ones</text><text x='312' y='103' class='t-w' text-anchor='end' style='font-size:10px'>Krugman&#x27;s US</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#b-tfp",
+      "label": "Innovation (TFP)"
+     },
+     {
+      "href": "midterm-past-exams.html#y24q2a",
+      "label": "2024 Q2a"
+     }
+    ]
+   },
+   {
+    "id": "wdr-not-auto",
+    "type": "watch",
+    "quote": "Transitions across growth strategies are not automatic.",
+    "title": "Moving up the staircase is not automatic",
+    "body_html": "<p>The next line names the conditions: more economic freedom, open debate and the political courage to change stubborn institutions. This is conditional convergence in the World Bank's words. In a skeptical paragraph, name the missing condition, as the 2025 key does with Mozambique's debt and CCC+ rating.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 140' role='img' aria-label='Room to catch up forks into reform and convergence or no reform and stuck'><rect class='bx' x='4' y='50' width='96' height='40' rx='4'/><text x='52' y='67' class='t-b' text-anchor='middle' style='font-size:10px'>room to</text><text x='52' y='80' text-anchor='middle' style='font-size:10px'>catch up</text><path class='ln-a' d='M100 62 L150 34'/><path class='ln-a' d='M146.9 39.2 L150 34 L144 33.9'/><path class='ln-w' d='M100 78 L150 106'/><path class='ln-w' d='M144 106.1 L150 106 L146.9 100.8'/><rect class='bx-a' x='154' y='10' width='162' height='44' rx='4'/><text x='235' y='29' class='t-b' text-anchor='middle' style='font-size:10px'>reform institutions</text><text x='235' y='42' text-anchor='middle' style='font-size:10px'>Vietnam ≈ 10× since 1986</text><rect class='bx-w' x='154' y='86' width='162' height='44' rx='4'/><text x='235' y='105' class='t-b' text-anchor='middle' style='font-size:10px'>no reform</text><text x='235' y='118' text-anchor='middle' style='font-size:10px'>median &lt; 10% of US</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#c-conv",
+      "label": "Convergence is conditional"
+     },
+     {
+      "href": "midterm-past-exams.html#y25q3",
+      "label": "2025 Q3"
+     }
+    ]
+   },
+   {
+    "id": "wdr-climate",
+    "type": "mean",
+    "quote": "Improve the investment climate to increase domestic and foreign investment.",
+    "title": "A bank of concrete institutions",
+    "body_html": "<p>2025 Q2 asks you to be explicit and specific about which institutions matter. This table gives wording you can borrow: improve the investment climate, deepen capital markets, strengthen antitrust, invest in human capital, expand grid networks. Say which growth channel each one feeds. This copy lost the table's stage columns, so read the 20 lines as a list, not a sequence.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 164' role='img' aria-label='WDR policies mapped to institutions and growth channels'><text x='8' y='14' class='t-s' style='font-size:10px'>WDR Table O.3</text><text x='172' y='14' class='t-s' style='font-size:10px'>institution → channel</text><rect class='bx' x='4' y='22' width='312' height='24' rx='4'/><text x='10' y='38' class='t-b' style='font-size:10px'>Investment climate</text><text x='172' y='38' style='font-size:10px'>rule of law → capital</text><rect class='bx-m' x='4' y='50' width='312' height='24' rx='4'/><text x='10' y='66' class='t-b' style='font-size:10px'>Deepen capital markets</text><text x='172' y='66' style='font-size:10px'>finance → capital</text><rect class='bx' x='4' y='78' width='312' height='24' rx='4'/><text x='10' y='94' class='t-b' style='font-size:10px'>Strengthen antitrust</text><text x='172' y='94' style='font-size:10px'>competition → TFP</text><rect class='bx-m' x='4' y='106' width='312' height='24' rx='4'/><text x='10' y='122' class='t-b' style='font-size:10px'>Invest in human capital</text><text x='172' y='122' style='font-size:10px'>schools → skills</text><rect class='bx' x='4' y='134' width='312' height='24' rx='4'/><text x='10' y='150' class='t-b' style='font-size:10px'>Expand grid networks</text><text x='172' y='150' style='font-size:10px'>power grid → capital</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#c-inst",
+      "label": "Institutions"
+     },
+     {
+      "href": "midterm-past-exams.html#y25q2",
+      "label": "2025 Q2"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s07",
+  "kind": "pdf",
+  "title": "Session 7 slides: growth model practice",
+  "short": "S7 slides",
+  "eyebrow": "Slides · Session 7 · Does Africa have too few people?",
+  "sub": "Slides 3, 4, 5, 6 and 8 of the practice deck",
+  "lede_html": "<p>Session 7's practice deck, built around an FT column asking whether Africa has too few people. The prep page's practice question is illustrative and was not set by the professors, but every number in it comes from slides 3, 4, 5 and 8. The deck drills the move every past paper rewards: sort a fact into labour input or productivity before you judge it.</p>",
+  "pdf": "/Users/prag/Documents/PragPersonal/School/4505-Global-Macroeconomics-for-Managers/session-07/Lecture-Slides_07_Growth-Model-Practice.pdf",
+  "pdfHref": "../session-07/Lecture-Slides_07_Growth-Model-Practice.pdf",
+  "pages": [
+   3,
+   4,
+   5,
+   6,
+   8
+  ],
+  "pageLabel": "Slide",
+  "notes": [
+   {
+    "id": "s07-young",
+    "type": "mean",
+    "page": 3,
+    "quote": "Median age",
+    "nth": 1,
+    "rect": [
+     5.4,
+     71.6,
+     21.0,
+     9.0
+    ],
+    "show_quote": "Median age 20 · Under 15 39% · 65 and over 4%",
+    "title": "Africa's base is wide: its workers are still to come",
+    "body_html": "<p>Half of Africans are under 20, <span class='num'>39%</span> are under 15 and only <span class='num'>4%</span> are 65 or over. Over the next 15 years those children reach working age, so labour input rises and the dependency ratio can fall. That is the demographic dividend. It is a labour input gain: GDP per person rises once, as the working share rises.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 148' role='img' aria-label='Under-15 and 65-plus shares for Africa, India, Vietnam and Canada'><rect class='fl-a' x='4' y='4' width='10' height='10' rx='2'/><text x='18' y='13' style='font-size:10px'>under 15</text><rect class='fl-m' x='104' y='4' width='10' height='10' rx='2'/><text x='118' y='13' style='font-size:10px'>65 and over</text><text x='4' y='34' class='t-b' style='font-size:10px'>Africa</text><text x='4' y='46' class='t-s' style='font-size:10px'>median 20</text><rect class='fl-a' x='72' y='26' width='195' height='9' rx='2'/><text x='271' y='34' style='font-size:10px'>39%</text><rect class='fl-m' x='72' y='38' width='20' height='9' rx='2'/><text x='96' y='46' style='font-size:10px'>4%</text><text x='4' y='65' class='t-b' style='font-size:10px'>India</text><text x='4' y='77' class='t-s' style='font-size:10px'>median 30</text><rect class='fl-a' x='72' y='57' width='120' height='9' rx='2'/><text x='196' y='65' style='font-size:10px'>24%</text><rect class='fl-m' x='72' y='69' width='40' height='9' rx='2'/><text x='116' y='77' style='font-size:10px'>8%</text><text x='4' y='96' class='t-b' style='font-size:10px'>Vietnam</text><text x='4' y='108' class='t-s' style='font-size:10px'>median 35</text><rect class='fl-a' x='72' y='88' width='115' height='9' rx='2'/><text x='191' y='96' style='font-size:10px'>23%</text><rect class='fl-m' x='72' y='100' width='50' height='9' rx='2'/><text x='126' y='108' style='font-size:10px'>10%</text><text x='4' y='127' class='t-b' style='font-size:10px'>Canada</text><text x='4' y='139' class='t-s' style='font-size:10px'>median 42</text><rect class='fl-a' x='72' y='119' width='75' height='9' rx='2'/><text x='151' y='127' style='font-size:10px'>15%</text><rect class='fl-m' x='72' y='131' width='105' height='9' rx='2'/><text x='181' y='139' style='font-size:10px'>21%</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#b-demo",
+      "label": "Demographic dividend"
+     },
+     {
+      "href": "midterm-past-exams.html#practice",
+      "label": "Practice question"
+     }
+    ]
+   },
+   {
+    "id": "s07-dep-calc",
+    "type": "watch",
+    "page": 3,
+    "quote": "Dependents per 100 working-age 73",
+    "title": "Recompute and you get 75; quote the slide's 73",
+    "body_html": "<p>The ratio counts children and over-65s per 100 people aged 15 to 64. Rebuilt from the rounded shares under each pyramid, every panel comes out 1 to 2 points high. Quote the slide's figures, and use the formula only to show what they mean.</p><div class='calc'>(39 + 4) ÷ (100 − 43) × 100 ≈ 75\nslide: 73</div>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 132' role='img' aria-label='Dependency ratios rebuilt from rounded shares versus the slide'><text x='74' y='14' class='t-s' style='font-size:10px'>rebuilt from shares</text><text x='232' y='14' class='t-s' style='font-size:10px'>calc</text><text x='278' y='14' class='t-s' style='font-size:10px'>slide</text><rect class='bx-w' x='2' y='22' width='316' height='20' rx='3'/><text x='6' y='36' class='t-b' style='font-size:10px'>Africa</text><text x='74' y='36' style='font-size:10px'>(39+4) ÷ (100−43)</text><text x='232' y='36' style='font-size:10px'>≈ 75</text><text x='278' y='36' class='t-b'>73</text><text x='6' y='58' class='t-b' style='font-size:10px'>India</text><text x='74' y='58' style='font-size:10px'>(24+8) ÷ (100−32)</text><text x='232' y='58' style='font-size:10px'>≈ 47</text><text x='278' y='58' class='t-b'>46</text><text x='6' y='80' class='t-b' style='font-size:10px'>Vietnam</text><text x='74' y='80' style='font-size:10px'>(23+10) ÷ (100−33)</text><text x='232' y='80' style='font-size:10px'>≈ 49</text><text x='278' y='80' class='t-b'>48</text><text x='6' y='102' class='t-b' style='font-size:10px'>Canada</text><text x='74' y='102' style='font-size:10px'>(15+21) ÷ (100−36)</text><text x='232' y='102' style='font-size:10px'>≈ 56</text><text x='278' y='102' class='t-b'>55</text><text x='160' y='126' class='t-w' text-anchor='middle' style='font-size:10px'>rounded shares run 1 to 2 high</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#b-dep",
+      "label": "Dependency ratio"
+     },
+     {
+      "href": "midterm-past-exams.html#practice",
+      "label": "Practice question"
+     }
+    ]
+   },
+   {
+    "id": "s07-canada",
+    "type": "mean",
+    "page": 3,
+    "quote": "Median age",
+    "nth": 4,
+    "rect": [
+     73.7,
+     71.6,
+     21.0,
+     12.0
+    ],
+    "show_quote": "Median age 42 · Under 15 15% · 65 and over 21% · Dependents per 100 working-age 55",
+    "title": "Canada is the mirror image",
+    "body_html": "<p>Canada's dependents are mostly old: <span class='num'>21%</span> are 65 or over and <span class='num'>15%</span> are under 15. Its ratio of <span class='num'>55</span> goes on pensions and health care, where Africa's goes on schools. This is the 2024 trilemma's third corner: cut immigration to cool housing, and the workforce ages and the dependency ratio rises.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 122' role='img' aria-label='Age structure of Africa and Canada as stacked bars'><rect class='bx-a' x='4' y='4' width='10' height='10' rx='2'/><text x='18' y='13' style='font-size:10px'>under 15</text><rect class='fl-g' x='104' y='4' width='10' height='10' rx='2'/><text x='118' y='13' style='font-size:10px'>15 to 64</text><rect class='bx-m' x='204' y='4' width='10' height='10' rx='2'/><text x='218' y='13' style='font-size:10px'>65 and over</text><text x='4' y='39' class='t-b' style='font-size:10px'>Africa</text><rect class='bx-a' x='64' y='26' width='93.6' height='18' rx='2'/><text x='110.8' y='39' text-anchor='middle' style='font-size:10px'>39%</text><rect class='fl-g' x='157.6' y='26' width='136.8' height='18' rx='2'/><text x='226' y='39' text-anchor='middle' style='font-size:10px'>57%</text><rect class='bx-m' x='294.4' y='26' width='9.6' height='18' rx='2'/><text x='306' y='39' style='font-size:10px'>4%</text><text x='4' y='67' class='t-b' style='font-size:10px'>Canada</text><rect class='bx-a' x='64' y='54' width='36' height='18' rx='2'/><text x='82' y='67' text-anchor='middle' style='font-size:10px'>15%</text><rect class='fl-g' x='100' y='54' width='153.6' height='18' rx='2'/><text x='176.8' y='67' text-anchor='middle' style='font-size:10px'>64%</text><rect class='bx-m' x='253.6' y='54' width='50.4' height='18' rx='2'/><text x='278.8' y='67' text-anchor='middle' style='font-size:10px'>21%</text><text x='4' y='98' style='font-size:10px'>Canada: 55 dependents per 100, mostly old</text><text x='4' y='114' style='font-size:10px'>Africa: 73 per 100, mostly children</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#c-trilemma",
+      "label": "Trilemma logic"
+     },
+     {
+      "href": "midterm-past-exams.html#b-dep",
+      "label": "Dependency ratio"
+     }
+    ]
+   },
+   {
+    "id": "s07-thesis",
+    "type": "mean",
+    "page": 4,
+    "quote": "the most important reason for Africa's relative poverty has been low population density, and fast population growth is now fixing it",
+    "title": "The claim to test: more people fixes poverty",
+    "body_html": "<p>Sort the claim with the growth model before you judge it. More people is the labour input channel: it raises total GDP. Living standards need GDP per person to rise, which takes more output per worker or a larger share of people working. The practice question asks what the chart supports, then why the argument falls short.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 126' role='img' aria-label='GDP per person equals GDP per worker times workers per person'><rect class='bx' x='4' y='10' width='92' height='46' rx='4'/><text x='50' y='30' class='t-b' text-anchor='middle' style='font-size:10px'>GDP per</text><text x='50' y='43' text-anchor='middle' style='font-size:10px'>person</text><text x='104' y='38' class='t-b' text-anchor='middle' style='font-size:14px'>=</text><rect class='bx-a' x='112' y='10' width='92' height='46' rx='4'/><text x='158' y='30' class='t-b' text-anchor='middle' style='font-size:10px'>GDP per</text><text x='158' y='43' text-anchor='middle' style='font-size:10px'>worker</text><text x='212' y='38' class='t-b' text-anchor='middle' style='font-size:14px'>×</text><rect class='bx-m' x='220' y='10' width='96' height='46' rx='4'/><text x='268' y='30' class='t-b' text-anchor='middle' style='font-size:10px'>workers per</text><text x='268' y='43' text-anchor='middle' style='font-size:10px'>person</text><text x='158' y='74' class='t-a' text-anchor='middle' style='font-size:10px'>productivity</text><text x='158' y='88' text-anchor='middle' style='font-size:10px'>needs capital</text><text x='268' y='74' class='t-m' text-anchor='middle' style='font-size:10px'>rises once</text><text x='268' y='88' text-anchor='middle' style='font-size:10px'>as share works</text><text x='160' y='116' class='t-w' text-anchor='middle' style='font-size:10px'>Population growth alone raises total GDP</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#practice",
+      "label": "Practice question"
+     },
+     {
+      "href": "midterm-past-exams.html#c-model",
+      "label": "Two growth channels"
+     }
+    ]
+   },
+   {
+    "id": "s07-19",
+    "type": "watch",
+    "page": 4,
+    "quote": "median age of Africa's population",
+    "rect": [
+     36.8,
+     53.8,
+     24.2,
+     12.4
+    ],
+    "show_quote": "19 · median age of Africa's population",
+    "title": "19 here, 20 on slide 3",
+    "body_html": "<p>This slide quotes the FT column's median age of <span class='num'>19</span>. The UN pyramid on slide 3 shows <span class='num'>20</span>. The prep page uses 20, because the question shows the UN chart. Pick one source and do not mix them in one answer.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 112' role='img' aria-label='Median age 19 on slide 4 versus 20 on slide 3'><rect class='bx-w' x='4' y='8' width='150' height='64' rx='4'/><text x='79' y='26' text-anchor='middle' style='font-size:10px'>slide 4 · FT column</text><text x='79' y='60' class='t-b' text-anchor='middle' style='font-size:24px'>19</text><rect class='bx-a' x='166' y='8' width='150' height='64' rx='4'/><text x='241' y='26' text-anchor='middle' style='font-size:10px'>slide 3 · UN WPP 2024</text><text x='241' y='60' class='t-b' text-anchor='middle' style='font-size:24px'>20</text><text x='160' y='90' text-anchor='middle' style='font-size:10px'>median age of Africa&#x27;s population</text><text x='160' y='106' class='t-a' text-anchor='middle' style='font-size:10px'>Prep page: use 20, the chart&#x27;s figure</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#practice",
+      "label": "Practice question"
+     }
+    ]
+   },
+   {
+    "id": "s07-25bn",
+    "type": "mean",
+    "page": 4,
+    "quote": "Africa's projected population in 2050, up from 1.5bn",
+    "rect": [
+     6.4,
+     53.8,
+     22.8,
+     15.2
+    ],
+    "show_quote": "2.5bn · Africa's projected population in 2050, up from 1.5bn",
+    "title": "2.5 billion by 2050 means about 2.1% a year",
+    "body_html": "<p>Work out the rate the projection implies before you reason with it.</p><div class='calc'>(2.5 ÷ 1.5)^(1/25) − 1 ≈ 0.021\n≈ 2.1% a year, 2025 to 2050</div><p>Each year's savings must first equip the new workers, so capital has to grow about 2.1% a year just to hold capital per worker flat. Slide 3's 1.57 billion is the more precise starting figure.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 124' role='img' aria-label='Africa population 1.5 billion in 2025 to 2.5 billion in 2050, about 2.1 percent a year'><path class='ln' d='M40 42 H280'/><circle class='fl-a' cx='40' cy='42' r='5'/><circle class='fl-m' cx='280' cy='42' r='5'/><text x='40' y='24' class='t-b' text-anchor='middle' style='font-size:10px'>2025</text><text x='40' y='62' text-anchor='middle' style='font-size:10px'>1.5 bn</text><text x='280' y='24' class='t-b' text-anchor='middle' style='font-size:10px'>2050</text><text x='280' y='62' text-anchor='middle' style='font-size:10px'>2.5 bn</text><text x='160' y='34' class='t-m' text-anchor='middle' style='font-size:10px'>+67% in 25 years</text><text x='160' y='60' class='t-b' text-anchor='middle' style='font-size:10px'>≈ 2.1% a year</text><rect class='bx-w' x='4' y='76' width='312' height='42' rx='4'/><text x='160' y='94' class='t-b' text-anchor='middle' style='font-size:10px'>capital must grow 2.1% a year</text><text x='160' y='107' text-anchor='middle' style='font-size:10px'>just to keep capital per worker flat</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#practice",
+      "label": "Practice question"
+     },
+     {
+      "href": "midterm-past-exams.html#b-capdeep",
+      "label": "Capital deepening"
+     }
+    ]
+   },
+   {
+    "id": "s07-growth-rate",
+    "type": "watch",
+    "page": 5,
+    "quote": "growth from 0.8% a year (1930s) to 2.9% (1980s)",
+    "title": "2.9% was the 1980s peak, not today's rate",
+    "body_html": "<p>Modern medicine lifted Africa's population growth from <span class='num'>0.8%</span> to <span class='num'>2.9%</span> a year. At 2.9% a population doubles in about 24 years. The 2.5 billion projection implies about 2.1% from 2025, because fertility is expected to fall. The prep page's 2025 Q4 working assumes about 3% for Mozambique; call that an assumption when you use it.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 118' role='img' aria-label='Population growth 0.8 percent in the 1930s, 2.9 in the 1980s, about 2.1 implied for 2025 to 2050'><text x='4' y='12' class='t-s' style='font-size:10px'>Africa&#x27;s population growth a year</text><text x='4' y='33' class='t-b' style='font-size:10px'>1930s</text><rect class='fl-g' x='64' y='22' width='32' height='14' rx='2'/><text x='100' y='33' style='font-size:10px'>0.8% · doubles in 88 yrs</text><text x='4' y='59' class='t-b' style='font-size:10px'>1980s</text><rect class='fl-w' x='64' y='48' width='116' height='14' rx='2'/><text x='184' y='59' style='font-size:10px'>2.9% peak · 24 yrs</text><text x='4' y='85' class='t-b' style='font-size:10px'>2025-50</text><rect class='fl-m' x='64' y='74' width='84' height='14' rx='2'/><text x='152' y='85' style='font-size:10px'>≈ 2.1% · 33 yrs</text><text x='4' y='110' style='font-size:10px'>rule of 70: 70 ÷ 2.9 ≈ 24 years to double</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#practice",
+      "label": "Practice question"
+     },
+     {
+      "href": "midterm-past-exams.html#y25q4",
+      "label": "2025 Q4"
+     }
+    ]
+   },
+   {
+    "id": "s07-hint",
+    "type": "mean",
+    "page": 6,
+    "quote": "a population growing close to 3% a year, with about four children per woman",
+    "title": "The hint: check both drivers of the growth model",
+    "body_html": "<p>Fast growth touches both channels. Labour input rises later, but at about four children per woman the base keeps widening, so dependents stay high. Productivity suffers now: savings are spread over more new workers, so capital per worker barely rises. Close to 3% is the recent peak; the projection implies about 2.1%.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 140' role='img' aria-label='Fast population growth hits labour input and productivity'><rect class='bx' x='80' y='6' width='160' height='36' rx='4'/><text x='160' y='21' class='t-b' text-anchor='middle' style='font-size:10px'>≈ 3% a year</text><text x='160' y='34' text-anchor='middle' style='font-size:10px'>~4 children per woman</text><path class='ln-m' d='M130 42 L82 62'/><path class='ln-m' d='M85.6 57.2 L82 62 L88 62.8'/><path class='ln-w' d='M190 42 L238 62'/><path class='ln-w' d='M232 62.8 L238 62 L234.4 57.2'/><rect class='bx-m' x='4' y='64' width='150' height='70' rx='4'/><text x='79' y='83' class='t-b' text-anchor='middle' style='font-size:10px'>Labour input</text><text x='79' y='96' text-anchor='middle' style='font-size:10px'>more workers later</text><text x='79' y='109' text-anchor='middle' style='font-size:10px'>but dependents</text><text x='79' y='122' text-anchor='middle' style='font-size:10px'>stay high</text><rect class='bx-w' x='166' y='64' width='150' height='70' rx='4'/><text x='241' y='83' class='t-b' text-anchor='middle' style='font-size:10px'>Productivity</text><text x='241' y='96' text-anchor='middle' style='font-size:10px'>capital per worker</text><text x='241' y='109' text-anchor='middle' style='font-size:10px'>barely rises</text><text x='241' y='122' text-anchor='middle' style='font-size:10px'>few machines bought</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#c-model",
+      "label": "Two growth channels"
+     },
+     {
+      "href": "midterm-past-exams.html#practice",
+      "label": "Practice question"
+     }
+    ]
+   },
+   {
+    "id": "s07-density",
+    "type": "mean",
+    "page": 8,
+    "quote": "Rwanda (566 people per km²) and Burundi (533) are among Africa's densest countries and are low-income.",
+    "title": "Density is neither necessary nor sufficient",
+    "body_html": "<p>The densest countries here are poor and the sparsest are richer. Rwanda has about 140 times Botswana's density, yet it is low-income while Botswana is upper-middle-income. Sparse Canada and Australia are rich. One counterexample each way is enough to reject density as the most important reason.</p><div class='calc'>566 ÷ 4 ≈ 140</div>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 134' role='img' aria-label='People per square kilometre: Rwanda 566, Burundi 533, Botswana and Namibia 4'><text x='4' y='18' class='t-b' style='font-size:10px'>Rwanda</text><rect class='fl-w' x='66' y='8' width='141.5' height='13' rx='2'/><text x='211.5' y='18' style='font-size:10px'>566 · low income</text><text x='4' y='42' class='t-b' style='font-size:10px'>Burundi</text><rect class='fl-w' x='66' y='32' width='133.2' height='13' rx='2'/><text x='203.2' y='42' style='font-size:10px'>533 · low income</text><text x='4' y='66' class='t-b' style='font-size:10px'>Botswana</text><rect class='fl-a' x='66' y='56' width='1.5' height='13' rx='2'/><text x='71.5' y='66' style='font-size:10px'>4 · upper-middle</text><text x='4' y='90' class='t-b' style='font-size:10px'>Namibia</text><rect class='fl-a' x='66' y='80' width='1.5' height='13' rx='2'/><text x='71.5' y='90' style='font-size:10px'>4 · upper-middle</text><text x='4' y='110' style='font-size:10px'>people per km². Sparse Canada, Australia: rich</text><text x='4' y='126' class='t-b' style='font-size:10px'>566 ÷ 4 ≈ 140× the density, lower income</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#practice",
+      "label": "Practice question"
+     }
+    ]
+   },
+   {
+    "id": "s07-causality",
+    "type": "mean",
+    "page": 8,
+    "quote": "institutions, not density, made the difference",
+    "title": "Reversal of fortune: institutions are the root",
+    "body_html": "<p>Among former colonies, the places that were richest and densest in 1500 are relatively poor today. Density followed prosperity, and institutions decided which places stayed prosperous. This is the root cause argument of 2025 Q2: capital and people are proximate causes, and institutions decide whether anyone invests.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 134' role='img' aria-label='Richest densest places of 1500 are relatively poor today; institutions are the root cause'><rect class='bx-m' x='4' y='8' width='120' height='48' rx='4'/><text x='64' y='29' class='t-b' text-anchor='middle' style='font-size:10px'>1500</text><text x='64' y='42' text-anchor='middle' style='font-size:10px'>richest, densest</text><path class='ln-w flow' d='M128 32 L192 32'/><path class='ln-w' d='M186.8 35 L192 32 L186.8 29'/><rect class='bx-w' x='196' y='8' width='120' height='48' rx='4'/><text x='256' y='29' class='t-b' text-anchor='middle' style='font-size:10px'>today</text><text x='256' y='42' text-anchor='middle' style='font-size:10px'>relatively poor</text><text x='4' y='76' style='font-size:10px'>Former colonies. The cause: institutions,</text><text x='4' y='90' style='font-size:10px'>not density (Acemoglu, Johnson, Robinson)</text><rect class='bx' x='4' y='100' width='150' height='28' rx='4'/><text x='79' y='117.5' text-anchor='middle' style='font-size:10px'>proximate: capital</text><rect class='bx-a' x='166' y='100' width='150' height='28' rx='4'/><text x='241' y='117.5' class='t-b' text-anchor='middle' style='font-size:10px'>root: institutions</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#b-root",
+      "label": "Proximate vs root causes"
+     },
+     {
+      "href": "midterm-past-exams.html#c-inst",
+      "label": "Institutions"
+     }
+    ]
+   },
+   {
+    "id": "s07-labour",
+    "type": "watch",
+    "page": 8,
+    "quote": "Rapid population growth spreads capital across more workers",
+    "title": "More people is labour input, not productivity",
+    "body_html": "<p>This is the trap the practice question sets. More workers raise total GDP, but each one gets less capital unless investment keeps pace. Cheap, plentiful labour also gives firms little reason to buy machines. The dividend arrives only if fertility falls, so the working share rises.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 124' role='img' aria-label='Labour input versus productivity: what each delivers'><rect class='bx-m' x='4' y='8' width='150' height='108' rx='4'/><text x='79' y='26.5' class='t-b' text-anchor='middle' style='font-size:10px'>Labour input</text><text x='79' y='39.5' text-anchor='middle' style='font-size:10px'>more people</text><text x='79' y='52.5' text-anchor='middle' style='font-size:10px'>raises total GDP</text><text x='79' y='65.5' text-anchor='middle' style='font-size:10px'>GDP per person:</text><text x='79' y='78.5' text-anchor='middle' style='font-size:10px'>up once, only if</text><text x='79' y='91.5' text-anchor='middle' style='font-size:10px'>the working share</text><text x='79' y='104.5' text-anchor='middle' style='font-size:10px'>rises</text><rect class='bx-a' x='166' y='8' width='150' height='108' rx='4'/><text x='241' y='33' class='t-b' text-anchor='middle' style='font-size:10px'>Productivity</text><text x='241' y='46' text-anchor='middle' style='font-size:10px'>more per worker</text><text x='241' y='59' text-anchor='middle' style='font-size:10px'>raises GDP per</text><text x='241' y='72' text-anchor='middle' style='font-size:10px'>person every year</text><text x='241' y='85' text-anchor='middle' style='font-size:10px'>needs capital,</text><text x='241' y='98' text-anchor='middle' style='font-size:10px'>skills and ideas</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#b-percap",
+      "label": "GDP vs GDP per person"
+     },
+     {
+      "href": "midterm-past-exams.html#b-capdeep",
+      "label": "Capital deepening"
+     }
+    ]
+   },
+   {
+    "id": "s07-cities",
+    "type": "mean",
+    "page": 8,
+    "quote": "Africa is urbanizing without industrializing",
+    "title": "Cities without factories skip the productivity jump",
+    "body_html": "<p>Structural transformation pays because workers move into jobs with more capital, specialization and scale. In Mozambique farms hold 70% of jobs but make 25% of GDP, so a worker who leaves produces about seven times as much on average. Africa's cities are fed by resource exports, so the jobs that deliver that jump are scarce. 2025 Q4 wants the term structural transformation by name.</p><div class='calc'>farm 25 ÷ 70 ≈ 0.36 · non-farm 75 ÷ 30 = 2.5\n2.5 ÷ 0.36 ≈ 7</div>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 112' role='img' aria-label='Mozambique output per worker: farms 0.36, non-farm 2.5 of the average'><text x='4' y='12' class='t-s' style='font-size:10px'>Mozambique: output per worker vs average</text><text x='4' y='33' class='t-b' style='font-size:10px'>farms</text><rect class='bx-w' x='70' y='22' width='28.8' height='15' rx='2'/><text x='102' y='33' style='font-size:10px'>0.36 = 25% ÷ 70%</text><text x='4' y='57' class='t-b' style='font-size:10px'>non-farm</text><rect class='bx-a' x='70' y='46' width='200' height='15' rx='2'/><text x='78' y='57' style='font-size:10px'>75% ÷ 30%</text><text x='274' y='57' style='font-size:10px'>2.5</text><text x='4' y='84' class='t-b' style='font-size:10px'>leaving the farm: ≈ 7× the output</text><text x='4' y='102' class='t-w' style='font-size:10px'>only if productive city jobs exist</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#c-struct",
+      "label": "Structural transformation"
+     },
+     {
+      "href": "midterm-past-exams.html#y25q4",
+      "label": "2025 Q4"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s08",
+  "kind": "pdf",
+  "title": "Session 8 slides: Spiky Canada",
+  "short": "S8 slides",
+  "eyebrow": "Slides · Session 8 · Canada's productivity",
+  "sub": "Slides 2, 3, 22, 23, 26, 30 and 32",
+  "lede_html": "<p>Session 8's deck on Canada's economy and AI. The prep page's 2024 Q2b answer and its Canada section take their numbers from slides 3 and 30, and the key's list of causes (resources, competition, small market) maps onto the group slides. Most of these figures are newer than both past papers: cite them as current evidence and keep their years.</p>",
+  "pdf": "/Users/prag/Documents/PragPersonal/School/4505-Global-Macroeconomics-for-Managers/session-08/Lecture-Slides_08_Spiky-Canada.pdf",
+  "pdfHref": "../session-08/Lecture-Slides_08_Spiky-Canada.pdf",
+  "pages": [
+   2,
+   3,
+   22,
+   23,
+   26,
+   30,
+   32
+  ],
+  "pageLabel": "Slide",
+  "notes": [
+   {
+    "id": "s08-3i",
+    "type": "mean",
+    "page": 2,
+    "quote": "Canada should approach AI more like a middle-income country, absorbing and spreading the world's best technology, than like a frontier economy trying to invent it.",
+    "title": "Canada on the WDR staircase",
+    "body_html": "<p>The Session 8 op-ed borrows the WDR's 3i ladder. Its bet is that Canada's AI gains come from infusion: adopt the best technology and spread it across firms. This is the answer to Krugman turned on a rich country: you can grow by using what already exists.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 140' role='img' aria-label='WDR staircase with Canada&#x27;s AI bet on the infusion step'><rect class='bx' x='4' y='98' width='100' height='36' rx='4'/><text x='54' y='112' class='t-b' text-anchor='middle' style='font-size:10px'>Investment</text><text x='54' y='126' text-anchor='middle' style='font-size:10px'>low income</text><rect class='bx-a' x='110' y='66' width='100' height='68' rx='4'/><text x='160' y='80' class='t-b' text-anchor='middle' style='font-size:10px'>+ Infusion</text><text x='160' y='94' text-anchor='middle' style='font-size:10px'>lower-middle</text><rect class='bx' x='216' y='34' width='100' height='100' rx='4'/><text x='266' y='48' class='t-b' text-anchor='middle' style='font-size:10px'>+ Innovation</text><text x='266' y='62' text-anchor='middle' style='font-size:10px'>upper-middle</text><text x='160' y='44' class='t-a' text-anchor='middle' style='font-size:10px'>op-ed&#x27;s bet</text><text x='160' y='58' class='t-a' text-anchor='middle' style='font-size:10px'>for Canada</text><text x='266' y='26' text-anchor='middle' style='font-size:10px'>frontier: invent</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#c-canada",
+      "label": "Canada's growth"
+     },
+     {
+      "href": "midterm-past-exams.html#b-tfp",
+      "label": "Innovation (TFP)"
+     }
+    ]
+   },
+   {
+    "id": "s08-54",
+    "type": "mean",
+    "page": 3,
+    "quote": "invested per worker for every U.S. dollar, 2024",
+    "rect": [
+     6.6,
+     27.4,
+     24.6,
+     28.4
+    ],
+    "show_quote": "54¢ invested per worker for every U.S. dollar, 2024. Down from 87¢ in 2014.",
+    "title": "54 cents per US dollar of investment per worker",
+    "body_html": "<p>For every dollar a US business invests per worker, a Canadian business invests <span class='num'>54¢</span>, down from <span class='num'>87¢</span> in 2014. The ratio fell about 38% in a decade. Less capital per worker means slower productivity growth. The prep page's 2024 Q2b answer names this as its first cause.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 112' role='img' aria-label='Investment per worker per US dollar: US 1.00, Canada 87 cents in 2014, 54 cents in 2024'><text x='4' y='19' class='t-b' style='font-size:10px'>US</text><rect class='fl-g' x='84' y='8' width='190' height='14' rx='2'/><text x='278' y='19' style='font-size:10px'>$1.00</text><text x='4' y='43' class='t-b' style='font-size:10px'>Canada 2014</text><rect class='bx-m' x='84' y='32' width='165.3' height='14' rx='2'/><text x='253.3' y='43' style='font-size:10px'>87¢</text><text x='4' y='67' class='t-b' style='font-size:10px'>Canada 2024</text><rect class='fl-w grow' x='84' y='56' width='102.6' height='14' rx='2'/><text x='190.6' y='67' style='font-size:10px'>54¢</text><text x='4' y='90' style='font-size:10px'>invested per worker, per US dollar</text><text x='4' y='106' class='t-b' style='font-size:10px'>54 ÷ 87 ≈ 0.62: down about 38% in 10 years</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#y24q2b",
+      "label": "2024 Q2b"
+     },
+     {
+      "href": "midterm-past-exams.html#c-canada",
+      "label": "Canada's growth"
+     }
+    ]
+   },
+   {
+    "id": "s08-minus9",
+    "type": "watch",
+    "page": 3,
+    "quote": "capital per worker since 2015",
+    "rect": [
+     37.4,
+     27.4,
+     24.8,
+     31.4
+    ],
+    "show_quote": "−9% capital per worker since 2015. Machinery and equipment per worker are down about 20%.",
+    "title": "−9% means capital deepening ran in reverse",
+    "body_html": "<p>This number is not a ratio to the US. Each Canadian worker has about <span class='num'>9%</span> less capital than in 2015, and about 20% less machinery and equipment. Capital per worker fell while the population grew fast, so productivity lost its main lever. Do not mix it up with the 54¢ next to it.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 112' role='img' aria-label='Canada index 2015 equals 100: capital per worker 91, machinery and equipment about 80'><text x='4' y='12' class='t-s' style='font-size:10px'>Canada only, 2015 = 100, latest 2025</text><text x='4' y='31' class='t-b' style='font-size:10px'>2015 level</text><rect class='fl-g' x='96' y='20' width='180' height='14' rx='2'/><text x='280' y='31' style='font-size:10px'>100</text><text x='4' y='55' class='t-b' style='font-size:10px'>capital/worker</text><rect class='fl-w' x='96' y='44' width='163.8' height='14' rx='2'/><text x='263.8' y='55' style='font-size:10px'>91</text><text x='4' y='79' class='t-b' style='font-size:10px'>M&amp;E/worker</text><rect class='fl-w' x='96' y='68' width='144' height='14' rx='2'/><text x='244' y='79' style='font-size:10px'>≈ 80</text><text x='4' y='104' class='t-w' style='font-size:10px'>a fall in level, not a ratio to the US</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#b-capdeep",
+      "label": "Capital deepening"
+     },
+     {
+      "href": "midterm-past-exams.html#c-canada",
+      "label": "Canada's growth"
+     }
+    ]
+   },
+   {
+    "id": "s08-73",
+    "type": "watch",
+    "page": 3,
+    "quote": "business productivity vs the U.S., 2019",
+    "rect": [
+     68.0,
+     27.4,
+     25.0,
+     28.4
+    ],
+    "show_quote": "73% business productivity vs the U.S., 2019. Down from 83% in 2002.",
+    "title": "73% is a 2019 figure",
+    "body_html": "<p>Business productivity slid from <span class='num'>83%</span> of the US level in 2002 to <span class='num'>73%</span> in 2019. The gap widened from 17 to 27 points over two decades, which is the 2-mark point in 2024 Q2b. The latest year here is 2019, so write by 2019, not today.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 126' role='img' aria-label='Business productivity versus the US: 83 percent in 2002, 73 percent in 2019'><text x='4' y='24' class='t-b' style='font-size:10px'>US 100%</text><path class='ln dash' d='M52 20 H306'/><path class='ln-m dash' d='M60 20 V71'/><path class='ln-m dash' d='M260 20 V101'/><path class='ln-w' d='M60 71 L260 101'/><circle class='fl-w' cx='60' cy='71' r='4'/><circle class='fl-w' cx='260' cy='101' r='4'/><text x='66' y='50' class='t-m' style='font-size:10px'>17 pts</text><text x='266' y='64' class='t-m' style='font-size:10px'>27 pts</text><text x='60' y='88' class='t-b' text-anchor='middle' style='font-size:10px'>83%</text><text x='268' y='105' class='t-b' style='font-size:10px'>73%</text><text x='60' y='120' text-anchor='middle' style='font-size:10px'>2002</text><text x='260' y='120' text-anchor='middle' style='font-size:10px'>2019</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#y24q2b",
+      "label": "2024 Q2b"
+     },
+     {
+      "href": "midterm-past-exams.html#b-prod",
+      "label": "Productivity"
+     }
+    ]
+   },
+   {
+    "id": "s08-scale",
+    "type": "mean",
+    "page": 22,
+    "quote": "points of the Canada–U.S. productivity gap due to firm-size mix",
+    "rect": [
+     36.6,
+     58.2,
+     26.2,
+     20.0
+    ],
+    "show_quote": "6 of 27 points of the Canada–U.S. productivity gap due to firm-size mix. 2019. Canada was at 73% of U.S. productivity.",
+    "title": "Small firms explain 6 of the 27 points",
+    "body_html": "<p>In 2019 Canada was at 73% of US productivity, a 27-point gap. Canada's heavier mix of small firms explains <span class='num'>6</span> of those points. Small Canadian firms reach only 70% of their US peers, large ones 87%. This is the key's small market cause: a small home market limits returns to scale.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 108' role='img' aria-label='The 27-point productivity gap: 6 points from firm-size mix'><text x='4' y='14' style='font-size:10px'>gap to US productivity, 2019: 27 points</text><rect class='bx-m' x='4' y='22' width='60' height='24' rx='3'/><text x='34' y='38' class='t-b' text-anchor='middle'>6</text><rect class='fl-g' x='64' y='22' width='210' height='24' rx='3'/><text x='169' y='38' text-anchor='middle' style='font-size:10px'>21 other causes</text><text x='278' y='38' style='font-size:10px'>= 27</text><text x='4' y='64' class='t-m' style='font-size:10px'>6 points: firm-size mix (small firms)</text><text x='4' y='82' style='font-size:10px'>small firms: 70% of US peers</text><text x='4' y='98' style='font-size:10px'>large firms: 87% of US peers</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#y24q2b",
+      "label": "2024 Q2b"
+     },
+     {
+      "href": "midterm-past-exams.html#c-canada",
+      "label": "Canada's growth"
+     }
+    ]
+   },
+   {
+    "id": "s08-resources",
+    "type": "mean",
+    "page": 23,
+    "quote": "of merchandise exports are natural-resource products",
+    "rect": [
+     6.2,
+     33.0,
+     26.4,
+     20.0
+    ],
+    "show_quote": "53% of merchandise exports are natural-resource products. 2024, including energy. 75% of them go to the U.S.",
+    "title": "A resource economy: high productivity, slow growth",
+    "body_html": "<p>Natural-resource products make up <span class='num'>53%</span> of merchandise exports, and 75% of them go to the US. The 2024 Q2b key lists over-exposure to resources as a cause: these industries are highly productive, but their productivity grows slowly. Their prices also swing hard: Canada's commodity price index fell 42% from 2014 to 2016.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 116' role='img' aria-label='53 percent of merchandise exports are natural-resource products'><text x='4' y='14' class='t-s' style='font-size:10px'>Canada&#x27;s merchandise exports, 2024</text><rect class='bx-m' x='4' y='22' width='159' height='22' rx='3'/><text x='83.5' y='37' class='t-b' text-anchor='middle' style='font-size:10px'>53% resources</text><rect class='fl-g' x='163' y='22' width='141' height='22' rx='3'/><text x='233.5' y='37' text-anchor='middle' style='font-size:10px'>47% other</text><text x='4' y='62' style='font-size:10px'>75% of resource exports go to the US</text><rect class='bx-a' x='4' y='72' width='150' height='38' rx='4'/><text x='79' y='88' class='t-b' text-anchor='middle' style='font-size:10px'>productivity level</text><text x='79' y='101' text-anchor='middle' style='font-size:10px'>high</text><rect class='bx-w' x='166' y='72' width='150' height='38' rx='4'/><text x='241' y='88' class='t-b' text-anchor='middle' style='font-size:10px'>productivity growth</text><text x='241' y='101' text-anchor='middle' style='font-size:10px'>slow</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#y24q2b",
+      "label": "2024 Q2b"
+     },
+     {
+      "href": "midterm-past-exams.html#b-res",
+      "label": "Natural resources"
+     }
+    ]
+   },
+   {
+    "id": "s08-banks",
+    "type": "mean",
+    "page": 26,
+    "quote": "of banking assets are held by the six largest banks",
+    "rect": [
+     6.2,
+     33.0,
+     25.2,
+     17.6
+    ],
+    "show_quote": "94% of banking assets are held by the six largest banks",
+    "title": "Lack of competition, in numbers",
+    "body_html": "<p>Six banks hold <span class='num'>94%</span> of banking assets and three carriers have 86% of mobile subscribers. Canada ranks 26th of 38 on the OECD's product-market regulation index, down from 10th in 1998: its rules now restrict competition more than most rich countries'. Firms sheltered from rivals feel little pressure to invest or adopt. This is the lack of competition cause in the 2024 Q2b key.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 130' role='img' aria-label='Concentration: 94 percent of bank assets, 86 percent of mobile subscribers; OECD rank 10th to 26th of 38'><text x='4' y='19' class='t-b' style='font-size:10px'>6 banks</text><rect class='fl-w' x='72' y='8' width='131.6' height='14' rx='2'/><text x='207.6' y='19' style='font-size:10px'>94% of bank assets</text><text x='4' y='43' class='t-b' style='font-size:10px'>3 carriers</text><rect class='fl-w' x='72' y='32' width='120.4' height='14' rx='2'/><text x='196.4' y='43' style='font-size:10px'>86% of subscribers</text><text x='4' y='70' class='t-s' style='font-size:10px'>OECD product-market regulation rank, of 38</text><path class='ln' d='M10 96 H310'/><path class='ln-w' d='M89 86 L206.7 86'/><path class='ln-w' d='M201.5 89 L206.7 86 L201.5 83'/><circle class='fl-a' cx='83' cy='96' r='4'/><circle class='fl-w' cx='212.7' cy='96' r='4'/><text x='83' y='112' text-anchor='middle' style='font-size:10px'>1998: 10th</text><text x='212.7' y='112' class='t-w' text-anchor='middle' style='font-size:10px'>2023: 26th</text><text x='310' y='126' class='t-s' text-anchor='end' style='font-size:10px'>more restrictive →</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#y24q2b",
+      "label": "2024 Q2b"
+     },
+     {
+      "href": "midterm-past-exams.html#c-canada",
+      "label": "Canada's growth"
+     }
+    ]
+   },
+   {
+    "id": "s08-pop",
+    "type": "watch",
+    "page": 30,
+    "quote": "population growth in 2023",
+    "rect": [
+     6.2,
+     33.0,
+     22.2,
+     17.4
+    ],
+    "show_quote": "3.2% population growth in 2023. The fastest since 1957. 98% came from international migration.",
+    "title": "3.2%: two framings, quote one",
+    "body_html": "<p>This slide says <span class='num'>3.2%</span> in 2023, the fastest since 1957, with 98% from international migration. Session 2 frames the same 3.2% as 2023 to 24, the fastest in the G7. The prep page says to quote one framing, and its answer uses this one. Either way it is the yes in 2024 Q2b: more people, more workers, more total GDP.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 112' role='img' aria-label='Two framings of 3.2 percent population growth'><rect class='bx-a' x='4' y='8' width='150' height='72' rx='4'/><text x='79' y='28' class='t-b' text-anchor='middle' style='font-size:10px'>Session 8</text><text x='79' y='41' text-anchor='middle' style='font-size:10px'>3.2% in 2023</text><text x='79' y='54' text-anchor='middle' style='font-size:10px'>fastest since 1957</text><text x='79' y='67' text-anchor='middle' style='font-size:10px'>98% from migration</text><rect class='bx' x='166' y='8' width='150' height='72' rx='4'/><text x='241' y='34.5' class='t-b' text-anchor='middle' style='font-size:10px'>Session 2</text><text x='241' y='47.5' text-anchor='middle' style='font-size:10px'>3.2% in 2023 to 24</text><text x='241' y='60.5' text-anchor='middle' style='font-size:10px'>fastest in the G7</text><text x='160' y='98' class='t-a' text-anchor='middle' style='font-size:10px'>Prep page answer: Session 8 framing</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#c-canada",
+      "label": "Canada's growth"
+     },
+     {
+      "href": "midterm-past-exams.html#b-labour",
+      "label": "Labour input"
+     }
+    ]
+   },
+   {
+    "id": "s08-gdppp",
+    "type": "mean",
+    "page": 30,
+    "quote": "change in real GDP per person, 2023 · 2024",
+    "rect": [
+     66.9,
+     33.4,
+     26.4,
+     19.4
+    ],
+    "show_quote": "−1.3% · −1.4% change in real GDP per person, 2023 · 2024. As first published. Total real GDP grew in both years.",
+    "title": "The but: GDP per person fell in both years",
+    "body_html": "<p>Total real GDP grew, but real GDP per person fell <span class='num'>1.3%</span> in 2023 and <span class='num'>1.4%</span> in 2024, as first published. This is the 3-mark but in 2024 Q2b: growth came almost entirely from labour force growth, and living standards follow GDP per person. Put the two numbers side by side, as the prep page's answer does.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 120' role='img' aria-label='Population plus 3.2 percent in 2023; real GDP per person minus 1.3 in 2023 and minus 1.4 in 2024'><text x='4' y='12' class='t-s' style='font-size:10px'>% change, as first published</text><path class='ln' d='M190 18 V94'/><text x='4' y='34' class='t-b' style='font-size:10px'>Population 2023</text><rect class='fl-a' x='190' y='22' width='80' height='16' rx='2'/><text x='274' y='34' class='t-b' style='font-size:10px'>+3.2%</text><text x='4' y='60' class='t-b' style='font-size:10px'>Per person 2023</text><rect class='fl-w' x='157.5' y='48' width='32.5' height='16' rx='2'/><text x='153' y='60' class='t-w' text-anchor='end' style='font-size:10px'>−1.3%</text><text x='4' y='86' class='t-b' style='font-size:10px'>Per person 2024</text><rect class='fl-w' x='155' y='74' width='35' height='16' rx='2'/><text x='151' y='86' class='t-w' text-anchor='end' style='font-size:10px'>−1.4%</text><text x='4' y='112' style='font-size:10px'>total real GDP grew both years: more people</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#y24q2b",
+      "label": "2024 Q2b"
+     },
+     {
+      "href": "midterm-past-exams.html#b-percap",
+      "label": "GDP vs GDP per person"
+     }
+    ]
+   },
+   {
+    "id": "s08-slow",
+    "type": "mean",
+    "page": 30,
+    "quote": "population growth, July 2025 to July 2026",
+    "rect": [
+     36.6,
+     33.0,
+     25.8,
+     17.6
+    ],
+    "show_quote": "0.5% population growth, July 2025 to July 2026. The lowest July-to-July rate in over a century.",
+    "title": "Now the labour input engine has stalled",
+    "body_html": "<p>Population growth fell to <span class='num'>0.5%</span>, the lowest July-to-July rate in over a century. With labour input slowing, growth in GDP per person has to come from productivity. This is the trilemma's housing plus productivity corner in practice: less immigration eases housing demand, but the workforce ages faster. Both past papers predate these figures.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 100' role='img' aria-label='Population growth 3.2 percent in 2023 versus 0.5 percent July 2025 to July 2026'><text x='4' y='19' class='t-b' style='font-size:10px'>2023</text><rect class='fl-a' x='78' y='8' width='160' height='14' rx='2'/><text x='242' y='19' style='font-size:10px'>3.2%</text><text x='4' y='43' class='t-b' style='font-size:10px'>Jul 2025-26</text><rect class='fl-w' x='78' y='32' width='25' height='14' rx='2'/><text x='107' y='43' style='font-size:10px'>0.5%: lowest in 100+ years</text><text x='4' y='72' style='font-size:10px'>labour input slows, so per-person growth</text><text x='4' y='88' class='t-b' style='font-size:10px'>must come from productivity</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#c-trilemma",
+      "label": "Trilemma logic"
+     },
+     {
+      "href": "midterm-past-exams.html#y24q1a",
+      "label": "2024 Q1a"
+     }
+    ]
+   },
+   {
+    "id": "s08-housing",
+    "type": "mean",
+    "page": 32,
+    "quote": "residential investment as a share of GDP: Canada vs U.S.",
+    "rect": [
+     6.2,
+     33.4,
+     25.4,
+     17.4
+    ],
+    "show_quote": "8.3% vs 4.2% residential investment as a share of GDP: Canada vs U.S. Average, 2018–2023.",
+    "title": "Canada pours capital into housing",
+    "body_html": "<p>Canada puts <span class='num'>8.3%</span> of GDP into residential investment, about twice the US's <span class='num'>4.2%</span> (2018 to 2023 average). The 2024 Q1a key calls residential construction a chronically low and declining productivity sector. Every dollar and builder used on housing is one not used to raise productivity, which is the hinge of the trilemma.</p>",
+    "diagram_svg": "<svg class='dg' viewBox='0 0 320 104' role='img' aria-label='Residential investment 8.3 percent of GDP in Canada versus 4.2 in the US'><text x='4' y='12' class='t-s' style='font-size:10px'>residential investment, % of GDP, 2018-23</text><text x='4' y='31' class='t-b' style='font-size:10px'>Canada</text><rect class='fl-w grow' x='60' y='20' width='207.5' height='14' rx='2'/><text x='271.5' y='31' style='font-size:10px'>8.3%</text><text x='4' y='55' class='t-b' style='font-size:10px'>US</text><rect class='fl-g' x='60' y='44' width='105' height='14' rx='2'/><text x='169' y='55' style='font-size:10px'>4.2%</text><text x='4' y='82' class='t-b' style='font-size:10px'>8.3 ÷ 4.2 ≈ 2×</text><text x='4' y='98' class='t-w' style='font-size:10px'>capital into a low-productivity sector</text></svg>",
+    "see": [
+     {
+      "href": "midterm-past-exams.html#c-trilemma",
+      "label": "Trilemma logic"
+     },
+     {
+      "href": "midterm-past-exams.html#y24q1a",
+      "label": "2024 Q1a"
+     }
+    ]
+   }
+  ]
+ }
+]

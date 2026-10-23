@@ -1,0 +1,1112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="prep-file" content="4505-Global-Macroeconomics-for-Managers/notes/session-05-growth-model-in-action.html">
+<meta name="prep-session" content="active">
+<title>The Growth Model in Action</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  color-scheme:light;
+  --paper:#FFFFFF; --surface:#FFFFFF; --surface-2:#F3F6F3; --surface-3:#E9EFEA;
+  --ink:#141F1C; --ink-2:#4C5A55; --ink-3:#7A8681;
+  --rule:#E0E6E1; --rule-strong:#A8B5AE;
+  --accent:#1B6B57; --accent-2:#2E9376; --accent-soft:#E2F0E9;
+  --credit:#A33A2C; --credit-soft:#FAE7E2;
+  --flag:#8A6A12; --flag-soft:#FAF2DC;
+  --shadow:0 1px 2px rgba(20,31,28,.05), 0 12px 28px -22px rgba(20,31,28,.5);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Public Sans","Helvetica Neue",Arial,sans-serif;font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Bitter,Georgia,serif;text-wrap:balance;margin:0;line-height:1.15}
+p{margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+.wrap{max-width:1400px;margin:0;padding-inline:34px}
+
+/* ---------- masthead ---------- */
+header{border-bottom:1px solid var(--rule)}
+.hd{max-width:1330px;padding-block:38px 28px;display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between;align-items:flex-end}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(30px,5.5vw,46px);font-weight:700;letter-spacing:-.025em;margin-top:10px}
+.gist{color:var(--ink-2);max-width:52ch;margin-top:10px}
+.hd .meta{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-2);border-left:2px solid var(--accent);padding-left:14px;line-height:2}
+.hd .meta b{color:var(--ink);font-weight:600}
+
+/* ---------- left contents rail ---------- */
+.cols{display:grid;grid-template-columns:236px minmax(0,1fr);gap:54px;align-items:start}
+nav.toc{position:sticky;top:22px;padding-block:34px 0;font-size:13.5px;max-height:calc(100vh - 44px);overflow-y:auto}
+nav.toc .toc-h{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-3);padding-bottom:9px;border-bottom:1px solid var(--rule);margin-bottom:8px}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px}
+nav.toc a{display:flex;gap:9px;align-items:baseline;padding:5px 10px;border-radius:6px;color:var(--ink-2);
+  text-decoration:none;border-left:2px solid transparent;line-height:1.35}
+nav.toc a .n{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3);min-width:15px}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{color:var(--accent);border-left-color:var(--accent);background:var(--accent-soft);font-weight:600}
+nav.toc a.on .n{color:var(--accent)}
+nav.toc a .io{font-size:10px;color:var(--accent);margin-left:auto;opacity:.75}
+nav.toc .grp{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-3);padding:16px 10px 5px}
+nav.toc .grp:first-child{padding-top:2px}
+
+main{display:flex;flex-direction:column;gap:26px;padding-block:34px 80px;min-width:0;max-width:1020px}
+
+/* ---------- plain-English opener ---------- */
+.oneline{display:flex;gap:14px;align-items:flex-start;background:var(--accent-soft);border-radius:10px;
+  padding:14px 18px;font-size:16px;color:var(--ink);max-width:76ch}
+.oneline .tag{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);white-space:nowrap;padding-top:5px}
+.oneline b{font-weight:600}
+
+/* ---------- group divider ---------- */
+.group{display:flex;align-items:center;gap:16px;margin-top:34px}
+.group:first-child{margin-top:0}
+.group h2{font-size:13px;font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent);border:none;padding:0;white-space:nowrap}
+.group .ln{flex:1;height:1px;background:var(--rule)}
+.group .ct{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+
+section{display:flex;flex-direction:column;gap:18px;scroll-margin-top:64px}
+section>h2{font-size:clamp(21px,3.2vw,27px);font-weight:600;letter-spacing:-.015em;display:flex;gap:12px;align-items:baseline}
+section>h2 .no{font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--accent);font-weight:500}
+h3{font-size:17px;font-weight:600;margin-top:8px}
+.lede{color:var(--ink-2);max-width:72ch;font-size:16px}
+.lede strong{color:var(--ink);font-weight:600}
+
+
+/* ---------- flow diagrams: CSS boxes, NOT SVG text ----------
+   Text wraps and boxes grow, so a long label can never overflow.
+   Use these for every box-and-arrow / one-to-many / spectrum diagram.
+   Reserve SVG for real charts only (bars, lines, curves).           */
+.flow{display:grid;gap:14px;align-items:center}
+.flow.f5{grid-template-columns:minmax(0,1.05fr) 22px minmax(0,.92fr) 58px minmax(0,1.2fr)}
+.flow.f3{grid-template-columns:minmax(0,.8fr) 22px minmax(0,1.25fr)}
+.fstack{display:flex;flex-direction:column;gap:10px;min-width:0}
+.fnode{border:1.5px solid var(--rule-strong);border-radius:11px;padding:11px 14px;background:var(--surface);
+  display:flex;flex-direction:column;gap:3px;min-width:0}
+.fnode b{font-size:14.5px;font-weight:600;line-height:1.3}
+.fnode span{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);line-height:1.55;overflow-wrap:anywhere}
+.fnode.acc{background:var(--accent-soft);border-color:var(--accent)}
+.fnode.acc b,.fnode.acc span{color:var(--accent)}
+.fnode.bad{background:var(--credit-soft);border-color:var(--credit)}
+.fnode.bad b,.fnode.bad span{color:var(--credit)}
+.fnode.flg{background:var(--flag-soft);border-color:var(--flag);text-align:center}
+.fnode.flg b,.fnode.flg span{color:var(--flag)}
+.fnode.mute{border-style:dashed;background:var(--surface-3)}
+.farr{color:var(--rule-strong);text-align:center;line-height:1;font-family:"IBM Plex Mono",monospace}
+.farr .ch{display:block;font-size:20px;line-height:1}
+.farr i{font-style:normal;display:block;font-size:9px;letter-spacing:.06em;color:var(--ink-3);margin-top:5px;text-transform:uppercase;white-space:nowrap}
+
+/* spectrum: ordered scale with a hard line somewhere in it */
+.spec{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px}
+.spec .sn{border:1.5px solid var(--rule-strong);border-radius:11px;padding:11px 13px;background:var(--surface);min-width:0}
+.spec .sn b{display:block;font-size:14.5px;font-weight:600;margin-bottom:3px}
+.spec .sn span{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);line-height:1.5;display:block}
+.spec .sn.ok{background:var(--accent-soft);border-color:var(--accent)}
+.spec .sn.ok b,.spec .sn.ok span{color:var(--accent)}
+.spec .sn.no{background:var(--credit-soft);border-color:var(--credit)}
+.spec .sn.no b,.spec .sn.no span{color:var(--credit)}
+.specline{grid-column:1/-1;display:flex;align-items:center;gap:12px;margin-top:2px}
+.specline .lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--credit);white-space:nowrap}
+.specline .rule{flex:1;height:0;border-top:2px dashed var(--credit)}
+
+/* horizontal labelled bars */
+.bars{display:flex;flex-direction:column;gap:11px}
+.bar{display:grid;grid-template-columns:132px minmax(0,1fr);gap:14px;align-items:center}
+.bar .bl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);text-align:right}
+.bar .bt{display:flex;align-items:center;gap:10px;min-width:0}
+.bar .bf{height:20px;border-radius:4px;flex:none}
+.bar .bc{font-size:13px;color:var(--ink-2);min-width:0;overflow-wrap:anywhere}
+.bar .bf.hi{background:var(--credit-soft);border:1.2px solid var(--credit)}
+.bar .bf.md{background:var(--flag-soft);border:1.2px solid var(--flag)}
+.bar .bf.lo{background:var(--accent-soft);border:1.2px solid var(--accent)}
+
+/* two-ended scales: where two things sit on one axis */
+.scales{display:flex;flex-direction:column;gap:13px}
+.scale{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;align-items:center}
+.scale .sl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);text-align:right}
+.scale .tr{position:relative;height:34px}
+.scale .tr .ln{position:absolute;top:22px;left:0;right:0;height:0;border-top:1.5px solid var(--rule-strong)}
+.scale .tr .e{position:absolute;top:0;font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3)}
+.scale .tr .e.l{left:0} .scale .tr .e.r{right:0}
+.scale .tr .dot{position:absolute;top:15px;width:15px;height:15px;border-radius:50%;transform:translateX(-50%)}
+.scale .tr .dot.s{background:var(--accent-soft);border:2px solid var(--accent)}
+.scale .tr .dot.b{background:var(--credit-soft);border:2px solid var(--credit)}
+.legend{display:flex;gap:20px;flex-wrap:wrap;align-items:center;margin-top:4px;font-family:"IBM Plex Mono",monospace;font-size:11px}
+.legend i{font-style:normal;display:inline-flex;align-items:center;gap:7px}
+.legend .dot{width:13px;height:13px;border-radius:50%;display:inline-block}
+.legend .dot.s{background:var(--accent-soft);border:2px solid var(--accent)}
+.legend .dot.b{background:var(--credit-soft);border:2px solid var(--credit)}
+
+
+/* ---------- stat strip: headline numbers, rendered not typed ---------- */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;max-width:1020px}
+.stat{border-top:3px solid var(--accent);padding-top:9px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.stat.b{border-top-color:var(--credit)} .stat.c{border-top-color:var(--flag)} .stat.m{border-top-color:var(--rule-strong)}
+.stat .k{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.stat .v{font-family:Bitter,serif;font-size:29px;font-weight:700;line-height:1.05;font-variant-numeric:tabular-nums;color:var(--accent)}
+.stat.b .v{color:var(--credit)} .stat.c .v{color:var(--flag)} .stat.m .v{color:var(--ink)}
+.stat .s{font-size:12.5px;color:var(--ink-2);overflow-wrap:anywhere}
+
+/* ---------- tug of war: two opposed forces, net position ---------- */
+.tug{display:flex;flex-direction:column;gap:9px;max-width:1020px}
+.tug .row{display:grid;grid-template-columns:minmax(0,1fr) 300px minmax(0,1fr);gap:12px;align-items:center}
+.tug .lb{font-size:13.5px;color:var(--ink-2);min-width:0;overflow-wrap:anywhere}
+.tug .lb.l{text-align:right}
+.tug .mid{height:22px;position:relative;border-radius:4px;background:var(--surface-3);overflow:hidden}
+.tug .mid i{position:absolute;top:0;bottom:0;display:block;transition:width .9s cubic-bezier(.22,1,.36,1)}
+.tug .mid i.l{right:50%;background:var(--credit-soft);border-right:2px solid var(--credit)}
+.tug .mid i.r{left:50%;background:var(--accent-soft);border-left:2px solid var(--accent)}
+.tug .net{display:grid;grid-template-columns:minmax(0,1fr) 300px minmax(0,1fr);gap:12px;align-items:center;
+  border-top:1px solid var(--rule-strong);padding-top:10px;margin-top:3px}
+.tug .net .mid{height:30px;background:transparent;display:flex;align-items:center;justify-content:center;
+  font-family:Bitter,serif;font-weight:700;font-size:17px}
+
+/* ---------- scorecard: claim, two sides, verdict ---------- */
+.sc{display:flex;flex-direction:column;max-width:1020px;border:1px solid var(--rule);border-radius:12px;overflow:hidden}
+.scrow{display:grid;grid-template-columns:150px minmax(0,1fr) 122px;gap:0;border-top:1px solid var(--rule)}
+.scrow:first-child{border-top:none}
+.scrow .cl{padding:11px 14px;font-size:14px;font-weight:600;background:var(--surface-2);min-width:0;overflow-wrap:anywhere}
+.scrow .sides{display:grid;grid-template-columns:1fr 1fr;gap:0;min-width:0}
+.scrow .sd{padding:11px 14px;font-size:13px;color:var(--ink-2);min-width:0;overflow-wrap:anywhere;border-left:1px solid var(--rule)}
+.scrow .sd b{color:var(--ink)}
+.scrow .sd.a{background:color-mix(in srgb,var(--accent-soft) 45%,transparent)}
+.scrow .sd.b{background:color-mix(in srgb,var(--credit-soft) 45%,transparent)}
+.scrow .vd{padding:11px 12px;border-left:1px solid var(--rule);font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;text-align:center}
+.scrow .vd.a{color:var(--accent);background:var(--accent-soft)}
+.scrow .vd.b{color:var(--credit);background:var(--credit-soft)}
+.scrow .vd.d{color:var(--ink-3);background:var(--surface-2)}
+.scrow.sch .cl,.scrow.sch .sd,.scrow.sch .vd{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-3);font-weight:500;background:var(--surface-2);padding-block:8px}
+
+/* ---------- motion: meaning only, always from a visible rest state ---------- */
+.rv{opacity:1;transform:none;transition:opacity .5s ease,transform .5s cubic-bezier(.22,1,.36,1)}
+.js .rv:not(.in){opacity:0;transform:translateY(8px)}
+.js .bars .bf{width:0!important;transition:width .9s cubic-bezier(.22,1,.36,1)}
+.js .rv.in .bars .bf,.js .bars.in .bf{width:var(--w)!important}
+@media (prefers-reduced-motion:reduce){
+  .js .rv:not(.in){opacity:1;transform:none}
+  .js .bars .bf{width:var(--w)!important;transition:none}
+  .tug .mid i{transition:none}
+}
+
+/* ---------- diagram frame ---------- */
+figure{margin:0;display:flex;flex-direction:column;gap:10px;max-width:1020px}
+.dg{background:var(--surface-2);border:1px solid var(--rule);border-radius:14px;padding:24px}
+.dg.pad0{padding:18px}
+figcaption{color:var(--ink-3);font-size:13.5px;max-width:70ch}
+svg.d{width:100%;height:auto;display:block;overflow:visible}
+.d-box{fill:var(--surface);stroke:var(--rule-strong);stroke-width:1.5}
+.d-box.acc{fill:var(--accent-soft);stroke:var(--accent)}
+.d-box.bad{fill:var(--credit-soft);stroke:var(--credit)}
+.d-box.mute{fill:var(--surface-3);stroke:var(--rule-strong);stroke-dasharray:5 4}
+.d-t{font-family:"Public Sans",sans-serif;font-size:15px;font-weight:600;fill:var(--ink)}
+.d-t.t2{font-size:13.5px}
+.d-s{font-family:"IBM Plex Mono",monospace;font-size:11.5px;fill:var(--ink-3)}
+.d-lab{font-family:"IBM Plex Mono",monospace;font-size:11.5px;fill:var(--ink-2)}
+.d-link{fill:none;stroke:var(--rule-strong);stroke-width:1.6}
+.d-link.acc{stroke:var(--accent)}
+.d-link.bad{stroke:var(--credit)}
+
+/* ---------- interactive shell ---------- */
+.ia{max-width:1020px;background:var(--surface);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.ia-top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;
+  padding:12px 18px;border-bottom:1px solid var(--rule);background:var(--surface-2)}
+.ia-top .ttl{font-size:14px;font-weight:600}
+.ia-top .hint{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.ia-body{padding:20px 18px}
+
+.seg{display:inline-flex;border:1px solid var(--rule-strong);border-radius:8px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:13px;font-weight:500;cursor:pointer;border:0;background:transparent;
+  color:var(--ink-2);padding:6px 14px;border-right:1px solid var(--rule)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--accent);color:#fff;font-weight:600}
+.seg button:hover:not([aria-pressed="true"]){background:var(--accent-soft);color:var(--accent)}
+
+.slider{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.slider label{font-size:13.5px;color:var(--ink-2);min-width:130px}
+.slider input[type=range]{flex:1;min-width:180px;accent-color:var(--accent);height:22px}
+.slider .val{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:14px;
+  font-weight:600;min-width:96px;text-align:right;color:var(--ink)}
+
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:14px;margin-top:16px}
+.kpi{border-top:2px solid var(--rule-strong);padding-top:7px}
+.kpi.on{border-top-color:var(--accent)}
+.kpi.warn{border-top-color:var(--credit)}
+.kpi .k{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.kpi .v{font-family:Bitter,serif;font-size:21px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.25}
+.kpi.on .v{color:var(--accent)} .kpi.warn .v{color:var(--credit)}
+.kpi .s{font-size:12.5px;color:var(--ink-2)}
+
+/* ---------- example strip ---------- */
+.ex{max-width:1020px;border:1px solid var(--rule);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;
+  padding:14px 18px;background:var(--surface);font-size:15px;color:var(--ink-2);display:flex;flex-direction:column;gap:7px}
+.ex .lb{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.ex strong{color:var(--ink);font-weight:600}
+.calc-line{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink);
+  background:var(--surface-2);padding:7px 11px;border-radius:6px;align-self:flex-start;font-variant-numeric:tabular-nums}
+
+/* ---------- 2x2 classifier ---------- */
+.tray{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{font:inherit;font-size:13.5px;cursor:pointer;background:var(--surface);border:1.5px solid var(--rule-strong);
+  color:var(--ink);padding:7px 14px;border-radius:8px;transition:transform .12s ease,border-color .12s ease}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:600}
+.chip.done{opacity:.35;pointer-events:none;border-style:dashed}
+.grid22{display:grid;grid-template-columns:76px 1fr 1fr;gap:10px}
+.grid22 .hh{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-3);align-self:end;padding-bottom:4px;text-align:center}
+.grid22 .vh{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  display:flex;align-items:center;justify-content:center;text-align:center}
+.grid22 .vh.a{color:var(--accent)} .grid22 .vh.b{color:var(--credit)}
+.qd{min-height:104px;border:1.5px dashed var(--rule-strong);border-radius:12px;background:var(--surface-2);
+  padding:10px;cursor:pointer;display:flex;flex-direction:column;gap:6px;transition:background .15s,border-color .15s}
+.qd:hover{border-color:var(--accent);background:var(--accent-soft)}
+.qd.armed{border-color:var(--accent);border-style:solid}
+.qd.hit{animation:hit .4s ease} .qd.miss{animation:miss .4s ease}
+@keyframes hit{0%{background:var(--accent-soft)}100%{background:var(--surface-2)}}
+@keyframes miss{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.placed{background:var(--surface);border:1px solid var(--accent);border-left:3px solid var(--accent);
+  border-radius:6px;padding:7px 10px;font-size:13.5px}
+.placed b{display:block;font-weight:600}
+.placed span{font-size:12px;color:var(--ink-3)}
+.fb{font-size:13.5px;min-height:22px;color:var(--ink-2)}
+.fb.bad{color:var(--credit)} .fb.good{color:var(--accent)}
+
+/* ---------- vet bill ---------- */
+.bill{background:var(--surface);border:1px solid var(--rule-strong);border-radius:10px;overflow:hidden;font-size:14px;max-width:520px}
+.bill .top{padding:11px 16px;border-bottom:1px dashed var(--rule-strong);font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.bill .ln{display:grid;grid-template-columns:1fr 82px 76px;gap:10px;padding:9px 16px;align-items:center}
+.bill .ln+.ln{border-top:1px solid var(--rule)}
+.bill .amt{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;text-align:right}
+.bill .k{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.08em;padding:2px 0;border-radius:4px;
+  text-align:center;transition:background .25s,color .25s,border-color .25s}
+.bill .k.d{color:var(--accent);border:1px solid var(--accent);background:var(--accent-soft)}
+.bill .k.i{color:var(--credit);border:1px solid var(--credit);background:var(--credit-soft)}
+.bill .ttl{display:grid;grid-template-columns:1fr 82px 76px;gap:10px;padding:10px 16px;border-top:2px solid var(--rule-strong);
+  background:var(--surface-2);font-weight:600}
+
+/* ---------- question as asked ---------- */
+.qtext{max-width:1020px;border:1.5px dashed var(--rule-strong);border-radius:10px;padding:15px 19px;
+  background:var(--surface-2);display:flex;flex-direction:column;gap:9px}
+.qtext .lbl{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3)}
+.qtext .body{font-size:15.5px;color:var(--ink);line-height:1.55}
+.qtext ol{margin:4px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:5px;font-size:15px}
+.qtext ol li::marker{color:var(--accent);font-weight:600}
+.qtext .given{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink-2);
+  background:var(--surface);border:1px solid var(--rule);border-radius:7px;padding:10px 14px;
+  white-space:pre;overflow-x:auto;font-variant-numeric:tabular-nums;margin:0}
+
+/* ---------- worked process ---------- */
+.steps{max-width:1020px;display:flex;flex-direction:column}
+.step{display:grid;grid-template-columns:30px minmax(0,1fr);gap:16px;padding:18px 0;border-top:1px solid var(--rule)}
+.step:first-child{border-top:none;padding-top:6px}
+.step .num{width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);
+  border:1.5px solid var(--accent);display:flex;align-items:center;justify-content:center;
+  font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600}
+.step .sb{display:flex;flex-direction:column;gap:10px;min-width:0}
+.step h4{margin:0;font-size:15.5px;font-weight:600;font-family:"Public Sans",sans-serif;padding-top:4px}
+.step p{font-size:15px;color:var(--ink-2)}
+.step p strong{color:var(--ink);font-weight:600}
+pre.math{margin:0;font-family:"IBM Plex Mono",monospace;font-size:13.5px;line-height:1.9;
+  background:var(--surface-2);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;
+  padding:14px 18px;overflow-x:auto;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:pre}
+pre.math b{color:var(--accent);font-weight:600}
+pre.math i{color:var(--ink-3);font-style:normal}
+
+/* ---------- tables ---------- */
+.tw{overflow-x:auto;border:1px solid var(--rule);border-radius:12px;background:var(--surface);max-width:1020px}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+caption{text-align:left;padding:13px 17px 11px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);border-bottom:1px solid var(--rule)}
+th,td{padding:9px 16px;text-align:left;vertical-align:top}
+thead th{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ink-2);font-weight:500;border-bottom:1px solid var(--rule-strong);white-space:nowrap}
+tbody tr+tr td{border-top:1px solid var(--rule)}
+td.n,th.n{text-align:right;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.tot td{border-top:1px solid var(--rule-strong)!important;box-shadow:inset 0 -3px 0 -1px var(--rule-strong);
+  font-weight:600;background:var(--surface-2)}
+td.cr{color:var(--credit)}
+.sm{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3)}
+
+.pill{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  padding:3px 8px;border-radius:4px;border:1px solid var(--rule-strong);color:var(--ink-2);white-space:nowrap}
+.pill.v{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.pill.f{border-color:var(--credit);color:var(--credit);background:var(--credit-soft)}
+
+.note{max-width:1020px;border-left:3px solid var(--flag);background:var(--flag-soft);color:var(--ink);padding:12px 16px;border-radius:0 8px 8px 0;font-size:14.5px}
+.note.acc{border-left-color:var(--accent);background:var(--accent-soft)}
+.fx{font-family:"IBM Plex Mono",monospace;font-size:13.5px;color:var(--accent);background:var(--accent-soft);padding:4px 9px;border-radius:5px;display:inline-block}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;align-items:start;max-width:1020px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:1020px}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:9px}
+.card h4{margin:0;font-size:15px;font-weight:600}
+.card p{font-size:14px;color:var(--ink-2)}
+ul.t,ol.t{margin:0;padding-left:20px;color:var(--ink-2);font-size:14.5px;display:flex;flex-direction:column;gap:7px}
+ul.t strong,ol.t strong{color:var(--ink)}
+
+/* ---------- Q&A ---------- */
+.q{border:1px solid var(--rule);border-radius:12px;background:var(--surface);padding:18px 20px;display:flex;flex-direction:column;gap:13px}
+.q-meta{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+blockquote{margin:0;padding:13px 16px;background:var(--surface-2);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;font-size:15px}
+.wc{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+button.reveal{display:none;align-self:flex-start;font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+  background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent);padding:6px 14px;border-radius:6px}
+body.quiz .ans{display:none} body.quiz .ans.open{display:flex} body.quiz button.reveal{display:inline-block}
+body.quiz button.reveal.gone{display:none}
+.ans{display:flex;flex-direction:column;gap:12px}
+.toggle{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+  background:var(--surface);border:1px solid var(--rule-strong);color:var(--ink);padding:7px 14px;border-radius:8px;align-self:flex-start}
+.toggle .pip{width:8px;height:8px;border-radius:50%;background:var(--rule-strong)}
+body.quiz .toggle .pip{background:var(--accent)}
+
+/* ---------- car calc ---------- */
+.calc{display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);gap:24px;align-items:start}
+.irow{display:grid;grid-template-columns:1fr 78px 78px;gap:8px;align-items:center;padding:5px 0;border-top:1px solid var(--rule)}
+.irow:first-child{border-top:none}
+.irow label{font-size:13px;color:var(--ink-2)}
+.irow.hdr span{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);text-align:right}
+.irow.hdr span:first-child{text-align:left}
+.irow input{width:100%;font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-variant-numeric:tabular-nums;
+  text-align:right;padding:5px 8px;border:1px solid var(--rule);border-radius:5px;background:var(--surface-2);color:var(--ink)}
+.irow input:focus{border-color:var(--accent);background:var(--surface)}
+.irow.wide{grid-template-columns:1fr 164px}
+
+footer{border-top:1px solid var(--rule);padding-block:22px 48px;color:var(--ink-3);font-size:12px;font-family:"IBM Plex Mono",monospace}
+
+@media (max-width:960px){
+  .cols{grid-template-columns:1fr;gap:0}
+  nav.toc{position:static;max-height:none;overflow:visible;padding-block:16px 0;border-bottom:1px solid var(--rule)}
+  nav.toc ol{flex-direction:row;flex-wrap:wrap;gap:5px}
+  nav.toc a{border:1px solid var(--rule);border-radius:999px;padding:4px 11px;font-size:12.5px;border-left-width:1px}
+  nav.toc a.on{border-color:var(--accent)}
+  nav.toc a .io{display:none}
+  nav.toc .grp{width:100%;padding:10px 2px 2px}
+}
+@media (max-width:820px){
+  .flow.f5,.flow.f3{grid-template-columns:1fr}
+  .farr{margin:2px 0}
+  .farr .ch{transform:rotate(90deg)}
+  .spec{grid-template-columns:1fr}
+  .specline{flex-wrap:wrap;gap:7px}
+  .specline .lbl{white-space:normal}
+  .specline .rule{min-width:26px}
+  .bar,.scale{grid-template-columns:1fr;gap:5px}
+  .bar .bl,.scale .sl{text-align:left}
+}
+@media (max-width:700px){
+  .calc{grid-template-columns:1fr}
+  .grid22{grid-template-columns:1fr}
+  .grid22 .hh{display:none}
+  .grid22 .vh{writing-mode:horizontal-tb;justify-content:flex-start;padding-top:6px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ---------- page-specific ---------- */
+.src{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);max-width:74ch}
+.tl{display:flex;flex-direction:column;max-width:1020px}
+.tl .e{display:grid;grid-template-columns:92px minmax(0,1fr);gap:16px;padding:11px 0;border-top:1px solid var(--rule)}
+.tl .e:first-child{border-top:none}
+.tl .dt{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--accent);font-weight:600}
+.tl .bd{font-size:14.5px;color:var(--ink-2)} .tl .bd b{color:var(--ink);font-weight:600}
+.tl .e.now .dt{color:var(--credit)}
+.ob{max-width:1020px;border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:0 12px 12px 0;
+  background:var(--surface);padding:14px 18px;display:flex;flex-direction:column;gap:9px}
+.ob h4{margin:0;font-size:14.5px;font-weight:600;font-family:"Public Sans",sans-serif;color:var(--credit)}
+.ob .you{font-size:15px;color:var(--ink)}
+.ob .you b{color:var(--accent);font-weight:600}
+.ob .tag{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.pill3{display:flex;flex-wrap:wrap;gap:7px}
+.pill3 span{font-family:"IBM Plex Mono",monospace;font-size:11.5px;border:1px solid var(--rule-strong);
+  border-radius:999px;padding:4px 11px;color:var(--ink-2)}
+.pill3 span.a{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.pill3 span.b{border-color:var(--credit);color:var(--credit);background:var(--credit-soft)}
+@media (max-width:760px){
+  .scrow{grid-template-columns:1fr} .scrow .sides{grid-template-columns:1fr}
+  .scrow .sd,.scrow .vd{border-left:none;border-top:1px solid var(--rule)}
+  .scrow.sch{display:none}
+  .tug .row,.tug .net{grid-template-columns:1fr 150px 1fr;gap:8px}
+}
+
+/* ---------- session 3 additions ---------- */
+.buckets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.buckets .bh{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink-3);padding-bottom:5px;text-align:center}
+.buckets .bh.a{color:var(--accent)} .buckets .bh.c{color:var(--flag)} .buckets .bh.b{color:var(--credit)}
+.buckets .col{display:flex;flex-direction:column;min-width:0}
+.src{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);max-width:74ch}
+.say{max-width:1020px;border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:0 12px 12px 0;
+  background:var(--surface);padding:16px 20px;display:flex;flex-direction:column;gap:11px}
+.say .tag{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.say p{font-size:16px;line-height:1.62}
+.say b{font-weight:600}
+.ladder{display:flex;flex-direction:column;max-width:1020px}
+.ladder .r{display:grid;grid-template-columns:30px minmax(0,1fr);gap:15px;padding:12px 0;border-top:1px solid var(--rule)}
+.ladder .r:first-child{border-top:none;padding-top:2px}
+.ladder .r .n{width:30px;height:30px;border-radius:50%;background:var(--surface-2);border:1.5px solid var(--rule-strong);
+  color:var(--ink-2);display:flex;align-items:center;justify-content:center;font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-weight:600}
+.ladder .r.key .n{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.ladder .r .bd{min-width:0}
+.ladder .r .bd b{display:block;font-size:15px;font-weight:600;margin-bottom:3px}
+.ladder .r .bd span{font-size:14.5px;color:var(--ink-2)}
+@media (max-width:700px){.buckets{grid-template-columns:1fr}.buckets .bh{text-align:left}}
+
+/* ---------- building blocks ---------- */
+.chain{display:grid;grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr);
+  gap:10px;align-items:stretch}
+.chain .fnode{justify-content:flex-start}
+.chain .fnode em{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-3);display:block;margin-bottom:2px}
+.chain .fnode.acc em{color:var(--accent)}
+.chain .fnode.bad em{color:var(--credit)}
+.fam{display:flex;align-items:baseline;gap:14px;margin-top:20px}
+.fam:first-of-type{margin-top:4px}
+.fam .fn{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent);white-space:nowrap}
+.fam .ft{font-size:15px;font-weight:600;font-family:"Public Sans",sans-serif;white-space:nowrap}
+.fam .ln{flex:1;height:1px;background:var(--rule)}
+.blocks{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:12px;max-width:1020px;margin-top:12px}
+.blk{border:1px solid var(--rule);border-radius:10px;background:var(--surface);padding:13px 15px;
+  display:flex;flex-direction:column;gap:7px;min-width:0}
+.blk .bn{font-size:14.5px;font-weight:600;line-height:1.3}
+.blk .bp{font-size:13.5px;color:var(--ink-2);line-height:1.5}
+.blk .ba{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--accent);background:var(--accent-soft);
+  border-radius:6px;padding:6px 10px;line-height:1.55;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.blk .bu{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--ink-3);margin-top:auto;padding-top:2px}
+.blk .bu a{color:var(--ink-3);text-decoration:none;border-bottom:1px solid var(--rule-strong)}
+.blk .bu a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+@media (max-width:860px){
+  .chain{grid-template-columns:1fr}
+  .chain .farr{margin:2px 0}
+  .chain .farr .ch{transform:rotate(90deg)}
+}
+</style>
+
+<style>
+/* ---------- session 5 additions ---------- */
+.vid{max-width:1020px;border:1px solid var(--rule);border-radius:14px;overflow:hidden;background:#0F1A17;color:#fff;box-shadow:var(--shadow)}
+.vid .scr{position:relative;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;padding:6% 8%;text-align:center}
+.vid .sc{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6% 9%;opacity:0;transform:translateY(10px);transition:opacity .6s,transform .6s}
+.vid .sc.on{opacity:1;transform:none}
+.vid .sc .kk{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#8FD3BC;margin-bottom:12px}
+.vid .sc h3{font-family:Bitter,serif;font-size:clamp(20px,3.4vw,34px);line-height:1.2;margin:0 0 14px;color:#fff}
+.vid .sc p{font-size:clamp(13px,1.6vw,17px);color:#C9D6D1;max-width:640px;margin:0}
+.vid .sc .row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:16px}
+.vid .sc .pill{border:1px solid #3C5A51;border-radius:999px;padding:6px 12px;font-size:13px;color:#fff;opacity:0;transform:scale(.9);transition:all .5s}
+.vid .sc.on .pill{opacity:1;transform:none}
+.vid .sc .pill.g{background:#1B6B57;border-color:#2E9376}.vid .sc .pill.r{background:#7A2B20;border-color:#A33A2C}
+.vid .sc.on .pill:nth-child(2){transition-delay:.5s}.vid .sc.on .pill:nth-child(3){transition-delay:1s}.vid .sc.on .pill:nth-child(4){transition-delay:1.5s}.vid .sc.on .pill:nth-child(5){transition-delay:2s}
+.vid .bar2{display:flex;align-items:center;gap:12px;padding:10px 14px;background:#16241F;border-top:1px solid #24362F}
+.vid .bar2 button{font:inherit;font-size:12.5px;font-weight:600;background:#24362F;color:#fff;border:1px solid #3C5A51;border-radius:8px;padding:6px 11px;cursor:pointer}
+.vid .bar2 button[aria-pressed=true]{background:#1B6B57}
+.vid .prog{flex:1;height:4px;background:#24362F;border-radius:4px;overflow:hidden}.vid .prog i{display:block;height:100%;width:0;background:#8FD3BC}
+.vid .cap{font-size:13px;color:#C9D6D1;padding:10px 16px 14px;background:#16241F;min-height:44px}
+.vid .tt{font-family:"IBM Plex Mono",monospace;font-size:11px;color:#8FD3BC;white-space:nowrap}
+.sct{width:100%;border-collapse:collapse}
+.sct td{padding:8px 10px;border-top:1px solid var(--rule);font-size:14px;vertical-align:middle}
+.sct td:first-child{width:34%}
+.sct input[type=range]{width:100%;accent-color:var(--accent)}
+.sct .n{font-family:"IBM Plex Mono",monospace;font-size:13px;width:34px;text-align:right}
+.sct th{font-size:11px;font-family:"IBM Plex Mono",monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);text-align:left;padding:6px 10px}
+.gauge{height:14px;border-radius:8px;background:linear-gradient(90deg,var(--credit),var(--flag) 50%,var(--accent));position:relative;margin:14px 0 4px}
+.gauge i{position:absolute;top:-5px;width:4px;height:24px;background:var(--ink);border-radius:2px;transition:left .35s}
+.gauge b{position:absolute;top:-22px;transform:translateX(-50%);font-family:"IBM Plex Mono",monospace;font-size:11px;transition:left .35s;white-space:nowrap}
+.gl{display:flex;justify-content:space-between;font-size:11.5px;color:var(--ink-3);font-family:"IBM Plex Mono",monospace}
+</style>
+
+</head>
+<body>
+<header>
+  <div class="wrap hd">
+    <div>
+      <div class="eyebrow">4505 GMM &middot; Session 5 &middot; Wednesday, September 23, 2026 &middot; 1:10&ndash;2:30pm &middot; Room 1200</div>
+      <h1>The growth model in action</h1>
+      <p class="gist">Why some economies grow faster: the institutions view from <i>Why Nations Fail</i>, then a scorecard for Canada and a stress test on the US.</p>
+    </div>
+    <div class="meta">
+      Readings <b>Primers 5 and 6, podcast</b><br>
+      Prep <b>Canada scorecard, US moves</b><br>
+      Graded <b>Participation</b>
+    </div>
+  </div>
+</header>
+
+<div class="wrap cols">
+
+<nav class="toc" aria-label="Contents">
+  <div class="toc-h">On this page</div>
+  <ol id="toclist">
+    <li class="grp">Walk in knowing</li>
+    <li><a href="#video"><span class="n"></span><span>Video overview</span><span class="io">&#9679;</span></a></li>
+    <li><a href="#model"><span class="n"></span><span>The whole session</span></a></li>
+    <li><a href="#blocks"><span class="n"></span><span>Building blocks</span></a></li>
+    <li class="grp">The argument</li>
+    <li><a href="#prop1"><span class="n">1</span><span>Proposition 1, recap</span></a></li>
+    <li><a href="#ie"><span class="n">2</span><span>Inclusive vs extractive</span></a></li>
+    <li><a href="#loops"><span class="n">3</span><span>Why it persists</span></a></li>
+    <li><a href="#corr"><span class="n">4</span><span>The narrow corridor</span></a></li>
+    <li class="grp">The prep questions</li>
+    <li><a href="#can"><span class="n">5</span><span>Canada scorecard</span><span class="io">&#9679;</span></a></li>
+    <li><a href="#us"><span class="n">6</span><span>The US stress test</span></a></li>
+    <li><a href="#say"><span class="n">7</span><span>What to say in class</span></a></li>
+    <li class="grp">Reference</li>
+    <li><a href="#traps"><span class="n"></span><span>Traps</span></a></li>
+    <li><a href="#gloss"><span class="n"></span><span>Glossary</span></a></li>
+    <li><a href="#mat"><span class="n"></span><span>Materials</span></a></li>
+    <li><a href="#qa"><span class="n"></span><span>Q&amp;A log</span></a></li>
+  </ol>
+</nav>
+
+<main>
+
+<!-- ============ VIDEO ============ -->
+<section id="video">
+  <h2>Video overview, three minutes</h2>
+  <p class="lede">A NotebookLM-style overview that plays by itself. Turn on narration to hear it read aloud in your browser voice, or leave it muted and read the captions.</p>
+  <div class="vid rv" id="vid">
+    <div class="scr" id="vScr">
+      <div class="sc on"><div class="kk">1 / 9 &middot; Session 5</div><h3>The growth model in action</h3><p>Why do some economies grow faster than others?</p></div>
+      <div class="sc"><div class="kk">2 / 9 &middot; Proposition 1</div><h3>Capital, skills, productivity</h3><p>The proximate causes of growth</p><div class="row"><span class="pill">K machines</span><span class="pill">H skills</span><span class="pill">A productivity</span></div></div>
+      <div class="sc"><div class="kk">3 / 9 &middot; One town, one fence</div><h3>Nogales, Arizona vs Nogales, Sonora</h3><p>Same people, same climate. Roughly three times the income on one side.</p></div>
+      <div class="sc"><div class="kk">4 / 9 &middot; The core claim</div><h3>Inclusive vs extractive institutions</h3><div class="row"><span class="pill g">Secure property</span><span class="pill g">Open entry</span><span class="pill g">Fair courts</span><span class="pill">vs</span><span class="pill r">Rents for the elite</span></div></div>
+      <div class="sc"><div class="kk">5 / 9 &middot; Why bad rules persist</div><h3>Elites fear creative destruction</h3><p>Growth would destroy their power as well as old firms. Vicious circles feed themselves.</p></div>
+      <div class="sc"><div class="kk">6 / 9 &middot; The corridor</div><h3>Strong state, strong society</h3><p>Leave the narrow corridor and you drift toward despotism or disorder.</p></div>
+      <div class="sc"><div class="kk">7 / 9 &middot; Canada</div><h3>Passes the big tests</h3><div class="row"><span class="pill g">Courts 5</span><span class="pill g">Central bank 5</span><span class="pill r">Competition 2</span><span class="pill r">Internal trade 2</span><span class="pill r">Permits 2</span></div></div>
+      <div class="sc"><div class="kk">8 / 9 &middot; United States</div><h3>Erosion of the referees</h3><div class="row"><span class="pill r">Fed pressure</span><span class="pill r">Statistics chief fired</span><span class="pill r">Tariffs by decree</span><span class="pill r">Favours for firms</span></div></div>
+      <div class="sc"><div class="kk">9 / 9 &middot; Your take</div><h3>Right direction, overstated speed?</h3><p>Courts, states, the press and elections still push back. Institutions are a stock that runs down slowly.</p></div>
+    </div>
+    <div class="bar2">
+      <button type="button" id="vPlay" aria-pressed="true">Pause</button>
+      <button type="button" id="vVoice" aria-pressed="false">Narration off</button>
+      <button type="button" id="vPrev">&larr;</button><button type="button" id="vNext">&rarr;</button>
+      <div class="prog"><i id="vProg"></i></div>
+      <span class="tt" id="vTT"></span>
+    </div>
+    <div class="cap" id="vCap">Welcome to session five. The primers told us GDP grows from the supply side. Today we ask why some countries build that supply side and others never do.</div>
+  </div>
+</section>
+
+<!-- ============ MODEL ============ -->
+<section id="model">
+  <h2>The whole session, in one picture</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>GDP grows from the supply side: more capital, more skills, better productivity. <b>Institutions decide whether anyone bothers to build those, because they decide who keeps the gains.</b></div></div>
+  <figure class="rv">
+    <div class="dg">
+      <div class="flow f5">
+        <div class="fstack">
+          <div class="fnode acc"><b>Political institutions</b><span>who holds power, and what limits it</span></div>
+          <div class="fnode"><b>Critical junctures</b><span>shocks that reset the rules</span></div>
+        </div>
+        <div class="farr"><span class="ch">&rarr;</span><i>set</i></div>
+        <div class="fstack">
+          <div class="fnode acc"><b>Economic institutions</b><span>property, contracts, open entry</span></div>
+          <div class="fnode"><b>Incentives</b><span>build, or capture?</span></div>
+        </div>
+        <div class="farr"><span class="ch">&rarr;</span><i>drive</i></div>
+        <div class="fstack">
+          <div class="fnode"><b>K, H, A</b><span>machines, skills, productivity</span></div>
+          <div class="fnode acc"><b>GDP per person grows</b><span>Proposition 1</span></div>
+        </div>
+      </div>
+    </div>
+    <figcaption>Left is the root cause, middle is the channel, right is the growth model from the primers. Today's session moves your attention to the left.</figcaption>
+  </figure>
+  <div class="note acc"><b>The move that earns marks.</b> For every Canada or US item you raise, say which link it breaks: power, rules, or incentives. That turns an opinion into an argument about growth.</div>
+</section>
+
+<!-- ============ BLOCKS ============ -->
+<section id="blocks">
+  <h2>Building blocks</h2>
+  <p class="lede">Every term the page uses, defined once. Read the families in order: what makes growth, the rules behind it, why the rules stick, and what keeps them good.</p>
+  <figure class="rv">
+    <div class="dg pad0">
+      <div class="chain">
+        <div class="fnode mute"><em>Family A</em><b>The growth engine</b><span>supply side</span></div>
+        <div class="farr"><span class="ch">&rarr;</span></div>
+        <div class="fnode acc"><em>Family B</em><b>The rules</b><span>inclusive or extractive</span></div>
+        <div class="farr"><span class="ch">&rarr;</span></div>
+        <div class="fnode bad"><em>Family C</em><b>Why rules stick</b><span>circles and junctures</span></div>
+        <div class="farr"><span class="ch">&rarr;</span></div>
+        <div class="fnode"><em>Family D</em><b>Keeping them good</b><span>the corridor</span></div>
+      </div>
+    </div>
+    <figcaption>Each family rests on the one before. The US question in section 6 uses all four.</figcaption>
+  </figure>
+
+  <div class="fam"><span class="fn">Family A</span><span class="ft">The growth engine</span><span class="ln"></span></div>
+  <div class="blocks">
+    <div class="blk"><div class="bn">Proposition 1</div><div class="bp">Course claim: in most economies GDP rises over time because of supply-side factors.</div><div class="ba">Canada real GDP: up about 2.5&times; since 1981</div><div class="bu">used in <a href="#prop1">&sect;1</a></div></div>
+    <div class="blk"><div class="bn">Supply side</div><div class="bp">What the economy can produce, as opposed to what people want to buy this quarter.</div><div class="ba">Y = A &times; f(K, H, L)</div><div class="bu">used in <a href="#prop1">&sect;1</a></div></div>
+    <div class="blk"><div class="bn">Proximate cause</div><div class="bp">The input that is visibly missing or present.</div><div class="ba">&ldquo;Not enough machines&rdquo;</div><div class="bu">used in <a href="#prop1">&sect;1</a></div></div>
+    <div class="blk"><div class="bn">Root cause</div><div class="bp">Why that input is missing. Also called the fundamental or deep cause.</div><div class="ba">&ldquo;Machines get seized&rdquo;</div><div class="bu">used in <a href="#prop1">&sect;1</a></div></div>
+  </div>
+
+  <div class="fam"><span class="fn">Family B</span><span class="ft">The rules</span><span class="ln"></span></div>
+  <div class="blocks">
+    <div class="blk"><div class="bn">Institutions</div><div class="bp">The rules of the game, written and unwritten, that shape what pays.</div><div class="ba">Property law, courts, elections, norms</div><div class="bu">used in <a href="#ie">&sect;2</a></div></div>
+    <div class="blk"><div class="bn">Inclusive economic institutions</div><div class="bp">Anyone can own, start a firm, sign a contract and keep the return.</div><div class="ba">Nogales, Arizona side</div><div class="bu">used in <a href="#ie">&sect;2</a></div></div>
+    <div class="blk"><div class="bn">Extractive economic institutions</div><div class="bp">Rules that move income from the many to a small group in power.</div><div class="ba">Colonial Congo rubber quotas</div><div class="bu">used in <a href="#ie">&sect;2</a></div></div>
+    <div class="blk"><div class="bn">Pluralism</div><div class="bp">Power spread across many groups, so no one group can rewrite the rules alone.</div><div class="ba">Courts, press, provinces, opposition</div><div class="bu">used in <a href="#ie">&sect;2</a></div></div>
+    <div class="blk"><div class="bn">Centralised state</div><div class="bp">A state able to keep order and enforce the law everywhere. Needed alongside pluralism.</div><div class="ba">Somalia lacks it</div><div class="bu">used in <a href="#ie">&sect;2</a></div></div>
+    <div class="blk"><div class="bn">Creative destruction</div><div class="bp">New firms and ideas replace old ones. Growth needs it, and incumbents fear it.</div><div class="ba">Streaming replacing Blockbuster</div><div class="bu">used in <a href="#loops">&sect;3</a></div></div>
+  </div>
+
+  <div class="fam"><span class="fn">Family C</span><span class="ft">Why rules stick</span><span class="ln"></span></div>
+  <div class="blocks">
+    <div class="blk"><div class="bn">Virtuous circle</div><div class="bp">Inclusive rules spread power, and spread power defends inclusive rules.</div><div class="ba">England after 1688</div><div class="bu">used in <a href="#loops">&sect;3</a></div></div>
+    <div class="blk"><div class="bn">Vicious circle</div><div class="bp">Extractive rules fund the elite that keeps them extractive.</div><div class="ba">Sierra Leone, colonial to Stevens</div><div class="bu">used in <a href="#loops">&sect;3</a></div></div>
+    <div class="blk"><div class="bn">Iron law of oligarchy</div><div class="bp">New rulers who topple extractive elites often become one.</div><div class="ba">Mugabe after Rhodesia</div><div class="bu">used in <a href="#loops">&sect;3</a></div></div>
+    <div class="blk"><div class="bn">Critical juncture</div><div class="bp">A big shock where small differences in rules send countries down different paths.</div><div class="ba">The Black Death, 1346</div><div class="bu">used in <a href="#loops">&sect;3</a></div></div>
+    <div class="blk"><div class="bn">Extractive growth</div><div class="bp">Fast growth under extractive rules by forcing resources into known sectors. It runs out.</div><div class="ba">Soviet Union, 1930s to 1970s</div><div class="bu">used in <a href="#loops">&sect;3</a></div></div>
+  </div>
+
+  <div class="fam"><span class="fn">Family D</span><span class="ft">Keeping them good</span><span class="ln"></span></div>
+  <div class="blocks">
+    <div class="blk"><div class="bn">Shackled Leviathan</div><div class="bp">A strong state that society can still restrain. The good outcome.</div><div class="ba">Denmark, Canada</div><div class="bu">used in <a href="#corr">&sect;4</a></div></div>
+    <div class="blk"><div class="bn">Despotic Leviathan</div><div class="bp">A strong state with nothing holding it back.</div><div class="ba">China</div><div class="bu">used in <a href="#corr">&sect;4</a></div></div>
+    <div class="blk"><div class="bn">Absent or paper Leviathan</div><div class="bp">A state too weak to enforce anything, or strong only on paper.</div><div class="ba">Lebanon, much of Latin America</div><div class="bu">used in <a href="#corr">&sect;4</a></div></div>
+    <div class="blk"><div class="bn">Red Queen effect</div><div class="bp">State and society must both keep getting stronger to stay in balance.</div><div class="ba">New regulators, then new watchdogs</div><div class="bu">used in <a href="#corr">&sect;4</a></div></div>
+    <div class="blk"><div class="bn">Institutional erosion</div><div class="bp">Checks weakened one at a time, each move legal-looking on its own.</div><div class="ba">Hungary after 2010</div><div class="bu">used in <a href="#us">&sect;6</a></div></div>
+  </div>
+</section>
+
+<!-- ============ 1 ============ -->
+<section id="prop1">
+  <h2><span class="no">1</span> Proposition 1, and the question it leaves open</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>The primers explain growth with capital, skills and productivity. <b>They do not explain why one country piles those up and another does not.</b> That is today.</div></div>
+  <figure class="rv">
+    <div class="dg">
+      <div class="chain">
+        <div class="fnode"><b>K</b><span>machines, roads</span></div>
+        <div class="farr"><span class="ch">+</span></div>
+        <div class="fnode"><b>H</b><span>skills, health</span></div>
+        <div class="farr"><span class="ch">+</span></div>
+        <div class="fnode acc"><b>A</b><span>productivity</span></div>
+        <div class="farr"><span class="ch">&rarr;</span></div>
+        <div class="fnode"><b>Output per person</b><span>the yardstick</span></div>
+      </div>
+    </div>
+    <figcaption>This is the proximate story. Ask &ldquo;why is K low?&rdquo; and you have left the model for the root causes.</figcaption>
+  </figure>
+  <div class="tw"><table>
+    <caption>Three candidate root causes the course weighs</caption>
+    <thead><tr><th>View</th><th>Claim</th><th>Weak spot</th></tr></thead>
+    <tbody>
+      <tr><td>Geography</td><td>Climate, disease, coasts set the ceiling</td><td>Two Koreas share a peninsula</td></tr>
+      <tr><td>Culture</td><td>Values like thrift and trust drive growth</td><td>Same culture, split Nogales</td></tr>
+      <tr><td><b>Institutions</b></td><td>Rules set incentives to invest and innovate</td><td>Hard to measure, China puzzle</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note">Primers 5 and 6 were still marked &ldquo;link to come&rdquo; on the saved Canvas page. Check them before class and add their framing if it differs.</div>
+</section>
+
+<!-- ============ 2 ============ -->
+<section id="ie">
+  <h2><span class="no">2</span> Inclusive vs extractive</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>Growth happens when <b>anyone can build and keep what they build</b>, which only lasts when political power is spread out and the state is strong enough to enforce the rules.</div></div>
+  <figure class="rv">
+    <div class="dg">
+      <div class="grid2">
+        <div class="card"><h4>Nogales, Arizona</h4><ul class="t"><li>Household income about 3&times; the Mexican side</li><li>Paved roads, low crime, working courts</li><li>Vote out the mayor if services fail</li></ul></div>
+        <div class="card"><h4>Nogales, Sonora</h4><ul class="t"><li>Same people, food, climate, history before 1853</li><li>Weaker courts, more crime, corruption</li><li>Different national rules since the border</li></ul></div>
+      </div>
+    </div>
+    <figcaption>The book's opening case: one town, one fence. Geography and culture are held constant, so the gap is the rules.</figcaption>
+  </figure>
+  <div class="tw"><table>
+    <thead><tr><th></th><th>Inclusive</th><th>Extractive</th></tr></thead>
+    <tbody>
+      <tr><td>Political</td><td>Pluralist and centralised</td><td>Power in a narrow elite</td></tr>
+      <tr><td>Economic</td><td>Secure property, open entry, fair courts</td><td>Seizure, monopolies, rigged licences</td></tr>
+      <tr><td>What pays</td><td>Producing and innovating</td><td>Getting close to power</td></tr>
+      <tr><td>Example</td><td>South Korea since 1960s</td><td>North Korea</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note acc"><b>Why the pair matters.</b> Economic rules are chosen by whoever holds political power. So inclusive economics cannot survive long without inclusive politics. That is the link the US question tests.</div>
+</section>
+
+<!-- ============ 3 ============ -->
+<section id="loops">
+  <h2><span class="no">3</span> Why bad rules persist</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>Elites block growth on purpose, because <b>creative destruction would destroy their power as well as old firms.</b> Poverty is a political choice, not a knowledge gap.</div></div>
+  <figure class="rv">
+    <div class="dg">
+      <div class="grid2">
+        <div class="card"><h4>Vicious circle</h4><div class="chain"><div class="fnode bad"><b>Narrow power</b></div><div class="farr"><span class="ch">&rarr;</span></div><div class="fnode bad"><b>Extract rents</b></div><div class="farr"><span class="ch">&rarr;</span></div><div class="fnode bad"><b>Fund the elite</b></div></div></div>
+        <div class="card"><h4>Virtuous circle</h4><div class="chain"><div class="fnode acc"><b>Spread power</b></div><div class="farr"><span class="ch">&rarr;</span></div><div class="fnode acc"><b>Open markets</b></div><div class="farr"><span class="ch">&rarr;</span></div><div class="fnode acc"><b>New groups defend it</b></div></div></div>
+      </div>
+    </div>
+    <figcaption>Both loops feed themselves. Breaking out usually takes a critical juncture plus a broad coalition.</figcaption>
+  </figure>
+  <div class="tw"><table>
+    <thead><tr><th>Idea</th><th>Example from the book</th></tr></thead>
+    <tbody>
+      <tr><td>Critical juncture</td><td>Black Death: Western serfdom weakened, Eastern tightened</td></tr>
+      <tr><td>Elites fear change</td><td>Austria-Hungary and Russia slowed railways</td></tr>
+      <tr><td>Extractive growth fades</td><td>Soviet boom, then stagnation by 1970s</td></tr>
+      <tr><td>Iron law of oligarchy</td><td>Post-colonial leaders reused colonial extraction</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note"><b>The China point.</b> Their prediction: extractive growth can catch up, but it stalls at the frontier without open entry and constrained power. Worth raising, since China is the usual objection.</div>
+</section>
+
+<!-- ============ 4 ============ -->
+<section id="corr">
+  <h2><span class="no">4</span> The narrow corridor (optional podcast)</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>Liberty and growth live in a <b>narrow corridor where the state and society are both strong</b> and keep pushing against each other. Leave it either way and things slide.</div></div>
+  <figure class="rv">
+    <svg class="d" viewBox="0 0 640 300" role="img" aria-label="Narrow corridor diagram">
+      <line x1="60" y1="260" x2="600" y2="260" stroke="var(--rule-strong)" stroke-width="1.5"/>
+      <line x1="60" y1="260" x2="60" y2="20" stroke="var(--rule-strong)" stroke-width="1.5"/>
+      <polygon points="100,260 160,260 580,40 520,40" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5"/>
+      <text x="330" y="160" text-anchor="middle" class="d-t" fill="var(--accent)" transform="rotate(-27 330 160)">Shackled Leviathan</text>
+      <text x="170" y="70" class="d-t">Despotic</text><text x="170" y="88" class="d-s">China</text>
+      <text x="470" y="215" class="d-t">Absent / paper</text><text x="470" y="233" class="d-s">weak state</text>
+      <text x="330" y="288" text-anchor="middle" class="d-s">Power of society &rarr;</text>
+      <text x="30" y="140" text-anchor="middle" class="d-s" transform="rotate(-90 30 140)">Power of the state &rarr;</text>
+    </svg>
+    <figcaption>Illustrative version of the book's figure. The corridor narrows at the bottom: weak states have little room for error.</figcaption>
+  </figure>
+  <div class="note acc"><b>Use this for the US.</b> The worry is a strong executive pulling away from the courts, press and agencies meant to restrain it. That is a move toward the despotic side.</div>
+</section>
+
+<!-- ============ 5 ============ -->
+<section id="can">
+  <h2><span class="no">5</span> Canada scorecard</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>Canada is <b>clearly inclusive on the big items</b>. The &ldquo;needs improvement&rdquo; list is mostly about competition and building things, which is exactly where its productivity gap sits.</div></div>
+  <div class="tw"><table>
+    <caption>My scorecard, 1 to 5. Ratings are judgement calls</caption>
+    <thead><tr><th>Area</th><th>Grade</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td>Rule of law, courts</td><td>5</td><td>Independent, trusted, enforced</td></tr>
+      <tr><td>Property rights</td><td>4</td><td>Secure; unresolved Indigenous title slows projects</td></tr>
+      <tr><td>Central bank independence</td><td>5</td><td>Bank of Canada unchallenged</td></tr>
+      <tr><td>Elections, peaceful transfer</td><td>5</td><td>Routine, accepted results</td></tr>
+      <tr><td>Open competition</td><td><b>2</b></td><td>Telecom, banks, grocers, airlines concentrated</td></tr>
+      <tr><td>Internal free trade</td><td><b>2</b></td><td>Provinces trade less freely than countries do</td></tr>
+      <tr><td>Permits and building</td><td><b>2</b></td><td>Slow approvals for housing, mines, pipelines</td></tr>
+      <tr><td>Power concentration</td><td>3</td><td>Strong PM's office, majority from ~40% of votes</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note"><b>Link it to growth.</b> Canada's GDP per person has trailed the US and grown slowly since 2015. The weak rows protect incumbents from creative destruction, which Acemoglu and Robinson would call a mild extractive streak.</div>
+</section>
+
+<!-- ============ 6 ============ -->
+<section id="us">
+  <h2><span class="no">6</span> The US stress test</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>The concern is <b>political institutions being weakened one check at a time</b>, which Acemoglu and Robinson predict eventually bends the economic rules too.</div></div>
+  <div class="tw"><table>
+    <caption>Moves reported in 2025, sorted by which check they weaken</caption>
+    <thead><tr><th>Check</th><th>Move</th><th>Growth channel</th></tr></thead>
+    <tbody>
+      <tr><td>Independent central bank</td><td>Pressure on Powell; attempt to fire Governor Cook</td><td>Higher inflation risk, higher rates</td></tr>
+      <tr><td>Honest statistics</td><td>BLS commissioner fired after weak jobs report</td><td>Markets and firms lose trusted data</td></tr>
+      <tr><td>Congress over taxes</td><td>Broad tariffs under emergency powers</td><td>Policy by decree, uncertain costs</td></tr>
+      <tr><td>Independent agencies</td><td>Firing commissioners at agencies like the FTC</td><td>Regulation follows loyalty</td></tr>
+      <tr><td>Rule of law</td><td>Deals forced on law firms, universities; prosecutions of critics</td><td>Rewards closeness to power</td></tr>
+      <tr><td>Open markets</td><td>Tariff exemptions and equity stakes by negotiation</td><td>Favours for firms that lobby</td></tr>
+    </tbody>
+  </table></div>
+  <div class="grid2">
+    <div class="card"><h4>What they would say</h4><p>The danger is capture of the political side. Once courts, data and money answer to one person, economic rules become favours. Expect weaker investment and innovation over years, not quarters.</p></div>
+    <div class="card"><h4>Why it may be overstated</h4><p>Courts still rule against the administration, states hold power, the press is free, and the 2026 midterms can change Congress. The corridor idea says society can push back.</p></div>
+  </div>
+  <div class="note acc"><b>My position.</b> The argument is right about direction and probably overstated on speed. The US has deep buffers, but &ldquo;richest third world country&rdquo; is a warning about trend, not a description of today.</div>
+  <p class="src">Items are 2025 events to check against current news before citing them in class. Court outcomes on tariffs and firings may have changed since.</p>
+</section>
+
+<!-- ============ SCORE INTERACTIVE ============ -->
+<section id="score">
+  <h2>Build your own scorecard</h2>
+  <div class="ia rv">
+    <div class="ia-top"><div class="ttl">Where does a country sit, inclusive to extractive?</div><div class="hint">Drag each row</div></div>
+    <div class="ia-body">
+      <div class="seg" id="sSeg" style="margin-bottom:12px">
+        <button type="button" data-k="can" aria-pressed="true">Canada, my view</button>
+        <button type="button" data-k="us24">US, 2024</button>
+        <button type="button" data-k="usnow">US, 2025 moves</button>
+        <button type="button" data-k="hun">Hungary</button>
+      </div>
+      <table class="sct"><thead><tr><th>Check</th><th>1 extractive to 5 inclusive</th><th></th></tr></thead><tbody id="sRows"></tbody></table>
+      <div class="gauge"><i id="sPin"></i><b id="sLbl"></b></div>
+      <div class="gl"><span>Extractive</span><span>Paper</span><span>Inclusive</span></div>
+      <p class="fb" id="sNote" style="margin-top:14px"></p>
+    </div>
+  </div>
+  <p class="src">Illustrative. Presets are my own ratings to start the discussion, not a published index.</p>
+</section>
+
+<!-- ============ 7 SAY ============ -->
+<section id="say">
+  <h2><span class="no">7</span> What to say when called on</h2>
+  <button class="toggle" id="quizBtn" type="button" aria-pressed="false"><span class="pip"></span>Quiz me</button>
+  <div class="say">
+    <span class="tag">Sixty seconds, out loud</span>
+    <p id="sayBody">Proposition 1 says growth comes from the supply side, but Acemoglu and Robinson ask why some countries build capital and ideas and others do not. Their answer is rules: inclusive institutions let anyone invest and keep the return, and they only last when political power is spread out. On that scorecard Canada passes the big tests, courts, elections, a central bank nobody interferes with. Where it needs work is competition and building: concentrated telecoms and banks, provincial trade barriers, and slow permits. Those protect incumbents, and that shows up in our weak productivity. The US is the harder case. Pressure on the Fed, firing the statistics chief, tariffs by emergency decree and deals for favoured firms all weaken the political checks. Their theory says the economic rules follow. I think the direction is right but the speed is overstated, because US courts, states and elections still push back.</p>
+    <span class="wc" id="sayWc"></span>
+  </div>
+
+  <h3>The prep questions, answered</h3>
+  <div class="qtext"><div class="lbl">Question, as set</div><div class="body">How would you rate Canada from this institutional perspective? What would be on your scorecard in terms of "needs improvement" for Canada?</div></div>
+  <div class="q"><div class="q-meta">Canada</div><button class="reveal" type="button" data-t="a1">Show the answer</button>
+    <div class="ans" id="a1"><p><strong>Strongly inclusive, with a competition problem.</strong> Top marks on courts, elections, property and the central bank. Needs improvement: concentrated sectors, interprovincial barriers, slow approvals, and unsettled Indigenous title. Each shields incumbents from new entrants, so it drags on productivity. <a href="#can">&sect;5</a>.</p></div></div>
+
+  <div class="qtext"><div class="lbl">Question, as set</div><div class="body">What do you see as Trump's most dangerous institution-degrading "moves"? What would Robinson and Acemoglu say about the US's future economic prospects if Trump gets his way? Do you agree, or do you think maybe the argument is overstated?</div></div>
+  <div class="q"><div class="q-meta">United States</div><button class="reveal" type="button" data-t="a2">Show the answer</button>
+    <div class="ans" id="a2"><p><strong>Most dangerous: attacks on the referees.</strong> Fed independence and honest statistics, because every investor relies on them, and bypassing Congress on tariffs. Their prediction: political capture, then economic rules that reward connections, then slower innovation. <strong>Partly agree:</strong> the direction is right, but courts, federalism and elections make it slower and reversible. <a href="#us">&sect;6</a>.</p></div></div>
+</section>
+
+<!-- ============ TRAPS ============ -->
+<section id="traps">
+  <h2>Traps</h2>
+  <div class="tw"><table>
+    <thead><tr><th>The mistake</th><th>Do this instead</th></tr></thead>
+    <tbody>
+      <tr><td>Treating institutions as &ldquo;democracy&rdquo;</td><td>Name property, contracts, entry, constraints</td></tr>
+      <tr><td>Calling the US extractive today</td><td>Talk about direction and erosion</td></tr>
+      <tr><td>Citing Canada as flawless</td><td>Name competition and permits</td></tr>
+      <tr><td>Using China to dismiss the theory</td><td>Catching up is easier than leading</td></tr>
+      <tr><td>Partisan venting</td><td>Link each move to a growth channel</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- ============ GLOSSARY ============ -->
+<section id="gloss">
+  <h2>Glossary</h2>
+  <div class="tw"><table>
+    <thead><tr><th>Term</th><th>Plain words</th></tr></thead>
+    <tbody>
+      <tr><td>Root cause = deep cause = fundamental cause</td><td>Why the input is missing</td></tr>
+      <tr><td>Inclusive institutions</td><td>Rules that let anyone build and keep</td></tr>
+      <tr><td>Extractive institutions</td><td>Rules that funnel income to the powerful</td></tr>
+      <tr><td>Rent</td><td>Income from a favour, not from producing</td></tr>
+      <tr><td>Creative destruction</td><td>New firms replacing old ones</td></tr>
+      <tr><td>Critical juncture</td><td>Big shock that resets the rules</td></tr>
+      <tr><td>Shackled Leviathan</td><td>Strong state that society can restrain</td></tr>
+      <tr><td>Red Queen effect</td><td>State and society racing to stay balanced</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- ============ MATERIALS ============ -->
+<section id="mat">
+  <h2>Materials</h2>
+  <div class="grid2">
+    <div class="card"><h4>In the repo</h4><ul class="t">
+      <li><code>session-05/canvas-september-23-2026-details-session-5.html</code></li>
+      <li><code>notes/session-04-rich-place-poor-place.html</code>, the institutions intro</li>
+      <li><code>course/CourseOutline_7059.pdf</code></li>
+    </ul></div>
+    <div class="card"><h4>Readings and sources</h4><ul class="t">
+      <li>Primers 5 and 6 (not yet posted when saved)</li>
+      <li>Social Science Bites podcast: <a href="https://socialsciencebites.libsyn.com">Why Nations Fail</a></li>
+      <li>Optional: <a href="https://www.spreaker.com">Finding the Narrow Corridor</a></li>
+      <li>Acemoglu and Robinson, <i>Why Nations Fail</i> (2012), <i>The Narrow Corridor</i> (2019)</li>
+      <li><a href="https://ivey.instructure.com/courses/7059/pages/173973">Canvas page</a></li>
+    </ul></div>
+  </div>
+</section>
+
+<!-- ============ QA ============ -->
+<section id="qa">
+  <h2>Q&amp;A log</h2>
+  <div class="q">
+    <div class="q-meta">Asked in prep</div>
+    <blockquote>If US institutions are eroding, why are US stocks and growth still strong?</blockquote>
+    <p>Institutions work on growth over decades. <strong>The stock of trust, capital and talent built over 200 years does not vanish in a year.</strong> The theory predicts slower investment and innovation later, which markets may not price until it shows up.</p>
+    <div class="ex"><span class="lb">The line to say</span><p>Institutions are a stock, not a flow. <strong>You can spend them down for a while before the bill arrives.</strong></p></div>
+  </div>
+</section>
+
+</main>
+</div>
+
+<footer>
+  <div class="wrap">
+    The positions and ratings on this page are my own. Check them against the primers and the class discussion before relying on them.
+    Items marked illustrative show a mechanism rather than measured data. 4505 GMM &middot; Session 5 &middot; September 23, 2026.
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+/* ---- quiz toggle ---- */
+(function(){
+  var btn=document.getElementById("quizBtn");if(!btn)return;
+  btn.addEventListener("click",function(){
+    var on=document.body.classList.toggle("quiz");
+    btn.setAttribute("aria-pressed",String(on));
+    btn.lastChild.nodeValue=on?"Answers hidden":"Quiz me";
+    if(!on)[].forEach.call(document.querySelectorAll(".ans"),function(a){a.classList.remove("open");});
+    [].forEach.call(document.querySelectorAll("button.reveal"),function(b){b.classList.remove("gone");});
+  });
+  [].forEach.call(document.querySelectorAll("button.reveal"),function(b){
+    b.addEventListener("click",function(){
+      var t=document.getElementById(b.dataset.t);if(t)t.classList.add("open");
+      b.classList.add("gone");
+    });
+  });
+})();
+
+/* ---- live word count on the spoken answer ---- */
+(function(){
+  var p=document.getElementById("sayBody"),w=document.getElementById("sayWc");if(!p||!w)return;
+  var n=(p.textContent.trim().match(/\S+/g)||[]).length;
+  w.textContent=n+" words, roughly "+Math.round(n/2.6)+" seconds spoken";
+})();
+
+/* ---- motion: reveal + count up ---- */
+(function(){
+  document.documentElement.classList.add("js");
+  var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function countUp(el){
+    var to=parseFloat(el.dataset.to),dp=el.dataset.dp?+el.dataset.dp:0,
+        pre=el.dataset.pre||"",suf=el.dataset.suf||"",dur=560,t0=0;
+    if(isNaN(to))return;
+    if(reduce){el.textContent=pre+to.toFixed(dp)+suf;return;}
+    function tick(t){
+      if(!t0)t0=t;
+      var k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,3);
+      el.textContent=pre+(to*e).toFixed(dp)+suf;
+      if(k<1)requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  var nodes=[].slice.call(document.querySelectorAll(".rv,.count"));
+  if(!nodes.length)return;
+  if(!("IntersectionObserver" in window)){
+    nodes.forEach(function(n){n.classList.add("in");if(n.classList.contains("count"))countUp(n);});return;
+  }
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      e.target.classList.add("in");
+      if(e.target.classList.contains("count"))countUp(e.target);
+      if(e.target.querySelectorAll)[].forEach.call(e.target.querySelectorAll(".count:not(.done)"),function(c){c.classList.add("done");countUp(c);});
+      io.unobserve(e.target);
+    });
+  },{rootMargin:"0px 0px -8% 0px",threshold:.12});
+  nodes.forEach(function(n){io.observe(n);});
+
+  function finalise(el){
+    var to=parseFloat(el.dataset.to);if(isNaN(to))return;
+    el.textContent=(el.dataset.pre||"")+to.toFixed(el.dataset.dp?+el.dataset.dp:0)+(el.dataset.suf||"");
+  }
+  function settle(n){
+    n.classList.add("in");
+    if(n.classList.contains("count")&&!n.classList.contains("done")){n.classList.add("done");finalise(n);}
+    if(n.querySelectorAll)[].forEach.call(n.querySelectorAll(".count:not(.done)"),function(c){c.classList.add("done");finalise(c);});
+    io.unobserve(n);
+  }
+  function sweep(){
+    nodes.forEach(function(n){
+      if(n.classList.contains("in"))return;
+      if(n.getBoundingClientRect().bottom<=0)settle(n);
+    });
+  }
+  var pending=false;
+  function queue(){if(pending)return;pending=true;requestAnimationFrame(function(){pending=false;sweep();});}
+  sweep();
+  window.addEventListener("scroll",queue,{passive:true});
+  window.addEventListener("load",function(){setTimeout(sweep,80);setTimeout(sweep,400);});
+  window.addEventListener("hashchange",function(){setTimeout(sweep,60);});
+})();
+
+/* ---- scroll spy ---- */
+(function(){
+  var links=[].slice.call(document.querySelectorAll("nav.toc a"));
+  if(!links.length||!("IntersectionObserver" in window))return;
+  var map={},targets=[];
+  links.forEach(function(a){
+    var h=a.getAttribute("href");if(!h||h.charAt(0)!=="#")return;
+    var el=document.getElementById(h.slice(1));
+    if(el){map[h.slice(1)]=a;targets.push(el);}
+  });
+  var seen=[];
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      var i=seen.indexOf(e.target);
+      if(e.isIntersecting&&i<0)seen.push(e.target);
+      if(!e.isIntersecting&&i>=0)seen.splice(i,1);
+    });
+    if(!seen.length)return;
+    seen.sort(function(a,b){return a.getBoundingClientRect().top-b.getBoundingClientRect().top;});
+    links.forEach(function(l){l.classList.remove("on");});
+    var a=map[seen[0].id];if(!a)return;
+    a.classList.add("on");
+  },{rootMargin:"-72px 0px -55% 0px",threshold:0});
+  targets.forEach(function(t){io.observe(t);});
+})();
+})();
+</script>
+
+<script>
+(function(){
+/* ---- video overview ---- */
+var S=[
+ {k:"Session 5",h:"The growth model in action",p:"Why do some economies grow faster than others?",n:"Welcome to session five. The primers told us GDP grows from the supply side. Today we ask why some countries build that supply side and others never do."},
+ {k:"Proposition 1",h:"Capital, skills, productivity",p:"The proximate causes of growth",pills:["K machines","H skills","A productivity"],n:"Proposition one says output grows as capital, skills and productivity grow. But that just moves the question. Why does one country invest and another not?"},
+ {k:"One town, one fence",h:"Nogales, Arizona vs Nogales, Sonora",p:"Same people, same climate. Roughly three times the income on one side.",n:"Acemoglu and Robinson open with Nogales, one town split by a border. Same geography, same culture. The difference is the rules each side lives under."},
+ {k:"The core claim",h:"Inclusive vs extractive institutions",pills:["Secure property","Open entry","Fair courts","vs","Rents for the elite"],p:"",n:"Inclusive institutions let anyone own, build and keep the return. Extractive ones move income to a small group in power. Growth follows the first."},
+ {k:"Why bad rules persist",h:"Elites fear creative destruction",p:"Growth would destroy their power as well as old firms. Vicious circles feed themselves.",n:"If inclusive rules are better, why don't all countries adopt them? Because new firms and new wealth threaten the people currently in charge. So they block it."},
+ {k:"The corridor",h:"Strong state, strong society",p:"Leave the narrow corridor and you drift toward despotism or disorder.",n:"Their later book adds a warning. Good institutions live in a narrow corridor where the state is strong but society can still restrain it. It takes constant effort to stay there."},
+ {k:"Canada",h:"Passes the big tests",pills:["Courts 5","Central bank 5","Competition 2","Internal trade 2","Permits 2"],p:"",n:"Canada scores well on courts, elections and its central bank. Where it needs work is competition, internal trade barriers and slow approvals, the things that protect incumbents and hold back productivity."},
+ {k:"United States",h:"Erosion of the referees",pills:["Fed pressure","Statistics chief fired","Tariffs by decree","Favours for firms"],p:"",n:"The United States is the live case. Pressure on the Fed, firing the statistics chief, and tariffs by emergency decree all weaken political checks. The theory says economic rules follow."},
+ {k:"Your take",h:"Right direction, overstated speed?",p:"Courts, states, the press and elections still push back. Institutions are a stock that runs down slowly.",n:"Is the warning overstated? Courts, states and elections still resist, and institutions wear down slowly. A good class answer names the direction, the growth channel, and the buffers."}
+];
+var scr=document.getElementById("vScr");if(!scr)return;
+if(!scr.children.length)S.forEach(function(s,i){var d=document.createElement("div");d.className="sc";
+ d.innerHTML='<div class="kk"></div><h3></h3>'+(s.p?'<p></p>':'')+(s.pills?'<div class="row"></div>':'');
+ d.querySelector(".kk").textContent=(i+1)+" / "+S.length+" · "+s.k;d.querySelector("h3").textContent=s.h;
+ if(s.p)d.querySelector("p").textContent=s.p;
+ if(s.pills)s.pills.forEach(function(x,j){var sp=document.createElement("span");sp.className="pill"+(x.match(/5$|Secure|Open|Fair/)?" g":x.match(/2$|Rents|Fed|fired|decree|Favours/)?" r":"");sp.textContent=x;d.querySelector(".row").appendChild(sp);});
+ scr.appendChild(d);});
+var cur=0,playing=true,voice=false,timer=null,t0=0,dur=0,raf=0;
+var ss=window.speechSynthesis;
+function show(i){cur=(i+S.length)%S.length;[].forEach.call(scr.children,function(c,j){c.classList.toggle("on",j===cur);});
+ document.getElementById("vCap").textContent=S[cur].n;document.getElementById("vTT").textContent=(cur+1)+"/"+S.length;
+ clearTimeout(timer);if(ss)ss.cancel();dur=Math.max(6000,S[cur].n.split(" ").length*380);t0=performance.now();
+ if(voice&&ss){var u=new SpeechSynthesisUtterance(S[cur].n);u.rate=1.02;u.onend=function(){if(playing)timer=setTimeout(function(){show(cur+1);},700);};ss.speak(u);}
+ else if(playing)timer=setTimeout(function(){show(cur+1);},dur);}
+function tick(){var p=voice?((performance.now()-t0)/dur):((performance.now()-t0)/dur);
+ document.getElementById("vProg").style.width=(playing?Math.min(100,((cur+Math.min(1,p))/S.length)*100):(cur/S.length*100))+"%";raf=requestAnimationFrame(tick);}
+document.getElementById("vPlay").onclick=function(){playing=!playing;this.textContent=playing?"Pause":"Play";this.setAttribute("aria-pressed",String(playing));
+ if(playing)show(cur);else{clearTimeout(timer);if(ss)ss.cancel();}};
+document.getElementById("vVoice").onclick=function(){voice=!voice;if(!ss)voice=false;this.textContent=voice?"Narration on":"Narration off";this.setAttribute("aria-pressed",String(voice));show(cur);};
+document.getElementById("vPrev").onclick=function(){show(cur-1);};
+document.getElementById("vNext").onclick=function(){show(cur+1);};
+show(0);tick();
+
+/* ---- scorecard ---- */
+var ROWS=["Courts and rule of law","Central bank independence","Honest statistics","Free elections and press","Open competition","Limits on executive power"];
+var PRE={can:[5,5,5,5,2,4],us24:[4,5,5,4,4,4],usnow:[3,3,2,4,3,2],hun:[2,3,3,2,2,1]};
+var tb=document.getElementById("sRows");
+ROWS.forEach(function(r,i){var tr=document.createElement("tr");tr.innerHTML='<td></td><td><input type="range" min="1" max="5" step="1"></td><td class="n"></td>';
+ tr.querySelector("td").textContent=r;tb.appendChild(tr);tr.querySelector("input").addEventListener("input",function(){[].forEach.call(document.querySelectorAll("#sSeg button"),function(b){b.setAttribute("aria-pressed","false");});draw();});});
+function set(k){[].forEach.call(tb.querySelectorAll("input"),function(x,i){x.value=PRE[k][i];});draw();}
+function draw(){var v=[].map.call(tb.querySelectorAll("input"),function(x){return +x.value;});
+ [].forEach.call(tb.querySelectorAll(".n"),function(n,i){n.textContent=v[i];});
+ var avg=v.reduce(function(a,b){return a+b;},0)/v.length,pct=(avg-1)/4*100;
+ document.getElementById("sPin").style.left="calc("+pct+"% - 2px)";var l=document.getElementById("sLbl");l.style.left=pct+"%";l.textContent=avg.toFixed(1)+" / 5";
+ var weak=ROWS.filter(function(r,i){return v[i]<=2;});
+ var m=avg>=4?"<b>Inclusive.</b> Growth rules are safe for now.":avg>=3?"<b>Inclusive on paper, slipping in practice.</b> Watch the political checks.":"<b>Extractive drift.</b> Theory predicts investment and innovation follow the power.";
+ if(weak.length)m+=" Weakest: "+weak.join(", ")+".";document.getElementById("sNote").innerHTML=m;}
+document.getElementById("sSeg").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+ [].forEach.call(this.querySelectorAll("button"),function(x){x.setAttribute("aria-pressed",String(x===b));});set(b.dataset.k);});
+set("can");
+})();
+</script>
+</body>
+</html>

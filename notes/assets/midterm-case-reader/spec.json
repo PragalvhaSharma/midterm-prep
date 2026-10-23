@@ -1,0 +1,1982 @@
+{
+ "out": "/Users/prag/Documents/PragPersonal/School/4505-Global-Macroeconomics-for-Managers/notes/midterm-case-reader.html",
+ "assetDir": "/Users/prag/Documents/PragPersonal/School/4505-Global-Macroeconomics-for-Managers/notes/assets/midterm-case-reader",
+ "assetHref": "assets/midterm-case-reader",
+ "title": "4505 GMM midterm case reader",
+ "eyebrow": "4505 Global Macroeconomics for Managers · Midterm",
+ "h1": "The past midterms, highlighted",
+ "gist": "The 2025 and 2024 papers, their exhibits and both answer keys, with the lines that decide the marks highlighted and explained.",
+ "meta": [
+  [
+   "Exam",
+   "Mon Oct 26, 1:00 to 2:20pm"
+  ],
+  [
+   "Length",
+   "80 min"
+  ],
+  [
+   "Weight",
+   "25%"
+  ],
+  [
+   "Faculty",
+   "K. Cornelson, T. Frost"
+  ]
+ ],
+ "back": {
+  "href": "midterm-past-exams.html",
+  "label": "Back to the midterm prep page"
+ },
+ "intro_html": "<p>This page holds the real exam material: the 2025 and 2024 midterm papers, their exhibits at full size, and both answer keys, followed by the course readings and slides the papers draw on. Red highlights mark traps: wording that changes what is asked, a log axis, a mark the key gives for a step most people skip. Yellow highlights explain what a line means in course terms and where it goes in your answer. Every note links back to the matching section of the prep page.</p><p>In the week before the exam, write each paper cold first, on the <a href='midterm-past-exams.html'>prep page</a> with the answers hidden. Prof. Cornelson's advice on Canvas: “I HIGHLY recommend that you attempt the versions with no answers in their entirety before reviewing the answers.” Then read the paper here, highlights first, and mark your answers against the key and its notes.</p><p>The night before, switch the filter to <b>Watch out only</b> and read just the red notes. They are the mistakes worth avoiding on Monday.</p>",
+ "extra_css": ".sheet-in .hl .pin{transform:translate(-100%,-100%)} .sheet-in #h-crop-top .pin,.sheet-in #h-p25-fn-inst .pin,.sheet-in #h-s07-canada .pin{left:100%;top:50%;transform:translate(4px,-50%)} .sheet-in #h-p24-1c-one .pin{left:100%;transform:translate(-100%,-100%)} .sheet-in #h-p25-fn-land .pin,.sheet-in #h-p25-q3-format .pin,.sheet-in #h-p25-q2-corn .pin,.sheet-in #h-k25-q1-open .pin,.sheet-in #h-k25-q2-scale .pin,.sheet-in #h-p24-1a-marks .pin{left:100%;top:50%;transform:translate(4px,-50%)} .sheet-in #h-k25-q2-capital .pin,.sheet-in #h-k24-2b-labour .pin,.sheet-in #h-p24-mail-bigger .pin{left:100%;top:0;transform:translate(-100%,-100%)} .sheet-in #h-p24-1c-all3 .pin,.sheet-in #h-k24-1a-marks .pin{left:0;top:100%;transform:translate(-100%,0)} .sheet-in #h-p25-fn-pov .pin,.sheet-in #h-k25-q1-flat .pin{left:100%;top:100%;transform:translate(0,-30%)} .sheet-in #h-p24-1a-goal .pin{left:0;top:0;transform:translate(0,-100%)} .sheet-in .hl#h-k25-q1-flat .pin{left:-45.72%;top:50%;transform:translate(-50%,-50%)} .sheet-in .hl#h-k25-q1-highest .pin{left:-280.77%;top:50%;transform:translate(-50%,-50%)} .sheet-in .hl#h-k25-q1-translate .pin{left:-153.92%;top:50%;transform:translate(-50%,-50%)} .sheet-in .hl#h-p24-1a-goal .pin{left:-102.53%;top:50%;transform:translate(-50%,-50%)} .sheet-in .hl#h-p24-1a-audience .pin{left:126.49%;top:50%;transform:translate(-50%,-50%)} .sheet-in .hl#h-p24-1a-marks .pin{left:748.55%;top:50%;transform:translate(-50%,-50%)} .sheet-in .hl#h-p24-1a-hint .pin{left:-201.77%;top:50%;transform:translate(-50%,-50%)} .sheet-in .hl#h-p24-1b-pick .pin{left:-22.17%;top:50%;transform:translate(-50%,-50%)} .sheet-in .hl#h-p24-1c-one .pin{left:133.04%;top:50%;transform:translate(-50%,-50%)} .sheet-in .hl#h-p24-1c-all3 .pin{left:-124.93%;top:50%;transform:translate(-50%,-50%)}",
+ "docs": [
+  {
+   "id": "p25",
+   "kind": "pdf",
+   "title": "2025 midterm paper: Rich country, poor country",
+   "short": "2025 paper",
+   "eyebrow": "Paper 1 · Prof. Tony Frost · Oct 15, 2025 · 40 points",
+   "sub": "One Economist chart on crop yields, four questions, 620 words in total.",
+   "lede_html": "<p>The exam you are most likely to see again: one exhibit, four questions, points and a word cap on each. The highlights mark the words that change what is asked, the caps, and the claims in the footnote you are expected to use.</p><p>Attempt it cold on the prep page first, then read it here.</p>",
+   "pdf": "/Users/prag/Documents/PragPersonal/School/4505-Global-Macroeconomics-for-Managers/midterm/past-midterms/Midterm2025.pdf",
+   "pdfHref": "../midterm/past-midterms/Midterm2025.pdf",
+   "pages": "all",
+   "notes": [
+    {
+     "id": "p25-chart",
+     "type": "mean",
+     "page": 2,
+     "rect": [
+      4.4,
+      32.6,
+      45.3,
+      58.2
+     ],
+     "label": "The exhibit: actual and potential crop yield against GDP per person, both on log scales",
+     "title": "One chart feeds all four questions",
+     "body_html": "<p>Every 2025 question asks the same thing a new way: why does Mozambique get so much less from land as good as Germany's? The chart is small on the slide. Read it full size, highlighted, in the <a href='#crop'>crop yields chart</a> below.</p><p>Readings are approximate because both axes are log scales: potential yield <span class='num'>≈ $1,480</span> and <span class='num'>≈ $1,490</span> per hectare, actual yield <span class='num'>≈ $260</span> and <span class='num'>≈ $1,240</span>.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 110' role='img' aria-label='Potential and actual yield per hectare for Mozambique and Germany'><text x='4' y='12' class='t-b'>$ per hectare, read off a log chart</text><text x='4' y='32'>Moz potential</text><rect class='fl-w' x='97.8' y='22' width='164.9' height='12' rx='2'/><text x='267.686' y='32' class='t-b'>≈ 1,480</text><text x='4' y='53'>Moz actual</text><rect class='fl-a' x='97.8' y='43' width='29.0' height='12' rx='2'/><text x='131.766' y='53' class='t-b'>≈ 260</text><text x='4' y='74'>Ger potential</text><rect class='fl-w' x='97.8' y='64' width='166.0' height='12' rx='2'/><text x='268.8' y='74' class='t-b'>≈ 1,490</text><text x='4' y='95'>Ger actual</text><rect class='fl-a' x='97.8' y='85' width='138.1' height='12' rx='2'/><text x='240.948' y='95' class='t-b'>≈ 1,240</text></svg>",
+     "diagram_caption": "Actual ÷ potential: Mozambique ≈ 18%, Germany ≈ 83%.",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25",
+       "label": "2025 paper read-off"
+      },
+      {
+       "href": "midterm-past-exams.html#b-real",
+       "label": "Actual ÷ potential"
+      }
+     ]
+    },
+    {
+     "id": "p25-fn-inst",
+     "type": "mean",
+     "page": 2,
+     "quote": "political instability, corruption, and weak rule of law",
+     "title": "The footnote names the weak institutions Q2 wants",
+     "body_html": "<p>These are the institutions Q2 asks you to be explicit about. The key's Q2 answer reuses them almost word for word: \"weak rule of law, corruption, and political instability\".</p><p>Give each one a channel. Each raises the risk of investing, so farmers skip the tools, irrigation and storage that move actual yield toward potential.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 126' role='img' aria-label='From civil war to weak institutions to low yields'><rect class='bx' x='4' y='4' width='312.0' height='22' rx='6'/><text x='160' y='19' class='t-b' text-anchor='middle'>Civil war 1977 to 1992: 15 years</text><line class='ln' x1='160' y1='27' x2='160' y2='35'/><path class='ln' d='M157.0 30.0 L160 35 L163.0 30.0'/><rect class='bx-w' x='4' y='36' width='312.0' height='22' rx='6'/><text x='160' y='51' class='t-b' text-anchor='middle'>Instability, corruption, weak rule of law</text><line class='ln' x1='160' y1='59' x2='160' y2='67'/><path class='ln' d='M157.0 62.0 L160 67 L163.0 62.0'/><rect class='bx-m' x='4' y='68' width='312.0' height='22' rx='6'/><text x='160' y='83' class='t-b' text-anchor='middle'>Risky to invest: few tools, little irrigation</text><line class='ln' x1='160' y1='91' x2='160' y2='99'/><path class='ln' d='M157.0 94.0 L160 99 L163.0 94.0'/><rect class='bx-a' x='4' y='100' width='312.0' height='22' rx='6'/><text x='160' y='115' class='t-b' text-anchor='middle'>Actual ≈ $260 of ≈ $1,480 potential per ha</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q2",
+       "label": "Q2 institutions"
+      },
+      {
+       "href": "midterm-past-exams.html#c-inst",
+       "label": "Institutions concept"
+      },
+      {
+       "href": "midterm-past-exams.html#b-root",
+       "label": "Root causes"
+      }
+     ]
+    },
+    {
+     "id": "p25-fn-pov",
+     "type": "mean",
+     "page": 2,
+     "quote": "over 70% of Mozambique’s population was estimated to be living below the World Bank’s $3.00/day extreme poverty standard",
+     "title": "70% is today's poverty rate, the baseline for Q4",
+     "body_html": "<p>This is a share of people, so it gives Q4 its starting point. Q4 then asks about the <b>number</b> of people below the line in 2037, and the population keeps growing. The arithmetic sits on the <a href='#n-p25-q4-count'>Q4 poverty note</a>.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 96' role='img' aria-label='Seventy of every hundred Mozambicans below the extreme poverty line'><text x='4' y='12' class='t-b'>Mozambique 2023, per 100 people</text><rect class='bx-w' x='4' y='22' width='218.4' height='24' rx='3'/><text x='113.2' y='38' class='t-b' text-anchor='middle'>70 below $3.00/day</text><rect class='bx' x='222.4' y='22' width='93.6' height='24' rx='3'/><text x='269.2' y='38' class='t-b' text-anchor='middle'>30</text><text x='4' y='68'>Q4 asks how this count moves by 2037,</text><text x='4' y='86'>with population assumed up ≈3% a year</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q4",
+       "label": "Q4 forecast"
+      },
+      {
+       "href": "midterm-past-exams.html#b-pov",
+       "label": "Count vs rate"
+      }
+     ]
+    },
+    {
+     "id": "p25-fn-land",
+     "type": "mean",
+     "page": 2,
+     "quote": "nearly six times the size of Germany in terms of land per person",
+     "title": "Six times the land per person, and still about 24× poorer",
+     "body_html": "<p>Use this fact in Q1. Mozambique has far more land per person, and the chart says that land is just as fertile. Yet Germany's GDP per person is about <span class='num'>$29k</span> against <span class='num'>$1.2k</span>. Endowments cannot explain a gap that size.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 104' role='img' aria-label='Mozambique and Germany compared on land, potential yield and income'><text x='4' y='14' class='t-b'></text><text x='150' y='14' class='t-b'>Mozambique</text><text x='240' y='14' class='t-b'>Germany</text><text x='4' y='34'>Land per person</text><text x='150' y='34'>≈ 6×</text><text x='240' y='34'>1×</text><text x='4' y='54'>Potential yield</text><text x='150' y='54'>≈ 1,480</text><text x='240' y='54'>≈ 1,490</text><text x='4' y='74'>GDP per person</text><text x='150' y='74'>≈ $1.2k</text><text x='240' y='74'>≈ $29k</text><rect class='bx-w' x='4' y='82' width='312.0' height='18' rx='4'/><text x='160' y='95' class='t-b' text-anchor='middle'>Same land quality, Germany ≈ 24× richer</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q1",
+       "label": "Q1 resources"
+      },
+      {
+       "href": "midterm-past-exams.html#b-res",
+       "label": "Natural resources"
+      }
+     ]
+    },
+    {
+     "id": "p25-q1-claim",
+     "type": "mean",
+     "page": 3,
+     "quote": "fertile farmland that make it an agricultural superpower",
+     "title": "The claim under test: good land makes a country rich",
+     "body_html": "<p>The question frames resources as farmland, so the orange dots, potential yield, are the direct test: they measure what land and climate allow. If the claim held, orange would rise with income. It stays flat, about <span class='num'>$1,600</span> at the poorest end and <span class='num'>$1,900</span> at the richest, across incomes from about $0.4k to $60k.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 132' role='img' aria-label='Potential yield trend flat, actual yield trend rising with income'><line class='ln' x1='40' y1='16' x2='40' y2='110'/><line class='ln' x1='40' y1='110' x2='300' y2='110'/><line class='ln-w dash' x1='40' y1='36.6' x2='300' y2='32.1'/><line class='ln-a dash' x1='40' y1='85.8' x2='300' y2='41.1'/><text x='44' y='28' class='t-w'>≈1,600</text><text x='120' y='26' class='t-w'>potential: flat</text><text x='300' y='22' class='t-w' text-anchor='end'>≈1,900</text><text x='44' y='101' class='t-a'>≈250</text><text x='150' y='82' class='t-a'>actual: up ≈5×</text><text x='300' y='57' class='t-a' text-anchor='end'>≈1,350</text><text x='40' y='124' text-anchor='middle'>$0.4k</text><text x='170' y='124' text-anchor='middle'>GDP per person (log)</text><text x='300' y='124' text-anchor='end'>$60k</text></svg>",
+     "diagram_caption": "Trend lines as read off the chart, $ per hectare, both axes log.",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q1",
+       "label": "Q1 resources"
+      },
+      {
+       "href": "midterm-past-exams.html#b-res",
+       "label": "Natural resources"
+      }
+     ]
+    },
+    {
+     "id": "p25-q1-verdict",
+     "type": "watch",
+     "page": 3,
+     "quote": "mostly supported or mostly contradicted",
+     "title": "A two-way question: commit in your first words",
+     "body_html": "<p>The question offers two verdicts. The key opens with one: \"The chart contradicts the idea\". Make <b>Mostly contradicted</b> your first two words. A hedge with no verdict gives away the easiest marks.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 100' role='img' aria-label='Two verdicts offered; the key picks mostly contradicted'><rect class='bx' x='4' y='8' width='150.0' height='42' rx='6'/><text x='79' y='26.5' class='t-b' text-anchor='middle'>mostly supported</text><text x='79' y='39.5' text-anchor='middle'>orange would rise</text><line class='ln-w' x1='12' y1='14' x2='146' y2='44'/><rect class='bx-a' x='166' y='8' width='150.0' height='42' rx='6'/><text x='241' y='26.5' class='t-b' text-anchor='middle'>mostly contradicted</text><text x='241' y='39.5' text-anchor='middle'>the key's verdict</text><text x='4' y='72' class='t-b'>Evidence: potential ≈1,600 → 1,900</text><text x='4' y='90'>while incomes differ more than 100×</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q1",
+       "label": "Q1 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#traps",
+       "label": "Traps: no verdict"
+      }
+     ]
+    },
+    {
+     "id": "p25-q1-features",
+     "type": "watch",
+     "page": 3,
+     "quote": "using specific features of the chart",
+     "title": "Name the chart feature, then give its number",
+     "body_html": "<p>Three features carry the answer: the flat orange trend, the rising teal trend, and the two vertical lines that show each country's gap. The key cites the first by name, \"The orange line is almost flat\". Add the gap ratios it leaves out.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 104' role='img' aria-label='Four chart features and the number each one gives'><text x='4' y='14' class='t-b'>Chart feature</text><text x='128' y='14' class='t-b'>Number</text><text x='4' y='34' class='t-w'>Orange trend</text><text x='128' y='34' class='t-w'>1,900 ÷ 1,600 ≈ 1.2×</text><text x='4' y='54' class='t-a'>Teal trend</text><text x='128' y='54' class='t-a'>1,350 ÷ 250 ≈ 5.4×</text><text x='4' y='74'>Mozambique line</text><text x='128' y='74'>260 ÷ 1,480 ≈ 0.18</text><text x='4' y='94'>Germany line</text><text x='128' y='94'>1,240 ÷ 1,490 ≈ 0.83</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q1",
+       "label": "Q1 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#traps",
+       "label": "Traps: one line only"
+      }
+     ]
+    },
+    {
+     "id": "p25-q1-cap",
+     "type": "watch",
+     "page": 3,
+     "quote": "(8 points) Maximum 100 words",
+     "title": "8 points, 100 words, about 15 minutes",
+     "body_html": "<p>The prep page's time plan gives Q1 about 15 minutes: plan 5, write 10. The cap is a limit, and the key's own model answer runs to 108 words. Aim 5 to 10 words under.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 118' role='img' aria-label='Word budget for Q1 against the key&#x27;s 108 words'><rect class='bx-a' x='4' y='12' width='91.0' height='20' rx='3'/><text x='49.5' y='26' class='t-b' text-anchor='middle'>≈35</text><text x='49.5' y='45' text-anchor='middle'>verdict</text><rect class='bx-a' x='95' y='12' width='91.0' height='20' rx='3'/><text x='140.5' y='26' class='t-b' text-anchor='middle'>≈35</text><text x='140.5' y='45' text-anchor='middle'>2 countries</text><rect class='bx-a' x='186' y='12' width='78.0' height='20' rx='3'/><text x='225' y='26' class='t-b' text-anchor='middle'>≈30</text><text x='225' y='45' text-anchor='middle'>land, cause</text><rect class='bx-w' x='4' y='60' width='280.8' height='16' rx='3'/><text x='10' y='72' class='t-b'>key's answer: 108 words</text><rect class='bx-a' x='4' y='82' width='234.0' height='16' rx='3'/><text x='10' y='94' class='t-b'>prep page answer: 90</text><line class='ln-w dash' x1='264' y1='6' x2='264' y2='102'/><text x='264' y='114' class='t-w' text-anchor='middle'>cap 100</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q1",
+       "label": "Q1 word plan"
+      },
+      {
+       "href": "midterm-past-exams.html#timing",
+       "label": "Timing"
+      }
+     ]
+    },
+    {
+     "id": "p25-q2-hidden",
+     "type": "mean",
+     "page": 4,
+     "quote": "hidden driver",
+     "title": "One hidden cause behind both axes",
+     "body_html": "<p>Institutions decide whether anyone invests. On farms that lifts actual yield toward potential; across the whole economy it lifts GDP per person. That is why teal rises with income while orange stays flat.</p><p>The key explains the farm side only. One sentence on the income axis is where to beat it.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 160' role='img' aria-label='Institutions drive both farm yields and GDP per person'><rect class='bx-a' x='4' y='56' width='96.0' height='40' rx='6'/><text x='52' y='73.5' class='t-b' text-anchor='middle'>Good</text><text x='52' y='86.5' class='t-b' text-anchor='middle'>institutions</text><rect class='bx-m' x='130' y='8' width='186.0' height='40' rx='6'/><text x='223' y='25.5' class='t-b' text-anchor='middle'>Farm investment</text><text x='223' y='38.5' text-anchor='middle'>actual yield up (y)</text><rect class='bx-m' x='130' y='104' width='186.0' height='40' rx='6'/><text x='223' y='121.5' class='t-b' text-anchor='middle'>Economy-wide investment</text><text x='223' y='134.5' text-anchor='middle'>GDP per person up (x)</text><line class='ln-a' x1='100' y1='68' x2='128' y2='32'/><path class='ln-a' d='M127.2 38.9 L128 32 L121.5 34.5'/><line class='ln-a' x1='100' y1='84' x2='128' y2='120'/><path class='ln-a' d='M121.5 117.5 L128 120 L127.2 113.1'/><text x='160' y='156' text-anchor='middle'>teal ≈250 → 1,350; orange ≈1,600 → 1,900</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q2",
+       "label": "Q2 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-root",
+       "label": "Root causes"
+      },
+      {
+       "href": "midterm-past-exams.html#c-inst",
+       "label": "Institutions concept"
+      }
+     ]
+    },
+    {
+     "id": "p25-q2-explicit",
+     "type": "watch",
+     "page": 4,
+     "quote": "Be explicit and specific about which types of institutions",
+     "title": "Name the types, one channel each",
+     "body_html": "<p>\"Good institutions\" in general earns little. Name the types and give each a channel. The paper's own Q4 lists them: property rights, contract enforcement, open trade and logistics, finance and credit, infrastructure. The key uses rule of law, property rights, finance and open trade.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 122' role='img' aria-label='Four institution types, each with its channel'><text x='4' y='16' class='t-b'>Property rights</text><line class='ln-a' x1='106' y1='12' x2='120' y2='12'/><path class='ln-a' d='M116.0 14.4 L120 12 L116.0 9.6'/><text x='124' y='16'>merge plots, borrow on land</text><text x='4' y='36' class='t-b'>Rule of law</text><line class='ln-a' x1='106' y1='32' x2='120' y2='32'/><path class='ln-a' d='M116.0 34.4 L120 32 L116.0 29.6'/><text x='124' y='36'>lenders and buyers trust</text><text x='4' y='56' class='t-b'>Finance</text><line class='ln-a' x1='106' y1='52' x2='120' y2='52'/><path class='ln-a' d='M116.0 54.4 L120 52 L116.0 49.6'/><text x='124' y='56'>savings become tractors</text><text x='4' y='76' class='t-b'>Roads, trade</text><line class='ln-a' x1='106' y1='72' x2='120' y2='72'/><path class='ln-a' d='M116.0 74.4 L120 72 L116.0 69.6'/><text x='124' y='76'>surplus reaches a market</text><rect class='bx-a' x='4' y='96' width='312.0' height='20' rx='4'/><text x='160' y='110' class='t-b' text-anchor='middle'>Result: Moz's ≈18% of potential can rise</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q2",
+       "label": "Q2 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-prop",
+       "label": "Property rights"
+      },
+      {
+       "href": "midterm-past-exams.html#b-fin",
+       "label": "Finance"
+      }
+     ]
+    },
+    {
+     "id": "p25-q2-corn",
+     "type": "watch",
+     "page": 4,
+     "quote": "well established contract law doesn’t cause corn to grow",
+     "title": "The corn warning: no institution grows corn by itself",
+     "body_html": "<p>The marker wants the middle step: institution, then investment, then yield. An answer that jumps from \"rule of law\" straight to \"higher yields\" skips what the question is testing.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 122' role='img' aria-label='Institution to investment to yield, and the shortcut that loses marks'><rect class='bx-a' x='4' y='12' width='90.0' height='44' rx='6'/><text x='49' y='31.5' class='t-b' text-anchor='middle'>Institution</text><text x='49' y='44.5' text-anchor='middle'>contract law</text><line class='ln-a flow' x1='96' y1='34' x2='113' y2='34'/><path class='ln-a' d='M108.0 37.0 L113 34 L108.0 31.0'/><rect class='bx-m' x='115' y='12' width='90.0' height='44' rx='6'/><text x='160' y='31.5' class='t-b' text-anchor='middle'>Investment</text><text x='160' y='44.5' text-anchor='middle'>irrigation</text><line class='ln-a' x1='207' y1='34' x2='224' y2='34'/><path class='ln-a' d='M219.0 37.0 L224 34 L219.0 31.0'/><rect class='bx-a' x='226' y='12' width='90.0' height='44' rx='6'/><text x='271' y='31.5' class='t-b' text-anchor='middle'>Yield</text><text x='271' y='44.5' text-anchor='middle'>≈260 → 1,480</text><path class='ln-w dash' d='M49 58 Q160 116 271 58'/><text x='160' y='110' class='t-w' text-anchor='middle'>skipping the middle step loses marks</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q2",
+       "label": "Q2 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#c-inst",
+       "label": "Institutions concept"
+      }
+     ]
+    },
+    {
+     "id": "p25-q2-data",
+     "type": "watch",
+     "page": 4,
+     "quote": "connect your answer directly to the data shown in the chart",
+     "title": "Close on the gap: about 83% against under 20%",
+     "body_html": "<p>End the answer back on the chart. Germany realizes about <span class='num'>83%</span> of its potential yield; Mozambique realizes about <span class='num'>18%</span> of equally good land. The vertical lines on the chart draw exactly this gap.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 98' role='img' aria-label='Share of potential yield realized: Germany 83 percent, Mozambique 18 percent'><text x='4' y='12' class='t-b'>Share of potential yield realized</text><text x='4' y='35'>Germany</text><rect class='fl-g' x='100' y='24' width='160.0' height='14' rx='3'/><rect class='fl-a grow' x='100' y='24' width='132.8' height='14' rx='3'/><text x='266' y='35' class='t-b'>≈83%</text><text x='100' y='51'>1,240 of 1,490</text><text x='4' y='69'>Mozambique</text><rect class='fl-g' x='100' y='58' width='160.0' height='14' rx='3'/><rect class='fl-w' x='100' y='58' width='28.8' height='14' rx='3'/><text x='266' y='69' class='t-b'>≈18%</text><text x='100' y='85'>260 of 1,480</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q2",
+       "label": "Q2 answer"
+      },
+      {
+       "href": "midterm-past-exams.html#b-real",
+       "label": "Actual ÷ potential"
+      }
+     ]
+    },
+    {
+     "id": "p25-q3-jobs",
+     "type": "mean",
+     "page": 5,
+     "quote": "over 70% of employment but only about 25% of GDP",
+     "title": "Turn 70% of jobs and 25% of GDP into output per worker",
+     "body_html": "<p>A sector's share of GDP divided by its share of jobs gives its output per worker relative to the national average.</p><div class='calc'>Mozambique farms     25 ÷ 70 ≈ 0.36\nMozambique non-farm  75 ÷ 30 = 2.5\nGap                  2.5 ÷ 0.36 ≈ 7×\nGermany farms         1 ÷ 1  = 1.0</div><p>Room to catch up and the case for structural transformation both sit in this one fact.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 112' role='img' aria-label='Output per worker relative to the national average'><text x='4' y='12' class='t-b'>Output per worker vs national average</text><text x='4' y='32'>Moz farm</text><rect class='fl-w' x='91.2' y='22' width='25.8' height='12' rx='2'/><text x='122.005' y='32' class='t-b'>≈ 0.36</text><text x='4' y='56'>Moz non-farm</text><rect class='fl-a' x='91.2' y='46' width='179.2' height='12' rx='2'/><text x='275.4' y='56' class='t-b'>2.5</text><text x='4' y='80'>Germany farm</text><rect class='fl-g' x='91.2' y='70' width='71.7' height='12' rx='2'/><text x='167.88' y='80' class='t-b'>1.0</text><line class='ln dash' x1='162.88' y1='18' x2='162.88' y2='92'/><text x='162.88' y='106' text-anchor='middle'>average 1.0</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q3",
+       "label": "Q3 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-struct",
+       "label": "Structural transformation"
+      },
+      {
+       "href": "midterm-past-exams.html#sheet",
+       "label": "Formula sheet"
+      }
+     ]
+    },
+    {
+     "id": "p25-q3-debt",
+     "type": "watch",
+     "page": 5,
+     "quote": "Mozambique has a debt-to-GDP ratio of 76.9% and a CCC+ credit rating (very high default risk), compared to Germany’s 62.5% debt-to-GDP and AAA rating",
+     "title": "Debt ratios are close; credit ratings are far apart",
+     "body_html": "<p>The debt gap is <span class='num'>76.9 − 62.5 = 14.4</span> percentage points, which is modest. The ratings are far apart: AAA is the top rating and CCC+ signals very high default risk. Lenders are pricing that risk, and it decides whether capital arrives. This fact belongs in the skeptical paragraph.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 110' role='img' aria-label='Debt-to-GDP close, credit ratings far apart'><text x='4' y='12' class='t-b'>Debt-to-GDP and credit rating</text><text x='4' y='32'>Mozambique</text><rect class='fl-w' x='78' y='22' width='153.0' height='12' rx='2'/><text x='236.031' y='32' class='t-b'>76.9%</text><text x='4' y='54'>Germany</text><rect class='fl-a' x='78' y='44' width='124.4' height='12' rx='2'/><text x='207.375' y='54' class='t-b'>62.5%</text><rect class='bx-w' x='4' y='68' width='150.0' height='36' rx='6'/><text x='79' y='83.5' class='t-b' text-anchor='middle'>CCC+</text><text x='79' y='96.5' text-anchor='middle'>very high risk</text><rect class='bx-a' x='166' y='68' width='150.0' height='36' rx='6'/><text x='241' y='83.5' class='t-b' text-anchor='middle'>AAA</text><text x='241' y='96.5' text-anchor='middle'>top rating</text></svg>",
+     "diagram_caption": "Debt ratios 14.4 points apart; ratings at opposite ends.",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q3",
+       "label": "Q3 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-fin",
+       "label": "Finance and country risk"
+      }
+     ]
+    },
+    {
+     "id": "p25-q3-format",
+     "type": "watch",
+     "page": 5,
+     "quote": "2 short paragraphs, each no more than 100 words",
+     "title": "Two caps of 100 words, and both facts used",
+     "body_html": "<p>Each paragraph has its own 100-word cap, so one cannot borrow from the other. Label them as the question does. The next sentence adds \"Make sure to use both pieces of information\": put the jobs fact to work in the convergence paragraph and the credit rating in the skeptical one.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 96' role='img' aria-label='Two paragraphs, each with its own 100 word cap and its own fact'><rect class='bx-a' x='4' y='6' width='150.0' height='58' rx='6'/><text x='79' y='26' class='t-b' text-anchor='middle'>Expect convergence</text><text x='79' y='39' text-anchor='middle'>≤ 100 words</text><text x='79' y='52' text-anchor='middle'>jobs: 25 ÷ 70 ≈ 0.36</text><rect class='bx-w' x='166' y='6' width='150.0' height='58' rx='6'/><text x='241' y='26' class='t-b' text-anchor='middle'>Be skeptical</text><text x='241' y='39' text-anchor='middle'>≤ 100 words</text><text x='241' y='52' text-anchor='middle'>CCC+ vs AAA</text><text x='160' y='86' text-anchor='middle'>Two separate caps: no borrowing between them</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q3",
+       "label": "Q3 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#traps",
+       "label": "Traps: skipped fact"
+      }
+     ]
+    },
+    {
+     "id": "p25-q4-pill",
+     "type": "mean",
+     "page": 6,
+     "quote": "swallow the good institutions pill",
+     "title": "Session 4's phrase: Vietnam's 1986 reforms",
+     "body_html": "<p>Session 4 calls Vietnam's 1986 reforms taking \"the good institutions pill\". Vietnam is roughly ten times richer per person since, which implies about 6% a year. Use it as the course example in the output line.</p><div class='calc'>(1 + g)^40 = 10  →  g ≈ 5.9% a year</div>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 96' role='img' aria-label='Vietnam about ten times richer per person since 1986'><line class='ln-a flow' x1='40' y1='40' x2='280' y2='40'/><path class='ln-a' d='M274.0 43.6 L280 40 L274.0 36.4'/><circle class='fl-a' cx='30' cy='40' r='6'/><circle class='fl-a' cx='290' cy='40' r='6'/><text x='30' y='26' class='t-b' text-anchor='middle'>1986</text><text x='290' y='26' class='t-b' text-anchor='middle'>≈2026</text><text x='160' y='32' class='t-a' text-anchor='middle'>≈6% a year</text><text x='30' y='60' text-anchor='middle'>1×</text><text x='312' y='60' text-anchor='end'>≈10× richer</text><text x='4' y='86'>Mozambique: reform 2026, judged 2037</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q4",
+       "label": "Q4 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#c-inst",
+       "label": "Institutions concept"
+      }
+     ]
+    },
+    {
+     "id": "p25-q4-assumptions",
+     "type": "watch",
+     "page": 6,
+     "quote": "Assume no major external shocks such as wars or pandemics",
+     "title": "The shocks are switched off, so do not hedge on them",
+     "body_html": "<p>The paper removes the usual hedges: no wars or pandemics, normal world farm prices, unchanged climate. \"It depends on shocks\" earns nothing here. Each of the four forecasts has to run through the reforms: institutions and credit, investment, workers leaving farms, and who gains first.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 104' role='img' aria-label='Shocks held constant; reforms drive the forecast'><rect class='bx' x='4' y='8' width='150' height='88' rx='4'/><text x='79' y='27' class='t-b' text-anchor='middle'>Held constant</text><text x='79' y='46' text-anchor='middle'>no war, no pandemic</text><text x='79' y='63' text-anchor='middle'>normal ag prices</text><text x='79' y='80' text-anchor='middle'>climate unchanged</text><rect class='bx-a' x='166' y='8' width='150' height='88' rx='4'/><text x='241' y='27' class='t-b' text-anchor='middle'>Forecast runs on</text><text x='241' y='46' text-anchor='middle'>institutions, credit</text><text x='241' y='63' text-anchor='middle'>workers leaving farms</text><text x='241' y='80' text-anchor='middle'>who gains first</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q4",
+       "label": "Q4 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#c-inst",
+       "label": "Institutions"
+      }
+     ]
+    },
+    {
+     "id": "p25-q4-count",
+     "type": "watch",
+     "page": 6,
+     "quote": "number of people living below the extreme poverty threshold",
+     "title": "A count, not a rate: population keeps growing",
+     "body_html": "<p>The question asks for the <b>number</b> of people below the line, and the key reasons about rates. The paper gives no population path; the prep page assumes about 3% a year, Africa's rate from Session 7. On that assumption the count falls less than the rate.</p><div class='calc'>Growth factor  1.03^10 ≈ 1.34\nCount flat     rate = 0.70 ÷ 1.34 ≈ 52%\nCount halves   rate = 0.35 ÷ 1.34 ≈ 26%</div><p>\"Down a lot, but less than the rate\" shows you read the question.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 110' role='img' aria-label='Poor people per hundred today, in 2037 under two poverty rates'><text x='4' y='12' class='t-b'>Poor people, per 100 people today</text><text x='4' y='32'>Today (70%)</text><rect class='fl-w' x='84.6' y='22' width='199.0' height='12' rx='2'/><text x='288.6' y='32' class='t-b'>70</text><text x='4' y='56'>2037 at 52%</text><rect class='fl-m' x='84.6' y='46' width='198.1' height='12' rx='2'/><text x='287.747' y='56' class='t-b'>≈ 70</text><text x='4' y='80'>2037 at 26%</text><rect class='fl-a' x='84.6' y='70' width='98.9' height='12' rx='2'/><text x='188.531' y='80' class='t-b'>≈ 35</text><text x='4' y='102'>assumed: population ×1.34 by 2037 (≈3% a year)</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q4",
+       "label": "Q4 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-pov",
+       "label": "Count vs rate"
+      },
+      {
+       "href": "midterm-past-exams.html#traps",
+       "label": "Traps: rate for count"
+      }
+     ]
+    },
+    {
+     "id": "p25-q4-scale",
+     "type": "watch",
+     "page": 6,
+     "quote": "up a lot / up a little / down a little / down a lot / ambiguous",
+     "title": "Pick one of the five scale words for each line",
+     "body_html": "<p>Open each line with one of the five options, then about 30 words naming a course concept. The key's calls: output up a lot, farm job share down a lot, poverty down a lot, inequality up with the size left open. A reasoned \"down\" for inequality also scores full marks.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 124' role='img' aria-label='The key&#x27;s forecast for each of the four measures'><text x='140' y='14' class='t-b' text-anchor='middle'>−−</text><text x='181' y='14' class='t-b' text-anchor='middle'>−</text><text x='222' y='14' class='t-b' text-anchor='middle'>+</text><text x='263' y='14' class='t-b' text-anchor='middle'>++</text><text x='304' y='14' class='t-b' text-anchor='middle'>?</text><text x='4' y='40'>Ag output</text><circle class='fl-g' cx='140' cy='36' r='2.5'/><circle class='fl-g' cx='181' cy='36' r='2.5'/><circle class='fl-g' cx='222' cy='36' r='2.5'/><circle class='fl-a' cx='263' cy='36' r='6'/><circle class='fl-g' cx='304' cy='36' r='2.5'/><text x='4' y='60'>Farm job share</text><circle class='fl-a' cx='140' cy='56' r='6'/><circle class='fl-g' cx='181' cy='56' r='2.5'/><circle class='fl-g' cx='222' cy='56' r='2.5'/><circle class='fl-g' cx='263' cy='56' r='2.5'/><circle class='fl-g' cx='304' cy='56' r='2.5'/><text x='4' y='80'>Poor (count)</text><circle class='fl-a' cx='140' cy='76' r='6'/><circle class='fl-g' cx='181' cy='76' r='2.5'/><circle class='fl-g' cx='222' cy='76' r='2.5'/><circle class='fl-g' cx='263' cy='76' r='2.5'/><circle class='fl-g' cx='304' cy='76' r='2.5'/><text x='4' y='100'>Inequality</text><circle class='fl-g' cx='140' cy='96' r='2.5'/><circle class='fl-g' cx='181' cy='96' r='2.5'/><circle class='fl-m' cx='222' cy='96' r='6'/><circle class='fl-m' cx='263' cy='96' r='6'/><circle class='fl-g' cx='304' cy='96' r='2.5'/><text x='4' y='120'>Green: key's call. Amber: up, size open</text></svg>",
+     "diagram_caption": "−− down a lot, − down a little, + up a little, ++ up a lot, ? ambiguous.",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q4",
+       "label": "Q4 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-struct",
+       "label": "Structural transformation"
+      },
+      {
+       "href": "midterm-past-exams.html#b-kuz",
+       "label": "Kuznets curve"
+      }
+     ]
+    },
+    {
+     "id": "p25-q4-cap",
+     "type": "watch",
+     "page": 6,
+     "quote": "(8 points) Maximum 120 words, total",
+     "title": "120 words for four lines: about 30 each",
+     "body_html": "<p>The cap is a total, so a long first line starves the last. The key's four lines run 27, 27, 22 and 32 words, 108 in all. Aim for about 28 to 30 each.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 118' role='img' aria-label='Words per line in the key&#x27;s Q4 answer against a target of 30'><text x='4' y='12' class='t-b'>Key's words per line (target ≈30)</text><text x='4' y='32'>Output</text><rect class='fl-g' x='78' y='22' width='184.6' height='12' rx='2'/><text x='267.613' y='32' class='t-b'>27</text><text x='4' y='54'>Farm jobs</text><rect class='fl-g' x='78' y='44' width='184.6' height='12' rx='2'/><text x='267.613' y='54' class='t-b'>27</text><text x='4' y='76'>Poverty</text><rect class='fl-g' x='78' y='66' width='150.4' height='12' rx='2'/><text x='233.425' y='76' class='t-b'>22</text><text x='4' y='98'>Inequality</text><rect class='fl-w' x='78' y='88' width='218.8' height='12' rx='2'/><text x='301.8' y='98' class='t-b'>32</text><line class='ln-w dash' x1='283.125' y1='18' x2='283.125' y2='104'/><text x='283.125' y='114' class='t-w' text-anchor='middle'>30</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q4",
+       "label": "Q4 answer"
+      },
+      {
+       "href": "midterm-past-exams.html#timing",
+       "label": "Word budget"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "crop",
+   "kind": "image",
+   "title": "The 2025 exhibit: crop yields against income",
+   "short": "Crop chart",
+   "eyebrow": "Exhibit · 2025 paper · The Economist, from Adamopoulos and Restuccia (NBER, 2018)",
+   "sub": "Both axes are log scales. Data for 2000.",
+   "lede_html": "<p>The chart is small on the exam slide, so here it is full size. Every number on the prep page comes from reading these dots: potential (orange) and actual (teal) yield per hectare, against GDP per person.</p><p>Say \"about\" for every reading. On log axes a pixel is a percentage, so a third significant digit is noise.</p>",
+   "src": "/Users/prag/Documents/PragPersonal/School/4505-Global-Macroeconomics-for-Managers/notes/assets/midterm-past-exams/2025-crop-yields-chart.png",
+   "alt": "Economist chart: actual and potential crop yield per hectare against GDP per person, both on log scales, with Mozambique and Germany marked",
+   "notes": [
+    {
+     "id": "crop-legend",
+     "type": "watch",
+     "rect": [
+      46.1,
+      8.0,
+      38.4,
+      3.5
+     ],
+     "label": "Legend: teal dots actual crop yield, orange dots potential crop yield",
+     "title": "Orange is potential, teal is actual: easy to swap",
+     "body_html": "<p>The legend is small and sits at the top right. Orange, potential yield, is what land and climate allow, so it measures the natural resource in Q1. Teal, actual yield, is what farmers get, and capital, know-how and institutions decide it.</p><p>Swap them and every answer on the paper inverts. Check the colours before you write a word.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 96' role='img' aria-label='Orange dots are potential yield, teal dots are actual yield'><rect class='bx-w' x='4' y='6' width='150.0' height='40' rx='6'/><text x='79' y='23.5' class='t-b' text-anchor='middle'>Orange: potential</text><text x='79' y='36.5' text-anchor='middle'>what land allows</text><rect class='bx-a' x='166' y='6' width='150.0' height='40' rx='6'/><text x='241' y='23.5' class='t-b' text-anchor='middle'>Teal: actual</text><text x='241' y='36.5' text-anchor='middle'>what farms achieve</text><text x='4' y='68'>Orange tests Q1's resource claim</text><text x='4' y='86'>The gap between them is Q2's subject</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25",
+       "label": "2025 exhibit"
+      },
+      {
+       "href": "midterm-past-exams.html#b-real",
+       "label": "Actual ÷ potential"
+      }
+     ]
+    },
+    {
+     "id": "crop-logy",
+     "type": "watch",
+     "rect": [
+      3.1,
+      14.3,
+      12.5,
+      63.9
+     ],
+     "label": "Vertical axis: crop yield in 2000, $ per hectare, log scale from 50 to 5,000",
+     "title": "The yield axis is a log scale: equal steps are equal ratios",
+     "body_html": "<p>The ticks run $50, $100, $1,000, $5,000, and each tenfold rise takes the same height. A short vertical line can hide a big ratio.</p><p>Mozambique's line looks modest, yet potential is about 5.7 times actual (1,480 ÷ 260), so it realizes only about 18%. Read values as \"about\" and compare by ratio, which is how the prep page reports them.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 150' role='img' aria-label='On a log scale equal heights are equal ratios'><text x='4' y='12' class='t-b'>$ per hectare, log scale</text><line class='ln' x1='50' y1='20' x2='50' y2='118'/><line class='ln' x1='46' y1='27' x2='54' y2='27'/><text x='43' y='31' class='t-s' text-anchor='end'>5,000</text><line class='ln' x1='46' y1='62' x2='54' y2='62'/><text x='43' y='66' class='t-s' text-anchor='end'>1,000</text><line class='ln' x1='46' y1='112' x2='54' y2='112'/><text x='43' y='116' class='t-s' text-anchor='end'>100</text><text x='130' y='40' class='t-b' text-anchor='middle'>Mozambique</text><line class='ln' x1='130' y1='53.5' x2='130' y2='91.3'/><circle class='fl-w' cx='130' cy='53.5' r='4'/><circle class='fl-a' cx='130' cy='91.3' r='4'/><text x='140' y='57' class='t-w'>≈1,480</text><text x='140' y='95' class='t-a'>≈260</text><text x='190' y='77' class='t-b'>×5.7</text><text x='272' y='40' class='t-b' text-anchor='middle'>Germany</text><line class='ln' x1='272' y1='53.4' x2='272' y2='57.3'/><circle class='fl-w' cx='272' cy='53.4' r='4'/><circle class='fl-a' cx='272' cy='57.3' r='4'/><text x='272' y='77' class='t-b' text-anchor='middle'>×1.2</text><text x='4' y='140'>Equal heights mean equal ratios, not dollars</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25",
+       "label": "2025 read-off"
+      },
+      {
+       "href": "midterm-past-exams.html#traps",
+       "label": "Traps: log-chart numbers"
+      }
+     ]
+    },
+    {
+     "id": "crop-logx",
+     "type": "watch",
+     "rect": [
+      15.6,
+      79.4,
+      80.9,
+      7.9
+     ],
+     "label": "Horizontal axis: GDP per person in 2000, $'000s at PPP, log scale from 0.5 to 50",
+     "title": "The income axis is log too, in thousands of 2000 dollars",
+     "body_html": "<p>GDP per person is in <b>$'000s</b> at purchasing-power parity, for the year 2000. So 1.2 means about <span class='num'>$1,200</span> and 29 means about <span class='num'>$29,000</span>: Germany is about 24× richer.</p><p>The axis spans about $0.4k to $60k, a 150× range, and each tenfold step takes the same width. Quote incomes in thousands with \"about\", as the prep page does.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 110' role='img' aria-label='Income axis on a log scale, Mozambique at 1.2 and Germany at 29 thousand dollars'><text x='4' y='12' class='t-b'>GDP per person, $'000s, log scale</text><line class='ln' x1='80' y1='33' x2='260' y2='33'/><path class='ln' d='M255.0 36.0 L260 33 L255.0 30.0'/><line class='ln' x1='260' y1='33' x2='80' y2='33'/><path class='ln' d='M85.0 30.0 L80 33 L85.0 36.0'/><text x='170' y='27' class='t-b' text-anchor='middle'>≈ 24× richer</text><line class='ln' x1='20' y1='60' x2='300' y2='60'/><line class='ln' x1='20' y1='56' x2='20' y2='64'/><text x='20' y='78' class='t-s'>0.5</text><line class='ln' x1='62.1' y1='56' x2='62.1' y2='64'/><text x='62.1' y='78' class='t-s' text-anchor='middle'>1</text><line class='ln' x1='160' y1='56' x2='160' y2='64'/><text x='160' y='78' class='t-s' text-anchor='middle'>5</text><line class='ln' x1='202.1' y1='56' x2='202.1' y2='64'/><text x='202.1' y='78' class='t-s' text-anchor='middle'>10</text><line class='ln' x1='300' y1='56' x2='300' y2='64'/><text x='300' y='78' class='t-s' text-anchor='end'>50</text><circle class='fl-m' cx='73.2' cy='60' r='4.5'/><circle class='fl-m' cx='266.9' cy='60' r='4.5'/><text x='73' y='48' text-anchor='middle'>Moz ≈1.2</text><text x='267' y='48' text-anchor='middle'>Ger ≈29</text><text x='4' y='100'>each ×10 in income takes the same width</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25",
+       "label": "2025 read-off"
+      },
+      {
+       "href": "midterm-past-exams.html#traps",
+       "label": "Traps: log-chart numbers"
+      }
+     ]
+    },
+    {
+     "id": "crop-moz",
+     "type": "mean",
+     "rect": [
+      [
+       33.2,
+       20.2,
+       11.5,
+       3.6
+      ],
+      [
+       37.2,
+       33.0,
+       2.7,
+       24.9
+      ]
+     ],
+     "label": "Mozambique: potential and actual yield joined by a vertical line",
+     "title": "Mozambique: land as good as Germany's, about 18% of it used",
+     "body_html": "<p>Read the two dots on Mozambique's line: potential about <span class='num'>$1,480</span> a hectare, actual about <span class='num'>$260</span>. It gets about 18% of what its land allows, with GDP per person about $1.2k.</p><p>This vertical line is the whole 2025 paper. Q1 says the land is not the problem, Q2 explains the gap, Q3 asks whether it closes and Q4 imagines closing it.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 100' role='img' aria-label='Mozambique realizes about 260 of 1,480 dollars per hectare'><text x='4' y='12' class='t-b'>Mozambique, $ per hectare of potential</text><rect class='bx-a' x='4' y='24' width='54.8' height='24' rx='3'/><text x='31.4054' y='40' class='t-b' text-anchor='middle'>≈260</text><text x='31.4054' y='61' text-anchor='middle'>actual</text><rect class='bx' x='58.8108' y='24' width='257.2' height='24' rx='3'/><text x='187.405' y='40' class='t-b' text-anchor='middle'>≈1,220 not realized</text><text x='187.405' y='61' text-anchor='middle'>lost to the gap</text><text x='4' y='92' class='t-b'>260 ÷ 1,480 ≈ 18% of what the land allows</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25",
+       "label": "2025 read-off"
+      },
+      {
+       "href": "midterm-past-exams.html#b-real",
+       "label": "Actual ÷ potential"
+      },
+      {
+       "href": "midterm-past-exams.html#y25q2",
+       "label": "Q2 institutions"
+      }
+     ]
+    },
+    {
+     "id": "crop-ger",
+     "type": "mean",
+     "rect": [
+      [
+       78.9,
+       20.2,
+       8.3,
+       3.6
+      ],
+      [
+       82.0,
+       33.0,
+       2.5,
+       5.4
+      ]
+     ],
+     "label": "Germany: potential and actual yield, almost touching",
+     "title": "Germany: actual yield close to potential, about 83%",
+     "body_html": "<p>Germany's two dots almost touch: potential about <span class='num'>$1,490</span>, actual about <span class='num'>$1,240</span>, so about 83%, with GDP per person about $29k.</p><p>Germany has little room left, about 1.2×, against Mozambique's 5.7×. That is the convergence case in Q3: the Q3 key says Germany \"already operates near the efficiency frontier\".</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 98' role='img' aria-label='Room left to grow: potential divided by actual yield'><text x='4' y='12' class='t-b'>Room left: potential ÷ actual</text><text x='4' y='34'>Mozambique</text><rect class='fl-a' x='78' y='24' width='205.6' height='12' rx='2'/><text x='288.6' y='34' class='t-b'>×5.7</text><text x='4' y='58'>Germany</text><rect class='fl-g' x='78' y='48' width='43.3' height='12' rx='2'/><text x='126.284' y='58' class='t-b'>×1.2</text><text x='4' y='90'>Germany sits near its frontier (Q3)</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q3",
+       "label": "Q3 convergence"
+      },
+      {
+       "href": "midterm-past-exams.html#b-dimret",
+       "label": "Diminishing returns"
+      }
+     ]
+    },
+    {
+     "id": "crop-orange",
+     "type": "mean",
+     "rect": [
+      [
+       18.4,
+       30.7,
+       76.8,
+       4.6
+      ],
+      [
+       75.4,
+       50.9,
+       21.2,
+       10.4
+      ]
+     ],
+     "label": "Orange dashed trend line and the note: potential yields are not correlated with income",
+     "title": "Orange trend: flat from about $1,600 to $1,900",
+     "body_html": "<p>Potential yield barely changes with income: about <span class='num'>$1,600</span> a hectare at the poor end and <span class='num'>$1,900</span> at the rich end, about 1.2× across a 150× range of income. The chart's own label says potential yields are not correlated with income.</p><p>This is the Q1 evidence the key cites as \"The orange line is almost flat\".</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 104' role='img' aria-label='Poor end to rich end: orange rises 1.2 times, teal 5.4 times, income 150 times'><text x='4' y='14' class='t-b'></text><text x='76' y='14' class='t-b'>poor end</text><text x='160' y='14' class='t-b'>rich end</text><text x='244' y='14' class='t-b'>rise</text><text x='4' y='36' class='t-w'>Orange</text><text x='76' y='36' class='t-w'>≈1,600</text><text x='160' y='36' class='t-w'>≈1,900</text><text x='244' y='36' class='t-w'>≈1.2×</text><text x='4' y='58' class='t-a'>Teal</text><text x='76' y='58' class='t-a'>≈250</text><text x='160' y='58' class='t-a'>≈1,350</text><text x='244' y='58' class='t-a'>≈5.4×</text><text x='4' y='80'>Income</text><text x='76' y='80'>≈$0.4k</text><text x='160' y='80'>≈$60k</text><text x='244' y='80'>≈150×</text><text x='4' y='98' class='t-s'>Potential barely moves across incomes</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q1",
+       "label": "Q1 resources"
+      },
+      {
+       "href": "midterm-past-exams.html#b-res",
+       "label": "Natural resources"
+      }
+     ]
+    },
+    {
+     "id": "crop-teal",
+     "type": "mean",
+     "rect": [
+      [
+       16.8,
+       38.6,
+       16.3,
+       10.4
+      ],
+      [
+       18.4,
+       49.0,
+       25.4,
+       9.1
+      ],
+      [
+       43.8,
+       42.0,
+       25.4,
+       8.9
+      ],
+      [
+       69.1,
+       34.9,
+       26.0,
+       9.1
+      ]
+     ],
+     "label": "Teal dashed trend line and the note: actual crop yields go up as countries get richer",
+     "title": "Teal trend: actual yield rises about 5× with income",
+     "body_html": "<p>Actual yield climbs from about <span class='num'>$250</span> a hectare at the poor end to about <span class='num'>$1,350</span> at the rich end. Against the orange trend, poor countries realize about a sixth of their potential and rich ones about seven tenths.</p><p>Q2 asks for the hidden driver. Institutions make farm investment safe, and the same institutions raise GDP per person, so teal slopes up while orange stays flat.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 100' role='img' aria-label='Share of potential realized along the teal trend'><text x='4' y='12' class='t-b'>Actual ÷ potential along the trends</text><text x='4' y='35'>Poor end</text><rect class='fl-g' x='80' y='24' width='180.0' height='14' rx='3'/><rect class='fl-w' x='80' y='24' width='28.8' height='14' rx='3'/><text x='266' y='35' class='t-b'>≈16%</text><text x='80' y='51' class='t-s'>250 of 1,600</text><text x='4' y='75'>Rich end</text><rect class='fl-g' x='80' y='64' width='180.0' height='14' rx='3'/><rect class='fl-a grow' x='80' y='64' width='127.8' height='14' rx='3'/><text x='266' y='75' class='t-b'>≈71%</text><text x='80' y='91' class='t-s'>1,350 of 1,900</text></svg>",
+     "diagram_caption": "Ratios of the trend readings; the poor end is about $0.4k, the rich end about $60k.",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q2",
+       "label": "Q2 hidden driver"
+      },
+      {
+       "href": "midterm-past-exams.html#c-inst",
+       "label": "Institutions concept"
+      }
+     ]
+    },
+    {
+     "id": "crop-top",
+     "type": "watch",
+     "rect": [
+      [
+       39.3,
+       22.1,
+       7.0,
+       5.6
+      ],
+      [
+       64.8,
+       23.0,
+       3.2,
+       4.3
+      ]
+     ],
+     "label": "The highest orange dots, about $3,200 to $3,500 a hectare",
+     "title": "The top orange dots sit far above Mozambique",
+     "body_html": "<p>The Q1 key says Mozambique's potential is \"amongst the highest of all\". These dots reach about <span class='num'>$3,200</span> to <span class='num'>$3,500</span> a hectare, more than twice Mozambique's ≈ $1,480, which sits just under the orange trend line (about $1,650 at its income).</p><p>The prep page reads Mozambique as mid-pack and follows that reading. Say its land is about as good as Germany's, which is all Q1 needs.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 112' role='img' aria-label='Mozambique&#x27;s potential yield against the top orange dots'><text x='4' y='12' class='t-b'>Potential yield, $ per hectare</text><text x='65' y='30' text-anchor='middle'>Moz, Ger ≈1,485</text><text x='253' y='30' text-anchor='middle'>top dots ≈3,500</text><line class='ln' x1='20' y1='48' x2='300' y2='48'/><rect class='fl-g' x='76' y='43' width='28.0' height='10' rx='2'/><circle class='fl-w' cx='64.8' cy='48' r='4'/><circle class='fl-w' cx='65.7' cy='48' r='4'/><circle class='fl-w' cx='225.3' cy='48' r='4'/><circle class='fl-w' cx='253.3' cy='48' r='4'/><text x='76' y='68' class='t-s'>trend 1,600 to 1,900</text><text x='20' y='86' class='t-s'>1,000</text><text x='300' y='86' class='t-s' text-anchor='end'>4,000</text><text x='4' y='106' class='t-b'>3,500 ÷ 1,480 ≈ 2.4: mid-pack, not top</text></svg>",
+     "diagram_caption": "Linear strip from $1,000 to $4,000; the band is the orange trend.",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q1",
+       "label": "Q1 key comparison"
+      },
+      {
+       "href": "midterm-past-exams.html#log",
+       "label": "Q&A: amongst the highest?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "k25",
+   "kind": "pdf",
+   "title": "2025 answer key: model answers and marking notes",
+   "short": "2025 key",
+   "eyebrow": "Key 1 · Prof. Tony Frost · Oct 15, 2025",
+   "sub": "Four model answers with word counts, and two marking notes on Q4.",
+   "lede_html": "<p>Read this after you have written your own answers. The yellow highlights mark what earns the points; the red ones mark where the key itself slips or where its wording sets a trap.</p><p>The key is a model to beat: on every question the prep page shows one place to do better.</p>",
+   "pdf": "/Users/prag/Documents/PragPersonal/School/4505-Global-Macroeconomics-for-Managers/midterm/past-midterms/Midterm2025_answerkey.pdf",
+   "pdfHref": "../midterm/past-midterms/Midterm2025_answerkey.pdf",
+   "pages": "all",
+   "notes": [
+    {
+     "id": "k25-q1-open",
+     "type": "mean",
+     "page": 4,
+     "quote": "The chart contradicts the idea that natural resource endowments explain prosperity",
+     "title": "The key's first sentence is the verdict",
+     "body_html": "<p>The model answer settles the two-way question before any evidence. Do the same in the question's own words, \"Mostly contradicted\", then spend the rest on support: two chart features, then the cause.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 92' role='img' aria-label='The key&#x27;s Q1 answer runs verdict, then evidence, then cause'><rect class='bx-a' x='4' y='8' width='90.0' height='40' rx='6'/><text x='49' y='25.5' class='t-b' text-anchor='middle'>Verdict</text><text x='49' y='38.5' text-anchor='middle'>first words</text><line class='ln-a' x1='96' y1='28' x2='113' y2='28'/><path class='ln-a' d='M108.0 31.0 L113 28 L108.0 25.0'/><rect class='bx' x='115' y='8' width='90.0' height='40' rx='6'/><text x='160' y='25.5' class='t-b' text-anchor='middle'>Evidence</text><text x='160' y='38.5' text-anchor='middle'>2 features</text><line class='ln-a' x1='207' y1='28' x2='224' y2='28'/><path class='ln-a' d='M219.0 31.0 L224 28 L219.0 25.0'/><rect class='bx-m' x='226' y='8' width='90.0' height='40' rx='6'/><text x='271' y='25.5' class='t-b' text-anchor='middle'>Cause</text><text x='271' y='38.5' text-anchor='middle'>institutions</text><text x='160' y='72' text-anchor='middle'>Marks follow the elements, in this order</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q1",
+       "label": "Q1 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#traps",
+       "label": "Traps: no verdict"
+      }
+     ]
+    },
+    {
+     "id": "k25-q1-flat",
+     "type": "mean",
+     "page": 4,
+     "quote": "The orange line is almost flat",
+     "title": "The one chart feature the key names",
+     "body_html": "<p>The key reads the orange line: no built-in gap in potential between poor and rich countries. That is the direct test of the resource claim.</p><p>Add what the key leaves out: the numbers, about <span class='num'>$1,600</span> to <span class='num'>$1,900</span> a hectare, and the teal line rising about 5× over the same incomes.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 98' role='img' aria-label='Rise from the poor end to the rich end of each trend line'><text x='4' y='12' class='t-b'>Rise, poor end to rich end</text><text x='4' y='34'>Orange</text><rect class='fl-w' x='51.6' y='24' width='51.6' height='12' rx='2'/><text x='108.156' y='34' class='t-b'>×1.2</text><text x='4' y='58'>Teal</text><rect class='fl-a' x='51.6' y='48' width='232.0' height='12' rx='2'/><text x='288.6' y='58' class='t-b'>×5.4</text><text x='4' y='90'>The key cites orange; add teal</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q1",
+       "label": "Q1 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#traps",
+       "label": "Traps: one line only"
+      }
+     ]
+    },
+    {
+     "id": "k25-q1-highest",
+     "type": "watch",
+     "page": 4,
+     "quote": "slightly higher than Germany’s and amongst the highest of all",
+     "title": "The key overstates this: Mozambique's land is mid-pack",
+     "body_html": "<p>Read off the chart, Mozambique's potential is about <span class='num'>$1,480</span> a hectare and Germany's about <span class='num'>$1,490</span>, so \"slightly higher\" is within reading error. The top orange dots reach about <span class='num'>$3,500</span>, more than twice Mozambique's.</p><p>Follow the prep page: say the land is about as good as Germany's. The argument needs nothing more. See the <a href='#n-crop-top'>top dots on the chart</a>.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 112' role='img' aria-label='Mozambique&#x27;s potential sits near Germany&#x27;s, far below the top dots'><text x='4' y='12' class='t-b'>Potential yield, $ per hectare</text><text x='65' y='30' text-anchor='middle'>Moz, Ger ≈1,485</text><text x='253' y='30' text-anchor='middle'>top dots ≈3,500</text><line class='ln' x1='20' y1='48' x2='300' y2='48'/><rect class='fl-g' x='76' y='43' width='28.0' height='10' rx='2'/><circle class='fl-w' cx='64.8' cy='48' r='4'/><circle class='fl-w' cx='65.7' cy='48' r='4'/><circle class='fl-w' cx='225.3' cy='48' r='4'/><circle class='fl-w' cx='253.3' cy='48' r='4'/><text x='76' y='68' class='t-s'>trend 1,600 to 1,900</text><text x='20' y='86' class='t-s'>1,000</text><text x='300' y='86' class='t-s' text-anchor='end'>4,000</text><text x='4' y='106' class='t-b'>3,500 ÷ 1,480 ≈ 2.4: mid-pack, not top</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#log",
+       "label": "Q&A: amongst the highest?"
+      },
+      {
+       "href": "midterm-past-exams.html#y25q1",
+       "label": "Q1 key comparison"
+      }
+     ]
+    },
+    {
+     "id": "k25-q1-translate",
+     "type": "mean",
+     "page": 4,
+     "quote": "translate potential into actual productivity",
+     "title": "Borrow this phrase: it names the gap",
+     "body_html": "<p>\"Translate potential into actual\" is the chart's vertical line put into words. The key's causes follow: capital, know-how and strong institutions that support investment.</p><p>Q1 only needs the phrase and one clause of cause. Q2 is where you build the bridge in full.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 96' role='img' aria-label='From potential to actual yield, the bridge the key names'><rect class='bx-w' x='4' y='8' width='90.0' height='40' rx='6'/><text x='49' y='25.5' class='t-b' text-anchor='middle'>Potential</text><text x='49' y='38.5' text-anchor='middle'>land allows</text><line class='ln-a' x1='96' y1='28' x2='113' y2='28'/><path class='ln-a' d='M108.0 31.0 L113 28 L108.0 25.0'/><rect class='bx-m' x='115' y='8' width='90.0' height='40' rx='6'/><text x='160' y='25.5' class='t-b' text-anchor='middle'>Bridge</text><text x='160' y='38.5' text-anchor='middle'>K, know-how</text><line class='ln-a flow' x1='207' y1='28' x2='224' y2='28'/><path class='ln-a' d='M219.0 31.0 L224 28 L219.0 25.0'/><rect class='bx-a' x='226' y='8' width='90.0' height='40' rx='6'/><text x='271' y='25.5' class='t-b' text-anchor='middle'>Actual</text><text x='271' y='38.5' text-anchor='middle'>farms get</text><text x='160' y='70' text-anchor='middle'>Moz ≈1,480 → ≈260 (≈18%)</text><text x='160' y='88' text-anchor='middle'>Ger ≈1,490 → ≈1,240 (≈83%)</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q1",
+       "label": "Q1 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-real",
+       "label": "Actual ÷ potential"
+      }
+     ]
+    },
+    {
+     "id": "k25-q1-108",
+     "type": "watch",
+     "page": 4,
+     "quote": "108 words",
+     "title": "The model answer breaks its own 100-word cap",
+     "body_html": "<p>The key labels its Q1 answer 108 words against a 100-word maximum; by my count the text runs to 107. Either way it is over.</p><p>Do not copy the length. The cap is a hard limit for you, and the prep page answer makes the same points in 90.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 112' role='img' aria-label='The key&#x27;s 108 words against the 100 word cap, and the prep answer&#x27;s 90'><text x='4' y='12' class='t-b'>Key: 108 words on a 100 cap</text><rect class='bx' x='4' y='20' width='283.6' height='18' rx='3'/><text x='145.818' y='33' class='t-b' text-anchor='middle'>100 allowed</text><rect class='bx-w' x='287.636' y='20' width='22.7' height='18' rx='3'/><text x='298.982' y='33' class='t-b' text-anchor='middle'>+8</text><text x='4' y='58' class='t-b'>Prep page answer: 90 words</text><rect class='bx-a' x='4' y='66' width='255.3' height='18' rx='3'/><text x='131.636' y='79' class='t-b' text-anchor='middle'>90 used</text><rect class='bx' x='259.273' y='66' width='28.4' height='18' rx='3'/><text x='273.455' y='79' class='t-b' text-anchor='middle'>10</text><text x='4' y='106'>Aim 5 to 10 under: trim adjectives first</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#traps",
+       "label": "Traps: over the cap"
+      },
+      {
+       "href": "midterm-past-exams.html#timing",
+       "label": "Word budget"
+      }
+     ]
+    },
+    {
+     "id": "k25-q2-list",
+     "type": "mean",
+     "page": 6,
+     "quote": "strong rule of law, reliable property rights, well-functioning finance/capital markets",
+     "title": "Four named institutions, then their mirror image",
+     "body_html": "<p>The key names four for Germany: rule of law, property rights, finance and capital markets, and relatively open trade. For Mozambique it flips them, using the footnote's own words: weak rule of law, corruption and political instability, plus weak credit and insecure land ownership.</p><p>Naming types is what the question asks. A general \"good institutions\" earns little.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 118' role='img' aria-label='Institutions the key names for Germany and their opposites in Mozambique'><text x='4' y='14' class='t-b'></text><text x='130' y='14' class='t-b'>Germany</text><text x='225' y='14' class='t-b'>Mozambique</text><text x='4' y='36'>Rule of law</text><text x='130' y='36' class='t-a'>strong</text><text x='225' y='36' class='t-w'>weak</text><text x='4' y='58'>Property rights</text><text x='130' y='58' class='t-a'>reliable</text><text x='225' y='58' class='t-w'>insecure</text><text x='4' y='80'>Finance</text><text x='130' y='80' class='t-a'>works</text><text x='225' y='80' class='t-w'>weak credit</text><text x='4' y='102'>Politics, trade</text><text x='130' y='102' class='t-a'>open trade</text><text x='225' y='102' class='t-w'>instability</text><line class='ln' x1='4' y1='20' x2='316' y2='20'/></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q2",
+       "label": "Q2 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-prop",
+       "label": "Property rights"
+      },
+      {
+       "href": "midterm-past-exams.html#b-fin",
+       "label": "Finance"
+      }
+     ]
+    },
+    {
+     "id": "k25-q2-capital",
+     "type": "mean",
+     "page": 6,
+     "quote": "tractors, irrigation systems, and storage facilities",
+     "title": "The middle step: institutions, then investment, then yield",
+     "body_html": "<p>This is the step the question's corn warning asks for. Lower uncertainty makes farmers invest in tractors, irrigation and storage, and that capital lifts actual yield toward potential.</p><p>Without this line an answer jumps straight from rule of law to corn.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 96' role='img' aria-label='Institutions lower risk, capital follows, yield rises toward potential'><rect class='bx-a' x='4' y='8' width='90.0' height='40' rx='6'/><text x='49' y='25.5' class='t-b' text-anchor='middle'>Less risk</text><text x='49' y='38.5' text-anchor='middle'>rule of law</text><line class='ln-a flow' x1='96' y1='28' x2='113' y2='28'/><path class='ln-a' d='M108.0 31.0 L113 28 L108.0 25.0'/><rect class='bx-m' x='115' y='8' width='90.0' height='40' rx='6'/><text x='160' y='25.5' class='t-b' text-anchor='middle'>Capital</text><text x='160' y='38.5' text-anchor='middle'>irrigation</text><line class='ln-a' x1='207' y1='28' x2='224' y2='28'/><path class='ln-a' d='M219.0 31.0 L224 28 L219.0 25.0'/><rect class='bx-a' x='226' y='8' width='90.0' height='40' rx='6'/><text x='271' y='25.5' class='t-b' text-anchor='middle'>Yield up</text><text x='271' y='38.5' text-anchor='middle'>to potential</text><text x='160' y='70' class='t-b' text-anchor='middle'>Capital deepening on the farm</text><text x='160' y='88' text-anchor='middle'>The step the corn warning asks for</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q2",
+       "label": "Q2 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-capdeep",
+       "label": "Capital deepening"
+      }
+     ]
+    },
+    {
+     "id": "k25-q2-scale",
+     "type": "mean",
+     "page": 6,
+     "quote": "combine plots into larger, scale efficient operations",
+     "title": "Property rights let farms grow to an efficient size",
+     "body_html": "<p>Secure title lets a farmer buy or lease neighbouring plots and borrow against them, so farms reach a size where tractors pay. The key sets this against Mozambique's \"small, fragmented plots\".</p><p>Use it as the channel for property rights: one institution, one mechanism, one effect on yield.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 114' role='img' aria-label='Fragmented plots become one farm large enough for machines'><rect class='bx-w' x='30' y='20' width='30.0' height='22' rx='2'/><rect class='bx-w' x='30' y='46' width='30.0' height='22' rx='2'/><rect class='bx-w' x='64' y='20' width='30.0' height='22' rx='2'/><rect class='bx-w' x='64' y='46' width='30.0' height='22' rx='2'/><text x='64' y='88' text-anchor='middle'>fragmented plots</text><text x='140' y='36' class='t-s' text-anchor='middle'>secure title</text><line class='ln-a flow' x1='106' y1='44' x2='178' y2='44'/><path class='ln-a' d='M172.0 47.6 L178 44 L172.0 40.4'/><rect class='bx-a' x='186' y='20' width='114.0' height='48' rx='4'/><text x='243' y='40' class='t-b' text-anchor='middle'>one farm</text><text x='243' y='56' text-anchor='middle'>machines pay</text><text x='243' y='88' text-anchor='middle'>scale efficient</text><text x='160' y='106' class='t-s' text-anchor='middle'>Moz: \"small, fragmented plots\"</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q2",
+       "label": "Q2 answer"
+      },
+      {
+       "href": "midterm-past-exams.html#b-prop",
+       "label": "Property rights"
+      }
+     ]
+    },
+    {
+     "id": "k25-q2-198",
+     "type": "watch",
+     "page": 6,
+     "quote": "Word Count: 198",
+     "title": "198 of 200 words, and nothing on the income axis",
+     "body_html": "<p>The key spends its words on farms and never says why the same institutions raise GDP per person, the horizontal axis. That is why teal slopes up while orange stays flat.</p><p>One sentence on it is where to beat the key, and at 200 words it fits only if you plan.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 102' role='img' aria-label='The key explains the yield axis but not the income axis'><rect class='bx-a' x='4' y='8' width='150.0' height='42' rx='6'/><text x='79' y='26.5' class='t-b' text-anchor='middle'>Yield axis</text><text x='79' y='39.5' text-anchor='middle'>key explains</text><rect class='bx-w' x='166' y='8' width='150.0' height='42' rx='6'/><text x='241' y='26.5' class='t-b' text-anchor='middle'>Income axis</text><text x='241' y='39.5' text-anchor='middle'>key skips</text><text x='4' y='74'>Add: the same institutions lift all</text><text x='4' y='92'>investment, so teal rises with income</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q2",
+       "label": "Q2 key comparison"
+      },
+      {
+       "href": "midterm-past-exams.html#traps",
+       "label": "Traps: one line only"
+      }
+     ]
+    },
+    {
+     "id": "k25-q3-gap",
+     "type": "mean",
+     "page": 8,
+     "quote": "agriculture employs over 70% of workers but produces only about 25% of GDP",
+     "title": "The key uses the jobs fact but never turns it into a number",
+     "body_html": "<p>70% of jobs making 25% of GDP means a farm worker produces about 0.36 of the national average, and a non-farm worker about 2.5. The key calls this a \"large productivity gap\".</p><div class='calc'>Farm      25 ÷ 70 ≈ 0.36\nNon-farm  75 ÷ 30 = 2.5\nGap       2.5 ÷ 0.36 ≈ 7×</div><p>Saying about 7× is how the prep page beats the key.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 104' role='img' aria-label='Mozambique: 70 percent of jobs make 25 percent of GDP'><text x='4' y='34' class='t-b'>Jobs</text><rect class='bx-w' x='50' y='20' width='186.2' height='20' rx='3'/><text x='143.1' y='34' class='t-b' text-anchor='middle'>farm 70%</text><rect class='bx' x='236.2' y='20' width='79.8' height='20' rx='3'/><text x='276.1' y='34' class='t-b' text-anchor='middle'>30%</text><text x='4' y='64' class='t-b'>GDP</text><rect class='bx-w' x='50' y='50' width='66.5' height='20' rx='3'/><text x='83.25' y='64' class='t-b' text-anchor='middle'>25%</text><rect class='bx' x='116.5' y='50' width='199.5' height='20' rx='3'/><text x='216.25' y='64' class='t-b' text-anchor='middle'>other 75%</text><text x='4' y='96' class='t-b'>farm output per worker: 25 ÷ 70 ≈ 0.36</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q3",
+       "label": "Q3 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-struct",
+       "label": "Structural transformation"
+      }
+     ]
+    },
+    {
+     "id": "k25-q3-dimret",
+     "type": "mean",
+     "page": 8,
+     "quote": "Diminishing returns to further capital deepening",
+     "title": "The course concept behind the convergence paragraph",
+     "body_html": "<p>Germany \"already operates near the efficiency frontier\", so its next machine adds little. Mozambique's farms have almost no capital, so the first tractors and storage add a lot.</p><p>Name the concept, as the key does: diminishing returns to capital. It is the reason convergence is possible at all.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 132' role='img' aria-label='Diminishing returns: steep gains at low capital, flat at high capital'><line class='ln' x1='30' y1='14' x2='30' y2='110'/><line class='ln' x1='30' y1='110' x2='304' y2='110'/><path class='ln-a' d='M30.0 110.0 L33.0 100.5 L36.0 96.6 L40.0 92.7 L46.0 88.1 L54.0 83.2 L64.0 78.1 L78.0 72.1 L96.0 65.5 L120.0 58.0 L150.0 50.0 L185.0 41.8 L225.0 33.5 L265.0 26.0 L300.0 20.0'/><line class='ln-w dash' x1='32' y1='106.679' x2='48' y2='78.6795'/><line class='ln-w dash' x1='259' y1='25.0357' x2='299' y2='21.1357'/><circle class='fl-a' cx='40' cy='92.6795' r='4.5'/><circle class='fl-m' cx='285' cy='22.5357' r='4.5'/><text x='52' y='102'>Mozambique: steep</text><text x='300' y='48' text-anchor='end'>Germany: flat</text><text x='34' y='12' class='t-s'>output per worker</text><text x='304' y='124' class='t-s' text-anchor='end'>capital per worker →</text></svg>",
+     "diagram_caption": "Illustrative curve; dashed lines show the slope at each point.",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q3",
+       "label": "Q3 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-dimret",
+       "label": "Diminishing returns"
+      },
+      {
+       "href": "midterm-past-exams.html#b-conv",
+       "label": "Convergence"
+      }
+     ]
+    },
+    {
+     "id": "k25-q3-ccc",
+     "type": "mean",
+     "page": 8,
+     "quote": "CCC+ credit rating severely limit",
+     "title": "The skeptical paragraph runs on the second fact",
+     "body_html": "<p>A CCC+ rating means expensive, scarce credit for \"farmers and the government\": farms cannot buy machinery, and the state cannot build irrigation, roads and storage. Germany's AAA keeps its capital cheap.</p><p>Add the prep page's point: the debt ratios are only 14.4 points apart, so debt levels alone do not explain the rating gap.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 140' role='img' aria-label='A CCC plus rating blocks both private and public investment'><rect class='bx-w' x='4' y='46' width='86.0' height='40' rx='6'/><text x='47' y='63.5' class='t-b' text-anchor='middle'>CCC+</text><text x='47' y='76.5' text-anchor='middle'>costly debt</text><rect class='bx-m' x='120' y='8' width='196.0' height='36' rx='6'/><text x='218' y='23.5' class='t-b' text-anchor='middle'>Farmers</text><text x='218' y='36.5' text-anchor='middle'>no machinery</text><rect class='bx-m' x='120' y='88' width='196.0' height='36' rx='6'/><text x='218' y='103.5' class='t-b' text-anchor='middle'>Government</text><text x='218' y='116.5' text-anchor='middle'>no roads, storage</text><line class='ln-w' x1='90' y1='58' x2='118' y2='28'/><path class='ln-w' d='M116.5 34.8 L118 28 L111.3 29.9'/><line class='ln-w' x1='90' y1='74' x2='118' y2='104'/><path class='ln-w' d='M111.3 102.1 L118 104 L116.5 97.2'/><text x='4' y='136' class='t-a'>Germany AAA: cheap capital continues</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q3",
+       "label": "Q3 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-fin",
+       "label": "Finance and country risk"
+      }
+     ]
+    },
+    {
+     "id": "k25-q3-174",
+     "type": "watch",
+     "page": 8,
+     "quote": "Word Count: 174",
+     "title": "Two paragraphs under two caps: 83 and 81 words",
+     "body_html": "<p>The key labels both paragraphs as the question does and keeps each under its own 100-word cap. Its 174 counts the two labels too: 83 + 81 = 164 words of answer plus 10 label words. Copy the layout: two labelled paragraphs, with one supplied fact anchoring each.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 100' role='img' aria-label='The key&#x27;s two Q3 paragraphs against their 100 word caps'><text x='4' y='12' class='t-b'>Words per paragraph (cap 100 each)</text><text x='4' y='34'>Convergence</text><rect class='fl-a' x='84.6' y='24' width='176.1' height='12' rx='2'/><text x='265.726' y='34' class='t-b'>83</text><text x='4' y='60'>Skeptical</text><rect class='fl-a' x='84.6' y='50' width='171.9' height='12' rx='2'/><text x='261.482' y='60' class='t-b'>81</text><line class='ln-w dash' x1='296.8' y1='18' x2='296.8' y2='76'/><text x='296.8' y='90' class='t-w' text-anchor='middle'>100</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q3",
+       "label": "Q3 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#timing",
+       "label": "Split caps"
+      }
+     ]
+    },
+    {
+     "id": "k25-q4-st",
+     "type": "watch",
+     "page": 10,
+     "quote": "Full marks should mention “structural transformation”",
+     "title": "Name the concept or lose marks on line 2",
+     "body_html": "<p>The marking note is explicit: the farm jobs line needs the words \"structural transformation\". Workers leave low-productivity farming for industry and services, so agriculture's share of jobs falls a lot even as farm output rises.</p><p>Germany shows where it ends: about 1% of jobs on farms.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 104' role='img' aria-label='Farm share of jobs: Mozambique 70 percent, Germany 1 percent'><text x='4' y='12' class='t-b'>Farm share of jobs</text><text x='4' y='36'>Mozambique</text><rect class='bx-w' x='90' y='24' width='158.2' height='18' rx='3'/><text x='169.1' y='37' class='t-b' text-anchor='middle'>farm 70%</text><rect class='bx' x='248.2' y='24' width='67.8' height='18' rx='3'/><text x='4' y='64'>Germany</text><rect class='bx-w' x='90' y='52' width='2.3' height='18' rx='3'/><rect class='bx' x='92.26' y='52' width='223.7' height='18' rx='3'/><text x='204.13' y='65' class='t-b' text-anchor='middle'>other 99%</text><text x='4' y='96' class='t-b'>structural transformation: name it</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q4",
+       "label": "Q4 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-struct",
+       "label": "Structural transformation"
+      },
+      {
+       "href": "midterm-past-exams.html#traps",
+       "label": "Traps: concept unnamed"
+      }
+     ]
+    },
+    {
+     "id": "k25-q4-rates",
+     "type": "watch",
+     "page": 10,
+     "quote": "sharply reducing extreme poverty rates",
+     "title": "The key answers with rates; the question asks for a count",
+     "body_html": "<p>Measure 3 is the number of people below the line, and this line of the key talks about rates. If population grows about 3% a year (the prep page's assumption; the paper gives none), it is 1.34× by 2037, and a rate that falls from 70% to 52% leaves the count unchanged.</p><p>\"Down a lot\" still holds if the rate falls far enough. Say the count falls less than the rate. The arithmetic is on the <a href='#n-p25-q4-count'>Q4 question note</a>.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 96' role='img' aria-label='Count equals rate times a growing population'><rect class='bx-a' x='4' y='8' width='88.0' height='40' rx='6'/><text x='48' y='25.5' class='t-b' text-anchor='middle'>rate</text><text x='48' y='38.5' text-anchor='middle'>70% → lower</text><text x='102' y='32' class='t-b' text-anchor='middle'>×</text><rect class='bx-m' x='112' y='8' width='88.0' height='40' rx='6'/><text x='156' y='25.5' class='t-b' text-anchor='middle'>population</text><text x='156' y='38.5' text-anchor='middle'>× 1.34</text><text x='210' y='32' class='t-b' text-anchor='middle'>=</text><rect class='bx-w' x='220' y='8' width='96.0' height='40' rx='6'/><text x='268' y='25.5' class='t-b' text-anchor='middle'>count</text><text x='268' y='38.5' text-anchor='middle'>falls less</text><text x='4' y='72'>the rate must reach ≈52% just to</text><text x='4' y='90'>hold the count where it is today</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q4",
+       "label": "Q4 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-pov",
+       "label": "Count vs rate"
+      },
+      {
+       "href": "midterm-past-exams.html#traps",
+       "label": "Traps: rate for count"
+      }
+     ]
+    },
+    {
+     "id": "k25-q4-ineq",
+     "type": "mean",
+     "page": 10,
+     "quote": "Up for sure, but hard to know little or a lot",
+     "title": "Inequality: the key says up, with the size left open",
+     "body_html": "<p>The key does not choose between up a little and up a lot. It says up and explains why: early gains go to urban, skilled and capital-owning groups, and rural incomes catch up later.</p><p>That is the Kuznets curve, and the key says you do not have to name it for full points.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 132' role='img' aria-label='Kuznets curve: inequality rises first, then falls as development spreads'><line class='ln' x1='20' y1='112' x2='304' y2='112'/><path class='ln-m' d='M20 110 Q160 -30 300 110'/><circle class='fl-w' cx='70.4' cy='68.7' r='4.5'/><circle class='fl-m' cx='104' cy='51.2' r='4.5'/><text x='78' y='76' class='t-s'>2026</text><text x='112' y='62' class='t-s'>2037</text><text x='300' y='14' class='t-s' text-anchor='end'>rises first, falls later</text><text x='24' y='14' class='t-s'>inequality</text><text x='304' y='126' class='t-s' text-anchor='end'>development →</text></svg>",
+     "diagram_caption": "Illustrative curve: Mozambique on the rising side.",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q4",
+       "label": "Q4 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-kuz",
+       "label": "Kuznets curve"
+      }
+     ]
+    },
+    {
+     "id": "k25-q4-gini",
+     "type": "mean",
+     "page": 10,
+     "quote": "reward it (fully) if they get the reasoning correct",
+     "title": "\"Down\" also scores fully, with the right reason",
+     "body_html": "<p>Mozambique already has a high Gini coefficient and an \"extractive elite\". If reform lets new farm and industrial classes catch up with that elite, inequality could fall, and the key tells markers to give full marks for that reasoning.</p><p>Choose one call and argue it. The reason is what scores.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 140' role='img' aria-label='Two inequality forecasts, both worth full marks if reasoned'><rect class='bx' x='4' y='48' width='80.0' height='40' rx='6'/><text x='44' y='65.5' class='t-b' text-anchor='middle'>Reform</text><text x='44' y='78.5' text-anchor='middle'>2026</text><rect class='bx-m' x='110' y='8' width='206.0' height='40' rx='6'/><text x='213' y='25.5' class='t-b' text-anchor='middle'>Up: gains go to skilled</text><text x='213' y='38.5' text-anchor='middle'>the key's call, Kuznets</text><rect class='bx-a' x='110' y='88' width='206.0' height='40' rx='6'/><text x='213' y='105.5' class='t-b' text-anchor='middle'>Down: new classes catch</text><text x='213' y='118.5' text-anchor='middle'>the extractive elite</text><line class='ln' x1='84' y1='60' x2='108' y2='30'/><path class='ln' d='M107.1 36.9 L108 30 L101.4 32.4'/><line class='ln' x1='84' y1='76' x2='108' y2='106'/><path class='ln' d='M101.4 103.6 L108 106 L107.1 99.1'/><text x='4' y='136' class='t-b'>Either scores fully with the reasoning</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y25q4",
+       "label": "Q4 plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-gini",
+       "label": "Gini coefficient"
+      },
+      {
+       "href": "midterm-past-exams.html#b-kuz",
+       "label": "Kuznets curve"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "p24",
+   "kind": "pdf",
+   "title": "2024 midterm paper: Canada's trilemma and the Krugman email",
+   "short": "2024 paper",
+   "eyebrow": "Paper 2 · fall 2024 · 80 marks",
+   "sub": "Part 1 on two trilemma figures, part 2 on an email quoting Paul Krugman.",
+   "lede_html": "<p>The 2024 paper has two exhibits: a triangle of three outcomes Canada wants, and a family email quoting Paul Krugman on potential GDP. Part 1 asks you to explain, choose and escape; part 2 asks what potential GDP is, whether Canada is growing, and whether poor countries are stuck.</p><p>The figures on slide 2 are shown in this PDF from the prep page's copies, because the originals in the file did not convert.</p>",
+   "pdf": "/Users/prag/Documents/PragPersonal/School/4505-Global-Macroeconomics-for-Managers/midterm/past-midterms/Midterm2024.pdf",
+   "pdfHref": "../midterm/past-midterms/Midterm2024.pdf",
+   "pages": "all",
+   "notes": [
+    {
+     "id": "p24-1a-goal",
+     "type": "mean",
+     "page": 1,
+     "quote": "we can’t solve for all three challenges concurrently",
+     "title": "The claim to explain: any two, never all three",
+     "body_html": "<p>Part 1a asks you to explain the argument, not to judge it. The creator says the three goals compete, so reaching two costs the third. Your job is to show why for each pair.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 132' role='img' aria-label='Three outcomes; each pair of them costs the third'><rect class='bx' x='4' y='8' width='120.0' height='30' rx='6'/><text x='64' y='27' class='t-b' text-anchor='middle'>1 Population</text><rect class='bx' x='196' y='8' width='120.0' height='30' rx='6'/><text x='256' y='27' class='t-b' text-anchor='middle'>2 Housing</text><rect class='bx' x='100' y='96' width='120.0' height='30' rx='6'/><text x='160' y='115' class='t-b' text-anchor='middle'>3 Productivity</text><line class='ln-w' x1='124' y1='23' x2='196' y2='23'/><text x='160' y='17' class='t-w' text-anchor='middle'>lose 3</text><line class='ln-w' x1='64' y1='38' x2='130' y2='96'/><text x='88' y='72' class='t-w' text-anchor='end'>lose 2</text><line class='ln-w' x1='256' y1='38' x2='190' y2='96'/><text x='232' y='72' class='t-w'>lose 1</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q1a",
+       "label": "1a plan"
+      },
+      {
+       "href": "midterm-past-exams.html#c-trilemma",
+       "label": "Trilemma concept"
+      }
+     ]
+    },
+    {
+     "id": "p24-1a-audience",
+     "type": "watch",
+     "page": 1,
+     "quote": "someone who knows something about Canada, but who hasn’t had your exposure to economics",
+     "title": "Write for a smart outsider: define every term",
+     "body_html": "<p>The audience changes the answer. Name each goal in plain words with its reason, and explain dependency ratio and productivity the first time you use them.</p><p>The key skips this setup. The prep page spends about 50 words on it and closes on the one shared constraint.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 100' role='img' aria-label='Word budget for 1a: setup, three corners, close'><text x='4' y='12' class='t-b'>Prep page plan, 290 of 300 words</text><rect class='bx-m' x='4' y='20' width='52.0' height='22' rx='3'/><text x='30' y='35' class='t-b' text-anchor='middle'>setup</text><text x='30' y='55' text-anchor='middle'>50</text><rect class='bx-a' x='56' y='20' width='72.8' height='22' rx='3'/><text x='92.4' y='35' class='t-b' text-anchor='middle'>1 + 2</text><text x='92.4' y='55' text-anchor='middle'>70</text><rect class='bx-a' x='128.8' y='20' width='72.8' height='22' rx='3'/><text x='165.2' y='35' class='t-b' text-anchor='middle'>1 + 3</text><text x='165.2' y='55' text-anchor='middle'>70</text><rect class='bx-a' x='201.6' y='20' width='72.8' height='22' rx='3'/><text x='238' y='35' class='t-b' text-anchor='middle'>2 + 3</text><text x='238' y='55' text-anchor='middle'>70</text><rect class='bx' x='274.4' y='20' width='31.2' height='22' rx='3'/><text x='290' y='35' class='t-b' text-anchor='middle'>end</text><text x='290' y='55' text-anchor='middle'>30</text><text x='4' y='76'>Key: 10 marks per corner, none for setup</text><text x='4' y='94'>but this reader needs the setup</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q1a",
+       "label": "1a plan"
+      },
+      {
+       "href": "midterm-past-exams.html#timing",
+       "label": "Word budget"
+      }
+     ]
+    },
+    {
+     "id": "p24-1a-hint",
+     "type": "mean",
+     "page": 1,
+     "quote": "we get 1+2, but not 3",
+     "title": "The hint gives you the structure: walk all three corners",
+     "body_html": "<p>The hint works one corner: population and housing, losing productivity. Do all three in the same form, about 70 words each.</p><p>The key does exactly that, at 10 marks a corner, and every corner fails for the same reason: homes need builders and capital that productivity also needs.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 96' role='img' aria-label='The three corners of the trilemma and why each fails'><rect class='bx-a' x='4' y='4' width='312.0' height='24' rx='6'/><text x='160' y='20' class='t-b' text-anchor='middle'>1 + 2, lose 3 · building pulls capital</text><rect class='bx-a' x='4' y='34' width='312.0' height='24' rx='6'/><text x='160' y='50' class='t-b' text-anchor='middle'>1 + 3, lose 2 · demand outruns supply</text><rect class='bx-a' x='4' y='64' width='312.0' height='24' rx='6'/><text x='160' y='80' class='t-b' text-anchor='middle'>2 + 3, lose 1 · aging, dependency</text></svg>",
+     "diagram_caption": "The prep page's one-line reason for each corner.",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q1a",
+       "label": "1a plan"
+      },
+      {
+       "href": "midterm-past-exams.html#c-trilemma",
+       "label": "Trilemma concept"
+      }
+     ]
+    },
+    {
+     "id": "p24-1a-marks",
+     "type": "watch",
+     "page": 1,
+     "quote": "30 marks",
+     "title": "30 of the paper's 80 marks sit on part 1a",
+     "body_html": "<p>Part 1a is worth as much as all of Q2. The prep page's rule gives it about 28 minutes: 76 × (30 ÷ 80).</p><p>The paper does not state its time limit; the rule assumes this year's 80 minutes with 4 to read.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 130' role='img' aria-label='Marks per part of the 2024 paper and minutes by the prep page rule'><text x='4' y='12' class='t-b'>Marks, and minutes at 76 × share</text><text x='4' y='31'>1a</text><rect class='fl-w' x='25.2' y='22' width='205.6' height='11' rx='2'/><text x='235.8' y='31' class='t-b'>30 · ≈28 min</text><text x='4' y='48'>1b</text><rect class='fl-g' x='25.2' y='39' width='68.5' height='11' rx='2'/><text x='98.7333' y='48' class='t-b'>10 · ≈10 min</text><text x='4' y='65'>1c</text><rect class='fl-g' x='25.2' y='56' width='68.5' height='11' rx='2'/><text x='98.7333' y='65' class='t-b'>10 · ≈10 min</text><text x='4' y='82'>2a</text><rect class='fl-g' x='25.2' y='73' width='34.3' height='11' rx='2'/><text x='64.4667' y='82' class='t-b'>5 · ≈5 min</text><text x='4' y='99'>2b</text><rect class='fl-g' x='25.2' y='90' width='68.5' height='11' rx='2'/><text x='98.7333' y='99' class='t-b'>10 · ≈10 min</text><text x='4' y='116'>2c</text><rect class='fl-g' x='25.2' y='107' width='102.8' height='11' rx='2'/><text x='133' y='116' class='t-b'>15 · ≈14 min</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#timing",
+       "label": "Timing rule"
+      },
+      {
+       "href": "midterm-past-exams.html#y24q1a",
+       "label": "1a"
+      }
+     ]
+    },
+    {
+     "id": "p24-1b-pick",
+     "type": "watch",
+     "page": 1,
+     "quote": "If the author is correct, which 2 outcomes would you choose",
+     "title": "1b assumes the trilemma holds: pick two and own the cost",
+     "body_html": "<p>\"If the author is correct\" sets the premise, and the key's first grading line says answers should not fight the trilemma. Name your pair and the outcome you drop in the first sentence, then defend the drop.</p><p>Escaping the trade-off is part 1c's job. The prep page picks Option 2, the green row.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 118' role='img' aria-label='The three choices for part 1b and what each drops'><rect class='bx' x='4' y='4' width='312.0' height='24' rx='6'/><text x='160' y='20' class='t-b' text-anchor='middle'>Option 1: 1 + 2, drop productivity</text><rect class='bx-a' x='4' y='34' width='312.0' height='24' rx='6'/><text x='160' y='50' class='t-b' text-anchor='middle'>Option 2: 1 + 3, drop housing</text><rect class='bx' x='4' y='64' width='312.0' height='24' rx='6'/><text x='160' y='80' class='t-b' text-anchor='middle'>Option 3: 2 + 3, drop population</text><text x='4' y='108' class='t-b'>Any pick scores; defend the one you drop</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q1b",
+       "label": "1b plan"
+      },
+      {
+       "href": "midterm-past-exams.html#traps",
+       "label": "Traps: fighting the premise"
+      }
+     ]
+    },
+    {
+     "id": "p24-1c-all3",
+     "type": "mean",
+     "page": 1,
+     "quote": "achieve all 3 desirable simultaneously",
+     "title": "1c flips 1b: now you are asked to beat the trade-off",
+     "body_html": "<p>Part 1b forbids fighting the trilemma; part 1c asks you to defeat it. The way out is to break the assumption that links the corners: new homes must come from a slow, low-productivity sector.</p><p>The key's own preference is productivity in home building plus zoning reform.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 108' role='img' aria-label='The hidden link 1c must break: homes come from a slow sector'><rect class='bx' x='4' y='8' width='90.0' height='44' rx='6'/><text x='49' y='27.5' class='t-b' text-anchor='middle'>More people</text><text x='49' y='40.5' text-anchor='middle'>need homes</text><line class='ln-w' x1='96' y1='30' x2='113' y2='30'/><path class='ln-w' d='M108.0 33.0 L113 30 L108.0 27.0'/><rect class='bx-w' x='115' y='8' width='90.0' height='44' rx='6'/><text x='160' y='27.5' class='t-b' text-anchor='middle'>Homes from</text><text x='160' y='40.5' text-anchor='middle'>slow sector</text><line class='ln-w' x1='207' y1='30' x2='224' y2='30'/><path class='ln-w' d='M219.0 33.0 L224 30 L219.0 27.0'/><rect class='bx-w' x='226' y='8' width='90.0' height='44' rx='6'/><text x='271' y='27.5' class='t-b' text-anchor='middle'>Less K for</text><text x='271' y='40.5' text-anchor='middle'>productivity</text><line class='ln-a flow' x1='160' y1='88' x2='160' y2='56'/><path class='ln-a' d='M163.6 62.0 L160 56 L156.4 62.0'/><text x='160' y='102' class='t-a' text-anchor='middle'>1c: make building itself productive</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q1c",
+       "label": "1c plan"
+      },
+      {
+       "href": "midterm-past-exams.html#c-trilemma",
+       "label": "Trilemma concept"
+      }
+     ]
+    },
+    {
+     "id": "p24-1c-one",
+     "type": "watch",
+     "page": 1,
+     "quote": "Give us your best policy proposal (just one)",
+     "title": "One policy, made concrete, beats a list of five",
+     "body_html": "<p>The question says just one. A list spreads 200 words thin and reads as a survey. Pick one lever, then spend the words on who does what and how each corner is met.</p><p>The key grades on five criteria and rewards action words: invest, establish, create.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 112' role='img' aria-label='The key&#x27;s five criteria for the 1c proposal'><text x='4' y='14' class='t-b'>Key criterion</text><text x='120' y='14' class='t-b'>Show it by</text><text x='4' y='32'>Resolves</text><text x='120' y='32'>all 3 corners met</text><text x='4' y='50'>Growth model</text><text x='120' y='50'>capital, innovation</text><text x='4' y='68'>Clear</text><text x='120' y='68'>who does what</text><text x='4' y='86'>Actionable</text><text x='120' y='86'>invest, establish</text><text x='4' y='104'>Creative</text><text x='120' y='104'>feasible, legal</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q1c",
+       "label": "1c plan"
+      },
+      {
+       "href": "midterm-past-exams.html#traps",
+       "label": "Traps: study-it proposals"
+      }
+     ]
+    },
+    {
+     "id": "p24-fig",
+     "type": "mean",
+     "page": 2,
+     "quote": "What if it’s the case that we want three outcomes for our economy, but we can only have two?",
+     "title": "The two figures: three outcomes and a pathway to each",
+     "body_html": "<p>Figure 1a names the three outcomes and why each matters; Figure 1b gives the pathway to each. The trade-offs come from the pathways, because each one strains another outcome.</p><p>Read them full size, highlighted: <a href='#fig24a'>Figure 1a</a> and <a href='#fig24b'>Figure 1b</a>.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 100' role='img' aria-label='Each outcome in Figure 1a and its pathway in Figure 1b'><text x='4' y='12' class='t-b'>Figure 1a outcome → Figure 1b pathway</text><text x='4' y='38' class='t-b'>1 Population</text><line class='ln' x1='100' y1='34' x2='112' y2='34'/><path class='ln' d='M108.0 36.4 L112 34 L108.0 31.6'/><text x='116' y='38'>aggressive immigration</text><text x='4' y='62' class='t-b'>2 Housing</text><line class='ln' x1='100' y1='58' x2='112' y2='58'/><path class='ln' d='M108.0 60.4 L112 58 L108.0 55.6'/><text x='116' y='62'>build homes / cool demand</text><text x='4' y='86' class='t-b'>3 Productivity</text><line class='ln' x1='100' y1='82' x2='112' y2='82'/><path class='ln' d='M108.0 84.4 L112 82 L108.0 79.6'/><text x='116' y='86'>invest in traded sectors</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24",
+       "label": "2024 exhibit"
+      },
+      {
+       "href": "midterm-past-exams.html#c-trilemma",
+       "label": "Trilemma concept"
+      }
+     ]
+    },
+    {
+     "id": "p24-mail-us",
+     "type": "watch",
+     "page": 3,
+     "quote": "He was talking about the US economy",
+     "title": "The email tells you whose economy Krugman means",
+     "body_html": "<p>Krugman was describing the US, a rich economy at the technology frontier. That line unlocks 2c: the answer to \"destined to stay poor?\" is no, because poor countries face a different growth problem.</p><p>The key gives 2 marks for saying exactly that.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 96' role='img' aria-label='Frontier growth against catch-up growth'><rect class='bx-w' x='4' y='6' width='150.0' height='54' rx='6'/><text x='79' y='24' class='t-b' text-anchor='middle'>US: frontier</text><text x='79' y='37' text-anchor='middle'>grow by inventing</text><text x='79' y='50' text-anchor='middle'>+1 point: crazy</text><rect class='bx-a' x='166' y='6' width='150.0' height='54' rx='6'/><text x='241' y='24' class='t-b' text-anchor='middle'>Poor: catching up</text><text x='241' y='37' text-anchor='middle'>grow by adopting</text><text x='241' y='50' text-anchor='middle'>+1 point: realistic</text><text x='160' y='84' text-anchor='middle'>Vietnam: ≈6% a year since 1986</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q2c",
+       "label": "2c plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-conv",
+       "label": "Convergence"
+      }
+     ]
+    },
+    {
+     "id": "p24-mail-flat",
+     "type": "mean",
+     "page": 3,
+     "quote": "pretty much just a flat line",
+     "title": "A flat line of potential growth through big policy swings",
+     "body_html": "<p>Krugman's chart is potential GDP growth, the trend in capacity, which barely moved through 50 years of tax, trade and political change. Actual GDP swings with the business cycle around that trend.</p><p>That contrast is what 2a asks you to explain.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 116' role='img' aria-label='Actual GDP swings around a steady potential trend'><line class='ln-m dash' x1='20' y1='70' x2='300' y2='40'/><path class='ln-a' d='M20 70 L55 52 L90 72 L125 48 L160 68 L195 38 L230 62 L265 36 L300 42'/><text x='195' y='28' class='t-s' text-anchor='middle'>boom: above</text><text x='90' y='88' class='t-s' text-anchor='middle'>recession: below</text><text x='300' y='62' class='t-m' text-anchor='end'>potential</text><text x='4' y='108'>2a: define potential, show gaps both ways</text></svg>",
+     "diagram_caption": "Illustrative: dashed potential, solid actual.",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q2a",
+       "label": "2a plan"
+      },
+      {
+       "href": "midterm-past-exams.html#c-potential",
+       "label": "Potential vs actual GDP"
+      }
+     ]
+    },
+    {
+     "id": "p24-mail-innov",
+     "type": "mean",
+     "page": 3,
+     "quote": "economic growth is largely driven by innovation",
+     "title": "True at the frontier: there, growth means new ideas",
+     "body_html": "<p>For a rich country, more capital adds little because of diminishing returns, so growth has to come from innovation, measured as total factor productivity.</p><p>Poor countries can still grow by adding capital and adopting methods that already exist. That is the hinge of the 2c answer.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 136' role='img' aria-label='The growth model: labour force growth and productivity growth'><rect class='bx' x='4' y='52' width='80.0' height='32' rx='6'/><text x='44' y='72' class='t-b' text-anchor='middle'>GDP growth</text><rect class='bx' x='120' y='6' width='196.0' height='30' rx='6'/><text x='218' y='25' class='t-b' text-anchor='middle'>Labour force growth</text><rect class='bx-a' x='120' y='52' width='196.0' height='30' rx='6'/><text x='218' y='71' class='t-b' text-anchor='middle'>Capital deepening: poor</text><rect class='bx-m' x='120' y='98' width='196.0' height='30' rx='6'/><text x='218' y='117' class='t-b' text-anchor='middle'>Innovation (TFP): rich</text><line class='ln' x1='84' y1='68' x2='120' y2='21'/><line class='ln' x1='84' y1='68' x2='120' y2='67'/><line class='ln' x1='84' y1='68' x2='120' y2='113'/></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q2c",
+       "label": "2c plan"
+      },
+      {
+       "href": "midterm-past-exams.html#c-model",
+       "label": "Growth model"
+      },
+      {
+       "href": "midterm-past-exams.html#b-tfp",
+       "label": "Innovation (TFP)"
+      }
+     ]
+    },
+    {
+     "id": "p24-mail-onepoint",
+     "type": "watch",
+     "page": 3,
+     "quote": "raise it by one percentage point, I think that's crazy",
+     "title": "One point is crazy for the US, normal for catch-up",
+     "body_html": "<p>A one-point rise in US potential growth would be huge, and nobody knows the levers at the frontier. Poor countries can grow far faster when the conditions are right.</p><div class='calc'>1.063^19 ≈ 3.2\n1.023^19 ≈ 1.5</div><p>That gap, four points a year, is what 2c asks about.</p><p>These are total GDP growth rates, which include labour force growth, so they show the room for catch-up, not potential growth alone. Q2c rewards both channels: more workers and more output per worker.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 100' role='img' aria-label='Total GDP growth 2000 to 2019: Vietnam 6.3 percent a year, Canada 2.3'><text x='4' y='12' class='t-b'>Total GDP growth, 2000 to 2019 (S4)</text><text x='4' y='34'>Vietnam</text><rect class='fl-a' x='58.2' y='24' width='179.2' height='12' rx='2'/><text x='242.4' y='34' class='t-b'>6.3% a year</text><text x='4' y='58'>Canada</text><rect class='fl-g' x='58.2' y='48' width='65.4' height='12' rx='2'/><text x='128.622' y='58' class='t-b'>2.3% a year</text><text x='4' y='92'>19 years: ×3.2 against ×1.5</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q2c",
+       "label": "2c plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-conv",
+       "label": "Convergence"
+      }
+     ]
+    },
+    {
+     "id": "p24-mail-tfp",
+     "type": "mean",
+     "page": 3,
+     "quote": "total factor productivity growth has been really pretty lousy",
+     "title": "TFP: the growth that more workers and capital do not explain",
+     "body_html": "<p>Total factor productivity is output growth left over after counting more workers and more capital: new ideas and better methods. Krugman says it has been weak for two decades despite new technology.</p><p>For Canada, 2b's answer adds that productivity has trailed the US.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 96' role='img' aria-label='GDP growth splits into workers, capital and TFP, the rest'><rect class='bx' x='4' y='8' width='64.0' height='40' rx='6'/><text x='36' y='25.5' class='t-b' text-anchor='middle'>GDP</text><text x='36' y='38.5' text-anchor='middle'>growth</text><text x='78' y='32' class='t-b' text-anchor='middle'>=</text><rect class='bx' x='88' y='8' width='64.0' height='40' rx='6'/><text x='120' y='25.5' class='t-b' text-anchor='middle'>more</text><text x='120' y='38.5' text-anchor='middle'>workers</text><text x='162' y='32' class='t-b' text-anchor='middle'>+</text><rect class='bx' x='172' y='8' width='64.0' height='40' rx='6'/><text x='204' y='25.5' class='t-b' text-anchor='middle'>more</text><text x='204' y='38.5' text-anchor='middle'>capital</text><text x='246' y='32' class='t-b' text-anchor='middle'>+</text><rect class='bx-m' x='256' y='8' width='64.0' height='40' rx='6'/><text x='288' y='25.5' class='t-b' text-anchor='middle'>TFP</text><text x='288' y='38.5' text-anchor='middle'>ideas</text><text x='4' y='72'>TFP: growth not explained by more</text><text x='4' y='90'>workers or more capital</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#b-tfp",
+       "label": "Innovation (TFP)"
+      },
+      {
+       "href": "midterm-past-exams.html#y24q2a",
+       "label": "2a"
+      }
+     ]
+    },
+    {
+     "id": "p24-mail-bigger",
+     "type": "watch",
+     "page": 3,
+     "quote": "our GDP is quite a bit bigger now than it was before the pandemic",
+     "title": "Bigger GDP is not richer people",
+     "body_html": "<p>The relative is right that GDP grew, and saying yes is worth 2 of 2b's 10 marks. Then comes the but: population grew 3.2% in 2023, the fastest since 1957, while GDP per person fell 1.3% in 2023 and 1.4% in 2024.</p><p>These are Session 8 figures, published after the 2024 exam was set; the logic is the same.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 108' role='img' aria-label='Canada: population up 3.2 percent in 2023, GDP per person down'><text x='4' y='12' class='t-b'>Canada, % change (S8)</text><line class='ln' x1='200' y1='18' x2='200' y2='86'/><text x='4' y='34'>Population 2023</text><rect class='fl-a' x='200' y='24' width='80.0' height='12' rx='2'/><text x='285' y='34' class='t-b'>+3.2%</text><text x='4' y='56'>GDP/person 2023</text><rect class='fl-w' x='167.5' y='46' width='32.5' height='12' rx='2'/><text x='162.5' y='56' class='t-b' text-anchor='end'>−1.3%</text><text x='4' y='78'>GDP/person 2024</text><rect class='fl-w' x='165' y='68' width='35.0' height='12' rx='2'/><text x='160' y='78' class='t-b' text-anchor='end'>−1.4%</text><text x='4' y='102'>GDP up only because people were added</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q2b",
+       "label": "2b plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-percap",
+       "label": "GDP vs GDP per person"
+      },
+      {
+       "href": "midterm-past-exams.html#traps",
+       "label": "Traps: GDP for GDP per person"
+      }
+     ]
+    },
+    {
+     "id": "p24-mail-poor",
+     "type": "mean",
+     "page": 3,
+     "quote": "destined to stay poor forever",
+     "title": "2c: answer no, then use the growth model",
+     "body_html": "<p>The key's 15 marks: 2 for saying no, 3 for the growth model, 5 for capital deepening with diminishing returns and an example, 5 for institutions. Ten of the fifteen sit on two ideas.</p><p>Plan about 295 words to those weights, as the prep page does.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 100' role='img' aria-label='The key&#x27;s 15 marks for 2c and the prep page&#x27;s word plan'><text x='4' y='12' class='t-b'>2c: 15 marks, ≈295 of 300 words</text><rect class='bx' x='4' y='22' width='41.6' height='22' rx='3'/><text x='24.8' y='37' class='t-b' text-anchor='middle'>2</text><text x='24.8' y='57' text-anchor='middle'>no</text><text x='24.8' y='70' text-anchor='middle'>≈50</text><rect class='bx' x='45.6' y='22' width='62.4' height='22' rx='3'/><text x='76.8' y='37' class='t-b' text-anchor='middle'>3</text><text x='76.8' y='57' text-anchor='middle'>model</text><text x='76.8' y='70' text-anchor='middle'>≈35</text><rect class='bx-a' x='108' y='22' width='104.0' height='22' rx='3'/><text x='160' y='37' class='t-b' text-anchor='middle'>5</text><text x='160' y='57' text-anchor='middle'>capital</text><text x='160' y='70' text-anchor='middle'>≈110</text><rect class='bx-a' x='212' y='22' width='104.0' height='22' rx='3'/><text x='264' y='37' class='t-b' text-anchor='middle'>5</text><text x='264' y='57' text-anchor='middle'>institutions</text><text x='264' y='70' text-anchor='middle'>≈100</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q2c",
+       "label": "2c plan"
+      },
+      {
+       "href": "midterm-past-exams.html#c-capital",
+       "label": "Capital concept"
+      },
+      {
+       "href": "midterm-past-exams.html#c-inst",
+       "label": "Institutions concept"
+      }
+     ]
+    },
+    {
+     "id": "p24-mail-marks",
+     "type": "watch",
+     "page": 3,
+     "quote": "(100 words max). 5 marks",
+     "title": "Marks rise through the email: 5, 10, 15",
+     "body_html": "<p>2a gives 5 marks for 100 words, 2b 10 for 150, 2c 15 for 300. Three rubric items in 2a's 100 words means one or two sentences each.</p><p>Do not let the easy first question steal time from 2c.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 104' role='img' aria-label='Marks and word caps for the three email questions'><text x='4' y='12' class='t-b'>Marks · word cap</text><text x='4' y='32'>2a</text><rect class='fl-g' x='25.2' y='22' width='64.1' height='12' rx='2'/><text x='94.3333' y='32' class='t-b'>5 · 100 words</text><text x='4' y='54'>2b</text><rect class='fl-g' x='25.2' y='44' width='128.3' height='12' rx='2'/><text x='158.467' y='54' class='t-b'>10 · 150 words</text><text x='4' y='76'>2c</text><rect class='fl-w' x='25.2' y='66' width='192.4' height='12' rx='2'/><text x='222.6' y='76' class='t-b'>15 · 300 words</text><text x='4' y='98'>Prep rule: ≈5, ≈10, ≈14 minutes</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#timing",
+       "label": "Timing rule"
+      },
+      {
+       "href": "midterm-past-exams.html#y24q2a",
+       "label": "2a"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fig24a",
+   "kind": "image",
+   "title": "2024 Figure 1a: three desirable outcomes",
+   "short": "Figure 1a",
+   "eyebrow": "Exhibit · 2024 paper · slide 2, left",
+   "sub": "The three goals the trilemma says Canada cannot have together, each with its reason.",
+   "lede_html": "<p>Figure 1a names the goals and gives each a reason in brackets. Those reasons are the plain-language setup 1a asks for, so read them closely.</p><p>Read it with Figure 1b next to it: 1a says what Canada wants, 1b says how each is reached, and the trade-offs come from the pathways.</p>",
+   "src": "/Users/prag/Documents/PragPersonal/School/4505-Global-Macroeconomics-for-Managers/notes/assets/midterm-past-exams/2024-fig1a-three-outcomes.png",
+   "alt": "Triangle with three corners: 1 stable population growth, to achieve a healthy dependency ratio; 2 housing affordability, an economic and social good; 3 revived productivity growth, the prime determinant of our standard of living",
+   "notes": [
+    {
+     "id": "fig24a-pop",
+     "type": "mean",
+     "rect": [
+      1.5,
+      21,
+      35,
+      17.5
+     ],
+     "label": "Corner 1: stable population growth, to achieve a healthy dependency ratio",
+     "title": "1 · Population growth, for a healthy dependency ratio",
+     "body_html": "<p>The figure gives each goal its reason. Population growth matters because of the dependency ratio: people outside working age for each person in it. Canada is aging, with about 21% of people over 65, so steady immigration keeps enough workers paying for pensions and health care.</p><p>Use this reason in 1a's setup, in plain words, for the reader who has not studied economics.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 124' role='img' aria-label='Dependency ratio: people outside working age per person in it'><text x='4' y='12' class='t-b'>Dependency ratio</text><rect class='bx' x='4' y='20' width='312.0' height='30' rx='6'/><text x='160' y='39' class='t-b' text-anchor='middle'>(young + old) ÷ working-age people</text><rect class='bx-a' x='4' y='62' width='150.0' height='40' rx='6'/><text x='79' y='79.5' class='t-b' text-anchor='middle'>Steady inflow</text><text x='79' y='92.5' text-anchor='middle'>ratio holds</text><rect class='bx-w' x='166' y='62' width='150.0' height='40' rx='6'/><text x='241' y='79.5' class='t-b' text-anchor='middle'>Inflow cut</text><text x='241' y='92.5' text-anchor='middle'>ratio worsens</text><text x='4' y='120'>Canada: about 21% already over 65</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#b-dep",
+       "label": "Dependency ratio"
+      },
+      {
+       "href": "midterm-past-exams.html#y24q1a",
+       "label": "1a plan"
+      }
+     ]
+    },
+    {
+     "id": "fig24a-house",
+     "type": "mean",
+     "rect": [
+      70,
+      21,
+      28.5,
+      17.5
+     ],
+     "label": "Corner 2: housing affordability, an economic and social good",
+     "title": "2 · Housing affordability, an economic and social good",
+     "body_html": "<p>Figure 1a calls affordability an economic and social good. It is mostly about who can afford shelter, how the pie is shared, while the other two goals decide how big the pie is.</p><p>That difference is the prep page's case for dropping affordability in 1b: its harm can be cushioned with targeted help. If you keep it instead, say why fairness outweighs size.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 100' role='img' aria-label='Population and productivity set the size of the pie; housing sets its share'><rect class='bx-a' x='4' y='8' width='150.0' height='50' rx='6'/><text x='79' y='24' class='t-b' text-anchor='middle'>Size of the pie</text><text x='79' y='37' text-anchor='middle'>1 Population</text><text x='79' y='50' text-anchor='middle'>3 Productivity</text><rect class='bx-m' x='166' y='8' width='150.0' height='50' rx='6'/><text x='241' y='30.5' class='t-b' text-anchor='middle'>Share of the pie</text><text x='241' y='43.5' text-anchor='middle'>2 Housing</text><text x='4' y='78'>1b: the loss you can cushion</text><text x='4' y='94'>is the one to drop</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q1b",
+       "label": "1b plan"
+      }
+     ]
+    },
+    {
+     "id": "fig24a-prod",
+     "type": "mean",
+     "rect": [
+      31.7,
+      79,
+      42,
+      16.5
+     ],
+     "label": "Corner 3: revived productivity growth, the prime determinant of our standard of living",
+     "title": "3 · Productivity, the prime determinant of living standards",
+     "body_html": "<p>The figure's own words. Output per worker is the only lasting source of higher income per person; more people add to GDP but not to GDP per person.</p><p>Canada's gap is why it is on the triangle: about <span class='num'>$21</span> less output per hour worked than the US, and business productivity at <span class='num'>73%</span> of the US level in 2019, down from <span class='num'>83%</span> in 2002.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 100' role='img' aria-label='Canada&#x27;s business productivity as a share of the US level: 83 percent in 2002, 73 in 2019'><text x='4' y='12' class='t-b'>Business productivity, % of US (S8)</text><text x='4' y='34'>US</text><rect class='fl-g' x='84.6' y='24' width='205.6' height='12' rx='2'/><text x='295.2' y='34' class='t-b'>100</text><text x='4' y='56'>Canada 2002</text><rect class='fl-a' x='84.6' y='46' width='170.6' height='12' rx='2'/><text x='260.248' y='56' class='t-b'>83%</text><text x='4' y='78'>Canada 2019</text><rect class='fl-w' x='84.6' y='68' width='150.1' height='12' rx='2'/><text x='239.688' y='78' class='t-b'>73%</text><text x='4' y='96'>≈$21 less output per hour than the US</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#b-prod",
+       "label": "Productivity"
+      },
+      {
+       "href": "midterm-past-exams.html#c-canada",
+       "label": "Canada's growth"
+      }
+     ]
+    },
+    {
+     "id": "fig24a-tri",
+     "type": "watch",
+     "rect": [
+      37.5,
+      6,
+      31.5,
+      70
+     ],
+     "label": "The triangle: the three goals as trade-offs",
+     "title": "The triangle is the claim: any two crowd out the third",
+     "body_html": "<p>The sides of the triangle are the trade-offs. Each pair of goals strains the third because all three draw on the same people, savings and building capacity, and new homes come from a low-productivity sector.</p><p>The trap is treating the corners as three separate problems. 1a's marks come from showing the one shared constraint behind every corner.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 104' role='img' aria-label='Each pair of goals and the one it loses'><text x='4' y='14' class='t-b'>Keep</text><text x='60' y='14' class='t-b'>Lose</text><text x='104' y='14' class='t-b'>Why</text><text x='4' y='34'>1 + 2</text><text x='60' y='34'>3</text><text x='104' y='34'>builders, capital to homes</text><text x='4' y='54'>1 + 3</text><text x='60' y='54'>2</text><text x='104' y='54'>demand outruns supply</text><text x='4' y='74'>2 + 3</text><text x='60' y='74'>1</text><text x='104' y='74'>workforce ages</text><text x='4' y='96' class='t-w'>Shared limit: people, money, builders</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#c-trilemma",
+       "label": "Trilemma concept"
+      },
+      {
+       "href": "midterm-past-exams.html#y24q1a",
+       "label": "1a plan"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fig24b",
+   "kind": "image",
+   "title": "2024 Figure 1b: pathways to achieve outcomes",
+   "short": "Figure 1b",
+   "eyebrow": "Exhibit · 2024 paper · slide 2, right",
+   "sub": "The policy that delivers each goal, in the same corner positions as Figure 1a.",
+   "lede_html": "<p>Each corner of Figure 1b is the pathway to the matching goal in Figure 1a. The trade-offs live here: each pathway strains another corner.</p><p>Read corner 2 first. Its two levers explain two of the three corners in part 1a.</p>",
+   "src": "/Users/prag/Documents/PragPersonal/School/4505-Global-Macroeconomics-for-Managers/notes/assets/midterm-past-exams/2024-fig1b-pathways.png",
+   "alt": "Triangle with three corners: 1 aggressive immigration; 2 build more homes and/or cool housing demand; 3 plus investment in advanced, traded sectors",
+   "notes": [
+    {
+     "id": "fig24b-imm",
+     "type": "watch",
+     "rect": [
+      1.7,
+      20,
+      27.3,
+      12
+     ],
+     "label": "Pathway 1: aggressive immigration",
+     "title": "Pathway 1, aggressive immigration, is also a housing shock",
+     "body_html": "<p>Population growth comes from immigration: in 2023 Canada's population grew <span class='num'>3.2%</span>, the fastest since 1957, almost all of it through immigration. Every newcomer also needs a home, so this pathway raises housing demand at once.</p><p>That link starts two of the three corners in 1a. Name it before you walk the triangle.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 96' role='img' aria-label='Immigration raises housing demand at once'><rect class='bx' x='4' y='8' width='90.0' height='44' rx='6'/><text x='49' y='27.5' class='t-b' text-anchor='middle'>Aggressive</text><text x='49' y='40.5' text-anchor='middle'>immigration</text><line class='ln-w' x1='96' y1='30' x2='113' y2='30'/><path class='ln-w' d='M108.0 33.0 L113 30 L108.0 27.0'/><rect class='bx-w' x='115' y='8' width='90.0' height='44' rx='6'/><text x='160' y='27.5' class='t-b' text-anchor='middle'>More demand</text><text x='160' y='40.5' text-anchor='middle'>for homes</text><line class='ln-w' x1='207' y1='30' x2='224' y2='30'/><path class='ln-w' d='M219.0 33.0 L224 30 L219.0 27.0'/><rect class='bx-w' x='226' y='8' width='90.0' height='44' rx='6'/><text x='271' y='27.5' class='t-b' text-anchor='middle'>Prices rise</text><text x='271' y='40.5' text-anchor='middle'>unless built</text><text x='4' y='80'>2023: population +3.2% (S8)</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#b-labour",
+       "label": "Labour input"
+      },
+      {
+       "href": "midterm-past-exams.html#y24q1a",
+       "label": "1a plan"
+      }
+     ]
+    },
+    {
+     "id": "fig24b-homes",
+     "type": "watch",
+     "rect": [
+      69,
+      20,
+      27.5,
+      18.5
+     ],
+     "label": "Pathway 2: build more homes and/or cool housing demand",
+     "title": "Pathway 2 holds two levers, and each hurts a different corner",
+     "body_html": "<p>Building more homes pulls workers and capital into construction, a low-productivity sector, so productivity suffers. Cooling demand means fewer newcomers, so population growth suffers.</p><p>Read the “and/or” carefully: it is the trilemma in one label. Whichever lever you pull for housing, you pay with goal 3 or goal 1.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 112' role='img' aria-label='The housing pathway has two levers and each hurts a different corner'><rect class='bx-m' x='90' y='6' width='140.0' height='28' rx='6'/><text x='160' y='24' class='t-b' text-anchor='middle'>2 Housing</text><line class='ln-w' x1='130' y1='34' x2='80' y2='58'/><path class='ln-w' d='M83.9 52.2 L80 58 L87.0 58.6'/><line class='ln-w' x1='190' y1='34' x2='240' y2='58'/><path class='ln-w' d='M233.0 58.6 L240 58 L236.1 52.2'/><rect class='bx-w' x='4' y='60' width='150.0' height='44' rx='6'/><text x='79' y='79.5' class='t-b' text-anchor='middle'>Build more</text><text x='79' y='92.5' text-anchor='middle'>hurts 3 Productivity</text><rect class='bx-w' x='166' y='60' width='150.0' height='44' rx='6'/><text x='241' y='79.5' class='t-b' text-anchor='middle'>Cool demand</text><text x='241' y='92.5' text-anchor='middle'>hurts 1 Population</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#c-trilemma",
+       "label": "Trilemma concept"
+      },
+      {
+       "href": "midterm-past-exams.html#y24q1a",
+       "label": "1a plan"
+      }
+     ]
+    },
+    {
+     "id": "fig24b-invest",
+     "type": "mean",
+     "rect": [
+      24,
+      85,
+      47,
+      11
+     ],
+     "label": "Pathway 3: investment in advanced, traded sectors",
+     "title": "Pathway 3 needs the same capital housing wants",
+     "body_html": "<p>Productivity comes from investment in advanced, traded sectors: machines, software and research in industries that sell abroad. Those firms compete with home building for the same savings and skilled workers.</p><p>Canada already under-invests, about 54 cents per worker for every US dollar in 2024. Diverting more into housing widens that gap, which is the key's reason corner 1 + 2 loses productivity.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 108' role='img' aria-label='One pool of savings and skilled workers split between homes and traded sectors'><rect class='bx' x='60' y='6' width='200.0' height='28' rx='6'/><text x='160' y='24' class='t-b' text-anchor='middle'>Savings and skilled workers</text><line class='ln' x1='130' y1='34' x2='80' y2='58'/><path class='ln' d='M83.9 52.2 L80 58 L87.0 58.6'/><line class='ln' x1='190' y1='34' x2='240' y2='58'/><path class='ln' d='M233.0 58.6 L240 58 L236.1 52.2'/><rect class='bx-w' x='4' y='60' width='150.0' height='40' rx='6'/><text x='79' y='77.5' class='t-b' text-anchor='middle'>Homes</text><text x='79' y='90.5' text-anchor='middle'>low productivity</text><rect class='bx-a' x='166' y='60' width='150.0' height='40' rx='6'/><text x='241' y='77.5' class='t-b' text-anchor='middle'>Traded sectors</text><text x='241' y='90.5' text-anchor='middle'>raise productivity</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#b-capdeep",
+       "label": "Capital deepening"
+      },
+      {
+       "href": "midterm-past-exams.html#y24q1a",
+       "label": "1a plan"
+      }
+     ]
+    },
+    {
+     "id": "fig24b-escape",
+     "type": "mean",
+     "rect": [
+      27,
+      40,
+      40,
+      34
+     ],
+     "label": "The triangle: where the three pathways collide",
+     "title": "1c's way out: make building itself productive",
+     "body_html": "<p>The pathways collide because homes come from a slow sector. Part 1c asks you to break that link, and the key's own preference is productivity in residential construction plus zoning reform.</p><p>Factory-built homes on pre-zoned land serve all three goals: supply keeps pace with immigration, and construction's own output per hour rises. That is the prep page's 1c answer.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 94' role='img' aria-label='1c breaks the link between homes and low productivity'><rect class='bx-w' x='4' y='6' width='312.0' height='30' rx='6'/><text x='160' y='25' class='t-b' text-anchor='middle'>Now: homes pull capital from productivity</text><line class='ln-a flow' x1='160' y1='38' x2='160' y2='56'/><path class='ln-a' d='M156.4 50.0 L160 56 L163.6 50.0'/><rect class='bx-a' x='4' y='58' width='312.0' height='30' rx='6'/><text x='160' y='77' class='t-b' text-anchor='middle'>1c: build homes productively</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q1c",
+       "label": "1c plan"
+      },
+      {
+       "href": "midterm-past-exams.html#c-trilemma",
+       "label": "Trilemma concept"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "k24",
+   "kind": "pdf",
+   "title": "2024 answer key: rubrics and example answers",
+   "short": "2024 key",
+   "eyebrow": "Key 2 · fall 2024 · 15 slides",
+   "sub": "Marks per corner for 1a, grading guidance and examples for 1b and 1c, point rubrics for the email questions.",
+   "lede_html": "<p>Read this after writing your own answers to the 2024 paper. The yellow highlights mark what earns the points; the red ones mark traps, including a rubric the key mislabels.</p><p>Slides 5 to 7 and 9 to 10 are example answers written for graders: read them for the shape of the argument. Slide 2 shows the figures from the prep page's copies, because the originals in the file did not convert.</p>",
+   "pdf": "/Users/prag/Documents/PragPersonal/School/4505-Global-Macroeconomics-for-Managers/midterm/past-midterms/Midterm2024_answerkey.pdf",
+   "pdfHref": "../midterm/past-midterms/Midterm2024_answerkey.pdf",
+   "pages": "all",
+   "notes": [
+    {
+     "id": "k24-1a-hinge",
+     "type": "mean",
+     "page": 3,
+     "quote": "chronically low (and declining!) productivity sector",
+     "title": "The hinge of every corner: home building is a slow sector",
+     "body_html": "<p>The key's whole 1a answer turns on this phrase. Housing a growing population takes builders and capital, and residential construction is a low-productivity sector whose productivity is falling. Every worker or dollar it absorbs is one not spent raising productivity elsewhere.</p><p>State the hinge once, in plain words, then show it breaking each corner.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 106' role='img' aria-label='A fixed pool of capital and talent shifts toward housing'><text x='4' y='12' class='t-b'>Capital and talent: one fixed pool</text><text x='4' y='35' class='t-s'>today</text><rect class='bx-a' x='60' y='20' width='128.0' height='22' rx='3'/><text x='124' y='35' class='t-b' text-anchor='middle'>advanced</text><rect class='bx' x='188' y='20' width='128.0' height='22' rx='3'/><text x='252' y='35' class='t-b' text-anchor='middle'>housing</text><text x='4' y='71' class='t-s'>1 + 2</text><rect class='bx-a' x='60' y='56' width='64.0' height='22' rx='3'/><text x='92' y='71' class='t-b' text-anchor='middle'>adv.</text><rect class='bx-w' x='124' y='56' width='192.0' height='22' rx='3'/><text x='220' y='71' class='t-b' text-anchor='middle'>housing boom</text><text x='4' y='100' class='t-w'>Productivity growth stalls: corner 3 lost</text></svg>",
+     "diagram_caption": "Illustrative shares.",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q1a",
+       "label": "1a plan"
+      },
+      {
+       "href": "midterm-past-exams.html#c-trilemma",
+       "label": "Trilemma concept"
+      }
+     ]
+    },
+    {
+     "id": "k24-1a-dep",
+     "type": "mean",
+     "page": 3,
+     "quote": "high dependency ratio",
+     "title": "Corner 2 + 3 fails on the dependency ratio",
+     "body_html": "<p>Cut immigration to protect housing and productivity, and the workforce ages. The key spells the ratio out in brackets: fewer working people paying the taxes that support more older people. Do the same for your reader.</p><p>The key adds a political cost, deep inter-generational divisions, which is an easy extra point.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 96' role='img' aria-label='Cutting immigration ages the workforce'><rect class='bx' x='4' y='8' width='90.0' height='44' rx='6'/><text x='49' y='27.5' class='t-b' text-anchor='middle'>Cut</text><text x='49' y='40.5' text-anchor='middle'>immigration</text><line class='ln-w' x1='96' y1='30' x2='113' y2='30'/><path class='ln-w' d='M108.0 33.0 L113 30 L108.0 27.0'/><rect class='bx-w' x='115' y='8' width='90.0' height='44' rx='6'/><text x='160' y='27.5' class='t-b' text-anchor='middle'>Workforce</text><text x='160' y='40.5' text-anchor='middle'>ages</text><line class='ln-w' x1='207' y1='30' x2='224' y2='30'/><path class='ln-w' d='M219.0 33.0 L224 30 L219.0 27.0'/><rect class='bx-w' x='226' y='8' width='90.0' height='44' rx='6'/><text x='271' y='27.5' class='t-b' text-anchor='middle'>Fewer pay</text><text x='271' y='40.5' text-anchor='middle'>for more</text><text x='4' y='80'>Canada: about 21% already over 65</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#b-dep",
+       "label": "Dependency ratio"
+      },
+      {
+       "href": "midterm-past-exams.html#y24q1a",
+       "label": "1a plan"
+      }
+     ]
+    },
+    {
+     "id": "k24-1a-marks",
+     "type": "watch",
+     "page": 3,
+     "quote": "(10 marks)",
+     "nth": 3,
+     "title": "10 marks a corner: a skipped corner costs a third of 1a",
+     "body_html": "<p>The key pays 10 marks for each corner and lists nothing for the setup. Run out of words before the third corner and you lose 10 of 30, however good the first two are.</p><p>Budget about 70 words a corner, as the prep page does, and write all three corners before polishing the opening.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 96' role='img' aria-label='1a pays 10 marks for each corner and none for the setup'><text x='4' y='12' class='t-b'>1a: 30 marks</text><rect class='bx-a' x='4' y='20' width='104.0' height='24' rx='3'/><text x='56' y='36' class='t-b' text-anchor='middle'>1 + 2</text><text x='56' y='57' text-anchor='middle'>10 marks</text><rect class='bx-a' x='108' y='20' width='104.0' height='24' rx='3'/><text x='160' y='36' class='t-b' text-anchor='middle'>1 + 3</text><text x='160' y='57' text-anchor='middle'>10 marks</text><rect class='bx-a' x='212' y='20' width='104.0' height='24' rx='3'/><text x='264' y='36' class='t-b' text-anchor='middle'>2 + 3</text><text x='264' y='57' text-anchor='middle'>10 marks</text><text x='4' y='84'>Setup and close: 0 marks, ≈80 words</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q1a",
+       "label": "1a plan"
+      },
+      {
+       "href": "midterm-past-exams.html#timing",
+       "label": "Timing rule"
+      }
+     ]
+    },
+    {
+     "id": "k24-1b-fight",
+     "type": "watch",
+     "page": 4,
+     "quote": "Answers should not fight the trilemma",
+     "title": "1b's first grading line: do not escape the trade-off here",
+     "body_html": "<p>Arguing that Canada can have all three belongs in 1c. In 1b, take the trade-off as binding, name your pair and give reasons for the outcome you drop.</p><p>The key grades the quality of those reasons, whichever pair you pick: it wants \"reasons for deprioritizing\" the goal you left out.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 92' role='img' aria-label='Part 1b accepts the trade-off; part 1c beats it'><rect class='bx-a' x='4' y='8' width='150.0' height='52' rx='6'/><text x='79' y='25' class='t-b' text-anchor='middle'>1b</text><text x='79' y='38' text-anchor='middle'>accept the limit</text><text x='79' y='51' text-anchor='middle'>defend the drop</text><rect class='bx' x='166' y='8' width='150.0' height='52' rx='6'/><text x='241' y='25' class='t-b' text-anchor='middle'>1c</text><text x='241' y='38' text-anchor='middle'>beat the limit</text><text x='241' y='51' text-anchor='middle'>one policy</text><text x='4' y='82' class='t-w'>Escaping in 1b costs 1b marks</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q1b",
+       "label": "1b plan"
+      },
+      {
+       "href": "midterm-past-exams.html#traps",
+       "label": "Traps: fighting the premise"
+      }
+     ]
+    },
+    {
+     "id": "k24-1b-opt2",
+     "type": "mean",
+     "page": 6,
+     "quote": "offering subsidies for lower-income households",
+     "title": "The key's Option 2 makes the prep page's pick and cushions the cost",
+     "body_html": "<p>The example for 1 + 3 drops affordability and softens the blow with targeted policies: more supply over time and subsidies for lower-income households. That is the same argument as the prep page's 1b answer.</p><p>It also gives a reason to keep immigration that the prep answer lacks: newcomers are \"not risk averse\" and bring new ideas, which links population growth to innovation.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 100' role='img' aria-label='Option 2 keeps population and productivity and cushions housing'><rect class='bx-a' x='4' y='8' width='96.0' height='30' rx='6'/><text x='52' y='27' class='t-b' text-anchor='middle'>1 keep</text><rect class='bx-a' x='112' y='8' width='96.0' height='30' rx='6'/><text x='160' y='27' class='t-b' text-anchor='middle'>3 keep</text><rect class='bx-w' x='220' y='8' width='96.0' height='30' rx='6'/><text x='268' y='27' class='t-b' text-anchor='middle'>2 drop</text><line class='ln-a' x1='268' y1='62' x2='268' y2='40'/><path class='ln-a' d='M271.6 46.0 L268 40 L264.4 46.0'/><text x='316' y='76' class='t-a' text-anchor='end'>cushion: subsidies, supply</text><text x='4' y='94'>Admit the cost, then soften it</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q1b",
+       "label": "1b plan"
+      }
+     ]
+    },
+    {
+     "id": "k24-1c-both",
+     "type": "watch",
+     "page": 8,
+     "quote": "Both matter.",
+     "title": "Resolve the trilemma and be feasible: both are marked",
+     "body_html": "<p>The first criterion has two halves. A proposal that would deliver all three goals but cannot be done, or one that is easy but leaves a corner broken, earns only part of the credit.</p><p>Show each corner met in one line, then say who acts and with what money or law.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 110' role='img' aria-label='Full credit needs a proposal that works and can be done'><text x='4' y='16' class='t-b'>Solves all 3</text><text x='130' y='16' class='t-b'>Feasible</text><text x='230' y='16' class='t-b'>Credit</text><text x='4' y='36' class='t-a'>yes</text><text x='130' y='36' class='t-a'>yes</text><text x='230' y='36' class='t-a'>full</text><text x='4' y='56' class='t-w'>yes</text><text x='130' y='56' class='t-w'>no</text><text x='230' y='56' class='t-w'>partial</text><text x='4' y='76' class='t-w'>no</text><text x='130' y='76' class='t-w'>yes</text><text x='230' y='76' class='t-w'>partial</text><text x='4' y='102'>The key: “Both matter.”</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q1c",
+       "label": "1c plan"
+      }
+     ]
+    },
+    {
+     "id": "k24-1c-verbs",
+     "type": "watch",
+     "page": 8,
+     "quote": "invest, establish",
+     "title": "Actionable means verbs the Prime Minister can sign",
+     "body_html": "<p>The key rewards proposals that are more than a study or more research. A task force or a review scores low. Use verbs that commit money or law: invest, establish, create.</p><p>The prep page's answer uses three: tie transfers to zoning, fund modular plants, open an immigration stream.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 92' role='img' aria-label='Proposals that study a problem score low; ones that commit money or law score high'><rect class='bx-w' x='4' y='8' width='150.0' height='52' rx='6'/><text x='79' y='25' class='t-b' text-anchor='middle'>Scores low</text><text x='79' y='38' text-anchor='middle'>study, research</text><text x='79' y='51' text-anchor='middle'>a task force</text><rect class='bx-a' x='166' y='8' width='150.0' height='52' rx='6'/><text x='241' y='25' class='t-b' text-anchor='middle'>Scores high</text><text x='241' y='38' text-anchor='middle'>invest, establish</text><text x='241' y='51' text-anchor='middle'>create</text><text x='4' y='84'>Prep answer: tie, fund, open</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q1c",
+       "label": "1c plan"
+      },
+      {
+       "href": "midterm-past-exams.html#traps",
+       "label": "Traps: study-it proposals"
+      }
+     ]
+    },
+    {
+     "id": "k24-1c-pref",
+     "type": "mean",
+     "page": 8,
+     "quote": "boosting productivity in the residential construction sector",
+     "title": "The setter's own escape: make home building productive",
+     "body_html": "<p>The professor states his preferred way out: raise productivity in residential construction, through how we build and the rules that govern building, such as zoning and development fees. On the demand side, steer buyers away from the quarter-acre, low-density house.</p><p>Picking this lever is safe; the marks come from making it concrete. The prep page's National Factory-Built Housing Deal does that.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 96' role='img' aria-label='The hidden assumption 1c should break'><rect class='bx-w' x='4' y='8' width='312.0' height='30' rx='6'/><text x='160' y='27' class='t-b' text-anchor='middle'>Assumption: homes come from a slow sector</text><line class='ln-w' x1='14' y1='23' x2='306' y2='23'/><line class='ln-a flow' x1='160' y1='40' x2='160' y2='58'/><path class='ln-a' d='M156.4 52.0 L160 58 L163.6 52.0'/><rect class='bx-a' x='4' y='60' width='312.0' height='30' rx='6'/><text x='160' y='79' class='t-b' text-anchor='middle'>Supply: build faster · Demand: denser homes</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q1c",
+       "label": "1c plan"
+      }
+     ]
+    },
+    {
+     "id": "k24-1c-ncpi",
+     "type": "mean",
+     "page": 9,
+     "quote": "modular construction, 3D printing, and prefabricated materials",
+     "title": "Example 1 is the prep page's answer at greater length",
+     "body_html": "<p>The key's first A answer, a National Construction Productivity Initiative, uses factory methods, harmonized codes, digital permits and a targeted immigration stream. It ends with one line per corner, under \"How It Solves the Trilemma\".</p><p>Copy that close. In 200 words you have room for the levers and three one-line corner checks, not for every sub-bullet on this slide.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 90' role='img' aria-label='How the key&#x27;s first example meets each corner'><text x='4' y='14' class='t-b'>Corner</text><text x='110' y='14' class='t-b'>Met by</text><text x='4' y='34'>Housing</text><text x='110' y='34'>cheaper, faster building</text><text x='4' y='54'>Productivity</text><text x='110' y='54'>construction output per hour</text><text x='4' y='74'>Population</text><text x='110' y='74'>homes exist for newcomers</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q1c",
+       "label": "1c plan"
+      }
+     ]
+    },
+    {
+     "id": "k24-2a-cap",
+     "type": "mean",
+     "page": 12,
+     "quote": "“capacity” and/or “long-run sustainability”",
+     "title": "2a's five marks: define it, show both gaps, say why",
+     "body_html": "<p>Two marks need the words capacity or long-run sustainability in your definition. Two more need both directions of the gap. The last mark is for the why: Krugman cares about the trend that sets living standards across generations, not one year's swing.</p><p>Five marks in 100 words means one or two sentences per item.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 92' role='img' aria-label='2a&#x27;s five marks: define 2, gaps 2, why 1'><text x='4' y='12' class='t-b'>2a: 5 marks, ≈95 of 100 words</text><rect class='bx-a' x='4' y='22' width='124.8' height='24' rx='3'/><text x='66.4' y='38' class='t-b' text-anchor='middle'>2</text><text x='66.4' y='59' text-anchor='middle'>define</text><text x='66.4' y='72' text-anchor='middle'>capacity</text><rect class='bx-a' x='128.8' y='22' width='124.8' height='24' rx='3'/><text x='191.2' y='38' class='t-b' text-anchor='middle'>2</text><text x='191.2' y='59' text-anchor='middle'>gap</text><text x='191.2' y='72' text-anchor='middle'>both ways</text><rect class='bx-m' x='253.6' y='22' width='62.4' height='24' rx='3'/><text x='284.8' y='38' class='t-b' text-anchor='middle'>1</text><text x='284.8' y='59' text-anchor='middle'>why</text><text x='284.8' y='72' text-anchor='middle'>trend</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q2a",
+       "label": "2a plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-pot",
+       "label": "Potential vs actual GDP"
+      }
+     ]
+    },
+    {
+     "id": "k24-2a-both",
+     "type": "watch",
+     "page": 12,
+     "quote": "both an explanation",
+     "title": "Show the gap both ways: below and above potential",
+     "body_html": "<p>Most answers describe a recession, actual GDP below potential, and stop. The key wants the boom too: overtime and machines never stopped for maintenance, a pace that cannot last.</p><p>Leave out either direction and you put one of these 2 marks at risk.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 100' role='img' aria-label='Actual GDP below potential in a recession and above it in a boom'><line class='ln-m dash' x1='20' y1='50' x2='300' y2='50'/><path class='ln-a' d='M20 50 Q 90 90 160 50 T 300 50'/><text x='90' y='86' class='t-s' text-anchor='middle'>below: idle workers</text><text x='230' y='22' class='t-s' text-anchor='middle'>above: overtime</text><text x='316' y='66' class='t-m' text-anchor='end'>potential</text></svg>",
+     "diagram_caption": "Illustrative: dashed potential, solid actual.",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q2a",
+       "label": "2a plan"
+      },
+      {
+       "href": "midterm-past-exams.html#c-potential",
+       "label": "Potential vs actual GDP"
+      }
+     ]
+    },
+    {
+     "id": "k24-2b-yes",
+     "type": "watch",
+     "page": 13,
+     "quote": "2 points for answering the family member’s question properly",
+     "title": "Say yes first: the relative is right that GDP grew",
+     "body_html": "<p>Jumping straight to \"but per person it fell\" skips 2 easy marks. The key wants the yes, then the but: growth came almost entirely from more workers, and living standards depend on GDP per person.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 92' role='img' aria-label='2b&#x27;s ten marks: yes 2, but 3, against the US 2, causes 3'><text x='4' y='12' class='t-b'>2b: 10 marks, 150 words</text><rect class='bx-w' x='4' y='20' width='62.4' height='24' rx='3'/><text x='35.2' y='36' class='t-b' text-anchor='middle'>2</text><text x='35.2' y='57' text-anchor='middle'>yes</text><rect class='bx-a' x='66.4' y='20' width='93.6' height='24' rx='3'/><text x='113.2' y='36' class='t-b' text-anchor='middle'>3</text><text x='113.2' y='57' text-anchor='middle'>but</text><rect class='bx' x='160' y='20' width='62.4' height='24' rx='3'/><text x='191.2' y='36' class='t-b' text-anchor='middle'>2</text><text x='191.2' y='57' text-anchor='middle'>vs US</text><rect class='bx-a' x='222.4' y='20' width='93.6' height='24' rx='3'/><text x='269.2' y='36' class='t-b' text-anchor='middle'>3</text><text x='269.2' y='57' text-anchor='middle'>causes</text><text x='4' y='84'>%Δ GDP ≈ %Δ people + %Δ GDP per person</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q2b",
+       "label": "2b plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-percap",
+       "label": "GDP vs GDP per person"
+      }
+     ]
+    },
+    {
+     "id": "k24-2b-labour",
+     "type": "mean",
+     "page": 13,
+     "quote": "driven almost completely by labour force growth",
+     "title": "The but: labour input grew, output per person did not",
+     "body_html": "<p>This is 3 of the 10 marks. GDP rises when more people work, but that alone makes no one richer. The key says productivity growth, seen in GDP per capita, is what drives economic well-being.</p><p>Put a number on it, as the prep page does: population up <span class='num'>3.2%</span> in 2023 while GDP per person fell <span class='num'>1.3%</span>.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 96' role='img' aria-label='Canada 2023: more people, less output per person'><rect class='bx-a' x='4' y='8' width='150.0' height='44' rx='6'/><text x='79' y='27.5' class='t-b' text-anchor='middle'>Labour input</text><text x='79' y='40.5' text-anchor='middle'>+3.2% people</text><rect class='bx-w' x='166' y='8' width='150.0' height='44' rx='6'/><text x='241' y='27.5' class='t-b' text-anchor='middle'>Per person</text><text x='241' y='40.5' text-anchor='middle'>−1.3% in 2023</text><text x='4' y='74'>GDP rose; living standards fell</text><text x='4' y='90' class='t-s'>Canada 2023 (S8)</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q2b",
+       "label": "2b plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-labour",
+       "label": "Labour input"
+      }
+     ]
+    },
+    {
+     "id": "k24-2b-causes",
+     "type": "mean",
+     "page": 13,
+     "quote": "3 points for explanations of Canada’s poor productivity growth",
+     "title": "Three marks for causes: pick from the key's six",
+     "body_html": "<p>The key lists six causes: resource dependence, weak competition, a small market, an under-developed innovation ecosystem, the pull of the US, and higher taxes. Name three or more, one clause each.</p><p>The prep page adds a number the key lacks: business investment of about 54 cents per worker for every US dollar.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 100' role='img' aria-label='The key&#x27;s six causes of Canada&#x27;s weak productivity growth'><text x='4' y='12' class='t-b'>The key's six causes</text><text x='4' y='34'>resource-heavy</text><text x='164' y='34'>small market</text><text x='4' y='54'>little competition</text><text x='164' y='54'>thin innovation</text><text x='4' y='74'>pull of the US</text><text x='164' y='74'>higher taxes</text><text x='4' y='96' class='t-a'>Name three or more, one clause each</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q2b",
+       "label": "2b plan"
+      },
+      {
+       "href": "midterm-past-exams.html#c-canada",
+       "label": "Canada's growth"
+      }
+     ]
+    },
+    {
+     "id": "k24-2c-label",
+     "type": "watch",
+     "page": 14,
+     "quote": "Q2, Part b)",
+     "title": "Mislabelled: this rubric is for 2c, the third question",
+     "body_html": "<p>The key heads this slide \"Q2, Part b)\" a second time, but the question text and the 15 marks belong to the third email question. If you mark your own 2b against this slide, you grade it for the wrong content.</p><p>The rubric's first 2 marks are for answering no: Krugman is describing advanced economies. The prep page calls this part 2c throughout.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 96' role='img' aria-label='Which question each email rubric belongs to'><text x='4' y='14' class='t-b'>Key slide</text><text x='80' y='14' class='t-b'>Label</text><text x='190' y='14' class='t-b'>Real question</text><text x='4' y='34'>12</text><text x='80' y='34'>Q2, Part a)</text><text x='190' y='34'>2a · 5 marks</text><text x='4' y='54'>13</text><text x='80' y='54'>Q2, Part b)</text><text x='190' y='54'>2b · 10 marks</text><text x='4' y='74' class='t-w'>14</text><text x='80' y='74' class='t-w'>Q2, Part b)</text><text x='190' y='74' class='t-w'>2c · 15 marks</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q2c",
+       "label": "2c plan"
+      }
+     ]
+    },
+    {
+     "id": "k24-2c-dimret",
+     "type": "mean",
+     "page": 14,
+     "quote": "diminishing returns to capital",
+     "title": "Five marks need the term, and the class example",
+     "body_html": "<p>The key asks for the words \"diminishing returns to capital\" and a concrete example. The class example: a water buffalo transforms a subsistence rice farm, while an expensive tractor barely changes a Canadian wheat field.</p><p>That is why an extra point of growth is realistic for poor countries and crazy for the US.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 132' role='img' aria-label='Diminishing returns: a buffalo on a rice farm, a tractor on a wheat farm'><line class='ln' x1='30' y1='14' x2='30' y2='110'/><line class='ln' x1='30' y1='110' x2='304' y2='110'/><path class='ln-a' d='M30.0 110.0 L33.0 100.5 L36.0 96.6 L40.0 92.7 L46.0 88.1 L54.0 83.2 L64.0 78.1 L78.0 72.1 L96.0 65.5 L120.0 58.0 L150.0 50.0 L185.0 41.8 L225.0 33.5 L265.0 26.0 L300.0 20.0'/><line class='ln-w dash' x1='32' y1='106.679' x2='48' y2='78.6795'/><line class='ln-w dash' x1='259' y1='25.0357' x2='299' y2='21.1357'/><circle class='fl-a' cx='40' cy='92.6795' r='4.5'/><circle class='fl-m' cx='285' cy='22.5357' r='4.5'/><text x='52' y='102'>Rice farm: buffalo</text><text x='300' y='48' text-anchor='end'>Wheat farm: tractor</text><text x='34' y='12' class='t-s'>output per worker</text><text x='304' y='124' class='t-s' text-anchor='end'>capital per worker →</text></svg>",
+     "diagram_caption": "Illustrative curve; dashed lines show the slope at each point.",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q2c",
+       "label": "2c plan"
+      },
+      {
+       "href": "midterm-past-exams.html#b-dimret",
+       "label": "Diminishing returns"
+      },
+      {
+       "href": "midterm-past-exams.html#c-capital",
+       "label": "Capital concept"
+      }
+     ]
+    },
+    {
+     "id": "k24-2c-inst",
+     "type": "mean",
+     "page": 14,
+     "quote": "5 marks for explaining how institutional factors",
+     "title": "The other five: institutions collect the high returns",
+     "body_html": "<p>High returns to capital are only potential. The key's examples: contract law and property rights, public transport and energy infrastructure, public health and education. Give three or four, one line each, and say what each lets an investor or worker do.</p><p>A counterexample helps: North Korea shows catch-up never starts without them; Vietnam's 1986 reforms show it starting.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 128' role='img' aria-label='Institutions that let poor countries collect high returns to capital'><rect class='bx-a' x='4' y='4' width='312.0' height='24' rx='6'/><text x='160' y='20' class='t-b' text-anchor='middle'>Property rights, contract law</text><rect class='bx-a' x='4' y='34' width='312.0' height='24' rx='6'/><text x='160' y='50' class='t-b' text-anchor='middle'>Transport and energy</text><rect class='bx-a' x='4' y='64' width='312.0' height='24' rx='6'/><text x='160' y='80' class='t-b' text-anchor='middle'>Health and education</text><rect class='bx' x='4' y='94' width='312.0' height='24' rx='6'/><text x='160' y='110' class='t-b' text-anchor='middle'>Prep page adds: stable policy, trade</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#y24q2c",
+       "label": "2c plan"
+      },
+      {
+       "href": "midterm-past-exams.html#c-inst",
+       "label": "Institutions concept"
+      },
+      {
+       "href": "midterm-past-exams.html#b-prop",
+       "label": "Property rights"
+      }
+     ]
+    },
+    {
+     "id": "k24-model",
+     "type": "mean",
+     "page": 15,
+     "quote": "Institutional Environment",
+     "title": "The appendix model: two channels on one foundation",
+     "body_html": "<p>The key's appendix is the course growth model. GDP growth comes from labour force growth and productivity growth; productivity comes from capital deepening, labour quality and innovation. Institutions sit under all of it.</p><p>Every 2024 answer draws on it: 1a's corners, 2b's but, and the 3 marks in 2c for using the model.</p>",
+     "diagram_svg": "<svg class='dg' viewBox='0 0 320 132' role='img' aria-label='The course growth model: labour force and productivity on an institutional base'><rect class='bx' x='4' y='40' width='64.0' height='40' rx='6'/><text x='36' y='57.5' class='t-b' text-anchor='middle'>GDP</text><text x='36' y='70.5' class='t-b' text-anchor='middle'>growth</text><rect class='bx' x='96' y='8' width='100.0' height='28' rx='6'/><text x='146' y='26' class='t-b' text-anchor='middle'>Labour force</text><rect class='bx-a' x='96' y='64' width='100.0' height='28' rx='6'/><text x='146' y='82' class='t-b' text-anchor='middle'>Productivity</text><line class='ln' x1='68' y1='60' x2='96' y2='22'/><line class='ln' x1='68' y1='60' x2='96' y2='78'/><text x='206' y='62' class='t-s'>capital deepening</text><text x='206' y='76' class='t-s'>labour quality</text><text x='206' y='90' class='t-s'>innovation (TFP)</text><rect class='bx-m' x='4' y='104' width='312.0' height='24' rx='4'/><text x='160' y='120' class='t-b' text-anchor='middle'>Institutional environment</text></svg>",
+     "see": [
+      {
+       "href": "midterm-past-exams.html#c-model",
+       "label": "Growth model"
+      },
+      {
+       "href": "midterm-past-exams.html#b-root",
+       "label": "Proximate vs root causes"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "include": "readings.json"
+  }
+ ]
+}

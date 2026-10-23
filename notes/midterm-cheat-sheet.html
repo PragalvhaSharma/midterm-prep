@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4505 GMM midterm: memorize this</title>
+<style>
+@page { size: letter; margin: 0; }
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin: 0; background: #e9e9e6; color: #111; font-family: "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif; font-size: 8pt; line-height: 1.2; }
+.page { width: 8.5in; height: 11in; margin: 0.3in auto; background: #fff; padding: 0.26in 0.28in; box-shadow: 0 1px 6px rgba(0,0,0,.18); display: flex; flex-direction: column; overflow: hidden; }
+.top { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1.4pt solid #111; padding-bottom: 2pt; margin-bottom: 4pt; }
+.top h1 { font-size: 11pt; margin: 0; font-weight: 700; letter-spacing: .01em; }
+.top span { font-size: 7pt; color: #333; }
+.cols { flex: 1; column-count: 3; column-gap: 0.15in; column-fill: auto; min-height: 0; }
+.box { border: 0.6pt solid #888; border-radius: 2pt; padding: 2.6pt 3.6pt 3pt; margin: 0 0 4pt; break-inside: avoid; }
+.box.flow { break-inside: auto; }
+h2 { font-size: 1.11em; margin: 0 0 1.6pt; padding: 0.8pt 3pt; background: #111; color: #fff; border-radius: 1.5pt; font-weight: 700; }
+h2.r { background: #b3261e; }
+h2.b { background: #1f4e8c; }
+h2.g { background: #2e6b3a; }
+h3 { font-size: 1.04em; margin: 2.4pt 0 0.6pt; color: #1f4e8c; font-weight: 700; }
+p { margin: 0 0 1.6pt; }
+ul, ol { margin: 0 0 1.6pt; padding-left: 9pt; }
+li { margin: 0 0 0.7pt; }
+b { font-weight: 700; }
+.k { color: #b3261e; font-weight: 700; }
+.m { font-family: Menlo, Consolas, monospace; font-size: 0.89em; }
+table { width: 100%; border-collapse: collapse; margin: 0.6pt 0 1.6pt; }
+th, td { border-bottom: 0.4pt solid #bbb; padding: 0.6pt 1.6pt; text-align: left; vertical-align: top; }
+th { background: #eef1f6; font-weight: 700; }
+td.n, th.n { text-align: right; white-space: nowrap; }
+.model { display: grid; grid-template-columns: 1fr 1fr; gap: 2pt; margin: 1.6pt 0; }
+.model div { border: 0.6pt solid #1f4e8c; border-radius: 2pt; padding: 1.6pt 2.4pt; background: #f3f6fb; }
+.model .full { grid-column: 1 / -1; text-align: center; }
+.model .root { background: #fbf3e6; border-color: #a86b12; }
+.q { border-left: 2pt solid #1f4e8c; padding-left: 3pt; margin: 2pt 0 2.4pt; }
+.q .t { font-weight: 700; }
+.small { font-size: 0.9em; color: #333; }
+.foot { font-size: 0.85em; color: #555; border-top: 0.5pt solid #999; padding-top: 1.4pt; margin-top: 2pt; }
+@media print { body { background: #fff; } .page { margin: 0; box-shadow: none; page-break-after: always; break-after: page; } .page:last-child { page-break-after: auto; break-after: auto; } }
+#back { font-size: 7.6pt; }
+@media screen and (max-width: 860px) {
+  #back { font-size: inherit; }
+  body { font-size: 10.5pt; line-height: 1.35; }
+  .page { width: auto; height: auto; margin: 10px; padding: 12px; overflow: visible; }
+  .cols { column-count: 1; }
+  .top { flex-direction: column; gap: 2px; }
+  .top h1 { font-size: 15pt; }
+  h2 { font-size: 11pt; } h3 { font-size: 10.5pt; } .m { font-size: 9pt; } .small, .foot { font-size: 9pt; }
+}
+</style>
+</head>
+<body>
+
+<section class="page" id="front">
+<div class="top"><h1>4505 GMM midterm: memorize this &middot; front</h1><span>Mon Oct 26 &middot; 1:00 to 2:20pm &middot; 80 min &middot; Room 1310, seated 12:50 &middot; closed book, no calculator &middot; 25% &middot; S1 to S8 &middot; private</span></div>
+<div class="cols">
+
+<div class="box">
+<h2 class="r">How marks are earned (from both keys)</h2>
+<ol>
+<li><b>Verdict in sentence one</b>, in the question's own words: &ldquo;Mostly contradicted&rdquo;, &ldquo;Yes&rdquo;, &ldquo;Down a lot&rdquo;. (2024 2b: 2 of 10 marks for &ldquo;Yes&rdquo;; 2c: 2 of 15 for &ldquo;no&rdquo;.)</li>
+<li><b>Cite a specific exhibit feature</b> with a hedged number: &ldquo;the orange line is almost flat&rdquo;, &ldquo;about $260 vs $1,480&rdquo;.</li>
+<li><b>Name the course concept</b>: &ldquo;Full marks should mention structural transformation&rdquo; (2025 Q4).</li>
+<li><b>Use every fact the question gives</b>, visibly (2025 Q3).</li>
+<li><b>One concrete example</b>: water buffalo for a rice farmer vs tractor on a Canadian wheat farm (2024 2c).</li>
+<li><b>Tag each cause to a channel</b>: labour force growth or productivity growth.</li>
+<li><b>Chain institutions to the outcome</b>: institution &rarr; investment &rarr; result. &ldquo;Contract law doesn't cause corn to grow!&rdquo;</li>
+<li><b>Accept the premise</b>: &ldquo;Answers should not fight the trilemma.&rdquo;</li>
+<li><b>Act, don't study</b>: proposals must &ldquo;invest, establish, create&rdquo;, and be legal.</li>
+<li><b>Reasoned dissent scores</b>: a different call earns full marks if the reasoning holds (2025 Q4 inequality).</li>
+<li><b>Stay 5 to 10 words under every cap.</b> 2 &times; 100 (2025 Q3) is two separate caps; 120 total for four items (2025 Q4) means about 30 each.</li>
+</ol>
+</div>
+
+<div class="box">
+<h2>Timing</h2>
+<p>Read the exhibit and <b>all</b> questions first: 4 min. Then <span class="m">min = 76 &times; pts &divide; total</span>.</p>
+<table><tr><th>Paper total</th><th class="n">40</th><th class="n">80</th><th class="n">100</th></tr>
+<tr><td>Minutes per point</td><td class="n">1.9</td><td class="n">0.95</td><td class="n">0.76</td></tr>
+<tr><td>A 10-point question</td><td class="n">19 min</td><td class="n">9.5 min</td><td class="n">7.6 min</td></tr></table>
+<p>Both papers: about <b>15.5 words per point</b>. Thinking is the bottleneck, not typing (12 words a minute is enough). Split each question about 1/3 plan, 2/3 write. Short on time? <b>Verdict + named concept + one number</b> on every question beats one polished answer. Count words at the end.</p>
+</div>
+
+<div class="box">
+<h2 class="b">The professors' growth model (2024 key appendix)</h2>
+<div class="model">
+<div class="full"><b>Economic growth</b> &Delta;GDP<sub>r</sub> = &Delta;Y</div>
+<div><b>Labour force growth</b><br>demographics (birth, death rates, pyramid) &middot; immigration &middot; economic policy (tax) &middot; social policy (child care) &middot; norms (women in work)</div>
+<div><b>Productivity growth</b><br>capital deepening (quantity and quality of K) &middot; labour quality (skill, effort) &middot; innovation (TFP)</div>
+<div class="full root"><b>Institutional environment</b> (the root): political &middot; legal &middot; macroeconomic &middot; trade &middot; microeconomic</div>
+</div>
+<p><span class="m">Y = (Y&divide;hours)(hours&divide;worker)(workers&divide;pop)(pop)</span> (S5). The first factor is productivity; the other three are labour input. Only productivity raises living standards <b>lastingly</b>; participation and hours lift GDP per person once.</p>
+<p><b>Proximate vs root (S4):</b> K (machines, roads), H (skills, health), A (how well they combine) are proximate causes. <b>Geography, institutions, integration</b> are deep causes. &ldquo;They need more capital&rdquo; restates the question; say <i>why</i> the capital is missing.</p>
+<p>&ldquo;Proposition 1&rdquo; (S5): GDP tends to rise over time from supply-side factors. Best-off countries have a <b>40 to 50 fold</b> living-standard lead over the worst-off (S4).</p>
+</div>
+
+<div class="box flow">
+<h2 class="b">Concepts, one line each</h2>
+<p><b>Capital deepening</b>: more and better capital per worker (tractors, irrigation, storage, software). Fastest lever for a poor economy.</p>
+<p><b>Diminishing returns to capital</b>: each extra unit adds less. &ldquo;A little capital goes a long way&rdquo; early on (S4). Double K and output rises only about 26% (S4). Water buffalo &gt; second tractor.</p>
+<p><b>Innovation / TFP</b>: output growth not explained by more K or L. Frontier economies can only grow this way. Krugman: TFP growth &ldquo;pretty lousy&rdquo;.</p>
+<p><b>Institutions</b>: rules on who can own, enforce contracts and keep gains. <b>Inclusive</b> (broad property rights, open entry, state bound by rules) vs <b>extractive</b> (income moved to whoever holds power). Nogales: one fence, two incomes. Botswana: inclusive, about $20.7k PPP.</p>
+<p><b>Property rights and contracts</b>: title lets farmers borrow against land, merge plots, keep the return; enforcement lets strangers trade and lend.</p>
+<p><b>Finance and country risk</b>: credit turns savings into capital; a junk rating (CCC+) makes borrowing costly or impossible.</p>
+<p><b>Natural resources</b> set what is possible, not what is achieved. Potential yields barely rise with income; actual yields do.</p>
+<p><b>Conditional convergence</b>: poor countries <i>can</i> grow faster by copying known technology, <i>if</i> they can fund and protect investment. Poorest of 1950 grew <b>below</b> world average (S4). S4 verdict: &ldquo;Overall, yes, but not as robustly as we should expect&hellip;or desire.&rdquo; Unconditional convergence (Patel, Sandefur, Subramanian 2021) is the skeptics' finding.</p>
+<p><b>Structural transformation</b>: workers and investment move from agriculture to manufacturing and services, which have more capital, specialization and scale (S4). Core of every takeoff. Vietnam 1990: nearly 80% in farming.</p>
+<p><b>Kuznets curve</b>: inequality rises early in development (gains to urban, skilled, capital owners), peaks, then falls. Gini: 0 all equal, 1 one person has everything.</p>
+<p><b>Demographic dividend</b>: young population reaches working age as fertility falls; more workers per person, <b>once</b>. More people alone is labour input.</p>
+<p><b>Potential GDP</b>: output the economy can produce at a sustainable pace, with normal use of labour and capital (&ldquo;capacity&rdquo;, &ldquo;long-run sustainability&rdquo;). Canada's trend: about 1.5 to 2% a year (Primer 1). <b>Output gap</b> = actual &minus; potential: negative in a slump (high unemployment), positive in a boom (overtime, machines unserviced), which cannot last.</p>
+<p><b>GDP vs GDP per person</b>: total GDP can grow just because there are more people. Living standards follow GDP per person.</p>
+<p><b>Middle-income trap</b> (S6, Wolf, WDR 2024): grow out of poverty, then stall before high income. Piling up capital stops paying; the next gains come from using capital better. Brazil 19% of US income (1960) &rarr; 25% (2022); Korea 9% &rarr; 71%.</p>
+<p><b>The 3 i's</b> (WDR 2024): <b>1i Investment</b> (enough at low income) &rarr; <b>2i Infusion</b> added at lower middle income, $1,136 to $4,465 (import proven foreign tech and practices, spread them; Samsung began as a JV with Sanyo, 1969) &rarr; <b>3i Innovation</b> added at upper middle income, $4,466 to $13,845 (push the frontier; Korea R&amp;D about 5% of GDP). Needs absorptive capacity, learning by exporting, FDI.</p>
+<p><b>Renewal</b>: discipline incumbents, reward merit, allow creative destruction; incumbents earn rents and block reform (elite capture). Social mobility about 40% lower in middle-income countries.</p>
+<p><b>Binding constraint</b> (S4, Malawi): the one shortage that stops growth now (Malawi: foreign exchange; overvalued peg, aid dependence, debt distress).</p>
+</div>
+
+<div class="box flow">
+<h2 class="g">Measuring prosperity (S3, Primers 3 and 4)</h2>
+<p><span class="m">GDP = C + I + G + NX</span>: market value of final goods and services made inside a country in a year. Count final goods or value added (bread, not flour). Gross: no depreciation. A <b>flow</b>, not a stock: a flood is invisible, the rebuild counts.</p>
+<p><b>Nominal</b> = current prices. <b>Real</b> = nominal &divide; deflator (quantities only). 6% nominal &minus; 3% inflation &asymp; 3% real. <b>PPP</b> reprices output at shared prices so poor countries are comparable (Malawi: $580 market, $1,758 PPP). <b>GDP vs GNI</b>: where it is made vs what residents earn.</p>
+<p><b>What GDP misses</b>: unpaid and household work, leisure, environment and depletion, quality and free goods (consumer surplus of search and maps), distribution (mean vs median; South Africa top tenth gets about 65%), the cash economy ($72B, about 2.5% of Canadian GDP). Ireland 2015: 26% &ldquo;growth&rdquo; on paper (corporate relocation). Still: GDP per person correlates with health, schooling, life expectancy.</p>
+<p><b>Poverty rate vs count</b>: the rate is the share below the line; count = rate &times; a growing population, so the count falls more slowly.</p>
+</div>
+
+<div class="box">
+<h2>Formulas</h2>
+<table>
+<tr><td>Growth split</td><td class="m">%&Delta;Y &asymp; %&Delta;pop + %&Delta;(Y&divide;pop)</td></tr>
+<tr><td>Two channels</td><td class="m">%&Delta;Y &asymp; %&Delta;labour + %&Delta;(Y&divide;worker)</td></tr>
+<tr><td>Sector rel. productivity</td><td class="m">GDP share &divide; jobs share</td></tr>
+<tr><td>Compound growth</td><td class="m">X<sub>n</sub> = X<sub>0</sub>(1+g)<sup>n</sup></td></tr>
+<tr><td>Implied rate</td><td class="m">g = (X<sub>n</sub>&divide;X<sub>0</sub>)<sup>1/n</sup> &minus; 1</td></tr>
+<tr><td>Rule of 70</td><td class="m">double in &asymp; 70 &divide; g%</td></tr>
+<tr><td>Yield gap</td><td class="m">actual &divide; potential</td></tr>
+<tr><td>Output gap</td><td class="m">actual &minus; potential GDP</td></tr>
+<tr><td>Poverty count</td><td class="m">rate &times; population</td></tr>
+<tr><td>Dependency ratio</td><td class="m">(&lt;15 + 65+) &divide; (15 to 64)</td></tr>
+<tr><td>Real GDP</td><td class="m">nominal &divide; (deflator&divide;100)</td></tr>
+<tr><td>Log axis</td><td>equal distance = equal ratio; say &ldquo;about&rdquo;</td></tr>
+</table>
+<p class="small">Handy: 1.02<sup>35</sup> &asymp; 2 &middot; 1.03<sup>10</sup> &asymp; 1.34 &middot; 1.06<sup>40</sup> &asymp; 10 &middot; 1.07<sup>10</sup> &asymp; 2 &middot; 1.10<sup>7</sup> &asymp; 2 &middot; 2<sup>1/3</sup> &asymp; 1.26</p>
+</div>
+
+<div class="box">
+<h2 class="g">Phrases worth using</h2>
+<p>&ldquo;a little capital goes a long way&rdquo; (S4) &middot; &ldquo;iron law of diminishing returns&rdquo; (S4) &middot; &ldquo;the good institutions pill&rdquo; (S4, 2025 Q4) &middot; &ldquo;supply side determinants of potential output&rdquo; (S5) &middot; &ldquo;residential investment &hellip; a chronically low (and declining!) productivity sector&rdquo; (2024 key) &middot; &ldquo;infusion&rdquo; (Wolf) &middot; &ldquo;near the efficiency frontier&rdquo; (2025 key).</p>
+</div>
+
+<div class="box">
+<h2>Worked arithmetic</h2>
+<table>
+<tr><td>Vietnam 10&times; in 40 yrs</td><td class="m">10<sup>1/40</sup> &minus; 1 &asymp; 6%/yr</td></tr>
+<tr><td>Africa 1.5 &rarr; 2.5 bn, 25 yrs</td><td class="m">(2.5&divide;1.5)<sup>1/25</sup> &minus; 1 &asymp; 2%/yr</td></tr>
+<tr><td>GDP up, per person down</td><td class="m">+1.5% &minus; 3.2% = &minus;1.7%</td></tr>
+<tr><td>Malawi per person</td><td class="m">1.9% &minus; 2.6% = &minus;0.7%</td></tr>
+<tr><td>Doubling at 2%</td><td class="m">70 &divide; 2 = 35 yrs</td></tr>
+<tr><td>Compounding gap</td><td class="m">$55k &times; 1.02<sup>50</sup> &asymp; $148k</td></tr>
+<tr><td>Africa dependency</td><td class="m">(39+4) &divide; 57 &asymp; 75 (slide: 73)</td></tr>
+<tr><td>Dividend, once</td><td class="m">68 &divide; 57 &asymp; 1.19 &rarr; +19%</td></tr>
+<tr><td>Poverty count flat (assumes 3%/yr pop)</td><td class="m">0.70 &divide; 1.34 &asymp; 52% rate</td></tr>
+<tr><td>Farm vs non-farm</td><td class="m">2.5 &divide; 0.36 &asymp; 7&times;</td></tr>
+</table>
+<p class="small">The dividend is one-time (+19%) against a 24&times; Germany vs Mozambique income gap: labour input cannot close it; productivity must.</p>
+</div>
+
+
+
+</div>
+</section>
+
+<section class="page" id="back">
+<div class="top"><h1>4505 GMM midterm: memorize this &middot; back</h1><span>Question types from the 2025, 2025 makeup and 2024 papers, key numbers, traps</span></div>
+<div class="cols">
+
+<div class="box flow">
+<h2 class="b">Question types and how the key marks them</h2>
+<div class="q"><p class="t">&ldquo;Does the chart support or contradict view X?&rdquo; (2025 Q1, 8 pts, 100 w)</p>
+<p>&ldquo;Mostly contradicted.&rdquo; Contrast the <b>flat orange line</b> (potential yield, about $1,600 to $1,900/ha poorest to richest) with the <b>rising teal line</b> (actual, about $250 to $1,350, about 5&times;). Equal potential (~$1,500) but Mozambique realizes under a fifth, Germany over four fifths. Mozambique has about 6&times; Germany's land per person. Close: what matters is turning potential into output: capital, know-how, institutions.</p></div>
+<div class="q"><p class="t">&ldquo;How could institutions be the hidden driver?&rdquo; (2025 Q2, 12 pts, 200 w)</p>
+<p>Name specific institutions: rule of law, property rights, finance and capital markets, open trade. Chain each: <b>institution &rarr; less risk &rarr; investment</b> (tractors, irrigation, storage, merged scale-efficient plots) <b>&rarr; actual yield nears potential</b>. Mozambique: weak rule of law, corruption, civil war legacy, weak credit &rarr; outdated tools, fragmented plots. Beat the key: the same institutions lift investment across the economy, so they move the <b>horizontal axis</b> (income) too.</p></div>
+<div class="q"><p class="t">&ldquo;Reasons for / against convergence&rdquo; (2025 Q3, 12 pts, 2 &times; 100 w)</p>
+<p>Use the question's own paragraph labels. <b>For</b>: farms are 70% of jobs, 25% of GDP (25&divide;70 &asymp; 0.36; non-farm 75&divide;30 = 2.5; moving off the farm &asymp; 7&times; output); diminishing returns mean first investments pay most; Germany &ldquo;already operates near the efficiency frontier&rdquo;. <b>Against</b>: debt 76.9% of GDP and <b>CCC+</b> vs Germany 62.5% and AAA. Debt gap is modest (14.4 pts), the rating gap is huge, so lenders price default risk and weak institutions. Convergence is <b>conditional</b>.</p></div>
+<div class="q"><p class="t">&ldquo;Ten years after reform, forecast indicators&rdquo; (2025 Q4, 8 pts, 4 &times; ~30 w)</p>
+<p>Use exactly one of: up a lot / up a little / down a little / down a lot / ambiguous. Key: farm output <b>up a lot</b> (property rights, credit, infrastructure &rarr; investment); farm share of jobs <b>down a lot</b> (<b>write &ldquo;structural transformation&rdquo;</b>); poverty <b>down a lot</b> (key reasons about the rate; the count falls less: assume about 3%/yr pop growth, 1.03<sup>10</sup> &asymp; 1.34, so the rate must fall from 70% to about 52% just to hold the count flat); inequality &ldquo;up for sure, but hard to know little or a lot&rdquo; (Kuznets). Pick one word anyway (model answer: <b>up a little</b>); &ldquo;down&rdquo; also scores fully if reasoned (reform breaks the extractive elite).</p></div>
+<div class="q"><p class="t">2025 makeup: Canada vs Germany (50 marks: 10/15/10/15, ~100/150/100/150 w)</p>
+<p><b>Q1 puzzle</b>: Canada most educated in the OECD (~2/3 tertiary vs Germany 34.3%), so human capital says higher productivity, yet Germany is &gt;30% more productive per hour (2023) and the gap widened since 2000. Describe, do not explain. <b>Q2 three hypotheses</b>, one per driver: low capital deepening (business investment weak, ~54&cent; per worker vs US $1); weak diffusion and competition (business productivity 83% &rarr; 73% of US, 2002 to 2019); skill mismatch (degrees not matched to jobs). Alternatives: resource and industry mix, weak education to industry links. <b>Q3 Germany</b>: makes capital goods (machine tools), vocational diplomas (~half), skills matched to production, so K and know-how compound and export. <b>Q4 cut basic research?</b> Open &ldquo;No, bad idea&rdquo; or &ldquo;Yes&rdquo;. No (easier): absorptive capacity, research is investment, brain drain, cut operating spending instead. Yes: our gap is diffusion, research is a global public good, redirect to adoption with a safeguard. Either scores if reasoned.</p></div>
+<div class="q"><p class="t">&ldquo;Explain this argument to a non-economist&rdquo; (2024 1a, 30 marks, 300 w)</p>
+<p>10 marks per corner. Define the three goals plainly (~50 w), ~70 w per corner, ~30 w close. Hinge: people need homes, homes need builders and capital, and home building is low productivity. Use one number (21% of Canadians are 65+).</p></div>
+<div class="q"><p class="t">&ldquo;Pick two outcomes&rdquo; (2024 1b, 10, 200 w)</p>
+<p>Free choice. Do not fight the premise; give reasons for dropping the third and admit who pays.</p></div>
+<div class="q"><p class="t">&ldquo;One policy to escape&rdquo; (2024 1c, 10, 200 w)</p>
+<p>Five criteria: works and is feasible; fits the growth model (K, skills, innovation, institutions); clear; actionable (more than &ldquo;study&rdquo;); creative and legal. Setter's view: <b>raise productivity in residential construction</b>: modular, prefab, 3D printing, one national code, digital permits, zoning reform (end single-family-only), cut development fees, construction-trades immigration; on demand, move buyers off the quarter-acre house.</p></div>
+<div class="q"><p class="t">&ldquo;What is potential GDP?&rdquo; (2024 2a, 5, 100 w)</p>
+<p>2: define with &ldquo;capacity&rdquo; / &ldquo;long-run sustainability&rdquo;. 2: actual below in high unemployment, above in a boom that can't last. 1: why Krugman cares: the trend that sets living standards across generations, since one year's GDP swings.</p></div>
+<div class="q"><p class="t">&ldquo;Is Canada in the same situation?&rdquo; (2024 2b, 10, 150 w)</p>
+<p>2: &ldquo;Yes&rdquo;, GDP grew fast. 3: but almost all from <b>labour force growth</b>; GDP per person is what matters. 2: productivity growth &ldquo;extremely poor&rdquo; for two decades, worse than the US. 3: causes: resource-heavy mix (high level, low growth), little competition, small market and no scale, weak innovation ecosystem, US proximity, higher taxes.</p></div>
+<div class="q"><p class="t">&ldquo;Are poor countries destined to stay poor?&rdquo; (2024 2c, 15, 300 w)</p>
+<p>2: &ldquo;No&rdquo;: Krugman means advanced economies. 3: use both channels. 5: capital deepening alive in poor countries; name <b>diminishing returns to capital</b>; buffalo vs tractor. 5: institutions realize the returns: contracts and property rights, transport and energy, health and education. Vietnam: &ldquo;good institutions pill&rdquo; 1986, ~10&times; richer (&asymp; 6%/yr); 2000 to 2019 growth 6.3% vs Canada 2.3%. Counter: North Korea at night.</p></div>
+</div>
+
+<div class="box">
+<h2 class="b">Canada's trilemma (2024 figures)</h2>
+<p>Goals: <b>1</b> stable population growth (healthy dependency ratio) &middot; <b>2</b> housing affordability &middot; <b>3</b> revived productivity growth. Pathways: aggressive immigration; build more homes / cool demand; invest in advanced traded sectors.</p>
+<table><tr><th>Pick</th><th>How</th><th>Third breaks because</th></tr>
+<tr><td>1+2</td><td>immigration + home-building push</td><td>capital and talent sink into low-productivity construction &rarr; lose <b>3</b></td></tr>
+<tr><td>1+3</td><td>skilled immigration + advanced sectors</td><td>demand up, few builders, gains to high earners &rarr; lose <b>2</b></td></tr>
+<tr><td>2+3</td><td>cut immigration to cool housing</td><td>workforce ages, dependency ratio rises, services strain &rarr; lose <b>1</b></td></tr></table>
+</div>
+
+<div class="box flow">
+<h2 class="g">Key numbers</h2>
+<h3>Canada</h3>
+<ul>
+<li>Population +3.2% in 2023, fastest since 1957, 98% from migration (S8); S2 frames it as 2023 to 24, fastest in G7. Slowed to 0.5% Jul 2025 to Jul 2026, lowest in over a century.</li>
+<li>Real GDP per person &minus;1.3% (2023), &minus;1.4% (2024, as first published) while total GDP grew; fell 5 of 6 quarters to mid 2024 (S3).</li>
+<li>Investment per worker: <b>54&cent;</b> per US$1 (2024), from 87&cent; (2014); about 9% less capital per worker than 2015.</li>
+<li>Business productivity <b>73%</b> of US (2019), from 83% (2002). About <b>$21 less per worker-hour</b> than the US (S2).</li>
+<li>21% aged 65+; dependency ratio 55 per 100. GDP about $3T; about $55k per person. Trend growth 1.5 to 2%.</li>
+<li>AI (S8): 19% of firms use AI at all, 8% in core work. J-curve: output dips while firms reorganize. Levers: competition policy, regulatory sandboxes, government as lead user; diagnosis is weak 1i and a 2i engine that never started.</li>
+</ul>
+<h3>2025 chart (log axes; approximate)</h3>
+<table><tr><th></th><th class="n">Mozambique</th><th class="n">Germany</th></tr>
+<tr><td>GDP/person 2000</td><td class="n">~$1.2k</td><td class="n">~$29k (24&times;)</td></tr>
+<tr><td>Potential yield</td><td class="n">~$1,480/ha</td><td class="n">~$1,490/ha</td></tr>
+<tr><td>Actual yield</td><td class="n">~$260/ha</td><td class="n">~$1,240/ha</td></tr>
+<tr><td>Actual &divide; potential</td><td class="n">~18%</td><td class="n">~83%</td></tr></table>
+<p class="small">Footnote facts: independence 1975; civil war 1977 to 1992 (Rome accords); over 70% below $3.00/day (2023); about 2&times; Germany's land, about 6&times; per person. Key overclaims Mozambique's potential as &ldquo;slightly higher than Germany&rsquo;s and amongst the highest of all&rdquo;: it is mid pack. Say &ldquo;about equal to Germany's&rdquo;.</p>
+<h3>World</h3>
+<ul>
+<li>Middle-income: 108 countries, $1,136 to $13,845 per person, 6 bn people; only 34 reached high income since 1990 (under 250 m people); median middle-income country under 10% of US income since 1970 (WDR says median, Wolf says average).</li>
+<li>Canada &divide; Malawi: 38&times; per person (PPP 2025); Malawi $1,758, over 80% in farming.</li>
+<li>Africa (S7): population about 1.5 bn &rarr; 2.5 bn by 2050 (&asymp; 2%/yr); about 4 children per woman; dependency 73 per 100 (India 46, Vietnam 48, Canada 55). Rwanda 566/km&sup2; and Burundi 533 are low income; Botswana and Namibia 4/km&sup2; are upper-middle. Density is neither necessary nor sufficient; institutions decide (reversal of fortune).</li>
+</ul>
+</div>
+
+<div class="box">
+<h2 class="r">Traps</h2>
+<table>
+<tr><td>Over the cap</td><td>caps are limits, even though the key breaks them</td></tr>
+<tr><td>No verdict</td><td>yes/no or the forecast word in sentence one</td></tr>
+<tr><td>Concept unnamed</td><td>write the course term itself</td></tr>
+<tr><td>GDP for GDP per person</td><td>more people is not richer people</td></tr>
+<tr><td>Rate for count</td><td>count = rate &times; growing population</td></tr>
+<tr><td>Third-digit chart reads</td><td>&ldquo;about&rdquo;, and ratios</td></tr>
+<tr><td>Skipped given fact</td><td>use every one, visibly</td></tr>
+<tr><td>Convergence as automatic</td><td>conditional on institutions and capital</td></tr>
+<tr><td>One line only</td><td>explain flat orange and rising teal together</td></tr>
+<tr><td>&ldquo;Study it&rdquo; policy</td><td>action, mechanism, cost</td></tr>
+<tr><td>Fighting the premise</td><td>pick two and own the cost</td></tr>
+<tr><td>Mixed channels</td><td>tag labour force vs productivity</td></tr>
+</table>
+</div>
+
+<div class="box">
+<h2 class="b">Answer skeleton (any question)</h2>
+<ol>
+<li><b>Verdict</b> in the question's words.</li>
+<li><b>Exhibit evidence</b>: one feature + one hedged number or ratio.</li>
+<li><b>Mechanism</b>: concept by name, tagged to a channel; institution &rarr; investment &rarr; outcome.</li>
+<li><b>Given facts</b>: each one used, as a ratio where possible.</li>
+<li><b>Example or nuance</b>: buffalo vs tractor; &ldquo;conditional on&hellip;&rdquo;; who pays.</li>
+</ol>
+</div>
+
+<div class="box">
+<h2>Exam day</h2>
+<p><b>Closed book, no calculator.</b> Room 1310, seated by 12:50. Examsoft template downloaded; bring nameplate, student ID, laptop, charger. Wi-Fi off. Read title, axes (log?), legend, annotations, footnotes. Read every question before writing. Type each plan as bullets, then turn it into prose. Check word count per answer before submitting.</p>
+</div>
+
+<div class="box">
+<h2 class="r">Where the sources disagree</h2>
+<ul>
+<li>2025 Q1 key: Mozambique potential &ldquo;amongst the highest&rdquo;; chart shows mid pack.</li>
+<li>2025 Q1 key answer is 108 words on a 100 cap; 2024 key examples also run over.</li>
+<li>2025 Q4 key reasons about poverty <i>rates</i>; the question asks the <i>number</i>.</li>
+<li>2024 key heads the 2c rubric &ldquo;Q2, Part b)&rdquo;.</li>
+<li>Wolf &ldquo;average&rdquo; vs WDR &ldquo;median&rdquo;. Africa median age 20 vs 19 on two S8 slides.</li>
+<li>Canada 3.2%: S2 &ldquo;2023 to 24, fastest in G7&rdquo; vs S8 &ldquo;2023, fastest since 1957&rdquo;. Quote one.</li>
+</ul>
+<p class="foot">Built from the 2024, 2025 and 2025 makeup papers and keys, session slides and Canvas pages, and the study page. Chart readings are approximate. Closed book: memorize this, do not bring it.</p>
+</div>
+
+</div>
+</section>
+
+</body>
+</html>

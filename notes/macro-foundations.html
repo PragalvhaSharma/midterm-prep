@@ -1,0 +1,2319 @@
+<meta charset="utf-8">
+<meta name="prep-file" content="4505-Global-Macroeconomics-for-Managers/notes/macro-foundations.html">
+<meta name="prep-session" content="active">
+<title>The Macro Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  color-scheme:light;
+  --paper:#FFFFFF; --surface:#FFFFFF; --surface-2:#F3F6F3; --surface-3:#E9EFEA;
+  --ink:#141F1C; --ink-2:#4C5A55; --ink-3:#7A8681;
+  --rule:#E0E6E1; --rule-strong:#A8B5AE;
+  --accent:#1B6B57; --accent-2:#2E9376; --accent-soft:#E2F0E9;
+  --credit:#A33A2C; --credit-soft:#FAE7E2;
+  --flag:#8A6A12; --flag-soft:#FAF2DC;
+  --shadow:0 1px 2px rgba(20,31,28,.05), 0 12px 28px -22px rgba(20,31,28,.5);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Public Sans","Helvetica Neue",Arial,sans-serif;font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Bitter,Georgia,serif;text-wrap:balance;margin:0;line-height:1.15}
+p{margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+.wrap{max-width:1400px;margin:0;padding-inline:34px}
+
+/* ---------- masthead ---------- */
+header{border-bottom:1px solid var(--rule)}
+.hd{max-width:1330px;padding-block:38px 28px;display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between;align-items:flex-end}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(30px,5.5vw,46px);font-weight:700;letter-spacing:-.025em;margin-top:10px}
+.gist{color:var(--ink-2);max-width:52ch;margin-top:10px}
+.hd .meta{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-2);border-left:2px solid var(--accent);padding-left:14px;line-height:2}
+.hd .meta b{color:var(--ink);font-weight:600}
+
+/* ---------- left contents rail ---------- */
+.cols{display:grid;grid-template-columns:236px minmax(0,1fr);gap:54px;align-items:start}
+nav.toc{position:sticky;top:22px;padding-block:34px 0;font-size:13.5px;max-height:calc(100vh - 44px);overflow-y:auto}
+nav.toc .toc-h{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-3);padding-bottom:9px;border-bottom:1px solid var(--rule);margin-bottom:8px}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px}
+nav.toc a{display:flex;gap:9px;align-items:baseline;padding:5px 10px;border-radius:6px;color:var(--ink-2);
+  text-decoration:none;border-left:2px solid transparent;line-height:1.35}
+nav.toc a .n{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3);min-width:15px}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{color:var(--accent);border-left-color:var(--accent);background:var(--accent-soft);font-weight:600}
+nav.toc a.on .n{color:var(--accent)}
+nav.toc a .io{font-size:10px;color:var(--accent);margin-left:auto;opacity:.75}
+nav.toc .grp{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-3);padding:16px 10px 5px}
+nav.toc .grp:first-child{padding-top:2px}
+
+main{display:flex;flex-direction:column;gap:26px;padding-block:34px 80px;min-width:0;max-width:1020px}
+
+/* ---------- plain-English opener ---------- */
+.oneline{display:flex;gap:14px;align-items:flex-start;background:var(--accent-soft);border-radius:10px;
+  padding:14px 18px;font-size:16px;color:var(--ink);max-width:76ch}
+.oneline .tag{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);white-space:nowrap;padding-top:5px}
+.oneline b{font-weight:600}
+
+/* ---------- group divider ---------- */
+.group{display:flex;align-items:center;gap:16px;margin-top:34px}
+.group:first-child{margin-top:0}
+.group h2{font-size:13px;font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent);border:none;padding:0;white-space:nowrap}
+.group .ln{flex:1;height:1px;background:var(--rule)}
+.group .ct{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+
+section{display:flex;flex-direction:column;gap:18px;scroll-margin-top:64px}
+section>h2{font-size:clamp(21px,3.2vw,27px);font-weight:600;letter-spacing:-.015em;display:flex;gap:12px;align-items:baseline}
+section>h2 .no{font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--accent);font-weight:500}
+h3{font-size:17px;font-weight:600;margin-top:8px}
+.lede{color:var(--ink-2);max-width:72ch;font-size:16px}
+.lede strong{color:var(--ink);font-weight:600}
+
+/* ---------- diagram frame ---------- */
+figure{margin:0;display:flex;flex-direction:column;gap:10px;max-width:1020px}
+.dg{background:var(--surface-2);border:1px solid var(--rule);border-radius:14px;padding:24px}
+.dg.pad0{padding:18px}
+figcaption{color:var(--ink-3);font-size:13.5px;max-width:70ch}
+svg.d{width:100%;height:auto;display:block;overflow:visible}
+.d-box{fill:var(--surface);stroke:var(--rule-strong);stroke-width:1.5}
+.d-box.acc{fill:var(--accent-soft);stroke:var(--accent)}
+.d-box.bad{fill:var(--credit-soft);stroke:var(--credit)}
+.d-box.mute{fill:var(--surface-3);stroke:var(--rule-strong);stroke-dasharray:5 4}
+.d-t{font-family:"Public Sans",sans-serif;font-size:15px;font-weight:600;fill:var(--ink)}
+.d-t.t2{font-size:13.5px}
+.d-s{font-family:"IBM Plex Mono",monospace;font-size:11.5px;fill:var(--ink-3)}
+.d-lab{font-family:"IBM Plex Mono",monospace;font-size:11.5px;fill:var(--ink-2)}
+.d-link{fill:none;stroke:var(--rule-strong);stroke-width:1.6}
+.d-link.acc{stroke:var(--accent)}
+.d-link.bad{stroke:var(--credit)}
+
+/* ---------- interactive shell ---------- */
+.ia{max-width:1020px;background:var(--surface);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.ia-top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;
+  padding:12px 18px;border-bottom:1px solid var(--rule);background:var(--surface-2)}
+.ia-top .ttl{font-size:14px;font-weight:600}
+.ia-top .hint{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.ia-body{padding:20px 18px}
+
+.seg{display:inline-flex;border:1px solid var(--rule-strong);border-radius:8px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:13px;font-weight:500;cursor:pointer;border:0;background:transparent;
+  color:var(--ink-2);padding:6px 14px;border-right:1px solid var(--rule)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--accent);color:#fff;font-weight:600}
+.seg button:hover:not([aria-pressed="true"]){background:var(--accent-soft);color:var(--accent)}
+
+.slider{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.slider label{font-size:13.5px;color:var(--ink-2);min-width:130px}
+.slider input[type=range]{flex:1;min-width:180px;accent-color:var(--accent);height:22px}
+.slider .val{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:14px;
+  font-weight:600;min-width:96px;text-align:right;color:var(--ink)}
+
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:14px;margin-top:16px}
+.kpi{border-top:2px solid var(--rule-strong);padding-top:7px}
+.kpi.on{border-top-color:var(--accent)}
+.kpi.warn{border-top-color:var(--credit)}
+.kpi .k{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.kpi .v{font-family:Bitter,serif;font-size:21px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.25}
+.kpi.on .v{color:var(--accent)} .kpi.warn .v{color:var(--credit)}
+.kpi .s{font-size:12.5px;color:var(--ink-2)}
+
+/* ---------- example strip ---------- */
+.ex{max-width:1020px;border:1px solid var(--rule);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;
+  padding:14px 18px;background:var(--surface);font-size:15px;color:var(--ink-2);display:flex;flex-direction:column;gap:7px}
+.ex .lb{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.ex strong{color:var(--ink);font-weight:600}
+.calc-line{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink);
+  background:var(--surface-2);padding:7px 11px;border-radius:6px;align-self:flex-start;font-variant-numeric:tabular-nums}
+
+/* ---------- 2x2 classifier ---------- */
+.tray{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{font:inherit;font-size:13.5px;cursor:pointer;background:var(--surface);border:1.5px solid var(--rule-strong);
+  color:var(--ink);padding:7px 14px;border-radius:8px;transition:transform .12s ease,border-color .12s ease}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:600}
+.chip.done{opacity:.35;pointer-events:none;border-style:dashed}
+.grid22{display:grid;grid-template-columns:76px 1fr 1fr;gap:10px}
+.grid22 .hh{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-3);align-self:end;padding-bottom:4px;text-align:center}
+.grid22 .vh{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  display:flex;align-items:center;justify-content:center;text-align:center}
+.grid22 .vh.a{color:var(--accent)} .grid22 .vh.b{color:var(--credit)}
+.qd{min-height:104px;border:1.5px dashed var(--rule-strong);border-radius:12px;background:var(--surface-2);
+  padding:10px;cursor:pointer;display:flex;flex-direction:column;gap:6px;transition:background .15s,border-color .15s}
+.qd:hover{border-color:var(--accent);background:var(--accent-soft)}
+.qd.armed{border-color:var(--accent);border-style:solid}
+.qd.hit{animation:hit .4s ease} .qd.miss{animation:miss .4s ease}
+@keyframes hit{0%{background:var(--accent-soft)}100%{background:var(--surface-2)}}
+@keyframes miss{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.placed{background:var(--surface);border:1px solid var(--accent);border-left:3px solid var(--accent);
+  border-radius:6px;padding:7px 10px;font-size:13.5px}
+.placed b{display:block;font-weight:600}
+.placed span{font-size:12px;color:var(--ink-3)}
+.fb{font-size:13.5px;min-height:22px;color:var(--ink-2)}
+.fb.bad{color:var(--credit)} .fb.good{color:var(--accent)}
+
+/* ---------- vet bill ---------- */
+.bill{background:var(--surface);border:1px solid var(--rule-strong);border-radius:10px;overflow:hidden;font-size:14px;max-width:520px}
+.bill .top{padding:11px 16px;border-bottom:1px dashed var(--rule-strong);font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.bill .ln{display:grid;grid-template-columns:1fr 82px 76px;gap:10px;padding:9px 16px;align-items:center}
+.bill .ln+.ln{border-top:1px solid var(--rule)}
+.bill .amt{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;text-align:right}
+.bill .k{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.08em;padding:2px 0;border-radius:4px;
+  text-align:center;transition:background .25s,color .25s,border-color .25s}
+.bill .k.d{color:var(--accent);border:1px solid var(--accent);background:var(--accent-soft)}
+.bill .k.i{color:var(--credit);border:1px solid var(--credit);background:var(--credit-soft)}
+.bill .ttl{display:grid;grid-template-columns:1fr 82px 76px;gap:10px;padding:10px 16px;border-top:2px solid var(--rule-strong);
+  background:var(--surface-2);font-weight:600}
+
+/* ---------- question as asked ---------- */
+.qtext{max-width:1020px;border:1.5px dashed var(--rule-strong);border-radius:10px;padding:15px 19px;
+  background:var(--surface-2);display:flex;flex-direction:column;gap:9px}
+.qtext .lbl{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3)}
+.qtext .body{font-size:15.5px;color:var(--ink);line-height:1.55}
+.qtext ol{margin:4px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:5px;font-size:15px}
+.qtext ol li::marker{color:var(--accent);font-weight:600}
+.qtext .given{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink-2);
+  background:var(--surface);border:1px solid var(--rule);border-radius:7px;padding:10px 14px;
+  white-space:pre;overflow-x:auto;font-variant-numeric:tabular-nums;margin:0}
+
+/* ---------- worked process ---------- */
+.steps{max-width:1020px;display:flex;flex-direction:column}
+.step{display:grid;grid-template-columns:30px minmax(0,1fr);gap:16px;padding:18px 0;border-top:1px solid var(--rule)}
+.step:first-child{border-top:none;padding-top:6px}
+.step .num{width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);
+  border:1.5px solid var(--accent);display:flex;align-items:center;justify-content:center;
+  font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600}
+.step .sb{display:flex;flex-direction:column;gap:10px;min-width:0}
+.step h4{margin:0;font-size:15.5px;font-weight:600;font-family:"Public Sans",sans-serif;padding-top:4px}
+.step p{font-size:15px;color:var(--ink-2)}
+.step p strong{color:var(--ink);font-weight:600}
+pre.math{margin:0;font-family:"IBM Plex Mono",monospace;font-size:13.5px;line-height:1.9;
+  background:var(--surface-2);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;
+  padding:14px 18px;overflow-x:auto;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:pre}
+pre.math b{color:var(--accent);font-weight:600}
+pre.math i{color:var(--ink-3);font-style:normal}
+
+/* ---------- tables ---------- */
+.tw{overflow-x:auto;border:1px solid var(--rule);border-radius:12px;background:var(--surface);max-width:1020px}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+caption{text-align:left;padding:13px 17px 11px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);border-bottom:1px solid var(--rule)}
+th,td{padding:9px 16px;text-align:left;vertical-align:top}
+thead th{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ink-2);font-weight:500;border-bottom:1px solid var(--rule-strong);white-space:nowrap}
+tbody tr+tr td{border-top:1px solid var(--rule)}
+td.n,th.n{text-align:right;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.tot td{border-top:1px solid var(--rule-strong)!important;box-shadow:inset 0 -3px 0 -1px var(--rule-strong);
+  font-weight:600;background:var(--surface-2)}
+td.cr{color:var(--credit)}
+.sm{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3)}
+
+.pill{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  padding:3px 8px;border-radius:4px;border:1px solid var(--rule-strong);color:var(--ink-2);white-space:nowrap}
+.pill.v{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.pill.f{border-color:var(--credit);color:var(--credit);background:var(--credit-soft)}
+
+.note{max-width:1020px;border-left:3px solid var(--flag);background:var(--flag-soft);color:var(--ink);padding:12px 16px;border-radius:0 8px 8px 0;font-size:14.5px}
+.note.acc{border-left-color:var(--accent);background:var(--accent-soft)}
+.fx{font-family:"IBM Plex Mono",monospace;font-size:13.5px;color:var(--accent);background:var(--accent-soft);padding:4px 9px;border-radius:5px;display:inline-block}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;align-items:start;max-width:1020px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:1020px}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:9px}
+.card h4{margin:0;font-size:15px;font-weight:600}
+.card p{font-size:14px;color:var(--ink-2)}
+ul.t,ol.t{margin:0;padding-left:20px;color:var(--ink-2);font-size:14.5px;display:flex;flex-direction:column;gap:7px}
+ul.t strong,ol.t strong{color:var(--ink)}
+
+/* ---------- Q&A ---------- */
+.q{border:1px solid var(--rule);border-radius:12px;background:var(--surface);padding:18px 20px;display:flex;flex-direction:column;gap:13px}
+.q-meta{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+blockquote{margin:0;padding:13px 16px;background:var(--surface-2);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;font-size:15px}
+.wc{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+button.reveal{display:none;align-self:flex-start;font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+  background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent);padding:6px 14px;border-radius:6px}
+body.quiz .ans{display:none} body.quiz .ans.open{display:flex} body.quiz button.reveal{display:inline-block}
+body.quiz button.reveal.gone{display:none}
+.ans{display:flex;flex-direction:column;gap:12px}
+.toggle{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+  background:var(--surface);border:1px solid var(--rule-strong);color:var(--ink);padding:7px 14px;border-radius:8px;align-self:flex-start}
+.toggle .pip{width:8px;height:8px;border-radius:50%;background:var(--rule-strong)}
+body.quiz .toggle .pip{background:var(--accent)}
+
+/* ---------- car calc ---------- */
+.calc{display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);gap:24px;align-items:start}
+.irow{display:grid;grid-template-columns:1fr 78px 78px;gap:8px;align-items:center;padding:5px 0;border-top:1px solid var(--rule)}
+.irow:first-child{border-top:none}
+.irow label{font-size:13px;color:var(--ink-2)}
+.irow.hdr span{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);text-align:right}
+.irow.hdr span:first-child{text-align:left}
+.irow input{width:100%;font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-variant-numeric:tabular-nums;
+  text-align:right;padding:5px 8px;border:1px solid var(--rule);border-radius:5px;background:var(--surface-2);color:var(--ink)}
+.irow input:focus{border-color:var(--accent);background:var(--surface)}
+.irow.wide{grid-template-columns:1fr 164px}
+
+footer{border-top:1px solid var(--rule);padding-block:22px 48px;color:var(--ink-3);font-size:12px;font-family:"IBM Plex Mono",monospace}
+
+@media (max-width:960px){
+  .cols{grid-template-columns:1fr;gap:0}
+  nav.toc{position:static;max-height:none;overflow:visible;padding-block:16px 0;border-bottom:1px solid var(--rule)}
+  nav.toc ol{flex-direction:row;flex-wrap:wrap;gap:5px}
+  nav.toc a{border:1px solid var(--rule);border-radius:999px;padding:4px 11px;font-size:12.5px;border-left-width:1px}
+  nav.toc a.on{border-color:var(--accent)}
+  nav.toc a .io{display:none}
+  nav.toc .grp{width:100%;padding:10px 2px 2px}
+}
+@media (max-width:700px){
+  .calc{grid-template-columns:1fr}
+  .grid22{grid-template-columns:1fr}
+  .grid22 .hh{display:none}
+  .grid22 .vh{writing-mode:horizontal-tb;justify-content:flex-start;padding-top:6px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ---------- page-specific additions ---------- */
+.hl{background:var(--flag-soft);padding:0 4px;border-radius:3px;font-weight:600}
+.src{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);max-width:70ch}
+.big{font-family:Bitter,serif;font-size:30px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;line-height:1.1}
+.vt{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;max-width:1020px}
+.vt .card{border-top:3px solid var(--accent)}
+.vt .card.b{border-top-color:var(--credit)}
+.vt .card.c{border-top-color:var(--flag)}
+.vt .card .k{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.deck{display:flex;flex-wrap:wrap;gap:10px}
+.deck .t{font-family:"IBM Plex Mono",monospace;font-size:11.5px;border:1px solid var(--rule-strong);border-radius:999px;padding:4px 12px;color:var(--ink-2)}
+.deck .t.a{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.deck .t.b{border-color:var(--credit);color:var(--credit);background:var(--credit-soft)}
+</style>
+
+<header>
+  <div class="wrap hd">
+    <div>
+      <div class="eyebrow">4505 GMM &middot; Foundations &middot; Sessions 1&ndash;3</div>
+      <h1>The macro dashboard, decoded</h1>
+      <p class="gist">Three numbers &mdash; output, jobs, prices &mdash; one gap that connects them, and one force that moves the whole thing over a lifetime. Built around the Canadian 2020&ndash;2026 inflation episode, because it is the case every exam question will be dressed up as.</p>
+    </div>
+    <div class="meta">
+      Reading <b>Primers 01, 03, 04</b><br>
+      Problems <b>None assigned &mdash; 6 self-set</b><br>
+      Graded <b>No &mdash; foundation</b>
+    </div>
+  </div>
+</header>
+
+<div class="wrap cols">
+
+<nav class="toc" aria-label="Contents">
+  <div class="toc-h">On this page</div>
+  <ol id="toclist">
+    <li class="grp">Start here</li>
+    <li><a href="#big"><span class="n"></span><span>The macro machine</span></a></li>
+    <li><a href="#vitals"><span class="n"></span><span>The three vital signs</span></a></li>
+    <li class="grp">Concepts</li>
+    <li><a href="#c1"><span class="n">1</span><span>GDP</span></a></li>
+    <li><a href="#c2"><span class="n">2</span><span>Nominal vs real</span></a></li>
+    <li><a href="#c3"><span class="n">3</span><span>CPI</span><span class="io">&#9679;</span></a></li>
+    <li><a href="#c4"><span class="n">4</span><span>Inflation</span><span class="io">&#9679;</span></a></li>
+    <li><a href="#c5"><span class="n">5</span><span>Unemployment</span></a></li>
+    <li><a href="#c6"><span class="n">6</span><span>The output gap</span><span class="io">&#9679;</span></a></li>
+    <li><a href="#c7"><span class="n">7</span><span>Where the three meet</span></a></li>
+    <li><a href="#c8"><span class="n">8</span><span>Goods vs services</span></a></li>
+    <li><a href="#c9"><span class="n">9</span><span>Productivity</span></a></li>
+    <li class="grp">Questions</li>
+    <li><a href="#p1"><span class="n">P1</span><span>CPI from a basket</span></a></li>
+    <li><a href="#p2"><span class="n">P2</span><span>Nominal &rarr; real</span></a></li>
+    <li><a href="#p3"><span class="n">P3</span><span>Jobs up, rate up</span></a></li>
+    <li><a href="#p4"><span class="n">P4</span><span>Rebuilding 2022</span></a></li>
+    <li><a href="#p5"><span class="n">P5</span><span>Real rates &amp; real wages</span></a></li>
+    <li><a href="#p6"><span class="n">P6</span><span>Productivity</span></a></li>
+    <li><a href="#prep"><span class="n"></span><span>Assigned class prep</span></a></li>
+    <li class="grp">Reference</li>
+    <li><a href="#glossary"><span class="n"></span><span>Plain-English glossary</span></a></li>
+    <li><a href="#traps"><span class="n"></span><span>Traps &amp; formulas</span></a></li>
+    <li><a href="#log"><span class="n"></span><span>Q&amp;A log</span></a></li>
+  </ol>
+  <div class="grp" style="padding-left:10px">&#9679; = interactive</div>
+</nav>
+
+<main>
+
+<!-- ===================== BIG PICTURE ===================== -->
+<section id="big">
+  <h2>The macro machine</h2>
+  <p class="oneline"><span class="tag">In one line</span><span>The economy has a <b>speed limit</b> (what it can produce) and a <b>speed</b> (what it is producing). The difference between them is the <b>output gap</b>, and that one number is what drives unemployment down, inflation up, and the Bank of Canada into the room.</span></p>
+
+  <figure>
+    <div class="dg">
+      <svg class="d" viewBox="0 0 870 350" role="img" aria-label="Potential and actual output feed the output gap, which drives unemployment and inflation, which drive the Bank of Canada's policy rate, which feeds back into actual output.">
+        <rect class="d-box mute" x="10" y="28" width="200" height="80" rx="12"/>
+        <text class="d-t t2" x="30" y="56">Potential output</text>
+        <text class="d-s" x="30" y="76">the speed limit</text>
+        <text class="d-s" x="30" y="94">workers &#215; productivity</text>
+
+        <rect class="d-box" x="10" y="196" width="200" height="80" rx="12"/>
+        <text class="d-t t2" x="30" y="224">Actual output (real GDP)</text>
+        <text class="d-s" x="30" y="244">the speed</text>
+        <text class="d-s" x="30" y="262">C + I + G + NX</text>
+
+        <path class="d-link acc" d="M214 68 C 250 68, 250 148, 286 148"/>
+        <path class="d-link acc" d="M214 236 C 250 236, 250 176, 286 176"/>
+
+        <rect class="d-box acc" x="286" y="122" width="176" height="80" rx="12"/>
+        <text class="d-t t2" x="306" y="152" fill="var(--accent)">Output gap</text>
+        <text class="d-s" x="306" y="172" fill="var(--accent)">actual &minus; potential</text>
+        <text class="d-s" x="306" y="190" fill="var(--accent)">&plusmn; a few %, that&rsquo;s all</text>
+
+        <path class="d-link" d="M466 148 C 500 148, 500 72, 534 72"/>
+        <path class="d-link bad" d="M466 176 C 500 176, 500 244, 534 244"/>
+
+        <rect class="d-box" x="534" y="36" width="186" height="74" rx="12"/>
+        <text class="d-t t2" x="554" y="64">Unemployment</text>
+        <text class="d-s" x="554" y="84">gap positive &rarr; falls</text>
+        <text class="d-s" x="554" y="100">gap negative &rarr; rises</text>
+
+        <rect class="d-box bad" x="534" y="208" width="186" height="74" rx="12"/>
+        <text class="d-t t2" x="554" y="236" fill="var(--credit)">Inflation (CPI)</text>
+        <text class="d-s" x="554" y="256" fill="var(--credit)">gap positive &rarr; rises</text>
+        <text class="d-s" x="554" y="272" fill="var(--credit)">gap negative &rarr; cools</text>
+
+        <path class="d-link" d="M724 73 C 760 73, 764 120, 780 130"/>
+        <path class="d-link bad" d="M724 245 C 760 245, 764 198, 780 188"/>
+
+        <rect class="d-box" x="722" y="130" width="138" height="64" rx="12" style="fill:var(--flag-soft);stroke:var(--flag)"/>
+        <text class="d-t t2" x="740" y="157" fill="var(--flag)">Bank of Canada</text>
+        <text class="d-s" x="740" y="177" fill="var(--flag)">the policy rate</text>
+
+        <path class="d-link" d="M791 198 L 791 324 L 110 324 L 110 280" marker-end="none" stroke-dasharray="6 5"/>
+        <path class="d-link" d="M104 288 L 110 276 L 116 288"/>
+        <text class="d-lab" x="420" y="316" text-anchor="middle">rates up &rarr; spending down &rarr; gap closes &nbsp;&middot;&nbsp; but it takes 6&ndash;8 quarters</text>
+      </svg>
+    </div>
+    <figcaption>Every GMM question is somewhere on this loop. When you get asked &ldquo;what happens if&hellip;&rdquo;, find the box the shock lands in and walk the arrows. The dashed return arrow is the one people forget &mdash; policy is a feedback loop with a long lag, which is why central banks over- and under-shoot.</figcaption>
+  </figure>
+
+  <div class="note acc"><b>The one sentence that makes the rest of the page make sense.</b> Potential output moves <i>slowly</i> and is about <b>supply</b> &mdash; how many people, how much capital, how productive. Actual output moves <i>fast</i> and is about <b>demand</b> &mdash; how much everyone is spending. Long-run prosperity is a supply story. Booms, recessions and inflation are demand-versus-supply stories.</div>
+</section>
+
+<!-- ===================== VITALS ===================== -->
+<section id="vitals">
+  <h2>The three vital signs</h2>
+  <p class="lede">Primer 01 calls this the dashboard. Three numbers describe the whole economy. Learn what each one is, what moves it, and &mdash; the part everyone skips &mdash; <strong>what its denominator is</strong>, because that is where the exam traps live.</p>
+
+  <div class="vt">
+    <div class="card">
+      <div class="k">Output</div>
+      <h4>GDP</h4>
+      <div class="big">~$3T</div>
+      <p>Market value of all <b>final</b> goods and services produced <b>inside Canada</b> in a period. Grew ~1&frac12;&ndash;2% a year through the 2010s; worst peacetime collapse on record in early 2020.</p>
+      <p class="src">Denominator trap: <b>real</b> vs nominal, and <b>per capita</b> vs total.</p>
+    </div>
+    <div class="card b">
+      <div class="k">Jobs</div>
+      <h4>Unemployment rate</h4>
+      <div class="big" style="color:var(--credit)">~6&frac12;%</div>
+      <p>Share of the <b>labour force</b> that is looking for work and cannot find it. Spiked to 13.7% in May 2020, fell below 5% within two years, drifted back toward 7%, ~6&frac12;% by mid-2026.</p>
+      <p class="src">Denominator trap: the labour force is <b>not fixed</b>. See P3.</p>
+    </div>
+    <div class="card c">
+      <div class="k">Prices</div>
+      <h4>CPI inflation</h4>
+      <div class="big" style="color:var(--flag)">2% target</div>
+      <p>The <b>rate of change</b> of a fixed basket of consumer prices. Ran near 2% for two decades, hit <b>8.1% in June 2022</b> &mdash; highest in nearly forty years &mdash; and is back near target.</p>
+      <p class="src">Denominator trap: it is a <b>rate</b>, not a level. See &sect;4.</p>
+    </div>
+  </div>
+  <p class="src">Figures from Primer 01 (Frost &amp; Cornelson), which sources Statistics Canada and the Bank of Canada.</p>
+
+  <div class="note">These three are <b>not independent</b>, and that is the whole course. Strong GDP pulls unemployment down &rarr; tight labour markets push wages up &rarr; wages push prices up &rarr; the Bank raises rates &rarr; spending falls &rarr; GDP slows. You can start anywhere on that chain; you always end up back at the start.</div>
+</section>
+
+<div class="group"><h2>Concepts</h2><div class="ln"></div><span class="ct">9 sections &middot; 3 interactive</span></div>
+
+<!-- ===================== 1 · GDP ===================== -->
+<section id="c1">
+  <h2><span class="no">1</span> GDP &mdash; what &ldquo;the economy&rdquo; is a number of</h2>
+  <p class="oneline"><span class="tag">In one line</span><span>GDP is <b>one year&rsquo;s worth of new stuff made inside the country</b>, priced at what it sold for. Not wealth, not money, not how well anyone is doing &mdash; just production, over a period.</span></p>
+
+  <p class="lede">The formal definition is <strong>the market value of all final goods and services produced within a country&rsquo;s borders over a given period.</strong> Every word in it is doing work, and each word is a place an exam question hides.</p>
+
+  <div class="tw"><table>
+    <caption>The definition, word by word</caption>
+    <thead><tr><th>Word</th><th>What it rules in / out</th><th>The example that makes it stick</th></tr></thead>
+    <tbody>
+      <tr><td><b>Market value</b></td><td>Only things with a price. No price, no GDP.</td><td>Pay a daycare &rarr; GDP rises. Stay home with your own kid &rarr; nothing, though the service is identical.</td></tr>
+      <tr><td><b>Final</b></td><td>Intermediate inputs are excluded to avoid double-counting.</td><td>The bakery&rsquo;s bread counts; the flour it bought does not &mdash; the flour is already inside the bread&rsquo;s price.</td></tr>
+      <tr><td><b>Produced</b></td><td>Making things, not trading things. Second-hand sales and financial trades are not production.</td><td>Selling your used car adds ~nothing to GDP; the dealer&rsquo;s <i>commission</i> does, because that is a service produced now.</td></tr>
+      <tr><td><b>Within a country&rsquo;s borders</b></td><td>Location, not ownership. That is GDP vs GNI.</td><td>Toyota&rsquo;s Ontario plant &rarr; Canada&rsquo;s GDP. A Canadian miner&rsquo;s Chilean pit &rarr; Chile&rsquo;s GDP, Canada&rsquo;s GNI.</td></tr>
+      <tr><td><b>Over a given period</b></td><td>A <b>flow</b>, not a stock. It has no memory.</td><td>Your salary is a flow; your net worth is a stock. GDP is national salary, not national net worth.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Three ways to count the same thing</h3>
+  <p class="lede">Production, expenditure and income are three cameras pointed at one circular flow. They <strong>must</strong> add to the same total &mdash; that forced agreement is the national accounts&rsquo; built-in audit.</p>
+
+  <figure>
+    <div class="dg">
+      <svg class="d" viewBox="0 0 820 300" role="img" aria-label="Circular flow: households spend on goods and services; firms pay wages, rent, interest and profit back to households; value added in the middle equals both.">
+        <rect class="d-box" x="20" y="108" width="200" height="84" rx="12"/>
+        <text class="d-t t2" x="40" y="140">Households</text>
+        <text class="d-s" x="40" y="160">you, buying things</text>
+        <text class="d-s" x="40" y="178">and supplying labour</text>
+
+        <rect class="d-box" x="600" y="108" width="200" height="84" rx="12"/>
+        <text class="d-t t2" x="620" y="140">Firms</text>
+        <text class="d-s" x="620" y="160">making things and</text>
+        <text class="d-s" x="620" y="178">paying for inputs</text>
+
+        <path class="d-link acc" d="M220 128 C 320 40, 500 40, 600 128"/>
+        <path class="d-link acc" d="M592 120 L 601 129 L 590 133"/>
+        <text class="d-lab" x="410" y="46" text-anchor="middle" fill="var(--accent)">$ spent on final goods &amp; services &nbsp;&rarr;</text>
+        <text class="d-s" x="410" y="66" text-anchor="middle" fill="var(--accent)">EXPENDITURE:  C + I + G + NX</text>
+
+        <path class="d-link bad" d="M600 172 C 500 260, 320 260, 220 172"/>
+        <path class="d-link bad" d="M228 164 L 219 173 L 230 177"/>
+        <text class="d-lab" x="410" y="272" text-anchor="middle" fill="var(--credit)">&larr; &nbsp;wages, rent, interest, profit</text>
+        <text class="d-s" x="410" y="252" text-anchor="middle" fill="var(--credit)">INCOME:  what production pays out</text>
+
+        <rect class="d-box mute" x="316" y="122" width="188" height="60" rx="12"/>
+        <text class="d-t t2" x="336" y="147">Value added</text>
+        <text class="d-s" x="336" y="167">PRODUCTION: sum at each stage</text>
+      </svg>
+    </div>
+    <figcaption>What one side spends, the other earns. Statistics Canada measures all three independently and reconciles the difference into a small &ldquo;statistical discrepancy&rdquo; &mdash; the gap is a data problem, not a conceptual one.</figcaption>
+  </figure>
+
+  <div class="ex">
+    <span class="lb">Example &mdash; the loaf of bread, counted three ways</span>
+    <div>A farmer sells $0.40 of wheat to a miller. The miller sells $0.90 of flour to a baker. The baker sells the loaf for $3.00. <strong>Only $3.00 enters GDP</strong>, not $0.40 + $0.90 + $3.00 = $4.30.</div>
+    <div class="calc-line">Value added:  farmer 0.40  +  miller (0.90&minus;0.40)=0.50  +  baker (3.00&minus;0.90)=2.10  =  $3.00  ✓</div>
+    <div>Same $3.00 shows up as <b>expenditure</b> when you buy the loaf, and as <b>income</b> when it is split into the farmer&rsquo;s, miller&rsquo;s and baker&rsquo;s wages and profits. Three cameras, one loaf.</div>
+  </div>
+
+  <h3>The expenditure decomposition you will actually use</h3>
+  <p class="lede">Ninety percent of GMM analysis runs through <strong>C + I + G + NX</strong>, because these four are the spending decisions that swing the business cycle.</p>
+
+  <div class="tw"><table>
+    <caption>C + I + G + NX &mdash; roughly, and what moves each</caption>
+    <thead><tr><th>Component</th><th class="n">Rough share of Canadian GDP</th><th>What moves it</th><th>Cycle behaviour</th></tr></thead>
+    <tbody>
+      <tr><td><b>C</b> &mdash; household consumption</td><td class="n">~55%</td><td>Income, jobs, confidence, mortgage rates</td><td>Smooth. Households defend their living standard.</td></tr>
+      <tr><td><b>I</b> &mdash; business investment + housing + inventories</td><td class="n">~20%</td><td>Interest rates, expected demand, policy uncertainty</td><td class="cr">Violent. This is where recessions are made.</td></tr>
+      <tr><td><b>G</b> &mdash; government purchases</td><td class="n">~21%</td><td>Budgets, politics, automatic stabilisers</td><td>Counter-cyclical by design.</td></tr>
+      <tr><td><b>NX</b> &mdash; exports minus imports</td><td class="n">small net, huge gross</td><td>U.S. demand, the exchange rate, tariffs</td><td class="cr">Canada&rsquo;s exposure. ~3/4 of exports go to the U.S.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="src">Shares are approximate and shift; treat them as orders of magnitude, not quotables. Check StatCan Table 36-10-0104-01 for the current split. The point of the table is the <i>behaviour</i> column.</p>
+
+  <div class="note"><b>Why imports are subtracted.</b> Not because imports are bad. Because C, I and G already include spending on foreign-made goods, and GDP only wants <i>domestic</i> production. Subtracting imports removes what was wrongly added. A country does not get poorer by importing &mdash; the minus sign is bookkeeping, not economics. This is the single most-misread line in the national accounts and it shows up in tariff arguments constantly.</div>
+
+  <h3>What GDP deliberately does not see</h3>
+  <div class="deck">
+    <span class="t a">Counted: anything with a price</span>
+    <span class="t a">Imputed: owner-occupied rent, free chequing</span>
+    <span class="t b">Excluded: housework, childcare, volunteering</span>
+    <span class="t b">Excluded: consumer value of free digital services</span>
+    <span class="t b">Mostly missed: the underground economy</span>
+    <span class="t b">Not subtracted: depreciation, pollution, depletion</span>
+  </div>
+  <p class="lede">These are not moral judgements &mdash; they are measurement compromises made in the 1930s and 1940s, when Kuznets and his contemporaries &ldquo;retreated to ground securely buttressed by reliable data.&rdquo; GDP was <strong>invented</strong>, to count production and the capacity to mobilise it. It was never designed to measure welfare, and every criticism of it is downstream of that.</p>
+
+  <div class="tw"><table>
+    <caption>The four paradoxes worth being able to name in class</caption>
+    <thead><tr><th>Paradox</th><th>What happens</th><th>Why GDP is not &ldquo;wrong&rdquo;</th></tr></thead>
+    <tbody>
+      <tr><td><b>Disasters raise GDP</b></td><td>Rebuilding after Katrina or the 2011 Japanese tsunami adds to measured output.</td><td>GDP is a flow of production, not a balance sheet. It records the repair truthfully and says nothing about the destruction. Bastiat&rsquo;s <i>broken window</i>, 1850.</td></tr>
+      <tr><td><b>Free digital goods</b></td><td>Search, maps and email cost you nothing; only the ad revenue enters GDP.</td><td>Users pay in attention and data, not dollars. Brynjolfsson&rsquo;s experimental <b>GDP-B</b> tries to price the consumer surplus &mdash; and finds it is enormous.</td></tr>
+      <tr><td><b>The boundary shifts</b></td><td>Women entering paid work in the 1970s&ndash;80s raised GDP partly by moving meals and childcare into the market. Self-checkout moves work the other way.</td><td>The same work gets done; only the <i>counting</i> changes. Worth remembering before comparing growth rates across decades.</td></tr>
+      <tr><td><b>Leprechaun economics</b></td><td>Irish GDP grew <b>26% in 2015</b> because a few multinationals moved intellectual property onto Irish books.</td><td>Accounting-correct, economically absurd. Ireland now publishes GNI* instead. GDP records <i>location</i>; GNI records <i>who gets the income</i>.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="src">All four from Primer 04, <i>GDP in Practice</i>. Canada&rsquo;s underground economy is estimated at ~2&frac12;% of GDP, roughly $72&nbsp;billion in 2023, with residential construction the largest single piece.</p>
+</section>
+
+<!-- ===================== 2 · NOMINAL VS REAL ===================== -->
+<section id="c2">
+  <h2><span class="no">2</span> Nominal vs real &mdash; and the deflator</h2>
+  <p class="oneline"><span class="tag">In one line</span><span>If the dollar value of everything you produced went up 10%, you do not know whether you <b>made more stuff</b> or <b>charged more for the same stuff</b>. Real GDP is the answer after you take the price change out.</span></p>
+
+  <p class="lede">Nominal GDP is measured at today&rsquo;s prices and mixes two things together. Real GDP holds prices fixed and isolates the change in <strong>quantities</strong>. Whenever an economist says &ldquo;growth&rdquo;, they mean real. Whenever a newspaper says the economy is now worth $X, they mean nominal.</p>
+
+  <figure>
+    <div class="dg">
+      <svg class="d" viewBox="0 0 780 190" role="img" aria-label="Nominal GDP growth splits into a price component and a quantity component; real GDP is the quantity component.">
+        <rect class="d-box" x="20" y="62" width="180" height="66" rx="12"/>
+        <text class="d-t t2" x="40" y="90">Nominal GDP growth</text>
+        <text class="d-s" x="40" y="110">+14.4%</text>
+        <path class="d-link" d="M204 95 C 240 95, 240 44, 276 44"/>
+        <path class="d-link acc" d="M204 95 C 240 95, 240 146, 276 146"/>
+        <rect class="d-box bad" x="276" y="16" width="220" height="56" rx="12"/>
+        <text class="d-t t2" x="296" y="40" fill="var(--credit)">Prices &mdash; the deflator</text>
+        <text class="d-s" x="296" y="60" fill="var(--credit)">+10.0% &nbsp; (an illusion of growth)</text>
+        <rect class="d-box acc" x="276" y="118" width="220" height="56" rx="12"/>
+        <text class="d-t t2" x="296" y="142" fill="var(--accent)">Quantities &mdash; real GDP</text>
+        <text class="d-s" x="296" y="162" fill="var(--accent)">+4.0% &nbsp; (the only real growth)</text>
+        <path class="d-link" d="M500 44 C 540 44, 540 95, 578 95"/>
+        <path class="d-link acc" d="M500 146 C 540 146, 540 95, 578 95"/>
+        <rect class="d-box mute" x="578" y="62" width="182" height="66" rx="12"/>
+        <text class="d-s" x="596" y="88">1.100 &#215; 1.040</text>
+        <text class="d-s" x="596" y="108">= 1.144 &nbsp;✓ multiplies back</text>
+      </svg>
+    </div>
+    <figcaption>Numbers from P2 below. The two components <b>multiply</b>, they do not add &mdash; 14.4%, not 14.0%. At small rates the addition shortcut is fine; at 2022 inflation rates it is not.</figcaption>
+  </figure>
+
+  <div class="ex">
+    <span class="lb">The three formulas &mdash; memorise these, they recur all term</span>
+    <div class="calc-line">GDP deflator  =  (Nominal GDP ÷ Real GDP) × 100</div>
+    <div class="calc-line">Real GDP      =  Nominal GDP ÷ (deflator ÷ 100)</div>
+    <div class="calc-line">(1 + nominal growth)  =  (1 + real growth) × (1 + inflation)</div>
+    <div>The deflator is not an input you look up &mdash; it is <b>defined</b> as the ratio. It is whatever number makes the two GDPs consistent.</div>
+  </div>
+
+  <h3>Chain weighting, in one paragraph</h3>
+  <p class="lede">The old method valued every year&rsquo;s output at one fixed base year&rsquo;s prices. That works while the economy changes slowly and breaks when it does not &mdash; the primer&rsquo;s example is that a doubling in the price of horses meant something in 1930 and means nothing now. <strong>Chain weighting</strong> values each period at the immediately preceding period&rsquo;s prices and links the growth rates together, so the weights stay current as new products arrive and old ones fade.</p>
+
+  <div class="note">Chain weighting has one consequence that trips people up: <b>chained real GDP components do not add up to chained real GDP.</b> If you add real C + real I + real G + real NX from a StatCan table, you will not hit the real GDP line exactly. That is expected, not an error in your arithmetic.</div>
+
+  <div class="tw"><table>
+    <caption>Two price indexes, and why they disagree</caption>
+    <thead><tr><th></th><th>CPI</th><th>GDP deflator</th></tr></thead>
+    <tbody>
+      <tr><td><b>Covers</b></td><td>What households <b>buy</b></td><td>What the country <b>produces</b></td></tr>
+      <tr><td><b>Imports</b></td><td class="cr">Included &mdash; a pricier Mexican avocado raises CPI</td><td>Excluded &mdash; it is not Canadian production</td></tr>
+      <tr><td><b>Exports</b></td><td>Excluded &mdash; you do not buy Canadian crude</td><td class="cr">Included &mdash; an oil price spike raises the deflator</td></tr>
+      <tr><td><b>Basket</b></td><td>Fixed for a period, updated every year or two</td><td>Changes continuously &mdash; it is whatever got produced</td></tr>
+      <tr><td><b>Bias</b></td><td class="cr">Slight upward: a fixed basket misses people substituting away from what got expensive</td><td>Slight downward on the same logic</td></tr>
+      <tr><td><b>Used for</b></td><td>Indexing wages, pensions, CPP, the BoC&rsquo;s 2% target</td><td>Converting nominal GDP to real GDP</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note acc"><b>Canada-specific, and genuinely exam-worthy:</b> because oil is a huge <i>export</i> and a modest slice of the consumer basket, an oil price spike pushes the Canadian GDP deflator up much harder than it pushes CPI. Nominal GDP can boom while household purchasing power barely moves. This is the mechanism behind &ldquo;the terms of trade&rdquo;, which comes back later in the course.</div>
+</section>
+
+<!-- ===================== 3 · CPI ===================== -->
+<section id="c3">
+  <h2><span class="no">3</span> CPI &mdash; the price of everything, in one number</h2>
+  <p class="oneline"><span class="tag">In one line</span><span>Statistics Canada fills one imaginary shopping cart, freezes what is in it, and reprices that <b>same cart</b> every month. CPI is what the cart costs, indexed to 100 in a base year. Inflation is how fast the cart bill is climbing.</span></p>
+
+  <p class="lede">The fixed basket is the whole trick. If you let the contents change, you can no longer tell whether the bill went up because prices rose or because you bought different things. Freezing the cart isolates <strong>price</strong>. The cost of freezing it is that the basket slowly goes stale &mdash; which is why StatCan re-weights it every year or two.</p>
+
+  <figure>
+    <div class="dg">
+      <svg class="d" viewBox="0 0 800 210" role="img" aria-label="A fixed basket of goods is repriced each year; the ratio of the two bills, times 100, is the CPI.">
+        <rect class="d-box mute" x="20" y="30" width="210" height="150" rx="12"/>
+        <text class="d-t t2" x="40" y="58">The frozen basket</text>
+        <text class="d-s" x="40" y="80">1 &#215; rent</text>
+        <text class="d-s" x="40" y="98">4 &#215; weekly groceries</text>
+        <text class="d-s" x="40" y="116">1 &#215; transit pass</text>
+        <text class="d-s" x="40" y="134">20 &#215; coffee</text>
+        <text class="d-s" x="40" y="152">1 &#215; phone plan</text>
+        <text class="d-s" x="40" y="172" fill="var(--credit)">quantities never change</text>
+
+        <path class="d-link" d="M234 70 L 286 70"/>
+        <path class="d-link acc" d="M234 140 L 286 140"/>
+        <rect class="d-box" x="286" y="40" width="200" height="60" rx="12"/>
+        <text class="d-t t2" x="306" y="66">Priced at Year 0</text>
+        <text class="d-s" x="306" y="86">$1,500</text>
+        <rect class="d-box acc" x="286" y="110" width="200" height="60" rx="12"/>
+        <text class="d-t t2" x="306" y="136" fill="var(--accent)">Priced at Year 1</text>
+        <text class="d-s" x="306" y="156" fill="var(--accent)">$1,620</text>
+
+        <path class="d-link" d="M490 70 C 524 70, 524 105, 558 105"/>
+        <path class="d-link acc" d="M490 140 C 524 140, 524 105, 558 105"/>
+        <rect class="d-box acc" x="558" y="70" width="222" height="70" rx="12"/>
+        <text class="d-t t2" x="578" y="98" fill="var(--accent)">CPI = 1620/1500 &#215; 100 = 108</text>
+        <text class="d-s" x="578" y="120" fill="var(--accent)">inflation = 8.0% &nbsp;(the index minus 100)</text>
+      </svg>
+    </div>
+    <figcaption>Fully worked in <a href="#p1">P1</a>. Note the shape of the answer: the index is a <b>level</b> (108); inflation is the <b>change</b> in that level (8%). Confusing the two is the single most common macro error &mdash; see &sect;4.</figcaption>
+  </figure>
+
+  <h3>Weights are the whole story</h3>
+  <p class="lede">The basket is not one of each thing. Each category enters in proportion to how much households actually spend on it, so a 10% move in shelter matters roughly six times as much as a 10% move in clothing. <strong>Headline inflation is just a weighted average of category price changes</strong> &mdash; nothing more sophisticated is going on.</p>
+
+  <div class="ia">
+    <div class="ia-top">
+      <span class="ttl">Build the CPI &mdash; edit weights or price changes</span>
+      <div class="seg" id="cpiSeg" role="group" aria-label="Preset scenarios">
+        <button type="button" data-k="now" aria-pressed="true">Cooled</button>
+        <button type="button" data-k="2022" aria-pressed="false">2022 shock</button>
+        <button type="button" data-k="svc" aria-pressed="false">Services-only</button>
+      </div>
+      <span class="hint">type in any cell</span>
+    </div>
+    <div class="ia-body">
+      <div class="tw" style="border:none">
+        <table>
+          <thead><tr><th>Category</th><th class="n">Weight %</th><th class="n">Price change %</th><th class="n">Contribution (pp)</th><th class="n">In core?</th></tr></thead>
+          <tbody id="cpiRows"></tbody>
+        </table>
+      </div>
+      <div class="kpis" id="cpiKpis"></div>
+      <svg class="d" id="cpiChart" viewBox="0 0 720 180" role="img" aria-label="Contribution of each category to headline inflation" style="margin-top:16px"></svg>
+      <div class="note acc" id="cpiNote" style="margin-top:14px"></div>
+    </div>
+  </div>
+  <p class="src">Default weights are approximate 2024-basket shares (shelter ~29%, transport ~17%, food ~17%). Verify against StatCan Table 18-10-0007-01 before quoting a weight in a paper. Price changes are illustrative.</p>
+
+  <div class="ex">
+    <span class="lb">Example &mdash; why your CPI is not the CPI</span>
+    <div>The basket is the <strong>average</strong> household. A student renting in Toronto with no car has a shelter weight near 45% and a transport weight near 5%. In a year when rents rise 7% and gasoline falls 10%, official CPI can print 2% while that student&rsquo;s personal inflation is above 4%.</div>
+    <div class="calc-line">Student:  0.45×7.0 + 0.05×(−10.0) + 0.50×2.0  =  3.15 − 0.50 + 1.00  =  <b>3.65%</b>  vs headline 2.0%</div>
+    <div>This is the honest answer to &ldquo;inflation is 2% but everything feels more expensive.&rdquo; Both statements are true. StatCan even publishes a Personal Inflation Calculator for exactly this.</div>
+  </div>
+
+  <h3>Headline, core, trim, median</h3>
+  <div class="tw"><table>
+    <caption>Four inflation numbers you will see in the same news story</caption>
+    <thead><tr><th>Measure</th><th>What it is</th><th>Why it exists</th></tr></thead>
+    <tbody>
+      <tr><td><b>Headline CPI</b></td><td>The whole basket.</td><td>What people actually pay. What pensions and wages get indexed to.</td></tr>
+      <tr><td><b>Core / ex food &amp; energy</b></td><td>Strip the two most volatile categories.</td><td>Food and gas swing on weather and OPEC, not on Canadian demand. Removing them shows the underlying trend.</td></tr>
+      <tr><td><b>CPI-trim</b></td><td>Drop the 20% of categories that moved most <i>and</i> the 20% that moved least, each month.</td><td>Same idea, but it does not pre-judge which categories are the noisy ones.</td></tr>
+      <tr><td><b>CPI-median</b></td><td>The price change of the middle category, weighted.</td><td>Immune to any single category going haywire. The Bank of Canada watches trim and median together.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note"><b>The trap:</b> a category&rsquo;s <i>contribution</i> to headline is not the same as the amount headline drops if you delete it. Delete food and the remaining weights get rescaled up to sum to 100 again. In <a href="#p1">P1</a> food contributes 2.53pp to an 8.0% headline, but dropping it gives 7.3%, not 5.47%. The rescaling is the whole difference &mdash; and the interactive above shows it live.</div>
+</section>
+
+<!-- ===================== 4 · INFLATION ===================== -->
+<section id="c4">
+  <h2><span class="no">4</span> Inflation &mdash; the rate, not the level</h2>
+  <p class="oneline"><span class="tag">In one line</span><span>Inflation is <b>how fast prices are rising</b>, not how high they are. Inflation coming down means prices are still going up, just more slowly. Prices essentially never come back down &mdash; and that is why &ldquo;we beat inflation&rdquo; and &ldquo;everything is unaffordable&rdquo; are both true at once.</span></p>
+
+  <p class="lede">This is the single most useful thing on this page. Every argument you will hear about the cost of living is someone confusing a <strong>rate</strong> with a <strong>level</strong>. Drag the years below and watch the two panels disagree.</p>
+
+  <div class="ia">
+    <div class="ia-top">
+      <span class="ttl">Price level vs inflation rate &mdash; the same data, twice</span>
+      <div class="seg" id="infSeg" role="group" aria-label="Scenario">
+        <button type="button" data-k="ca" aria-pressed="true">Canada 2019&rarr;2026</button>
+        <button type="button" data-k="steady" aria-pressed="false">Steady 2%</button>
+        <button type="button" data-k="defl" aria-pressed="false">Deflation</button>
+      </div>
+      <span class="hint">drag the year</span>
+    </div>
+    <div class="ia-body">
+      <div class="slider">
+        <label for="infYr">Year you are standing in</label>
+        <input id="infYr" type="range" min="0" max="7" step="1" value="7">
+        <span class="val" id="infYrV">2026</span>
+      </div>
+      <svg class="d" id="infChart" viewBox="0 0 720 282" role="img" aria-label="Top panel: the CPI price level rising and staying up. Bottom panel: the annual inflation rate spiking and returning to target." style="margin-top:14px"></svg>
+      <div class="kpis" id="infKpis"></div>
+      <div class="note acc" id="infNote" style="margin-top:14px"></div>
+    </div>
+  </div>
+  <p class="src">Canadian scenario uses actual annual average CPI inflation for 2020&ndash;2024 (0.7, 3.4, 6.8, 3.9, 2.4 percent) and assumes 2.0% for 2025 and 2026. The 2025&ndash;26 figures are an assumption, not data.</p>
+
+  <h3>Where inflation comes from &mdash; four engines</h3>
+  <figure>
+    <div class="dg">
+      <svg class="d" viewBox="0 0 820 250" role="img" aria-label="Four sources of inflation: demand-pull, cost-push, expectations, and monetary, all feeding the price level.">
+        <rect class="d-box acc" x="16" y="16" width="230" height="62" rx="12"/>
+        <text class="d-t t2" x="34" y="42" fill="var(--accent)">1 &middot; Demand-pull</text>
+        <text class="d-s" x="34" y="62" fill="var(--accent)">spending &gt; capacity &rarr; output gap +</text>
+
+        <rect class="d-box bad" x="16" y="94" width="230" height="62" rx="12"/>
+        <text class="d-t t2" x="34" y="120" fill="var(--credit)">2 &middot; Cost-push / supply</text>
+        <text class="d-s" x="34" y="140" fill="var(--credit)">oil, shipping, tariffs, crop failure</text>
+
+        <rect class="d-box" x="16" y="172" width="230" height="62" rx="12" style="fill:var(--flag-soft);stroke:var(--flag)"/>
+        <text class="d-t t2" x="34" y="198" fill="var(--flag)">3 &middot; Expectations</text>
+        <text class="d-s" x="34" y="218" fill="var(--flag)">everyone prices for next year&rsquo;s inflation</text>
+
+        <path class="d-link acc" d="M250 47 C 300 47, 300 118, 350 118"/>
+        <path class="d-link bad" d="M250 125 L 350 125"/>
+        <path class="d-link" d="M250 203 C 300 203, 300 132, 350 132"/>
+
+        <rect class="d-box" x="350" y="86" width="196" height="78" rx="12"/>
+        <text class="d-t t2" x="370" y="116">The price level</text>
+        <text class="d-s" x="370" y="138">CPI &mdash; what things cost</text>
+        <text class="d-s" x="370" y="156">inflation = its rate of change</text>
+
+        <path class="d-link" d="M550 125 L 610 125"/>
+        <rect class="d-box mute" x="610" y="86" width="196" height="78" rx="12"/>
+        <text class="d-t t2" x="628" y="116">4 &middot; Money</text>
+        <text class="d-s" x="628" y="138">too much money chasing</text>
+        <text class="d-s" x="628" y="156">too few goods &mdash; the long run</text>
+
+        <path class="d-link" d="M448 168 C 448 226, 150 250, 131 240" stroke-dasharray="6 5"/>
+        <path class="d-link" d="M123 232 L 129 244 L 137 234"/>
+        <text class="d-lab" x="300" y="246">the spiral: today&rsquo;s inflation becomes tomorrow&rsquo;s expectation</text>
+      </svg>
+    </div>
+    <figcaption>Engines 1 and 2 are the short-run story and they call for different responses. Engine 3 is what turns a shock into an era &mdash; and it is the only one the Bank of Canada can address by <i>talking</i>. Engine 4 is Friedman&rsquo;s long-run claim; over decades, sustained inflation is always monetary.</figcaption>
+  </figure>
+
+  <div class="tw"><table>
+    <caption>Demand-pull vs cost-push &mdash; how to tell them apart, and why it matters</caption>
+    <thead><tr><th></th><th>Demand-pull</th><th>Cost-push (supply shock)</th></tr></thead>
+    <tbody>
+      <tr><td><b>Cause</b></td><td>Everyone is spending more than the economy can make</td><td>It got more expensive to make the same things</td></tr>
+      <tr><td><b>Output</b></td><td class="cr">Rises with prices</td><td>Falls while prices rise</td></tr>
+      <tr><td><b>Unemployment</b></td><td>Falls</td><td class="cr">Rises &mdash; this is stagflation</td></tr>
+      <tr><td><b>Breadth</b></td><td>Broad &mdash; core and median move too</td><td>Narrow at first &mdash; concentrated in energy, food, shipping</td></tr>
+      <tr><td><b>Right response</b></td><td>Raise rates. It works.</td><td>Hard. Raising rates fixes nothing on the supply side and makes the output loss worse &mdash; so the Bank <i>looks through</i> a one-off shock&hellip;</td></tr>
+      <tr><td><b>&hellip;unless</b></td><td colspan="2">&hellip;expectations start to move. Then it must act anyway, because an un-anchored expectation is a demand problem wearing a supply costume. <b>This is exactly the 2021&ndash;22 judgement call, and why &ldquo;transitory&rdquo; became a punchline.</b></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Why inflation is actually bad</h3>
+  <p class="lede">&ldquo;Prices go up but so do wages, so who cares?&rdquo; is the natural objection, and the answer is that <strong>they do not go up together, or at the same time, or for the same people.</strong> Inflation is mostly a redistribution, and the losers did not agree to it.</p>
+  <div class="grid2">
+    <div class="card">
+      <h4 style="color:var(--credit)">Who loses</h4>
+      <ul class="t">
+        <li><strong>Wage earners</strong> &mdash; pay resets once a year; prices reset weekly. You are behind for eleven months out of twelve.</li>
+        <li><strong>Savers and anyone on a fixed income</strong> &mdash; a pension not indexed to CPI loses real value every single month.</li>
+        <li><strong>Lenders</strong> &mdash; they get repaid in dollars worth less than the ones they lent.</li>
+        <li><strong>Everyone, through uncertainty</strong> &mdash; when the unit of account is unstable, long contracts and long investments get harder to write. This is the deep cost.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4 style="color:var(--accent)">Who gains</h4>
+      <ul class="t">
+        <li><strong>Borrowers</strong> &mdash; a fixed mortgage shrinks in real terms while your nominal wage grows. Inflation is a silent transfer from lenders to debtors.</li>
+        <li><strong>Governments</strong> &mdash; the largest debtors of all, and bracket creep raises real tax take on the side.</li>
+        <li><strong>Owners of real assets</strong> &mdash; houses, land, commodities reprice upward with everything else.</li>
+        <li><strong>Firms with pricing power</strong> &mdash; when everyone is raising prices, nobody notices yours.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="note"><b>Why the target is 2% and not 0%.</b> Three reasons, and they come up every year. (1) <b>Room to cut:</b> if inflation sits at 2%, nominal rates sit around 4% in normal times, which gives the Bank something to cut in a recession. At 0% inflation, rates sit near zero and the Bank is out of ammunition. (2) <b>Greasing wages:</b> people will not accept a nominal pay cut, but they will accept a 1% raise when inflation is 2% &mdash; which is the same thing. A little inflation lets real wages adjust between shrinking and growing industries without anyone getting fired. (3) <b>Deflation is worse:</b> falling prices mean rising real debt, so households delay purchases and cut spending, which lowers prices further. Japan spent two decades in that trap. Aiming at 2% keeps a safe distance from it.</div>
+
+  <div class="ex">
+    <span class="lb">Example &mdash; the word that decides everything: anchored</span>
+    <div>Expectations are &ldquo;anchored&rdquo; when firms and workers keep assuming inflation will come back to 2%, <strong>even while it is printing 8%</strong>. Anchored means a supply shock stays a one-off. Un-anchored means wages get set at 6%, so costs rise 6%, so prices rise 6% &mdash; and the shock has become the new normal.</div>
+    <div class="calc-line">1970s: expectations un-anchored → Volcker needed a deep recession to re-anchor them</div>
+    <div class="calc-line">2022&ndash;24: expectations held → 8.1% → target in ~2 years, with no Canadian recession</div>
+    <div>That is the difference between the two great inflation episodes, and it is not mainly about the size of the shock. It is about whether anybody believed the central bank.</div>
+  </div>
+</section>
+
+<!-- ===================== 5 · UNEMPLOYMENT ===================== -->
+<section id="c5">
+  <h2><span class="no">5</span> Unemployment &mdash; read the cascade, not the headline</h2>
+  <p class="oneline"><span class="tag">In one line</span><span>Not everyone without a job is unemployed. You are only unemployed if you are <b>looking</b>. Stop looking and you vanish from the statistic entirely &mdash; which is why the rate can fall for terrible reasons and rise for good ones.</span></p>
+
+  <figure>
+    <div class="dg">
+      <svg class="d" viewBox="0 0 780 250" role="img" aria-label="Working-age population splits into the labour force and those not in it; the labour force splits into employed and unemployed.">
+        <text class="d-lab" x="20" y="34">Everyone 15+</text>
+        <rect class="d-box mute" x="50" y="42" width="680" height="42" rx="8"/>
+        <text class="d-t t2" x="70" y="69">Working-age population &nbsp;&middot;&nbsp; 34,000k</text>
+
+        <text class="d-lab" x="20" y="112">Looking?</text>
+        <rect class="d-box acc" x="50" y="102" width="442" height="42" rx="8"/>
+        <text class="d-t t2" x="70" y="129" fill="var(--accent)">Labour force &nbsp;&middot;&nbsp; 22,100k</text>
+        <rect class="d-box mute" x="496" y="102" width="234" height="42" rx="8"/>
+        <text class="d-s" x="512" y="122">Not in the labour force</text>
+        <text class="d-s" x="512" y="138">11,900k &middot; students, retired, discouraged</text>
+
+        <text class="d-lab" x="20" y="172">Working?</text>
+        <rect class="d-box" x="50" y="162" width="413" height="42" rx="8"/>
+        <text class="d-t t2" x="70" y="189">Employed &nbsp;&middot;&nbsp; 20,664k</text>
+        <rect class="d-box bad" x="467" y="162" width="25" height="42" rx="6"/>
+        <text class="d-s" x="502" y="188" fill="var(--credit)">Unemployed &middot; 1,436k</text>
+
+        <path class="d-link acc" d="M50 224 L 492 224"/>
+        <path class="d-link acc" d="M50 218 L 50 230"/><path class="d-link acc" d="M492 218 L 492 230"/>
+        <text class="d-lab" x="271" y="244" text-anchor="middle" fill="var(--accent)">the denominator is THIS bar &mdash; not the top one</text>
+      </svg>
+    </div>
+    <figcaption>Illustrative figures scaled to give a ~6.5% rate, matching Canada in mid-2026. The shape is what matters: three layers, each moving for its own reasons.</figcaption>
+  </figure>
+
+  <div class="ex">
+    <span class="lb">The four rates, and which denominator each uses</span>
+    <div class="calc-line">Unemployment rate = Unemployed ÷ Labour force     = 1,436 ÷ 22,100 = <b>6.50%</b></div>
+    <div class="calc-line">Participation rate = Labour force ÷ Working-age  = 22,100 ÷ 34,000 = <b>65.0%</b></div>
+    <div class="calc-line">Employment rate    = Employed ÷ Working-age      = 20,664 ÷ 34,000 = <b>60.8%</b></div>
+    <div>The <strong>employment rate</strong> is the tiebreaker, because it is the only one whose denominator cannot be gamed by people entering or leaving the search. When the unemployment rate and employment growth disagree, look here.</div>
+  </div>
+
+  <h3>The three kinds, and why only one is the Bank&rsquo;s problem</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Type</th><th>What it is</th><th>Example</th><th>Fixed by</th></tr></thead>
+    <tbody>
+      <tr><td><b>Frictional</b></td><td>The normal churn of people between jobs.</td><td>You quit in May and start in July.</td><td>Nothing &mdash; and you would not want to. It is a sign of a fluid labour market.</td></tr>
+      <tr><td><b>Structural</b></td><td>The jobs and the skills or locations do not match.</td><td>A laid-off Windsor auto worker and an unfilled Calgary software role.</td><td>Training, mobility, immigration policy. <b>Not</b> interest rates.</td></tr>
+      <tr><td><b>Cyclical</b></td><td>There is simply not enough demand.</td><td>April 2020. Everyone laid off at once.</td><td class="cr">Monetary and fiscal policy. This is the only one macro policy can touch.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note acc"><b>NAIRU / the natural rate (u*).</b> Frictional + structural unemployment never goes away, so &ldquo;full employment&rdquo; is not 0%. It is the rate at which inflation is stable &mdash; the <i>non-accelerating-inflation rate of unemployment</i>, somewhere around 6% in Canada. Push unemployment below u* and you are pulling workers out of a pool that has already run dry: wages accelerate, then prices. <b>Unemployment below u* is the labour market&rsquo;s version of a positive output gap</b>, and that equivalence is the bridge to &sect;6. Nobody knows u* exactly; it is estimated, revised, and argued about.</div>
+
+  <div class="note"><b>Box 1 from Primer 01, and P3 below:</b> &ldquo;the economy added jobs and the unemployment rate rose&rdquo; is not a contradiction. It means the labour force grew faster than employment &mdash; students, discouraged workers returning, new immigrants. The reverse also happens: in early 2026 the Canadian rate dipped partly because <i>fewer people were looking</i>. Never read the rate alone. Pair it with employment growth, the participation rate, and hours worked.</div>
+</section>
+
+<!-- ===================== 6 · OUTPUT GAP ===================== -->
+<section id="c6">
+  <h2><span class="no">6</span> The output gap &mdash; the concept the whole course hangs on</h2>
+  <p class="oneline"><span class="tag">In one line</span><span>The economy has a comfortable cruising speed. The output gap is <b>how far above or below it you are actually going</b>. Above: engine overheats, prices rise. Below: engine idles, people lose jobs.</span></p>
+
+  <p class="lede"><strong>Potential output</strong> is what the economy can produce with its workers, its capital and its technology, without generating rising inflation. It is set by supply and moves slowly &mdash; roughly 1&frac12;&ndash;2% a year in Canada. <strong>Actual output</strong> is what demand actually pulled out of it this quarter. The gap between them is a couple of percent at most, and it is the most consequential couple of percent in economics.</p>
+
+  <div class="ex">
+    <span class="lb">The formula &mdash; and the sign convention that gets marked wrong</span>
+    <div class="calc-line">Output gap (%)  =  (Actual real GDP − Potential real GDP) ÷ Potential real GDP × 100</div>
+    <div><b>Positive gap</b> = running hot = <i>inflationary</i> = the Bank wants to slow you down.<br>
+         <b>Negative gap</b> = slack = <i>disinflationary</i> = rising unemployment = the Bank wants to speed you up.</div>
+    <div>Potential is in the denominator, and potential is <b>not observable</b> &mdash; it is estimated. The Bank of Canada publishes a range, not a point, and revises it. Half the real disagreement between economists is a disagreement about where potential is.</div>
+  </div>
+
+  <figure>
+    <div class="dg">
+      <svg class="d" viewBox="0 0 780 250" role="img" aria-label="Actual output fluctuating around a rising potential output trend line, with positive and negative gaps marked.">
+        <path class="d-link mute" d="M40 200 L 720 66" stroke-dasharray="7 5" style="stroke:var(--rule-strong)"/>
+        <text class="d-lab" x="600" y="52">Potential output &mdash; the trend</text>
+        <text class="d-s" x="600" y="68">supply: workers &#215; productivity</text>
+
+        <path class="d-link acc" d="M40 200 C 70 188, 85 178, 108 171 C 140 161, 155 153, 176 152 C 200 151, 222 152, 244 155 C 268 158, 292 164, 312 168 C 335 172, 360 171, 380 169 C 402 162, 425 148, 448 136 C 470 122, 495 107, 516 99 C 538 90, 562 79, 584 76 C 606 74, 632 77, 652 79 C 674 80, 700 80, 720 80" style="stroke-width:2.4"/>
+        <text class="d-lab" x="60" y="228" fill="var(--accent)">Actual output &mdash; the cycle (demand)</text>
+
+        <path class="d-link" d="M176 152 L 176 174" stroke-dasharray="3 3"/>
+        <text class="d-s" x="182" y="146" fill="var(--accent)">gap +  &middot; boom</text>
+        <path class="d-link bad" d="M380 131 L 380 169" stroke-dasharray="3 3"/>
+        <text class="d-s" x="300" y="184" fill="var(--credit)">gap −  &middot; recession</text>
+        <circle cx="176" cy="152" r="4" style="fill:var(--accent)"/>
+        <circle cx="380" cy="169" r="4" style="fill:var(--credit)"/>
+      </svg>
+    </div>
+    <figcaption>Telling trend from cycle is the diagnosis the whole course trains. A cyclical slowdown says <b>protect your capacity and your talent through the trough</b>. A structural one says <b>the business itself needs rethinking</b>. Confusing the two is, per Primer 01, the most common and costly error in macro analysis.</figcaption>
+  </figure>
+
+  <div class="ia">
+    <div class="ia-top">
+      <span class="ttl">The output gap machine &mdash; Okun, Phillips, and the Bank&rsquo;s reaction</span>
+      <div class="seg" id="gapSeg" role="group" aria-label="Preset episodes">
+        <button type="button" data-k="n" aria-pressed="true">Neutral</button>
+        <button type="button" data-k="c20" aria-pressed="false">2020 collapse</button>
+        <button type="button" data-k="c22" aria-pressed="false">2022 overheat</button>
+        <button type="button" data-k="c24" aria-pressed="false">2024 cooling</button>
+      </div>
+      <span class="hint">drag any slider</span>
+    </div>
+    <div class="ia-body">
+      <div class="slider"><label for="gapG">Output gap</label><input id="gapG" type="range" min="-8" max="4" step="0.1" value="0"><span class="val" id="gapGV">0.0%</span></div>
+      <div class="slider"><label for="gapS">Supply shock</label><input id="gapS" type="range" min="-3" max="6" step="0.1" value="0"><span class="val" id="gapSV">0.0 pp</span></div>
+      <div class="slider"><label for="gapE">Expected inflation</label><input id="gapE" type="range" min="1" max="6" step="0.1" value="2"><span class="val" id="gapEV">2.0%</span></div>
+      <svg class="d" id="gapChart" viewBox="0 0 720 250" role="img" aria-label="A short-run Phillips curve with the current unemployment and inflation marked, shifting up and down with expected inflation." style="margin-top:14px"></svg>
+      <div class="kpis" id="gapKpis"></div>
+      <div class="note acc" id="gapNote" style="margin-top:14px"></div>
+    </div>
+  </div>
+  <p class="src">A stylised model, not a forecast: u* = 6.0%, Okun coefficient 0.5, Phillips slope 1.0. Coefficients are textbook rules of thumb, tuned so the 2022 preset lands near the 8.1% that actually printed &mdash; a demonstration that the mechanism is the right shape, not a claim about magnitudes.</p>
+</section>
+
+<!-- ===================== 7 · WHERE THE THREE MEET ===================== -->
+<section id="c7">
+  <h2><span class="no">7</span> Where GDP, unemployment and inflation join up</h2>
+  <p class="oneline"><span class="tag">In one line</span><span>Two rules of thumb chain the dashboard together. <b>Okun</b> connects the output gap to unemployment. <b>Phillips</b> connects unemployment to inflation. Put them end to end and one number &mdash; the gap &mdash; predicts the other two.</span></p>
+
+  <figure>
+    <div class="dg">
+      <svg class="d" viewBox="0 0 800 150" role="img" aria-label="Output gap feeds Okun's law which gives unemployment, which feeds the Phillips curve which gives inflation.">
+        <rect class="d-box acc" x="14" y="40" width="170" height="70" rx="12"/>
+        <text class="d-t t2" x="34" y="70" fill="var(--accent)">Output gap</text>
+        <text class="d-s" x="34" y="90" fill="var(--accent)">+2.2%</text>
+        <path class="d-link acc" d="M188 75 L 262 75"/>
+        <text class="d-lab" x="225" y="62" text-anchor="middle">Okun</text>
+        <rect class="d-box" x="262" y="40" width="190" height="70" rx="12"/>
+        <text class="d-t t2" x="282" y="70">Unemployment</text>
+        <text class="d-s" x="282" y="90">6.0 − 0.5(2.2) = 4.9%</text>
+        <path class="d-link bad" d="M456 75 L 530 75"/>
+        <text class="d-lab" x="493" y="62" text-anchor="middle">Phillips</text>
+        <rect class="d-box bad" x="530" y="40" width="256" height="70" rx="12"/>
+        <text class="d-t t2" x="550" y="70" fill="var(--credit)">Inflation</text>
+        <text class="d-s" x="550" y="90" fill="var(--credit)">3.0 + 1.0(6.0−4.9) + 4.0 = 8.1%</text>
+      </svg>
+    </div>
+    <figcaption>Worked in full in <a href="#p4">P4</a>, where this chain reconstructs Canada&rsquo;s June 2022 peak from three assumptions. The point of the exercise is not the number &mdash; it is that the number is <i>decomposable</i>.</figcaption>
+  </figure>
+
+  <div class="grid2">
+    <div class="card">
+      <h4>Okun&rsquo;s law</h4>
+      <div class="calc-line" style="align-self:stretch">u − u*  =  −&frac12; × output gap</div>
+      <p>Every 2 percentage points of output gap moves unemployment about 1 point the other way. Not 1-for-1, because firms <b>hoard labour</b> &mdash; in a slowdown they first cut hours, overtime and hiring before they cut heads. That is why hours worked falls before employment does, and why hours is the better early indicator.</p>
+      <p class="src">An empirical regularity, not a law. The coefficient drifts and differs across countries.</p>
+    </div>
+    <div class="card">
+      <h4>The Phillips curve</h4>
+      <div class="calc-line" style="align-self:stretch">π  =  π<sup>e</sup>  −  κ(u − u*)  +  supply shock</div>
+      <p>Unemployment below u* means firms are bidding for scarce workers; wages rise, and wages are most firms&rsquo; largest cost. But the curve <b>sits on top of</b> expected inflation &mdash; π<sup>e</sup> is the whole curve&rsquo;s height. Move expectations and you move every point on it at once, with no change in unemployment.</p>
+      <p class="src">The original 1958 version had no π<sup>e</sup> term. That omission is what the 1970s destroyed.</p>
+    </div>
+  </div>
+
+  <div class="tw"><table>
+    <caption>The same curve, two eras &mdash; why 1975 and 2022 ended differently</caption>
+    <thead><tr><th></th><th>1970s stagflation</th><th>2021&ndash;2024</th></tr></thead>
+    <tbody>
+      <tr><td><b>The shock</b></td><td>OPEC oil embargo, 1973 and 1979</td><td>Pandemic supply chains, then Ukraine energy and food</td></tr>
+      <tr><td><b>Demand side</b></td><td>Accommodative policy, wage indexation written into contracts</td><td>Enormous fiscal transfers plus a policy rate at 0.25%</td></tr>
+      <tr><td><b>What happened to &pi;<sup>e</sup></b></td><td class="cr">Un-anchored. Everyone began <i>assuming</i> high inflation, so it kept delivering itself.</td><td>Held near 2%, because the Bank moved hard and said so loudly.</td></tr>
+      <tr><td><b>The cure</b></td><td class="cr">Volcker took the Fed funds rate near 20% and caused a deep recession to break the expectation.</td><td>BoC: 0.25% &rarr; 5.00% in sixteen months &mdash; one of the most aggressive tightenings in its history.</td></tr>
+      <tr><td><b>The cost</b></td><td class="cr">A decade of inflation, then a severe recession</td><td>Slower growth, unemployment drifting from below 5% toward 7% &mdash; painful, but no 1982-style collapse.</td></tr>
+      <tr><td><b>The lesson</b></td><td colspan="2">Credibility is a monetary policy <b>instrument</b>. An anchored expectation lets a central bank absorb a supply shock without paying for it with a recession. That is why the Bank talks about the 2% target constantly &mdash; the talking <i>is</i> the policy.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="src">Canadian and U.S. figures from Primer 01. Canadian CPI peaked at 8.1% in June 2022; the U.S. at 9.1%. The BoC policy rate settled at 2.25% by the mid-2020s.</p>
+
+  <div class="note"><b>Why the Phillips curve looked &ldquo;dead&rdquo; in the 2010s, then came back.</b> From 2010 to 2019, unemployment fell a lot and inflation barely moved &mdash; so people declared the relationship broken. It was not. It was <b>flat</b>, because expectations were so firmly anchored at 2% that the π<sup>e</sup> term dominated everything else. When a shock big enough to move expectations finally arrived in 2021, the curve reappeared, steeply. Flat near the anchor, steep away from it &mdash; that non-linearity is the modern view, and it is a good answer to give in class.</div>
+</section>
+
+<!-- ===================== 8 · GOODS VS SERVICES ===================== -->
+<section id="c8">
+  <h2><span class="no">8</span> Goods vs services &mdash; the split that decides the inflation story</h2>
+  <p class="oneline"><span class="tag">In one line</span><span>Goods are things made in a factory, shipped, and priced globally. Services are someone&rsquo;s time. <b>Goods prices move fast in both directions; services prices move slowly and mostly one way</b> &mdash; because services are wages, and wages are sticky.</span></p>
+
+  <p class="lede">Roughly <strong>55&ndash;60% of Canadian household consumption is services</strong> and 40&ndash;45% goods, and the share of services has been climbing for a century. That split is not trivia. It explains the entire shape of the 2020&ndash;2026 inflation episode: why it arrived, why it fell so fast at first, and why the last two points took so long.</p>
+  <p class="src">Shares approximate &mdash; check StatCan Table 36-10-0124-01 for the current household final consumption split before quoting.</p>
+
+  <figure>
+    <div class="dg">
+      <svg class="d" viewBox="0 0 760 260" role="img" aria-label="Left: goods spending spikes in 2021 while services spending collapses, then they swap. Right: goods inflation spikes then collapses while services inflation stays elevated.">
+        <text class="d-t t2" x="40" y="18">1 &middot; The rotation in what people bought</text>
+        <text class="d-s" x="40" y="34">real spending, index 2019 = 100</text>
+        <path class="d-link" d="M40 210 L 350 210" style="stroke:var(--rule-strong)"/>
+        <path class="d-link" d="M40 120 L 350 120" stroke-dasharray="3 4" style="stroke:var(--rule)"/>
+        <text class="d-s" x="4" y="124">100</text>
+        <polyline class="d-link acc" points="40,120 92,129 143,48 195,62 247,75 298,71 350,66" style="stroke-width:2.4"/>
+        <polyline class="d-link bad" points="40,120 92,192 143,156 195,102 247,80 298,66 350,53" style="stroke-width:2.4"/>
+        <text class="d-s" x="216" y="46" fill="var(--accent)">GOODS</text>
+        <text class="d-s" x="120" y="200" fill="var(--credit)">SERVICES</text>
+        <text class="d-s" x="40" y="228">2019</text><text class="d-s" x="180" y="228">2022</text><text class="d-s" x="325" y="228">2025</text>
+        <text class="d-s" x="40" y="250">stuck at home &rarr; bought things &rarr; went out again</text>
+
+        <text class="d-t t2" x="410" y="18">2 &middot; What that did to their prices</text>
+        <text class="d-s" x="410" y="34">CPI, % change year over year</text>
+        <path class="d-link" d="M405 210 L 730 210" style="stroke:var(--rule-strong)"/>
+        <path class="d-link" d="M405 120 L 730 120" stroke-dasharray="3 4" style="stroke:var(--rule)"/>
+        <path class="d-link" d="M405 30 L 730 30" stroke-dasharray="3 4" style="stroke:var(--rule)"/>
+        <text class="d-s" x="400" y="214" text-anchor="end">0</text>
+        <text class="d-s" x="400" y="124" text-anchor="end">5%</text>
+        <text class="d-s" x="400" y="34" text-anchor="end">10%</text>
+        <rect x="420" y="138" width="20" height="72" rx="2" style="fill:var(--accent-soft);stroke:var(--accent)"/>
+        <rect x="442" y="165" width="20" height="45" rx="2" style="fill:var(--credit-soft);stroke:var(--credit)"/>
+        <rect x="480" y="48" width="20" height="162" rx="2" style="fill:var(--accent-soft);stroke:var(--accent)"/>
+        <rect x="502" y="120" width="20" height="90" rx="2" style="fill:var(--credit-soft);stroke:var(--credit)"/>
+        <rect x="540" y="174" width="20" height="36" rx="2" style="fill:var(--accent-soft);stroke:var(--accent)"/>
+        <rect x="562" y="129" width="20" height="81" rx="2" style="fill:var(--credit-soft);stroke:var(--credit)"/>
+        <rect x="600" y="201" width="20" height="9" rx="2" style="fill:var(--accent-soft);stroke:var(--accent)"/>
+        <rect x="622" y="134" width="20" height="76" rx="2" style="fill:var(--credit-soft);stroke:var(--credit)"/>
+        <rect x="660" y="199" width="20" height="11" rx="2" style="fill:var(--accent-soft);stroke:var(--accent)"/>
+        <rect x="682" y="151" width="20" height="59" rx="2" style="fill:var(--credit-soft);stroke:var(--credit)"/>
+        <text class="d-s" x="420" y="228">&rsquo;21</text><text class="d-s" x="480" y="228">&rsquo;22</text><text class="d-s" x="540" y="228">&rsquo;23</text><text class="d-s" x="600" y="228">&rsquo;24</text><text class="d-s" x="660" y="228">&rsquo;25</text>
+        <text class="d-s" x="410" y="250" fill="var(--accent)">&#9632; goods</text>
+        <text class="d-s" x="490" y="250" fill="var(--credit)">&#9632; services</text>
+        <text class="d-s" x="730" y="250" text-anchor="end">goods spike then collapse; services rise late and stay</text>
+      </svg>
+    </div>
+    <figcaption><b>Illustrative &mdash; shaped like the North American pattern, not exact data.</b> The shape is the lesson: goods did the damage first and then handed most of the disinflation back, while services inflation rose later and would not leave. Verify any specific figure against StatCan 18-10-0004-01 before using it.</figcaption>
+  </figure>
+
+  <div class="tw"><table>
+    <caption>Why the two behave completely differently</caption>
+    <thead><tr><th></th><th>Goods</th><th>Services</th></tr></thead>
+    <tbody>
+      <tr><td><b>What you are buying</b></td><td>An object</td><td>Someone&rsquo;s hour</td></tr>
+      <tr><td><b>Main cost input</b></td><td>Materials, energy, freight, imported components</td><td class="cr">Wages &mdash; often 60&ndash;80% of the cost</td></tr>
+      <tr><td><b>Tradeable?</b></td><td>Yes &mdash; priced globally, and the exchange rate passes straight through</td><td>No &mdash; a haircut cannot be imported from Vietnam</td></tr>
+      <tr><td><b>How often the price resets</b></td><td>Constantly. Discounts, promos, clearance.</td><td class="cr">Annually at best. Rent, tuition, insurance, contracts.</td></tr>
+      <tr><td><b>Can the price fall?</b></td><td>Yes, and routinely does</td><td class="cr">Almost never &mdash; it would require cutting someone&rsquo;s pay</td></tr>
+      <tr><td><b>Productivity growth</b></td><td>Fast &mdash; automation, better chips, better logistics</td><td>Slow &mdash; see Baumol below</td></tr>
+      <tr><td><b>Responds to rate hikes</b></td><td>Fast &mdash; big-ticket durables are financed</td><td class="cr">Slowly &mdash; via the labour market, over many quarters</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="ex">
+    <span class="lb">Example &mdash; the arithmetic that explains &ldquo;the last mile&rdquo;</span>
+    <div>Take a basket that is 45% goods and 55% services. Services inflation is stuck at 4%. What do goods have to do for headline to hit the 2% target?</div>
+    <div class="calc-line">0.45 × g  +  0.55 × 4.0  =  2.0
+0.45 × g  =  2.0 − 2.20  =  −0.20
+       g  =  <b>−0.44%</b>   ← goods prices must actually FALL</div>
+    <div>That is the whole story of 2024&ndash;25 in one line. Headline inflation only looked calm because goods were in outright deflation, doing the work that services refused to do. It also tells you where the risk is: <strong>the moment goods stop falling &mdash; a tariff, a weaker loonie, a freight disruption &mdash; headline pops straight back up with no change in services at all.</strong></div>
+  </div>
+
+  <div class="note acc"><b>Baumol&rsquo;s cost disease &mdash; why services get relatively more expensive forever.</b> A string quartet takes exactly as many musician-hours today as it did in 1826. A television takes a tiny fraction of the labour it took in 1970. But the musicians&rsquo; wages have to keep pace with economy-wide wages or they leave for other work. So the <i>price</i> of the quartet rises relative to the TV, permanently, with no inefficiency anywhere. This is why tuition, childcare, healthcare, restaurants and haircuts always feel like they are outrunning inflation. They are &mdash; and it is a mathematical consequence of productivity growth being concentrated in goods, not a scandal.</div>
+
+  <div class="note"><b>Canadian quirk worth knowing cold: mortgage interest cost is in our CPI.</b> Unlike the U.S., Canada&rsquo;s CPI shelter component includes mortgage interest cost. So when the Bank of Canada raised rates to fight inflation, it mechanically <i>raised</i> a chunk of measured CPI on the way. The cure temporarily inflated the disease. Through 2023&ndash;24 this was a meaningful contributor to headline &mdash; which is exactly why the Bank leans on CPI-trim and CPI-median rather than the headline number it is nominally targeting. If you can name this in class you are ahead of the room.</div>
+</section>
+
+<!-- ===================== 9 · PRODUCTIVITY ===================== -->
+<section id="c9">
+  <h2><span class="no">9</span> Productivity &mdash; the only thing that makes you permanently richer</h2>
+  <p class="oneline"><span class="tag">In one line</span><span>Productivity is <b>output per hour worked</b>. You can grow GDP by adding people or adding hours, but that does not make anyone better off per person. Only producing more per hour does.</span></p>
+
+  <p class="lede">Krugman&rsquo;s line is the one to remember: <em>&ldquo;Productivity isn&rsquo;t everything, but in the long run it is almost everything.&rdquo;</em> Over a decade, the cycle washes out and the output gap averages zero. What is left is potential output, and potential output grows at the rate of <strong>labour force growth + productivity growth</strong>. Since you cannot raise the labour force growth rate forever, productivity is the entire long-run story &mdash; it is what Session 3&rsquo;s &ldquo;why are your grandchildren richer than you?&rdquo; actually reduces to.</p>
+
+  <div class="ex">
+    <span class="lb">The three identities that carry all of it</span>
+    <div class="calc-line">Labour productivity  =  Real GDP  ÷  Total hours worked</div>
+    <div class="calc-line">Real GDP growth      =  hours growth  +  productivity growth</div>
+    <div class="calc-line">Potential growth     =  labour force growth  +  productivity growth</div>
+    <div>These are <b>identities</b>, not theories &mdash; they are true by definition. Which makes them extremely useful: any GDP growth number can be split into &ldquo;more work&rdquo; and &ldquo;better work&rdquo;, and only the second one compounds into living standards.</div>
+  </div>
+
+  <figure>
+    <div class="dg">
+      <svg class="d" viewBox="0 0 720 235" role="img" aria-label="Growth decomposition: hours worked plus productivity equals real GDP growth; real GDP growth minus population growth equals GDP per person, which is negative.">
+        <path class="d-link" d="M20 155 L 700 155" style="stroke:var(--rule-strong)"/>
+        <text class="d-s" x="0" y="159">0</text>
+
+        <rect x="40" y="96" width="95" height="59" rx="3" style="fill:var(--surface-3);stroke:var(--rule-strong)"/>
+        <text class="d-s" x="87" y="88" text-anchor="middle">+2.10%</text>
+        <text class="d-lab" x="87" y="176" text-anchor="middle">Hours</text>
+        <text class="d-s" x="87" y="192" text-anchor="middle">worked</text>
+
+        <text class="d-t" x="152" y="150" text-anchor="middle" fill="var(--ink-3)">+</text>
+
+        <rect x="170" y="155" width="95" height="5" rx="2" style="fill:var(--credit-soft);stroke:var(--credit)"/>
+        <text class="d-s" x="217" y="178" text-anchor="middle" fill="var(--credit)">−0.18%</text>
+        <text class="d-lab" x="217" y="196" text-anchor="middle" fill="var(--credit)">Productivity</text>
+
+        <text class="d-t" x="282" y="150" text-anchor="middle" fill="var(--ink-3)">=</text>
+
+        <rect x="300" y="101" width="95" height="54" rx="3" style="fill:var(--accent-soft);stroke:var(--accent)"/>
+        <text class="d-s" x="347" y="93" text-anchor="middle" fill="var(--accent)">+1.92%</text>
+        <text class="d-lab" x="347" y="176" text-anchor="middle" fill="var(--accent)">Real GDP</text>
+
+        <text class="d-t" x="412" y="150" text-anchor="middle" fill="var(--ink-3)">−</text>
+
+        <rect x="430" y="85" width="95" height="70" rx="3" style="fill:var(--surface-3);stroke:var(--rule-strong)"/>
+        <text class="d-s" x="477" y="77" text-anchor="middle">+2.50%</text>
+        <text class="d-lab" x="477" y="176" text-anchor="middle">Population</text>
+
+        <text class="d-t" x="542" y="150" text-anchor="middle" fill="var(--ink-3)">=</text>
+
+        <rect x="560" y="155" width="95" height="16" rx="3" style="fill:var(--credit-soft);stroke:var(--credit)"/>
+        <text class="d-s" x="607" y="189" text-anchor="middle" fill="var(--credit)">−0.57%</text>
+        <text class="d-lab" x="607" y="207" text-anchor="middle" fill="var(--credit)">GDP per person</text>
+        <text class="d-s" x="607" y="223" text-anchor="middle" fill="var(--credit)">you got poorer</text>
+      </svg>
+    </div>
+    <figcaption>Illustrative but shaped like the recent Canadian record: the economy grew, and the average person got slightly poorer, because all the growth came from more people working more hours rather than from each hour producing more. Worked in <a href="#p6">P6</a>. This is why &ldquo;GDP grew&rdquo; and &ldquo;nobody feels richer&rdquo; are not in conflict.</figcaption>
+  </figure>
+
+  <h3>What actually raises productivity</h3>
+  <div class="grid3">
+    <div class="card">
+      <h4>Capital deepening</h4>
+      <p>More and better tools per worker. A ditch-digger with an excavator produces more per hour than one with a shovel, with no change in skill or effort.</p>
+      <p class="src">Canada&rsquo;s weak spot: business investment per worker has run well below the U.S. for years.</p>
+    </div>
+    <div class="card">
+      <h4>Human capital</h4>
+      <p>Education, training, experience, and getting people into the jobs that use what they know.</p>
+      <p class="src">Canada has among the highest post-secondary attainment in the OECD &mdash; and persistent credential-recognition problems that waste some of it.</p>
+    </div>
+    <div class="card">
+      <h4>Total factor productivity</h4>
+      <p>Everything else: technology, management quality, competition, regulation, how efficiently capital and labour get combined. It is the <b>residual</b> &mdash; what growth is left after you account for more workers and more machines &mdash; and historically it is the biggest piece.</p>
+    </div>
+  </div>
+
+  <div class="note"><b>Canada&rsquo;s productivity problem is a live, nameable issue.</b> Output per hour has been roughly flat for years, and Canada produces meaningfully less per hour than the United States &mdash; the commonly cited gap is on the order of 25&ndash;30%. In a March 2024 speech, the Bank of Canada&rsquo;s Senior Deputy Governor Carolyn Rogers called it an emergency and said it was <i>&ldquo;time to break the glass.&rdquo;</i> Usual suspects: thin business investment, small domestic market, interprovincial trade barriers, concentrated and sheltered industries, and slow diffusion of technology into mid-sized firms. Have a view on this; it is a guaranteed class discussion.</div>
+  <p class="src">Directionally well established; check the current level gap in OECD <i>GDP per hour worked</i> or StatCan Table 36-10-0480-01 before quoting a precise number.</p>
+
+  <h3>Why measured productivity understates the truth</h3>
+  <p class="lede">Primer 04&rsquo;s measurement chapter is really a chapter about productivity, because <strong>real GDP is nominal GDP divided by a price index &mdash; so every bias in measuring prices flows straight through into measured real growth, one for one.</strong> Overstate inflation and you understate productivity by exactly the same amount.</p>
+  <div class="tw"><table>
+    <caption>Five biases, all pointing the same way</caption>
+    <thead><tr><th>Bias</th><th>Mechanism</th><th>Effect on measured productivity</th></tr></thead>
+    <tbody>
+      <tr><td><b>Matched-model / quality</b></td><td>A new car costs $45,000 vs $40,000 five years ago &mdash; but it is safer, more efficient, and better equipped. How much of the $5,000 is inflation?</td><td class="cr">Too low</td></tr>
+      <tr><td><b>Outlet substitution</b></td><td>Shoppers move to big-box and online sellers; price surveys keep sampling traditional stores.</td><td class="cr">Too low</td></tr>
+      <tr><td><b>Services &amp; the public sector</b></td><td>No market price for a school year or a hospital stay, so statisticians measure <b>cost</b> instead of output &mdash; which assumes productivity growth of exactly zero.</td><td class="cr">Too low, structurally</td></tr>
+      <tr><td><b>New goods</b></td><td>Smartphones, maps, streaming, AI tools had no predecessor to price against. The welfare gain is inferred, never observed.</td><td class="cr">Too low</td></tr>
+      <tr><td><b>Creative destruction</b></td><td>A low-productivity plant closing registers immediately; the entrant&rsquo;s gains show up years later.</td><td class="cr">Too low, temporarily</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note acc">Research suggests these biases together understate real growth by a <b>few tenths of a percentage point per year</b> &mdash; small enough not to change any trend, large enough to matter over a generation. And note the irony that closes the loop with &sect;8: the sectors that are hardest to measure (health, education, government, digital) are exactly the <b>services</b> whose share of the economy keeps rising. The part of the economy we measure worst is the part that is growing.</div>
+</section>
+
+<div class="group"><h2>Questions &amp; answers</h2><div class="ln"></div><span class="ct">6 worked problems &middot; then the assigned Canvas prep</span></div>
+
+<div class="note">Nothing numerical was assigned for these sessions. P1&ndash;P6 are <b>self-set</b>, written to the shape GMM exam questions take &mdash; give me a table, make me pull one number out of it. Work them before reading the steps. The assigned Canvas questions are at the <a href="#prep">end</a>, answered.</div>
+
+<!-- ===================== P1 ===================== -->
+<section id="p1">
+  <h2>P1 &middot; Building a CPI from scratch</h2>
+  <div class="qtext">
+    <span class="lbl">The question, as set &mdash; self-set, exam-shaped</span>
+    <div class="body">A statistical agency defines the consumer basket for a typical student. Quantities are fixed at the Year&nbsp;0 level and do not change.</div>
+<pre class="given">Item                    Qty/month     Price Yr 0     Price Yr 1
+───────────────────────────────────────────────────────────────
+Rent, one room               1          $900.00        $972.00
+Groceries, per week          4           $95.00        $104.50
+Transit pass                 1          $110.00        $115.00
+Coffee                      20            $3.00          $3.30
+Phone plan                   1           $50.00         $49.00</pre>
+    <div class="body"><b>Required:</b></div>
+    <ol type="a">
+      <li>Compute the cost of the basket in Year 0 and Year 1.</li>
+      <li>Compute the CPI for Year 1, taking Year 0 = 100.</li>
+      <li>Compute the rate of inflation between the two years.</li>
+      <li>Compute each item&rsquo;s expenditure weight in Year 0 and its contribution to inflation in percentage points. Verify the contributions sum to your answer in (c).</li>
+      <li>Recompute inflation with groceries excluded. Explain why the result is not simply (c) minus groceries&rsquo; contribution.</li>
+    </ol>
+  </div>
+
+  <h3>Working it through</h3>
+  <div class="steps">
+
+    <div class="step"><div class="num">1</div><div class="sb">
+      <h4>Price the same cart twice &mdash; quantities never move</h4>
+      <p>This is the entire method. Every quantity is held at its Year 0 level in both columns, so <strong>any change in the bill is a change in prices, by construction.</strong> The trap is forgetting to multiply by quantity: groceries are four purchases a month, coffee is twenty.</p>
+      <pre class="math">Year 0 basket
+  Rent           1 × $900.00  =  $  900.00
+  Groceries      4 × $ 95.00  =  $  380.00
+  Transit        1 × $110.00  =  $  110.00
+  Coffee        20 × $  3.00  =  $   60.00
+  Phone          1 × $ 50.00  =  $   50.00
+                                 ──────────
+  <b>Total                         $1,500.00</b>
+
+Year 1 basket  <i>— same quantities, new prices</i>
+  Rent           1 × $972.00  =  $  972.00
+  Groceries      4 × $104.50  =  $  418.00
+  Transit        1 × $115.00  =  $  115.00
+  Coffee        20 × $  3.30  =  $   66.00
+  Phone          1 × $ 49.00  =  $   49.00
+                                 ──────────
+  <b>Total                         $1,620.00</b></pre>
+      <p>The bill rose $120. That is the whole of (a).</p>
+    </div></div>
+
+    <div class="step"><div class="num">2</div><div class="sb">
+      <h4>Turn the two bills into an index</h4>
+      <p>An index is just a ratio scaled so the base year reads 100. It carries no extra information &mdash; it exists so you can compare series with different dollar sizes.</p>
+      <pre class="math">CPI(Year 1) = (Year 1 basket cost ÷ Year 0 basket cost) × 100
+            = ($1,620.00 ÷ $1,500.00) × 100
+            = 1.08 × 100
+            = <b>108.0</b>      <i>(CPI Year 0 = 100.0 by definition)</i></pre>
+    </div></div>
+
+    <div class="step"><div class="num">3</div><div class="sb">
+      <h4>Index to inflation rate &mdash; the step everyone collapses</h4>
+      <p>The index is a <strong>level</strong>; inflation is its <strong>rate of change</strong>. Here the base is 100, so the two look identical and you can get away with subtracting &mdash; which is exactly why people then do it in a year where the base is not 100 and get it wrong. Always divide.</p>
+      <pre class="math">Inflation = (CPI₁ − CPI₀) ÷ CPI₀ × 100
+          = (108.0 − 100.0) ÷ 100.0 × 100
+          = <b>8.0%</b>
+
+<i>General form, for when the base is not 100:</i>
+  From 137.4 to 142.1  →  (142.1 − 137.4) ÷ 137.4 = 3.42%   <i>not 4.7%</i></pre>
+    </div></div>
+
+    <div class="step"><div class="num">4</div><div class="sb">
+      <h4>Extract the weights &mdash; they are just Year 0 spending shares</h4>
+      <p>A weight is not a policy choice. It is simply how much of the base-year bill that item accounted for. Note how far rent dominates: 60% of the basket, so nothing else can move headline much on its own.</p>
+      <pre class="math">Weight = item's Year 0 spend ÷ total Year 0 spend
+
+  Rent        900 ÷ 1,500  =  60.000%
+  Groceries   380 ÷ 1,500  =  25.333%
+  Transit     110 ÷ 1,500  =   7.333%
+  Coffee       60 ÷ 1,500  =   4.000%
+  Phone        50 ÷ 1,500  =   3.333%
+                              ────────
+  <b>                           100.000%</b>  <i>✓ sums to 100</i></pre>
+    </div></div>
+
+    <div class="step"><div class="num">5</div><div class="sb">
+      <h4>Contribution = weight &times; that item&rsquo;s own price change</h4>
+      <p>Headline inflation is a weighted average, nothing more. Contributions must cross-foot to the headline &mdash; that check catches almost every arithmetic error you can make here. Note the phone plan contributing <strong>negatively</strong>: falling prices in one category genuinely subtract from headline.</p>
+      <pre class="math">Own price change:
+  Rent        972.00 ÷ 900.00 − 1  =  + 8.000%
+  Groceries   104.50 ÷  95.00 − 1  =  +10.000%
+  Transit     115.00 ÷ 110.00 − 1  =  + 4.545%
+  Coffee        3.30 ÷   3.00 − 1  =  +10.000%
+  Phone        49.00 ÷  50.00 − 1  =  − 2.000%
+
+Contribution = weight × own price change:
+  Rent        0.60000 × ( 8.000)  =  +4.8000 pp
+  Groceries   0.25333 × (10.000)  =  +2.5333 pp
+  Transit     0.07333 × ( 4.545)  =  +0.3333 pp
+  Coffee      0.04000 × (10.000)  =  +0.4000 pp
+  Phone       0.03333 × (−2.000)  =  −0.0667 pp
+                                     ──────────
+  <b>Headline                          +8.0000 pp</b>  <i>✓ = step 3</i></pre>
+      <p>Fast sanity route: each contribution is just that item&rsquo;s <b>dollar</b> change over the total base bill. Rent = $72/$1,500 = 4.8pp. Same answer, no percentages needed.</p>
+    </div></div>
+
+    <div class="step"><div class="num">6</div><div class="sb">
+      <h4>Strip food out &mdash; and watch the weights rescale</h4>
+      <p>This is the part (e) trap, and it is a real one that appears in every &ldquo;headline vs core&rdquo; discussion. When you delete a category you delete it from the <strong>denominator too</strong>, so every surviving weight gets bigger. Do it both ways to prove it.</p>
+      <pre class="math">Route 1 — reprice the smaller basket directly
+  Year 0 ex-groceries:  1,500.00 − 380.00  =  $1,120.00
+  Year 1 ex-groceries:  1,620.00 − 418.00  =  $1,202.00
+  Inflation = (1,202 ÷ 1,120) − 1 = 82 ÷ 1,120 = <b>7.321%</b>
+
+Route 2 — rescale the surviving contributions
+  Contributions excl. groceries:
+    4.8000 + 0.3333 + 0.4000 − 0.0667  =  5.4667 pp
+  Rescale by the lost weight:
+    5.4667 × (1,500 ÷ 1,120)  =  5.4667 × 1.33929  =  <b>7.321%</b>  <i>✓ both routes agree</i>
+
+The naive answer:  8.000 − 2.533 = 5.467%   <i>✗ wrong — forgot to rescale</i></pre>
+      <p><strong>Why it matters:</strong> groceries rose 10% against a headline of 8%, so removing them should <i>lower</i> the answer &mdash; and it does, to 7.3%, not to 5.5%. The 1.85pp difference is pure denominator effect. Say &ldquo;contribution&rdquo; when you mean contribution and &ldquo;ex-food inflation&rdquo; when you mean the recomputed index; they are different objects.</p>
+    </div></div>
+  </div>
+
+  <h3>The answers</h3>
+  <div class="tw"><table>
+    <caption>P1 summary</caption>
+    <tbody>
+      <tr><td>(a) Basket cost, Year 0 / Year 1</td><td class="n">$1,500.00 / $1,620.00</td></tr>
+      <tr><td>(b) CPI, Year 1 (Year 0 = 100)</td><td class="n">108.0</td></tr>
+      <tr><td>(c) Inflation</td><td class="n">8.0%</td></tr>
+      <tr><td>(d) Weights &mdash; rent / groceries / transit / coffee / phone</td><td class="n">60.0 / 25.3 / 7.3 / 4.0 / 3.3 %</td></tr>
+      <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;Contributions, pp</td><td class="n">+4.80 / +2.53 / +0.33 / +0.40 / −0.07</td></tr>
+      <tr class="tot"><td>(e) Inflation excluding groceries</td><td class="n">7.32%</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- ===================== P2 ===================== -->
+<section id="p2">
+  <h2>P2 &middot; Nominal &rarr; real &rarr; the deflator</h2>
+  <div class="qtext">
+    <span class="lbl">The question, as set &mdash; self-set, exam-shaped</span>
+    <div class="body">An economy produces exactly two things: bread (a good) and haircuts (a service).</div>
+<pre class="given">                    Year 1                      Year 2
+              Quantity     Price         Quantity     Price
+──────────────────────────────────────────────────────────────
+Bread            100       $ 3.00           104       $ 3.30
+Haircuts          50       $20.00            52       $22.00</pre>
+    <div class="body"><b>Required:</b></div>
+    <ol type="a">
+      <li>Nominal GDP in each year, and the rate of nominal GDP growth.</li>
+      <li>Real GDP in Year 2 measured at Year 1 prices, and the rate of real GDP growth.</li>
+      <li>The GDP deflator for Year 2 with Year 1 = 100, and the implied rate of inflation.</li>
+      <li>Show that nominal growth is not exactly real growth plus inflation, and state when the shortcut is safe.</li>
+      <li>Would the Bank of Canada target this deflator? Explain in two sentences why CPI inflation could differ.</li>
+    </ol>
+  </div>
+
+  <h3>Working it through</h3>
+  <div class="steps">
+
+    <div class="step"><div class="num">1</div><div class="sb">
+      <h4>Nominal GDP: this year&rsquo;s quantities at this year&rsquo;s prices</h4>
+      <p>Nominal means &ldquo;as it actually happened, in the dollars of the day.&rdquo; Both the quantity column and the price column are allowed to move, which is exactly why the answer is uninterpretable on its own.</p>
+      <pre class="math">Year 1 nominal
+  Bread      100 × $ 3.00  =  $  300.00
+  Haircuts    50 × $20.00  =  $1,000.00
+                               ──────────
+  <b>                            $1,300.00</b>
+
+Year 2 nominal
+  Bread      104 × $ 3.30  =  $  343.20
+  Haircuts    52 × $22.00  =  $1,144.00
+                               ──────────
+  <b>                            $1,487.20</b>
+
+Nominal growth = (1,487.20 ÷ 1,300.00) − 1 = 187.20 ÷ 1,300 = <b>+14.40%</b></pre>
+      <p>A 14.4% headline. Now find out how much of it was real.</p>
+    </div></div>
+
+    <div class="step"><div class="num">2</div><div class="sb">
+      <h4>Real GDP: <i>this</i> year&rsquo;s quantities at <i>last</i> year&rsquo;s prices</h4>
+      <p>Freeze the price column at Year 1 and let only quantities move. What is left is pure production. The trap is freezing the wrong column &mdash; if you hold quantities and move prices you have built a price index, not real GDP.</p>
+      <pre class="math">Year 2 real, at Year 1 prices
+  Bread      104 × $ 3.00  =  $  312.00   <i>← Year 1 price</i>
+  Haircuts    52 × $20.00  =  $1,040.00   <i>← Year 1 price</i>
+                               ──────────
+  <b>                            $1,352.00</b>
+
+Real growth = (1,352.00 ÷ 1,300.00) − 1 = 52.00 ÷ 1,300 = <b>+4.00%</b></pre>
+      <p>So of a 14.4% nominal headline, only 4.0% was more bread and more haircuts. The other ten points were price.</p>
+    </div></div>
+
+    <div class="step"><div class="num">3</div><div class="sb">
+      <h4>The deflator is not looked up &mdash; it is whatever reconciles the two</h4>
+      <p>Define it as the ratio and it cannot be wrong. It is the economy-wide price index implied by the accounts.</p>
+      <pre class="math">Deflator(Yr 2) = (Nominal ÷ Real) × 100
+               = (1,487.20 ÷ 1,352.00) × 100
+               = 1.10000 × 100
+               = <b>110.0</b>        <i>(Year 1 = 100 by construction)</i>
+
+Deflator inflation = (110.0 − 100.0) ÷ 100.0 = <b>+10.0%</b></pre>
+    </div></div>
+
+    <div class="step"><div class="num">4</div><div class="sb">
+      <h4>The two components multiply, they do not add</h4>
+      <p>Prices rose on the <i>larger</i> quantity, so there is a cross term. At 2% inflation the shortcut is harmless; at 2022&rsquo;s 8% it is not.</p>
+      <pre class="math">Shortcut:   4.0% + 10.0%                    =  14.00%   <i>✗ off by 0.40pp</i>
+Exact:      (1 + 0.04) × (1 + 0.10) − 1
+            = 1.04 × 1.10 − 1
+            = 1.1440 − 1                    =  <b>14.40%</b>   <i>✓ matches step 1</i>
+
+The cross term:  0.04 × 0.10 = 0.0040 = 0.40pp</pre>
+      <p><strong>Rule:</strong> below roughly 3% on both sides, add and move on. Above that, multiply &mdash; and always multiply when compounding over several years.</p>
+    </div></div>
+
+    <div class="step"><div class="num">5</div><div class="sb">
+      <h4>Which index the Bank targets, and why they diverge</h4>
+      <p>The Bank of Canada targets <strong>CPI inflation at 2%</strong>, not the deflator. Two reasons: CPI is what households actually face, and it is the index pensions, wages and contracts are indexed to.</p>
+      <pre class="math">Deflator covers what the country PRODUCES  →  includes exports, excludes imports
+CPI      covers what households BUY        →  includes imports, excludes exports</pre>
+      <p>So in Canada an oil price spike raises the deflator sharply (crude is a large export) while barely touching CPI directly. The two indexes can print meaningfully different numbers in the same quarter without either being wrong.</p>
+    </div></div>
+  </div>
+
+  <h3>The answers</h3>
+  <div class="tw"><table>
+    <caption>P2 summary</caption>
+    <tbody>
+      <tr><td>(a) Nominal GDP, Year 1 / Year 2</td><td class="n">$1,300.00 / $1,487.20</td></tr>
+      <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;Nominal growth</td><td class="n">+14.40%</td></tr>
+      <tr><td>(b) Real GDP Year 2 at Year 1 prices</td><td class="n">$1,352.00</td></tr>
+      <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;Real growth</td><td class="n">+4.00%</td></tr>
+      <tr><td>(c) GDP deflator, Year 2 &mdash; implied inflation</td><td class="n">110.0 &mdash; +10.0%</td></tr>
+      <tr class="tot"><td>(d) Check: 1.04 &times; 1.10</td><td class="n">1.1440 ✓</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- ===================== P3 ===================== -->
+<section id="p3">
+  <h2>P3 &middot; &ldquo;Jobs added, unemployment up&rdquo;</h2>
+  <div class="qtext">
+    <span class="lbl">The question, as set &mdash; self-set, exam-shaped &middot; the Primer 01 Box 1 puzzle, with numbers</span>
+    <div class="body">Two consecutive monthly Labour Force Survey releases, in thousands. Assume the working-age population is unchanged between the two months.</div>
+<pre class="given">                                  Month 1      Month 2
+──────────────────────────────────────────────────────
+Working-age population (15+)       34,000       34,000
+Labour force                       22,100       22,160
+Employed                           20,664       20,689</pre>
+    <div class="body"><b>Required:</b></div>
+    <ol type="a">
+      <li>Compute the unemployment rate, participation rate and employment rate for each month.</li>
+      <li>How many jobs were added?</li>
+      <li>A newspaper runs the headline &ldquo;Economy adds 25,000 jobs &mdash; unemployment rate climbs to 6.6%.&rdquo; Explain how both halves can be true.</li>
+      <li>Did the labour market get stronger or weaker? Name the single number that settles it, and state the assumption your answer depends on.</li>
+    </ol>
+  </div>
+
+  <h3>Working it through</h3>
+  <div class="steps">
+
+    <div class="step"><div class="num">1</div><div class="sb">
+      <h4>Back out the unemployed &mdash; it is never given directly</h4>
+      <p>The survey reports the labour force and employment. Unemployment is the residual, and everything else follows from it.</p>
+      <pre class="math">Unemployed = Labour force − Employed
+
+  Month 1:  22,100 − 20,664  =  <b>1,436</b>
+  Month 2:  22,160 − 20,689  =  <b>1,471</b>       <i>(+35)</i></pre>
+    </div></div>
+
+    <div class="step"><div class="num">2</div><div class="sb">
+      <h4>Three rates, three different denominators &mdash; this is the whole question</h4>
+      <p>Write the denominator out every time. Unemployment divides by the <strong>labour force</strong>; the other two divide by the <strong>working-age population</strong>. Getting these crossed is the most common error in the whole topic.</p>
+      <pre class="math">                        Month 1                    Month 2
+Unemployment rate   1,436 ÷ 22,100  = <b>6.50%</b>    1,471 ÷ 22,160  = <b>6.64%</b>
+Participation rate 22,100 ÷ 34,000  = <b>65.00%</b>  22,160 ÷ 34,000  = <b>65.18%</b>
+Employment rate    20,664 ÷ 34,000  = <b>60.78%</b>  20,689 ÷ 34,000  = <b>60.85%</b></pre>
+      <p>Every single one of those three moved <i>up</i>. Two of those moves are good news and one is bad news &mdash; which is the puzzle.</p>
+    </div></div>
+
+    <div class="step"><div class="num">3</div><div class="sb">
+      <h4>Jobs added, and where the new entrants went</h4>
+      <p>Now decompose the 60,000 people who joined the labour force. That decomposition <i>is</i> the answer to (c).</p>
+      <pre class="math">Jobs added        = 20,689 − 20,664  =  <b>+25</b> thousand
+Labour force grew = 22,160 − 22,100  =  <b>+60</b> thousand
+                                         ──────
+Entrants who did not find work immediately =  +35 thousand
+
+  <i>✓ and indeed unemployed rose 1,436 → 1,471, exactly +35</i></pre>
+      <p><strong>The mechanism, in one sentence:</strong> the numerator of the unemployment rate rose by 35 while the denominator rose by 60, and 35/60 is far above the existing 6.5% rate, so the ratio had to climb. The rate went up <i>because more people started looking</i>, not because anyone was laid off &mdash; not one job was lost in this dataset.</p>
+    </div></div>
+
+    <div class="step"><div class="num">4</div><div class="sb">
+      <h4>Which number settles it</h4>
+      <p>The <strong>employment rate</strong>, because it is the only one of the three whose denominator does not move when people start or stop searching. It rose from 60.78% to 60.85%: a larger share of all working-age Canadians is in a job than last month. On that test the labour market got <strong>stronger</strong>.</p>
+      <pre class="math">Employment rate  60.78%  →  60.85%      <i>+0.07pp — genuinely more people working</i>
+Participation    65.00%  →  65.18%      <i>+0.18pp — people re-entering, a confidence signal</i>
+Unemployment      6.50%  →   6.64%      <i>+0.14pp — a denominator artefact here</i></pre>
+      <p><strong>The assumption this rests on:</strong> the question freezes the working-age population. In reality it grows every month through immigration and aging-in, and in Canada recently it has grown <i>fast</i>. If working-age population had also risen 60 thousand, the employment rate would have been 20,689 ÷ 34,060 = 60.74% &mdash; a <b>fall</b>, and the opposite verdict. Always check whether the denominators are moving before you call the direction.</p>
+    </div></div>
+  </div>
+
+  <h3>The answers</h3>
+  <div class="tw"><table>
+    <caption>P3 summary</caption>
+    <thead><tr><th></th><th class="n">Month 1</th><th class="n">Month 2</th><th class="n">Change</th></tr></thead>
+    <tbody>
+      <tr><td>Unemployed (000s)</td><td class="n">1,436</td><td class="n">1,471</td><td class="n">+35</td></tr>
+      <tr><td>(a) Unemployment rate</td><td class="n">6.50%</td><td class="n">6.64%</td><td class="n cr">+0.14pp</td></tr>
+      <tr><td>(a) Participation rate</td><td class="n">65.00%</td><td class="n">65.18%</td><td class="n">+0.18pp</td></tr>
+      <tr><td>(a) Employment rate</td><td class="n">60.78%</td><td class="n">60.85%</td><td class="n">+0.07pp</td></tr>
+      <tr><td>(b) Jobs added</td><td class="n">&mdash;</td><td class="n">&mdash;</td><td class="n">+25,000</td></tr>
+      <tr class="tot"><td colspan="4">(c)&ndash;(d) Both true: the labour force grew faster than employment. On the employment rate the market got <b>stronger</b> &mdash; conditional on the working-age population being flat.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- ===================== P4 ===================== -->
+<section id="p4">
+  <h2>P4 &middot; Rebuilding June 2022 from three assumptions</h2>
+  <div class="qtext">
+    <span class="lbl">The question, as set &mdash; self-set, exam-shaped &middot; chains &sect;6 and &sect;7 together</span>
+    <div class="body">An economy is described by the standard rules of thumb: Okun with a coefficient of &frac12;, and an expectations-augmented Phillips curve with slope &kappa; = 1.0.</div>
+<pre class="given">Potential real GDP, annualised        $2,600.0 billion
+Actual real GDP, annualised           $2,657.2 billion
+NAIRU (u*)                                   6.0%
+Expected inflation (πᵉ)                      3.0%
+Supply shock (energy, food, freight)        +4.0 pp
+
+  u − u*  =  −0.5 × output gap
+  π       =  πᵉ  −  κ(u − u*)  +  supply shock</pre>
+    <div class="body"><b>Required:</b></div>
+    <ol type="a">
+      <li>Compute the output gap.</li>
+      <li>Compute the unemployment rate implied by Okun&rsquo;s law.</li>
+      <li>Compute the inflation rate implied by the Phillips curve.</li>
+      <li>Decompose your answer to (c) into its demand, supply and expectations pieces.</li>
+      <li>Recompute (c) if expectations had stayed anchored at 2.0%, and if they had drifted to 5.0%. Comment.</li>
+      <li>The supply shock now fades to zero but expectations remain at 3.0%. What output gap and unemployment rate are needed to return inflation to 2%?</li>
+    </ol>
+  </div>
+
+  <h3>Working it through</h3>
+  <div class="steps">
+
+    <div class="step"><div class="num">1</div><div class="sb">
+      <h4>The gap &mdash; and note what sits in the denominator</h4>
+      <p>Potential, not actual, goes on the bottom. The gap is expressed as a percentage <i>of capacity</i>, which is what makes it comparable across countries and decades.</p>
+      <pre class="math">Output gap = (Actual − Potential) ÷ Potential × 100
+           = (2,657.2 − 2,600.0) ÷ 2,600.0 × 100
+           = 57.2 ÷ 2,600.0 × 100
+           = <b>+2.20%</b>      <i>positive → the economy is running hot</i></pre>
+      <p>Two-point-two percent sounds tiny. It is not: an economy running 2.2% above its sustainable capacity for a year is an economy where every plant is at full tilt, every posting has three unfilled seats, and every supplier has pricing power.</p>
+    </div></div>
+
+    <div class="step"><div class="num">2</div><div class="sb">
+      <h4>Okun &mdash; translate the gap into the labour market</h4>
+      <p>Watch the sign. A <i>positive</i> gap drives unemployment <i>below</i> u*, so the minus sign in the formula is doing real work. Half, not one-for-one, because firms hoard labour: they add overtime and hours before they add heads.</p>
+      <pre class="math">u − u* = −0.5 × output gap
+       = −0.5 × (+2.20)
+       = −1.10 pp
+
+u = u* + (u − u*)
+  = 6.0 − 1.10
+  = <b>4.90%</b>      <i>1.1pp below the natural rate — a genuinely tight labour market</i></pre>
+      <p>Canada&rsquo;s unemployment rate did in fact print around 4.9&ndash;5.0% in mid-2022, the tightest on record at that point. The model is not being flattered here.</p>
+    </div></div>
+
+    <div class="step"><div class="num">3</div><div class="sb">
+      <h4>Phillips &mdash; translate the labour market into prices</h4>
+      <p>Substitute carefully: (u &minus; u*) is <i>negative</i>, and it is being subtracted, so the term comes out positive. Two sign flips in one line is where this question is won or lost.</p>
+      <pre class="math">π = πᵉ − κ(u − u*) + supply shock
+  = 3.0 − 1.0 × (−1.10) + 4.0
+  = 3.0 + 1.10 + 4.0
+  = <b>8.10%</b></pre>
+      <p>Canadian CPI peaked at <strong>8.1% in June 2022</strong>. Three assumptions and two rules of thumb land on the actual print &mdash; which is the point of the exercise, not a coincidence to be proud of.</p>
+    </div></div>
+
+    <div class="step"><div class="num">4</div><div class="sb">
+      <h4>Decompose it &mdash; this is the part that earns marks</h4>
+      <p>Anyone can compute 8.1%. The analytical move is splitting it into pieces a policymaker can and cannot act on.</p>
+      <pre class="math">  Target / baseline expectation            2.00 pp    <i>where πᵉ should have been</i>
+  Expectations drift  (3.0 − 2.0)          1.00 pp    <i>credibility slipping</i>
+  Demand pressure     −κ(u − u*)           1.10 pp    <i>the output gap</i>
+  Supply shock        energy, food, freight 4.00 pp   <i>outside the Bank's reach</i>
+                                          ────────
+  <b>Total inflation                          8.10 pp</b>   <i>✓ cross-foots to step 3</i>
+
+  Bank of Canada can act on:  1.00 + 1.10  =  2.10 pp   <i>26% of it</i>
+  Bank of Canada cannot:                      4.00 pp   <i>49% of it</i></pre>
+      <p><strong>What this tells you:</strong> roughly half the inflation was a supply shock that rate hikes are useless against &mdash; which is the honest case for the &ldquo;transitory&rdquo; view. The counter-case is the 1.00pp of drift, because drift <b>compounds</b>: this year&rsquo;s realised inflation becomes next year&rsquo;s expectation, and then the shock has become permanent. That is the entire 2021&ndash;22 debate, in two numbers.</p>
+    </div></div>
+
+    <div class="step"><div class="num">5</div><div class="sb">
+      <h4>Hold everything else fixed and move only expectations</h4>
+      <p>Same output gap, same shock, same labour market. Only the number in people&rsquo;s heads changes.</p>
+      <pre class="math">πᵉ = 2.0  (anchored)   →  π = 2.0 + 1.10 + 4.0  =  <b> 7.10%</b>
+πᵉ = 3.0  (drifting)   →  π = 3.0 + 1.10 + 4.0  =  <b> 8.10%</b>
+πᵉ = 5.0  (un-anchored)→  π = 5.0 + 1.10 + 4.0  =  <b>10.10%</b>
+
+Span attributable to expectations alone:  3.00 pp
+Span attributable to the entire output gap: 1.10 pp   <i>expectations are ~3× as powerful</i></pre>
+      <p><strong>Comment:</strong> a variable no statistical agency measures, that exists only as a belief, moves inflation three times as much as the actual state of the economy. This is why central bank communication is not public relations &mdash; it is the instrument. It is also why the Bank hiked from 0.25% to 5.00% in sixteen months and said loudly that it would keep going: the visible aggression was aimed at &pi;<sup>e</sup>, not directly at the output gap.</p>
+    </div></div>
+
+    <div class="step"><div class="num">6</div><div class="sb">
+      <h4>The bill for letting expectations slip &mdash; the sacrifice ratio</h4>
+      <p>The shock has gone, but &pi;<sup>e</sup> is still 3.0%. Solve backwards for the gap that delivers 2%.</p>
+      <pre class="math">Substitute Okun into Phillips to get π in terms of the gap directly:
+  π = πᵉ − κ(−0.5 × gap) + shock  =  πᵉ + 0.5 × gap + shock
+
+Set π = 2.0, πᵉ = 3.0, shock = 0:
+  2.0 = 3.0 + 0.5 × gap
+  0.5 × gap = −1.0
+  <b>gap = −2.00%</b>      <i>the economy must run 2% BELOW capacity</i>
+
+And the unemployment that implies:
+  u − u* = −0.5 × (−2.00) = +1.00 pp
+  u = 6.0 + 1.00 = <b>7.00%</b></pre>
+      <p>That is the cost of the 1.00pp of drift: a deliberately weak economy and unemployment at 7% until the belief resets. Primer 01 records exactly this &mdash; Canadian unemployment drifting &ldquo;up toward 7 percent as the economy cooled under higher interest rates.&rdquo; <strong>The recession is not the punishment for the supply shock. It is the punishment for the expectations drift</strong> &mdash; and that is why keeping &pi;<sup>e</sup> anchored is worth so much.</p>
+    </div></div>
+  </div>
+
+  <h3>The answers</h3>
+  <div class="tw"><table>
+    <caption>P4 summary</caption>
+    <tbody>
+      <tr><td>(a) Output gap</td><td class="n">+2.20%</td></tr>
+      <tr><td>(b) Unemployment (Okun)</td><td class="n">4.90%</td></tr>
+      <tr><td>(c) Inflation (Phillips)</td><td class="n">8.10%</td></tr>
+      <tr><td>(d) Decomposition &mdash; baseline / drift / demand / supply</td><td class="n">2.00 / 1.00 / 1.10 / 4.00 pp</td></tr>
+      <tr><td>(e) Inflation if &pi;<sup>e</sup> = 2.0 / 3.0 / 5.0</td><td class="n">7.10 / 8.10 / 10.10 %</td></tr>
+      <tr class="tot"><td>(f) Gap and unemployment needed to return to 2%</td><td class="n">−2.00% &nbsp;&middot;&nbsp; u = 7.00%</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note">Coefficients are stylised. The real Bank of Canada uses a large structural model, publishes potential output as a <i>range</i>, and revises it. But every one of its Monetary Policy Reports is telling this exact story in this exact order: where is the gap, what is it doing to the labour market, what is that doing to prices, and are expectations holding.</div>
+</section>
+
+<!-- ===================== P5 ===================== -->
+<section id="p5">
+  <h2>P5 &middot; Real interest rates and real wages</h2>
+  <div class="qtext">
+    <span class="lbl">The question, as set &mdash; self-set, exam-shaped</span>
+    <div class="body">Selected Canadian figures. Use the Fisher relation, exactly rather than approximately, and report both.</div>
+<pre class="given">                                  2021        2023
+────────────────────────────────────────────────────
+Bank of Canada policy rate         0.25%       5.00%
+CPI inflation                      4.80%       4.00%
+
+June 2022:   CPI inflation 8.1%,  average hourly wage growth 5.2%
+A 5-year fixed mortgage taken in 2021 at a nominal rate of 2.0%,
+with inflation averaging 4.0% over its term.</pre>
+    <div class="body"><b>Required:</b></div>
+    <ol type="a">
+      <li>Compute the real policy rate in 2021 and in 2023, approximately and exactly.</li>
+      <li>Compute the change in the real wage in June 2022.</li>
+      <li>Compute the real interest rate on the mortgage, and the cumulative real erosion of that debt over five years.</li>
+      <li>In two sentences, state who inflation transferred wealth from and to.</li>
+    </ol>
+  </div>
+
+  <h3>Working it through</h3>
+  <div class="steps">
+
+    <div class="step"><div class="num">1</div><div class="sb">
+      <h4>Fisher &mdash; the real rate is what is left after inflation eats</h4>
+      <p>Nominal is the number on the contract. Real is what it is worth in stuff. The approximation subtracts; the exact version divides, because the interest is earned on dollars that are themselves shrinking.</p>
+      <pre class="math">Approximation:  real ≈ nominal − inflation
+Exact (Fisher): (1 + real) = (1 + nominal) ÷ (1 + inflation)
+
+2021
+  Approx:  0.25 − 4.80                =  <b>−4.55%</b>
+  Exact:   (1.0025 ÷ 1.0480) − 1
+         = 0.95658 − 1                =  <b>−4.34%</b>
+
+2023
+  Approx:  5.00 − 4.00                =  <b>+1.00%</b>
+  Exact:   (1.0500 ÷ 1.0400) − 1
+         = 1.00962 − 1                =  <b>+0.96%</b></pre>
+      <p><strong>What the sign means:</strong> in 2021 the real rate was <i>deeply negative</i> &mdash; you were paid roughly 4.3% a year, in purchasing power, to borrow. Every incentive in the economy pointed at spending and borrowing now. That is not a side effect of the 2021 policy stance; it <i>was</i> the policy stance, and it is a large part of why the demand-side gap in P4 opened up.</p>
+    </div></div>
+
+    <div class="step"><div class="num">2</div><div class="sb">
+      <h4>The raise that was a pay cut</h4>
+      <p>Same arithmetic, different contract. Divide the wage index by the price index.</p>
+      <pre class="math">Real wage change = (1 + wage growth) ÷ (1 + inflation) − 1
+                 = (1.052 ÷ 1.081) − 1
+                 = 0.97317 − 1
+                 = <b>−2.68%</b>       <i>approx: 5.2 − 8.1 = −2.9pp</i></pre>
+      <p>A 5.2% raise &mdash; the largest most people had seen in a decade &mdash; and purchasing power fell 2.7%. This is the honest reply to &ldquo;wages go up too, so inflation doesn&rsquo;t matter.&rdquo; Wages reset once a year; prices reset weekly. <strong>The lag is the loss</strong>, and it falls on employees, not employers.</p>
+    </div></div>
+
+    <div class="step"><div class="num">3</div><div class="sb">
+      <h4>The mortgage that shrank on its own</h4>
+      <pre class="math">Real rate = (1.020 ÷ 1.040) − 1
+          = 0.98077 − 1
+          = <b>−1.92% per year</b>
+
+Cumulative over 5 years:
+  (1.020 ÷ 1.040)⁵ − 1  =  (0.980769)⁵ − 1
+                        =  0.90748 − 1
+                        =  <b>−9.25%</b></pre>
+      <p>Before repaying a single dollar of principal, the real burden of that debt fell by more than nine percent, purely because the dollars used to repay it are worth less. The lender absorbed that loss. <strong>Nobody signed a contract agreeing to this transfer &mdash; it happened because inflation came in above what both parties priced in when the rate was set.</strong> That is the definition of unexpected inflation, and it is why the <i>unexpected</i> part is what does the damage.</p>
+    </div></div>
+
+    <div class="step"><div class="num">4</div><div class="sb">
+      <h4>The two-sentence answer</h4>
+      <p>Inflation transferred wealth <strong>from</strong> lenders, savers, people on fixed or slow-adjusting incomes, and anyone holding nominal assets &mdash; <strong>to</strong> borrowers with fixed-rate debt, owners of real assets such as housing and commodities, governments servicing nominal debt, and firms with the pricing power to raise prices faster than their costs rose. Because the transfer is driven by the <i>unexpected</i> component, it lands hardest on whoever was least able to see it coming or least able to reprice &mdash; which is systematically the households at the bottom, not the institutions at the top.</p>
+    </div></div>
+  </div>
+
+  <h3>The answers</h3>
+  <div class="tw"><table>
+    <caption>P5 summary</caption>
+    <thead><tr><th></th><th class="n">Approximate</th><th class="n">Exact</th></tr></thead>
+    <tbody>
+      <tr><td>(a) Real policy rate, 2021</td><td class="n">−4.55%</td><td class="n">−4.34%</td></tr>
+      <tr><td>(a) Real policy rate, 2023</td><td class="n">+1.00%</td><td class="n">+0.96%</td></tr>
+      <tr><td>(b) Real wage change, June 2022</td><td class="n">−2.90pp</td><td class="n">−2.68%</td></tr>
+      <tr><td>(c) Real mortgage rate</td><td class="n">−2.00%</td><td class="n">−1.92%</td></tr>
+      <tr class="tot"><td>(c) Real erosion of the debt over 5 years</td><td class="n">&mdash;</td><td class="n">−9.25%</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- ===================== P6 ===================== -->
+<section id="p6">
+  <h2>P6 &middot; Growth without getting richer</h2>
+  <div class="qtext">
+    <span class="lbl">The question, as set &mdash; self-set, exam-shaped</span>
+<pre class="given">                                  Year A        Year B
+──────────────────────────────────────────────────────
+Real GDP ($ billions)             2,500.0       2,548.0
+Total hours worked (millions)    33,300.0      34,000.0
+Population (millions)                40.0          41.0</pre>
+    <div class="body"><b>Required:</b></div>
+    <ol type="a">
+      <li>Compute labour productivity (real GDP per hour worked) in each year.</li>
+      <li>Compute the growth rates of real GDP, hours worked and labour productivity, and verify the identity linking them.</li>
+      <li>Compute real GDP per capita in each year and its growth rate.</li>
+      <li>Explain to a non-economist how the economy grew while the average person got poorer.</li>
+      <li>Potential output growth equals labour force growth plus productivity growth. If the labour force grows 1.8%, what is potential growth? What productivity growth would be needed for potential growth of 2.5%?</li>
+    </ol>
+  </div>
+
+  <h3>Working it through</h3>
+  <div class="steps">
+
+    <div class="step"><div class="num">1</div><div class="sb">
+      <h4>Get the units right before touching a calculator</h4>
+      <p>Billions of dollars over millions of hours. Convert GDP to millions so the units cancel into dollars per hour, otherwise you will be out by a factor of a thousand and not notice.</p>
+      <pre class="math">Year A:  $2,500.0 bn = $2,500,000 mn
+         2,500,000 ÷ 33,300  =  <b>$75.08 per hour</b>
+
+Year B:  $2,548.0 bn = $2,548,000 mn
+         2,548,000 ÷ 34,000  =  <b>$74.94 per hour</b></pre>
+      <p>Sanity check: an advanced economy produces on the order of $70&ndash;90 of output per hour worked. If you got $75,000 or $0.075, you dropped a conversion.</p>
+    </div></div>
+
+    <div class="step"><div class="num">2</div><div class="sb">
+      <h4>Three growth rates, and the identity that binds them</h4>
+      <pre class="math">Real GDP growth   = (2,548.0 ÷ 2,500.0) − 1  =  48.0 ÷ 2,500  =  <b>+1.920%</b>
+Hours growth      = (34,000 ÷ 33,300)  − 1   =  700 ÷ 33,300  =  <b>+2.102%</b>
+Productivity      = (74.94 ÷ 75.08)    − 1                    =  <b>−0.178%</b>
+
+Verify the identity  (1+GDP) = (1+hours) × (1+productivity):
+  1.02102 × 0.99822  =  1.01920   <i>✓ matches GDP growth exactly</i>
+
+Approximation:  1.920 − 2.102 = −0.182   <i>close enough at these rates</i></pre>
+      <p><strong>Read the signs.</strong> Output rose. Hours rose <i>more</i>. So every hour worked produced slightly less than the year before. The economy is bigger and less efficient at the same time &mdash; growth bought entirely with labour input.</p>
+    </div></div>
+
+    <div class="step"><div class="num">3</div><div class="sb">
+      <h4>Per capita &mdash; the number that actually describes a life</h4>
+      <pre class="math">Year A:  2,500.0 bn ÷ 40.0 mn  =  <b>$62,500 per person</b>
+Year B:  2,548.0 bn ÷ 41.0 mn  =  <b>$62,146 per person</b>
+
+Growth  = (62,146 ÷ 62,500) − 1  =  <b>−0.566%</b>
+
+Cross-check against population growth:
+  Population growth = (41.0 ÷ 40.0) − 1 = +2.500%
+  1.01920 ÷ 1.02500 = 0.99434  →  −0.566%   <i>✓ same answer, two routes</i></pre>
+    </div></div>
+
+    <div class="step"><div class="num">4</div><div class="sb">
+      <h4>The non-economist version</h4>
+      <p>Think of it as a pizza restaurant. Last year it made 2,500 pizzas with 100 staff. This year it made 2,548 pizzas &mdash; more pizza, the owner announces record output &mdash; but it hired 102 staff to do it, and there are now 105 people expecting a slice instead of 100. Each cook produced slightly fewer pizzas per shift, and each person at the table got a smaller piece.</p>
+      <pre class="math">Bigger economy       +1.92%   ← headline, true
+More hours worked    +2.10%   ← where all of it came from
+Output per hour      −0.18%   ← the economy got slightly worse at its job
+More people to share +2.50%   ← the denominator
+                     ───────
+Slice per person     −0.57%   ← what anyone actually experiences</pre>
+      <p><strong>The general rule worth carrying out of this course:</strong> growth from <i>more input</i> raises GDP and nothing else. Growth from <i>higher productivity</i> is the only kind that raises living standards, and it is the only kind that compounds &mdash; because you can only add hours until everyone is working, whereas output per hour has no ceiling.</p>
+    </div></div>
+
+    <div class="step"><div class="num">5</div><div class="sb">
+      <h4>What the speed limit is set to</h4>
+      <pre class="math">Potential growth = labour force growth + productivity growth
+                 = 1.80% + (−0.178%)
+                 = <b>1.62%</b>
+
+For potential growth of 2.5% with the labour force at 1.8%:
+  (1 + 0.025) ÷ (1 + 0.018) − 1  =  1.025 ÷ 1.018 − 1  =  <b>+0.69%</b>
+  <i>(the additive shortcut gives 2.5 − 1.8 = 0.70% — fine here)</i>
+
+Required swing in productivity growth:  −0.18%  →  +0.69%  =  0.87pp</pre>
+      <p>Note what this rules out. You cannot reach 2.5% potential growth by adding more people indefinitely &mdash; immigration raises both the numerator and the population, so it lifts GDP without lifting GDP <i>per capita</i>. You reach it by moving that second term, which means investment, technology and better use of the skills already here. <strong>This is exactly why the Bank of Canada called weak productivity an emergency, and it is the same argument as Session 3&rsquo;s &ldquo;will the next generation be richer?&rdquo;</strong> &mdash; that question is asking whether this one number stays positive for thirty years.</p>
+    </div></div>
+  </div>
+
+  <h3>The answers</h3>
+  <div class="tw"><table>
+    <caption>P6 summary</caption>
+    <thead><tr><th></th><th class="n">Year A</th><th class="n">Year B</th><th class="n">Growth</th></tr></thead>
+    <tbody>
+      <tr><td>(a) Labour productivity, $/hour</td><td class="n">75.08</td><td class="n">74.94</td><td class="n cr">−0.18%</td></tr>
+      <tr><td>(b) Real GDP, $bn</td><td class="n">2,500.0</td><td class="n">2,548.0</td><td class="n">+1.92%</td></tr>
+      <tr><td>(b) Hours worked, mn</td><td class="n">33,300</td><td class="n">34,000</td><td class="n">+2.10%</td></tr>
+      <tr><td>(c) Real GDP per capita, $</td><td class="n">62,500</td><td class="n">62,146</td><td class="n cr">−0.57%</td></tr>
+      <tr class="tot"><td>(e) Potential growth &mdash; and what 2.5% would need</td><td class="n">&mdash;</td><td class="n">1.62%</td><td class="n">+0.69% prod.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- ===================== ASSIGNED PREP ===================== -->
+<section id="prep">
+  <h2>The assigned class prep, answered</h2>
+  <p class="lede">These are the actual &ldquo;Guide to Preparation&rdquo; questions from Canvas, verbatim. They are discussion prompts, so there is no key &mdash; what follows is <strong>a defensible position with the numbers attached</strong>, which is what gets you called on.</p>
+  <button class="toggle" id="quizToggle" type="button"><span class="pip"></span><span id="quizLabel">Hide answers &amp; quiz me</span></button>
+
+  <div class="q">
+    <div class="q-meta">Session 2 &middot; Sept 14 &middot; Headwinds and Tailwinds for the Canadian Economy</div>
+    <div class="qtext"><span class="lbl">As set on Canvas</span><div class="body">&ldquo;I am not asking you for a formal forecast. Instead, I would like you to sketch out notes around three future scenarios: your <b>baseline</b> view of what is likely to happen over the next year or so; a more <b>optimistic</b> scenario; and a deeply <b>pessimistic</b> scenario. How would these scenarios differ in terms of key economic outcomes such as GDP growth and unemployment? What would be the main triggers or causes of each?&rdquo;</div></div>
+    <button class="reveal" type="button">Reveal</button>
+    <div class="ans">
+      <div class="tw"><table>
+        <caption>Three scenarios &mdash; my own judgement, not data. The triggers column is what actually gets debated.</caption>
+        <thead><tr><th>Scenario</th><th class="n">Real GDP growth</th><th class="n">Unemployment</th><th class="n">CPI</th><th>Triggers &mdash; what has to happen</th></tr></thead>
+        <tbody>
+          <tr><td><b>Optimistic</b><br><span class="sm">~20%</span></td><td class="n">2.0&ndash;2.5%</td><td class="n">5.5&ndash;6.0%</td><td class="n">~2%</td><td>A durable CUSMA settlement removes the tariff overhang; postponed business investment unfreezes all at once; BoC cuts further with inflation at target; housing starts respond; interprovincial trade barriers actually get dismantled.</td></tr>
+          <tr><td><b>Baseline</b><br><span class="sm">~55%</span></td><td class="n">1.0&ndash;1.5%</td><td class="n">6.5&ndash;7.0%</td><td class="n">2&ndash;2.5%</td><td>Muddling through. Tariff uncertainty persists without escalating, so firms defer capex rather than cancel it. Consumption carries growth; a small negative output gap keeps inflation near target; unemployment drifts sideways. Productivity stays flat, so GDP per capita is roughly unchanged.</td></tr>
+          <tr><td><b>Pessimistic</b><br><span class="sm">~25%</span></td><td class="n">−1% to 0%</td><td class="n">8%+</td><td class="n">3%+ <span class="sm">(stagflationary)</span></td><td class="cr">Tariffs broaden and CUSMA fails; export-facing manufacturing and energy retrench; a mortgage-renewal wall meets a softening job market; household deleveraging hits consumption. The nasty part: tariffs are a <b>supply</b> shock, so output falls <i>and</i> prices rise &mdash; the BoC cannot cut freely into it.</td></tr>
+        </tbody>
+      </table></div>
+      <div class="ex">
+        <span class="lb">How to build the argument, not just the table</span>
+        <div><b>1 &middot; Name the headwinds and tailwinds explicitly.</b> Headwinds: U.S. tariff pressure and CUSMA uncertainty; flat productivity; high household debt with renewals repricing upward; concentrated export exposure (roughly three-quarters of exports go to one customer). Tailwinds: inflation back at target giving the BoC room; a policy rate at 2.25% rather than 5%; strong population growth supporting aggregate demand; fiscal capacity; resource endowments in a world short of energy and critical minerals.</div>
+        <div><b>2 &middot; Anchor each scenario in the framework on this page</b> rather than in vibes. Every scenario above is really a claim about the <a href="#c6">output gap</a>: optimistic closes it, baseline holds a small negative one, pessimistic blows it wide open. Then Okun gives you the unemployment column and Phillips gives you the CPI column. Say that out loud in class &mdash; it is the difference between a forecast and a mechanism.</div>
+        <div><b>3 &middot; Have one asymmetry ready.</b> Mine: the pessimistic case is worse than the optimistic case is good, because tariffs hit supply and demand at once, and a central bank facing a supply shock with softening employment has no clean move. That asymmetry is why I would not run the business on the baseline alone.</div>
+      </div>
+      <div class="note">Use the Lucid visualisation tools linked on the Canvas page before class &mdash; GDP by industry and component, and exports by country. Walking in with one concrete number about which <i>industry</i> carries the exposure beats a general view about tariffs.</div>
+    </div>
+  </div>
+
+  <div class="q">
+    <div class="q-meta">Session 3 &middot; Sept 16 &middot; Economic Prosperity and Progress</div>
+    <div class="qtext"><span class="lbl">As set on Canvas</span><div class="body">&ldquo;Do you believe the next generation will be &lsquo;richer&rsquo; than yours? Why or why not?&rdquo;</div></div>
+    <button class="reveal" type="button">Reveal</button>
+    <div class="ans">
+      <blockquote>Yes on consumption, no on the things people actually mean by rich &mdash; and the gap between those two answers is the interesting part.<br><br>
+      The case for yes is arithmetic. Real GDP per capita has compounded for two centuries through wars, depressions and two once-in-a-generation crises, and the measured series almost certainly <i>understates</i> the gain, because quality improvement, new goods and free digital services are systematically missed. A generation that grows up with AI tools and treatments that do not exist today will consume something the current statistics cannot price.<br><br>
+      The case for no is that Canada&rsquo;s growth has lately come from more people working more hours rather than from each hour producing more &mdash; and only the second one compounds. Flat productivity plus an aging population is a recipe for GDP that grows while GDP per capita does not. Layer on the two components where the next generation is genuinely behind &mdash; housing costs relative to income, and the climate liability nobody is subtracting from the national accounts &mdash; and &ldquo;richer in consumption, poorer in security&rdquo; is a coherent position.<br><br>
+      My actual answer: yes, but by less than history would predict, and unevenly &mdash; and whether I am right turns on one variable, productivity growth, which is exactly the one Canada is currently failing at.</blockquote>
+      <div class="ex"><span class="lb">The move that makes this an A answer</span><div>Do not argue about optimism. <b>Convert the question into a claim about a measurable variable</b>, then say what would change your mind. Here: &ldquo;this is a forecast of productivity growth over thirty years, and here is the number I would watch.&rdquo; Matt Yglesias&rsquo; assigned piece, <i>Nostalgia Economics is Totally Wrong</i>, is doing exactly this &mdash; he wins by dragging a vibes argument onto measurable ground.</div></div>
+    </div>
+  </div>
+
+  <div class="q">
+    <div class="q-meta">Session 3 &middot; Sept 16 &middot; the second prompt</div>
+    <div class="qtext"><span class="lbl">As set on Canvas</span><div class="body">&ldquo;What do <i>you</i> mean by &lsquo;rich&rsquo; anyway? How does your definition of rich align with economists&rsquo; measure of GDP or GDP per capita?&rdquo;</div></div>
+    <button class="reveal" type="button">Reveal</button>
+    <div class="ans">
+      <div class="tw"><table>
+        <caption>Where my definition and GDP per capita agree &mdash; and where they part company</caption>
+        <thead><tr><th>What I mean by rich</th><th>Does GDP per capita capture it?</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>Being able to buy more and better things</td><td><span class="pill v">Yes, well</span></td><td>Primer 03: real GDP tracks real consumption per person closely over long horizons &mdash; both roughly quadrupled in Canada since 1970. Dynan &amp; Sheiner confirm the fidelity.</td></tr>
+          <tr><td>Health and how long I live</td><td><span class="pill v">Indirectly</span></td><td>Strongly correlated across countries, but it is the HDI, not GDP, that puts life expectancy in the index directly.</td></tr>
+          <tr><td>Time &mdash; leisure, not working a second job</td><td><span class="pill f">No</span></td><td>GDP <i>rises</i> when the work week lengthens. A country that got richer by working less would show up as poorer.</td></tr>
+          <tr><td>Security &mdash; not one shock from disaster</td><td><span class="pill f">No</span></td><td>GDP is a flow, not a balance sheet, and it says nothing about volatility or insurance.</td></tr>
+          <tr><td>Whether <i>typical</i> people are doing well</td><td><span class="pill f">No &mdash; the big one</span></td><td>It is an average. Thailand and South Africa both sat near $7&ndash;8k per capita in the mid-2010s; Thailand&rsquo;s <b>median</b> income was more than double. In South Africa the top 10% take ~65% of income and the bottom half share 6%.</td></tr>
+          <tr><td>Unpaid work that makes a life run</td><td><span class="pill f">No</span></td><td>Childcare, eldercare and housework are outside the perimeter by design. Hire it out and GDP rises for the same work.</td></tr>
+          <tr><td>Leaving the place intact for the next lot</td><td><span class="pill f">No</span></td><td>GDP is gross &mdash; no depreciation, no resource depletion, no pollution subtracted. Adjusted Net Savings and SEEA exist precisely to fill this hole.</td></tr>
+        </tbody>
+      </table></div>
+      <blockquote>My definition of rich is <b>median</b> consumption plus time plus security. GDP per capita is an excellent proxy for the first term, silent on the second and third, and &mdash; being a mean &mdash; actively misleading about the first in an unequal society.<br><br>
+      But the right conclusion is not that GDP is the wrong measure. It is that GDP is the right measure <i>of what it measures</i>. It was invented in the 1930s to count production and the capacity to mobilise it, and it does that better than any alternative anyone has built. The mistake is not using GDP; it is using GDP <b>alone</b>. Read it next to median income, the employment rate, life expectancy and Adjusted Net Savings, and you have something close to what I mean by rich.</blockquote>
+      <div class="note">Have one of the beyond-GDP measures from Primer 04&rsquo;s appendix ready by name &mdash; HDI, the OECD Better Life Index, Adjusted Net Savings, or SEEA. Naming a specific alternative and what it adds is worth more than a general complaint that GDP is incomplete.</div>
+    </div>
+  </div>
+</section>
+
+<div class="group"><h2>Reference</h2><div class="ln"></div></div>
+
+<section id="glossary">
+  <h2>The words, in plain English</h2>
+  <div class="tw"><table>
+    <thead><tr><th>Term</th><th>What it actually means</th><th>Concrete case</th></tr></thead>
+    <tbody>
+      <tr><td><b>Real<br>= inflation-adjusted<br>= in constant dollars<br>= at 2017 prices</b></td><td><b>All four mean one thing:</b> the price effect has been taken out, so you are looking at quantities.</td><td class="sm">Real GDP +4% vs nominal +14.4% in P2.</td></tr>
+      <tr><td><b>Nominal<br>= current dollars<br>= at market prices</b></td><td><b>All three mean:</b> as it actually happened, price change included.</td><td class="sm">The $1,487.20 figure in P2.</td></tr>
+      <tr><td><b>Output gap<br>= slack (if negative)<br>= excess demand (if positive)<br>= the cycle</b></td><td><b>All four:</b> actual output minus potential output, as a % of potential.</td><td class="sm">+2.20% in P4.</td></tr>
+      <tr><td><b>Potential output<br>= trend output<br>= capacity<br>= the supply side</b></td><td><b>All four:</b> what the economy can produce sustainably without inflation accelerating. Estimated, never observed.</td><td class="sm">$2,600bn in P4.</td></tr>
+      <tr><td><b>NAIRU<br>= the natural rate<br>= u*<br>= full employment</b></td><td><b>All four:</b> the unemployment rate at which inflation is stable. Not zero &mdash; frictional and structural unemployment never go away.</td><td class="sm">6.0% in P4.</td></tr>
+      <tr><td><b>Disinflation</b></td><td>Inflation falling. <b>Prices are still rising</b>, just more slowly. 2023&ndash;24.</td><td class="sm">8.1% &rarr; 3.9% &rarr; 2.4%</td></tr>
+      <tr><td><b>Deflation</b></td><td>The price level actually <b>falling</b>. Rare, and much more dangerous than inflation.</td><td class="sm">Japan, 1990s&ndash;2000s.</td></tr>
+      <tr><td><b>Stagflation</b></td><td>Stagnant output and high inflation at the same time. The combination the Phillips curve said was impossible &mdash; until supply shocks explained it.</td><td class="sm">1973&ndash;82. Also the tariff risk today.</td></tr>
+      <tr><td><b>Core inflation</b></td><td>Headline with the volatile bits removed, to show the underlying trend. In Canada, watch CPI-trim and CPI-median.</td><td class="sm">P1(e): 8.0% headline &rarr; 7.3% ex-food.</td></tr>
+      <tr><td><b>Anchored expectations</b></td><td>People still believe inflation returns to 2%, even while it prints 8%. The most valuable asset a central bank owns.</td><td class="sm">Worth 3pp of inflation in P4(e).</td></tr>
+      <tr><td><b>GDP deflator</b></td><td>The price index implied by the accounts: nominal ÷ real × 100. Covers production, so it includes exports and excludes imports.</td><td class="sm">110.0 in P2.</td></tr>
+      <tr><td><b>GNI<br>= GNP (older name)</b></td><td>Income accruing to a country&rsquo;s residents wherever it is earned. GDP is about <i>where</i>; GNI is about <i>who</i>.</td><td class="sm">Ireland&rsquo;s GNI* exists because its GDP stopped describing Irish life.</td></tr>
+      <tr><td><b>Labour productivity</b></td><td>Real GDP per hour worked. The only source of permanently rising living standards.</td><td class="sm">$74.94/hour in P6.</td></tr>
+      <tr><td><b>TFP</b></td><td>Total factor productivity &mdash; the growth left over after accounting for more workers and more machines. Technology, management, competition, institutions.</td><td class="sm">The residual, and historically the biggest piece.</td></tr>
+      <tr><td><b>Fiscal multiplier</b></td><td>The change in GDP from a $1 change in government spending or taxation. Genuinely contested &mdash; the primers say so explicitly.</td><td class="sm">Comes back in the fiscal policy module.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="traps">
+  <h2>Traps, formulas, files</h2>
+  <div class="tw"><table>
+    <caption>Where marks actually get lost</caption>
+    <tbody>
+      <tr><td>Saying &ldquo;inflation is falling so prices are coming down&rdquo;</td><td>Falling inflation means prices rise more slowly. The <b>level</b> stays up. Only deflation brings it down.</td></tr>
+      <tr><td>Adding real growth and inflation to get nominal</td><td>They multiply: (1+r)(1+&pi;). Fine below ~3%, wrong at 2022 rates. P2(d).</td></tr>
+      <tr><td>Dividing unemployment by the population</td><td>The denominator is the <b>labour force</b>. Participation and employment rates use working-age population. P3.</td></tr>
+      <tr><td>&ldquo;The rate rose, so the market weakened&rdquo;</td><td>Check whether the labour force grew. Use the <b>employment rate</b> as the tiebreaker. P3(d).</td></tr>
+      <tr><td>Subtracting a category&rsquo;s contribution to get core</td><td>Removing it rescales every other weight. Recompute the index. P1(e) &mdash; 7.3%, not 5.5%.</td></tr>
+      <tr><td>Sign errors in the Phillips curve</td><td>(u &minus; u*) is negative in a boom and it is being <i>subtracted</i>. Two flips. Write it out. P4(3).</td></tr>
+      <tr><td>Putting actual output in the gap&rsquo;s denominator</td><td>It is <b>potential</b> on the bottom. And potential is estimated, so the gap has error bars.</td></tr>
+      <tr><td>Counting intermediate goods in GDP</td><td>Final goods only, or sum value added. The flour is already inside the bread.</td></tr>
+      <tr><td>&ldquo;Imports subtract from GDP, so they hurt us&rdquo;</td><td>The minus sign removes what C, I and G wrongly added. It is bookkeeping. Say this when tariffs come up.</td></tr>
+      <tr><td>Treating a supply shock like a demand shock</td><td>Rate hikes cannot make oil cheaper. The Bank looks through a one-off &mdash; <i>unless</i> expectations move.</td></tr>
+      <tr><td>Quoting one quarter&rsquo;s first GDP release</td><td>It gets revised twice. Primer 04: never build a strong conclusion on a first print.</td></tr>
+      <tr><td>Calling two negative quarters a recession</td><td>No agency uses that rule. The C.D. Howe Business Cycle Council (Canada) and NBER (U.S.) look for significant, widespread, sustained decline across employment, income and sales.</td></tr>
+      <tr><td>Confusing GDP with GNI, or with wealth</td><td>GDP = production, by location, as a flow. Not ownership, not a balance sheet.</td></tr>
+      <tr><td>Adding chained real components</td><td>They do not sum to chained real GDP. That is the method, not your arithmetic.</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="grid2">
+    <div class="tw"><table><caption>Formula sheet</caption>
+      <tbody>
+        <tr><td>Expenditure GDP</td><td class="n">Y = C + I + G + NX</td></tr>
+        <tr><td>Real GDP</td><td class="n">Nominal ÷ (deflator ÷ 100)</td></tr>
+        <tr><td>GDP deflator</td><td class="n">(Nominal ÷ Real) × 100</td></tr>
+        <tr><td>Nominal growth</td><td class="n">(1+r)(1+π) − 1</td></tr>
+        <tr><td>CPI</td><td class="n">(cost of fixed basket now ÷ base) × 100</td></tr>
+        <tr><td>Inflation rate</td><td class="n">(CPI₁ − CPI₀) ÷ CPI₀</td></tr>
+        <tr><td>Category contribution</td><td class="n">weight × own price change</td></tr>
+        <tr><td>Unemployment rate</td><td class="n">Unemployed ÷ Labour force</td></tr>
+        <tr><td>Participation rate</td><td class="n">Labour force ÷ Working-age pop</td></tr>
+        <tr><td>Employment rate</td><td class="n">Employed ÷ Working-age pop</td></tr>
+        <tr><td>Output gap</td><td class="n">(Y − Y*) ÷ Y* × 100</td></tr>
+        <tr><td>Okun&rsquo;s law</td><td class="n">u − u* = −½ × gap</td></tr>
+        <tr><td>Phillips curve</td><td class="n">π = πᵉ − κ(u − u*) + shock</td></tr>
+        <tr><td>Fisher, exact</td><td class="n">(1+i) ÷ (1+π) − 1</td></tr>
+        <tr><td>Labour productivity</td><td class="n">Real GDP ÷ hours worked</td></tr>
+        <tr><td>Growth identity</td><td class="n">ΔY = Δhours + Δproductivity</td></tr>
+        <tr class="tot"><td>Potential growth</td><td class="n">Δlabour force + Δproductivity</td></tr>
+      </tbody></table></div>
+    <div class="tw"><table><caption>Materials in this repo</caption>
+      <tbody>
+        <tr><td class="sm">session-01/Primer-01_Text_Understanding-the-Macroeconomy.pdf</td><td class="sm">The dashboard, four markets, trend vs cycle. &sect;1, &sect;4, &sect;5, &sect;6.</td></tr>
+        <tr><td class="sm">session-01/Slides_Primer-01_&hellip;.pdf</td><td class="sm">Condensed deck version.</td></tr>
+        <tr><td class="sm">session-01/Audiocast_Primer-01_&hellip;.mp3</td><td class="sm">Audio version of the same primer.</td></tr>
+        <tr><td class="sm">session-03/Text_Primer-03_GDP-as-a-Measure.pdf</td><td class="sm">Definition, three approaches, nominal vs real, GDP as a welfare proxy. &sect;1, &sect;2.</td></tr>
+        <tr><td class="sm">session-03/Text_Primer-04_GDP-in-Practice.pdf</td><td class="sm">Measurement bias, the perimeter, disasters, digital, globalisation, beyond-GDP appendix. &sect;1, &sect;9.</td></tr>
+        <tr><td class="sm">session-01/BLOGROLL_ANNOTATED_SEPT 2025.docx</td><td class="sm">The instructor&rsquo;s annotated source list. Worth mining once.</td></tr>
+        <tr><td class="sm">course/CourseOutline_7059.pdf</td><td class="sm">Full outline.</td></tr>
+        <tr><td class="sm">session-0n/canvas-&hellip;.html</td><td class="sm">Saved Canvas session pages, sessions 1&ndash;5.</td></tr>
+        <tr><td class="sm">Ask GMM</td><td class="sm">The course&rsquo;s own AI tutor, trained on the primers &mdash; use it for terminology disputes, since it is aligned to this textbook.</td></tr>
+        <tr><td class="sm"><a href="https://notebooklm.google.com/notebook/f9fecad2-38e0-4001-bdca-4820b1204395">NotebookLM &mdash; GMM Macro Foundations</a></td><td class="sm">Primers 01, 03 and 04 loaded as sources, plus the Session 2 Canvas page. Ask it anything and it answers with citations back to the exact paragraph &mdash; every &ldquo;sourced&rdquo; figure on this page was checked against it.</td></tr>
+        <tr><td class="sm">Video 1 &middot; Macro Fundamentals from Zero <span style="color:var(--ink-3)">&middot; 10:48</span></td><td class="sm">The nine concepts on this page, narrated in learning order. <span style="color:var(--ink-3)">~/Downloads/gemini-notebook/GMM/01-macro-fundamentals-from-zero.mp4</span></td></tr>
+        <tr class="tot"><td class="sm">Video 2 &middot; Session 2 Prep &mdash; Headwinds and Tailwinds <span style="color:var(--ink-3)">&middot; 7:04</span></td><td class="sm">The three-scenario prep, the asymmetry argument, and what to do in the last hour before class. <span style="color:var(--ink-3)">~/Downloads/gemini-notebook/GMM/02-session-2-prep-headwinds-tailwinds.mp4</span></td></tr>
+      </tbody></table></div>
+  </div>
+</section>
+
+<section id="log">
+  <h2>Q&amp;A log</h2>
+  <p class="lede">Follow-up questions get appended here, newest first &mdash; diagram, answer, example.</p>
+
+  <div class="q">
+    <div class="q-meta">Q1 &middot; So how does raising an interest rate actually lower the price of groceries?</div>
+    <p class="lede">It does not, directly &mdash; and that is the honest answer. The policy rate is the rate banks lend to each other overnight. Nothing about it touches a tomato. It works through <strong>five channels, all of which reduce someone&rsquo;s spending</strong>, and the whole chain takes six to eight quarters.</p>
+    <figure><div class="dg pad0">
+      <svg class="d" viewBox="0 0 820 300" role="img" aria-label="The policy rate transmits to inflation through borrowing costs, housing, the exchange rate, asset prices and expectations.">
+        <rect class="d-box" x="14" y="116" width="150" height="68" rx="12" style="fill:var(--flag-soft);stroke:var(--flag)"/>
+        <text class="d-t t2" x="32" y="144" fill="var(--flag)">Policy rate</text>
+        <text class="d-s" x="32" y="164" fill="var(--flag)">overnight, bank-to-bank</text>
+
+        <path class="d-link" d="M168 150 C 196 150, 196 36, 224 36"/>
+        <path class="d-link" d="M168 150 C 196 150, 196 92, 224 92"/>
+        <path class="d-link" d="M168 150 L 224 150"/>
+        <path class="d-link" d="M168 150 C 196 150, 196 208, 224 208"/>
+        <path class="d-link acc" d="M168 150 C 196 150, 196 264, 224 264"/>
+
+        <rect class="d-box" x="224" y="12" width="276" height="48" rx="10"/>
+        <text class="d-s" x="240" y="32">1 &middot; Borrowing costs &mdash; loans, credit lines, car finance</text>
+        <text class="d-s" x="240" y="50" fill="var(--ink-3)">firms shelve capex, households delay big purchases</text>
+
+        <rect class="d-box" x="224" y="68" width="276" height="48" rx="10"/>
+        <text class="d-s" x="240" y="88">2 &middot; Housing &mdash; mortgage rates and renewals</text>
+        <text class="d-s" x="240" y="106" fill="var(--ink-3)">the fastest, hardest channel in Canada</text>
+
+        <rect class="d-box" x="224" y="126" width="276" height="48" rx="10"/>
+        <text class="d-s" x="240" y="146">3 &middot; Exchange rate &mdash; higher rates attract capital</text>
+        <text class="d-s" x="240" y="164" fill="var(--ink-3)">stronger loonie &rarr; cheaper imports &rarr; goods CPI down</text>
+
+        <rect class="d-box" x="224" y="184" width="276" height="48" rx="10"/>
+        <text class="d-s" x="240" y="204">4 &middot; Asset prices &mdash; equities, house values</text>
+        <text class="d-s" x="240" y="222" fill="var(--ink-3)">wealth effect: feel poorer, spend less</text>
+
+        <rect class="d-box acc" x="224" y="240" width="276" height="48" rx="10"/>
+        <text class="d-s" x="240" y="260" fill="var(--accent)">5 &middot; Expectations &mdash; &ldquo;they are serious about 2%&rdquo;</text>
+        <text class="d-s" x="240" y="278" fill="var(--accent)">instant, free, and the most powerful of the five</text>
+
+        <path class="d-link" d="M504 36 C 540 36, 540 132, 576 132"/>
+        <path class="d-link" d="M504 92 C 540 92, 540 140, 576 140"/>
+        <path class="d-link" d="M504 150 L 576 150"/>
+        <path class="d-link" d="M504 208 C 540 208, 540 160, 576 160"/>
+        <path class="d-link acc" d="M504 264 C 540 264, 540 168, 576 168"/>
+
+        <rect class="d-box" x="576" y="116" width="160" height="68" rx="12"/>
+        <text class="d-t t2" x="594" y="144">Total spending</text>
+        <text class="d-s" x="594" y="164">falls &rarr; output gap −</text>
+
+        <path class="d-link bad" d="M740 150 L 780 150"/>
+        <rect class="d-box bad" x="756" y="116" width="60" height="68" rx="12" style="opacity:0"/>
+        <text class="d-t t2" x="748" y="146" fill="var(--credit)">π ↓</text>
+      </svg>
+    </div>
+    <figcaption>Four of the five channels work by making someone poorer or making borrowing painful &mdash; they open a negative output gap on purpose. Channel 5 is free, instant, and the reason central bankers give speeches.</figcaption></figure>
+    <div class="ex">
+      <span class="lb">Example &mdash; why the lag makes this hard</span>
+      <div>A hike in March 2022 does not bite a household until their mortgage renews &mdash; possibly in 2027. Firms finish projects already underway. So the Bank is always <strong>steering a car whose wheel responds a year and a half later</strong>, using an estimate of potential output it cannot observe, against a shock it cannot see the end of.</div>
+      <div class="calc-line">This is why central banks overshoot in both directions — and why &ldquo;they should have moved sooner&rdquo; is always available with hindsight.</div>
+      <div>It also explains the sequencing in <a href="#c8">&sect;8</a>: channel 3 (the exchange rate, hitting imported goods) works in months, while channels 1, 2 and 4 reach services inflation only through the labour market, over years. Goods disinflate first. Services take the long road.</div>
+    </div>
+  </div>
+</section>
+
+</main>
+</div>
+
+<div class="wrap">
+<footer>4505 GMM &middot; Foundations, sessions 1&ndash;3 &middot; Worked solutions are my own &mdash; check against the posted key and Ask GMM. Figures not taken from the primers are illustrative and labelled as such.</footer>
+</div>
+
+<script>
+(function(){
+"use strict";
+var NS="http://www.w3.org/2000/svg";
+function E(n,a,t){var e=document.createElementNS(NS,n);for(var k in a){e.setAttribute(k,a[k]);}if(t!==undefined)e.textContent=t;return e;}
+function clear(s){while(s.firstChild)s.removeChild(s.firstChild);}
+function f1(v){return (Math.round(v*10)/10).toFixed(1);}
+function f2(v){return (Math.round(v*100)/100).toFixed(2);}
+function kpi(host,items){
+  host.innerHTML="";
+  items.forEach(function(it){
+    var d=document.createElement("div");d.className="kpi"+(it.tone?" "+it.tone:"");
+    d.innerHTML='<div class="k"></div><div class="v"></div><div class="s"></div>';
+    d.querySelector(".k").textContent=it.k;
+    d.querySelector(".v").textContent=it.v;
+    d.querySelector(".s").textContent=it.s||"";
+    host.appendChild(d);
+  });
+}
+function seg(id,cb){
+  var el=document.getElementById(id);if(!el)return;
+  el.addEventListener("click",function(e){
+    var b=e.target.closest("button");if(!b)return;
+    el.querySelectorAll("button").forEach(function(x){x.setAttribute("aria-pressed",String(x===b));});
+    cb(b.dataset.k);
+  });
+}
+function segSet(id,k){
+  var el=document.getElementById(id);if(!el)return;
+  el.querySelectorAll("button").forEach(function(x){x.setAttribute("aria-pressed",String(x.dataset.k===k));});
+}
+
+/* ==================== 1 · CPI BASKET ==================== */
+(function(){
+  var rows=document.getElementById("cpiRows");if(!rows)return;
+  var CATS=[
+    {n:"Shelter",                         w:28.7, core:true },
+    {n:"Transportation",                  w:16.9, core:false},
+    {n:"Food",                            w:16.7, core:false},
+    {n:"Household operations &amp; furnishings", w:14.4, core:true },
+    {n:"Recreation, education &amp; reading",    w: 9.6, core:true },
+    {n:"Health &amp; personal care",           w: 5.0, core:true },
+    {n:"Clothing &amp; footwear",              w: 4.5, core:true },
+    {n:"Alcohol, tobacco &amp; cannabis",      w: 4.2, core:true }
+  ];
+  var PRESETS={
+    now : [ 4.8,  0.5,  2.8,  2.0,  1.8,  2.5, -1.0,  3.0],
+    "2022":[ 6.8, 13.5,  9.4,  6.5,  4.5,  4.0,  1.5,  4.5],
+    svc : [ 5.0, -2.0,  1.0,  0.5,  3.5,  3.5, -2.5,  3.0]
+  };
+  var state=CATS.map(function(c,i){return {w:c.w,p:PRESETS.now[i],core:c.core};});
+
+  CATS.forEach(function(c,i){
+    var tr=document.createElement("tr");
+    tr.innerHTML =
+      "<td>"+c.n+"</td>"+
+      '<td class="n"><input data-f="w" data-i="'+i+'" type="number" step="0.1" style="width:76px;font-family:\'IBM Plex Mono\',monospace;font-size:12.5px;text-align:right;padding:4px 7px;border:1px solid var(--rule);border-radius:5px;background:var(--surface-2)"></td>'+
+      '<td class="n"><input data-f="p" data-i="'+i+'" type="number" step="0.1" style="width:76px;font-family:\'IBM Plex Mono\',monospace;font-size:12.5px;text-align:right;padding:4px 7px;border:1px solid var(--rule);border-radius:5px;background:var(--surface-2)"></td>'+
+      '<td class="n" data-c="'+i+'"></td>'+
+      '<td class="n"><input data-f="core" data-i="'+i+'" type="checkbox" style="accent-color:var(--accent);width:16px;height:16px"></td>';
+    rows.appendChild(tr);
+  });
+
+  rows.addEventListener("input",function(e){
+    var t=e.target,i=+t.dataset.i,f=t.dataset.f;if(isNaN(i)||!f)return;
+    if(f==="core") state[i].core=t.checked; else state[i][f]=parseFloat(t.value)||0;
+    draw(false);
+  });
+
+  function draw(sync){
+    var tw=0,head=0,coreNum=0,coreW=0,top={v:-99,n:""};
+    state.forEach(function(s,i){
+      if(sync){
+        rows.querySelector('[data-f="w"][data-i="'+i+'"]').value=s.w;
+        rows.querySelector('[data-f="p"][data-i="'+i+'"]').value=s.p;
+        rows.querySelector('[data-f="core"][data-i="'+i+'"]').checked=s.core;
+      }
+      tw+=s.w;
+      var c=s.w/100*s.p; head+=c;
+      if(s.core){coreNum+=c;coreW+=s.w;}
+      if(c>top.v){top.v=c;top.n=CATS[i].n.replace(/&amp;/g,"&");}
+      var cell=rows.querySelector('[data-c="'+i+'"]');
+      cell.textContent=(c>=0?"+":"")+f2(c);
+      cell.style.color=c<0?"var(--credit)":"var(--ink)";
+    });
+    var core=coreW>0?coreNum/coreW*100:0;
+    kpi(document.getElementById("cpiKpis"),[
+      {k:"Headline inflation",v:f2(head)+"%",s:"weighted average of every row",tone:head>3?"warn":"on"},
+      {k:"Core (rows ticked)",v:f2(core)+"%",s:"rescaled over "+f1(coreW)+"% of the basket"},
+      {k:"Biggest contributor",v:(top.v>=0?"+":"")+f2(top.v)+"pp",s:top.n},
+      {k:"Weights sum to",v:f1(tw)+"%",s:Math.abs(tw-100)<0.05?"balanced":"should be 100",tone:Math.abs(tw-100)<0.05?"":"warn"}
+    ]);
+
+    var svg=document.getElementById("cpiChart");clear(svg);
+    var x0=250,y=12,rowH=19,mxP=0,mxN=0;
+    state.forEach(function(s){var c=s.w/100*s.p; if(c>mxP)mxP=c; if(-c>mxN)mxN=-c;});
+    mxP=Math.max(mxP,0.4);
+    var zero=396, scale=Math.min(230/mxP, mxN>0.02?120/mxN:1e9);
+    svg.appendChild(E("line",{x1:zero,y1:6,x2:zero,y2:12+rowH*state.length,stroke:"var(--rule-strong)","stroke-width":1}));
+    state.forEach(function(s,i){
+      var c=s.w/100*s.p, len=Math.abs(c)*scale, yy=y+i*rowH;
+      svg.appendChild(E("text",{x:x0-12,y:yy+11,"text-anchor":"end",class:"d-s"},CATS[i].n.replace(/&amp;/g,"&")));
+      svg.appendChild(E("rect",{x:c>=0?zero:zero-len,y:yy+2,width:Math.max(len,1),height:12,rx:2,
+        fill:c>=0?"var(--accent-soft)":"var(--credit-soft)",stroke:c>=0?"var(--accent)":"var(--credit)"}));
+      svg.appendChild(E("text",{x:(c>=0?zero+len+7:zero-len-7),y:yy+12,"text-anchor":c>=0?"start":"end",class:"d-s",
+        fill:c>=0?"var(--accent)":"var(--credit)"},(c>=0?"+":"")+f2(c)+"pp"));
+    });
+    svg.setAttribute("viewBox","0 0 720 "+(12+rowH*state.length+10));
+
+    var n=document.getElementById("cpiNote"),msg;
+    if(core>head+0.3) msg="<b>Core is running above headline ("+f2(core)+"% vs "+f2(head)+"%).</b> Headline only looks calm because food and energy are dragging it down. Strip them out and the underlying trend is hotter &mdash; this is the situation a central bank refuses to declare victory in, because the volatile categories can stop helping at any time.";
+    else if(head>core+0.3) msg="<b>Headline is above core ("+f2(head)+"% vs "+f2(core)+"%).</b> A volatile category &mdash; food or energy &mdash; is doing the damage. If the shock is one-off, the Bank looks through it. If it starts feeding into wages and the other categories, it stops being one-off.";
+    else msg="<b>Headline and core are close ("+f2(head)+"% vs "+f2(core)+"%).</b> The price pressure is broad rather than concentrated in one volatile category &mdash; which means it is more likely a demand story than a supply story, and rate policy is the right tool.";
+    msg += " Notice that untick-ing a row does not just subtract its contribution: the remaining weights rescale over "+f1(coreW)+"% of the basket. That is the P1(e) trap, live.";
+    n.innerHTML=msg;
+  }
+
+  seg("cpiSeg",function(k){
+    var p=PRESETS[k]||PRESETS.now;
+    state.forEach(function(s,i){s.p=p[i];s.w=CATS[i].w;s.core=CATS[i].core;});
+    draw(true);
+  });
+  draw(true);
+})();
+
+/* ==================== 2 · LEVEL vs RATE ==================== */
+(function(){
+  var sl=document.getElementById("infYr");if(!sl)return;
+  var YEARS=[2019,2020,2021,2022,2023,2024,2025,2026];
+  var SCEN={
+    ca    :{inf:[null,0.7,3.4,6.8,3.9,2.4,2.0,2.0],
+            lab:"Actual Canadian annual CPI inflation 2020&ndash;2024; 2025&ndash;26 assumed at target."},
+    steady:{inf:[null,2.0,2.0,2.0,2.0,2.0,2.0,2.0],
+            lab:"A counterfactual: what if the 2% target had simply held every year?"},
+    defl  :{inf:[null,1.0,-0.5,-1.2,-0.8,0.2,0.5,0.8],
+            lab:"A deflation episode &mdash; the thing central banks fear more than inflation."}
+  };
+  var cur="ca";
+  function levels(inf){var L=[100];for(var i=1;i<inf.length;i++)L.push(L[i-1]*(1+inf[i]/100));return L;}
+
+  function draw(){
+    var S=SCEN[cur],inf=S.inf,L=levels(inf),i=+sl.value;
+    document.getElementById("infYrV").textContent=YEARS[i];
+
+    var svg=document.getElementById("infChart");clear(svg);
+    var x0=54,x1=690,PW=x1-x0;
+    function X(k){return x0+PW*k/(YEARS.length-1);}
+
+    /* --- top panel: the level --- */
+    var ty0=26,ty1=126,lo=Math.min.apply(null,L),hi=Math.max.apply(null,L);
+    lo=Math.min(lo,99);hi=Math.max(hi,lo+6);
+    function Y(v){return ty1-(v-lo)/(hi-lo)*(ty1-ty0);}
+    svg.appendChild(E("text",{x:0,y:14,class:"d-t t2"},"The price level — what things cost (2019 = 100)"));
+    svg.appendChild(E("line",{x1:x0,y1:Y(100),x2:x1,y2:Y(100),stroke:"var(--rule)","stroke-dasharray":"3 4"}));
+    svg.appendChild(E("text",{x:x0-8,y:Y(100)+4,"text-anchor":"end",class:"d-s"},"100"));
+    var pts=L.map(function(v,k){return X(k)+","+Y(v);}).join(" ");
+    svg.appendChild(E("polyline",{points:pts,fill:"none",stroke:"var(--accent)","stroke-width":2.6,"stroke-linejoin":"round"}));
+    svg.appendChild(E("line",{x1:X(i),y1:ty0-6,x2:X(i),y2:ty1+4,stroke:"var(--rule-strong)","stroke-dasharray":"3 3"}));
+    svg.appendChild(E("circle",{cx:X(i),cy:Y(L[i]),r:5,fill:"var(--accent)"}));
+    svg.appendChild(E("text",{x:X(i),y:Y(L[i])-12,"text-anchor":"middle",class:"d-s",fill:"var(--accent)"},f1(L[i])));
+
+    /* --- bottom panel: the rate --- */
+    var by0=170,by1=252;
+    var vals=inf.slice(1),blo=Math.min(0,Math.min.apply(null,vals)),bhi=Math.max(2.5,Math.max.apply(null,vals));
+    blo-=(bhi-blo)*0.08; bhi+=(bhi-blo)*0.10;
+    function BY(v){return by1-((v-blo)/(bhi-blo))*(by1-by0);}
+    svg.appendChild(E("text",{x:0,y:160,class:"d-t t2"},"The inflation rate — how fast it is climbing (% per year)"));
+    svg.appendChild(E("line",{x1:x0,y1:BY(0),x2:x1,y2:BY(0),stroke:"var(--rule-strong)"}));
+    svg.appendChild(E("line",{x1:x0,y1:BY(2),x2:x1,y2:BY(2),stroke:"var(--flag)","stroke-dasharray":"4 4"}));
+    svg.appendChild(E("text",{x:x0-8,y:BY(2)+4,"text-anchor":"end",class:"d-s",fill:"var(--flag)"},"2%"));
+    for(var k=1;k<YEARS.length;k++){
+      var v=inf[k],h=Math.abs(BY(v)-BY(0)),on=(k===i);
+      svg.appendChild(E("rect",{x:X(k)-16,y:v>=0?BY(v):BY(0),width:32,height:Math.max(h,1.5),rx:2,
+        fill:on?(v>=0?"var(--credit-soft)":"var(--accent-soft)"):"var(--surface-3)",
+        stroke:on?(v>=0?"var(--credit)":"var(--accent)"):"var(--rule-strong)"}));
+      svg.appendChild(E("text",{x:X(k),y:v>=0?BY(v)-6:BY(v)+14,"text-anchor":"middle",class:"d-s",
+        fill:on?"var(--ink)":"var(--ink-3)"},f1(v)+"%"));
+    }
+    YEARS.forEach(function(y,k){
+      svg.appendChild(E("text",{x:X(k),y:by1+20,"text-anchor":"middle",class:"d-s",
+        fill:k===i?"var(--accent)":"var(--ink-3)"},y));
+    });
+    svg.setAttribute("viewBox","0 0 720 282");
+
+    var cum=(L[i]/100-1)*100, thisY=i===0?0:inf[i];
+    kpi(document.getElementById("infKpis"),[
+      {k:"Price level, "+YEARS[i],v:f1(L[i]),s:"2019 = 100",tone:"on"},
+      {k:"Inflation this year",v:f1(thisY)+"%",s:i===0?"base year":"the rate",tone:thisY>3?"warn":""},
+      {k:"Cumulative since 2019",v:(cum>=0?"+":"")+f1(cum)+"%",s:"the level, not the rate",tone:"warn"},
+      {k:"$100 of 2019 groceries",v:"$"+f1(L[i]),s:"costs this today"}
+    ]);
+
+    var n=document.getElementById("infNote"),m;
+    if(cur==="ca"&&i>=5) m="<b>This is the whole point of the page.</b> The bottom panel is back at 2% — inflation is beaten. The top panel has not come back down and never will: the cost of living is permanently "+f1(cum)+"% above 2019. Both headlines are true at once. “We beat inflation” describes the bars; “everything is unaffordable” describes the line. Bringing the line down would require <i>deflation</i>, which nobody wants — try the third preset.";
+    else if(cur==="defl") m="<b>Falling prices sound great and are not.</b> The level actually declines, so debts get heavier in real terms every year, households postpone purchases waiting for lower prices, firms cut, and the cycle feeds itself. Japan lost two decades here. It is the reason the target is 2% and not 0%.";
+    else if(cur==="steady") m="<b>The counterfactual.</b> Even at a perfectly on-target 2%, prices still rise "+f1(cum)+"% over "+i+" years. Inflation at target does not mean prices are stable — it means they rise at a rate slow and predictable enough that contracts, wages and plans can be written around it.";
+    else m="Drag the year and watch the two panels tell different stories about the same data.";
+    n.innerHTML=m+" <span style='color:var(--ink-3)'>"+SCEN[cur].lab+"</span>";
+  }
+  sl.addEventListener("input",draw);
+  seg("infSeg",function(k){cur=k;draw();});
+  draw();
+})();
+
+/* ==================== 3 · OUTPUT GAP MACHINE ==================== */
+(function(){
+  var g=document.getElementById("gapG");if(!g)return;
+  var s=document.getElementById("gapS"),e=document.getElementById("gapE");
+  var USTAR=6.0,KAPPA=1.0,OKUN=0.5;
+  var PRE={n:[0,0,2],c20:[-6.5,0,2],c22:[2.2,4.0,3.0],c24:[-0.5,0,2.5]};
+
+  function draw(){
+    var gap=+g.value,shock=+s.value,pe=+e.value;
+    document.getElementById("gapGV").textContent=(gap>0?"+":"")+f1(gap)+"%";
+    document.getElementById("gapSV").textContent=(shock>0?"+":"")+f1(shock)+" pp";
+    document.getElementById("gapEV").textContent=f1(pe)+"%";
+    var u=USTAR-OKUN*gap;
+    var pi=pe-KAPPA*(u-USTAR)+shock;
+
+    var svg=document.getElementById("gapChart");clear(svg);
+    var x0=64,x1=690,y0=18,y1=206;
+    function X(v){return x0+(v-3)/8*(x1-x0);}
+    function Y(v){return y1-(v+4)/16*(y1-y0);}
+    svg.appendChild(E("line",{x1:x0,y1:y1,x2:x1,y2:y1,stroke:"var(--rule-strong)"}));
+    svg.appendChild(E("line",{x1:x0,y1:y0,x2:x0,y2:y1,stroke:"var(--rule-strong)"}));
+    svg.appendChild(E("line",{x1:X(USTAR),y1:y0,x2:X(USTAR),y2:y1,stroke:"var(--rule-strong)","stroke-dasharray":"4 4"}));
+    svg.appendChild(E("text",{x:X(USTAR),y:y0-4,"text-anchor":"middle",class:"d-s"},"u* = 6%"));
+    svg.appendChild(E("line",{x1:x0,y1:Y(2),x2:x1,y2:Y(2),stroke:"var(--flag)","stroke-dasharray":"4 4"}));
+    svg.appendChild(E("text",{x:x1-2,y:Y(2)-6,"text-anchor":"end",class:"d-s",fill:"var(--flag)"},"2% target"));
+    svg.appendChild(E("line",{x1:x0,y1:Y(0),x2:x1,y2:Y(0),stroke:"var(--rule)"}));
+    [3,5,7,9,11].forEach(function(v){svg.appendChild(E("text",{x:X(v),y:y1+17,"text-anchor":"middle",class:"d-s"},v+"%"));});
+    [-4,0,4,8].forEach(function(v){svg.appendChild(E("text",{x:x0-8,y:Y(v)+4,"text-anchor":"end",class:"d-s"},v+"%"));});
+    svg.appendChild(E("text",{x:(x0+x1)/2,y:y1+36,"text-anchor":"middle",class:"d-lab"},"Unemployment rate →"));
+    svg.appendChild(E("text",{x:16,y:y0-4,class:"d-lab"},"Inflation ↑"));
+
+    var a=Y(pe-KAPPA*(3-USTAR)+shock),b=Y(pe-KAPPA*(11-USTAR)+shock);
+    svg.appendChild(E("line",{x1:X(3),y1:a,x2:X(11),y2:b,stroke:"var(--accent)","stroke-width":2.6}));
+    svg.appendChild(E("text",{x:X(3)+8,y:a-8,class:"d-s",fill:"var(--accent)"},"short-run Phillips curve at πᵉ = "+f1(pe)+"%"+(shock?", shock "+(shock>0?"+":"")+f1(shock)+"pp":"")));
+    svg.appendChild(E("circle",{cx:X(Math.max(3,Math.min(11,u))),cy:Y(Math.max(-4,Math.min(12,pi))),r:7,
+      fill:pi>3?"var(--credit)":"var(--accent)",stroke:"#fff","stroke-width":2}));
+    var dx=X(Math.max(3,Math.min(11,u))),dy=Y(Math.max(-4,Math.min(12,pi)));
+    svg.appendChild(E("text",{x:dx+(dx>520?-13:13),y:dy+22,"text-anchor":dx>520?"end":"start",class:"d-s",
+      fill:pi>3?"var(--credit)":"var(--accent)"},"u "+f1(u)+"%  \u00B7  \u03C0 "+f1(pi)+"%"));
+    svg.setAttribute("viewBox","0 0 720 250");
+
+    var v,vs;
+    if(pi>3.0){v="Hike — and say so";vs="inflation well above target";}
+    else if(pi<1.0){v="Cut hard";vs="undershooting; deflation risk";}
+    else if(pi<1.75||gap<-1.5){v="Cut";vs="slack is opening up";}
+    else if(pi>2.5&&gap>0.5){v="Hike";vs="demand above capacity";}
+    else {v="Hold";vs="near target, gap near zero";}
+    kpi(document.getElementById("gapKpis"),[
+      {k:"Output gap",v:(gap>0?"+":"")+f1(gap)+"%",s:gap>0.2?"running hot":gap<-0.2?"slack":"at capacity",tone:gap>0.2?"warn":"on"},
+      {k:"Unemployment (Okun)",v:f1(u)+"%",s:"u* is 6.0%"},
+      {k:"Inflation (Phillips)",v:f1(pi)+"%",s:"target is 2.0%",tone:pi>3?"warn":"on"},
+      {k:"Bank of Canada",v:v,s:vs,tone:v.indexOf("Hike")===0?"warn":""}
+    ]);
+
+    var dem=-KAPPA*(u-USTAR);
+    document.getElementById("gapNote").innerHTML=
+      "<b>Decomposition of the "+f1(pi)+"% inflation reading:</b> "+
+      f1(pe)+"pp expectations &nbsp;+&nbsp; "+(dem>=0?"+":"")+f1(dem)+"pp demand (the output gap, through Okun) &nbsp;+&nbsp; "+
+      (shock>=0?"+":"")+f1(shock)+"pp supply shock &nbsp;=&nbsp; "+f1(pi)+"%. "+
+      "The Bank can act on the first two. It cannot act on the third — so the more of the reading that sits in the supply column, the weaker the case for hiking, "+
+      "<i>unless</i> the expectations slider starts drifting up on its own. "+
+      "Try it: hold the gap and the shock fixed and drag πᵉ from 2 to 5. The whole curve lifts and inflation moves 3pp with no change in the real economy at all.";
+  }
+  [g,s,e].forEach(function(el){el.addEventListener("input",function(){segSet("gapSeg","");draw();});});
+  seg("gapSeg",function(k){var p=PRE[k]||PRE.n;g.value=p[0];s.value=p[1];e.value=p[2];draw();});
+  draw();
+})();
+
+/* ---- contents rail scroll-spy ---- */
+(function(){
+  var links=Array.prototype.slice.call(document.querySelectorAll("nav.toc a"));
+  if(!links.length||!("IntersectionObserver" in window))return;
+  var map={},targets=[];
+  links.forEach(function(a){
+    var id=a.getAttribute("href").slice(1),el=document.getElementById(id);
+    if(el){map[id]=a;targets.push(el);}
+  });
+  var seen=[];
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(ev){
+      var i=seen.indexOf(ev.target);
+      if(ev.isIntersecting&&i<0)seen.push(ev.target);
+      if(!ev.isIntersecting&&i>=0)seen.splice(i,1);
+    });
+    if(!seen.length)return;
+    seen.sort(function(a,b){return a.getBoundingClientRect().top-b.getBoundingClientRect().top;});
+    links.forEach(function(l){l.classList.remove("on");});
+    var a=map[seen[0].id];if(!a)return;
+    a.classList.add("on");
+    var nav=document.querySelector("nav.toc");
+    if(nav&&nav.scrollHeight>nav.clientHeight+4){var t=a.offsetTop-nav.clientHeight/2;if(t>0)nav.scrollTop=t;}
+  },{rootMargin:"-72px 0px -55% 0px",threshold:0});
+  targets.forEach(function(t){io.observe(t);});
+})();
+
+/* ---- quiz mode ---- */
+(function(){
+  var body=document.body,tog=document.getElementById("quizToggle"),lab=document.getElementById("quizLabel");
+  if(!tog)return;
+  tog.addEventListener("click",function(){
+    var on=body.classList.toggle("quiz");
+    lab.textContent=on?"Show all answers":"Hide answers & quiz me";
+    tog.setAttribute("aria-pressed",String(on));
+    if(!on){
+      document.querySelectorAll(".ans.open").forEach(function(a){a.classList.remove("open");});
+      document.querySelectorAll("button.reveal.gone").forEach(function(b){b.classList.remove("gone");});
+    }
+  });
+  document.querySelectorAll("button.reveal").forEach(function(btn){
+    btn.addEventListener("click",function(){
+      var a=btn.parentElement.querySelector(".ans");
+      if(a){a.classList.add("open");btn.classList.add("gone");}
+    });
+  });
+})();
+})();
+</script>

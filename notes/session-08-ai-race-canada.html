@@ -1,0 +1,1204 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="prep-file" content="4505-Global-Macroeconomics-for-Managers/notes/session-08-ai-race-canada.html">
+<meta name="prep-session" content="active">
+<title>The AI Race Canada Needs: GMM Session 8</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  color-scheme:light;
+  --paper:#FFFFFF; --surface:#FFFFFF; --surface-2:#F3F6F3; --surface-3:#E9EFEA;
+  --ink:#141F1C; --ink-2:#4C5A55; --ink-3:#7A8681;
+  --rule:#E0E6E1; --rule-strong:#A8B5AE;
+  --accent:#1B6B57; --accent-2:#2E9376; --accent-soft:#E2F0E9;
+  --credit:#A33A2C; --credit-soft:#FAE7E2;
+  --flag:#8A6A12; --flag-soft:#FAF2DC;
+  --shadow:0 1px 2px rgba(20,31,28,.05), 0 12px 28px -22px rgba(20,31,28,.5);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Public Sans","Helvetica Neue",Arial,sans-serif;font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Bitter,Georgia,serif;text-wrap:balance;margin:0;line-height:1.15}
+p{margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+.wrap{max-width:1400px;margin:0;padding-inline:34px}
+
+/* ---------- masthead ---------- */
+header{border-bottom:1px solid var(--rule)}
+.hd{max-width:1330px;padding-block:38px 28px;display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between;align-items:flex-end}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(30px,5.5vw,46px);font-weight:700;letter-spacing:-.025em;margin-top:10px}
+.gist{color:var(--ink-2);max-width:52ch;margin-top:10px}
+.hd .meta{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-2);border-left:2px solid var(--accent);padding-left:14px;line-height:2}
+.hd .meta b{color:var(--ink);font-weight:600}
+
+/* ---------- left contents rail ---------- */
+.cols{display:grid;grid-template-columns:236px minmax(0,1fr);gap:54px;align-items:start}
+nav.toc{position:sticky;top:22px;padding-block:34px 0;font-size:13.5px;max-height:calc(100vh - 44px);overflow-y:auto}
+nav.toc .toc-h{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-3);padding-bottom:9px;border-bottom:1px solid var(--rule);margin-bottom:8px}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px}
+nav.toc a{display:flex;gap:9px;align-items:baseline;padding:5px 10px;border-radius:6px;color:var(--ink-2);
+  text-decoration:none;border-left:2px solid transparent;line-height:1.35}
+nav.toc a .n{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3);min-width:15px}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{color:var(--accent);border-left-color:var(--accent);background:var(--accent-soft);font-weight:600}
+nav.toc a.on .n{color:var(--accent)}
+nav.toc a .io{font-size:10px;color:var(--accent);margin-left:auto;opacity:.75}
+nav.toc .grp{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-3);padding:16px 10px 5px}
+nav.toc .grp:first-child{padding-top:2px}
+
+main{display:flex;flex-direction:column;gap:26px;padding-block:34px 80px;min-width:0;max-width:1020px}
+
+/* ---------- plain-English opener ---------- */
+.oneline{display:flex;gap:14px;align-items:flex-start;background:var(--accent-soft);border-radius:10px;
+  padding:14px 18px;font-size:16px;color:var(--ink);max-width:76ch}
+.oneline .tag{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);white-space:nowrap;padding-top:5px}
+.oneline b{font-weight:600}
+
+/* ---------- group divider ---------- */
+.group{display:flex;align-items:center;gap:16px;margin-top:34px}
+.group:first-child{margin-top:0}
+.group h2{font-size:13px;font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent);border:none;padding:0;white-space:nowrap}
+.group .ln{flex:1;height:1px;background:var(--rule)}
+.group .ct{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+
+section{display:flex;flex-direction:column;gap:18px;scroll-margin-top:64px}
+section>h2{font-size:clamp(21px,3.2vw,27px);font-weight:600;letter-spacing:-.015em;display:flex;gap:12px;align-items:baseline}
+section>h2 .no{font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--accent);font-weight:500}
+h3{font-size:17px;font-weight:600;margin-top:8px}
+.lede{color:var(--ink-2);max-width:72ch;font-size:16px}
+.lede strong{color:var(--ink);font-weight:600}
+
+
+/* ---------- flow diagrams: CSS boxes, NOT SVG text ----------
+   Text wraps and boxes grow, so a long label can never overflow.
+   Use these for every box-and-arrow / one-to-many / spectrum diagram.
+   Reserve SVG for real charts only (bars, lines, curves).           */
+.flow{display:grid;gap:14px;align-items:center}
+.flow.f5{grid-template-columns:minmax(0,1.05fr) 22px minmax(0,.92fr) 58px minmax(0,1.2fr)}
+.flow.f3{grid-template-columns:minmax(0,.8fr) 22px minmax(0,1.25fr)}
+.fstack{display:flex;flex-direction:column;gap:10px;min-width:0}
+.fnode{border:1.5px solid var(--rule-strong);border-radius:11px;padding:11px 14px;background:var(--surface);
+  display:flex;flex-direction:column;gap:3px;min-width:0}
+.fnode b{font-size:14.5px;font-weight:600;line-height:1.3}
+.fnode span{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);line-height:1.55;overflow-wrap:anywhere}
+.fnode.acc{background:var(--accent-soft);border-color:var(--accent)}
+.fnode.acc b,.fnode.acc span{color:var(--accent)}
+.fnode.bad{background:var(--credit-soft);border-color:var(--credit)}
+.fnode.bad b,.fnode.bad span{color:var(--credit)}
+.fnode.flg{background:var(--flag-soft);border-color:var(--flag);text-align:center}
+.fnode.flg b,.fnode.flg span{color:var(--flag)}
+.fnode.mute{border-style:dashed;background:var(--surface-3)}
+.farr{color:var(--rule-strong);text-align:center;line-height:1;font-family:"IBM Plex Mono",monospace}
+.farr .ch{display:block;font-size:20px;line-height:1}
+.farr i{font-style:normal;display:block;font-size:9px;letter-spacing:.06em;color:var(--ink-3);margin-top:5px;text-transform:uppercase;white-space:nowrap}
+
+/* spectrum: ordered scale with a hard line somewhere in it */
+.spec{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px}
+.spec .sn{border:1.5px solid var(--rule-strong);border-radius:11px;padding:11px 13px;background:var(--surface);min-width:0}
+.spec .sn b{display:block;font-size:14.5px;font-weight:600;margin-bottom:3px}
+.spec .sn span{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);line-height:1.5;display:block}
+.spec .sn.ok{background:var(--accent-soft);border-color:var(--accent)}
+.spec .sn.ok b,.spec .sn.ok span{color:var(--accent)}
+.spec .sn.no{background:var(--credit-soft);border-color:var(--credit)}
+.spec .sn.no b,.spec .sn.no span{color:var(--credit)}
+.specline{grid-column:1/-1;display:flex;align-items:center;gap:12px;margin-top:2px}
+.specline .lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--credit);white-space:nowrap}
+.specline .rule{flex:1;height:0;border-top:2px dashed var(--credit)}
+
+/* horizontal labelled bars */
+.bars{display:flex;flex-direction:column;gap:11px}
+.bar{display:grid;grid-template-columns:132px minmax(0,1fr);gap:14px;align-items:center}
+.bar .bl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);text-align:right}
+.bar .bt{display:flex;align-items:center;gap:10px;min-width:0}
+.bar .bf{height:20px;border-radius:4px;flex:none}
+.bar .bc{font-size:13px;color:var(--ink-2);min-width:0;overflow-wrap:anywhere}
+.bar .bf.hi{background:var(--credit-soft);border:1.2px solid var(--credit)}
+.bar .bf.md{background:var(--flag-soft);border:1.2px solid var(--flag)}
+.bar .bf.lo{background:var(--accent-soft);border:1.2px solid var(--accent)}
+
+/* two-ended scales: where two things sit on one axis */
+.scales{display:flex;flex-direction:column;gap:13px}
+.scale{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;align-items:center}
+.scale .sl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);text-align:right}
+.scale .tr{position:relative;height:34px}
+.scale .tr .ln{position:absolute;top:22px;left:0;right:0;height:0;border-top:1.5px solid var(--rule-strong)}
+.scale .tr .e{position:absolute;top:0;font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3)}
+.scale .tr .e.l{left:0} .scale .tr .e.r{right:0}
+.scale .tr .dot{position:absolute;top:15px;width:15px;height:15px;border-radius:50%;transform:translateX(-50%)}
+.scale .tr .dot.s{background:var(--accent-soft);border:2px solid var(--accent)}
+.scale .tr .dot.b{background:var(--credit-soft);border:2px solid var(--credit)}
+.legend{display:flex;gap:20px;flex-wrap:wrap;align-items:center;margin-top:4px;font-family:"IBM Plex Mono",monospace;font-size:11px}
+.legend i{font-style:normal;display:inline-flex;align-items:center;gap:7px}
+.legend .dot{width:13px;height:13px;border-radius:50%;display:inline-block}
+.legend .dot.s{background:var(--accent-soft);border:2px solid var(--accent)}
+.legend .dot.b{background:var(--credit-soft);border:2px solid var(--credit)}
+
+
+/* ---------- stat strip: headline numbers, rendered not typed ---------- */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;max-width:1020px}
+.stat{border-top:3px solid var(--accent);padding-top:9px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.stat.b{border-top-color:var(--credit)} .stat.c{border-top-color:var(--flag)} .stat.m{border-top-color:var(--rule-strong)}
+.stat .k{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.stat .v{font-family:Bitter,serif;font-size:29px;font-weight:700;line-height:1.05;font-variant-numeric:tabular-nums;color:var(--accent)}
+.stat.b .v{color:var(--credit)} .stat.c .v{color:var(--flag)} .stat.m .v{color:var(--ink)}
+.stat .s{font-size:12.5px;color:var(--ink-2);overflow-wrap:anywhere}
+
+/* ---------- tug of war: two opposed forces, net position ---------- */
+.tug{display:flex;flex-direction:column;gap:9px;max-width:1020px}
+.tug .row{display:grid;grid-template-columns:minmax(0,1fr) 300px minmax(0,1fr);gap:12px;align-items:center}
+.tug .lb{font-size:13.5px;color:var(--ink-2);min-width:0;overflow-wrap:anywhere}
+.tug .lb.l{text-align:right}
+.tug .mid{height:22px;position:relative;border-radius:4px;background:var(--surface-3);overflow:hidden}
+.tug .mid i{position:absolute;top:0;bottom:0;display:block;transition:width .9s cubic-bezier(.22,1,.36,1)}
+.tug .mid i.l{right:50%;background:var(--credit-soft);border-right:2px solid var(--credit)}
+.tug .mid i.r{left:50%;background:var(--accent-soft);border-left:2px solid var(--accent)}
+.tug .net{display:grid;grid-template-columns:minmax(0,1fr) 300px minmax(0,1fr);gap:12px;align-items:center;
+  border-top:1px solid var(--rule-strong);padding-top:10px;margin-top:3px}
+.tug .net .mid{height:30px;background:transparent;display:flex;align-items:center;justify-content:center;
+  font-family:Bitter,serif;font-weight:700;font-size:17px}
+
+/* ---------- scorecard: claim, two sides, verdict ---------- */
+.sc{display:flex;flex-direction:column;max-width:1020px;border:1px solid var(--rule);border-radius:12px;overflow:hidden}
+.scrow{display:grid;grid-template-columns:150px minmax(0,1fr) 122px;gap:0;border-top:1px solid var(--rule)}
+.scrow:first-child{border-top:none}
+.scrow .cl{padding:11px 14px;font-size:14px;font-weight:600;background:var(--surface-2);min-width:0;overflow-wrap:anywhere}
+.scrow .sides{display:grid;grid-template-columns:1fr 1fr;gap:0;min-width:0}
+.scrow .sd{padding:11px 14px;font-size:13px;color:var(--ink-2);min-width:0;overflow-wrap:anywhere;border-left:1px solid var(--rule)}
+.scrow .sd b{color:var(--ink)}
+.scrow .sd.a{background:color-mix(in srgb,var(--accent-soft) 45%,transparent)}
+.scrow .sd.b{background:color-mix(in srgb,var(--credit-soft) 45%,transparent)}
+.scrow .vd{padding:11px 12px;border-left:1px solid var(--rule);font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;text-align:center}
+.scrow .vd.a{color:var(--accent);background:var(--accent-soft)}
+.scrow .vd.b{color:var(--credit);background:var(--credit-soft)}
+.scrow .vd.d{color:var(--ink-3);background:var(--surface-2)}
+.scrow.sch .cl,.scrow.sch .sd,.scrow.sch .vd{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-3);font-weight:500;background:var(--surface-2);padding-block:8px}
+
+/* ---------- motion: meaning only, always from a visible rest state ---------- */
+.rv{opacity:1;transform:none;transition:opacity .5s ease,transform .5s cubic-bezier(.22,1,.36,1)}
+.js .rv:not(.in){opacity:0;transform:translateY(8px)}
+.js .bars .bf{width:0!important;transition:width .9s cubic-bezier(.22,1,.36,1)}
+.js .rv.in .bars .bf,.js .bars.in .bf{width:var(--w)!important}
+@media (prefers-reduced-motion:reduce){
+  .js .rv:not(.in){opacity:1;transform:none}
+  .js .bars .bf{width:var(--w)!important;transition:none}
+  .tug .mid i{transition:none}
+}
+
+
+/* ---------- sequence: actors exchanging messages over time ----------
+   Replaces a Mermaid sequenceDiagram. Never emit Mermaid: its labels
+   cross the lifelines, its participant boxes clip, and its badges sit
+   on the text. Here the "who" is its own column, so nothing can collide
+   and every label wraps.                                               */
+.seq{display:flex;flex-direction:column;max-width:1020px;counter-reset:seq}
+.seq .s{display:grid;grid-template-columns:26px 186px minmax(0,1fr);gap:14px;
+  padding:11px 0;border-top:1px solid var(--rule);align-items:start}
+.seq .s:first-child{border-top:none;padding-top:2px}
+.seq .s::before{counter-increment:seq;content:counter(seq);
+  width:26px;height:26px;border-radius:50%;background:var(--accent-soft);color:var(--accent);
+  border:1.5px solid var(--accent);display:flex;align-items:center;justify-content:center;
+  font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600}
+.seq .who{font-family:"IBM Plex Mono",monospace;font-size:11.5px;line-height:1.5;
+  color:var(--ink-2);padding-top:5px;min-width:0;overflow-wrap:anywhere}
+.seq .who b{color:var(--ink);font-weight:600;display:block}
+.seq .who i{font-style:normal;color:var(--ink-3)}
+.seq .msg{min-width:0;padding-top:3px}
+.seq .msg b{font-size:14.5px;font-weight:600;display:block;line-height:1.35}
+.seq .msg span{font-size:13.5px;color:var(--ink-2);display:block;margin-top:3px;overflow-wrap:anywhere}
+.seq .s.ret::before{background:var(--surface-3);color:var(--ink-3);border-color:var(--rule-strong);border-style:dashed}
+.seq .s.ret .msg b{color:var(--ink-2);font-weight:500}
+.seq .s.self .who i::before{content:"\21ba  "}
+.seq .grp{display:flex;align-items:center;gap:12px;padding:12px 0 2px}
+.seq .grp .tg{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);background:var(--accent-soft);border:1px solid var(--accent);border-radius:4px;padding:2px 8px;white-space:nowrap}
+.seq .grp .ln{flex:1;height:0;border-top:1px dashed var(--rule-strong)}
+@media (max-width:700px){ .seq .s{grid-template-columns:26px minmax(0,1fr)} .seq .who{grid-column:2} .seq .msg{grid-column:2} }
+
+/* ---------- diagram frame ---------- */
+figure{margin:0;display:flex;flex-direction:column;gap:10px;max-width:1020px}
+.dg{background:var(--surface-2);border:1px solid var(--rule);border-radius:14px;padding:24px}
+.dg.pad0{padding:18px}
+figcaption{color:var(--ink-3);font-size:13.5px;max-width:70ch}
+svg.d{width:100%;height:auto;display:block;overflow:visible}
+.d-box{fill:var(--surface);stroke:var(--rule-strong);stroke-width:1.5}
+.d-box.acc{fill:var(--accent-soft);stroke:var(--accent)}
+.d-box.bad{fill:var(--credit-soft);stroke:var(--credit)}
+.d-box.mute{fill:var(--surface-3);stroke:var(--rule-strong);stroke-dasharray:5 4}
+.d-t{font-family:"Public Sans",sans-serif;font-size:15px;font-weight:600;fill:var(--ink)}
+.d-t.t2{font-size:13.5px}
+.d-s{font-family:"IBM Plex Mono",monospace;font-size:11.5px;fill:var(--ink-3)}
+.d-lab{font-family:"IBM Plex Mono",monospace;font-size:11.5px;fill:var(--ink-2)}
+.d-link{fill:none;stroke:var(--rule-strong);stroke-width:1.6}
+.d-link.acc{stroke:var(--accent)}
+.d-link.bad{stroke:var(--credit)}
+
+/* ---------- interactive shell ---------- */
+.ia{max-width:1020px;background:var(--surface);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.ia-top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;
+  padding:12px 18px;border-bottom:1px solid var(--rule);background:var(--surface-2)}
+.ia-top .ttl{font-size:14px;font-weight:600}
+.ia-top .hint{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.ia-body{padding:20px 18px}
+
+.seg{display:inline-flex;border:1px solid var(--rule-strong);border-radius:8px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:13px;font-weight:500;cursor:pointer;border:0;background:transparent;
+  color:var(--ink-2);padding:6px 14px;border-right:1px solid var(--rule)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--accent);color:#fff;font-weight:600}
+.seg button:hover:not([aria-pressed="true"]){background:var(--accent-soft);color:var(--accent)}
+
+.slider{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.slider label{font-size:13.5px;color:var(--ink-2);min-width:130px}
+.slider input[type=range]{flex:1;min-width:180px;accent-color:var(--accent);height:22px}
+.slider .val{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:14px;
+  font-weight:600;min-width:96px;text-align:right;color:var(--ink)}
+
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:14px;margin-top:16px}
+.kpi{border-top:2px solid var(--rule-strong);padding-top:7px}
+.kpi.on{border-top-color:var(--accent)}
+.kpi.warn{border-top-color:var(--credit)}
+.kpi .k{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.kpi .v{font-family:Bitter,serif;font-size:21px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.25}
+.kpi.on .v{color:var(--accent)} .kpi.warn .v{color:var(--credit)}
+.kpi .s{font-size:12.5px;color:var(--ink-2)}
+
+/* ---------- example strip ---------- */
+.ex{max-width:1020px;border:1px solid var(--rule);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;
+  padding:14px 18px;background:var(--surface);font-size:15px;color:var(--ink-2);display:flex;flex-direction:column;gap:7px}
+.ex .lb{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.ex strong{color:var(--ink);font-weight:600}
+.calc-line{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink);
+  background:var(--surface-2);padding:7px 11px;border-radius:6px;align-self:flex-start;font-variant-numeric:tabular-nums}
+
+/* ---------- 2x2 classifier ---------- */
+.tray{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{font:inherit;font-size:13.5px;cursor:pointer;background:var(--surface);border:1.5px solid var(--rule-strong);
+  color:var(--ink);padding:7px 14px;border-radius:8px;transition:transform .12s ease,border-color .12s ease}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:600}
+.chip.done{opacity:.35;pointer-events:none;border-style:dashed}
+.grid22{display:grid;grid-template-columns:76px 1fr 1fr;gap:10px}
+.grid22 .hh{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-3);align-self:end;padding-bottom:4px;text-align:center}
+.grid22 .vh{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  display:flex;align-items:center;justify-content:center;text-align:center}
+.grid22 .vh.a{color:var(--accent)} .grid22 .vh.b{color:var(--credit)}
+.qd{min-height:104px;border:1.5px dashed var(--rule-strong);border-radius:12px;background:var(--surface-2);
+  padding:10px;cursor:pointer;display:flex;flex-direction:column;gap:6px;transition:background .15s,border-color .15s}
+.qd:hover{border-color:var(--accent);background:var(--accent-soft)}
+.qd.armed{border-color:var(--accent);border-style:solid}
+.qd.hit{animation:hit .4s ease} .qd.miss{animation:miss .4s ease}
+@keyframes hit{0%{background:var(--accent-soft)}100%{background:var(--surface-2)}}
+@keyframes miss{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.placed{background:var(--surface);border:1px solid var(--accent);border-left:3px solid var(--accent);
+  border-radius:6px;padding:7px 10px;font-size:13.5px}
+.placed b{display:block;font-weight:600}
+.placed span{font-size:12px;color:var(--ink-3)}
+.fb{font-size:13.5px;min-height:22px;color:var(--ink-2)}
+.fb.bad{color:var(--credit)} .fb.good{color:var(--accent)}
+
+/* ---------- vet bill ---------- */
+.bill{background:var(--surface);border:1px solid var(--rule-strong);border-radius:10px;overflow:hidden;font-size:14px;max-width:520px}
+.bill .top{padding:11px 16px;border-bottom:1px dashed var(--rule-strong);font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.bill .ln{display:grid;grid-template-columns:1fr 82px 76px;gap:10px;padding:9px 16px;align-items:center}
+.bill .ln+.ln{border-top:1px solid var(--rule)}
+.bill .amt{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;text-align:right}
+.bill .k{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.08em;padding:2px 0;border-radius:4px;
+  text-align:center;transition:background .25s,color .25s,border-color .25s}
+.bill .k.d{color:var(--accent);border:1px solid var(--accent);background:var(--accent-soft)}
+.bill .k.i{color:var(--credit);border:1px solid var(--credit);background:var(--credit-soft)}
+.bill .ttl{display:grid;grid-template-columns:1fr 82px 76px;gap:10px;padding:10px 16px;border-top:2px solid var(--rule-strong);
+  background:var(--surface-2);font-weight:600}
+
+/* ---------- question as asked ---------- */
+.qtext{max-width:1020px;border:1.5px dashed var(--rule-strong);border-radius:10px;padding:15px 19px;
+  background:var(--surface-2);display:flex;flex-direction:column;gap:9px}
+.qtext .lbl{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3)}
+.qtext .body{font-size:15.5px;color:var(--ink);line-height:1.55}
+.qtext ol{margin:4px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:5px;font-size:15px}
+.qtext ol li::marker{color:var(--accent);font-weight:600}
+.qtext .given{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink-2);
+  background:var(--surface);border:1px solid var(--rule);border-radius:7px;padding:10px 14px;
+  white-space:pre;overflow-x:auto;font-variant-numeric:tabular-nums;margin:0}
+
+/* ---------- worked process ---------- */
+.steps{max-width:1020px;display:flex;flex-direction:column}
+.step{display:grid;grid-template-columns:30px minmax(0,1fr);gap:16px;padding:18px 0;border-top:1px solid var(--rule)}
+.step:first-child{border-top:none;padding-top:6px}
+.step .num{width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);
+  border:1.5px solid var(--accent);display:flex;align-items:center;justify-content:center;
+  font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600}
+.step .sb{display:flex;flex-direction:column;gap:10px;min-width:0}
+.step h4{margin:0;font-size:15.5px;font-weight:600;font-family:"Public Sans",sans-serif;padding-top:4px}
+.step p{font-size:15px;color:var(--ink-2)}
+.step p strong{color:var(--ink);font-weight:600}
+pre.math{margin:0;font-family:"IBM Plex Mono",monospace;font-size:13.5px;line-height:1.9;
+  background:var(--surface-2);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;
+  padding:14px 18px;overflow-x:auto;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:pre}
+pre.math b{color:var(--accent);font-weight:600}
+pre.math i{color:var(--ink-3);font-style:normal}
+
+/* ---------- tables ---------- */
+.tw{overflow-x:auto;border:1px solid var(--rule);border-radius:12px;background:var(--surface);max-width:1020px}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+caption{text-align:left;padding:13px 17px 11px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);border-bottom:1px solid var(--rule)}
+th,td{padding:9px 16px;text-align:left;vertical-align:top}
+thead th{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ink-2);font-weight:500;border-bottom:1px solid var(--rule-strong);white-space:nowrap}
+tbody tr+tr td{border-top:1px solid var(--rule)}
+td.n,th.n{text-align:right;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.tot td{border-top:1px solid var(--rule-strong)!important;box-shadow:inset 0 -3px 0 -1px var(--rule-strong);
+  font-weight:600;background:var(--surface-2)}
+td.cr{color:var(--credit)}
+.sm{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3)}
+
+.pill{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  padding:3px 8px;border-radius:4px;border:1px solid var(--rule-strong);color:var(--ink-2);white-space:nowrap}
+.pill.v{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.pill.f{border-color:var(--credit);color:var(--credit);background:var(--credit-soft)}
+
+.note{max-width:1020px;border-left:3px solid var(--flag);background:var(--flag-soft);color:var(--ink);padding:12px 16px;border-radius:0 8px 8px 0;font-size:14.5px}
+.note.acc{border-left-color:var(--accent);background:var(--accent-soft)}
+.fx{font-family:"IBM Plex Mono",monospace;font-size:13.5px;color:var(--accent);background:var(--accent-soft);padding:4px 9px;border-radius:5px;display:inline-block}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;align-items:start;max-width:1020px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:1020px}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:9px}
+.card h4{margin:0;font-size:15px;font-weight:600}
+.card p{font-size:14px;color:var(--ink-2)}
+ul.t,ol.t{margin:0;padding-left:20px;color:var(--ink-2);font-size:14.5px;display:flex;flex-direction:column;gap:7px}
+ul.t strong,ol.t strong{color:var(--ink)}
+
+/* ---------- Q&A ---------- */
+.q{border:1px solid var(--rule);border-radius:12px;background:var(--surface);padding:18px 20px;display:flex;flex-direction:column;gap:13px}
+.q-meta{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+blockquote{margin:0;padding:13px 16px;background:var(--surface-2);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;font-size:15px}
+.wc{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+button.reveal{display:none;align-self:flex-start;font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+  background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent);padding:6px 14px;border-radius:6px}
+body.quiz .ans{display:none} body.quiz .ans.open{display:flex} body.quiz button.reveal{display:inline-block}
+body.quiz button.reveal.gone{display:none}
+.ans{display:flex;flex-direction:column;gap:12px}
+.toggle{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+  background:var(--surface);border:1px solid var(--rule-strong);color:var(--ink);padding:7px 14px;border-radius:8px;align-self:flex-start}
+.toggle .pip{width:8px;height:8px;border-radius:50%;background:var(--rule-strong)}
+body.quiz .toggle .pip{background:var(--accent)}
+
+/* ---------- car calc ---------- */
+.calc{display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);gap:24px;align-items:start}
+.irow{display:grid;grid-template-columns:1fr 78px 78px;gap:8px;align-items:center;padding:5px 0;border-top:1px solid var(--rule)}
+.irow:first-child{border-top:none}
+.irow label{font-size:13px;color:var(--ink-2)}
+.irow.hdr span{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);text-align:right}
+.irow.hdr span:first-child{text-align:left}
+.irow input{width:100%;font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-variant-numeric:tabular-nums;
+  text-align:right;padding:5px 8px;border:1px solid var(--rule);border-radius:5px;background:var(--surface-2);color:var(--ink)}
+.irow input:focus{border-color:var(--accent);background:var(--surface)}
+.irow.wide{grid-template-columns:1fr 164px}
+
+footer{border-top:1px solid var(--rule);padding-block:22px 48px;color:var(--ink-3);font-size:12px;font-family:"IBM Plex Mono",monospace}
+
+@media (max-width:960px){
+  .cols{grid-template-columns:1fr;gap:0}
+  nav.toc{position:static;max-height:none;overflow:visible;padding-block:16px 0;border-bottom:1px solid var(--rule)}
+  nav.toc ol{flex-direction:row;flex-wrap:wrap;gap:5px}
+  nav.toc a{border:1px solid var(--rule);border-radius:999px;padding:4px 11px;font-size:12.5px;border-left-width:1px}
+  nav.toc a.on{border-color:var(--accent)}
+  nav.toc a .io{display:none}
+  nav.toc .grp{width:100%;padding:10px 2px 2px}
+}
+@media (max-width:820px){
+  .flow.f5,.flow.f3{grid-template-columns:1fr}
+  .farr{margin:2px 0}
+  .farr .ch{transform:rotate(90deg)}
+  .spec{grid-template-columns:1fr}
+  .specline{flex-wrap:wrap;gap:7px}
+  .specline .lbl{white-space:normal}
+  .specline .rule{min-width:26px}
+  .bar,.scale{grid-template-columns:1fr;gap:5px}
+  .bar .bl,.scale .sl{text-align:left}
+}
+@media (max-width:700px){
+  .calc{grid-template-columns:1fr}
+  .grid22{grid-template-columns:1fr}
+  .grid22 .hh{display:none}
+  .grid22 .vh{writing-mode:horizontal-tb;justify-content:flex-start;padding-top:6px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+<style>
+/* ---------- building blocks (same as session 6) ---------- */
+.chain{display:grid;grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr);gap:10px;align-items:stretch}
+.chain .fnode{justify-content:flex-start}
+.chain .fnode em{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);display:block;margin-bottom:2px}
+.chain .fnode.acc em{color:var(--accent)} .chain .fnode.bad em{color:var(--credit)} .chain .fnode.flg em{color:var(--flag)}
+.fam{display:flex;align-items:baseline;gap:14px;margin-top:20px}
+.fam .fn{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);white-space:nowrap}
+.fam .ft{font-size:15px;font-weight:600;white-space:nowrap}
+.fam .ln{flex:1;height:1px;background:var(--rule)}
+.blocks{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:12px;max-width:1020px;margin-top:12px}
+.blk{border:1px solid var(--rule);border-radius:10px;background:var(--surface);padding:13px 15px;display:flex;flex-direction:column;gap:7px;min-width:0}
+.blk .bn{font-size:14.5px;font-weight:600;line-height:1.3}
+.blk .bp{font-size:13.5px;color:var(--ink-2);line-height:1.5}
+.blk .ba{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--accent);background:var(--accent-soft);border-radius:6px;padding:6px 10px;line-height:1.55;overflow-wrap:anywhere}
+.blk .bu{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-top:auto}
+.blk .bu a{color:var(--ink-3);text-decoration:none;border-bottom:1px solid var(--rule-strong)}
+@media (max-width:860px){.chain{grid-template-columns:1fr}.chain .farr .ch{transform:rotate(90deg)}}
+/* ---------- video ---------- */
+.vbox{max-width:1020px;border:1px solid var(--rule);border-radius:14px;overflow:hidden;background:#0F1A17;box-shadow:var(--shadow)}
+.vbox video{display:block;width:100%;aspect-ratio:16/9;background:#0F1A17}
+.chap{display:flex;flex-wrap:wrap;gap:8px;padding:12px 14px;background:#16241F;border-top:1px solid #24362F}
+.chap button{font:inherit;font-size:12.5px;background:#24362F;color:#fff;border:1px solid #3C5A51;border-radius:8px;padding:5px 10px;cursor:pointer}
+.chap button:hover{background:#1B6B57}
+.chap button i{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:11px;color:#8FD3BC;margin-right:6px}
+/* ---------- charts ---------- */
+svg.d .gr{stroke:var(--rule);stroke-width:1}
+svg.d .ax{stroke:var(--rule-strong);stroke-width:1.2}
+svg.d .tk{font-family:"IBM Plex Mono",monospace;font-size:11px;fill:var(--ink-3)}
+svg.d .lb{font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600}
+/* ---------- five-point position picker ---------- */
+.likert{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.likert button{font:inherit;cursor:pointer;border:1.5px solid var(--rule-strong);background:var(--surface);border-radius:10px;padding:10px 8px;display:flex;flex-direction:column;gap:3px;align-items:center;text-align:center;color:var(--ink-2)}
+.likert button b{font-family:Bitter,serif;font-size:20px;color:var(--ink)}
+.likert button span{font-size:12px;line-height:1.3}
+.likert button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent)}
+.likert button[aria-pressed="true"] b{color:var(--accent)}
+.likert button .rec{font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.pos{margin-top:16px;display:flex;flex-direction:column;gap:12px}
+@media (max-width:640px){.likert{grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}.likert button span{display:none}}
+</style>
+
+<header>
+  <div class="wrap hd">
+    <div>
+      <div class="eyebrow">4505 GMM &middot; Session 8 &middot; Wed Oct 7, 2026</div>
+      <h1>The AI race Canada needs to win</h1>
+      <p class="gist">Canada is rich but invests like it is falling behind. The op-ed says: stop chasing the frontier, get great at putting AI to work.</p>
+    </div>
+    <div class="meta">
+      Reading <b>Cornelson &amp; Frost op-ed, 3 pp.</b><br>
+      Optional <b>Primer 6, infusion</b><br>
+      Prep <b>3 discussion questions</b><br>
+      Graded <b>Contribution, cold calls</b>
+    </div>
+  </div>
+</header>
+
+<div class="wrap cols">
+
+<nav class="toc" aria-label="Contents">
+  <div class="toc-h">On this page</div>
+  <ol id="toclist">
+    <li class="grp">Start here</li>
+    <li><a href="#video"><span class="n"></span><span>Video overview</span></a></li>
+    <li><a href="#big"><span class="n"></span><span>Big picture</span></a></li>
+    <li><a href="#blocks"><span class="n"></span><span>Building blocks</span></a></li>
+    <li class="grp">Concepts</li>
+    <li><a href="#stall"><span class="n">1</span><span>Canada's stall</span></a></li>
+    <li><a href="#ladder"><span class="n">2</span><span>The middle-income playbook</span></a></li>
+    <li><a href="#depth"><span class="n">3</span><span>Breadth vs depth</span></a></li>
+    <li><a href="#jcurve"><span class="n">4</span><span>The J-curve</span><span class="io">&#9679;</span></a></li>
+    <li><a href="#fit"><span class="n">5</span><span>Wrong tools, by firm size</span></a></li>
+    <li><a href="#canada"><span class="n">6</span><span>What's distinctly Canadian</span></a></li>
+    <li class="grp">Questions</li>
+    <li><a href="#q1"><span class="n"></span><span>Q1 &middot; Your position</span><span class="io">&#9679;</span></a></li>
+    <li><a href="#q2"><span class="n"></span><span>Q2 &middot; Strongest case against</span></a></li>
+    <li><a href="#q3"><span class="n"></span><span>Q3 &middot; Breadth, depth, metrics</span></a></li>
+    <li><a href="#drill"><span class="n"></span><span>Cold-call drill</span><span class="io">&#9679;</span></a></li>
+    <li class="grp">Reference</li>
+    <li><a href="#glossary"><span class="n"></span><span>Glossary</span></a></li>
+    <li><a href="#traps"><span class="n"></span><span>Traps &amp; files</span></a></li>
+    <li><a href="#log"><span class="n"></span><span>Q&amp;A log</span></a></li>
+  </ol>
+  <div class="grp" style="padding-left:10px">&#9679; = interactive</div>
+</nav>
+
+<main>
+
+<section id="video">
+  <h2>Video overview</h2>
+  <p class="lede">Made in NotebookLM from the op-ed and the Canvas page. Nine minutes. Chapter times are approximate. Watch first, then use the page to build your position.</p>
+  <div class="vbox rv">
+    <video id="vid" controls preload="metadata" poster="../session-08/Video_Session-08_poster.jpg" src="../session-08/Video_Session-08_The-AI-Race-Canada-Needs-to-Win.mp4"></video>
+    <div class="chap" id="chap">
+      <button type="button" data-t="0"><i>0:00</i>The thesis</button>
+      <button type="button" data-t="60"><i>1:00</i>Invent vs absorb</button>
+      <button type="button" data-t="120"><i>2:00</i>Canada's stall</button>
+      <button type="button" data-t="180"><i>3:00</i>45-year lag</button>
+      <button type="button" data-t="210"><i>3:30</i>Breadth vs depth</button>
+      <button type="button" data-t="240"><i>4:00</i>J-curve</button>
+      <button type="button" data-t="300"><i>5:00</i>AI for All</button>
+      <button type="button" data-t="360"><i>6:00</i>Small vs large firms</button>
+      <button type="button" data-t="390"><i>6:30</i>Competition, rules</button>
+      <button type="button" data-t="420"><i>7:00</i>Lead user</button>
+      <button type="button" data-t="450"><i>7:30</i>Prep questions</button>
+    </div>
+  </div>
+</section>
+
+<section id="big">
+  <h2>Big picture</h2>
+  <div class="stats">
+    <div class="stat b"><span class="k">Investment per worker vs US</span><span class="v count" data-to="54" data-suf="&cent;">54&cent;</span><span class="s">per US$1 in 2024; was 87&cent; a decade earlier</span></div>
+    <div class="stat b"><span class="k">Labour productivity vs US</span><span class="v count" data-to="73" data-suf="%">73%</span><span class="s">2019; was 83% in 2002</span></div>
+    <div class="stat"><span class="k">Firms using AI</span><span class="v count" data-to="19" data-suf="%">19%</span><span class="s">StatCan; about the US level</span></div>
+    <div class="stat c"><span class="k">AI in core operations</span><span class="v count" data-to="8" data-suf="%">8%</span><span class="s">Bank of Canada survey, 2026</span></div>
+    <div class="stat m"><span class="k">Avg adoption lag</span><span class="v count" data-to="45" data-suf=" yrs">45 yrs</span><span class="s">15 technologies, 166 countries</span></div>
+  </div>
+  <figure>
+    <div class="dg">
+      <div class="flow f5">
+        <div class="fstack">
+          <div class="fnode bad"><b>Capital engine stalling</b><span>54&cent; per US dollar per worker</span></div>
+          <div class="fnode bad"><b>Infusion engine never started</b><span>8% use AI in core work</span></div>
+        </div>
+        <div class="farr"><span class="ch">&rsaquo;</span></div>
+        <div class="fnode flg"><b>Run the adoption race</b><span>absorb and spread, not invent</span></div>
+        <div class="farr"><span class="ch">&rsaquo;</span><i>so fix</i></div>
+        <div class="fstack">
+          <div class="fnode acc"><b>Target depth</b><span>core processes, output per worker</span></div>
+          <div class="fnode acc"><b>Small firms: help and shared risk</b><span>not loans and compute</span></div>
+          <div class="fnode acc"><b>Large firms: competition, clear rules</b><span>Competition Bureau, sandboxes</span></div>
+          <div class="fnode acc"><b>Government as lead user</b><span>tax, benefits processing</span></div>
+        </div>
+      </div>
+    </div>
+    <figcaption>Ottawa picked the right race (adoption) but measures the wrong finish line (breadth) and brings the wrong tools.</figcaption>
+  </figure>
+</section>
+
+<section id="blocks">
+  <h2>Building blocks</h2>
+  <p class="lede">Every term the page leans on, in four families. Each family rests on the one below it.</p>
+  <figure>
+    <div class="dg pad0">
+      <div class="chain">
+        <div class="fnode"><em>Family A</em><b>The problem</b><span>Canada's productivity gap</span></div>
+        <div class="farr"><span class="ch">&rsaquo;</span></div>
+        <div class="fnode acc"><em>Family B</em><b>The playbook</b><span>how countries climb</span></div>
+        <div class="farr"><span class="ch">&rsaquo;</span></div>
+        <div class="fnode flg"><em>Family C</em><b>How AI pays off</b><span>adoption, depth, J-curve</span></div>
+        <div class="farr"><span class="ch">&rsaquo;</span></div>
+        <div class="fnode bad"><em>Family D</em><b>The policy levers</b><span>what Ottawa can pull</span></div>
+      </div>
+    </div>
+    <figcaption>Q1 needs A and B. Q3 needs C. The critique of Ottawa needs D.</figcaption>
+  </figure>
+
+  <div class="fam"><span class="fn">Family A</span><span class="ft">The problem</span><span class="ln"></span></div>
+  <div class="blocks">
+    <div class="blk"><div class="bn">Labour productivity</div><div class="bp">Output per hour worked. What lets wages rise without longer hours.</div><div class="ba">GDP &divide; hours worked</div><div class="bu">used in <a href="#stall">&sect;1</a></div></div>
+    <div class="blk"><div class="bn">Capital deepening</div><div class="bp">More machines, software and tools for each worker.</div><div class="ba">Canada: 9% less capital per worker than 2015</div><div class="bu">used in <a href="#stall">&sect;1</a></div></div>
+    <div class="blk"><div class="bn">Business investment per worker</div><div class="bp">What firms spend on capital, divided by workers. The input to deepening.</div><div class="ba">54&cent; per US dollar, 2024</div><div class="bu">used in <a href="#stall">&sect;1</a></div></div>
+    <div class="blk"><div class="bn">Productivity gap</div><div class="bp">Canada's output per hour as a share of the US level.</div><div class="ba">83% (2002) &rarr; 73% (2019)</div><div class="bu">used in <a href="#stall">&sect;1</a></div></div>
+  </div>
+
+  <div class="fam"><span class="fn">Family B</span><span class="ft">The playbook</span><span class="ln"></span></div>
+  <div class="blocks">
+    <div class="blk"><div class="bn">Middle-income trap</div><div class="bp">Growing out of poverty, then stalling before reaching high income.</div><div class="ba">Brazil vs South Korea since 1960</div><div class="bu">used in <a href="#ladder">&sect;2</a></div></div>
+    <div class="blk"><div class="bn">The 3 i's</div><div class="bp">World Bank 2024 sequence: invest, then infuse, then innovate.</div><div class="ba">1i &rarr; 2i &rarr; 3i</div><div class="bu">used in <a href="#ladder">&sect;2</a></div></div>
+    <div class="blk"><div class="bn">Infusion (2i)</div><div class="bp">Bring in technology and practices made elsewhere, spread them across local firms.</div><div class="ba">Samsung's 1969 joint venture with Sanyo</div><div class="bu">used in <a href="#ladder">&sect;2</a></div></div>
+    <div class="blk"><div class="bn">Frontier innovation (3i)</div><div class="bp">Inventing what nobody has yet. Pushing the edge, not copying it.</div><div class="ba">Training the next frontier model</div><div class="bu">used in <a href="#q2">Q2</a></div></div>
+  </div>
+
+  <div class="fam"><span class="fn">Family C</span><span class="ft">How AI pays off</span><span class="ln"></span></div>
+  <div class="blocks">
+    <div class="blk"><div class="bn">General-purpose technology</div><div class="bp">A technology that changes how almost every industry works, slowly.</div><div class="ba">Electricity, computing, AI</div><div class="bu">used in <a href="#jcurve">&sect;4</a></div></div>
+    <div class="blk"><div class="bn">Diffusion (adoption)</div><div class="bp">How fast and how widely a technology spreads after it is invented.</div><div class="ba">Average lag: 45 years after invention</div><div class="bu">used in <a href="#ladder">&sect;2</a></div></div>
+    <div class="blk"><div class="bn">Breadth of adoption</div><div class="bp">Share of firms using AI at all, for anything.</div><div class="ba">19% of Canadian firms</div><div class="bu">used in <a href="#depth">&sect;3</a></div></div>
+    <div class="blk"><div class="bn">Depth of adoption</div><div class="bp">Share of firms that rebuilt a core process around AI.</div><div class="ba">8% use AI significantly in core work</div><div class="bu">used in <a href="#depth">&sect;3</a></div></div>
+    <div class="blk"><div class="bn">Productivity J-curve</div><div class="bp">Output per worker dips while a firm reorganizes, then rises above where it started.</div><div class="ba">Korea: no gain for 5+ years (14,000 firms)</div><div class="bu">used in <a href="#jcurve">&sect;4</a></div></div>
+    <div class="blk"><div class="bn">Complementary investment</div><div class="bp">The unglamorous spend AI needs to work: redesigned jobs, training, clean data.</div><div class="ba">Clinic retraining staff on an AI scribe</div><div class="bu">used in <a href="#jcurve">&sect;4</a></div></div>
+  </div>
+
+  <div class="fam"><span class="fn">Family D</span><span class="ft">The policy levers</span><span class="ln"></span></div>
+  <div class="blocks">
+    <div class="blk"><div class="bn">"AI for All"</div><div class="bp">Ottawa's June 2026 AI strategy, framed around the adoption gap.</div><div class="ba">$2.3B over 5 yrs; 12% &rarr; 60% of firms by 2034</div><div class="bu">used in <a href="#depth">&sect;3</a></div></div>
+    <div class="blk"><div class="bn">Credit and compute</div><div class="bp">The strategy's main tools: loans to adopters, subsidized computing power.</div><div class="ba">BDC $500M loans; $700M compute</div><div class="bu">used in <a href="#fit">&sect;5</a></div></div>
+    <div class="blk"><div class="bn">Competition policy</div><div class="bp">Making incumbents fear losing customers, so they bother to modernize.</div><div class="ba">Competition Act amendments; costs $0</div><div class="bu">used in <a href="#fit">&sect;5</a></div></div>
+    <div class="blk"><div class="bn">Regulatory sandbox</div><div class="bp">Regulator lets firms test a new tool under supervision before rules are final.</div><div class="ba">UK Financial Conduct Authority</div><div class="bu">used in <a href="#fit">&sect;5</a></div></div>
+    <div class="blk"><div class="bn">Government as lead user</div><div class="bp">The public sector adopts first, proving it works and creating a market.</div><div class="ba">AI in tax administration, benefits</div><div class="bu">used in <a href="#canada">&sect;6</a></div></div>
+  </div>
+</section>
+
+<div class="group"><h2>Concepts</h2><div class="ln"></div><span class="ct">6 sections &middot; 1 interactive</span></div>
+
+<section id="stall">
+  <h2><span class="no">1</span> Canada's stall</h2>
+  <p class="oneline"><span class="tag">In one line</span><span>Canadian firms <b>stopped buying the tools</b> that make workers more productive, and the gap with the US widened.</span></p>
+  <figure>
+    <div class="dg rv">
+      <div class="bars">
+        <div class="bar"><span class="bl">Invest / worker 2014</span><div class="bt"><div class="bf lo" style="--w:87%;width:87%"></div><span class="bc">87&cent;</span></div></div>
+        <div class="bar"><span class="bl">Invest / worker 2024</span><div class="bt"><div class="bf hi" style="--w:54%;width:54%"></div><span class="bc">54&cent;</span></div></div>
+        <div class="bar"><span class="bl">Productivity 2002</span><div class="bt"><div class="bf lo" style="--w:83%;width:83%"></div><span class="bc">83% of US</span></div></div>
+        <div class="bar"><span class="bl">Productivity 2019</span><div class="bt"><div class="bf hi" style="--w:73%;width:73%"></div><span class="bc">73% of US</span></div></div>
+      </div>
+    </div>
+    <figcaption>Every bar is Canada as a share of the US (US = full width). Figures from the op-ed.</figcaption>
+  </figure>
+  <p class="lede">The op-ed's diagnosis: <strong>Canada's problem is not a shortage of inventions.</strong> It is falling behind on building capital (1i) and has barely started putting the world's best technology to work (2i).</p>
+  <div class="ex">
+    <span class="lb">Example &middot; what the investment gap means</span>
+    <div>For every $10,000 a US firm invests per worker, a Canadian firm now invests about $5,400. Ten years ago it was $8,700.</div>
+    <div class="calc-line">8,700 &rarr; 5,400 = a 38% fall relative to the US</div>
+  </div>
+</section>
+
+<section id="ladder">
+  <h2><span class="no">2</span> The middle-income playbook</h2>
+  <p class="oneline"><span class="tag">In one line</span><span>Countries climb by <b>investing, then copying the best, then inventing</b>. They stall when the first engine fades and the second never starts.</span></p>
+  <figure>
+    <div class="dg">
+      <div class="spec">
+        <div class="sn"><b>1i &middot; Invest</b><span>build capital: roads, plants, machines</span></div>
+        <div class="sn ok"><b>2i &middot; Infuse</b><span>absorb foreign tech, spread it widely</span></div>
+        <div class="sn"><b>3i &middot; Innovate</b><span>push the global frontier</span></div>
+        <div class="specline"><span class="lbl">Canada, per the op-ed: slipping on 1i, barely started on 2i</span><span class="rule"></span></div>
+      </div>
+    </div>
+    <figcaption>The op-ed's move: diagnose a rich country with a middle-income country's disease.</figcaption>
+  </figure>
+  <div class="tw"><table>
+    <caption>Where the comparison fits and where it breaks</caption>
+    <thead><tr><th>Feature</th><th>Middle-income country</th><th>Canada</th><th>Fits?</th></tr></thead>
+    <tbody>
+      <tr><td>Behind the tech frontier</td><td>Yes, far behind</td><td>Yes, firm-level adoption lags</td><td><span class="pill v">Fits</span></td></tr>
+      <tr><td>Investment engine fading</td><td>Returns to capital falling</td><td>Investment per worker falling</td><td><span class="pill v">Fits</span></td></tr>
+      <tr><td>Incumbents resist change</td><td>Protected domestic firms</td><td>Concentrated banks, telecom, grocery</td><td><span class="pill v">Fits</span></td></tr>
+      <tr><td>Income per person</td><td>$1,136 to $13,845</td><td>About $53,000 US</td><td><span class="pill f">Breaks</span></td></tr>
+      <tr><td>Institutions, schooling</td><td>Often weak</td><td>Among the world's best</td><td><span class="pill f">Breaks</span></td></tr>
+      <tr><td>Wage advantage</td><td>Cheap labour attracts FDI</td><td>High wages</td><td><span class="pill f">Breaks</span></td></tr>
+      <tr><td>Frontier research</td><td>Little</td><td>Hinton, Bengio, Sutton; Mila, Vector, Amii</td><td><span class="pill f">Breaks</span></td></tr>
+    </tbody>
+  </table></div>
+  <div class="note">Income bands are the World Bank's (Session 6). Canada's GDP per person is an approximate IMF 2024 figure, not from the reading. The research labs are context, not from the op-ed.</div>
+  <div class="ex">
+    <span class="lb">Example &middot; the evidence for "adoption matters most"</span>
+    <div>Across 15 major technologies and 166 countries over two centuries, countries adopted new technologies <strong>45 years</strong> after invention on average. Differences in adoption speed explain <strong>at least a quarter</strong> of income gaps.</div>
+  </div>
+</section>
+
+<section id="depth">
+  <h2><span class="no">3</span> Breadth vs depth</h2>
+  <p class="oneline"><span class="tag">In one line</span><span><b>"Using AI" is cheap; rebuilding how work gets done is not.</b> Canada has nearly caught the US on the first and barely started the second.</span></p>
+  <figure>
+    <div class="dg rv">
+      <div class="bars">
+        <div class="bar"><span class="bl">Target 2034</span><div class="bt"><div class="bf md" style="--w:60%;width:60%"></div><span class="bc">60% using AI (Ottawa's goal)</span></div></div>
+        <div class="bar"><span class="bl">Using AI today</span><div class="bt"><div class="bf lo" style="--w:19%;width:19%"></div><span class="bc">19%, tripled in 2 yrs</span></div></div>
+        <div class="bar"><span class="bl">Core operations</span><div class="bt"><div class="bf hi" style="--w:8%;width:8%"></div><span class="bc">8%, the number that moves productivity</span></div></div>
+      </div>
+    </div>
+    <figcaption>The 60% target could be hit by firms using chatbots for emails, with no productivity gain at all.</figcaption>
+  </figure>
+  <div class="grid2">
+    <div class="card"><h4>Shallow (breadth)</h4><p>Draft emails, summarize documents, analyze a spreadsheet. A $30-a-month subscription.</p><span class="pill v">Counts toward 60%</span></div>
+    <div class="card"><h4>Deep (depth)</h4><p>Machine shop predicting equipment failure. Insurer settling claims in minutes. Clinic doctors no longer typing notes.</p><span class="pill f">What actually lifts output</span></div>
+  </div>
+  <div class="note">The 19% (StatCan) and 8% (Bank of Canada) come from <b>different surveys with different questions</b>. Don't say "11% are shallow users." Say depth is well under half of breadth.</div>
+</section>
+
+<section id="jcurve">
+  <h2><span class="no">4</span> The J-curve</h2>
+  <p class="oneline"><span class="tag">In one line</span><span>Doing AI properly <b>makes a firm worse before better</b>, while it retrains, redesigns jobs and fixes its data.</span></p>
+  <div class="ia">
+    <div class="ia-top">
+      <span class="ttl">One firm's productivity after adopting AI</span>
+      <div class="seg" id="jSeg" role="group" aria-label="Adoption type">
+        <button type="button" data-k="shallow" aria-pressed="false">Chatbot only</button>
+        <button type="button" data-k="deep" aria-pressed="true">Rebuild core process</button>
+      </div>
+      <span class="hint">illustrative</span>
+    </div>
+    <div class="ia-body">
+      <div class="slider">
+        <label for="jDip">Depth of the dip</label>
+        <input id="jDip" type="range" min="2" max="20" step="1" value="10">
+        <span class="val" id="jDipV">&minus;10%</span>
+      </div>
+      <svg class="d" id="jSvg" viewBox="0 0 720 250" role="img" aria-label="Productivity path over ten years" style="margin-top:14px"></svg>
+      <div class="kpis" id="jK"></div>
+      <div class="note acc" id="jNote" style="margin-top:14px"></div>
+    </div>
+  </div>
+  <p class="lede">Evidence: a Bank of Korea study of <strong>14,000+ Korean firms</strong> found no measurable gain for at least <strong>five years</strong> after starting with AI. That is why small firms with thin margins never start.</p>
+</section>
+
+<section id="fit">
+  <h2><span class="no">5</span> Wrong tools, by firm size</h2>
+  <p class="oneline"><span class="tag">In one line</span><span>Small firms lack <b>know-how and cash to ride the dip</b>. Large firms lack <b>a reason to bother</b>. Loans and compute fix neither.</span></p>
+  <div class="sc">
+    <div class="scrow sch"><div class="cl">&nbsp;</div><div class="sides"><div class="sd">Small firms</div><div class="sd">Large firms</div></div><div class="vd">Op-ed's fix</div></div>
+    <div class="scrow"><div class="cl">Real constraint</div><div class="sides"><div class="sd b"><b>Capability, cash flow</b></div><div class="sd b"><b>Incentive, rule uncertainty</b></div></div><div class="vd d">diagnosis</div></div>
+    <div class="scrow"><div class="cl">Ottawa offers</div><div class="sides"><div class="sd">BDC loans: help only firms that know what to do</div><div class="sd">Compute subsidies: they already have it</div></div><div class="vd b">mismatch</div></div>
+    <div class="scrow"><div class="cl">Op-ed wants</div><div class="sides"><div class="sd a">Hands-on help, shared early risk</div><div class="sd a">Enforce competition; faster sector rules, sandboxes</div></div><div class="vd a">fit</div></div>
+    <div class="scrow"><div class="cl">Cost to treasury</div><div class="sides"><div class="sd">Some (advisors, risk sharing)</div><div class="sd">Competition: $0</div></div><div class="vd a">cheap</div></div>
+  </div>
+  <div class="ex">
+    <span class="lb">Example &middot; why compute misses</span>
+    <div>A 12-person HVAC contractor will use AI through scheduling software it rents. Free GPU hours do nothing for it. A consultant who redesigns its dispatch process does.</div>
+  </div>
+  <div class="note">Regulatory lag: no AI-specific law (the last bill died in 2025). The federal banking regulator's AI model guideline only takes effect May 2027. Until then, nobody knows who is liable when AI gets it wrong.</div>
+</section>
+
+<section id="canada">
+  <h2><span class="no">6</span> What's distinctly Canadian</h2>
+  <p class="oneline"><span class="tag">In one line</span><span>The in-class group exercise: <b>design for Canada's economy, not "any rich country."</b> Start from what is unusual here.</span></p>
+  <div class="tw"><table>
+    <caption>Feature of Canada &rarr; what it means for an AI strategy (my prep, not from the op-ed)</caption>
+    <thead><tr><th>Canadian feature</th><th>Problem or opening</th><th>Strategy idea</th></tr></thead>
+    <tbody>
+      <tr><td>Concentrated sectors</td><td>Big 5 banks, 3 telecoms, grocery</td><td>Competition enforcement as AI policy</td></tr>
+      <tr><td>Single-payer health care</td><td>Huge public buyer</td><td>Province-wide AI scribes, lead user</td></tr>
+      <tr><td>Many small firms</td><td>No in-house expertise</td><td>Extension service, like farm advisors</td></tr>
+      <tr><td>Interprovincial trade barriers</td><td>Small markets, low scale</td><td>Cut barriers so AI pays at scale</td></tr>
+      <tr><td>Next to the US</td><td>Tools and talent flow south</td><td>Adopt US tools fast; keep researchers</td></tr>
+      <tr><td>Resource-heavy economy</td><td>Mining, energy, farming</td><td>Target predictive maintenance, ag-tech</td></tr>
+      <tr><td>Foreign-owned subsidiaries</td><td>Parent decides on tech</td><td>Channel for infusion; court mandates</td></tr>
+      <tr><td>Giant pension funds</td><td>Patient capital</td><td>Co-fund the J-curve dip</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note acc">Use the op-ed's own last line as your hook: the countries that escaped "did not copy someone else's strategy." Then name two features from this table.</div>
+</section>
+
+<div class="group"><h2>Questions</h2><div class="ln"></div><span class="ct">3 prep questions &middot; cold-call drill</span></div>
+
+<section id="q1">
+  <h2>Q1 &middot; Agree or disagree?</h2>
+  <div class="qtext">
+    <span class="lbl">As set on Canvas, Guide to Preparation</span>
+    <div class="body">Do you agree or disagree with the op-ed's premise that Canada should approach AI more like a middle-income country, absorbing and spreading the world's best technology, than like a frontier economy trying to invent it? Come to class ready to state your position on a five-point scale, from strongly disagree to strongly agree, and to defend it.</div>
+  </div>
+  <p class="lede">Tap a position for a ready-made defense. <strong>My pick: 4, Agree</strong>. It is the easiest to defend under follow-ups: you back the core claim and own its weak spot.</p>
+  <div class="ia">
+    <div class="ia-top"><span class="ttl">Where do you stand?</span><span class="hint">tap a number</span></div>
+    <div class="ia-body">
+      <div class="likert" id="lk">
+        <button type="button" data-k="1" aria-pressed="false"><b>1</b><span>Strongly disagree</span></button>
+        <button type="button" data-k="2" aria-pressed="false"><b>2</b><span>Disagree</span></button>
+        <button type="button" data-k="3" aria-pressed="false"><b>3</b><span>Neutral</span></button>
+        <button type="button" data-k="4" aria-pressed="true"><b>4</b><span>Agree</span><i class="rec">my pick</i></button>
+        <button type="button" data-k="5" aria-pressed="false"><b>5</b><span>Strongly agree</span></button>
+      </div>
+      <div class="pos" id="lkOut"></div>
+    </div>
+  </div>
+  <h3>The 4 / Agree defense, built to say out loud</h3>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><div class="sb"><h4>State the claim in one breath</h4><p>"I agree. The payoff from AI comes from using it, not inventing it, and Canada is bad at using new tech."</p></div></div>
+    <div class="step"><div class="num">2</div><div class="sb"><h4>Give the number that proves it</h4><p>Lead with the gap that can't be blamed on inventions.</p><pre class="math">Investment per worker vs US:  87&cent; → <b>54&cent;</b>   <i>(2014 → 2024)</i>
+Productivity vs US:           83% → <b>73%</b>    <i>(2002 → 2019)</i>
+AI in core operations:        <b>8%</b> of firms</pre></div></div>
+    <div class="step"><div class="num">3</div><div class="sb"><h4>Explain why adoption beats invention for a GPT</h4><p>Electricity paid off when factories were rebuilt around it, not when it was invented. Canada does not own a frontier lab, so the rents from models flow to US firms either way. The gains we can capture are in use.</p></div></div>
+    <div class="step"><div class="num">4</div><div class="sb"><h4>Concede the label, keep the logic</h4><p>"Canada is obviously not middle income. The point is the <b>diagnosis</b>: our first engine is fading and the second never started. That part fits."</p></div></div>
+    <div class="step"><div class="num">5</div><div class="sb"><h4>Say what would change your mind</h4><p>"If deep adopters weren't more productive, or if staying near the frontier were needed to absorb AI well, I'd move to 3."</p></div></div>
+  </div>
+</section>
+
+<section id="q2">
+  <h2>Q2 &middot; The strongest case against</h2>
+  <div class="qtext">
+    <span class="lbl">As set on Canvas, Guide to Preparation</span>
+    <div class="body">What is the strongest case against the op-ed? Consider how a critic who believes Canada should compete at the AI frontier would respond, and where the comparison with middle-income countries works and where it breaks down.</div>
+  </div>
+  <div class="tug" id="tug">
+    <div class="row"><div class="lb l">The World Bank's own ladder puts rich countries at 3i</div><div class="mid"><i class="l" style="width:46%"></i></div><div class="lb">Canada skipped 2i; can't jump a rung</div></div>
+    <div class="row"><div class="lb l">You can only absorb what you understand</div><div class="mid"><i class="l" style="width:40%"></i></div><div class="lb">Op-ed keeps research funding</div></div>
+    <div class="row"><div class="lb l">Model owners capture the rents</div><div class="mid"><i class="l" style="width:34%"></i></div><div class="lb">Users still capture the productivity</div></div>
+    <div class="row"><div class="lb l">Sovereignty: dependence on US firms</div><div class="mid"><i class="l" style="width:30%"></i></div><div class="lb">Building our own model is unaffordable</div></div>
+    <div class="row"><div class="lb l">Talent leaves if frontier work isn't here</div><div class="mid"><i class="l" style="width:28%"></i></div><div class="lb">Adopters hire talent too</div></div>
+    <div class="net"><div class="lb l" style="color:var(--credit)">Critic, frontier first</div><div class="mid">Op-ed survives, bruised</div><div class="lb" style="color:var(--accent)">Op-ed, adopt first</div></div>
+  </div>
+  <p class="sm" style="margin-top:-6px">Bar length = my judgment of how hard each critique lands. Illustrative, not data.</p>
+  <h3>The critic's five strongest points</h3>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><div class="sb"><h4>Turn the op-ed's own framework against it</h4><p>The World Bank sequence says once you're rich, you <strong>innovate</strong>. Korea escaped by moving to 3i: Samsung, about 5% of GDP on R&amp;D. Prescribing 2i to a high-income country runs the ladder backwards.</p></div></div>
+    <div class="step"><div class="num">2</div><div class="sb"><h4>Absorptive capacity</h4><p>Firms adopt well only if they have people who understand the frontier. Cut frontier ambition and you lose the experts who make deep adoption possible.</p></div></div>
+    <div class="step"><div class="num">3</div><div class="sb"><h4>Winner-take-most economics</h4><p>AI value may pool in a few model owners. A pure adopter pays rent to US firms forever. Unlike electricity, the tech isn't a cheap commodity yet.</p></div></div>
+    <div class="step"><div class="num">4</div><div class="sb"><h4>Sovereignty, after tariffs and CUSMA</h4><p>2026 shows the cost of depending on the US. Health, defence and government data on US models is a strategic risk.</p></div></div>
+    <div class="step"><div class="num">5</div><div class="sb"><h4>Adoption may not need policy at all</h4><p>Breadth tripled in two years with no strategy. Firms adopt when it pays. The market failure is research, a public good, so that's where public money belongs.</p></div></div>
+  </div>
+  <div class="note acc"><b>Your rebuttal in one line:</b> the op-ed doesn't abandon the frontier ("deserves continued support"). It argues the <b>marginal dollar</b> earns more in adoption, and Canada's gap is in use, not ideas.</div>
+</section>
+
+<section id="q3">
+  <h2>Q3 &middot; Why breadth and depth diverge, and what to measure</h2>
+  <div class="qtext">
+    <span class="lbl">As set on Canvas, Guide to Preparation</span>
+    <div class="body">The op-ed argues that Canada has nearly caught up with the United States in the share of firms "using AI," but not in how deeply firms use it. Why might breadth and depth of adoption diverge? What would you measure to judge whether an AI adoption strategy is working?</div>
+  </div>
+  <figure>
+    <div class="dg">
+      <div class="flow f5">
+        <div class="fnode acc"><b>Try AI</b><span>cheap subscription</span></div>
+        <div class="farr"><span class="ch">&rsaquo;</span></div>
+        <div class="fnode flg"><b>The wall</b><span>redesign, retrain, clean data</span></div>
+        <div class="farr"><span class="ch">&rsaquo;</span><i>few cross</i></div>
+        <div class="fstack">
+          <div class="fnode acc"><b>Rebuild a core process</b><span>8%</span></div>
+          <div class="fnode mute"><b>Stay shallow</b><span>emails and summaries</span></div>
+        </div>
+      </div>
+    </div>
+    <figcaption>Breadth is the entry fee. Depth is the wall behind it.</figcaption>
+  </figure>
+  <h3>Why they diverge</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Reason</th><th>Mechanism</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Cost gap</td><td>Trying is cheap; rebuilding is expensive</td><td class="sm">op-ed</td></tr>
+      <tr><td>J-curve</td><td>Years of lower output before gains</td><td class="sm">op-ed, Bank of Korea</td></tr>
+      <tr><td>No expertise</td><td>Small firms can't redesign alone</td><td class="sm">op-ed</td></tr>
+      <tr><td>Weak competition</td><td>Incumbents have no reason to rebuild</td><td class="sm">op-ed</td></tr>
+      <tr><td>Liability fog</td><td>Regulated firms wait for the rules</td><td class="sm">op-ed</td></tr>
+      <tr><td>Data not ready</td><td>Messy records block deep uses</td><td class="sm">my addition</td></tr>
+      <tr><td>Loose survey wording</td><td>"Using AI" counts a single chatbot</td><td class="sm">my addition</td></tr>
+    </tbody>
+  </table></div>
+  <h3>A scorecard that would tell you it's working</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Measure</th><th>Type</th><th>Why it beats "% using AI"</th></tr></thead>
+    <tbody>
+      <tr><td><b>% of firms with AI in a core process</b></td><td><span class="pill v">Depth</span></td><td>Op-ed's own headline target</td></tr>
+      <tr><td><b>Output per worker, adopters vs non-adopters</b></td><td><span class="pill v">Outcome</span></td><td>Proves the depth actually pays</td></tr>
+      <tr><td>Depth gap, small vs large firms</td><td><span class="pill">Diffusion</span></td><td>Is it spreading, or staying at the top?</td></tr>
+      <tr><td>Investment per worker in software, data, training</td><td><span class="pill">Input</span></td><td>Leading signal; fixes the 54&cent; problem</td></tr>
+      <tr><td>Time to payoff, tracked by cohort</td><td><span class="pill">J-curve</span></td><td>Is the dip getting shorter?</td></tr>
+      <tr><td>Task-level outcomes</td><td><span class="pill">Concrete</span></td><td>Claim settlement days, doctor typing hours</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note">Trap: any single target gets gamed (Goodhart's law). Pair a depth measure with an outcome measure so "rebuilt a process" can't be claimed without a productivity result.</div>
+</section>
+
+<section id="drill">
+  <h2>Cold-call drill</h2>
+  <p class="lede">Canvas says expect individual follow-ups, oral-exam style. Hide the answers, say yours out loud, then reveal.</p>
+  <button class="toggle" id="quizToggle" type="button"><span class="pip"></span><span id="quizLabel">Hide answers &amp; quiz me</span></button>
+  <div class="q">
+    <div class="q-meta">Follow-up 1 &middot; the premise</div>
+    <div class="qtext"><span class="lbl">Likely question</span><div class="body">Canada is one of the richest countries on earth. Isn't calling it "middle income" just wrong?</div></div>
+    <button class="reveal" type="button">Reveal</button>
+    <div class="ans"><blockquote>On income, yes. But the op-ed uses it as a diagnosis, not a label. The trap is about growth engines: our investment engine is fading (54&cent; per US dollar) and adoption barely started. That pattern, not the income level, is what matches.</blockquote></div>
+  </div>
+  <div class="q">
+    <div class="q-meta">Follow-up 2 &middot; the target</div>
+    <div class="qtext"><span class="lbl">Likely question</span><div class="body">Isn't breadth a fine first step? You have to start somewhere.</div></div>
+    <button class="reveal" type="button">Reveal</button>
+    <div class="ans"><blockquote>Breadth is fine as a step, bad as a target. It already tripled to 19% on its own. A 60% goal rewards chatbot use, and the productivity gap stays open. Target what you want: core-process use and output per worker.</blockquote></div>
+  </div>
+  <div class="q">
+    <div class="q-meta">Follow-up 3 &middot; competition</div>
+    <div class="qtext"><span class="lbl">Likely question</span><div class="body">Why is competition policy an AI policy?</div></div>
+    <button class="reveal" type="button">Reveal</button>
+    <div class="ans"><blockquote>Rebuilding a core process is painful. A big bank with no rival threatening its customers has no reason to endure it. Competition creates the reason. It's also free, unlike $2.3 billion in programs.</blockquote></div>
+  </div>
+  <div class="q">
+    <div class="q-meta">Follow-up 4 &middot; the J-curve</div>
+    <div class="qtext"><span class="lbl">Likely question</span><div class="body">If gains take five years, how would a government know in time that its strategy is working?</div></div>
+    <button class="reveal" type="button">Reveal</button>
+    <div class="ans"><blockquote>Track leading indicators: investment in software, data and training per worker, and core-process adoption. Then confirm with lagging ones: output per worker in adopting firms. Expect the dip; judge on the trend.</blockquote></div>
+  </div>
+  <div class="q">
+    <div class="q-meta">Follow-up 5 &middot; your own view</div>
+    <div class="qtext"><span class="lbl">Likely question</span><div class="body">What would change your mind?</div></div>
+    <button class="reveal" type="button">Reveal</button>
+    <div class="ans"><blockquote>Evidence that deep adopters aren't more productive after the dip, or that countries without frontier research absorb AI badly. Either would push me from 4 toward 3.</blockquote></div>
+  </div>
+</section>
+
+<div class="group"><h2>Reference</h2><div class="ln"></div></div>
+
+<section id="glossary">
+  <h2>Glossary</h2>
+  <div class="tw"><table>
+    <thead><tr><th>Term</th><th>Plain English</th><th>From this session</th></tr></thead>
+    <tbody>
+      <tr><td><b>Infusion = 2i<br>= diffusion = absorption</b></td><td>All mean: adopt tech made elsewhere, spread it</td><td class="sm">The op-ed's core prescription</td></tr>
+      <tr><td><b>Frontier economy</b></td><td>A country inventing the newest tech</td><td class="sm">US, with the frontier AI labs</td></tr>
+      <tr><td><b>Adoption gap</b></td><td>Lag in firms using a technology</td><td class="sm">Ottawa's framing for AI for All</td></tr>
+      <tr><td><b>Breadth vs depth</b></td><td>Any use vs rebuilt core work</td><td class="sm">19% vs 8%</td></tr>
+      <tr><td><b>J-curve</b></td><td>Dip, then rise, after adoption</td><td class="sm">5+ years, Korean firms</td></tr>
+      <tr><td><b>GPT</b></td><td>Tech that reshapes every industry</td><td class="sm">AI, like electricity</td></tr>
+      <tr><td><b>Sandbox</b></td><td>Supervised testing before final rules</td><td class="sm">UK FCA</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="traps">
+  <h2>Traps &amp; files</h2>
+  <div class="tw"><table>
+    <caption>Where people slip in this discussion</caption>
+    <tbody>
+      <tr><td>Arguing Canada isn't middle income</td><td>Concede it; argue the diagnosis</td></tr>
+      <tr><td>Saying the op-ed abandons research</td><td>It doesn't: "deserves continued support"</td></tr>
+      <tr><td>Subtracting 19% minus 8%</td><td>Different surveys; compare, don't subtract</td></tr>
+      <tr><td>Treating the J-curve dip as failure</td><td>Expected; judge the trend</td></tr>
+      <tr><td>A generic "rich country" strategy</td><td>Name a Canadian feature (&sect;6)</td></tr>
+      <tr><td>Reading from notes</td><td>Canvas says oral-exam style; know three numbers cold</td></tr>
+    </tbody>
+  </table></div>
+  <div class="grid2">
+    <div class="tw"><table><caption>Three numbers to know cold</caption><tbody>
+      <tr><td>Investment per worker vs US</td><td class="n">54&cent; (was 87&cent;)</td></tr>
+      <tr><td>Productivity vs US</td><td class="n">73% (was 83%)</td></tr>
+      <tr><td>Using AI vs core use</td><td class="n">19% vs 8%</td></tr>
+    </tbody></table></div>
+    <div class="tw"><table><caption>Materials in this repo</caption><tbody>
+      <tr><td class="sm">session-08/Reading_Cornelson-Frost_The-AI-Race-Canada-Needs-to-Win_2026.md</td><td class="sm">op-ed text</td></tr>
+      <tr><td class="sm">session-08/canvas-october-7-2026-details-session-8.md</td><td class="sm">Canvas page</td></tr>
+      <tr><td class="sm">session-08/Video_Session-08_*.mp4</td><td class="sm">video overview</td></tr>
+      <tr><td class="sm">notes/session-06-accumulation-to-renewal.html</td><td class="sm">3 i's, infusion refresher</td></tr>
+      <tr><td class="sm"><a href="https://ivey.instructure.com/courses/7059/pages/173976">Canvas session page</a></td><td class="sm">source</td></tr>
+    </tbody></table></div>
+  </div>
+</section>
+
+<section id="log">
+  <h2>Q&amp;A log</h2>
+  <p class="lede">Follow-up questions get appended here, newest first.</p>
+  <div class="q">
+    <div class="q-meta">Q1 &middot; Is this op-ed going to be on the midterm (Oct 26)?</div>
+    <figure><div class="dg pad0"><div class="flow f3"><div class="fnode"><b>Session 8 op-ed</b><span>argument, numbers</span></div><div class="farr"><span class="ch">&rsaquo;</span></div><div class="fstack"><div class="fnode acc"><b>Testable: the 3 i's, infusion, productivity</b><span>Primer 6, Session 6</span></div><div class="fnode mute"><b>Less likely: specific policy amounts</b><span>$500M, $700M</span></div></div></div></div><figcaption>The concepts underneath are course material; the policy details are discussion fodder.</figcaption></figure>
+    <div class="ex"><span class="lb">Example</span><div>A midterm question could ask why a country stalls when 1i fades before 2i starts. Canada here is a ready-made example.</div></div>
+  </div>
+</section>
+
+</main>
+</div>
+
+<div class="wrap">
+<footer>4505 GMM &middot; Session 8 &middot; My own prep, not an answer key; check views against class discussion. Figures are from the op-ed unless marked; J-curve chart and tug weights are illustrative.</footer>
+</div>
+<script>
+(function(){
+"use strict";
+var NS = "http://www.w3.org/2000/svg";
+var MONO = "IBM Plex Mono, monospace";
+function E(n,a,t){ var e=document.createElementNS(NS,n); for(var k in a){e.setAttribute(k,a[k]);} if(t!==undefined)e.textContent=t; return e; }
+function clear(s){ while(s.firstChild) s.removeChild(s.firstChild); }
+function tok(n,f){ var v=getComputedStyle(document.documentElement).getPropertyValue(n); return (v||"").trim()||f; }
+function money(v,d){ return "$" + (d?v.toFixed(d):Math.round(v).toLocaleString("en-CA")); }
+function commas(v){ return Math.round(v).toLocaleString("en-CA"); }
+function niceMax(v, steps){
+  if(!(v>0)) return 1;
+  var raw=v/steps, mag=Math.pow(10,Math.floor(Math.log(raw)/Math.LN10)), n=raw/mag;
+  return (n<=1?1:n<=2?2:n<=2.5?2.5:n<=5?5:10)*mag*steps;
+}
+function kpi(host, items){
+  host.innerHTML="";
+  items.forEach(function(it){
+    var d=document.createElement("div"); d.className="kpi"+(it.tone?" "+it.tone:"");
+    d.innerHTML='<div class="k"></div><div class="v"></div><div class="s"></div>';
+    d.querySelector(".k").textContent=it.k;
+    d.querySelector(".v").textContent=it.v;
+    d.querySelector(".s").textContent=it.s||"";
+    host.appendChild(d);
+  });
+}
+function seg(id, cb){
+  var el=document.getElementById(id); if(!el) return;
+  el.addEventListener("click", function(e){
+    var b=e.target.closest("button"); if(!b) return;
+    el.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", String(x===b)); });
+    cb(b.dataset.k);
+  });
+}
+
+
+/* ---- motion: reveal, count-up, bar growth. Meaning only. ---- */
+(function(){
+  document.documentElement.classList.add("js");
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function countUp(el){
+    var to=parseFloat(el.dataset.to), dp=el.dataset.dp?+el.dataset.dp:0,
+        pre=el.dataset.pre||"", suf=el.dataset.suf||"", dur=520, t0=0;
+    if(isNaN(to)) return;
+    if(reduce){ el.textContent=pre+to.toFixed(dp)+suf; return; }
+    function tick(t){
+      if(!t0)t0=t;
+      var k=Math.min(1,(t-t0)/dur), e=1-Math.pow(1-k,3);
+      el.textContent=pre+(to*e).toFixed(dp)+suf;
+      if(k<1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  var nodes=[].slice.call(document.querySelectorAll(".rv,.bars,.count"));
+  if(!nodes.length) return;
+  if(!("IntersectionObserver" in window)){
+    nodes.forEach(function(n){ n.classList.add("in"); if(n.classList.contains("count")) countUp(n); });
+    return;
+  }
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      e.target.classList.add("in");
+      if(e.target.classList.contains("count")) countUp(e.target);
+      e.target.querySelectorAll && [].forEach.call(e.target.querySelectorAll(".count:not(.done)"),function(c){
+        c.classList.add("done"); countUp(c);
+      });
+      io.unobserve(e.target);
+    });
+  },{rootMargin:"0px 0px -8% 0px",threshold:.12});
+  nodes.forEach(function(n){ io.observe(n); });
+
+  /* anything already scrolled past (a hash jump from the contents rail, a restored
+     scroll position) never intersects, so it would sit at opacity 0 forever.
+     Settle those instantly, with no animation. */
+  function finalise(el){
+    var to=parseFloat(el.dataset.to);if(isNaN(to))return;
+    el.textContent=(el.dataset.pre||"")+to.toFixed(el.dataset.dp?+el.dataset.dp:0)+(el.dataset.suf||"");
+  }
+  function settle(n){
+    n.classList.add("in");
+    if(n.classList.contains("count")&&!n.classList.contains("done")){n.classList.add("done");finalise(n);}
+    if(n.querySelectorAll)[].forEach.call(n.querySelectorAll(".count:not(.done)"),function(c){c.classList.add("done");finalise(c);});
+    io.unobserve(n);
+  }
+  function sweep(){
+    nodes.forEach(function(n){
+      if(n.classList.contains("in"))return;
+      if(n.getBoundingClientRect().bottom<=0)settle(n);
+    });
+  }
+  sweep();
+  window.addEventListener("load",function(){setTimeout(sweep,80);});
+  window.addEventListener("hashchange",function(){setTimeout(sweep,60);});
+})();
+
+/* ---- contents rail scroll-spy ---- */
+(function(){
+  var links=Array.prototype.slice.call(document.querySelectorAll("nav.toc a"));
+  if(!links.length || !("IntersectionObserver" in window)) return;
+  var map={}, targets=[];
+  links.forEach(function(a){
+    var id=a.getAttribute("href").slice(1), el=document.getElementById(id);
+    if(el){ map[id]=a; targets.push(el); }
+  });
+  var seen=[];
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      var i=seen.indexOf(e.target);
+      if(e.isIntersecting && i<0) seen.push(e.target);
+      if(!e.isIntersecting && i>=0) seen.splice(i,1);
+    });
+    if(!seen.length) return;
+    seen.sort(function(a,b){ return a.getBoundingClientRect().top-b.getBoundingClientRect().top; });
+    links.forEach(function(l){ l.classList.remove("on"); });
+    var a=map[seen[0].id]; if(!a) return;
+    a.classList.add("on");
+    var nav=document.querySelector("nav.toc");
+    if(nav && nav.scrollHeight>nav.clientHeight+4){
+      var t=a.offsetTop-nav.clientHeight/2; if(t>0) nav.scrollTop=t;
+    }
+  }, {rootMargin:"-72px 0px -55% 0px", threshold:0});
+  targets.forEach(function(t){ io.observe(t); });
+})();
+
+/* ---- live word count on capped essays ---- */
+document.querySelectorAll("[data-wc]").forEach(function(el){
+  var n=el.textContent.trim().split(/\s+/).filter(Boolean).length;
+  var out=el.parentElement.querySelector("[data-wc-for]");
+  if(out) out.textContent = n + " words";
+});
+
+/* ---- quiz mode ---- */
+(function(){
+  var body=document.body, tog=document.getElementById("quizToggle"), lab=document.getElementById("quizLabel");
+  if(!tog) return;
+  tog.addEventListener("click", function(){
+    var on=body.classList.toggle("quiz");
+    lab.textContent = on ? "Show all answers" : "Hide answers & quiz me";
+    tog.setAttribute("aria-pressed", String(on));
+    if(!on){
+      document.querySelectorAll(".ans.open").forEach(function(a){a.classList.remove("open");});
+      document.querySelectorAll("button.reveal.gone").forEach(function(b){b.classList.remove("gone");});
+    }
+  });
+  document.querySelectorAll("button.reveal").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var a=btn.parentElement.querySelector(".ans");
+      if(a){ a.classList.add("open"); btn.classList.add("gone"); }
+    });
+  });
+})();
+})();
+</script>
+<script>
+(function(){
+"use strict";
+/* ---- video chapters ---- */
+var v=document.getElementById("vid"),ch=document.getElementById("chap");
+if(v&&ch)ch.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  v.currentTime=+b.dataset.t;var p=v.play();if(p&&p.catch)p.catch(function(){});});
+
+var NS="http://www.w3.org/2000/svg";
+function el(t,a,s){var n=document.createElementNS(NS,t);for(var k in a)n.setAttribute(k,a[k]);if(s!==undefined)n.textContent=s;return n;}
+function tok(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim();}
+
+/* ---- J-curve: illustrative productivity index over 10 years ---- */
+var svg=document.getElementById("jSvg");
+if(svg){
+  var mode="deep",dip=10,X0=48,X1=700,Y0=14,Y1=212,YMIN=75,YMAX=135;
+  function sx(t){return X0+t/10*(X1-X0);} function sy(y){return Y1-(y-YMIN)/(YMAX-YMIN)*(Y1-Y0);}
+  function path(m,d){
+    var pts=[];for(var t=0;t<=10;t+=0.1){var y;
+      if(m==="shallow"){y=100+2*(1-Math.exp(-t/0.6));}
+      else{var gain=1.2*d+9;y=100-d*Math.sin(Math.min(t,2.5)/2.5*Math.PI/2)*Math.exp(-Math.max(0,t-2.5)/1.2)+gain*(1/(1+Math.exp(-(t-6)/0.9))) ;}
+      pts.push([t,y]);}
+    return pts;}
+  function draw(){
+    while(svg.firstChild)svg.removeChild(svg.firstChild);
+    for(var y=80;y<=130;y+=10){svg.appendChild(el("line",{x1:X0,x2:X1,y1:sy(y),y2:sy(y),"class":"gr"}));
+      svg.appendChild(el("text",{x:X0-8,y:sy(y)+4,"class":"tk","text-anchor":"end"},y));}
+    for(var t=0;t<=10;t+=2)svg.appendChild(el("text",{x:sx(t),y:Y1+18,"class":"tk","text-anchor":"middle"},"yr "+t));
+    svg.appendChild(el("line",{x1:X0,x2:X1,y1:sy(100),y2:sy(100),"class":"ax","stroke-dasharray":"4 4"}));
+    svg.appendChild(el("text",{x:X1,y:sy(100)-6,"class":"tk","text-anchor":"end"},"before AI = 100"));
+    var other=path(mode==="deep"?"shallow":"deep",dip),cur=path(mode,dip);
+    function d(p){return p.map(function(q,i){return(i?"L":"M")+sx(q[0]).toFixed(1)+","+sy(q[1]).toFixed(1);}).join(" ");}
+    svg.appendChild(el("path",{d:d(other),fill:"none",stroke:tok("--rule-strong"),"stroke-width":1.6,"stroke-dasharray":"5 4"}));
+    svg.appendChild(el("path",{d:d(cur),fill:"none",stroke:mode==="deep"?tok("--accent"):tok("--flag"),"stroke-width":2.6}));
+    var low=cur.reduce(function(a,b){return b[1]<a[1]?b:a;}),end=cur[cur.length-1];
+    var cross=null;for(var i=1;i<cur.length;i++){if(cur[i][0]>low[0]&&cur[i][1]>=100){cross=cur[i][0];break;}}
+    var k=document.getElementById("jK");k.innerHTML="";
+    [["Lowest point",(low[1]-100).toFixed(0)+"%",low[1]<99?"warn":""],
+     ["Back to break-even",mode==="deep"&&cross?"year "+cross.toFixed(1):"no dip",""],
+     ["Year 10 level",(end[1]-100>=0?"+":"")+(end[1]-100).toFixed(0)+"%","on"]].forEach(function(r){
+      var e=document.createElement("div");e.className="kpi "+r[2];
+      e.innerHTML='<div class="k"></div><div class="v"></div>';e.querySelector(".k").textContent=r[0];e.querySelector(".v").textContent=r[1];k.appendChild(e);});
+    document.getElementById("jNote").textContent=mode==="deep"
+      ?"Deep adoption: a real dip while the firm retrains and redesigns, then a gain far above the shallow path. A small firm with thin margins may not survive the dip, which is why the op-ed wants shared early risk."
+      :"Chatbot only: no dip, a small permanent bump. Counts toward the 60% target, barely moves productivity.";
+  }
+  document.getElementById("jSeg").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+    this.querySelectorAll("button").forEach(function(x){x.setAttribute("aria-pressed",String(x===b));});mode=b.dataset.k;draw();});
+  var r=document.getElementById("jDip");r.addEventListener("input",function(){dip=+r.value;document.getElementById("jDipV").textContent="−"+dip+"%";draw();});
+  draw();
+}
+
+/* ---- five-point position picker ---- */
+var P={
+ "1":["Strongly disagree","Canada is rich; it should lead. Keep the frontier: it builds absorptive capacity, keeps talent, protects sovereignty.","Hard to defend: the 54¢ investment gap is not caused by missing inventions."],
+ "2":["Disagree","The diagnosis fits, but the World Bank's own ladder puts high-income countries at innovation. Do both.","Expect: \"With $2.3B, where does the marginal dollar go?\""],
+ "3":["Neutral","Right on adoption, wrong frame. The middle-income label distracts; Canada's real issues are competition and scale.","Risky: neutral reads as unprepared unless you name what tips you."],
+ "4":["Agree","Adoption is where AI pays, and Canada lags on use, not ideas. The label is a stretch, the diagnosis fits.","Best balance: you defend the core and own the weak spot."],
+ "5":["Strongly agree","Frontier spending is vanity. Every dollar should go to adoption, competition and faster regulation.","Expect pushback on sovereignty and talent flight."]};
+var lk=document.getElementById("lk"),out=document.getElementById("lkOut");
+function show(k){var p=P[k];out.innerHTML='<div class="note acc"><b></b> <span></span></div><div class="note"></div>';
+  out.querySelector("b").textContent=k+" · "+p[0]+":";out.querySelector("span").textContent=p[1];out.querySelectorAll(".note")[1].textContent=p[2];}
+if(lk){lk.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  lk.querySelectorAll("button").forEach(function(x){x.setAttribute("aria-pressed",String(x===b));});show(b.dataset.k);});show("4");}
+})();
+</script>

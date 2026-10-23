@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="prep-file" content="4505-Global-Macroeconomics-for-Managers/notes/midterm-videos.html">
+<meta name="prep-session" content="active">
+<title>GMM midterm videos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --paper:#FFFFFF; --surface:#FFFFFF; --surface-2:#F3F6F3; --surface-3:#E9EFEA;
+  --ink:#141F1C; --ink-2:#4C5A55; --ink-3:#7A8681;
+  --rule:#E0E6E1; --rule-strong:#A8B5AE;
+  --accent:#1B6B57; --accent-2:#2E9376; --accent-soft:#E2F0E9;
+  --credit:#A33A2C; --credit-soft:#FAE7E2;
+  --flag:#8A6A12; --flag-soft:#FAF2DC;
+  --shadow:0 1px 2px rgba(20,31,28,.05), 0 12px 28px -22px rgba(20,31,28,.5);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Public Sans","Helvetica Neue",Arial,sans-serif;font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Bitter,Georgia,serif;text-wrap:balance;margin:0;line-height:1.15}
+p{margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+.wrap{max-width:1400px;margin:0;padding-inline:34px}
+
+/* ---------- masthead ---------- */
+header{border-bottom:1px solid var(--rule)}
+.hd{max-width:1330px;padding-block:38px 28px;display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between;align-items:flex-end}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(30px,5.5vw,46px);font-weight:700;letter-spacing:-.025em;margin-top:10px}
+.gist{color:var(--ink-2);max-width:52ch;margin-top:10px}
+.hd .meta{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-2);border-left:2px solid var(--accent);padding-left:14px;line-height:2}
+.hd .meta b{color:var(--ink);font-weight:600}
+
+/* ---------- left contents rail ---------- */
+.cols{display:grid;grid-template-columns:236px minmax(0,1fr);gap:54px;align-items:start}
+nav.toc{position:sticky;top:22px;padding-block:34px 0;font-size:13.5px;max-height:calc(100vh - 44px);overflow-y:auto}
+nav.toc .toc-h{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-3);padding-bottom:9px;border-bottom:1px solid var(--rule);margin-bottom:8px}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px}
+nav.toc a{display:flex;gap:9px;align-items:baseline;padding:5px 10px;border-radius:6px;color:var(--ink-2);
+  text-decoration:none;border-left:2px solid transparent;line-height:1.35}
+nav.toc a .n{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3);min-width:15px}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{color:var(--accent);border-left-color:var(--accent);background:var(--accent-soft);font-weight:600}
+nav.toc a.on .n{color:var(--accent)}
+nav.toc a .io{font-size:10px;color:var(--accent);margin-left:auto;opacity:.75}
+nav.toc .grp{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-3);padding:16px 10px 5px}
+nav.toc .grp:first-child{padding-top:2px}
+
+main{display:flex;flex-direction:column;gap:26px;padding-block:34px 80px;min-width:0;max-width:1020px}
+
+/* ---------- plain-English opener ---------- */
+.oneline{display:flex;gap:14px;align-items:flex-start;background:var(--accent-soft);border-radius:10px;
+  padding:14px 18px;font-size:16px;color:var(--ink);max-width:76ch}
+.oneline .tag{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);white-space:nowrap;padding-top:5px}
+.oneline b{font-weight:600}
+
+/* ---------- group divider ---------- */
+.group{display:flex;align-items:center;gap:16px;margin-top:34px}
+.group:first-child{margin-top:0}
+.group h2{font-size:13px;font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent);border:none;padding:0;white-space:nowrap}
+.group .ln{flex:1;height:1px;background:var(--rule)}
+.group .ct{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+
+section{display:flex;flex-direction:column;gap:18px;scroll-margin-top:64px}
+section>h2{font-size:clamp(21px,3.2vw,27px);font-weight:600;letter-spacing:-.015em;display:flex;gap:12px;align-items:baseline}
+section>h2 .no{font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--accent);font-weight:500}
+h3{font-size:17px;font-weight:600;margin-top:8px}
+.lede{color:var(--ink-2);max-width:72ch;font-size:16px}
+.lede strong{color:var(--ink);font-weight:600}
+
+
+/* ---------- flow diagrams: CSS boxes, NOT SVG text ----------
+   Text wraps and boxes grow, so a long label can never overflow.
+   Use these for every box-and-arrow / one-to-many / spectrum diagram.
+   Reserve SVG for real charts only (bars, lines, curves).           */
+.flow{display:grid;gap:14px;align-items:center}
+.flow.f5{grid-template-columns:minmax(0,1.05fr) 22px minmax(0,.92fr) 58px minmax(0,1.2fr)}
+.flow.f3{grid-template-columns:minmax(0,.8fr) 22px minmax(0,1.25fr)}
+.fstack{display:flex;flex-direction:column;gap:10px;min-width:0}
+.fnode{border:1.5px solid var(--rule-strong);border-radius:11px;padding:11px 14px;background:var(--surface);
+  display:flex;flex-direction:column;gap:3px;min-width:0}
+.fnode b{font-size:14.5px;font-weight:600;line-height:1.3}
+.fnode span{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);line-height:1.55;overflow-wrap:anywhere}
+.fnode.acc{background:var(--accent-soft);border-color:var(--accent)}
+.fnode.acc b,.fnode.acc span{color:var(--accent)}
+.fnode.bad{background:var(--credit-soft);border-color:var(--credit)}
+.fnode.bad b,.fnode.bad span{color:var(--credit)}
+.fnode.flg{background:var(--flag-soft);border-color:var(--flag);text-align:center}
+.fnode.flg b,.fnode.flg span{color:var(--flag)}
+.fnode.mute{border-style:dashed;background:var(--surface-3)}
+.farr{color:var(--rule-strong);text-align:center;line-height:1;font-family:"IBM Plex Mono",monospace}
+.farr .ch{display:block;font-size:20px;line-height:1}
+.farr i{font-style:normal;display:block;font-size:9px;letter-spacing:.06em;color:var(--ink-3);margin-top:5px;text-transform:uppercase;white-space:nowrap}
+
+/* spectrum: ordered scale with a hard line somewhere in it */
+.spec{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px}
+.spec .sn{border:1.5px solid var(--rule-strong);border-radius:11px;padding:11px 13px;background:var(--surface);min-width:0}
+.spec .sn b{display:block;font-size:14.5px;font-weight:600;margin-bottom:3px}
+.spec .sn span{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);line-height:1.5;display:block}
+.spec .sn.ok{background:var(--accent-soft);border-color:var(--accent)}
+.spec .sn.ok b,.spec .sn.ok span{color:var(--accent)}
+.spec .sn.no{background:var(--credit-soft);border-color:var(--credit)}
+.spec .sn.no b,.spec .sn.no span{color:var(--credit)}
+.specline{grid-column:1/-1;display:flex;align-items:center;gap:12px;margin-top:2px}
+.specline .lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--credit);white-space:nowrap}
+.specline .rule{flex:1;height:0;border-top:2px dashed var(--credit)}
+
+/* horizontal labelled bars */
+.bars{display:flex;flex-direction:column;gap:11px}
+.bar{display:grid;grid-template-columns:132px minmax(0,1fr);gap:14px;align-items:center}
+.bar .bl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);text-align:right}
+.bar .bt{display:flex;align-items:center;gap:10px;min-width:0}
+.bar .bf{height:20px;border-radius:4px;flex:none}
+.bar .bc{font-size:13px;color:var(--ink-2);min-width:0;overflow-wrap:anywhere}
+.bar .bf.hi{background:var(--credit-soft);border:1.2px solid var(--credit)}
+.bar .bf.md{background:var(--flag-soft);border:1.2px solid var(--flag)}
+.bar .bf.lo{background:var(--accent-soft);border:1.2px solid var(--accent)}
+
+/* two-ended scales: where two things sit on one axis */
+.scales{display:flex;flex-direction:column;gap:13px}
+.scale{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;align-items:center}
+.scale .sl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);text-align:right}
+.scale .tr{position:relative;height:34px}
+.scale .tr .ln{position:absolute;top:22px;left:0;right:0;height:0;border-top:1.5px solid var(--rule-strong)}
+.scale .tr .e{position:absolute;top:0;font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3)}
+.scale .tr .e.l{left:0} .scale .tr .e.r{right:0}
+.scale .tr .dot{position:absolute;top:15px;width:15px;height:15px;border-radius:50%;transform:translateX(-50%)}
+.scale .tr .dot.s{background:var(--accent-soft);border:2px solid var(--accent)}
+.scale .tr .dot.b{background:var(--credit-soft);border:2px solid var(--credit)}
+.legend{display:flex;gap:20px;flex-wrap:wrap;align-items:center;margin-top:4px;font-family:"IBM Plex Mono",monospace;font-size:11px}
+.legend i{font-style:normal;display:inline-flex;align-items:center;gap:7px}
+.legend .dot{width:13px;height:13px;border-radius:50%;display:inline-block}
+.legend .dot.s{background:var(--accent-soft);border:2px solid var(--accent)}
+.legend .dot.b{background:var(--credit-soft);border:2px solid var(--credit)}
+
+
+/* ---------- stat strip: headline numbers, rendered not typed ---------- */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;max-width:1020px}
+.stat{border-top:3px solid var(--accent);padding-top:9px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.stat.b{border-top-color:var(--credit)} .stat.c{border-top-color:var(--flag)} .stat.m{border-top-color:var(--rule-strong)}
+.stat .k{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.stat .v{font-family:Bitter,serif;font-size:29px;font-weight:700;line-height:1.05;font-variant-numeric:tabular-nums;color:var(--accent)}
+.stat.b .v{color:var(--credit)} .stat.c .v{color:var(--flag)} .stat.m .v{color:var(--ink)}
+.stat .s{font-size:12.5px;color:var(--ink-2);overflow-wrap:anywhere}
+
+/* ---------- tug of war: two opposed forces, net position ---------- */
+.tug{display:flex;flex-direction:column;gap:9px;max-width:1020px}
+.tug .row{display:grid;grid-template-columns:minmax(0,1fr) 300px minmax(0,1fr);gap:12px;align-items:center}
+.tug .lb{font-size:13.5px;color:var(--ink-2);min-width:0;overflow-wrap:anywhere}
+.tug .lb.l{text-align:right}
+.tug .mid{height:22px;position:relative;border-radius:4px;background:var(--surface-3);overflow:hidden}
+.tug .mid i{position:absolute;top:0;bottom:0;display:block;transition:width .9s cubic-bezier(.22,1,.36,1)}
+.tug .mid i.l{right:50%;background:var(--credit-soft);border-right:2px solid var(--credit)}
+.tug .mid i.r{left:50%;background:var(--accent-soft);border-left:2px solid var(--accent)}
+.tug .net{display:grid;grid-template-columns:minmax(0,1fr) 300px minmax(0,1fr);gap:12px;align-items:center;
+  border-top:1px solid var(--rule-strong);padding-top:10px;margin-top:3px}
+.tug .net .mid{height:30px;background:transparent;display:flex;align-items:center;justify-content:center;
+  font-family:Bitter,serif;font-weight:700;font-size:17px}
+
+/* ---------- scorecard: claim, two sides, verdict ---------- */
+.sc{display:flex;flex-direction:column;max-width:1020px;border:1px solid var(--rule);border-radius:12px;overflow:hidden}
+.scrow{display:grid;grid-template-columns:150px minmax(0,1fr) 122px;gap:0;border-top:1px solid var(--rule)}
+.scrow:first-child{border-top:none}
+.scrow .cl{padding:11px 14px;font-size:14px;font-weight:600;background:var(--surface-2);min-width:0;overflow-wrap:anywhere}
+.scrow .sides{display:grid;grid-template-columns:1fr 1fr;gap:0;min-width:0}
+.scrow .sd{padding:11px 14px;font-size:13px;color:var(--ink-2);min-width:0;overflow-wrap:anywhere;border-left:1px solid var(--rule)}
+.scrow .sd b{color:var(--ink)}
+.scrow .sd.a{background:color-mix(in srgb,var(--accent-soft) 45%,transparent)}
+.scrow .sd.b{background:color-mix(in srgb,var(--credit-soft) 45%,transparent)}
+.scrow .vd{padding:11px 12px;border-left:1px solid var(--rule);font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;text-align:center}
+.scrow .vd.a{color:var(--accent);background:var(--accent-soft)}
+.scrow .vd.b{color:var(--credit);background:var(--credit-soft)}
+.scrow .vd.d{color:var(--ink-3);background:var(--surface-2)}
+.scrow.sch .cl,.scrow.sch .sd,.scrow.sch .vd{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-3);font-weight:500;background:var(--surface-2);padding-block:8px}
+
+/* ---------- motion: meaning only, always from a visible rest state ---------- */
+.rv{opacity:1;transform:none;transition:opacity .5s ease,transform .5s cubic-bezier(.22,1,.36,1)}
+.js .rv:not(.in){opacity:0;transform:translateY(8px)}
+.js .bars .bf{width:0!important;transition:width .9s cubic-bezier(.22,1,.36,1)}
+.js .rv.in .bars .bf,.js .bars.in .bf{width:var(--w)!important}
+@media (prefers-reduced-motion:reduce){
+  .js .rv:not(.in){opacity:1;transform:none}
+  .js .bars .bf{width:var(--w)!important;transition:none}
+  .tug .mid i{transition:none}
+}
+
+
+/* ---------- sequence: actors exchanging messages over time ----------
+   Replaces a Mermaid sequenceDiagram. Never emit Mermaid: its labels
+   cross the lifelines, its participant boxes clip, and its badges sit
+   on the text. Here the "who" is its own column, so nothing can collide
+   and every label wraps.                                               */
+.seq{display:flex;flex-direction:column;max-width:1020px;counter-reset:seq}
+.seq .s{display:grid;grid-template-columns:26px 186px minmax(0,1fr);gap:14px;
+  padding:11px 0;border-top:1px solid var(--rule);align-items:start}
+.seq .s:first-child{border-top:none;padding-top:2px}
+.seq .s::before{counter-increment:seq;content:counter(seq);
+  width:26px;height:26px;border-radius:50%;background:var(--accent-soft);color:var(--accent);
+  border:1.5px solid var(--accent);display:flex;align-items:center;justify-content:center;
+  font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600}
+.seq .who{font-family:"IBM Plex Mono",monospace;font-size:11.5px;line-height:1.5;
+  color:var(--ink-2);padding-top:5px;min-width:0;overflow-wrap:anywhere}
+.seq .who b{color:var(--ink);font-weight:600;display:block}
+.seq .who i{font-style:normal;color:var(--ink-3)}
+.seq .msg{min-width:0;padding-top:3px}
+.seq .msg b{font-size:14.5px;font-weight:600;display:block;line-height:1.35}
+.seq .msg span{font-size:13.5px;color:var(--ink-2);display:block;margin-top:3px;overflow-wrap:anywhere}
+.seq .s.ret::before{background:var(--surface-3);color:var(--ink-3);border-color:var(--rule-strong);border-style:dashed}
+.seq .s.ret .msg b{color:var(--ink-2);font-weight:500}
+.seq .s.self .who i::before{content:"\21ba  "}
+.seq .grp{display:flex;align-items:center;gap:12px;padding:12px 0 2px}
+.seq .grp .tg{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);background:var(--accent-soft);border:1px solid var(--accent);border-radius:4px;padding:2px 8px;white-space:nowrap}
+.seq .grp .ln{flex:1;height:0;border-top:1px dashed var(--rule-strong)}
+@media (max-width:700px){ .seq .s{grid-template-columns:26px minmax(0,1fr)} .seq .who{grid-column:2} .seq .msg{grid-column:2} }
+
+/* ---------- diagram frame ---------- */
+figure{margin:0;display:flex;flex-direction:column;gap:10px;max-width:1020px}
+.dg{background:var(--surface-2);border:1px solid var(--rule);border-radius:14px;padding:24px}
+.dg.pad0{padding:18px}
+figcaption{color:var(--ink-3);font-size:13.5px;max-width:70ch}
+svg.d{width:100%;height:auto;display:block;overflow:visible}
+.d-box{fill:var(--surface);stroke:var(--rule-strong);stroke-width:1.5}
+.d-box.acc{fill:var(--accent-soft);stroke:var(--accent)}
+.d-box.bad{fill:var(--credit-soft);stroke:var(--credit)}
+.d-box.mute{fill:var(--surface-3);stroke:var(--rule-strong);stroke-dasharray:5 4}
+.d-t{font-family:"Public Sans",sans-serif;font-size:15px;font-weight:600;fill:var(--ink)}
+.d-t.t2{font-size:13.5px}
+.d-s{font-family:"IBM Plex Mono",monospace;font-size:11.5px;fill:var(--ink-3)}
+.d-lab{font-family:"IBM Plex Mono",monospace;font-size:11.5px;fill:var(--ink-2)}
+.d-link{fill:none;stroke:var(--rule-strong);stroke-width:1.6}
+.d-link.acc{stroke:var(--accent)}
+.d-link.bad{stroke:var(--credit)}
+
+/* ---------- interactive shell ---------- */
+.ia{max-width:1020px;background:var(--surface);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.ia-top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;
+  padding:12px 18px;border-bottom:1px solid var(--rule);background:var(--surface-2)}
+.ia-top .ttl{font-size:14px;font-weight:600}
+.ia-top .hint{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.ia-body{padding:20px 18px}
+
+.seg{display:inline-flex;border:1px solid var(--rule-strong);border-radius:8px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:13px;font-weight:500;cursor:pointer;border:0;background:transparent;
+  color:var(--ink-2);padding:6px 14px;border-right:1px solid var(--rule)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--accent);color:#fff;font-weight:600}
+.seg button:hover:not([aria-pressed="true"]){background:var(--accent-soft);color:var(--accent)}
+
+.slider{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.slider label{font-size:13.5px;color:var(--ink-2);min-width:130px}
+.slider input[type=range]{flex:1;min-width:180px;accent-color:var(--accent);height:22px}
+.slider .val{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:14px;
+  font-weight:600;min-width:96px;text-align:right;color:var(--ink)}
+
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:14px;margin-top:16px}
+.kpi{border-top:2px solid var(--rule-strong);padding-top:7px}
+.kpi.on{border-top-color:var(--accent)}
+.kpi.warn{border-top-color:var(--credit)}
+.kpi .k{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.kpi .v{font-family:Bitter,serif;font-size:21px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.25}
+.kpi.on .v{color:var(--accent)} .kpi.warn .v{color:var(--credit)}
+.kpi .s{font-size:12.5px;color:var(--ink-2)}
+
+/* ---------- example strip ---------- */
+.ex{max-width:1020px;border:1px solid var(--rule);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;
+  padding:14px 18px;background:var(--surface);font-size:15px;color:var(--ink-2);display:flex;flex-direction:column;gap:7px}
+.ex .lb{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.ex strong{color:var(--ink);font-weight:600}
+.calc-line{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink);
+  background:var(--surface-2);padding:7px 11px;border-radius:6px;align-self:flex-start;font-variant-numeric:tabular-nums}
+
+/* ---------- 2x2 classifier ---------- */
+.tray{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{font:inherit;font-size:13.5px;cursor:pointer;background:var(--surface);border:1.5px solid var(--rule-strong);
+  color:var(--ink);padding:7px 14px;border-radius:8px;transition:transform .12s ease,border-color .12s ease}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:600}
+.chip.done{opacity:.35;pointer-events:none;border-style:dashed}
+.grid22{display:grid;grid-template-columns:76px 1fr 1fr;gap:10px}
+.grid22 .hh{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-3);align-self:end;padding-bottom:4px;text-align:center}
+.grid22 .vh{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  display:flex;align-items:center;justify-content:center;text-align:center}
+.grid22 .vh.a{color:var(--accent)} .grid22 .vh.b{color:var(--credit)}
+.qd{min-height:104px;border:1.5px dashed var(--rule-strong);border-radius:12px;background:var(--surface-2);
+  padding:10px;cursor:pointer;display:flex;flex-direction:column;gap:6px;transition:background .15s,border-color .15s}
+.qd:hover{border-color:var(--accent);background:var(--accent-soft)}
+.qd.armed{border-color:var(--accent);border-style:solid}
+.qd.hit{animation:hit .4s ease} .qd.miss{animation:miss .4s ease}
+@keyframes hit{0%{background:var(--accent-soft)}100%{background:var(--surface-2)}}
+@keyframes miss{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.placed{background:var(--surface);border:1px solid var(--accent);border-left:3px solid var(--accent);
+  border-radius:6px;padding:7px 10px;font-size:13.5px}
+.placed b{display:block;font-weight:600}
+.placed span{font-size:12px;color:var(--ink-3)}
+.fb{font-size:13.5px;min-height:22px;color:var(--ink-2)}
+.fb.bad{color:var(--credit)} .fb.good{color:var(--accent)}
+
+/* ---------- vet bill ---------- */
+.bill{background:var(--surface);border:1px solid var(--rule-strong);border-radius:10px;overflow:hidden;font-size:14px;max-width:520px}
+.bill .top{padding:11px 16px;border-bottom:1px dashed var(--rule-strong);font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.bill .ln{display:grid;grid-template-columns:1fr 82px 76px;gap:10px;padding:9px 16px;align-items:center}
+.bill .ln+.ln{border-top:1px solid var(--rule)}
+.bill .amt{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;text-align:right}
+.bill .k{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.08em;padding:2px 0;border-radius:4px;
+  text-align:center;transition:background .25s,color .25s,border-color .25s}
+.bill .k.d{color:var(--accent);border:1px solid var(--accent);background:var(--accent-soft)}
+.bill .k.i{color:var(--credit);border:1px solid var(--credit);background:var(--credit-soft)}
+.bill .ttl{display:grid;grid-template-columns:1fr 82px 76px;gap:10px;padding:10px 16px;border-top:2px solid var(--rule-strong);
+  background:var(--surface-2);font-weight:600}
+
+/* ---------- question as asked ---------- */
+.qtext{max-width:1020px;border:1.5px dashed var(--rule-strong);border-radius:10px;padding:15px 19px;
+  background:var(--surface-2);display:flex;flex-direction:column;gap:9px}
+.qtext .lbl{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3)}
+.qtext .body{font-size:15.5px;color:var(--ink);line-height:1.55}
+.qtext ol{margin:4px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:5px;font-size:15px}
+.qtext ol li::marker{color:var(--accent);font-weight:600}
+.qtext .given{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink-2);
+  background:var(--surface);border:1px solid var(--rule);border-radius:7px;padding:10px 14px;
+  white-space:pre;overflow-x:auto;font-variant-numeric:tabular-nums;margin:0}
+
+/* ---------- worked process ---------- */
+.steps{max-width:1020px;display:flex;flex-direction:column}
+.step{display:grid;grid-template-columns:30px minmax(0,1fr);gap:16px;padding:18px 0;border-top:1px solid var(--rule)}
+.step:first-child{border-top:none;padding-top:6px}
+.step .num{width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);
+  border:1.5px solid var(--accent);display:flex;align-items:center;justify-content:center;
+  font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600}
+.step .sb{display:flex;flex-direction:column;gap:10px;min-width:0}
+.step h4{margin:0;font-size:15.5px;font-weight:600;font-family:"Public Sans",sans-serif;padding-top:4px}
+.step p{font-size:15px;color:var(--ink-2)}
+.step p strong{color:var(--ink);font-weight:600}
+pre.math{margin:0;font-family:"IBM Plex Mono",monospace;font-size:13.5px;line-height:1.9;
+  background:var(--surface-2);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;
+  padding:14px 18px;overflow-x:auto;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:pre}
+pre.math b{color:var(--accent);font-weight:600}
+pre.math i{color:var(--ink-3);font-style:normal}
+
+/* ---------- tables ---------- */
+.tw{overflow-x:auto;border:1px solid var(--rule);border-radius:12px;background:var(--surface);max-width:1020px}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+caption{text-align:left;padding:13px 17px 11px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);border-bottom:1px solid var(--rule)}
+th,td{padding:9px 16px;text-align:left;vertical-align:top}
+thead th{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ink-2);font-weight:500;border-bottom:1px solid var(--rule-strong);white-space:nowrap}
+tbody tr+tr td{border-top:1px solid var(--rule)}
+td.n,th.n{text-align:right;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.tot td{border-top:1px solid var(--rule-strong)!important;box-shadow:inset 0 -3px 0 -1px var(--rule-strong);
+  font-weight:600;background:var(--surface-2)}
+td.cr{color:var(--credit)}
+.sm{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3)}
+
+.pill{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  padding:3px 8px;border-radius:4px;border:1px solid var(--rule-strong);color:var(--ink-2);white-space:nowrap}
+.pill.v{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.pill.f{border-color:var(--credit);color:var(--credit);background:var(--credit-soft)}
+
+.note{max-width:1020px;border-left:3px solid var(--flag);background:var(--flag-soft);color:var(--ink);padding:12px 16px;border-radius:0 8px 8px 0;font-size:14.5px}
+.note.acc{border-left-color:var(--accent);background:var(--accent-soft)}
+.fx{font-family:"IBM Plex Mono",monospace;font-size:13.5px;color:var(--accent);background:var(--accent-soft);padding:4px 9px;border-radius:5px;display:inline-block}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;align-items:start;max-width:1020px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:1020px}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:9px}
+.card h4{margin:0;font-size:15px;font-weight:600}
+.card p{font-size:14px;color:var(--ink-2)}
+ul.t,ol.t{margin:0;padding-left:20px;color:var(--ink-2);font-size:14.5px;display:flex;flex-direction:column;gap:7px}
+ul.t strong,ol.t strong{color:var(--ink)}
+
+/* ---------- Q&A ---------- */
+.q{border:1px solid var(--rule);border-radius:12px;background:var(--surface);padding:18px 20px;display:flex;flex-direction:column;gap:13px}
+.q-meta{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+blockquote{margin:0;padding:13px 16px;background:var(--surface-2);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;font-size:15px}
+.wc{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+button.reveal{display:none;align-self:flex-start;font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+  background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent);padding:6px 14px;border-radius:6px}
+body.quiz .ans{display:none} body.quiz .ans.open{display:flex} body.quiz button.reveal{display:inline-block}
+body.quiz button.reveal.gone{display:none}
+.ans{display:flex;flex-direction:column;gap:12px}
+.toggle{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+  background:var(--surface);border:1px solid var(--rule-strong);color:var(--ink);padding:7px 14px;border-radius:8px;align-self:flex-start}
+.toggle .pip{width:8px;height:8px;border-radius:50%;background:var(--rule-strong)}
+body.quiz .toggle .pip{background:var(--accent)}
+
+/* ---------- car calc ---------- */
+.calc{display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);gap:24px;align-items:start}
+.irow{display:grid;grid-template-columns:1fr 78px 78px;gap:8px;align-items:center;padding:5px 0;border-top:1px solid var(--rule)}
+.irow:first-child{border-top:none}
+.irow label{font-size:13px;color:var(--ink-2)}
+.irow.hdr span{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);text-align:right}
+.irow.hdr span:first-child{text-align:left}
+.irow input{width:100%;font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-variant-numeric:tabular-nums;
+  text-align:right;padding:5px 8px;border:1px solid var(--rule);border-radius:5px;background:var(--surface-2);color:var(--ink)}
+.irow input:focus{border-color:var(--accent);background:var(--surface)}
+.irow.wide{grid-template-columns:1fr 164px}
+
+footer{border-top:1px solid var(--rule);padding-block:22px 48px;color:var(--ink-3);font-size:12px;font-family:"IBM Plex Mono",monospace}
+
+@media (max-width:960px){
+  .cols{grid-template-columns:1fr;gap:0}
+  nav.toc{position:static;max-height:none;overflow:visible;padding-block:16px 0;border-bottom:1px solid var(--rule)}
+  nav.toc ol{flex-direction:row;flex-wrap:wrap;gap:5px}
+  nav.toc a{border:1px solid var(--rule);border-radius:999px;padding:4px 11px;font-size:12.5px;border-left-width:1px}
+  nav.toc a.on{border-color:var(--accent)}
+  nav.toc a .io{display:none}
+  nav.toc .grp{width:100%;padding:10px 2px 2px}
+}
+@media (max-width:820px){
+  .flow.f5,.flow.f3{grid-template-columns:1fr}
+  .farr{margin:2px 0}
+  .farr .ch{transform:rotate(90deg)}
+  .spec{grid-template-columns:1fr}
+  .specline{flex-wrap:wrap;gap:7px}
+  .specline .lbl{white-space:normal}
+  .specline .rule{min-width:26px}
+  .bar,.scale{grid-template-columns:1fr;gap:5px}
+  .bar .bl,.scale .sl{text-align:left}
+}
+@media (max-width:700px){
+  .calc{grid-template-columns:1fr}
+  .grid22{grid-template-columns:1fr}
+  .grid22 .hh{display:none}
+  .grid22 .vh{writing-mode:horizontal-tb;justify-content:flex-start;padding-top:6px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ---------- video page ---------- */
+.order{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;max-width:1020px}
+.order li{border:1px solid var(--rule);border-radius:11px;padding:12px 13px;background:var(--surface);display:flex;flex-direction:column;gap:5px}
+.order li.acc{border-color:var(--accent);background:var(--accent-soft)}
+.order .sn{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.order li.acc .sn{color:var(--accent)}
+.order b{font-size:14.5px;line-height:1.3}
+.order b a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule-strong)}
+.order b a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.order .tm{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--accent)}
+.order .wy{font-size:13.5px;color:var(--ink-2);line-height:1.45}
+.vmeta{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-2)}
+.vmeta a{color:var(--ink-2);overflow-wrap:anywhere}
+.player{margin:0}
+.player video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#0E1513;border:1px solid var(--rule);border-radius:12px}
+.chs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:10px;max-width:1020px}
+.chs a.ch{display:flex;flex-direction:column;gap:5px;height:100%;text-decoration:none;color:var(--ink);background:var(--surface);
+  border:1px solid var(--rule);border-radius:10px;padding:5px 5px 9px;transition:background .15s,border-color .15s}
+.chs a.ch:hover{border-color:var(--accent);background:var(--accent-soft)}
+.chs a.ch.on{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
+.chs img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:6px;background:var(--surface-2)}
+.chs .ts{font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600;color:var(--accent);padding-inline:4px}
+.chs .tt{font-size:13.5px;line-height:1.35;padding-inline:4px}
+a.tsl{font-family:"IBM Plex Mono",monospace;font-weight:600;white-space:nowrap}
+.deeper{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;max-width:1020px}
+.deeper ul{margin:0;padding-left:18px;font-size:14.5px;display:flex;flex-direction:column;gap:3px}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px;max-width:1020px}
+.vgrid .card video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#0E1513;border-radius:8px}
+.vgrid .card audio{display:block;width:100%}
+.vgrid .card .sm{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3)}
+.clean{color:var(--ink-2);font-size:14.5px}
+@media (max-width:960px){ .order{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:560px){ .order{grid-template-columns:1fr}
+  th,td{padding:8px 9px} thead th,thead th.n{white-space:normal} }
+
+/* ---------- new: takeaway cards and alert grid ---------- */
+.keys{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;counter-reset:k}
+.keys li{counter-increment:k;border:1.5px solid var(--rule-strong);border-radius:11px;padding:12px 14px 12px 50px;position:relative;background:var(--surface);font-size:15px;line-height:1.5}
+.keys li::before{content:counter(k);position:absolute;left:14px;top:11px;width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;font:600 12px/24px "IBM Plex Mono",monospace;text-align:center}
+.keys li b{display:block;font-size:15.5px;margin-bottom:2px}
+.keys li.maybe{border-style:dashed;background:var(--surface-3)}
+.keys li.maybe::before{background:var(--ink-3)}
+.keys li.new{background:var(--flag-soft);border-color:var(--flag)}
+.keys li.new::before{background:var(--flag)}
+.alert{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.alert .a{border:1.5px solid var(--rule-strong);border-radius:11px;padding:12px 14px;background:var(--surface);font-size:14.5px;line-height:1.5}
+.alert .a b{display:block;font-size:16px;font-family:Bitter,Georgia,serif;margin-bottom:3px}
+.alert .a.hot{background:var(--credit-soft);border-color:var(--credit)}
+.alert .a.hot b{color:var(--credit)}
+.alert .a.go{background:var(--accent-soft);border-color:var(--accent)}
+.alert .a.go b{color:var(--accent)}
+.ladder{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.ladder .r{border:1.5px solid var(--accent);border-radius:11px;padding:12px 14px;background:var(--accent-soft);font-size:14px;line-height:1.5}
+.ladder .r .st{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.ladder .r b{display:block;font-size:15.5px;margin:2px 0 6px}
+.ladder .r ul{margin:0;padding-left:16px;color:var(--ink-2);font-size:13.5px}
+.pending{border:1.5px dashed var(--flag);background:var(--flag-soft);color:var(--flag);border-radius:10px;padding:12px 16px;font-size:14.5px}
+@media (max-width:960px){ .ladder{grid-template-columns:repeat(2,minmax(0,1fr))} .alert{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:560px){ .keys,.ladder,.alert{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <div>
+      <div class="eyebrow">4505 Global Macroeconomics for Managers &middot; Midterm &middot; Videos</div>
+      <h1>Midterm videos: start with the two new ones</h1>
+      <p class="gist">Two new videos from October 23: every concept in one pass, then exactly how to attack the paper. Under each one, the points to remember are written out so you can read them in two minutes. The four October 18 videos sit lower down as backup.</p>
+    </div>
+    <div class="meta">
+      Exam <b>Mon Oct 26, 1:00pm</b><br>
+      Room <b>1310, seated by 12:50</b><br>
+      Rules <b>closed book, no calculator</b>
+    </div>
+  </div>
+</header>
+
+<div class="wrap cols">
+
+<nav class="toc" aria-label="Contents">
+  <div class="toc-h">On this page</div>
+  <ol id="toclist">
+    <li class="grp">Start here</li>
+    <li><a href="#new"><span class="n"></span><span>What changed Oct 22 to 23</span></a></li>
+    <li><a href="#order"><span class="n"></span><span>Study order</span></a></li>
+    <li class="grp">New videos &middot; Oct 23</li>
+    <li><a href="#allconcepts"><span class="n">1</span><span>Every concept</span></a></li>
+    <li><a href="#approach"><span class="n">2</span><span>How to approach the exam</span></a></li>
+    <li class="grp">Earlier videos &middot; Oct 18</li>
+    <li><a href="#concepts"><span class="n">3</span><span>Concepts: key ideas</span></a></li>
+    <li><a href="#cases"><span class="n">4</span><span>Cases: three puzzles</span></a></li>
+    <li><a href="#exam25"><span class="n">5</span><span>Exam: 2025 paper</span></a></li>
+    <li><a href="#exam24"><span class="n">6</span><span>Exam: 2024 paper</span></a></li>
+    <li class="grp">Reference</li>
+    <li><a href="#earlier"><span class="n"></span><span>Earlier session videos</span></a></li>
+    <li><a href="#reader"><span class="n"></span><span>Case reader</span></a></li>
+    <li><a href="#materials"><span class="n"></span><span>Papers and files</span></a></li>
+    <li><a href="#log"><span class="n"></span><span>Q&amp;A log</span></a></li>
+  </ol>
+</nav>
+
+<main>
+
+<section id="new">
+  <h2>What changed on October 22 and 23</h2>
+  <p class="oneline"><span class="tag">In one line</span><span><b>Closed book, no calculator.</b> Nothing comes into the room with you, so the cheat sheet is now something to memorize. There is also a third past paper to practise on.</span></p>
+  <div class="alert">
+    <div class="a hot"><b>Closed book</b>No notes, no sheet. Learn the <a href="midterm-cheat-sheet.html">memorize sheet</a> instead of printing it.</div>
+    <div class="a hot"><b>No calculator</b>Use round numbers and simple ratios. Rule of 70: years to double = 70 / growth rate.</div>
+    <div class="a"><b>Room 1310</b>Last names Sahota to Surneni. Be seated by 12:50pm for a 1:00pm start, 80 minutes.</div>
+    <div class="a"><b>Download the exam template now</b>Examsoft &rarr; Courses &rarr; this course &rarr; Action &rarr; Download. Restart the laptop the night before.</div>
+    <div class="a go"><b>New practice paper</b>The 2025 makeup: Canada vs Germany on education and productivity. <a href="midterm-past-exams.html#y25m">Sit it on the prep page</a>.</div>
+    <div class="a"><b>Bring</b>Ivey nameplate, student ID, laptop and charger. Phones, watches and headphones are banned.</div>
+  </div>
+</section>
+
+<section id="order">
+  <h2>Study order</h2>
+  <p class="oneline"><span class="tag">In one line</span><span>Watch the two new videos, sit the makeup paper cold, mark it against the key, then memorize the sheet.</span></p>
+  <ol class="order">
+    <li class="acc"><span class="sn">Step 1 &middot; video</span><b><a href="#allconcepts">Every concept</a></b><span class="tm" data-dur="allconcepts">new</span><span class="wy">The growth model and every idea that hangs off it, including the new education vs productivity puzzle.</span></li>
+    <li class="acc"><span class="sn">Step 2 &middot; video</span><b><a href="#approach">How to approach it</a></b><span class="tm" data-dur="approach">new</span><span class="wy">The four-rung ladder every paper climbs, what the keys reward, timing and traps.</span></li>
+    <li><span class="sn">Step 3 &middot; prep page</span><b><a href="midterm-past-exams.html#y25m">Sit the 2025 makeup cold</a></b><span class="tm">80 min</span><span class="wy">Type it with a timer and no notes, like Monday. Answers start hidden.</span></li>
+    <li><span class="sn">Step 4 &middot; prep page</span><b><a href="midterm-past-exams.html#y25m">Mark it against the key</a></b><span class="tm">20 min</span><span class="wy">Did each answer open with a verdict and name a course concept? Fix the habit, not the wording.</span></li>
+    <li><span class="sn">Step 5 &middot; night before</span><b><a href="midterm-cheat-sheet.html">Memorize the sheet</a></b><span class="tm">2 pages</span><span class="wy">Cover it and recite the growth model, the Canada numbers and the ladder.</span></li>
+  </ol>
+</section>
+
+<div class="group"><h2>New videos</h2><div class="ln"></div><span class="ct">Oct 23 &middot; watch these first</span></div>
+
+<section id="allconcepts">
+  <h2><span class="no">1</span> Every concept you need</h2>
+  <div class="vmeta"><span class="pill v">Concepts</span><span data-dur="allconcepts">new</span><a href="../midterm/notebooklm/gmm-video-5-all-concepts.mp4">Open the MP4</a></div>
+  <figure class="player"><video id="vid-allconcepts" data-ch controls preload="metadata" playsinline width="1280" height="720" poster="assets/midterm-videos/allconcepts-poster.jpg" src="../midterm/notebooklm/gmm-video-5-all-concepts.mp4">Your browser will not play this. The file is midterm/notebooklm/gmm-video-5-all-concepts.mp4.</video></figure>
+  <p class="lede">One pass through the course, built on the professors' growth model. Read the cards below before you watch and again after: they are the points every answer is built from.</p>
+  <h3>Remember these</h3>
+  <ol class="keys">
+    <li><b>Growth = more workers + more output per worker</b>Real GDP grows through the labour channel or the productivity channel. Only productivity keeps raising living standards.</li>
+    <li><b>Productivity has three sources</b>Capital deepening, labour quality (skills, education) and innovation. Institutions sit underneath all of them.</li>
+    <li><b>Diminishing returns to capital</b>A water buffalo transforms a subsistence rice farm; one more tractor barely moves a Canadian wheat farm. So poor countries can grow fast by investing, but catch-up is conditional.</li>
+    <li><b>Institutions are the root cause</b>Capital and skills are proximate causes. Inclusive institutions (the two Nogales) allow creative destruction; extractive ones block it.</li>
+    <li><b>Middle-income trap and the three i's</b>Investment gets a country to middle income. Infusion (adopting foreign technology and practices) and then innovation get it out.</li>
+    <li><b>Structural transformation</b>Workers leave low-productivity farms for industry and services, and inequality tends to rise then fall (Kuznets curve).</li>
+    <li><b>Potential vs actual GDP</b>Potential is what the economy can sustainably produce. Below it in a slump, above it in an unsustainable boom.</li>
+    <li><b>Canada grew by adding people</b>Business productivity fell from 83% of the US level in 2002 to 73% in 2019. Business investment is weak.</li>
+    <li class="new"><b>New: degrees are not productivity</b>Canada has the most degrees in the OECD (nearly two thirds of adults); Germany has 34.3% yet is over 30% more productive. Education needs capital, the right industries, adoption, competition and matched skills to pay off.</li>
+    <li><b>Trilemma logic</b>Three goals, only two at once. Say which two you pick and what you give up.</li>
+    <li class="maybe"><b>Could appear: trade and China</b>Gains from trade come mostly from imports: competition, scale, infused ideas, cheaper capital goods. China is strong on all three i's and slowing anyway.</li>
+  </ol>
+  <h3>Chapters</h3>
+  <!--CH-allconcepts-->
+  <div class="deeper"><div class="card"><h4>Then work it on the prep page</h4><ul><li><a href="midterm-past-exams.html#blocks">Building blocks</a></li><li><a href="midterm-past-exams.html#y25m">2025 makeup: education vs productivity</a></li><li><a href="midterm-cheat-sheet.html">Memorize sheet</a></li></ul></div></div>
+</section>
+
+<section id="approach">
+  <h2><span class="no">2</span> How to approach the exam</h2>
+  <div class="vmeta"><span class="pill v">Exam</span><span data-dur="approach">new</span><a href="../midterm/notebooklm/gmm-video-6-exam-approach.mp4">Open the MP4</a></div>
+  <figure class="player"><video id="vid-approach" data-ch controls preload="metadata" playsinline width="1280" height="720" poster="assets/midterm-videos/approach-poster.jpg" src="../midterm/notebooklm/gmm-video-6-exam-approach.mp4">Your browser will not play this. The file is midterm/notebooklm/gmm-video-6-exam-approach.mp4.</video></figure>
+  <p class="lede">All three past papers follow the same shape, so you can walk in knowing what each question will ask. The ladder below is the shape; the rules under it are what the answer keys give marks for.</p>
+  <h3>Every paper climbs the same four rungs</h3>
+  <div class="ladder">
+    <div class="r"><span class="st">Rung 1</span><b>Say what the exhibit shows</b><ul><li>2025: potential vs actual crop yields</li><li>2024: the trilemma</li><li>Makeup Q1: define the puzzle</li></ul></div>
+    <div class="r"><span class="st">Rung 2</span><b>Explain it with the growth model</b><ul><li>Labour channel vs productivity channel</li><li>Name the concept: diminishing returns, structural transformation</li></ul></div>
+    <div class="r"><span class="st">Rung 3</span><b>Apply it to a country</b><ul><li>Usually Canada, with class numbers</li><li>Makeup Q2: three Canada hypotheses; Q3: Germany only</li></ul></div>
+    <div class="r"><span class="st">Rung 4</span><b>Take a side on a policy</b><ul><li>First words: "Yes, good idea" or "No, bad idea"</li><li>Either side scores if reasoned</li></ul></div>
+  </div>
+  <h3>Remember these</h3>
+  <ol class="keys">
+    <li><b>Verdict in the first sentence</b>The keys give marks for the answer itself before the reasoning. Never make the marker hunt for it.</li>
+    <li><b>Name the course concept</b>The keys literally ask for terms like "structural transformation" and "diminishing returns to capital". Use the course words.</li>
+    <li><b>Use the exhibit's numbers</b>Quote what the chart shows and cover both countries or both lines. A skipped given fact is a lost mark.</li>
+    <li><b>Answer only what is asked</b>"Define the puzzle" means do not explain the cause. "Focus on Germany" means no Canada.</li>
+    <li><b>Make hypotheses truly different</b>Capital, industry mix and adoption are three ideas. Three flavours of "not enough investment" are one.</li>
+    <li><b>Time by marks</b>Read everything for 4 minutes, then give each question 76 &times; its marks / total. Makeup paper (50 marks): 15, 23, 15 and 23 minutes.</li>
+    <li><b>Plan in bullets first</b>Thirty seconds of verdict, concept, evidence beats rewriting. Stay under each word cap.</li>
+    <li><b>If time runs out</b>A verdict plus a named concept on every question beats one polished answer and a blank.</li>
+    <li><b>No calculator</b>Round to easy numbers: 75 / 30 = 2.5; 70 / 2% = 35 years to double.</li>
+  </ol>
+  <h3>Chapters</h3>
+  <!--CH-approach-->
+  <div class="deeper"><div class="card"><h4>Then practise it</h4><ul><li><a href="midterm-past-exams.html#y25m">2025 makeup paper</a></li><li><a href="midterm-past-exams.html#y25m-pattern">What three papers tell us</a></li><li><a href="midterm-past-exams.html#y25">2025 paper</a></li><li><a href="midterm-past-exams.html#y24">2024 paper</a></li></ul></div></div>
+</section>
+
+
+<div class="group"><h2>Earlier videos</h2><div class="ln"></div><span class="ct">Oct 18 &middot; backup and deeper dives</span></div>
+
+<section id="concepts">
+  <h2><span class="no">3</span> Concepts: the midterm blueprint</h2>
+  <div class="vmeta"><span class="pill v">Concepts</span><span>8:43</span><span>9 chapters</span><a href="../midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4" title="gmm-video-4-concepts-midterm-blueprint.mp4">Open the MP4</a></div>
+  <figure class="player"><video id="vid-concepts" data-ch controls preload="metadata" playsinline width="1280" height="720" poster="assets/midterm-videos/concepts-poster.jpg" src="../midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4">Your browser will not play this. The file is midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4.</video></figure>
+  <p class="lede">The key ideas from scratch: growth accounting, capital deepening, institutions, conditional convergence, structural change, potential GDP, Canada and the trilemma. Watch it first, so the exam videos can use the words without stopping to define them.</p>
+  <h3>Chapters</h3>
+  <p class="clean">Each chapter starts where the slide changes. Click one to play from there.</p>
+  <ol class="chs"><li><a class="ch" href="../midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4#t=0" data-v="vid-concepts" data-t="0"><img src="assets/midterm-videos/concepts-ch01.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">0:00</span><span class="tt">Opening and the six-part blueprint</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4#t=41" data-v="vid-concepts" data-t="41"><img src="assets/midterm-videos/concepts-ch02.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">0:41</span><span class="tt">Growth model: labour force, productivity, institutions</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4#t=83" data-v="vid-concepts" data-t="83"><img src="assets/midterm-videos/concepts-ch03.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">1:23</span><span class="tt">GDP and GDP per person, Rule of 70</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4#t=140" data-v="vid-concepts" data-t="140"><img src="assets/midterm-videos/concepts-ch04.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">2:20</span><span class="tt">Two channels: output per hour and labour input</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4#t=166" data-v="vid-concepts" data-t="166"><img src="assets/midterm-videos/concepts-ch05.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">2:46</span><span class="tt">Diminishing returns: water buffalo against tractor</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4#t=226" data-v="vid-concepts" data-t="226"><img src="assets/midterm-videos/concepts-ch06.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">3:46</span><span class="tt">Inclusive or extractive institutions, creative destruction</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4#t=295" data-v="vid-concepts" data-t="295"><img src="assets/midterm-videos/concepts-ch07.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">4:55</span><span class="tt">Catch-up, the three i&#x27;s, Kuznets curve</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4#t=376" data-v="vid-concepts" data-t="376"><img src="assets/midterm-videos/concepts-ch08.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">6:16</span><span class="tt">Potential GDP, Canada at 73%, the trilemma</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4#t=464" data-v="vid-concepts" data-t="464"><img src="assets/midterm-videos/concepts-ch09.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">7:44</span><span class="tt">Exam map: which idea answers which question</span></a></li></ol>
+  <h3>Check these slides</h3>
+  <div class="tw"><table><caption>NotebookLM drew these slides itself. Where one disagrees with the sources, use the source. Only the slides were checked: there is no transcript, so confirm any number the narrator says on the prep page.</caption><thead><tr><th>At</th><th>On the slide</th><th>What the sources say</th></tr></thead><tbody><tr><td><a class="tsl" href="../midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4#t=30" data-v="vid-concepts" data-t="30">0:30</a></td><td>Faint background caption reads &#x27;Ovvertep generations model&#x27; (also behind the Rule of 70 and Potential GDP cards).</td><td>No such term in the sources. The framework is the professors&#x27; &#x27;Our Long-Run Growth Model&#x27; from the 2024 key appendix.</td></tr><tr><td><a class="tsl" href="../midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4#t=60" data-v="vid-concepts" data-t="60">1:00</a></td><td>Model drawn as a chain: Labour Force, then Productivity, then GDP Growth, then Institutions; productivity listed as only capital deepening and innovation.</td><td>Labour force growth and productivity growth are two parallel channels into real GDP, with institutions underneath both. Productivity also includes labour quality.</td></tr><tr><td><a class="tsl" href="../midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4#t=150" data-v="vid-concepts" data-t="150">2:30</a></td><td>&#x27;Two Channels Breakdown&#x27; draws productivity and hours flowing into a node and out to participation and population, as if those were results.</td><td>Real GDP = output per hour x hours per worker x participation x population. Output per hour is productivity; the other three are labour input.</td></tr><tr><td><a class="tsl" href="../midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4#t=172" data-v="vid-concepts" data-t="172">2:52</a></td><td>Captions are the image prompts: &#x27;A singular large, robust water buffalo standing in a field.&#x27; and &#x27;A tiny, simple sketch of a tractor.&#x27;</td><td>The point is diminishing returns: a water buffalo has a huge return for a subsistence rice farmer, while an expensive tractor makes only a marginal difference on a Canadian wheat farm (2024 key).</td></tr><tr><td><a class="tsl" href="../midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4#t=420" data-v="vid-concepts" data-t="420">7:00</a></td><td>Big &#x27;73%&#x27; sits over US vs Canada investment and capital stock sketches with no label.</td><td>73% is Canada&#x27;s business productivity vs the US in 2019 (83% in 2002). The investment figure is 54 cents per worker for every US dollar in 2024 (87 cents in 2014).</td></tr><tr><td><a class="tsl" href="../midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4#t=480" data-v="vid-concepts" data-t="480">8:00</a></td><td>Exam map row &#x27;The Trilemma&#x27; shows policy autonomy, exchange rate stability and capital mobility.</td><td>The course trilemma (2024 Figure 1a) is stable population growth, housing affordability and revived productivity growth.</td></tr><tr><td><a class="tsl" href="../midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4#t=485" data-v="vid-concepts" data-t="485">8:05</a></td><td>Exam map row &#x27;Diminishing Returns&#x27; draws y = f(k) as a falling curve.</td><td>Output per worker rises with capital per worker, but each extra unit adds less: a rising curve that flattens.</td></tr></tbody></table></div>
+  <div class="deeper"><div class="card"><h4>Then work it on the prep page</h4><ul><li><a href="midterm-past-exams.html#blocks">Building blocks</a></li><li><a href="midterm-past-exams.html#c-model">1 Two growth channels</a></li><li><a href="midterm-past-exams.html#c-capital">2 Diminishing returns</a></li><li><a href="midterm-past-exams.html#c-inst">3 Institutions</a></li><li><a href="midterm-past-exams.html#c-conv">4 Convergence</a></li><li><a href="midterm-past-exams.html#c-struct">5 Structural change</a></li><li><a href="midterm-past-exams.html#c-potential">6 Potential GDP</a></li><li><a href="midterm-past-exams.html#c-canada">7 Canada&#x27;s growth</a></li><li><a href="midterm-past-exams.html#c-trilemma">8 Trilemma logic</a></li><li><a href="midterm-past-exams.html#sheet">Formula sheet</a></li></ul></div><div class="card"><h4>Read it highlighted in the case reader</h4><ul><li><a href="midterm-case-reader.html#s07">Session 7 slides</a></li><li><a href="midterm-case-reader.html#s08">Session 8 slides</a></li><li><a href="midterm-case-reader.html#wolf">Wolf, FT: the middle income trap</a></li><li><a href="midterm-case-reader.html#wdr">World Development Report 2024</a></li></ul></div></div>
+</section>
+<div class="group"><h2>Cases</h2><div class="ln"></div><span class="ct">the exhibits as stories</span></div>
+<section id="cases">
+  <h2><span class="no">4</span> Cases: three macro puzzles</h2>
+  <div class="vmeta"><span class="pill v">Cases</span><span>10:33</span><span>9 chapters</span><a href="../midterm/notebooklm/gmm-video-3-cases-three-macro-puzzles.mp4" title="gmm-video-3-cases-three-macro-puzzles.mp4">Open the MP4</a></div>
+  <figure class="player"><video id="vid-cases" data-ch controls preload="metadata" playsinline width="1280" height="720" poster="assets/midterm-videos/cases-poster.jpg" src="../midterm/notebooklm/gmm-video-3-cases-three-macro-puzzles.mp4">Your browser will not play this. The file is midterm/notebooklm/gmm-video-3-cases-three-macro-puzzles.mp4.</video></figure>
+  <p class="lede">The cases as stories: Mozambique against Germany on crop yields, Canada's growth trilemma, and Krugman on potential GDP. It explains what each exhibit shows before any question is asked about it.</p>
+  <h3>Chapters</h3>
+  <p class="clean">Each chapter starts where the slide changes. Click one to play from there.</p>
+  <ol class="chs"><li><a class="ch" href="../midterm/notebooklm/gmm-video-3-cases-three-macro-puzzles.mp4#t=0" data-v="vid-cases" data-t="0"><img src="assets/midterm-videos/cases-ch01.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">0:00</span><span class="tt">Opening: three puzzles behind the papers</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-3-cases-three-macro-puzzles.mp4#t=52" data-v="vid-cases" data-t="52"><img src="assets/midterm-videos/cases-ch02.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">0:52</span><span class="tt">Crop yield chart: 18% against 83% realized</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-3-cases-three-macro-puzzles.mp4#t=146" data-v="vid-cases" data-t="146"><img src="assets/midterm-videos/cases-ch03.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">2:26</span><span class="tt">Mozambique&#x27;s story: war, farm jobs, poverty</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-3-cases-three-macro-puzzles.mp4#t=206" data-v="vid-cases" data-t="206"><img src="assets/midterm-videos/cases-ch04.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">3:26</span><span class="tt">Institutional root causes of the yield gap</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-3-cases-three-macro-puzzles.mp4#t=280" data-v="vid-cases" data-t="280"><img src="assets/midterm-videos/cases-ch05.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">4:40</span><span class="tt">Canada&#x27;s trilemma: three goals, pick two</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-3-cases-three-macro-puzzles.mp4#t=357" data-v="vid-cases" data-t="357"><img src="assets/midterm-videos/cases-ch06.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">5:57</span><span class="tt">Canada&#x27;s numbers: 3.2%, minus 1.3%, investment</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-3-cases-three-macro-puzzles.mp4#t=435" data-v="vid-cases" data-t="435"><img src="assets/midterm-videos/cases-ch07.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">7:15</span><span class="tt">Krugman&#x27;s email: potential GDP barely moves</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-3-cases-three-macro-puzzles.mp4#t=508" data-v="vid-cases" data-t="508"><img src="assets/midterm-videos/cases-ch08.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">8:28</span><span class="tt">Are poor countries doomed? Capital and returns</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-3-cases-three-macro-puzzles.mp4#t=587" data-v="vid-cases" data-t="587"><img src="assets/midterm-videos/cases-ch09.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">9:47</span><span class="tt">Closing: tie each story to a model</span></a></li></ol>
+  <h3>Check these slides</h3>
+  <div class="tw"><table><caption>NotebookLM drew these slides itself. Where one disagrees with the sources, use the source. Only the slides were checked: there is no transcript, so confirm any number the narrator says on the prep page.</caption><thead><tr><th>At</th><th>On the slide</th><th>What the sources say</th></tr></thead><tbody><tr><td><a class="tsl" href="../midterm/notebooklm/gmm-video-3-cases-three-macro-puzzles.mp4#t=80" data-v="vid-cases" data-t="80">1:20</a></td><td>Redrawn Economist chart has garbled text (&#x27;Actusl crep yield&#x27;, &#x27;coantriss get ricker&#x27;, &#x27;yotential yislds&#x27;, &#x27;Tacso Adsmapeolss and Diego Restoccla&#x27;) and a &#x27;6x&#x27; label floating over the potential line.</td><td>Use the real chart: &#x27;Actual crop yields go up as countries get richer&#x27;, source Adamopoulos and Restuccia, NBER 2018. 6x is land per person; actual yields differ about 5x (about $260 vs $1,240 a hectare).</td></tr><tr><td><a class="tsl" href="../midterm/notebooklm/gmm-video-3-cases-three-macro-puzzles.mp4#t=358" data-v="vid-cases" data-t="358">5:58</a></td><td>Next to the 3.2% population figure, a rising bar chart and gears carry the label &#x27;Production curve&#x27;.</td><td>The sources pair 3.2% population growth (2023, fastest since 1957, 98% from migration) with real GDP per person falling 1.3%; no production curve is involved, so the rising bars should not be read as output per person going up.</td></tr><tr><td><a class="tsl" href="../midterm/notebooklm/gmm-video-3-cases-three-macro-puzzles.mp4#t=460" data-v="vid-cases" data-t="460">7:40</a></td><td>Sketch beside the Krugman quote labels the flat line &#x27;US GDP growth&#x27;.</td><td>Krugman is describing US potential GDP growth over the past 50 years; actual GDP swings around it.</td></tr><tr><td><a class="tsl" href="../midterm/notebooklm/gmm-video-3-cases-three-macro-puzzles.mp4#t=570" data-v="vid-cases" data-t="570">9:30</a></td><td>Diagram says a Canadian wheat farm &#x27;already has five tractors&#x27; and &#x27;a sixth tractor makes almost no difference&#x27;.</td><td>The 2024 key gives no tractor count: a water buffalo has a huge return for a subsistence rice farmer, while an expensive tractor makes only a marginal difference on a Canadian wheat farm.</td></tr></tbody></table></div>
+  <div class="deeper"><div class="card"><h4>Then work it on the prep page</h4><ul><li><a href="midterm-past-exams.html#big">Big picture</a></li><li><a href="midterm-past-exams.html#y25">2025: the crop yield exhibit</a></li><li><a href="midterm-past-exams.html#y24">2024: the trilemma figures</a></li><li><a href="midterm-past-exams.html#y24mail">2024: the Krugman email</a></li></ul></div><div class="card"><h4>Read it highlighted in the case reader</h4><ul><li><a href="midterm-case-reader.html#crop">2025 crop yield chart</a></li><li><a href="midterm-case-reader.html#fig24a">2024 Figure 1a</a></li><li><a href="midterm-case-reader.html#fig24b">2024 Figure 1b</a></li><li><a href="midterm-case-reader.html#p24">2024 paper and Krugman email</a></li><li><a href="midterm-case-reader.html#wolf">Wolf, FT</a></li><li><a href="midterm-case-reader.html#wdr">World Development Report 2024</a></li></ul></div></div>
+</section>
+<div class="group"><h2>Exam</h2><div class="ln"></div><span class="ct">2 videos &middot; how the keys award marks</span></div>
+<section id="exam25">
+  <h2><span class="no">5</span> Exam: the 2025 paper, question by question</h2>
+  <div class="vmeta"><span class="pill v">Exam</span><span>7:04</span><span>9 chapters</span><a href="../midterm/notebooklm/gmm-video-1-playbook-2025-paper.mp4" title="gmm-video-1-playbook-2025-paper.mp4">Open the MP4</a></div>
+  <figure class="player"><video id="vid-exam25" data-ch controls preload="metadata" playsinline width="1280" height="720" poster="assets/midterm-videos/exam25-poster.jpg" src="../midterm/notebooklm/gmm-video-1-playbook-2025-paper.mp4">Your browser will not play this. The file is midterm/notebooklm/gmm-video-1-playbook-2025-paper.mp4.</video></figure>
+  <p class="lede">Exam format and word caps, then the 2025 crop yield paper question by question against the key, then the timing plan.</p>
+  <h3>Chapters</h3>
+  <p class="clean">Each chapter starts where the slide changes. Click one to play from there.</p>
+  <ol class="chs"><li><a class="ch" href="../midterm/notebooklm/gmm-video-1-playbook-2025-paper.mp4#t=0" data-v="vid-exam25" data-t="0"><img src="assets/midterm-videos/exam25-ch01.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">0:00</span><span class="tt">Opening and the six-part plan</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-1-playbook-2025-paper.mp4#t=35" data-v="vid-exam25" data-t="35"><img src="assets/midterm-videos/exam25-ch02.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">0:35</span><span class="tt">Midterm format: points and hard word caps</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-1-playbook-2025-paper.mp4#t=65" data-v="vid-exam25" data-t="65"><img src="assets/midterm-videos/exam25-ch03.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">1:05</span><span class="tt">Reading the 2025 crop yield chart</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-1-playbook-2025-paper.mp4#t=101" data-v="vid-exam25" data-t="101"><img src="assets/midterm-videos/exam25-ch04.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">1:41</span><span class="tt">Q1: natural resources view mostly contradicted</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-1-playbook-2025-paper.mp4#t=165" data-v="vid-exam25" data-t="165"><img src="assets/midterm-videos/exam25-ch05.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">2:45</span><span class="tt">Q2: institutions as the hidden driver</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-1-playbook-2025-paper.mp4#t=208" data-v="vid-exam25" data-t="208"><img src="assets/midterm-videos/exam25-ch06.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">3:28</span><span class="tt">Q3: convergence, 0.36 against 2.5, debt gap</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-1-playbook-2025-paper.mp4#t=266" data-v="vid-exam25" data-t="266"><img src="assets/midterm-videos/exam25-ch07.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">4:26</span><span class="tt">Q4: poverty count with 3% population growth</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-1-playbook-2025-paper.mp4#t=335" data-v="vid-exam25" data-t="335"><img src="assets/midterm-videos/exam25-ch08.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">5:35</span><span class="tt">Errors in the 2025 key and traps</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-1-playbook-2025-paper.mp4#t=378" data-v="vid-exam25" data-t="378"><img src="assets/midterm-videos/exam25-ch09.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">6:18</span><span class="tt">Exam-day timing plan and checklist</span></a></li></ol>
+  <h3>Check these slides</h3>
+  <div class="tw"><table><caption>NotebookLM drew these slides itself. Where one disagrees with the sources, use the source. Only the slides were checked: there is no transcript, so confirm any number the narrator says on the prep page.</caption><thead><tr><th>At</th><th>On the slide</th><th>What the sources say</th></tr></thead><tbody><tr><td><a class="tsl" href="../midterm/notebooklm/gmm-video-1-playbook-2025-paper.mp4#t=215" data-v="vid-exam25" data-t="215">3:35</a></td><td>Q3 slide shows an &#x27;Employment Shares&#x27; bar chart for 2015, 2018 and 2021 and debt ratings AAA, BBB and CCC.</td><td>The question gives one snapshot, no time series: farms are over 70% of Mozambique&#x27;s jobs and about 25% of GDP (about 1% of both in Germany). Ratings are CCC+ for Mozambique and AAA for Germany; there is no BBB.</td></tr><tr><td><a class="tsl" href="../midterm/notebooklm/gmm-video-1-playbook-2025-paper.mp4#t=270" data-v="vid-exam25" data-t="270">4:30</a></td><td>Q4 slide has garbled labels (&#x27;down up a lot&#x27;, &#x27;lock-in&#x27;, &#x27;midterm&#x27;) and an unrelated supply and demand sketch.</td><td>The five allowed answers are up a lot, up a little, down a little, down a lot, ambiguous. Pick exactly one per indicator.</td></tr><tr><td><a class="tsl" href="../midterm/notebooklm/gmm-video-1-playbook-2025-paper.mp4#t=295" data-v="vid-exam25" data-t="295">4:55</a></td><td>Poverty table shows 1.03^10 = about 1.34 with a stray &#x27;(midterm tactics)&#x27; label and no note that 3% is assumed.</td><td>3% a year is an assumption taken from the Session 7 line that Africa&#x27;s population grows close to 3% a year. Say so in the answer.</td></tr></tbody></table></div>
+  <div class="deeper"><div class="card"><h4>Then work it on the prep page</h4><ul><li><a href="midterm-past-exams.html#how">How this exam works</a></li><li><a href="midterm-past-exams.html#y25">The exhibit</a></li><li><a href="midterm-past-exams.html#y25q1">Q1 Resources</a></li><li><a href="midterm-past-exams.html#y25q2">Q2 Institutions</a></li><li><a href="midterm-past-exams.html#y25q3">Q3 Convergence</a></li><li><a href="midterm-past-exams.html#y25q4">Q4 Ten years on</a></li><li><a href="midterm-past-exams.html#timing">Timing and words</a></li><li><a href="midterm-past-exams.html#traps">Traps</a></li></ul></div><div class="card"><h4>Read it highlighted in the case reader</h4><ul><li><a href="midterm-case-reader.html#p25">2025 paper</a></li><li><a href="midterm-case-reader.html#crop">2025 crop yield chart</a></li><li><a href="midterm-case-reader.html#k25">2025 answer key</a></li></ul></div></div>
+</section>
+<section id="exam24">
+  <h2><span class="no">6</span> Exam: the growth model and the 2024 paper</h2>
+  <div class="vmeta"><span class="pill v">Exam</span><span>8:31</span><span>10 chapters</span><a href="../midterm/notebooklm/gmm-video-2-cheat-code-growth-model-2024-paper.mp4" title="gmm-video-2-cheat-code-growth-model-2024-paper.mp4">Open the MP4</a></div>
+  <figure class="player"><video id="vid-exam24" data-ch controls preload="metadata" playsinline width="1280" height="720" poster="assets/midterm-videos/exam24-poster.jpg" src="../midterm/notebooklm/gmm-video-2-cheat-code-growth-model-2024-paper.mp4">Your browser will not play this. The file is midterm/notebooklm/gmm-video-2-cheat-code-growth-model-2024-paper.mp4.</video></figure>
+  <p class="lede">The professors' growth model, then the 2024 paper (Canada's trilemma and the Krugman email) rubric by rubric.</p>
+  <h3>Chapters</h3>
+  <p class="clean">Each chapter starts where the slide changes. Click one to play from there.</p>
+  <ol class="chs"><li><a class="ch" href="../midterm/notebooklm/gmm-video-2-cheat-code-growth-model-2024-paper.mp4#t=0" data-v="vid-exam24" data-t="0"><img src="assets/midterm-videos/exam24-ch01.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">0:00</span><span class="tt">Opening and the five-part plan</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-2-cheat-code-growth-model-2024-paper.mp4#t=33" data-v="vid-exam24" data-t="33"><img src="assets/midterm-videos/exam24-ch02.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">0:33</span><span class="tt">Growth model: labour force and productivity channels</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-2-cheat-code-growth-model-2024-paper.mp4#t=96" data-v="vid-exam24" data-t="96"><img src="assets/midterm-videos/exam24-ch03.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">1:36</span><span class="tt">Trilemma 1a: home building is the hinge</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-2-cheat-code-growth-model-2024-paper.mp4#t=160" data-v="vid-exam24" data-t="160"><img src="assets/midterm-videos/exam24-ch04.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">2:40</span><span class="tt">1b: pick two goals, accept the cost</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-2-cheat-code-growth-model-2024-paper.mp4#t=192" data-v="vid-exam24" data-t="192"><img src="assets/midterm-videos/exam24-ch05.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">3:12</span><span class="tt">1c: factory-built housing as the escape</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-2-cheat-code-growth-model-2024-paper.mp4#t=230" data-v="vid-exam24" data-t="230"><img src="assets/midterm-videos/exam24-ch06.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">3:50</span><span class="tt">Krugman 2a: potential GDP as capacity</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-2-cheat-code-growth-model-2024-paper.mp4#t=275" data-v="vid-exam24" data-t="275"><img src="assets/midterm-videos/exam24-ch07.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">4:35</span><span class="tt">2b: GDP grew but GDP per person fell</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-2-cheat-code-growth-model-2024-paper.mp4#t=321" data-v="vid-exam24" data-t="321"><img src="assets/midterm-videos/exam24-ch08.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">5:21</span><span class="tt">2b causes: 54 cents and 73% of US</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-2-cheat-code-growth-model-2024-paper.mp4#t=349" data-v="vid-exam24" data-t="349"><img src="assets/midterm-videos/exam24-ch09.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">5:49</span><span class="tt">2c: diminishing returns and Vietnam&#x27;s 6% a year</span></a></li><li><a class="ch" href="../midterm/notebooklm/gmm-video-2-cheat-code-growth-model-2024-paper.mp4#t=413" data-v="vid-exam24" data-t="413"><img src="assets/midterm-videos/exam24-ch10.jpg" alt="" width="320" height="180" loading="lazy" decoding="async"><span class="ts">6:53</span><span class="tt">Errors in the 2024 key and checklist</span></a></li></ol>
+  <h3>Check these slides</h3>
+  <div class="tw"><table><caption>NotebookLM drew these slides itself. Where one disagrees with the sources, use the source. Only the slides were checked: there is no transcript, so confirm any number the narrator says on the prep page.</caption><thead><tr><th>At</th><th>On the slide</th><th>What the sources say</th></tr></thead><tbody><tr><td><a class="tsl" href="../midterm/notebooklm/gmm-video-2-cheat-code-growth-model-2024-paper.mp4#t=50" data-v="vid-exam24" data-t="50">0:50</a></td><td>&#x27;Economic Growth&#x27; slide carries the subtitle &#x27;Labour Force Growth&#x27; in quotes, as if the whole model were labour force growth.</td><td>2024 key appendix: growth comes through two channels, labour force growth and productivity growth (capital deepening, labour quality, innovation), both resting on the institutional environment.</td></tr><tr><td><a class="tsl" href="../midterm/notebooklm/gmm-video-2-cheat-code-growth-model-2024-paper.mp4#t=85" data-v="vid-exam24" data-t="85">1:25</a></td><td>Model drawn as a chain: Labour Force, then Productivity, then Institutions, with productivity listed as only capital deepening and innovation.</td><td>The two channels run side by side and institutions sit underneath both. Productivity growth also includes labour quality (skill, effort).</td></tr><tr><td><a class="tsl" href="../midterm/notebooklm/gmm-video-2-cheat-code-growth-model-2024-paper.mp4#t=250" data-v="vid-exam24" data-t="250">4:10</a></td><td>Redrawn Primer 1 page is garbled (&#x27;laboor force&#x27;, &#x27;aceomulation&#x27;, &#x27;potential ourput (or pasonisl GDP)&#x27;) and says trend growth is &#x27;roughly 1% to 2 percent per year&#x27;.</td><td>Primer 1: Canada&#x27;s potential output trend has grown by roughly 1.5 to 2 percent per year.</td></tr><tr><td><a class="tsl" href="../midterm/notebooklm/gmm-video-2-cheat-code-growth-model-2024-paper.mp4#t=335" data-v="vid-exam24" data-t="335">5:35</a></td><td>Bar chart labels Canada&#x27;s 73% of US productivity as &#x27;Present&#x27;.</td><td>Session 8: business productivity was 73% of the US level in 2019, down from 83% in 2002.</td></tr></tbody></table></div>
+  <div class="deeper"><div class="card"><h4>Then work it on the prep page</h4><ul><li><a href="midterm-past-exams.html#c-model">Two growth channels</a></li><li><a href="midterm-past-exams.html#y24">Trilemma figures</a></li><li><a href="midterm-past-exams.html#y24q1a">1a Explain it</a></li><li><a href="midterm-past-exams.html#y24q1b">1b Pick two</a></li><li><a href="midterm-past-exams.html#y24q1c">1c One policy</a></li><li><a href="midterm-past-exams.html#y24mail">Krugman email</a></li><li><a href="midterm-past-exams.html#y24q2a">2a Potential GDP</a></li><li><a href="midterm-past-exams.html#y24q2b">2b Is Canada the same?</a></li><li><a href="midterm-past-exams.html#y24q2c">2c Stay poor forever?</a></li><li><a href="midterm-past-exams.html#practice">Practice question</a></li></ul></div><div class="card"><h4>Read it highlighted in the case reader</h4><ul><li><a href="midterm-case-reader.html#p24">2024 paper and Krugman email</a></li><li><a href="midterm-case-reader.html#fig24a">2024 Figure 1a</a></li><li><a href="midterm-case-reader.html#fig24b">2024 Figure 1b</a></li><li><a href="midterm-case-reader.html#k24">2024 answer key</a></li></ul></div></div>
+</section>
+<div class="group"><h2>Reference</h2><div class="ln"></div></div>
+<section id="earlier">
+  <h2>Earlier session videos</h2>
+  <p class="lede">These came with the session prep pages. The midterm draws on the same ideas, so they work as a refresher once the four videos above are done. Nothing downloads until you press play.</p>
+  <div class="vgrid"><div class="card"><audio controls preload="none" src="../session-01/Audiocast_Primer-01_Understanding_the_Macroeconomy_v2.mp3"></audio><h4>Primer 1: Understanding the Macroeconomy</h4><span class="sm">Audio &middot; 12:34 &middot; Session 1 Canvas page</span><p>The audio version of the first primer, posted by the course with Session 1.</p><p><a href="macro-foundations.html">Macro foundations page</a> &middot; <a href="../session-01/canvas-september-9-2026-details-session-1.html">Session 1 Canvas page</a></p></div><div class="card"><video controls preload="none" playsinline width="1280" height="720" poster="assets/midterm-videos/earlier-s03.jpg" src="../session-03/Video_Session-03_Economic-Prosperity-and-Progress.mp4"></video><h4>Economic Prosperity and Progress</h4><span class="sm">Video &middot; 8:22 &middot; Session 3</span><p>The overview saved with Session 3. It covers both Session 3 primers.</p><p><a href="session-03-prosperity-and-progress.html">Session 3 prep page</a></p></div><div class="card"><video controls preload="none" playsinline width="1280" height="720" poster="../session-06/Video_Session-06_poster.jpg" src="../session-06/Video_Session-06_Productivity-Growth-and-the-Middle-Income-Trap.mp4"></video><h4>Productivity Growth and the Middle Income Trap</h4><span class="sm">Video &middot; 8:14 &middot; Session 6</span><p>The overview saved with Session 6. The middle income trap is also the subject of the Wolf reading in the case reader.</p><p><a href="session-06-accumulation-to-renewal.html">Session 6 prep page</a> &middot; <a href="midterm-past-exams.html#c-capital">Diminishing returns</a> &middot; <a href="midterm-case-reader.html#wolf">Wolf, highlighted</a></p></div><div class="card"><video controls preload="none" playsinline width="1280" height="720" poster="../session-08/Video_Session-08_poster.jpg" src="../session-08/Video_Session-08_The-AI-Race-Canada-Needs-to-Win.mp4"></video><h4>The AI Race Canada Needs to Win</h4><span class="sm">Video &middot; 9:04 &middot; Session 8</span><p>The overview saved with Session 8, on Canada's growth. The Session 8 slides are highlighted in the case reader.</p><p><a href="session-08-ai-race-canada.html">Session 8 prep page</a> &middot; <a href="midterm-past-exams.html#c-canada">Canada's growth</a> &middot; <a href="midterm-case-reader.html#s08">Session 8 slides, highlighted</a></p></div></div>
+</section>
+<section id="reader">
+  <h2>Case reader: the papers, highlighted</h2>
+  <p class="lede">The real pages of both papers, both keys, the exhibits and four readings, with 126 highlights painted on the words. Red means <b>watch out</b>: a trap that costs marks, or a place where two sources disagree. Yellow means <b>what it means</b>: the economics behind the passage. Each highlight opens a note with a small diagram and a link back to the prep page.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Document</th><th class="n">Highlights</th><th class="n">Watch out</th><th class="n">What it means</th></tr></thead>
+    <tbody>
+      <tr><td><a href="midterm-case-reader.html#p25">2025 paper</a></td><td class="n">20</td><td class="n">12</td><td class="n">8</td></tr>
+      <tr><td><a href="midterm-case-reader.html#crop">2025 crop yield chart</a></td><td class="n">8</td><td class="n">4</td><td class="n">4</td></tr>
+      <tr><td><a href="midterm-case-reader.html#k25">2025 answer key</a></td><td class="n">17</td><td class="n">6</td><td class="n">11</td></tr>
+      <tr><td><a href="midterm-case-reader.html#p24">2024 paper and Krugman email</a></td><td class="n">16</td><td class="n">8</td><td class="n">8</td></tr>
+      <tr><td><a href="midterm-case-reader.html#fig24a">2024 Figure 1a</a> and <a href="midterm-case-reader.html#fig24b">1b</a></td><td class="n">8</td><td class="n">3</td><td class="n">5</td></tr>
+      <tr><td><a href="midterm-case-reader.html#k24">2024 answer key</a></td><td class="n">18</td><td class="n">7</td><td class="n">11</td></tr>
+      <tr><td><a href="midterm-case-reader.html#wolf">Wolf, FT (middle income trap)</a></td><td class="n">10</td><td class="n">4</td><td class="n">6</td></tr>
+      <tr><td><a href="midterm-case-reader.html#wdr">World Development Report 2024</a></td><td class="n">6</td><td class="n">2</td><td class="n">4</td></tr>
+      <tr><td><a href="midterm-case-reader.html#s07">Session 7 slides</a></td><td class="n">12</td><td class="n">4</td><td class="n">8</td></tr>
+      <tr><td><a href="midterm-case-reader.html#s08">Session 8 slides</a></td><td class="n">11</td><td class="n">3</td><td class="n">8</td></tr>
+      <tr class="tot"><td>Total</td><td class="n">126</td><td class="n">53</td><td class="n">73</td></tr>
+    </tbody></table></div>
+  <p class="note">The night before, open the reader and press <b>Watch out only</b> in its left rail. That leaves the 53 red notes, the mistakes worth avoiding on Monday.</p>
+</section>
+<section id="materials">
+  <h2>Papers and files</h2>
+  <div class="grid2">
+    <div class="tw"><table><caption>Past papers</caption><tbody>
+      <tr><td><a href="../midterm/past-midterms/Midterm2025.pdf">2025 paper</a></td><td class="sm">Questions only. 4 questions, 40 points</td></tr>
+      <tr><td><a href="../midterm/past-midterms/Midterm2025_answerkey.pdf">2025 key</a></td><td class="sm">Model answers and marking notes</td></tr>
+      <tr><td><a href="../midterm/past-midterms/Midterm2025_makeup_answerkey.pdf">2025 makeup</a></td><td class="sm">New Oct 22. Paper and model answers in one file. 4 questions, 50 marks</td></tr>
+      <tr><td><a href="../midterm/past-midterms/Midterm2024.pdf">2024 paper</a></td><td class="sm">Questions only. 6 parts, 80 marks</td></tr>
+      <tr><td><a href="../midterm/past-midterms/Midterm2024_answerkey.pdf">2024 key</a></td><td class="sm">Rubrics and a growth model appendix</td></tr>
+      <tr><td class="sm">past-midterms/*.pptx</td><td class="sm">The original decks. The PDFs are copies</td></tr>
+      <tr><td>askmyprof.com</td><td class="sm">A different practice exam with an AI grade. Online only</td></tr>
+      <tr><td>New slides</td><td class="sm"><a href="../session-09/Lecture-Slides_09_Trade-and-Industrial-Policy.pdf">S9 Trade and industrial policy</a> &middot; <a href="../session-10/Lecture-Slides_10_China.pdf">S10 China</a></td></tr>
+      <tr><td><a href="../midterm/HBA2-Midterm-Exam-Schedule-Fall-2026.pdf">Exam schedule</a></td><td class="sm">Date, time and faculty</td></tr>
+    </tbody></table></div>
+    <div class="tw"><table><caption>Pages and sources</caption><tbody>
+      <tr><td><a href="midterm-past-exams.html">Prep page</a></td><td class="sm">Every question worked, answers hidden first</td></tr>
+      <tr><td><a href="midterm-case-reader.html">Case reader</a></td><td class="sm">The papers and readings, highlighted</td></tr>
+      <tr><td><a href="../midterm/README.md">midterm/README.md</a></td><td class="sm">Index of the midterm folder</td></tr>
+      <tr><td><a href="https://notebook.google.com/notebook/b4e8cf68-0be0-4a31-bdfd-70d7509ef89e">NotebookLM notebook</a></td><td class="sm">The notebook that made the videos. Needs your Google sign in</td></tr>
+      <tr><td><a href="../midterm/notebooklm/sources.md">notebooklm/sources.md</a></td><td class="sm">What the notebook was given</td></tr>
+      <tr><td class="sm">notebooklm/focus-video-*.txt</td><td class="sm">The prompt behind each video</td></tr>
+      <tr><td><a href="../midterm/notebooklm/08-update-oct23-makeup-and-rules.md">08-update-oct23</a></td><td class="sm">Rules and makeup paper summary added for the new videos</td></tr>
+      <tr><td>Session pages</td><td class="sm"><a href="session-03-prosperity-and-progress.html">S3</a> &middot; <a href="session-04-rich-place-poor-place.html">S4</a> &middot; <a href="session-05-growth-model-in-action.html">S5</a> &middot; <a href="session-06-accumulation-to-renewal.html">S6</a> &middot; <a href="session-08-ai-race-canada.html">S8</a></td></tr>
+    </tbody></table></div>
+  </div>
+</section>
+<section id="log">
+  <h2>Q&amp;A log</h2>
+  <p class="lede">Follow-up questions get added here, newest first.</p>
+  <div class="q">
+    <div class="q-meta">Q2 &middot; Oct 23 &middot; Make a concepts video and a "how to approach the exam" video, read her new emails, make this page easy to soak up</div>
+    <p>The October 22 and 23 announcements changed three things: the exam is closed book with no calculator, you sit in room 1310 by 12:50, and a third past paper (the 2025 makeup, Canada vs Germany on education and productivity) is posted with model answers. Both new videos were made in the same NotebookLM notebook with the makeup paper, the Session 9 and 10 slides and a rules update added as sources. They sit at the top of this page, each with numbered cards to read before and after watching. A video for every class was possible but slower to watch than one video covering all the concepts, and the exam only rewards the concepts, so you got the two-video version.</p>
+    <div class="ex"><span class="lb">Example</span><div>Makeup Q1 says "define the puzzle", so the answer stops at the puzzle: Canada has the most degrees in the OECD, Germany has far fewer, yet Germany is over 30% more productive, which clashes with education raising productivity in the growth model. Explaining why belongs in Q2, and doing it in Q1 wastes words. That is card 4 under <a href="#approach">How to approach the exam</a>.</div></div>
+  </div>
+  <div class="q">
+    <div class="q-meta">Q1 &middot; Oct 18 &middot; Make the respective HTML with the videos and everything</div>
+    <p>This page. The four NotebookLM videos sit in study order, each with chapters that start at slide changes, the slides to check against the sources, and links to the matching prep page sections and highlighted pages. The session videos, the case reader and every paper sit under Reference.</p>
+    <div class="ex"><span class="lb">Example</span><div>Press <a class="tsl" href="../midterm/notebooklm/gmm-video-4-concepts-midterm-blueprint.mp4#t=172" data-v="vid-concepts" data-t="172">2:52</a> in the concepts video. The captions under the water buffalo and the tractor are NotebookLM's own image prompts, left on the slide by mistake. The flag under that video gives the point the slide was meant to make: a water buffalo has a huge return for a subsistence rice farmer, while a tractor adds only a little on a Canadian wheat farm. That is diminishing returns, worked on the prep page under <a href="midterm-past-exams.html#c-capital">Diminishing returns</a>.</div></div>
+  </div>
+</section>
+
+</main>
+</div>
+
+<div class="wrap">
+<footer>4505 GMM &middot; Midterm videos &middot; Worked solutions on the linked pages are my own; check them against the posted key. NotebookLM drew the slides in these videos, so check any number against the sources. Keep this page private: it links the professors' exams and keys.</footer>
+</div>
+
+<script>
+(function(){
+"use strict";
+/* ---- contents rail scroll-spy ---- */
+(function(){
+  var links=Array.prototype.slice.call(document.querySelectorAll("nav.toc a"));
+  if(!links.length || !("IntersectionObserver" in window)) return;
+  var map={}, targets=[];
+  links.forEach(function(a){
+    var id=a.getAttribute("href").slice(1), el=document.getElementById(id);
+    if(el){ map[id]=a; targets.push(el); }
+  });
+  var seen=[];
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      var i=seen.indexOf(e.target);
+      if(e.isIntersecting && i<0) seen.push(e.target);
+      if(!e.isIntersecting && i>=0) seen.splice(i,1);
+    });
+    if(!seen.length) return;
+    seen.sort(function(a,b){ return a.getBoundingClientRect().top-b.getBoundingClientRect().top; });
+    links.forEach(function(l){ l.classList.remove("on"); });
+    var a=map[seen[0].id]; if(!a) return;
+    a.classList.add("on");
+    var nav=document.querySelector("nav.toc");
+    if(nav && nav.scrollHeight>nav.clientHeight+4){
+      var t=a.offsetTop-nav.clientHeight/2; if(t>0) nav.scrollTop=t;
+    }
+  }, {rootMargin:"-72px 0px -55% 0px", threshold:0});
+  targets.forEach(function(t){ io.observe(t); });
+})();
+
+})();
+
+/* ---- chapter seeking: a chapter link plays its own video from that point ---- */
+(function(){
+  document.documentElement.classList.add("js");
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function seek(v, t){
+    function go(){ try{ v.currentTime=t; }catch(_){} var p=v.play(); if(p && p.catch) p.catch(function(){}); }
+    if(v.readyState>=1) go(); else { v.addEventListener("loadedmetadata", go, {once:true}); v.load(); }
+    var r=v.getBoundingClientRect();
+    if(r.top<0 || r.bottom>window.innerHeight) v.scrollIntoView({block:"center", behavior:reduce?"auto":"smooth"});
+  }
+  [].forEach.call(document.querySelectorAll("a[data-v][data-t]"), function(a){
+    a.addEventListener("click", function(e){
+      var v=document.getElementById(a.getAttribute("data-v"));
+      if(!v || !v.canPlayType || !v.canPlayType("video/mp4")) return;
+      e.preventDefault(); seek(v, parseFloat(a.getAttribute("data-t")));
+    });
+  });
+  [].forEach.call(document.querySelectorAll("video[data-ch]"), function(v){
+    var list=[].slice.call(document.querySelectorAll('.chs a[data-v="'+v.id+'"]'));
+    var ts=list.map(function(a){ return parseFloat(a.getAttribute("data-t")); });
+    var cur=-1;
+    v.addEventListener("timeupdate", function(){
+      var t=v.currentTime, i=-1;
+      for(var k=0;k<ts.length;k++){ if(ts[k]<=t+0.25) i=k; else break; }
+      if(i===cur) return;
+      if(cur>=0){ list[cur].classList.remove("on"); list[cur].removeAttribute("aria-current"); }
+      if(i>=0){ list[i].classList.add("on"); list[i].setAttribute("aria-current","true"); }
+      cur=i;
+    });
+  });
+  document.addEventListener("play", function(e){
+    [].forEach.call(document.querySelectorAll("video,audio"), function(m){ if(m!==e.target && !m.paused) m.pause(); });
+  }, true);
+})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,1238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="prep-file" content="4505-Global-Macroeconomics-for-Managers/notes/session-06-accumulation-to-renewal.html">
+<meta name="prep-session" content="active">
+<title>From Accumulation to Renewal: GMM Session 6</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --paper:#FFFFFF; --surface:#FFFFFF; --surface-2:#F3F6F3; --surface-3:#E9EFEA;
+  --ink:#141F1C; --ink-2:#4C5A55; --ink-3:#7A8681;
+  --rule:#E0E6E1; --rule-strong:#A8B5AE;
+  --accent:#1B6B57; --accent-2:#2E9376; --accent-soft:#E2F0E9;
+  --credit:#A33A2C; --credit-soft:#FAE7E2;
+  --flag:#8A6A12; --flag-soft:#FAF2DC;
+  --shadow:0 1px 2px rgba(20,31,28,.05), 0 12px 28px -22px rgba(20,31,28,.5);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Public Sans","Helvetica Neue",Arial,sans-serif;font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Bitter,Georgia,serif;text-wrap:balance;margin:0;line-height:1.15}
+p{margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+.wrap{max-width:1400px;margin:0;padding-inline:34px}
+
+/* ---------- masthead ---------- */
+header{border-bottom:1px solid var(--rule)}
+.hd{max-width:1330px;padding-block:38px 28px;display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between;align-items:flex-end}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(30px,5.5vw,46px);font-weight:700;letter-spacing:-.025em;margin-top:10px}
+.gist{color:var(--ink-2);max-width:52ch;margin-top:10px}
+.hd .meta{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-2);border-left:2px solid var(--accent);padding-left:14px;line-height:2}
+.hd .meta b{color:var(--ink);font-weight:600}
+
+/* ---------- left contents rail ---------- */
+.cols{display:grid;grid-template-columns:236px minmax(0,1fr);gap:54px;align-items:start}
+nav.toc{position:sticky;top:22px;padding-block:34px 0;font-size:13.5px;max-height:calc(100vh - 44px);overflow-y:auto}
+nav.toc .toc-h{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-3);padding-bottom:9px;border-bottom:1px solid var(--rule);margin-bottom:8px}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px}
+nav.toc a{display:flex;gap:9px;align-items:baseline;padding:5px 10px;border-radius:6px;color:var(--ink-2);
+  text-decoration:none;border-left:2px solid transparent;line-height:1.35}
+nav.toc a .n{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3);min-width:15px}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{color:var(--accent);border-left-color:var(--accent);background:var(--accent-soft);font-weight:600}
+nav.toc a.on .n{color:var(--accent)}
+nav.toc a .io{font-size:10px;color:var(--accent);margin-left:auto;opacity:.75}
+nav.toc .grp{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-3);padding:16px 10px 5px}
+nav.toc .grp:first-child{padding-top:2px}
+
+main{display:flex;flex-direction:column;gap:26px;padding-block:34px 80px;min-width:0;max-width:1020px}
+
+/* ---------- plain-English opener ---------- */
+.oneline{display:flex;gap:14px;align-items:flex-start;background:var(--accent-soft);border-radius:10px;
+  padding:14px 18px;font-size:16px;color:var(--ink);max-width:76ch}
+.oneline .tag{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);white-space:nowrap;padding-top:5px}
+.oneline b{font-weight:600}
+
+/* ---------- group divider ---------- */
+.group{display:flex;align-items:center;gap:16px;margin-top:34px}
+.group:first-child{margin-top:0}
+.group h2{font-size:13px;font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent);border:none;padding:0;white-space:nowrap}
+.group .ln{flex:1;height:1px;background:var(--rule)}
+.group .ct{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+
+section{display:flex;flex-direction:column;gap:18px;scroll-margin-top:64px}
+section>h2{font-size:clamp(21px,3.2vw,27px);font-weight:600;letter-spacing:-.015em;display:flex;gap:12px;align-items:baseline}
+section>h2 .no{font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--accent);font-weight:500}
+h3{font-size:17px;font-weight:600;margin-top:8px}
+.lede{color:var(--ink-2);max-width:72ch;font-size:16px}
+.lede strong{color:var(--ink);font-weight:600}
+
+
+/* ---------- flow diagrams: CSS boxes, NOT SVG text ----------
+   Text wraps and boxes grow, so a long label can never overflow.
+   Use these for every box-and-arrow / one-to-many / spectrum diagram.
+   Reserve SVG for real charts only (bars, lines, curves).           */
+.flow{display:grid;gap:14px;align-items:center}
+.flow.f5{grid-template-columns:minmax(0,1.05fr) 22px minmax(0,.92fr) 58px minmax(0,1.2fr)}
+.flow.f3{grid-template-columns:minmax(0,.8fr) 22px minmax(0,1.25fr)}
+.fstack{display:flex;flex-direction:column;gap:10px;min-width:0}
+.fnode{border:1.5px solid var(--rule-strong);border-radius:11px;padding:11px 14px;background:var(--surface);
+  display:flex;flex-direction:column;gap:3px;min-width:0}
+.fnode b{font-size:14.5px;font-weight:600;line-height:1.3}
+.fnode span{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);line-height:1.55;overflow-wrap:anywhere}
+.fnode.acc{background:var(--accent-soft);border-color:var(--accent)}
+.fnode.acc b,.fnode.acc span{color:var(--accent)}
+.fnode.bad{background:var(--credit-soft);border-color:var(--credit)}
+.fnode.bad b,.fnode.bad span{color:var(--credit)}
+.fnode.flg{background:var(--flag-soft);border-color:var(--flag);text-align:center}
+.fnode.flg b,.fnode.flg span{color:var(--flag)}
+.fnode.mute{border-style:dashed;background:var(--surface-3)}
+.farr{color:var(--rule-strong);text-align:center;line-height:1;font-family:"IBM Plex Mono",monospace}
+.farr .ch{display:block;font-size:20px;line-height:1}
+.farr i{font-style:normal;display:block;font-size:9px;letter-spacing:.06em;color:var(--ink-3);margin-top:5px;text-transform:uppercase;white-space:nowrap}
+
+/* spectrum: ordered scale with a hard line somewhere in it */
+.spec{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px}
+.spec .sn{border:1.5px solid var(--rule-strong);border-radius:11px;padding:11px 13px;background:var(--surface);min-width:0}
+.spec .sn b{display:block;font-size:14.5px;font-weight:600;margin-bottom:3px}
+.spec .sn span{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);line-height:1.5;display:block}
+.spec .sn.ok{background:var(--accent-soft);border-color:var(--accent)}
+.spec .sn.ok b,.spec .sn.ok span{color:var(--accent)}
+.spec .sn.no{background:var(--credit-soft);border-color:var(--credit)}
+.spec .sn.no b,.spec .sn.no span{color:var(--credit)}
+.specline{grid-column:1/-1;display:flex;align-items:center;gap:12px;margin-top:2px}
+.specline .lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--credit);white-space:nowrap}
+.specline .rule{flex:1;height:0;border-top:2px dashed var(--credit)}
+
+/* horizontal labelled bars */
+.bars{display:flex;flex-direction:column;gap:11px}
+.bar{display:grid;grid-template-columns:132px minmax(0,1fr);gap:14px;align-items:center}
+.bar .bl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);text-align:right}
+.bar .bt{display:flex;align-items:center;gap:10px;min-width:0}
+.bar .bf{height:20px;border-radius:4px;flex:none}
+.bar .bc{font-size:13px;color:var(--ink-2);min-width:0;overflow-wrap:anywhere}
+.bar .bf.hi{background:var(--credit-soft);border:1.2px solid var(--credit)}
+.bar .bf.md{background:var(--flag-soft);border:1.2px solid var(--flag)}
+.bar .bf.lo{background:var(--accent-soft);border:1.2px solid var(--accent)}
+
+/* two-ended scales: where two things sit on one axis */
+.scales{display:flex;flex-direction:column;gap:13px}
+.scale{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;align-items:center}
+.scale .sl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);text-align:right}
+.scale .tr{position:relative;height:34px}
+.scale .tr .ln{position:absolute;top:22px;left:0;right:0;height:0;border-top:1.5px solid var(--rule-strong)}
+.scale .tr .e{position:absolute;top:0;font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3)}
+.scale .tr .e.l{left:0} .scale .tr .e.r{right:0}
+.scale .tr .dot{position:absolute;top:15px;width:15px;height:15px;border-radius:50%;transform:translateX(-50%)}
+.scale .tr .dot.s{background:var(--accent-soft);border:2px solid var(--accent)}
+.scale .tr .dot.b{background:var(--credit-soft);border:2px solid var(--credit)}
+.legend{display:flex;gap:20px;flex-wrap:wrap;align-items:center;margin-top:4px;font-family:"IBM Plex Mono",monospace;font-size:11px}
+.legend i{font-style:normal;display:inline-flex;align-items:center;gap:7px}
+.legend .dot{width:13px;height:13px;border-radius:50%;display:inline-block}
+.legend .dot.s{background:var(--accent-soft);border:2px solid var(--accent)}
+.legend .dot.b{background:var(--credit-soft);border:2px solid var(--credit)}
+
+
+/* ---------- stat strip: headline numbers, rendered not typed ---------- */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;max-width:1020px}
+.stat{border-top:3px solid var(--accent);padding-top:9px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.stat.b{border-top-color:var(--credit)} .stat.c{border-top-color:var(--flag)} .stat.m{border-top-color:var(--rule-strong)}
+.stat .k{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.stat .v{font-family:Bitter,serif;font-size:29px;font-weight:700;line-height:1.05;font-variant-numeric:tabular-nums;color:var(--accent)}
+.stat.b .v{color:var(--credit)} .stat.c .v{color:var(--flag)} .stat.m .v{color:var(--ink)}
+.stat .s{font-size:12.5px;color:var(--ink-2);overflow-wrap:anywhere}
+
+/* ---------- tug of war: two opposed forces, net position ---------- */
+.tug{display:flex;flex-direction:column;gap:9px;max-width:1020px}
+.tug .row{display:grid;grid-template-columns:minmax(0,1fr) 300px minmax(0,1fr);gap:12px;align-items:center}
+.tug .lb{font-size:13.5px;color:var(--ink-2);min-width:0;overflow-wrap:anywhere}
+.tug .lb.l{text-align:right}
+.tug .mid{height:22px;position:relative;border-radius:4px;background:var(--surface-3);overflow:hidden}
+.tug .mid i{position:absolute;top:0;bottom:0;display:block;transition:width .9s cubic-bezier(.22,1,.36,1)}
+.tug .mid i.l{right:50%;background:var(--credit-soft);border-right:2px solid var(--credit)}
+.tug .mid i.r{left:50%;background:var(--accent-soft);border-left:2px solid var(--accent)}
+.tug .net{display:grid;grid-template-columns:minmax(0,1fr) 300px minmax(0,1fr);gap:12px;align-items:center;
+  border-top:1px solid var(--rule-strong);padding-top:10px;margin-top:3px}
+.tug .net .mid{height:30px;background:transparent;display:flex;align-items:center;justify-content:center;
+  font-family:Bitter,serif;font-weight:700;font-size:17px}
+
+/* ---------- scorecard: claim, two sides, verdict ---------- */
+.sc{display:flex;flex-direction:column;max-width:1020px;border:1px solid var(--rule);border-radius:12px;overflow:hidden}
+.scrow{display:grid;grid-template-columns:150px minmax(0,1fr) 122px;gap:0;border-top:1px solid var(--rule)}
+.scrow:first-child{border-top:none}
+.scrow .cl{padding:11px 14px;font-size:14px;font-weight:600;background:var(--surface-2);min-width:0;overflow-wrap:anywhere}
+.scrow .sides{display:grid;grid-template-columns:1fr 1fr;gap:0;min-width:0}
+.scrow .sd{padding:11px 14px;font-size:13px;color:var(--ink-2);min-width:0;overflow-wrap:anywhere;border-left:1px solid var(--rule)}
+.scrow .sd b{color:var(--ink)}
+.scrow .sd.a{background:color-mix(in srgb,var(--accent-soft) 45%,transparent)}
+.scrow .sd.b{background:color-mix(in srgb,var(--credit-soft) 45%,transparent)}
+.scrow .vd{padding:11px 12px;border-left:1px solid var(--rule);font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;text-align:center}
+.scrow .vd.a{color:var(--accent);background:var(--accent-soft)}
+.scrow .vd.b{color:var(--credit);background:var(--credit-soft)}
+.scrow .vd.d{color:var(--ink-3);background:var(--surface-2)}
+.scrow.sch .cl,.scrow.sch .sd,.scrow.sch .vd{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-3);font-weight:500;background:var(--surface-2);padding-block:8px}
+
+/* ---------- motion: meaning only, always from a visible rest state ---------- */
+.rv{opacity:1;transform:none;transition:opacity .5s ease,transform .5s cubic-bezier(.22,1,.36,1)}
+.js .rv:not(.in){opacity:0;transform:translateY(8px)}
+.js .bars .bf{width:0!important;transition:width .9s cubic-bezier(.22,1,.36,1)}
+.js .rv.in .bars .bf,.js .bars.in .bf{width:var(--w)!important}
+@media (prefers-reduced-motion:reduce){
+  .js .rv:not(.in){opacity:1;transform:none}
+  .js .bars .bf{width:var(--w)!important;transition:none}
+  .tug .mid i{transition:none}
+}
+
+/* ---------- diagram frame ---------- */
+figure{margin:0;display:flex;flex-direction:column;gap:10px;max-width:1020px}
+.dg{background:var(--surface-2);border:1px solid var(--rule);border-radius:14px;padding:24px}
+.dg.pad0{padding:18px}
+figcaption{color:var(--ink-3);font-size:13.5px;max-width:70ch}
+svg.d{width:100%;height:auto;display:block;overflow:visible}
+.d-box{fill:var(--surface);stroke:var(--rule-strong);stroke-width:1.5}
+.d-box.acc{fill:var(--accent-soft);stroke:var(--accent)}
+.d-box.bad{fill:var(--credit-soft);stroke:var(--credit)}
+.d-box.mute{fill:var(--surface-3);stroke:var(--rule-strong);stroke-dasharray:5 4}
+.d-t{font-family:"Public Sans",sans-serif;font-size:15px;font-weight:600;fill:var(--ink)}
+.d-t.t2{font-size:13.5px}
+.d-s{font-family:"IBM Plex Mono",monospace;font-size:11.5px;fill:var(--ink-3)}
+.d-lab{font-family:"IBM Plex Mono",monospace;font-size:11.5px;fill:var(--ink-2)}
+.d-link{fill:none;stroke:var(--rule-strong);stroke-width:1.6}
+.d-link.acc{stroke:var(--accent)}
+.d-link.bad{stroke:var(--credit)}
+
+/* ---------- interactive shell ---------- */
+.ia{max-width:1020px;background:var(--surface);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.ia-top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;
+  padding:12px 18px;border-bottom:1px solid var(--rule);background:var(--surface-2)}
+.ia-top .ttl{font-size:14px;font-weight:600}
+.ia-top .hint{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.ia-body{padding:20px 18px}
+
+.seg{display:inline-flex;border:1px solid var(--rule-strong);border-radius:8px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:13px;font-weight:500;cursor:pointer;border:0;background:transparent;
+  color:var(--ink-2);padding:6px 14px;border-right:1px solid var(--rule)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--accent);color:#fff;font-weight:600}
+.seg button:hover:not([aria-pressed="true"]){background:var(--accent-soft);color:var(--accent)}
+
+.slider{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.slider label{font-size:13.5px;color:var(--ink-2);min-width:130px}
+.slider input[type=range]{flex:1;min-width:180px;accent-color:var(--accent);height:22px}
+.slider .val{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:14px;
+  font-weight:600;min-width:96px;text-align:right;color:var(--ink)}
+
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:14px;margin-top:16px}
+.kpi{border-top:2px solid var(--rule-strong);padding-top:7px}
+.kpi.on{border-top-color:var(--accent)}
+.kpi.warn{border-top-color:var(--credit)}
+.kpi .k{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.kpi .v{font-family:Bitter,serif;font-size:21px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.25}
+.kpi.on .v{color:var(--accent)} .kpi.warn .v{color:var(--credit)}
+.kpi .s{font-size:12.5px;color:var(--ink-2)}
+
+/* ---------- example strip ---------- */
+.ex{max-width:1020px;border:1px solid var(--rule);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;
+  padding:14px 18px;background:var(--surface);font-size:15px;color:var(--ink-2);display:flex;flex-direction:column;gap:7px}
+.ex .lb{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.ex strong{color:var(--ink);font-weight:600}
+.calc-line{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink);
+  background:var(--surface-2);padding:7px 11px;border-radius:6px;align-self:flex-start;font-variant-numeric:tabular-nums}
+
+/* ---------- 2x2 classifier ---------- */
+.tray{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{font:inherit;font-size:13.5px;cursor:pointer;background:var(--surface);border:1.5px solid var(--rule-strong);
+  color:var(--ink);padding:7px 14px;border-radius:8px;transition:transform .12s ease,border-color .12s ease}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:600}
+.chip.done{opacity:.35;pointer-events:none;border-style:dashed}
+.grid22{display:grid;grid-template-columns:76px 1fr 1fr;gap:10px}
+.grid22 .hh{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-3);align-self:end;padding-bottom:4px;text-align:center}
+.grid22 .vh{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  display:flex;align-items:center;justify-content:center;text-align:center}
+.grid22 .vh.a{color:var(--accent)} .grid22 .vh.b{color:var(--credit)}
+.qd{min-height:104px;border:1.5px dashed var(--rule-strong);border-radius:12px;background:var(--surface-2);
+  padding:10px;cursor:pointer;display:flex;flex-direction:column;gap:6px;transition:background .15s,border-color .15s}
+.qd:hover{border-color:var(--accent);background:var(--accent-soft)}
+.qd.armed{border-color:var(--accent);border-style:solid}
+.qd.hit{animation:hit .4s ease} .qd.miss{animation:miss .4s ease}
+@keyframes hit{0%{background:var(--accent-soft)}100%{background:var(--surface-2)}}
+@keyframes miss{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.placed{background:var(--surface);border:1px solid var(--accent);border-left:3px solid var(--accent);
+  border-radius:6px;padding:7px 10px;font-size:13.5px}
+.placed b{display:block;font-weight:600}
+.placed span{font-size:12px;color:var(--ink-3)}
+.fb{font-size:13.5px;min-height:22px;color:var(--ink-2)}
+.fb.bad{color:var(--credit)} .fb.good{color:var(--accent)}
+
+/* ---------- vet bill ---------- */
+.bill{background:var(--surface);border:1px solid var(--rule-strong);border-radius:10px;overflow:hidden;font-size:14px;max-width:520px}
+.bill .top{padding:11px 16px;border-bottom:1px dashed var(--rule-strong);font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.bill .ln{display:grid;grid-template-columns:1fr 82px 76px;gap:10px;padding:9px 16px;align-items:center}
+.bill .ln+.ln{border-top:1px solid var(--rule)}
+.bill .amt{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;text-align:right}
+.bill .k{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.08em;padding:2px 0;border-radius:4px;
+  text-align:center;transition:background .25s,color .25s,border-color .25s}
+.bill .k.d{color:var(--accent);border:1px solid var(--accent);background:var(--accent-soft)}
+.bill .k.i{color:var(--credit);border:1px solid var(--credit);background:var(--credit-soft)}
+.bill .ttl{display:grid;grid-template-columns:1fr 82px 76px;gap:10px;padding:10px 16px;border-top:2px solid var(--rule-strong);
+  background:var(--surface-2);font-weight:600}
+
+/* ---------- question as asked ---------- */
+.qtext{max-width:1020px;border:1.5px dashed var(--rule-strong);border-radius:10px;padding:15px 19px;
+  background:var(--surface-2);display:flex;flex-direction:column;gap:9px}
+.qtext .lbl{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3)}
+.qtext .body{font-size:15.5px;color:var(--ink);line-height:1.55}
+.qtext ol{margin:4px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:5px;font-size:15px}
+.qtext ol li::marker{color:var(--accent);font-weight:600}
+.qtext .given{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink-2);
+  background:var(--surface);border:1px solid var(--rule);border-radius:7px;padding:10px 14px;
+  white-space:pre;overflow-x:auto;font-variant-numeric:tabular-nums;margin:0}
+
+/* ---------- worked process ---------- */
+.steps{max-width:1020px;display:flex;flex-direction:column}
+.step{display:grid;grid-template-columns:30px minmax(0,1fr);gap:16px;padding:18px 0;border-top:1px solid var(--rule)}
+.step:first-child{border-top:none;padding-top:6px}
+.step .num{width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);
+  border:1.5px solid var(--accent);display:flex;align-items:center;justify-content:center;
+  font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600}
+.step .sb{display:flex;flex-direction:column;gap:10px;min-width:0}
+.step h4{margin:0;font-size:15.5px;font-weight:600;font-family:"Public Sans",sans-serif;padding-top:4px}
+.step p{font-size:15px;color:var(--ink-2)}
+.step p strong{color:var(--ink);font-weight:600}
+pre.math{margin:0;font-family:"IBM Plex Mono",monospace;font-size:13.5px;line-height:1.9;
+  background:var(--surface-2);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;
+  padding:14px 18px;overflow-x:auto;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:pre}
+pre.math b{color:var(--accent);font-weight:600}
+pre.math i{color:var(--ink-3);font-style:normal}
+
+/* ---------- tables ---------- */
+.tw{overflow-x:auto;border:1px solid var(--rule);border-radius:12px;background:var(--surface);max-width:1020px}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+caption{text-align:left;padding:13px 17px 11px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);border-bottom:1px solid var(--rule)}
+th,td{padding:9px 16px;text-align:left;vertical-align:top}
+thead th{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ink-2);font-weight:500;border-bottom:1px solid var(--rule-strong);white-space:nowrap}
+tbody tr+tr td{border-top:1px solid var(--rule)}
+td.n,th.n{text-align:right;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.tot td{border-top:1px solid var(--rule-strong)!important;box-shadow:inset 0 -3px 0 -1px var(--rule-strong);
+  font-weight:600;background:var(--surface-2)}
+td.cr{color:var(--credit)}
+.sm{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3)}
+
+.pill{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  padding:3px 8px;border-radius:4px;border:1px solid var(--rule-strong);color:var(--ink-2);white-space:nowrap}
+.pill.v{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.pill.f{border-color:var(--credit);color:var(--credit);background:var(--credit-soft)}
+
+.note{max-width:1020px;border-left:3px solid var(--flag);background:var(--flag-soft);color:var(--ink);padding:12px 16px;border-radius:0 8px 8px 0;font-size:14.5px}
+.note.acc{border-left-color:var(--accent);background:var(--accent-soft)}
+.fx{font-family:"IBM Plex Mono",monospace;font-size:13.5px;color:var(--accent);background:var(--accent-soft);padding:4px 9px;border-radius:5px;display:inline-block}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;align-items:start;max-width:1020px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:1020px}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:9px}
+.card h4{margin:0;font-size:15px;font-weight:600}
+.card p{font-size:14px;color:var(--ink-2)}
+ul.t,ol.t{margin:0;padding-left:20px;color:var(--ink-2);font-size:14.5px;display:flex;flex-direction:column;gap:7px}
+ul.t strong,ol.t strong{color:var(--ink)}
+
+/* ---------- Q&A ---------- */
+.q{border:1px solid var(--rule);border-radius:12px;background:var(--surface);padding:18px 20px;display:flex;flex-direction:column;gap:13px}
+.q-meta{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+blockquote{margin:0;padding:13px 16px;background:var(--surface-2);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;font-size:15px}
+.wc{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+button.reveal{display:none;align-self:flex-start;font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+  background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent);padding:6px 14px;border-radius:6px}
+body.quiz .ans{display:none} body.quiz .ans.open{display:flex} body.quiz button.reveal{display:inline-block}
+body.quiz button.reveal.gone{display:none}
+.ans{display:flex;flex-direction:column;gap:12px}
+.toggle{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+  background:var(--surface);border:1px solid var(--rule-strong);color:var(--ink);padding:7px 14px;border-radius:8px;align-self:flex-start}
+.toggle .pip{width:8px;height:8px;border-radius:50%;background:var(--rule-strong)}
+body.quiz .toggle .pip{background:var(--accent)}
+
+/* ---------- car calc ---------- */
+.calc{display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);gap:24px;align-items:start}
+.irow{display:grid;grid-template-columns:1fr 78px 78px;gap:8px;align-items:center;padding:5px 0;border-top:1px solid var(--rule)}
+.irow:first-child{border-top:none}
+.irow label{font-size:13px;color:var(--ink-2)}
+.irow.hdr span{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);text-align:right}
+.irow.hdr span:first-child{text-align:left}
+.irow input{width:100%;font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-variant-numeric:tabular-nums;
+  text-align:right;padding:5px 8px;border:1px solid var(--rule);border-radius:5px;background:var(--surface-2);color:var(--ink)}
+.irow input:focus{border-color:var(--accent);background:var(--surface)}
+.irow.wide{grid-template-columns:1fr 164px}
+
+footer{border-top:1px solid var(--rule);padding-block:22px 48px;color:var(--ink-3);font-size:12px;font-family:"IBM Plex Mono",monospace}
+
+@media (max-width:960px){
+  .cols{grid-template-columns:1fr;gap:0}
+  nav.toc{position:static;max-height:none;overflow:visible;padding-block:16px 0;border-bottom:1px solid var(--rule)}
+  nav.toc ol{flex-direction:row;flex-wrap:wrap;gap:5px}
+  nav.toc a{border:1px solid var(--rule);border-radius:999px;padding:4px 11px;font-size:12.5px;border-left-width:1px}
+  nav.toc a.on{border-color:var(--accent)}
+  nav.toc a .io{display:none}
+  nav.toc .grp{width:100%;padding:10px 2px 2px}
+}
+@media (max-width:820px){
+  .flow.f5,.flow.f3{grid-template-columns:1fr}
+  .farr{margin:2px 0}
+  .farr .ch{transform:rotate(90deg)}
+  .spec{grid-template-columns:1fr}
+  .specline{flex-wrap:wrap;gap:7px}
+  .specline .lbl{white-space:normal}
+  .specline .rule{min-width:26px}
+  .bar,.scale{grid-template-columns:1fr;gap:5px}
+  .bar .bl,.scale .sl{text-align:left}
+}
+@media (max-width:700px){
+  .calc{grid-template-columns:1fr}
+  .grid22{grid-template-columns:1fr}
+  .grid22 .hh{display:none}
+  .grid22 .vh{writing-mode:horizontal-tb;justify-content:flex-start;padding-top:6px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ---------- page-specific ---------- */
+.src{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);max-width:74ch}
+.tl{display:flex;flex-direction:column;max-width:1020px}
+.tl .e{display:grid;grid-template-columns:92px minmax(0,1fr);gap:16px;padding:11px 0;border-top:1px solid var(--rule)}
+.tl .e:first-child{border-top:none}
+.tl .dt{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--accent);font-weight:600}
+.tl .bd{font-size:14.5px;color:var(--ink-2)} .tl .bd b{color:var(--ink);font-weight:600}
+.tl .e.now .dt{color:var(--credit)}
+.ob{max-width:1020px;border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:0 12px 12px 0;
+  background:var(--surface);padding:14px 18px;display:flex;flex-direction:column;gap:9px}
+.ob h4{margin:0;font-size:14.5px;font-weight:600;font-family:"Public Sans",sans-serif;color:var(--credit)}
+.ob .you{font-size:15px;color:var(--ink)}
+.ob .you b{color:var(--accent);font-weight:600}
+.ob .tag{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.pill3{display:flex;flex-wrap:wrap;gap:7px}
+.pill3 span{font-family:"IBM Plex Mono",monospace;font-size:11.5px;border:1px solid var(--rule-strong);
+  border-radius:999px;padding:4px 11px;color:var(--ink-2)}
+.pill3 span.a{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.pill3 span.b{border-color:var(--credit);color:var(--credit);background:var(--credit-soft)}
+@media (max-width:760px){
+  .scrow{grid-template-columns:1fr} .scrow .sides{grid-template-columns:1fr}
+  .scrow .sd,.scrow .vd{border-left:none;border-top:1px solid var(--rule)}
+  .scrow.sch{display:none}
+  .tug .row,.tug .net{grid-template-columns:1fr 150px 1fr;gap:8px}
+}
+
+/* ---------- session 3 additions ---------- */
+.buckets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.buckets .bh{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink-3);padding-bottom:5px;text-align:center}
+.buckets .bh.a{color:var(--accent)} .buckets .bh.c{color:var(--flag)} .buckets .bh.b{color:var(--credit)}
+.buckets .col{display:flex;flex-direction:column;min-width:0}
+.src{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);max-width:74ch}
+.say{max-width:1020px;border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:0 12px 12px 0;
+  background:var(--surface);padding:16px 20px;display:flex;flex-direction:column;gap:11px}
+.say .tag{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.say p{font-size:16px;line-height:1.62}
+.say b{font-weight:600}
+.ladder{display:flex;flex-direction:column;max-width:1020px}
+.ladder .r{display:grid;grid-template-columns:30px minmax(0,1fr);gap:15px;padding:12px 0;border-top:1px solid var(--rule)}
+.ladder .r:first-child{border-top:none;padding-top:2px}
+.ladder .r .n{width:30px;height:30px;border-radius:50%;background:var(--surface-2);border:1.5px solid var(--rule-strong);
+  color:var(--ink-2);display:flex;align-items:center;justify-content:center;font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-weight:600}
+.ladder .r.key .n{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.ladder .r .bd{min-width:0}
+.ladder .r .bd b{display:block;font-size:15px;font-weight:600;margin-bottom:3px}
+.ladder .r .bd span{font-size:14.5px;color:var(--ink-2)}
+@media (max-width:700px){.buckets{grid-template-columns:1fr}.buckets .bh{text-align:left}}
+
+/* ---------- building blocks ---------- */
+.chain{display:grid;grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr);
+  gap:10px;align-items:stretch}
+.chain .fnode{justify-content:flex-start}
+.chain .fnode em{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-3);display:block;margin-bottom:2px}
+.chain .fnode.acc em{color:var(--accent)}
+.chain .fnode.bad em{color:var(--credit)}
+.fam{display:flex;align-items:baseline;gap:14px;margin-top:20px}
+.fam:first-of-type{margin-top:4px}
+.fam .fn{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent);white-space:nowrap}
+.fam .ft{font-size:15px;font-weight:600;font-family:"Public Sans",sans-serif;white-space:nowrap}
+.fam .ln{flex:1;height:1px;background:var(--rule)}
+.blocks{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:12px;max-width:1020px;margin-top:12px}
+.blk{border:1px solid var(--rule);border-radius:10px;background:var(--surface);padding:13px 15px;
+  display:flex;flex-direction:column;gap:7px;min-width:0}
+.blk .bn{font-size:14.5px;font-weight:600;line-height:1.3}
+.blk .bp{font-size:13.5px;color:var(--ink-2);line-height:1.5}
+.blk .ba{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--accent);background:var(--accent-soft);
+  border-radius:6px;padding:6px 10px;line-height:1.55;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.blk .bu{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--ink-3);margin-top:auto;padding-top:2px}
+.blk .bu a{color:var(--ink-3);text-decoration:none;border-bottom:1px solid var(--rule-strong)}
+.blk .bu a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+@media (max-width:860px){
+  .chain{grid-template-columns:1fr}
+  .chain .farr{margin:2px 0}
+  .chain .farr .ch{transform:rotate(90deg)}
+}
+</style>
+<style>
+/* ---------- session 6 additions ---------- */
+.vbox{max-width:1020px;border:1px solid var(--rule);border-radius:14px;overflow:hidden;background:#0F1A17;box-shadow:var(--shadow)}
+.vbox video{display:block;width:100%;aspect-ratio:16/9;background:#0F1A17}
+.chap{display:flex;flex-wrap:wrap;gap:8px;padding:12px 14px;background:#16241F;border-top:1px solid #24362F}
+.chap button{font:inherit;font-size:12.5px;background:#24362F;color:#fff;border:1px solid #3C5A51;border-radius:8px;padding:5px 10px;cursor:pointer}
+.chap button:hover{background:#1B6B57}
+.chap button i{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:11px;color:#8FD3BC;margin-right:6px}
+svg.d{width:100%;height:auto;display:block;font-family:"IBM Plex Mono",monospace}
+svg.d .gr{stroke:var(--rule);stroke-width:1}
+svg.d .ax{stroke:var(--rule-strong);stroke-width:1.2}
+svg.d .tk{font-size:11px;fill:var(--ink-3)}
+svg.d .nt{font-size:10.5px;fill:var(--ink-3)}
+svg.d .lb{font-size:11.5px;font-weight:600}
+svg.d .ev{stroke:var(--flag);stroke-width:1.2;stroke-dasharray:3 3}
+.lev{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:22px;align-items:start}
+.lev .ctl label{display:block;font-size:13px;color:var(--ink-2);margin:12px 0 4px}
+.lev .ctl label b{font-family:"IBM Plex Mono",monospace;color:var(--ink)}
+.lev input[type=range]{width:100%;accent-color:var(--accent)}
+.lev .ro{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.lev .ro div{border:1px solid var(--rule);border-radius:10px;padding:9px 11px;background:var(--surface-2)}
+.lev .ro .k{display:block;font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.lev .ro .v{font-family:Bitter,serif;font-size:22px;font-weight:700;font-variant-numeric:tabular-nums}
+.lev .ro .v.g{color:var(--accent)} .lev .ro .v.b{color:var(--credit)}
+@media (max-width:860px){.lev{grid-template-columns:1fr}}
+pre.math{font-family:"IBM Plex Mono",monospace;font-size:13px;line-height:1.7;background:var(--surface-2);border:1px solid var(--rule);border-radius:10px;padding:14px 16px;overflow-x:auto;max-width:1020px;margin:14px 0}
+pre.math b{color:var(--accent)} pre.math i{font-style:normal;color:var(--ink-3)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap hd">
+    <div>
+      <div class="eyebrow">4505 GMM &middot; Session 6 &middot; Monday, September 28, 2026</div>
+      <h1>From accumulation to renewal</h1>
+      <p class="gist">Why countries that reach middle income so often stall, and what the few that broke through did differently: infusion, exports, and getting past the incumbents.</p>
+    </div>
+    <div class="meta">
+      Readings <b>Primer 6, Wolf (FT, 2024)</b><br>
+      Prep <b>4 guide questions</b><br>
+      Graded <b>Contribution (30%)</b>
+    </div>
+  </div>
+</header>
+
+<div class="wrap cols">
+
+<nav class="toc" aria-label="Contents">
+  <div class="toc-h">On this page</div>
+  <ol id="toclist">
+    <li class="grp">Walk in knowing</li>
+    <li><a href="#video"><span class="n"></span><span>Video overview</span><span class="io">&#9679;</span></a></li>
+    <li><a href="#nums"><span class="n"></span><span>The numbers</span></a></li>
+    <li><a href="#model"><span class="n"></span><span>The whole session</span></a></li>
+    <li><a href="#blocks"><span class="n"></span><span>Building blocks</span></a></li>
+    <li class="grp">The argument</li>
+    <li><a href="#dr"><span class="n">1</span><span>Why capital stops paying</span><span class="io">&#9679;</span></a></li>
+    <li><a href="#trap"><span class="n">2</span><span>Is the trap real?</span></a></li>
+    <li><a href="#three"><span class="n">3</span><span>1i, 2i, 3i</span></a></li>
+    <li><a href="#inf"><span class="n">4</span><span>Infusion, up close</span></a></li>
+    <li><a href="#trade"><span class="n">5</span><span>Trade as a teacher</span></a></li>
+    <li><a href="#resist"><span class="n">6</span><span>Why incumbents resist</span></a></li>
+    <li class="grp">The cases</li>
+    <li><a href="#cases"><span class="n">7</span><span>Winners and strugglers</span></a></li>
+    <li class="grp">In class</li>
+    <li><a href="#say"><span class="n">8</span><span>What to say in class</span></a></li>
+    <li class="grp">Reference</li>
+    <li><a href="#traps"><span class="n"></span><span>Traps</span></a></li>
+    <li><a href="#gloss"><span class="n"></span><span>Glossary</span></a></li>
+    <li><a href="#mat"><span class="n"></span><span>Materials</span></a></li>
+    <li><a href="#qa"><span class="n"></span><span>Q&amp;A log</span></a></li>
+  </ol>
+</nav>
+
+<main>
+
+<!-- ============ VIDEO ============ -->
+<section id="video">
+  <h2>Video overview, eight minutes</h2>
+  <p class="lede">Made in NotebookLM from the Canvas page, Wolf's column, the World Bank report and the Session 5 slides. Jump to a chapter below. Times are approximate.</p>
+  <div class="vbox rv">
+    <video id="vid" controls preload="metadata" poster="../session-06/Video_Session-06_poster.jpg" src="../session-06/Video_Session-06_Productivity-Growth-and-the-Middle-Income-Trap.mp4"></video>
+    <div class="chap" id="chap">
+      <button type="button" data-t="0"><i>0:00</i>Two channels</button>
+      <button type="button" data-t="60"><i>1:00</i>Capital deepening</button>
+      <button type="button" data-t="92"><i>1:32</i>Is the trap real?</button>
+      <button type="button" data-t="215"><i>3:35</i>1i, 2i, 3i</button>
+      <button type="button" data-t="245"><i>4:05</i>Infusion</button>
+      <button type="button" data-t="308"><i>5:08</i>Korea vs Brazil</button>
+      <button type="button" data-t="340"><i>5:40</i>Building capabilities</button>
+      <button type="button" data-t="370"><i>6:10</i>Creative destruction</button>
+      <button type="button" data-t="402"><i>6:42</i>Beating resistance</button>
+      <button type="button" data-t="462"><i>7:42</i>Takeaway</button>
+    </div>
+  </div>
+  <p class="src">Primer 6 sits behind the Ask GMM login and was not a source for the video or this page. Skim it before class.</p>
+</section>
+
+<!-- ============ NUMBERS ============ -->
+<section id="nums">
+  <h2>The numbers to walk in with</h2>
+  <div class="stats rv">
+    <div class="stat"><span class="k">Middle-income countries</span><span class="v count" data-to="108">108</span><span class="s">$1,136 to $13,845 income per person</span></div>
+    <div class="stat m"><span class="k">People living in them</span><span class="v">6 bn</span><span class="s">about three in every four people</span></div>
+    <div class="stat"><span class="k">Reached high income since 1990</span><span class="v count" data-to="34">34</span><span class="s">under 250 million people in total</span></div>
+    <div class="stat b"><span class="k">Median income vs the US</span><span class="v">&lt;10%</span><span class="s">never higher, every year since 1970</span></div>
+    <div class="stat c"><span class="k">Social mobility</span><span class="v">&minus;40%</span><span class="s">vs high-income countries</span></div>
+  </div>
+  <p class="src">World Development Report 2024, <i>The Middle-Income Trap</i>, as quoted by Wolf. 250 million is roughly Pakistan's population.</p>
+</section>
+
+<!-- ============ MODEL ============ -->
+<section id="model">
+  <h2>The whole session, in one picture</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>Piling up machines works until middle income, then stops paying. <b>The next gains come from using capital better: import ideas, then create them, and get past the groups who profit from the old model.</b></div></div>
+  <figure class="rv">
+    <div class="dg">
+      <div class="flow f5">
+        <div class="fstack">
+          <div class="fnode"><b>Investment (1i)</b><span>roads, ports, factories</span></div>
+          <div class="fnode bad"><b>Diminishing returns</b><span>each machine adds less</span></div>
+        </div>
+        <div class="farr"><span class="ch">&rarr;</span><i>switch</i></div>
+        <div class="fstack">
+          <div class="fnode acc"><b>Infusion (2i)</b><span>import and spread know-how</span></div>
+          <div class="fnode acc"><b>Innovation (3i)</b><span>create at the frontier</span></div>
+        </div>
+        <div class="farr"><span class="ch">&rarr;</span><i>only if</i></div>
+        <div class="fstack">
+          <div class="fnode flg"><b>Renewal</b><span>discipline incumbents, reward merit</span></div>
+          <div class="fnode acc"><b>High income</b><span>Korea, Taiwan, Singapore</span></div>
+        </div>
+      </div>
+    </div>
+    <figcaption>Left is where every fast grower starts. The middle is the switch most middle-income countries miss. The right is what makes it stick.</figcaption>
+  </figure>
+  <figure class="rv">
+    <div class="dg pad0">
+      <div class="chain">
+        <div class="fnode mute"><b>Labour input</b><span>Session 5: people, hours</span></div>
+        <div class="farr"><span class="ch">+</span></div>
+        <div class="fnode"><b>Capital deepening</b><span>more tools per worker</span></div>
+        <div class="farr"><span class="ch">+</span></div>
+        <div class="fnode"><b>Human capital</b><span>skills, managers</span></div>
+        <div class="farr"><span class="ch">+</span></div>
+        <div class="fnode acc"><b>Innovation (TFP)</b><span>how well they combine</span></div>
+      </div>
+    </div>
+    <figcaption>Where today sits in the course growth model: the productivity channel, the three boxes on the right.</figcaption>
+  </figure>
+  <div class="note acc"><b>The move that earns marks.</b> For any policy or country story, name the box it moves. Most middle-income stalls are a TFP problem wearing a capital costume.</div>
+</section>
+
+<!-- ============ BLOCKS ============ -->
+<section id="blocks">
+  <h2>Building blocks</h2>
+  <p class="lede">Every term the page leans on, defined once. Read the families in order: what grows output, the middle-income problem, the three strategies, and the politics that decide it.</p>
+  <figure class="rv">
+    <div class="dg pad0">
+      <div class="chain">
+        <div class="fnode mute"><em>Family A</em><b>The productivity channel</b><span>what grows output</span></div>
+        <div class="farr"><span class="ch">&rarr;</span></div>
+        <div class="fnode bad"><em>Family B</em><b>The middle problem</b><span>why growth stalls</span></div>
+        <div class="farr"><span class="ch">&rarr;</span></div>
+        <div class="fnode acc"><em>Family C</em><b>The three i's</b><span>what to do next</span></div>
+        <div class="farr"><span class="ch">&rarr;</span></div>
+        <div class="fnode flg"><em>Family D</em><b>Renewal and resistance</b><span>who blocks it</span></div>
+      </div>
+    </div>
+    <figcaption>Each family rests on the one before. Section 6 uses all four.</figcaption>
+  </figure>
+
+  <div class="fam"><span class="fn">Family A</span><span class="ft">The productivity channel</span><span class="ln"></span></div>
+  <div class="blocks">
+    <div class="blk"><div class="bn">Productivity</div><div class="bp">Output per hour worked. The growth model's second channel, after labour input.</div><div class="ba">GDP &divide; total hours worked</div><div class="bu">used in <a href="#dr">&sect;1</a></div></div>
+    <div class="blk"><div class="bn">Capital deepening</div><div class="bp">More machines, tools and software for each worker.</div><div class="ba">Tractor replacing an ox plough</div><div class="bu">used in <a href="#dr">&sect;1</a></div></div>
+    <div class="blk"><div class="bn">Human capital</div><div class="bp">Skills, schooling and health that make each hour worth more.</div><div class="ba">Engineers, managers, literacy</div><div class="bu">used in <a href="#inf">&sect;4</a></div></div>
+    <div class="blk"><div class="bn">TFP (innovation)</div><div class="bp">Output that more capital or labour does not explain: how well they are combined.</div><div class="ba">Same plant, better layout, more output</div><div class="bu">used in <a href="#dr">&sect;1</a></div></div>
+    <div class="blk"><div class="bn">Diminishing returns</div><div class="bp">Each extra unit of capital adds less output than the one before.</div><div class="ba">First truck on a farm vs the tenth</div><div class="bu">used in <a href="#dr">&sect;1</a></div></div>
+  </div>
+
+  <div class="fam"><span class="fn">Family B</span><span class="ft">The middle-income problem</span><span class="ln"></span></div>
+  <div class="blocks">
+    <div class="blk"><div class="bn">Middle-income country</div><div class="bp">World Bank band of income per person, split into lower and upper middle.</div><div class="ba">$1,136 to $13,845; 108 countries</div><div class="bu">used in <a href="#trap">&sect;2</a></div></div>
+    <div class="blk"><div class="bn">Convergence (catch-up)</div><div class="bp">Poorer countries growing faster than rich ones, so the gap closes.</div><div class="ba">Korea: 9% of US income in 1960, 71% in 2022</div><div class="bu">used in <a href="#cases">&sect;7</a></div></div>
+    <div class="blk"><div class="bn">Middle-income trap</div><div class="bp">Growing out of poverty, then stalling before high income.</div><div class="ba">Brazil: 19% of US in 1960, 25% in 2022</div><div class="bu">used in <a href="#trap">&sect;2</a></div></div>
+    <div class="blk"><div class="bn">Unconditional convergence</div><div class="bp">The skeptics' finding that poorer countries now catch up on average, whatever their policies.</div><div class="ba">Patel, Sandefur and Subramanian (2021)</div><div class="bu">used in <a href="#trap">&sect;2</a></div></div>
+  </div>
+
+  <div class="fam"><span class="fn">Family C</span><span class="ft">The three i's</span><span class="ln"></span></div>
+  <div class="blocks">
+    <div class="blk"><div class="bn">Investment (1i)</div><div class="bp">Save and build capital. Enough on its own at low income.</div><div class="ba">Roads, ports, power plants</div><div class="bu">used in <a href="#three">&sect;3</a></div></div>
+    <div class="blk"><div class="bn">Infusion (2i)</div><div class="bp">Bring in proven foreign technology and practices, then spread them across local firms.</div><div class="ba">Samsung began as a joint venture with Sanyo, 1969</div><div class="bu">used in <a href="#inf">&sect;4</a></div></div>
+    <div class="blk"><div class="bn">Innovation (3i)</div><div class="bp">Push the global frontier yourself instead of copying it.</div><div class="ba">Korea spends about 5% of GDP on R&amp;D</div><div class="bu">used in <a href="#three">&sect;3</a></div></div>
+    <div class="blk"><div class="bn">Absorptive capacity</div><div class="bp">Whether a firm or country can understand and use imported know-how.</div><div class="ba">No engineers, idle machines</div><div class="bu">used in <a href="#inf">&sect;4</a></div></div>
+    <div class="blk"><div class="bn">Learning by exporting</div><div class="bp">Selling abroad forces quality up and brings buyers' methods home.</div><div class="ba">A supplier meeting Apple's specs</div><div class="bu">used in <a href="#trade">&sect;5</a></div></div>
+    <div class="blk"><div class="bn">FDI</div><div class="bp">Foreign direct investment: a foreign firm building or buying operations in the country.</div><div class="ba">German carmakers' plants in Poland</div><div class="bu">used in <a href="#trade">&sect;5</a></div></div>
+  </div>
+
+  <div class="fam"><span class="fn">Family D</span><span class="ft">Renewal and resistance</span><span class="ln"></span></div>
+  <div class="blocks">
+    <div class="blk"><div class="bn">Creative destruction</div><div class="bp">New firms and ideas replace old ones. Growth needs it; the old ones fight it.</div><div class="ba">Streaming ending Blockbuster</div><div class="bu">used in <a href="#resist">&sect;6</a></div></div>
+    <div class="blk"><div class="bn">Incumbents</div><div class="bp">Firms and groups that win under today's rules. Often the stars of the last stage.</div><div class="ba">Conglomerates, state firms, licensed monopolies</div><div class="bu">used in <a href="#resist">&sect;6</a></div></div>
+    <div class="blk"><div class="bn">Rents</div><div class="bp">Income from a protected position rather than from producing more.</div><div class="ba">Profit from an import licence</div><div class="bu">used in <a href="#resist">&sect;6</a></div></div>
+    <div class="blk"><div class="bn">Social mobility</div><div class="bp">The odds a child from a poor family ends up better off. A test of merit.</div><div class="ba">About 40% lower in middle-income countries</div><div class="bu">used in <a href="#resist">&sect;6</a></div></div>
+  </div>
+</section>
+
+<!-- ============ 1 ============ -->
+<section id="dr">
+  <h2><span class="no">1</span> Why capital stops paying</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>The first factories and roads raise output a lot. <b>The hundredth adds far less.</b> So growth from saving and building slows on its own, even when nothing goes wrong.</div></div>
+  <figure class="rv">
+    <div class="dg">
+      <div class="bars">
+        <div class="bar"><span class="bl">Output 1 &rarr; 2</span><span class="bt"><span class="bf lo" style="--w:9%"></span><span class="bc">3 more units of capital</span></span></div>
+        <div class="bar"><span class="bl">Output 2 &rarr; 3</span><span class="bt"><span class="bf lo" style="--w:15%"></span><span class="bc">5 more</span></span></div>
+        <div class="bar"><span class="bl">Output 3 &rarr; 4</span><span class="bt"><span class="bf md" style="--w:21%"></span><span class="bc">7 more</span></span></div>
+        <div class="bar"><span class="bl">Output 4 &rarr; 5</span><span class="bt"><span class="bf hi" style="--w:27%"></span><span class="bc">9 more: triple the first step</span></span></div>
+      </div>
+    </div>
+    <figcaption>Illustrative. Output per worker = square root of capital per worker. Every step up costs more machines than the last.</figcaption>
+  </figure>
+  <pre class="math">Output per worker  =  &radic;(capital per worker)          <i>illustrative, not data</i>
+
+Early:   capital  1 &rarr;  4     output  1 &rarr; 2     cost  3 units
+Late:    capital 16 &rarr; 25     output  4 &rarr; 5     cost  9 units
+                                                   &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
+Same +1 of output, <b>three times the capital</b>. That is diminishing returns.</pre>
+  <p class="lede">The way out is raising productivity (the A in the model). It lifts output at every level of capital with no extra machines. Wolf's key sentence is about exactly this.</p>
+  <div class="ex"><span class="lb">Wolf, quoting the World Bank</span><p>The gap in output per worker between middle-income countries and the US is far bigger than the gap in capital. <strong>They fail less from accumulating too little capital than from using it poorly.</strong></p></div>
+
+  <div class="ia rv" style="margin-top:22px">
+    <div class="ia-top"><div class="ttl">Two levers: build more, or use it better?</div><div class="hint">Drag the sliders</div></div>
+    <div class="ia-body">
+      <div class="seg" id="lvSeg" style="margin-bottom:10px">
+        <button type="button" data-k="4" data-a="0.8" aria-pressed="true">Early grower</button>
+        <button type="button" data-k="64" data-a="0.8">Middle-income plateau</button>
+        <button type="button" data-k="64" data-a="1.2">After infusion</button>
+      </div>
+      <div class="lev">
+        <svg class="d" id="lvSvg" viewBox="0 0 640 300" role="img" aria-label="Output per worker against capital per worker"></svg>
+        <div class="ctl">
+          <label for="lvK">Capital per worker <b id="lvKv"></b></label>
+          <input type="range" id="lvK" min="1" max="100" step="1" value="4">
+          <label for="lvA">Productivity, A <b id="lvAv"></b></label>
+          <input type="range" id="lvA" min="0.6" max="1.6" step="0.05" value="0.8">
+          <div class="ro">
+            <div><span class="k">Output per worker</span><span class="v" id="lvY"></span></div>
+            <div><span class="k">Gain: +10 capital</span><span class="v b" id="lvGk"></span></div>
+            <div><span class="k">Gain: +10% A</span><span class="v g" id="lvGa"></span></div>
+            <div><span class="k">Better lever</span><span class="v" id="lvW" style="font-size:16px"></span></div>
+          </div>
+        </div>
+      </div>
+      <p class="fb" id="lvNote" style="margin-top:12px"></p>
+    </div>
+  </div>
+  <p class="src">Illustrative model, output = A &times; &radic;capital. The crossover near 48 units of capital holds whatever A is. Real economies differ in the numbers, not the shape.</p>
+</section>
+
+<!-- ============ 2 ============ -->
+<section id="trap">
+  <h2><span class="no">2</span> Is the trap real?</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>Economists disagree on whether a distinct trap exists. <b>Nobody disputes that climbing from middle to high income is slow and rare.</b> The label matters because it changes what governments do.</div></div>
+  <div class="sc rv">
+    <div class="scrow sch"><div class="cl">Claim</div><div class="sides"><div class="sd">For a real trap</div><div class="sd">Against</div></div><div class="vd">Verdict</div></div>
+    <div class="scrow"><div class="cl">Few escape</div><div class="sides"><div class="sd a">34 since 1990, <b>under 250m people</b></div><div class="sd b">Mobility is low at every income level (Imam and Temple, IMF 2024)</div></div><div class="vd d">Rare, not unique</div></div>
+    <div class="scrow"><div class="cl">Growth stalls</div><div class="sides"><div class="sd a">Median never above <b>10% of US</b> since 1970</div><div class="sd b">Middle-income countries grew fastest of all since the mid-1980s (Patel et al. 2021)</div></div><div class="vd d">Mixed</div></div>
+    <div class="scrow"><div class="cl">Cause</div><div class="sides"><div class="sd a">Old growth model breaks; <b>winners block the switch</b></div><div class="sd b">Easy gains used up: <b>diminishing returns</b>, cheap labour gone</div></div><div class="vd a">Both</div></div>
+    <div class="scrow"><div class="cl">What to do</div><div class="sides"><div class="sd a">Deliberately change the growth model</div><div class="sd b">Keep doing the basics, be patient</div></div><div class="vd a">Change model</div></div>
+  </div>
+  <div class="grid2" style="margin-top:18px">
+    <div class="card"><h4>If it is just slowing</h4><p>Expected and gradual. The risk is <b>complacency</b>: keep pouring in investment and wait, while returns keep falling.</p></div>
+    <div class="card"><h4>If it is a trap</h4><p>Needs a deliberate switch at a stage. The risk is <b>panic policy</b>: subsidy splurges and tariff walls that protect the very firms blocking change.</p></div>
+  </div>
+  <div class="note acc"><b>My position.</b> Mechanically it is predictable slowing. Politically it can become a trap, because the winners of the investment phase resist the switch. Either way the fix is the same: growth must come from productivity, not accumulation.</div>
+</section>
+
+<!-- ============ 3 ============ -->
+<section id="three">
+  <h2><span class="no">3</span> Investment, infusion, innovation</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>Match the strategy to the stage. <b>Low income: invest. Lower middle: invest and infuse. Upper middle: add innovation.</b> Most stalls come from staying on the first strategy too long.</div></div>
+  <figure class="rv">
+    <div class="dg">
+      <div class="spec">
+        <div class="sn"><b>1i: Investment</b><span>low income, under $1,136</span></div>
+        <div class="sn ok"><b>2i: + Infusion</b><span>lower middle, $1,136 to $4,465</span></div>
+        <div class="sn ok"><b>3i: + Innovation</b><span>upper middle, $4,466 to $13,845</span></div>
+        <div class="sn"><b>High income</b><span>above $13,845</span></div>
+      </div>
+    </div>
+    <figcaption>World Bank sequence (WDR 2024). Income bands are gross national income per person, FY2024 thresholds.</figcaption>
+  </figure>
+  <div class="tw"><table>
+    <caption>What to do at each stage, from the report's Table O.3</caption>
+    <thead><tr><th>Stage</th><th>Main moves</th><th>Example</th></tr></thead>
+    <tbody>
+      <tr><td>1i Investment</td><td>Better investment climate, public investment, basic schooling</td><td>Roads, ports, power</td></tr>
+      <tr><td>2i Infusion</td><td>Open to trade and FDI; free up labour and capital markets</td><td>Poland plugging into EU supply chains</td></tr>
+      <tr><td>3i Innovation</td><td>Equity markets, antitrust, university links, diaspora ties</td><td>Korea's R&amp;D push after 2000</td></tr>
+    </tbody>
+  </table></div>
+  <div class="chain rv" style="margin-top:16px">
+    <div class="fnode"><b>1960s to 70s</b><span>Korea invests: steel, ships, exports</span></div>
+    <div class="farr"><span class="ch">&rarr;</span></div>
+    <div class="fnode acc"><b>1980s to 90s</b><span>infuses: licences, imported machines</span></div>
+    <div class="farr"><span class="ch">&rarr;</span></div>
+    <div class="fnode bad"><b>1997 to 99</b><span>crisis: Daewoo allowed to fail</span></div>
+    <div class="farr"><span class="ch">&rarr;</span></div>
+    <div class="fnode acc"><b>2000s on</b><span>innovates: chips, R&amp;D near 5% of GDP</span></div>
+  </div>
+  <div class="note">The report's point is that <b>none of these switches is automatic</b>. Each one needs more economic freedom, more open debate and, more and more, political courage.</div>
+</section>
+
+<!-- ============ 4 ============ -->
+<section id="inf">
+  <h2><span class="no">4</span> Infusion, up close</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>Infusion means <b>bringing proven foreign know-how in and making it spread</b> beyond the few firms that touch it first. Far from the frontier, copying well pays more than inventing.</div></div>
+  <figure class="rv">
+    <div class="dg">
+      <div class="flow f5">
+        <div class="fstack">
+          <div class="fnode"><b>Foreign investment</b><span>plants, joint ventures</span></div>
+          <div class="fnode"><b>Licences, machines</b><span>tech bought off the shelf</span></div>
+          <div class="fnode"><b>Exporting</b><span>demanding foreign buyers</span></div>
+          <div class="fnode"><b>Diaspora</b><span>people who worked abroad</span></div>
+        </div>
+        <div class="farr"><span class="ch">&rarr;</span><i>spreads if</i></div>
+        <div class="fstack">
+          <div class="fnode acc"><b>Skilled people</b><span>engineers, managers</span></div>
+          <div class="fnode acc"><b>Competition</b><span>laggards must adopt</span></div>
+          <div class="fnode acc"><b>Fluid markets</b><span>workers, capital can move</span></div>
+        </div>
+        <div class="farr"><span class="ch">&rarr;</span><i>or else</i></div>
+        <div class="fstack">
+          <div class="fnode acc"><b>Productivity rises</b><span>across the economy</span></div>
+          <div class="fnode bad"><b>Enclave</b><span>modern plants, rest unchanged</span></div>
+        </div>
+      </div>
+    </div>
+    <figcaption>Getting technology in is the easy half. The middle column decides whether it reaches ordinary firms.</figcaption>
+  </figure>
+  <div class="tw"><table>
+    <caption>What decides whether imported know-how spreads</caption>
+    <thead><tr><th>Factor</th><th>Why it matters</th><th>If missing</th></tr></thead>
+    <tbody>
+      <tr><td>Skills (absorptive capacity)</td><td>Someone must understand and adapt it</td><td>Machines sit idle</td></tr>
+      <tr><td>Competition</td><td>Firms adopt or lose customers</td><td>Protected firms don't bother</td></tr>
+      <tr><td>Fluid labour and capital</td><td>Resources move to firms that adopt</td><td>Weak firms hold workers and credit</td></tr>
+      <tr><td>Links to local suppliers</td><td>Know-how moves down the supply chain</td><td>Foreign plants as islands</td></tr>
+      <tr><td>Finance</td><td>Upgrading costs money up front</td><td>Only big firms upgrade</td></tr>
+    </tbody>
+  </table></div>
+  <div class="grid2">
+    <div class="card"><h4>Why it matters most in the middle</h4><p>Too far from the frontier to invent cheaply, too expensive to win on low wages. <b>Copying proven ideas is the cheapest productivity left.</b></p></div>
+    <div class="card"><h4>Poland, the textbook case</h4><p>EU entry in 2004 opened markets and brought in FDI and rules. Income went from <b>28% of the US in 2000 to 56% in 2022</b>.</p></div>
+  </div>
+  <div class="note">Enclave risk: Mexico attracted huge export plants after NAFTA, yet economy-wide productivity barely moved, because informal local firms never absorbed the know-how (McKinsey Global Institute, 2014).</div>
+</section>
+
+<!-- ============ 5 ============ -->
+<section id="trade">
+  <h2><span class="no">5</span> Trade as a teacher</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>Exporting forces firms to meet world standards, brings buyers' know-how home and gives them scale. <b>Openness is close to necessary for sustained productivity growth, but not sufficient.</b></div></div>
+  <div class="tw"><table>
+    <caption>Five ways trade and foreign investment build local capability</caption>
+    <thead><tr><th>Mechanism</th><th>How it works</th><th>Example</th></tr></thead>
+    <tbody>
+      <tr><td>Discipline</td><td>World markets test firms; no home protection</td><td>Korean credit tied to export targets</td></tr>
+      <tr><td>Learning</td><td>Foreign buyers hand over specs and methods</td><td>Taiwan's contract makers for US brands</td></tr>
+      <tr><td>Scale</td><td>World demand pays for big plants and R&amp;D</td><td>Samsung memory chips</td></tr>
+      <tr><td>Imported inputs</td><td>Machines and parts carry technology inside</td><td>Imported capital goods</td></tr>
+      <tr><td>FDI spillovers</td><td>Workers and suppliers learn from foreign plants</td><td>Polish parts makers for German carmakers</td></tr>
+    </tbody>
+  </table></div>
+  <div class="sc rv" style="margin-top:18px">
+    <div class="scrow sch"><div class="cl">Question</div><div class="sides"><div class="sd">Yes</div><div class="sd">But</div></div><div class="vd">Verdict</div></div>
+    <div class="scrow"><div class="cl">Is openness beneficial?</div><div class="sides"><div class="sd a">All 13 economies that grew 7%+ for 25 years were open (Growth Commission, 2008)</div><div class="sd b">Gains are uneven; some firms and regions lose</div></div><div class="vd a">Yes</div></div>
+    <div class="scrow"><div class="cl">Is it necessary?</div><div class="sides"><div class="sd a">No modern catch-up story is closed; the frontier is abroad</div><div class="sd b">Korea protected its home market early; export-led, not free trade</div></div><div class="vd a">Close to it</div></div>
+    <div class="scrow"><div class="cl">Is it sufficient?</div><div class="sides"><div class="sd a">Opens the door to infusion</div><div class="sd b">Mexico and Chile are open and still stalled</div></div><div class="vd b">No</div></div>
+  </div>
+  <div class="note">Headwind for today's middle-income countries: <b>protectionism and a fragmenting world economy</b> slow the spread of knowledge, as Wolf and the World Bank both warn. Canada's tariff fight is the same logic seen from the rich side.</div>
+</section>
+
+<!-- ============ 6 ============ -->
+<section id="resist">
+  <h2><span class="no">6</span> Why incumbents resist</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>Reform raises national income but <b>creates losers who are few, organised and certain</b>, while the winners are many, scattered and often not born yet as firms. The losers lobby harder.</div></div>
+  <figure class="rv">
+    <div class="dg">
+      <div class="tug">
+        <div class="row"><span class="lb l">Conglomerates losing protected markets</span><span class="mid"><i class="l" style="width:46%"></i></span><span class="lb">Exporters wanting cheaper inputs</span></div>
+        <div class="row"><span class="lb l">State firms losing soft budgets</span><span class="mid"><i class="l" style="width:40%"></i></span><span class="lb">New entrants and start-ups</span></div>
+        <div class="row"><span class="lb l">Officials who sell licences</span><span class="mid"><i class="l" style="width:34%"></i></span><span class="lb">Consumers paying less</span></div>
+        <div class="row"><span class="lb l">Insiders whose children win without merit</span><span class="mid"><i class="l" style="width:28%"></i></span><span class="lb">Young skilled workers</span></div>
+        <div class="row"><span class="lb l">Protected-sector workers</span><span class="mid"><i class="r" style="width:44%"></i></span><span class="lb">A crisis or an outside anchor</span></div>
+        <div class="net"><span class="lb l"><b>Resisting</b></span><span class="mid">Usually a stalemate</span><span class="lb"><b>Pushing</b></span></div>
+      </div>
+    </div>
+    <figcaption>Illustrative weights. In calm years the left side wins; a crisis or an outside commitment is what tips it.</figcaption>
+  </figure>
+  <div class="tw"><table>
+    <caption>How the countries that crossed got past it</caption>
+    <thead><tr><th>Move</th><th>What it means</th><th>Example</th></tr></thead>
+    <tbody>
+      <tr><td>Discipline incumbents</td><td>Competition law, imports, hard budgets for state firms</td><td>Korea let Daewoo collapse, 1999</td></tr>
+      <tr><td>Reward merit</td><td>Open schools and jobs to women, minorities, outsiders</td><td>Singapore's merit-based civil service</td></tr>
+      <tr><td>Capitalise on crises</td><td>Pass reforms blocked in good times</td><td>India's 1991 balance-of-payments crisis</td></tr>
+      <tr><td>Lock in with an anchor</td><td>Outside rules incumbents cannot quietly undo</td><td>Poland's EU accession</td></tr>
+      <tr><td>Compensate losers</td><td>Retrain or buy out the blockers</td><td>Adjustment aid, pensions</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note acc"><b>Link to Session 5.</b> Same mechanism as Acemoglu and Robinson's elites fearing creative destruction. The twist today: <b>the blockers are often the success stories of the investment phase</b>, the conglomerates and state firms that built the first factories.</div>
+</section>
+
+<!-- ============ 7 ============ -->
+<section id="cases">
+  <h2><span class="no">7</span> Winners and strugglers</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>In 1960 Brazil, Peru and Bulgaria were richer, relative to the US, than Korea or Taiwan. <b>By 2022 the order had flipped completely.</b></div></div>
+  <figure class="rv">
+    <div class="dg pad0">
+<svg class="d" viewBox="0 0 760 360" role="img" aria-label="GDP per person as a share of the US, 1960 to 2022">
+<line x1="52" x2="612" y1="318.0" y2="318.0" class="ax"/>
+<text x="44" y="322.0" class="tk" text-anchor="end">0%</text>
+<line x1="52" x2="612" y1="276.0" y2="276.0" class="gr"/>
+<text x="44" y="280.0" class="tk" text-anchor="end">20%</text>
+<line x1="52" x2="612" y1="234.0" y2="234.0" class="gr"/>
+<text x="44" y="238.0" class="tk" text-anchor="end">40%</text>
+<line x1="52" x2="612" y1="192.0" y2="192.0" class="gr"/>
+<text x="44" y="196.0" class="tk" text-anchor="end">60%</text>
+<line x1="52" x2="612" y1="150.0" y2="150.0" class="gr"/>
+<text x="44" y="154.0" class="tk" text-anchor="end">80%</text>
+<line x1="52" x2="612" y1="108.0" y2="108.0" class="ax"/>
+<text x="44" y="112.0" class="tk" text-anchor="end">100%</text>
+<line x1="52" x2="612" y1="66.0" y2="66.0" class="gr"/>
+<text x="44" y="70.0" class="tk" text-anchor="end">120%</text>
+<line x1="52" x2="612" y1="24.0" y2="24.0" class="gr"/>
+<text x="44" y="28.0" class="tk" text-anchor="end">140%</text>
+<text x="52.0" y="336" class="tk" text-anchor="middle">1960</text>
+<text x="142.3" y="336" class="tk" text-anchor="middle">1970</text>
+<text x="232.6" y="336" class="tk" text-anchor="middle">1980</text>
+<text x="323.0" y="336" class="tk" text-anchor="middle">1990</text>
+<text x="413.3" y="336" class="tk" text-anchor="middle">2000</text>
+<text x="503.6" y="336" class="tk" text-anchor="middle">2010</text>
+<text x="612.0" y="336" class="tk" text-anchor="middle">2022</text>
+<text x="58" y="102.0" class="nt">United States = 100%</text>
+<line x1="390.7" x2="390.7" y1="45" y2="318" class="ev"/><text x="395.7" y="49" class="nt">1997 Asian crisis</text>
+<path d="M52.0,277.7 L61.0,276.2 L70.1,276.2 L79.1,274.5 L88.1,278.7 L97.2,278.7 L106.2,277.7 L115.2,274.3 L124.3,271.2 L133.3,266.6 L142.3,259.6 L151.4,255.0 L160.4,250.6 L169.4,247.9 L178.5,243.7 L187.5,240.3 L196.5,239.0 L205.5,237.1 L214.6,234.8 L223.6,230.2 L232.6,221.6 L241.7,217.8 L250.7,212.4 L259.7,208.6 L268.8,208.2 L277.8,212.4 L286.8,213.6 L295.9,207.1 L304.9,201.7 L313.9,196.8 L323.0,189.3 L332.0,181.9 L341.0,178.3 L350.1,167.4 L359.1,158.6 L368.1,152.9 L377.2,147.9 L386.2,142.4 L395.2,154.2 L404.3,152.3 L413.3,145.2 L422.3,149.2 L431.4,146.2 L440.4,144.5 L449.4,135.7 L458.5,129.0 L467.5,118.1 L476.5,104.0 L485.5,100.0 L494.6,95.4 L503.6,68.1 L512.6,57.2 L521.7,56.3 L530.7,51.1 L539.7,48.4 L548.8,48.8 L557.8,45.4 L566.8,37.6 L575.9,35.8 L584.9,40.4 L593.9,40.2 L603.0,33.4 L612.0,29.7" fill="none" stroke="#1B6B57" stroke-width="2.4"  stroke-linejoin="round"/>
+<path d="M52.0,293.0 L61.0,292.2 L70.1,292.2 L79.1,291.5 L88.1,290.5 L97.2,289.6 L106.2,289.4 L115.2,287.8 L124.3,287.1 L133.3,285.7 L142.3,282.5 L151.4,279.6 L160.4,277.1 L169.4,274.5 L178.5,274.3 L187.5,272.6 L196.5,269.5 L205.5,267.4 L214.6,264.0 L223.6,262.1 L232.6,258.6 L241.7,256.9 L250.7,253.9 L259.7,251.6 L268.8,250.0 L277.8,249.5 L286.8,244.1 L295.9,235.1 L304.9,235.1 L313.9,231.1 L323.0,228.1 L332.0,220.6 L341.0,215.9 L350.1,211.9 L359.1,208.4 L368.1,204.4 L377.2,201.7 L386.2,200.0 L395.2,200.4 L404.3,198.1 L413.3,195.4 L422.3,198.1 L431.4,193.5 L440.4,191.8 L449.4,188.2 L458.5,185.3 L467.5,181.3 L476.5,174.6 L485.5,172.9 L494.6,170.8 L503.6,158.6 L512.6,155.0 L521.7,154.4 L530.7,152.7 L539.7,147.9 L548.8,149.2 L557.8,147.5 L566.8,145.0 L575.9,144.5 L584.9,142.4 L593.9,129.6 L603.0,128.4 L612.0,127.1" fill="none" stroke="#2E9376" stroke-width="2.4" stroke-dasharray="6 3" stroke-linejoin="round"/>
+<path d="M52.0,299.9 L61.0,299.5 L70.1,300.1 L79.1,299.5 L88.1,299.1 L97.2,299.1 L106.2,298.5 L115.2,297.4 L124.3,296.2 L133.3,294.1 L142.3,292.0 L151.4,290.3 L160.4,290.1 L169.4,287.8 L178.5,285.2 L187.5,282.7 L196.5,280.4 L205.5,277.7 L214.6,276.0 L223.6,274.1 L232.6,274.9 L241.7,273.3 L250.7,268.9 L259.7,265.1 L268.8,263.6 L277.8,261.7 L286.8,257.5 L295.9,252.3 L304.9,247.4 L313.9,245.1 L323.0,239.2 L332.0,231.3 L341.0,229.4 L350.1,226.2 L359.1,222.0 L368.1,216.2 L377.2,213.0 L386.2,211.9 L395.2,222.2 L404.3,216.6 L413.3,212.2 L422.3,209.0 L431.4,203.3 L440.4,203.6 L449.4,202.7 L458.5,201.9 L467.5,199.3 L476.5,195.4 L485.5,192.2 L494.6,188.2 L503.6,183.6 L512.6,181.7 L521.7,181.3 L530.7,179.2 L539.7,177.9 L548.8,177.3 L557.8,175.2 L566.8,173.3 L575.9,173.3 L584.9,173.1 L593.9,168.9 L603.0,171.0 L612.0,169.7" fill="none" stroke="#5FA88C" stroke-width="2.4" stroke-dasharray="2 3" stroke-linejoin="round"/>
+<path d="M52.0,264.0 L61.0,261.5 L70.1,259.8 L79.1,259.4 L88.1,257.9 L97.2,257.7 L106.2,256.7 L115.2,254.8 L124.3,256.3 L133.3,255.2 L142.3,251.2 L151.4,250.8 L160.4,250.8 L169.4,251.4 L178.5,249.1 L187.5,242.8 L196.5,244.1 L205.5,247.4 L214.6,249.1 L223.6,248.3 L232.6,249.8 L241.7,249.1 L250.7,244.9 L259.7,248.7 L268.8,250.8 L277.8,254.8 L286.8,255.0 L295.9,256.5 L304.9,258.8 L313.9,261.3 L323.0,267.4 L332.0,270.1 L341.0,273.7 L350.1,273.7 L359.1,273.5 L368.1,272.4 L377.2,276.8 L386.2,278.1 L395.2,277.5 L404.3,280.6 L413.3,279.6 L422.3,277.5 L431.4,274.9 L440.4,273.1 L449.4,271.0 L458.5,268.2 L467.5,265.1 L476.5,261.1 L485.5,256.3 L494.6,255.8 L503.6,255.4 L512.6,254.2 L521.7,254.2 L530.7,255.0 L539.7,255.0 L548.8,253.5 L557.8,251.8 L566.8,250.6 L575.9,250.0 L584.9,247.9 L593.9,247.6 L603.0,246.0 L612.0,244.1" fill="none" stroke="#C4705F" stroke-width="2.4" stroke-dasharray="6 3" stroke-linejoin="round"/>
+<path d="M52.0,278.5 L61.0,276.6 L70.1,276.8 L79.1,278.9 L88.1,280.4 L97.2,282.5 L106.2,283.1 L115.2,283.1 L124.3,282.1 L133.3,280.6 L142.3,277.5 L151.4,274.7 L160.4,272.6 L169.4,269.9 L178.5,266.8 L187.5,264.7 L196.5,263.0 L205.5,263.6 L214.6,264.7 L223.6,263.8 L232.6,259.4 L241.7,264.2 L250.7,263.4 L259.7,267.8 L268.8,269.3 L277.8,268.0 L286.8,266.6 L295.9,267.2 L304.9,269.9 L313.9,270.3 L323.0,273.5 L332.0,272.6 L341.0,273.9 L350.1,272.6 L359.1,271.4 L368.1,270.3 L377.2,270.5 L386.2,270.5 L395.2,272.0 L404.3,273.5 L413.3,273.1 L422.3,272.4 L431.4,271.6 L440.4,271.8 L449.4,270.5 L458.5,270.1 L467.5,269.1 L476.5,266.3 L485.5,263.0 L494.6,260.9 L503.6,257.3 L512.6,255.2 L521.7,255.6 L530.7,255.0 L539.7,256.3 L548.8,260.0 L557.8,263.0 L566.8,263.4 L575.9,264.2 L584.9,265.1 L593.9,265.1 L603.0,265.9 L612.0,265.5" fill="none" stroke="#A33A2C" stroke-width="2.4"  stroke-linejoin="round"/>
+<path d="M52.0,263.0 L61.0,260.0 L70.1,260.0 L79.1,260.9 L88.1,261.1 L97.2,261.7 L106.2,261.7 L115.2,261.9 L124.3,265.9 L133.3,267.2 L142.3,264.2 L151.4,264.2 L160.4,266.3 L169.4,267.4 L178.5,265.5 L187.5,262.1 L196.5,265.1 L205.5,268.2 L214.6,271.8 L223.6,271.2 L232.6,269.9 L241.7,269.7 L250.7,269.3 L259.7,278.1 L268.8,279.6 L277.8,280.8 L286.8,278.9 L295.9,277.7 L304.9,282.9 L313.9,288.6 L323.0,290.7 L332.0,290.3 L341.0,291.5 L350.1,290.9 L359.1,289.0 L368.1,287.8 L377.2,288.2 L386.2,287.8 L395.2,289.0 L404.3,290.1 L413.3,290.3 L422.3,290.5 L431.4,289.4 L440.4,289.2 L449.4,288.8 L458.5,288.0 L467.5,286.5 L476.5,284.4 L485.5,281.2 L494.6,279.8 L503.6,277.5 L512.6,275.6 L521.7,273.9 L530.7,272.0 L539.7,271.8 L548.8,271.4 L557.8,270.1 L566.8,269.9 L575.9,269.9 L584.9,270.8 L593.9,274.9 L603.0,272.2 L612.0,272.2" fill="none" stroke="#7A2B20" stroke-width="2.4" stroke-dasharray="2 3" stroke-linejoin="round"/>
+<text x="620" y="33.7" class="lb" fill="#1B6B57">Singapore 137%</text>
+<text x="620" y="131.1" class="lb" fill="#2E9376">Taiwan 91%</text>
+<text x="620" y="173.7" class="lb" fill="#5FA88C">South Korea 71%</text>
+<text x="620" y="248.1" class="lb" fill="#C4705F">Bulgaria 35%</text>
+<text x="620" y="269.5" class="lb" fill="#A33A2C">Brazil 25%</text>
+<text x="620" y="283.5" class="lb" fill="#7A2B20">Peru 22%</text>
+</svg>
+    </div>
+    <figcaption>GDP per person as a share of the US, PPP. Maddison Project Database 2023, via Our World in Data. Green crossed; brick stalled.</figcaption>
+  </figure>
+  <div class="tw"><table>
+    <caption>Share of US income per person, and the short story</caption>
+    <thead><tr><th>Country</th><th class="num">1960</th><th class="num">2022</th><th>What happened</th></tr></thead>
+    <tbody>
+      <tr><td>South Korea</td><td class="num">9%</td><td class="num"><b>71%</b></td><td>Export discipline, licences, then R&amp;D; used the 1997 crisis</td></tr>
+      <tr><td>Taiwan</td><td class="num">12%</td><td class="num"><b>91%</b></td><td>Small firms plugged into global supply chains; TSMC</td></tr>
+      <tr><td>Singapore</td><td class="num">19%</td><td class="num"><b>137%</b></td><td>FDI magnet, open trade, merit civil service</td></tr>
+      <tr><td>Brazil</td><td class="num">19%</td><td class="num">25%</td><td>Import substitution, protected incumbents, 1980s debt crisis</td></tr>
+      <tr><td>Bulgaria</td><td class="num">26%</td><td class="num">35%</td><td>Collapse after 1989; climbing since EU entry in 2007</td></tr>
+      <tr><td>Peru</td><td class="num">26%</td><td class="num">22%</td><td>Commodity swings, large informal economy, weak institutions</td></tr>
+    </tbody>
+  </table></div>
+  <div class="grid2">
+    <div class="card"><h4>What the winners share</h4><p>Switched from 1i to 2i early, kept <b>exports as the scoreboard</b>, invested in engineers, and used a crisis to discipline their own champions.</p></div>
+    <div class="card"><h4>What the strugglers share</h4><p>Protected home markets, leaned on commodities, and let <b>incumbents capture the gains</b> of the investment phase.</p></div>
+  </div>
+  <div class="note">Nuance worth raising: Bulgaria is a struggler over sixty years but <b>converging since 2000</b> (18% to 35%), largely through EU infusion. Chile, once the region's star, has been flat near 38% since 2010.</div>
+</section>
+
+<!-- ============ 8 SAY ============ -->
+<section id="say">
+  <h2><span class="no">8</span> What to say when called on</h2>
+  <button class="toggle" id="quizBtn" type="button" aria-pressed="false"><span class="pip"></span>Quiz me</button>
+  <div class="say">
+    <span class="tag">Sixty seconds, out loud</span>
+    <p id="sayBody">I'd say the trap is less a mechanical trap than a predictable slowdown that politics can turn into one. Early growth comes from piling up capital, and that runs into diminishing returns. The World Bank's own numbers make the point: middle-income countries trail the US far more in output per worker than in capital, so the problem is using capital poorly. The fix is infusion: importing proven technology and making it spread, which needs skilled people, competition and markets that let resources move. Exports matter because they discipline firms and bring buyers' know-how home. Korea did all of that, and in 1997 it let Daewoo fail. Brazil protected its champions instead. That's the real trap: the winners of the investment phase block the switch. Countries get past them by opening to competition, rewarding merit and using crises, and that's why today's protectionism worries me.</p>
+    <span class="wc" id="sayWc"></span>
+  </div>
+
+  <h3>The prep questions, answered</h3>
+  <div class="qtext"><div class="lbl">Question, as set</div><div class="body">Is the middle-income trap truly a &ldquo;trap,&rdquo; or is slower growth a predictable consequence of exhausting the easiest development opportunities? Does the distinction change how countries should respond?</div></div>
+  <div class="q"><div class="q-meta">Trap or slowdown</div><button class="reveal" type="button" data-t="a1">Show the answer</button>
+    <div class="ans" id="a1"><p><strong>Mostly a predictable slowdown, which politics can harden into a trap.</strong> Diminishing returns and the end of cheap labour slow everyone; skeptics (Imam and Temple; Patel, Sandefur and Subramanian) find no distinct threshold. <strong>Yes, the distinction matters:</strong> a slowdown view invites patience, a trap view demands a deliberate switch from accumulation to productivity. I'd argue the switch is needed either way, because the old model's winners won't change on their own. <a href="#trap">&sect;2</a>.</p></div></div>
+
+  <div class="qtext"><div class="lbl">Question, as set</div><div class="body">Martin Wolf, drawing on the World Bank, argues that countries which have successfully crossed the middle-income chasm have made their economies more sophisticated through a process of infusion. Be sure you understand this concept and why it is particularly important for middle-income countries. What determines whether imported technologies and business practices spread through an economy and raise productivity?</div></div>
+  <div class="q"><div class="q-meta">Infusion</div><button class="reveal" type="button" data-t="a2">Show the answer</button>
+    <div class="ans" id="a2"><p><strong>Infusion = importing proven foreign technology and practices, then diffusing them across domestic firms.</strong> It matters most in the middle because these countries are too far from the frontier to innovate cheaply and too costly to compete on wages. Spread depends on <strong>skills</strong> (engineers, managers), <strong>competition</strong> that forces adoption, <strong>fluid labour and capital markets</strong>, <strong>links between foreign and local firms</strong>, and <strong>finance</strong> to upgrade. Without them you get enclaves, as in Mexico. <a href="#inf">&sect;4</a>.</p></div></div>
+
+  <div class="qtext"><div class="lbl">Question, as set</div><div class="body">Wolf also identifies a focus on exports as an important success factor for countries seeking to reach advanced-economy status. Through what mechanisms can trade, exports and foreign investment build domestic capabilities? More simply, is openness to trade beneficial&mdash;or perhaps even necessary&mdash;for sustained productivity growth?</div></div>
+  <div class="q"><div class="q-meta">Exports and openness</div><button class="reveal" type="button" data-t="a3">Show the answer</button>
+    <div class="ans" id="a3"><p><strong>Five mechanisms:</strong> discipline from world competition, learning from foreign buyers, scale that pays for R&amp;D, technology embedded in imported machines, and spillovers from foreign plants to local suppliers and workers. <strong>Openness is beneficial and close to necessary</strong>: every sustained high-growth economy since 1950 was open. <strong>Not sufficient</strong>: Mexico and Chile are open and stalled, and Korea was export-led rather than free-trade. <a href="#trade">&sect;5</a>.</p></div></div>
+
+  <div class="qtext"><div class="lbl">Question, as set</div><div class="body">Finally, Wolf argues that middle-income countries must overcome resistance to change and renewal. Why might powerful groups resist reforms that could increase national income and living standards? How can countries overcome this resistance?</div></div>
+  <div class="q"><div class="q-meta">Resistance</div><button class="reveal" type="button" data-t="a4">Show the answer</button>
+    <div class="ans" id="a4"><p><strong>Because reform shrinks their slice even as it grows the pie.</strong> Incumbents earn rents from protection, soft budgets and licences; their losses are concentrated and certain, the gains diffuse and uncertain. <strong>Ways past it:</strong> discipline incumbents through competition and open trade, reward merit, use crises (Korea 1997, India 1991), lock reforms in with outside anchors (EU accession), and compensate losers. <a href="#resist">&sect;6</a>.</p></div></div>
+</section>
+
+<!-- ============ TRAPS ============ -->
+<section id="traps">
+  <h2>Traps</h2>
+  <div class="tw"><table>
+    <thead><tr><th>The mistake</th><th>Do this instead</th></tr></thead>
+    <tbody>
+      <tr><td>&ldquo;They just need more investment&rdquo;</td><td>They use capital poorly: a TFP gap</td></tr>
+      <tr><td>Treating the trap as settled fact</td><td>Name the IMF and Patel skeptics</td></tr>
+      <tr><td>Infusion = attracting FDI</td><td>Infusion = bring in <i>and</i> spread</td></tr>
+      <tr><td>Openness = free trade</td><td>Korea: export discipline, early home protection</td></tr>
+      <tr><td>Calling Bulgaria a failure</td><td>Converging since 2000, from a low base</td></tr>
+      <tr><td>Blaming only corruption</td><td>Concentrated losers, scattered winners</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- ============ GLOSSARY ============ -->
+<section id="gloss">
+  <h2>Glossary</h2>
+  <div class="tw"><table>
+    <thead><tr><th>Term</th><th>Plain words</th></tr></thead>
+    <tbody>
+      <tr><td>TFP = innovation = A = multifactor productivity</td><td>How well capital and labour combine</td></tr>
+      <tr><td>Infusion = technology diffusion = adoption</td><td>Bringing in and spreading proven ideas</td></tr>
+      <tr><td>Capital deepening</td><td>More capital per worker</td></tr>
+      <tr><td>Convergence = catch-up</td><td>Poorer countries closing the gap</td></tr>
+      <tr><td>Incumbents = insiders = vested interests</td><td>Winners under today's rules</td></tr>
+      <tr><td>Rents</td><td>Income from protection, not production</td></tr>
+      <tr><td>Import substitution</td><td>Tariffs to build home industry for home buyers</td></tr>
+      <tr><td>Enclave</td><td>Modern plants that don't lift local firms</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- ============ MATERIALS ============ -->
+<section id="mat">
+  <h2>Materials</h2>
+  <div class="grid2">
+    <div class="card"><h4>In the repo</h4><ul class="t">
+      <li><code>session-06/canvas-september-28-2026-details-session-6.html</code></li>
+      <li><code>session-06/Reading_Wolf-FT_Overcoming-the-Middle-Income-Trap_2024-09-10.md</code></li>
+      <li><code>session-06/Reading_World-Bank_WDR-2024_Main-Messages.md</code></li>
+      <li><code>session-06/Video_Session-06_Productivity-Growth-and-the-Middle-Income-Trap.mp4</code></li>
+      <li><code>session-05/Lecture-Slides_05_Growth-The-Labour-Input-Channel.pdf</code>, the growth model</li>
+      <li><code>notes/session-05-growth-model-in-action.html</code>, creative destruction</li>
+    </ul></div>
+    <div class="card"><h4>Readings and sources</h4><ul class="t">
+      <li>Primer 6, on <a href="https://askmyprof.com/join?class=TNM4FU">Ask GMM</a> (not read for this page)</li>
+      <li>Wolf, <a href="https://on.ft.com/3z3r4sV">&ldquo;Overcoming the &lsquo;middle income&rsquo; trap&rdquo;</a>, FT, Sept 10, 2024</li>
+      <li>World Bank, <a href="https://www.worldbank.org/en/publication/wdr2024/brief/world-development-report-2024-main-messages">WDR 2024 main messages</a></li>
+      <li>Imam and Temple, &ldquo;At the Threshold&rdquo;, IMF working paper, 2024</li>
+      <li>Patel, Sandefur and Subramanian, &ldquo;The New Era of Unconditional Convergence&rdquo;, 2021</li>
+      <li><a href="https://notebooklm.google.com/notebook/93bce654-70a9-4239-9015-2088a01ea30e">NotebookLM notebook</a> and <a href="https://ivey.instructure.com/courses/7059/pages/173974">Canvas page</a></li>
+    </ul></div>
+  </div>
+</section>
+
+<!-- ============ QA ============ -->
+<section id="qa">
+  <h2>Q&amp;A log</h2>
+  <div class="q">
+    <div class="q-meta">Asked in prep</div>
+    <blockquote>Is China stuck in the middle-income trap?</blockquote>
+    <p>Not yet, but it is the live test. China is at <strong>33% of US income</strong> (2022), up from 10% in 2000, and near the top of the upper-middle band. Growth has slowed because it still leans on 1i, property and infrastructure, where returns have fallen. It is also clearly doing 3i in electric cars, batteries and solar. The question is whether state firms and local-government borrowing get disciplined.</p>
+    <div class="ex"><span class="lb">The line to say</span><p>China shows both halves at once: <strong>world-class innovation in some sectors, diminishing returns to investment everywhere else.</strong></p></div>
+  </div>
+</section>
+
+</main>
+</div>
+
+<footer>
+  <div class="wrap">
+    Worked answers and positions on this page are my own. Check them against Primer 6, the posted slides and the class discussion before relying on them.
+    Items marked illustrative show a mechanism rather than measured data. 4505 GMM &middot; Session 6 &middot; September 28, 2026.
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+/* ---- quiz toggle ---- */
+(function(){
+  var btn=document.getElementById("quizBtn");if(!btn)return;
+  btn.addEventListener("click",function(){
+    var on=document.body.classList.toggle("quiz");
+    btn.setAttribute("aria-pressed",String(on));
+    btn.lastChild.nodeValue=on?"Answers hidden":"Quiz me";
+    if(!on)[].forEach.call(document.querySelectorAll(".ans"),function(a){a.classList.remove("open");});
+    [].forEach.call(document.querySelectorAll("button.reveal"),function(b){b.classList.remove("gone");});
+  });
+  [].forEach.call(document.querySelectorAll("button.reveal"),function(b){
+    b.addEventListener("click",function(){
+      var t=document.getElementById(b.dataset.t);if(t)t.classList.add("open");
+      b.classList.add("gone");
+    });
+  });
+})();
+
+/* ---- live word count on the spoken answer ---- */
+(function(){
+  var p=document.getElementById("sayBody"),w=document.getElementById("sayWc");if(!p||!w)return;
+  var n=(p.textContent.trim().match(/\S+/g)||[]).length;
+  w.textContent=n+" words, roughly "+Math.round(n/2.6)+" seconds spoken";
+})();
+
+/* ---- motion: reveal + count up ---- */
+(function(){
+  document.documentElement.classList.add("js");
+  var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function countUp(el){
+    var to=parseFloat(el.dataset.to),dp=el.dataset.dp?+el.dataset.dp:0,
+        pre=el.dataset.pre||"",suf=el.dataset.suf||"",dur=560,t0=0;
+    if(isNaN(to))return;
+    if(reduce){el.textContent=pre+to.toFixed(dp)+suf;return;}
+    function tick(t){
+      if(!t0)t0=t;
+      var k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,3);
+      el.textContent=pre+(to*e).toFixed(dp)+suf;
+      if(k<1)requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  var nodes=[].slice.call(document.querySelectorAll(".rv,.count"));
+  if(!nodes.length)return;
+  if(!("IntersectionObserver" in window)){
+    nodes.forEach(function(n){n.classList.add("in");if(n.classList.contains("count"))countUp(n);});return;
+  }
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      e.target.classList.add("in");
+      if(e.target.classList.contains("count"))countUp(e.target);
+      if(e.target.querySelectorAll)[].forEach.call(e.target.querySelectorAll(".count:not(.done)"),function(c){c.classList.add("done");countUp(c);});
+      io.unobserve(e.target);
+    });
+  },{rootMargin:"0px 0px -8% 0px",threshold:.12});
+  nodes.forEach(function(n){io.observe(n);});
+
+  function finalise(el){
+    var to=parseFloat(el.dataset.to);if(isNaN(to))return;
+    el.textContent=(el.dataset.pre||"")+to.toFixed(el.dataset.dp?+el.dataset.dp:0)+(el.dataset.suf||"");
+  }
+  function settle(n){
+    n.classList.add("in");
+    if(n.classList.contains("count")&&!n.classList.contains("done")){n.classList.add("done");finalise(n);}
+    if(n.querySelectorAll)[].forEach.call(n.querySelectorAll(".count:not(.done)"),function(c){c.classList.add("done");finalise(c);});
+    io.unobserve(n);
+  }
+  function sweep(){
+    nodes.forEach(function(n){
+      if(n.classList.contains("in"))return;
+      if(n.getBoundingClientRect().bottom<=0)settle(n);
+    });
+  }
+  var pending=false;
+  function queue(){if(pending)return;pending=true;requestAnimationFrame(function(){pending=false;sweep();});}
+  sweep();
+  window.addEventListener("scroll",queue,{passive:true});
+  window.addEventListener("load",function(){setTimeout(sweep,80);setTimeout(sweep,400);});
+  window.addEventListener("hashchange",function(){setTimeout(sweep,60);});
+})();
+
+/* ---- scroll spy ---- */
+(function(){
+  var links=[].slice.call(document.querySelectorAll("nav.toc a"));
+  if(!links.length||!("IntersectionObserver" in window))return;
+  var map={},targets=[];
+  links.forEach(function(a){
+    var h=a.getAttribute("href");if(!h||h.charAt(0)!=="#")return;
+    var el=document.getElementById(h.slice(1));
+    if(el){map[h.slice(1)]=a;targets.push(el);}
+  });
+  var seen=[];
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      var i=seen.indexOf(e.target);
+      if(e.isIntersecting&&i<0)seen.push(e.target);
+      if(!e.isIntersecting&&i>=0)seen.splice(i,1);
+    });
+    if(!seen.length)return;
+    seen.sort(function(a,b){return a.getBoundingClientRect().top-b.getBoundingClientRect().top;});
+    links.forEach(function(l){l.classList.remove("on");});
+    var a=map[seen[0].id];if(!a)return;
+    a.classList.add("on");
+  },{rootMargin:"-72px 0px -55% 0px",threshold:0});
+  targets.forEach(function(t){io.observe(t);});
+})();
+})();
+</script>
+
+<script>
+(function(){
+/* ---- video chapters ---- */
+var v=document.getElementById("vid"),ch=document.getElementById("chap");
+if(v&&ch)ch.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  v.currentTime=+b.dataset.t;var p=v.play();if(p&&p.catch)p.catch(function(){});});
+
+/* ---- two levers model: output = A * sqrt(k) ---- */
+var svg=document.getElementById("lvSvg");if(!svg)return;
+var K=document.getElementById("lvK"),A=document.getElementById("lvA"),NS="http://www.w3.org/2000/svg";
+var X0=52,X1=620,Y0=16,Y1=262,KMAX=100,YMAX=16;
+function sx(k){return X0+k/KMAX*(X1-X0);} function sy(y){return Y1-y/YMAX*(Y1-Y0);}
+function el(t,a){var n=document.createElementNS(NS,t);for(var k in a)n.setAttribute(k,a[k]);return n;}
+function txt(x,y,s,c,anc){var t=el("text",{x:x,y:y,"class":c,"text-anchor":anc||"start"});t.textContent=s;return t;}
+function curve(a){var d="";for(var k=0;k<=KMAX;k+=1){d+=(k?" L":"M")+sx(k).toFixed(1)+","+sy(a*Math.sqrt(k)).toFixed(1);}return d;}
+[0,4,8,12,16].forEach(function(y){svg.appendChild(el("line",{x1:X0,x2:X1,y1:sy(y),y2:sy(y),"class":y?"gr":"ax"}));svg.appendChild(txt(X0-8,sy(y)+4,String(y),"tk","end"));});
+[0,25,50,75,100].forEach(function(k){svg.appendChild(txt(sx(k),Y1+18,String(k),"tk","middle"));});
+svg.appendChild(txt((X0+X1)/2,Y1+34,"capital per worker","nt","middle"));
+svg.appendChild(txt(X0+6,Y0+10,"output per worker","nt"));
+var base=el("path",{d:curve(1),fill:"none",stroke:"#A8B5AE","stroke-width":1.6,"stroke-dasharray":"5 4"});svg.appendChild(base);
+var cur=el("path",{fill:"none",stroke:"#1B6B57","stroke-width":2.6});svg.appendChild(cur);
+svg.appendChild(txt(sx(100)-4,sy(10)-6,"dashed: A = 1","nt","end"));
+var dot=el("circle",{r:6,fill:"#1B6B57",stroke:"#fff","stroke-width":2});svg.appendChild(dot);
+function f(n){return n.toFixed(2);}
+function draw(){var k=+K.value,a=+A.value,y=a*Math.sqrt(k);
+  cur.setAttribute("d",curve(a));dot.setAttribute("cx",sx(k));dot.setAttribute("cy",sy(y));
+  var gk=a*(Math.sqrt(k+10)-Math.sqrt(k)),ga=0.1*y;
+  document.getElementById("lvKv").textContent=k;document.getElementById("lvAv").textContent=a.toFixed(2);
+  document.getElementById("lvY").textContent=f(y);document.getElementById("lvGk").textContent="+"+f(gk);document.getElementById("lvGa").textContent="+"+f(ga);
+  var w=document.getElementById("lvW");w.textContent=gk>ga*1.05?"Build more":ga>gk*1.05?"Use it better":"About equal";
+  w.className="v "+(gk>ga*1.05?"b":ga>gk*1.05?"g":"");
+  document.getElementById("lvNote").innerHTML=k<48?"<b>Early stage.</b> Capital is scarce, so each new machine adds a lot. Investment (1i) is the right lever.":
+    "<b>Past the crossover.</b> Ten more units of capital add less than a 10% productivity gain. This is where infusion (2i) has to take over.";}
+K.addEventListener("input",function(){clr();draw();});A.addEventListener("input",function(){clr();draw();});
+function clr(){[].forEach.call(document.querySelectorAll("#lvSeg button"),function(b){b.setAttribute("aria-pressed","false");});}
+document.getElementById("lvSeg").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  [].forEach.call(this.querySelectorAll("button"),function(x){x.setAttribute("aria-pressed",String(x===b));});
+  K.value=b.dataset.k;A.value=b.dataset.a;draw();});
+draw();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1643 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="prep-file" content="4505-Global-Macroeconomics-for-Managers/notes/session-04-rich-place-poor-place.html">
+<meta name="prep-session" content="active">
+<title>Rich Place, Poor Place</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  color-scheme:light;
+  --paper:#FFFFFF; --surface:#FFFFFF; --surface-2:#F3F6F3; --surface-3:#E9EFEA;
+  --ink:#141F1C; --ink-2:#4C5A55; --ink-3:#7A8681;
+  --rule:#E0E6E1; --rule-strong:#A8B5AE;
+  --accent:#1B6B57; --accent-2:#2E9376; --accent-soft:#E2F0E9;
+  --credit:#A33A2C; --credit-soft:#FAE7E2;
+  --flag:#8A6A12; --flag-soft:#FAF2DC;
+  --shadow:0 1px 2px rgba(20,31,28,.05), 0 12px 28px -22px rgba(20,31,28,.5);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Public Sans","Helvetica Neue",Arial,sans-serif;font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Bitter,Georgia,serif;text-wrap:balance;margin:0;line-height:1.15}
+p{margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+.wrap{max-width:1400px;margin:0;padding-inline:34px}
+
+/* ---------- masthead ---------- */
+header{border-bottom:1px solid var(--rule)}
+.hd{max-width:1330px;padding-block:38px 28px;display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between;align-items:flex-end}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(30px,5.5vw,46px);font-weight:700;letter-spacing:-.025em;margin-top:10px}
+.gist{color:var(--ink-2);max-width:52ch;margin-top:10px}
+.hd .meta{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-2);border-left:2px solid var(--accent);padding-left:14px;line-height:2}
+.hd .meta b{color:var(--ink);font-weight:600}
+
+/* ---------- left contents rail ---------- */
+.cols{display:grid;grid-template-columns:236px minmax(0,1fr);gap:54px;align-items:start}
+nav.toc{position:sticky;top:22px;padding-block:34px 0;font-size:13.5px;max-height:calc(100vh - 44px);overflow-y:auto}
+nav.toc .toc-h{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-3);padding-bottom:9px;border-bottom:1px solid var(--rule);margin-bottom:8px}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px}
+nav.toc a{display:flex;gap:9px;align-items:baseline;padding:5px 10px;border-radius:6px;color:var(--ink-2);
+  text-decoration:none;border-left:2px solid transparent;line-height:1.35}
+nav.toc a .n{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3);min-width:15px}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{color:var(--accent);border-left-color:var(--accent);background:var(--accent-soft);font-weight:600}
+nav.toc a.on .n{color:var(--accent)}
+nav.toc a .io{font-size:10px;color:var(--accent);margin-left:auto;opacity:.75}
+nav.toc .grp{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-3);padding:16px 10px 5px}
+nav.toc .grp:first-child{padding-top:2px}
+
+main{display:flex;flex-direction:column;gap:26px;padding-block:34px 80px;min-width:0;max-width:1020px}
+
+/* ---------- plain-English opener ---------- */
+.oneline{display:flex;gap:14px;align-items:flex-start;background:var(--accent-soft);border-radius:10px;
+  padding:14px 18px;font-size:16px;color:var(--ink);max-width:76ch}
+.oneline .tag{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);white-space:nowrap;padding-top:5px}
+.oneline b{font-weight:600}
+
+/* ---------- group divider ---------- */
+.group{display:flex;align-items:center;gap:16px;margin-top:34px}
+.group:first-child{margin-top:0}
+.group h2{font-size:13px;font-family:"IBM Plex Mono",monospace;font-weight:500;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent);border:none;padding:0;white-space:nowrap}
+.group .ln{flex:1;height:1px;background:var(--rule)}
+.group .ct{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+
+section{display:flex;flex-direction:column;gap:18px;scroll-margin-top:64px}
+section>h2{font-size:clamp(21px,3.2vw,27px);font-weight:600;letter-spacing:-.015em;display:flex;gap:12px;align-items:baseline}
+section>h2 .no{font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--accent);font-weight:500}
+h3{font-size:17px;font-weight:600;margin-top:8px}
+.lede{color:var(--ink-2);max-width:72ch;font-size:16px}
+.lede strong{color:var(--ink);font-weight:600}
+
+
+/* ---------- flow diagrams: CSS boxes, NOT SVG text ----------
+   Text wraps and boxes grow, so a long label can never overflow.
+   Use these for every box-and-arrow / one-to-many / spectrum diagram.
+   Reserve SVG for real charts only (bars, lines, curves).           */
+.flow{display:grid;gap:14px;align-items:center}
+.flow.f5{grid-template-columns:minmax(0,1.05fr) 22px minmax(0,.92fr) 58px minmax(0,1.2fr)}
+.flow.f3{grid-template-columns:minmax(0,.8fr) 22px minmax(0,1.25fr)}
+.fstack{display:flex;flex-direction:column;gap:10px;min-width:0}
+.fnode{border:1.5px solid var(--rule-strong);border-radius:11px;padding:11px 14px;background:var(--surface);
+  display:flex;flex-direction:column;gap:3px;min-width:0}
+.fnode b{font-size:14.5px;font-weight:600;line-height:1.3}
+.fnode span{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);line-height:1.55;overflow-wrap:anywhere}
+.fnode.acc{background:var(--accent-soft);border-color:var(--accent)}
+.fnode.acc b,.fnode.acc span{color:var(--accent)}
+.fnode.bad{background:var(--credit-soft);border-color:var(--credit)}
+.fnode.bad b,.fnode.bad span{color:var(--credit)}
+.fnode.flg{background:var(--flag-soft);border-color:var(--flag);text-align:center}
+.fnode.flg b,.fnode.flg span{color:var(--flag)}
+.fnode.mute{border-style:dashed;background:var(--surface-3)}
+.farr{color:var(--rule-strong);text-align:center;line-height:1;font-family:"IBM Plex Mono",monospace}
+.farr .ch{display:block;font-size:20px;line-height:1}
+.farr i{font-style:normal;display:block;font-size:9px;letter-spacing:.06em;color:var(--ink-3);margin-top:5px;text-transform:uppercase;white-space:nowrap}
+
+/* spectrum: ordered scale with a hard line somewhere in it */
+.spec{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px}
+.spec .sn{border:1.5px solid var(--rule-strong);border-radius:11px;padding:11px 13px;background:var(--surface);min-width:0}
+.spec .sn b{display:block;font-size:14.5px;font-weight:600;margin-bottom:3px}
+.spec .sn span{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);line-height:1.5;display:block}
+.spec .sn.ok{background:var(--accent-soft);border-color:var(--accent)}
+.spec .sn.ok b,.spec .sn.ok span{color:var(--accent)}
+.spec .sn.no{background:var(--credit-soft);border-color:var(--credit)}
+.spec .sn.no b,.spec .sn.no span{color:var(--credit)}
+.specline{grid-column:1/-1;display:flex;align-items:center;gap:12px;margin-top:2px}
+.specline .lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--credit);white-space:nowrap}
+.specline .rule{flex:1;height:0;border-top:2px dashed var(--credit)}
+
+/* horizontal labelled bars */
+.bars{display:flex;flex-direction:column;gap:11px}
+.bar{display:grid;grid-template-columns:132px minmax(0,1fr);gap:14px;align-items:center}
+.bar .bl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);text-align:right}
+.bar .bt{display:flex;align-items:center;gap:10px;min-width:0}
+.bar .bf{height:20px;border-radius:4px;flex:none}
+.bar .bc{font-size:13px;color:var(--ink-2);min-width:0;overflow-wrap:anywhere}
+.bar .bf.hi{background:var(--credit-soft);border:1.2px solid var(--credit)}
+.bar .bf.md{background:var(--flag-soft);border:1.2px solid var(--flag)}
+.bar .bf.lo{background:var(--accent-soft);border:1.2px solid var(--accent)}
+
+/* two-ended scales: where two things sit on one axis */
+.scales{display:flex;flex-direction:column;gap:13px}
+.scale{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;align-items:center}
+.scale .sl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);text-align:right}
+.scale .tr{position:relative;height:34px}
+.scale .tr .ln{position:absolute;top:22px;left:0;right:0;height:0;border-top:1.5px solid var(--rule-strong)}
+.scale .tr .e{position:absolute;top:0;font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3)}
+.scale .tr .e.l{left:0} .scale .tr .e.r{right:0}
+.scale .tr .dot{position:absolute;top:15px;width:15px;height:15px;border-radius:50%;transform:translateX(-50%)}
+.scale .tr .dot.s{background:var(--accent-soft);border:2px solid var(--accent)}
+.scale .tr .dot.b{background:var(--credit-soft);border:2px solid var(--credit)}
+.legend{display:flex;gap:20px;flex-wrap:wrap;align-items:center;margin-top:4px;font-family:"IBM Plex Mono",monospace;font-size:11px}
+.legend i{font-style:normal;display:inline-flex;align-items:center;gap:7px}
+.legend .dot{width:13px;height:13px;border-radius:50%;display:inline-block}
+.legend .dot.s{background:var(--accent-soft);border:2px solid var(--accent)}
+.legend .dot.b{background:var(--credit-soft);border:2px solid var(--credit)}
+
+
+/* ---------- stat strip: headline numbers, rendered not typed ---------- */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;max-width:1020px}
+.stat{border-top:3px solid var(--accent);padding-top:9px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.stat.b{border-top-color:var(--credit)} .stat.c{border-top-color:var(--flag)} .stat.m{border-top-color:var(--rule-strong)}
+.stat .k{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.stat .v{font-family:Bitter,serif;font-size:29px;font-weight:700;line-height:1.05;font-variant-numeric:tabular-nums;color:var(--accent)}
+.stat.b .v{color:var(--credit)} .stat.c .v{color:var(--flag)} .stat.m .v{color:var(--ink)}
+.stat .s{font-size:12.5px;color:var(--ink-2);overflow-wrap:anywhere}
+
+/* ---------- tug of war: two opposed forces, net position ---------- */
+.tug{display:flex;flex-direction:column;gap:9px;max-width:1020px}
+.tug .row{display:grid;grid-template-columns:minmax(0,1fr) 300px minmax(0,1fr);gap:12px;align-items:center}
+.tug .lb{font-size:13.5px;color:var(--ink-2);min-width:0;overflow-wrap:anywhere}
+.tug .lb.l{text-align:right}
+.tug .mid{height:22px;position:relative;border-radius:4px;background:var(--surface-3);overflow:hidden}
+.tug .mid i{position:absolute;top:0;bottom:0;display:block;transition:width .9s cubic-bezier(.22,1,.36,1)}
+.tug .mid i.l{right:50%;background:var(--credit-soft);border-right:2px solid var(--credit)}
+.tug .mid i.r{left:50%;background:var(--accent-soft);border-left:2px solid var(--accent)}
+.tug .net{display:grid;grid-template-columns:minmax(0,1fr) 300px minmax(0,1fr);gap:12px;align-items:center;
+  border-top:1px solid var(--rule-strong);padding-top:10px;margin-top:3px}
+.tug .net .mid{height:30px;background:transparent;display:flex;align-items:center;justify-content:center;
+  font-family:Bitter,serif;font-weight:700;font-size:17px}
+
+/* ---------- scorecard: claim, two sides, verdict ---------- */
+.sc{display:flex;flex-direction:column;max-width:1020px;border:1px solid var(--rule);border-radius:12px;overflow:hidden}
+.scrow{display:grid;grid-template-columns:150px minmax(0,1fr) 122px;gap:0;border-top:1px solid var(--rule)}
+.scrow:first-child{border-top:none}
+.scrow .cl{padding:11px 14px;font-size:14px;font-weight:600;background:var(--surface-2);min-width:0;overflow-wrap:anywhere}
+.scrow .sides{display:grid;grid-template-columns:1fr 1fr;gap:0;min-width:0}
+.scrow .sd{padding:11px 14px;font-size:13px;color:var(--ink-2);min-width:0;overflow-wrap:anywhere;border-left:1px solid var(--rule)}
+.scrow .sd b{color:var(--ink)}
+.scrow .sd.a{background:color-mix(in srgb,var(--accent-soft) 45%,transparent)}
+.scrow .sd.b{background:color-mix(in srgb,var(--credit-soft) 45%,transparent)}
+.scrow .vd{padding:11px 12px;border-left:1px solid var(--rule);font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;text-align:center}
+.scrow .vd.a{color:var(--accent);background:var(--accent-soft)}
+.scrow .vd.b{color:var(--credit);background:var(--credit-soft)}
+.scrow .vd.d{color:var(--ink-3);background:var(--surface-2)}
+.scrow.sch .cl,.scrow.sch .sd,.scrow.sch .vd{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-3);font-weight:500;background:var(--surface-2);padding-block:8px}
+
+/* ---------- motion: meaning only, always from a visible rest state ---------- */
+.rv{opacity:1;transform:none;transition:opacity .5s ease,transform .5s cubic-bezier(.22,1,.36,1)}
+.js .rv:not(.in){opacity:0;transform:translateY(8px)}
+.js .bars .bf{width:0!important;transition:width .9s cubic-bezier(.22,1,.36,1)}
+.js .rv.in .bars .bf,.js .bars.in .bf{width:var(--w)!important}
+@media (prefers-reduced-motion:reduce){
+  .js .rv:not(.in){opacity:1;transform:none}
+  .js .bars .bf{width:var(--w)!important;transition:none}
+  .tug .mid i{transition:none}
+}
+
+/* ---------- diagram frame ---------- */
+figure{margin:0;display:flex;flex-direction:column;gap:10px;max-width:1020px}
+.dg{background:var(--surface-2);border:1px solid var(--rule);border-radius:14px;padding:24px}
+.dg.pad0{padding:18px}
+figcaption{color:var(--ink-3);font-size:13.5px;max-width:70ch}
+svg.d{width:100%;height:auto;display:block;overflow:visible}
+.d-box{fill:var(--surface);stroke:var(--rule-strong);stroke-width:1.5}
+.d-box.acc{fill:var(--accent-soft);stroke:var(--accent)}
+.d-box.bad{fill:var(--credit-soft);stroke:var(--credit)}
+.d-box.mute{fill:var(--surface-3);stroke:var(--rule-strong);stroke-dasharray:5 4}
+.d-t{font-family:"Public Sans",sans-serif;font-size:15px;font-weight:600;fill:var(--ink)}
+.d-t.t2{font-size:13.5px}
+.d-s{font-family:"IBM Plex Mono",monospace;font-size:11.5px;fill:var(--ink-3)}
+.d-lab{font-family:"IBM Plex Mono",monospace;font-size:11.5px;fill:var(--ink-2)}
+.d-link{fill:none;stroke:var(--rule-strong);stroke-width:1.6}
+.d-link.acc{stroke:var(--accent)}
+.d-link.bad{stroke:var(--credit)}
+
+/* ---------- interactive shell ---------- */
+.ia{max-width:1020px;background:var(--surface);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.ia-top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;
+  padding:12px 18px;border-bottom:1px solid var(--rule);background:var(--surface-2)}
+.ia-top .ttl{font-size:14px;font-weight:600}
+.ia-top .hint{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.ia-body{padding:20px 18px}
+
+.seg{display:inline-flex;border:1px solid var(--rule-strong);border-radius:8px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:13px;font-weight:500;cursor:pointer;border:0;background:transparent;
+  color:var(--ink-2);padding:6px 14px;border-right:1px solid var(--rule)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--accent);color:#fff;font-weight:600}
+.seg button:hover:not([aria-pressed="true"]){background:var(--accent-soft);color:var(--accent)}
+
+.slider{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.slider label{font-size:13.5px;color:var(--ink-2);min-width:130px}
+.slider input[type=range]{flex:1;min-width:180px;accent-color:var(--accent);height:22px}
+.slider .val{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:14px;
+  font-weight:600;min-width:96px;text-align:right;color:var(--ink)}
+
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:14px;margin-top:16px}
+.kpi{border-top:2px solid var(--rule-strong);padding-top:7px}
+.kpi.on{border-top-color:var(--accent)}
+.kpi.warn{border-top-color:var(--credit)}
+.kpi .k{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.kpi .v{font-family:Bitter,serif;font-size:21px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.25}
+.kpi.on .v{color:var(--accent)} .kpi.warn .v{color:var(--credit)}
+.kpi .s{font-size:12.5px;color:var(--ink-2)}
+
+/* ---------- example strip ---------- */
+.ex{max-width:1020px;border:1px solid var(--rule);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;
+  padding:14px 18px;background:var(--surface);font-size:15px;color:var(--ink-2);display:flex;flex-direction:column;gap:7px}
+.ex .lb{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.ex strong{color:var(--ink);font-weight:600}
+.calc-line{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink);
+  background:var(--surface-2);padding:7px 11px;border-radius:6px;align-self:flex-start;font-variant-numeric:tabular-nums}
+
+/* ---------- 2x2 classifier ---------- */
+.tray{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{font:inherit;font-size:13.5px;cursor:pointer;background:var(--surface);border:1.5px solid var(--rule-strong);
+  color:var(--ink);padding:7px 14px;border-radius:8px;transition:transform .12s ease,border-color .12s ease}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:600}
+.chip.done{opacity:.35;pointer-events:none;border-style:dashed}
+.grid22{display:grid;grid-template-columns:76px 1fr 1fr;gap:10px}
+.grid22 .hh{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-3);align-self:end;padding-bottom:4px;text-align:center}
+.grid22 .vh{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  display:flex;align-items:center;justify-content:center;text-align:center}
+.grid22 .vh.a{color:var(--accent)} .grid22 .vh.b{color:var(--credit)}
+.qd{min-height:104px;border:1.5px dashed var(--rule-strong);border-radius:12px;background:var(--surface-2);
+  padding:10px;cursor:pointer;display:flex;flex-direction:column;gap:6px;transition:background .15s,border-color .15s}
+.qd:hover{border-color:var(--accent);background:var(--accent-soft)}
+.qd.armed{border-color:var(--accent);border-style:solid}
+.qd.hit{animation:hit .4s ease} .qd.miss{animation:miss .4s ease}
+@keyframes hit{0%{background:var(--accent-soft)}100%{background:var(--surface-2)}}
+@keyframes miss{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.placed{background:var(--surface);border:1px solid var(--accent);border-left:3px solid var(--accent);
+  border-radius:6px;padding:7px 10px;font-size:13.5px}
+.placed b{display:block;font-weight:600}
+.placed span{font-size:12px;color:var(--ink-3)}
+.fb{font-size:13.5px;min-height:22px;color:var(--ink-2)}
+.fb.bad{color:var(--credit)} .fb.good{color:var(--accent)}
+
+/* ---------- vet bill ---------- */
+.bill{background:var(--surface);border:1px solid var(--rule-strong);border-radius:10px;overflow:hidden;font-size:14px;max-width:520px}
+.bill .top{padding:11px 16px;border-bottom:1px dashed var(--rule-strong);font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.bill .ln{display:grid;grid-template-columns:1fr 82px 76px;gap:10px;padding:9px 16px;align-items:center}
+.bill .ln+.ln{border-top:1px solid var(--rule)}
+.bill .amt{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;text-align:right}
+.bill .k{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.08em;padding:2px 0;border-radius:4px;
+  text-align:center;transition:background .25s,color .25s,border-color .25s}
+.bill .k.d{color:var(--accent);border:1px solid var(--accent);background:var(--accent-soft)}
+.bill .k.i{color:var(--credit);border:1px solid var(--credit);background:var(--credit-soft)}
+.bill .ttl{display:grid;grid-template-columns:1fr 82px 76px;gap:10px;padding:10px 16px;border-top:2px solid var(--rule-strong);
+  background:var(--surface-2);font-weight:600}
+
+/* ---------- question as asked ---------- */
+.qtext{max-width:1020px;border:1.5px dashed var(--rule-strong);border-radius:10px;padding:15px 19px;
+  background:var(--surface-2);display:flex;flex-direction:column;gap:9px}
+.qtext .lbl{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3)}
+.qtext .body{font-size:15.5px;color:var(--ink);line-height:1.55}
+.qtext ol{margin:4px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:5px;font-size:15px}
+.qtext ol li::marker{color:var(--accent);font-weight:600}
+.qtext .given{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink-2);
+  background:var(--surface);border:1px solid var(--rule);border-radius:7px;padding:10px 14px;
+  white-space:pre;overflow-x:auto;font-variant-numeric:tabular-nums;margin:0}
+
+/* ---------- worked process ---------- */
+.steps{max-width:1020px;display:flex;flex-direction:column}
+.step{display:grid;grid-template-columns:30px minmax(0,1fr);gap:16px;padding:18px 0;border-top:1px solid var(--rule)}
+.step:first-child{border-top:none;padding-top:6px}
+.step .num{width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);
+  border:1.5px solid var(--accent);display:flex;align-items:center;justify-content:center;
+  font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600}
+.step .sb{display:flex;flex-direction:column;gap:10px;min-width:0}
+.step h4{margin:0;font-size:15.5px;font-weight:600;font-family:"Public Sans",sans-serif;padding-top:4px}
+.step p{font-size:15px;color:var(--ink-2)}
+.step p strong{color:var(--ink);font-weight:600}
+pre.math{margin:0;font-family:"IBM Plex Mono",monospace;font-size:13.5px;line-height:1.9;
+  background:var(--surface-2);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;
+  padding:14px 18px;overflow-x:auto;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:pre}
+pre.math b{color:var(--accent);font-weight:600}
+pre.math i{color:var(--ink-3);font-style:normal}
+
+/* ---------- tables ---------- */
+.tw{overflow-x:auto;border:1px solid var(--rule);border-radius:12px;background:var(--surface);max-width:1020px}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+caption{text-align:left;padding:13px 17px 11px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);border-bottom:1px solid var(--rule)}
+th,td{padding:9px 16px;text-align:left;vertical-align:top}
+thead th{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ink-2);font-weight:500;border-bottom:1px solid var(--rule-strong);white-space:nowrap}
+tbody tr+tr td{border-top:1px solid var(--rule)}
+td.n,th.n{text-align:right;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.tot td{border-top:1px solid var(--rule-strong)!important;box-shadow:inset 0 -3px 0 -1px var(--rule-strong);
+  font-weight:600;background:var(--surface-2)}
+td.cr{color:var(--credit)}
+.sm{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3)}
+
+.pill{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  padding:3px 8px;border-radius:4px;border:1px solid var(--rule-strong);color:var(--ink-2);white-space:nowrap}
+.pill.v{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.pill.f{border-color:var(--credit);color:var(--credit);background:var(--credit-soft)}
+
+.note{max-width:1020px;border-left:3px solid var(--flag);background:var(--flag-soft);color:var(--ink);padding:12px 16px;border-radius:0 8px 8px 0;font-size:14.5px}
+.note.acc{border-left-color:var(--accent);background:var(--accent-soft)}
+.fx{font-family:"IBM Plex Mono",monospace;font-size:13.5px;color:var(--accent);background:var(--accent-soft);padding:4px 9px;border-radius:5px;display:inline-block}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;align-items:start;max-width:1020px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:1020px}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:9px}
+.card h4{margin:0;font-size:15px;font-weight:600}
+.card p{font-size:14px;color:var(--ink-2)}
+ul.t,ol.t{margin:0;padding-left:20px;color:var(--ink-2);font-size:14.5px;display:flex;flex-direction:column;gap:7px}
+ul.t strong,ol.t strong{color:var(--ink)}
+
+/* ---------- Q&A ---------- */
+.q{border:1px solid var(--rule);border-radius:12px;background:var(--surface);padding:18px 20px;display:flex;flex-direction:column;gap:13px}
+.q-meta{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+blockquote{margin:0;padding:13px 16px;background:var(--surface-2);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;font-size:15px}
+.wc{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+button.reveal{display:none;align-self:flex-start;font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+  background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent);padding:6px 14px;border-radius:6px}
+body.quiz .ans{display:none} body.quiz .ans.open{display:flex} body.quiz button.reveal{display:inline-block}
+body.quiz button.reveal.gone{display:none}
+.ans{display:flex;flex-direction:column;gap:12px}
+.toggle{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+  background:var(--surface);border:1px solid var(--rule-strong);color:var(--ink);padding:7px 14px;border-radius:8px;align-self:flex-start}
+.toggle .pip{width:8px;height:8px;border-radius:50%;background:var(--rule-strong)}
+body.quiz .toggle .pip{background:var(--accent)}
+
+/* ---------- car calc ---------- */
+.calc{display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);gap:24px;align-items:start}
+.irow{display:grid;grid-template-columns:1fr 78px 78px;gap:8px;align-items:center;padding:5px 0;border-top:1px solid var(--rule)}
+.irow:first-child{border-top:none}
+.irow label{font-size:13px;color:var(--ink-2)}
+.irow.hdr span{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);text-align:right}
+.irow.hdr span:first-child{text-align:left}
+.irow input{width:100%;font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-variant-numeric:tabular-nums;
+  text-align:right;padding:5px 8px;border:1px solid var(--rule);border-radius:5px;background:var(--surface-2);color:var(--ink)}
+.irow input:focus{border-color:var(--accent);background:var(--surface)}
+.irow.wide{grid-template-columns:1fr 164px}
+
+footer{border-top:1px solid var(--rule);padding-block:22px 48px;color:var(--ink-3);font-size:12px;font-family:"IBM Plex Mono",monospace}
+
+@media (max-width:960px){
+  .cols{grid-template-columns:1fr;gap:0}
+  nav.toc{position:static;max-height:none;overflow:visible;padding-block:16px 0;border-bottom:1px solid var(--rule)}
+  nav.toc ol{flex-direction:row;flex-wrap:wrap;gap:5px}
+  nav.toc a{border:1px solid var(--rule);border-radius:999px;padding:4px 11px;font-size:12.5px;border-left-width:1px}
+  nav.toc a.on{border-color:var(--accent)}
+  nav.toc a .io{display:none}
+  nav.toc .grp{width:100%;padding:10px 2px 2px}
+}
+@media (max-width:820px){
+  .flow.f5,.flow.f3{grid-template-columns:1fr}
+  .farr{margin:2px 0}
+  .farr .ch{transform:rotate(90deg)}
+  .spec{grid-template-columns:1fr}
+  .specline{flex-wrap:wrap;gap:7px}
+  .specline .lbl{white-space:normal}
+  .specline .rule{min-width:26px}
+  .bar,.scale{grid-template-columns:1fr;gap:5px}
+  .bar .bl,.scale .sl{text-align:left}
+}
+@media (max-width:700px){
+  .calc{grid-template-columns:1fr}
+  .grid22{grid-template-columns:1fr}
+  .grid22 .hh{display:none}
+  .grid22 .vh{writing-mode:horizontal-tb;justify-content:flex-start;padding-top:6px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ---------- page-specific ---------- */
+.src{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);max-width:74ch}
+.tl{display:flex;flex-direction:column;max-width:1020px}
+.tl .e{display:grid;grid-template-columns:92px minmax(0,1fr);gap:16px;padding:11px 0;border-top:1px solid var(--rule)}
+.tl .e:first-child{border-top:none}
+.tl .dt{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--accent);font-weight:600}
+.tl .bd{font-size:14.5px;color:var(--ink-2)} .tl .bd b{color:var(--ink);font-weight:600}
+.tl .e.now .dt{color:var(--credit)}
+.ob{max-width:1020px;border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:0 12px 12px 0;
+  background:var(--surface);padding:14px 18px;display:flex;flex-direction:column;gap:9px}
+.ob h4{margin:0;font-size:14.5px;font-weight:600;font-family:"Public Sans",sans-serif;color:var(--credit)}
+.ob .you{font-size:15px;color:var(--ink)}
+.ob .you b{color:var(--accent);font-weight:600}
+.ob .tag{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.pill3{display:flex;flex-wrap:wrap;gap:7px}
+.pill3 span{font-family:"IBM Plex Mono",monospace;font-size:11.5px;border:1px solid var(--rule-strong);
+  border-radius:999px;padding:4px 11px;color:var(--ink-2)}
+.pill3 span.a{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.pill3 span.b{border-color:var(--credit);color:var(--credit);background:var(--credit-soft)}
+@media (max-width:760px){
+  .scrow{grid-template-columns:1fr} .scrow .sides{grid-template-columns:1fr}
+  .scrow .sd,.scrow .vd{border-left:none;border-top:1px solid var(--rule)}
+  .scrow.sch{display:none}
+  .tug .row,.tug .net{grid-template-columns:1fr 150px 1fr;gap:8px}
+}
+
+/* ---------- session 3 additions ---------- */
+.buckets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.buckets .bh{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink-3);padding-bottom:5px;text-align:center}
+.buckets .bh.a{color:var(--accent)} .buckets .bh.c{color:var(--flag)} .buckets .bh.b{color:var(--credit)}
+.buckets .col{display:flex;flex-direction:column;min-width:0}
+.src{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);max-width:74ch}
+.say{max-width:1020px;border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:0 12px 12px 0;
+  background:var(--surface);padding:16px 20px;display:flex;flex-direction:column;gap:11px}
+.say .tag{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.say p{font-size:16px;line-height:1.62}
+.say b{font-weight:600}
+.ladder{display:flex;flex-direction:column;max-width:1020px}
+.ladder .r{display:grid;grid-template-columns:30px minmax(0,1fr);gap:15px;padding:12px 0;border-top:1px solid var(--rule)}
+.ladder .r:first-child{border-top:none;padding-top:2px}
+.ladder .r .n{width:30px;height:30px;border-radius:50%;background:var(--surface-2);border:1.5px solid var(--rule-strong);
+  color:var(--ink-2);display:flex;align-items:center;justify-content:center;font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-weight:600}
+.ladder .r.key .n{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.ladder .r .bd{min-width:0}
+.ladder .r .bd b{display:block;font-size:15px;font-weight:600;margin-bottom:3px}
+.ladder .r .bd span{font-size:14.5px;color:var(--ink-2)}
+@media (max-width:700px){.buckets{grid-template-columns:1fr}.buckets .bh{text-align:left}}
+
+/* ---------- building blocks ---------- */
+.chain{display:grid;grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr);
+  gap:10px;align-items:stretch}
+.chain .fnode{justify-content:flex-start}
+.chain .fnode em{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-3);display:block;margin-bottom:2px}
+.chain .fnode.acc em{color:var(--accent)}
+.chain .fnode.bad em{color:var(--credit)}
+.fam{display:flex;align-items:baseline;gap:14px;margin-top:20px}
+.fam:first-of-type{margin-top:4px}
+.fam .fn{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent);white-space:nowrap}
+.fam .ft{font-size:15px;font-weight:600;font-family:"Public Sans",sans-serif;white-space:nowrap}
+.fam .ln{flex:1;height:1px;background:var(--rule)}
+.blocks{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:12px;max-width:1020px;margin-top:12px}
+.blk{border:1px solid var(--rule);border-radius:10px;background:var(--surface);padding:13px 15px;
+  display:flex;flex-direction:column;gap:7px;min-width:0}
+.blk .bn{font-size:14.5px;font-weight:600;line-height:1.3}
+.blk .bp{font-size:13.5px;color:var(--ink-2);line-height:1.5}
+.blk .ba{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--accent);background:var(--accent-soft);
+  border-radius:6px;padding:6px 10px;line-height:1.55;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.blk .bu{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--ink-3);margin-top:auto;padding-top:2px}
+.blk .bu a{color:var(--ink-3);text-decoration:none;border-bottom:1px solid var(--rule-strong)}
+.blk .bu a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+@media (max-width:860px){
+  .chain{grid-template-columns:1fr}
+  .chain .farr{margin:2px 0}
+  .chain .farr .ch{transform:rotate(90deg)}
+}
+</style>
+<style>
+/* ---------- session 4 additions ---------- */
+.gapnote{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);margin-top:4px}
+.bar .bf.zz{background:var(--ink-3);border:1.2px solid var(--ink-3);min-width:2px}
+.kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:0;max-width:1020px;
+  border:1px solid var(--rule);border-radius:12px;overflow:hidden;background:var(--surface)}
+.kv .c{padding:13px 16px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);min-width:0}
+.kv .c .k{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.kv .c .v{font-family:Bitter,serif;font-size:19px;font-weight:600;line-height:1.25;font-variant-numeric:tabular-nums;margin-top:3px}
+.kv .c .s{font-size:12.5px;color:var(--ink-2);margin-top:2px}
+.kv .c.a .v{color:var(--accent)} .kv .c.b .v{color:var(--credit)} .kv .c.c .v{color:var(--flag)}
+.why{display:flex;flex-direction:column;max-width:1020px;border:1px solid var(--rule);border-radius:12px;overflow:hidden}
+.why .r{display:grid;grid-template-columns:200px minmax(0,1fr);border-top:1px solid var(--rule)}
+.why .r:first-child{border-top:none}
+.why .r .a{padding:12px 15px;background:var(--surface-2);font-size:14px;font-weight:600;min-width:0}
+.why .r .b{padding:12px 15px;font-size:14px;color:var(--ink-2);min-width:0}
+.why .r .b b{color:var(--ink);font-weight:600}
+@media (max-width:700px){.why .r{grid-template-columns:1fr}.why .r .b{border-top:1px solid var(--rule)}}
+</style>
+
+<header>
+  <div class="wrap hd">
+    <div>
+      <div class="eyebrow">4505 GMM &middot; Session 4 &middot; September 21, 2026</div>
+      <h1>Rich place, poor place</h1>
+      <p class="gist">Why the best-off countries live 40 to 50 times better than the worst-off, and what it would actually take to move. Worked on one country: Malawi.</p>
+    </div>
+    <div class="meta">
+      Readings <b>None assigned</b><br>
+      Prep <b>Pick a poor country</b><br>
+      Worked here <b>Malawi</b>
+    </div>
+  </div>
+</header>
+
+<div class="wrap cols">
+
+<nav class="toc" aria-label="Contents">
+  <div class="toc-h">On this page</div>
+  <ol id="toclist">
+    <li class="grp">Walk in knowing</li>
+    <li><a href="#nums"><span class="n"></span><span>Six numbers</span></a></li>
+    <li><a href="#model"><span class="n"></span><span>The whole session</span></a></li>
+    <li><a href="#blocks"><span class="n"></span><span>Building blocks</span></a></li>
+    <li class="grp">Why the gap exists</li>
+    <li><a href="#gap"><span class="n">1</span><span>How big it really is</span></a></li>
+    <li><a href="#prox"><span class="n">2</span><span>The three inputs</span></a></li>
+    <li><a href="#deep"><span class="n">3</span><span>What sits behind them</span></a></li>
+    <li><a href="#inst"><span class="n">4</span><span>One town, one fence</span></a></li>
+    <li><a href="#conv"><span class="n">5</span><span>Catching up</span><span class="io">&#9679;</span></a></li>
+    <li><a href="#bind"><span class="n">6</span><span>The binding constraint</span><span class="io">&#9679;</span></a></li>
+    <li class="grp">The worked country</li>
+    <li><a href="#mwi"><span class="n">7</span><span>Malawi, the facts</span></a></li>
+    <li><a href="#cons"><span class="n">8</span><span>What is holding it back</span></a></li>
+    <li><a href="#kick"><span class="n">9</span><span>What would kickstart it</span></a></li>
+    <li><a href="#stuck"><span class="n">10</span><span>Why it hasn't happened</span></a></li>
+    <li><a href="#comp"><span class="n">11</span><span>Three countries answer back</span></a></li>
+    <li><a href="#say"><span class="n">12</span><span>What to say in class</span></a></li>
+    <li class="grp">Reference</li>
+    <li><a href="#traps"><span class="n"></span><span>Traps</span></a></li>
+    <li><a href="#fx"><span class="n"></span><span>Formula sheet</span></a></li>
+    <li><a href="#gloss"><span class="n"></span><span>Glossary</span></a></li>
+    <li><a href="#mat"><span class="n"></span><span>Materials</span></a></li>
+    <li><a href="#qa"><span class="n"></span><span>Q&amp;A log</span></a></li>
+  </ol>
+</nav>
+
+<main>
+
+<!-- ============ SIX NUMBERS ============ -->
+<section id="nums">
+  <h2>Six numbers to walk in with</h2>
+  <div class="stats rv">
+    <div class="stat"><div class="k">Canada &divide; Malawi</div><div class="v"><span class="count" data-to="38" data-suf="&times;">38&times;</span></div><div class="s">output per person, PPP, 2025</div></div>
+    <div class="stat b"><div class="k">Malawi per person</div><div class="v">$1,758</div><div class="s">a year, PPP, 2025</div></div>
+    <div class="stat b"><div class="k">Falling since</div><div class="v"><span class="count" data-to="4" data-suf=" yrs">4 yrs</span></div><div class="s">per person, four straight years</div></div>
+    <div class="stat c"><div class="k">Malawi inflation</div><div class="v"><span class="count" data-to="28.4" data-dp="1" data-suf="%">28.4%</span></div><div class="s">2025 average, highest in region</div></div>
+    <div class="stat m"><div class="k">Capital alone would need</div><div class="v">55,000&times;</div><div class="s">more machines per worker</div></div>
+    <div class="stat"><div class="k">Bangladesh clothing</div><div class="v">$48.6B</div><div class="s">exports, vs Malawi's $15B economy</div></div>
+  </div>
+  <p class="src">Per person figures are IMF World Economic Outlook 2025 estimates at purchasing power parity. Malawi's inflation, growth and fiscal numbers are the World Bank's Malawi Economic Monitor and the IMF 2025 Article IV. The 55,000 figure is worked out in section 2.</p>
+</section>
+
+<!-- ============ MODEL ============ -->
+<section id="model">
+  <h2>The whole session, in one picture</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>Rich countries are not rich because they have more stuff. <b>They are rich because their stuff and their people produce more, and what decides that is the rules they live under.</b></div></div>
+  <figure class="rv">
+    <div class="dg">
+      <div class="flow f5">
+        <div class="fstack">
+          <div class="fnode"><b>Geography</b><span>coast, climate, disease, distance</span></div>
+          <div class="fnode acc"><b>Institutions</b><span>who can own, enforce, and keep the gains</span></div>
+          <div class="fnode"><b>Integration</b><span>trade, capital, ideas from outside</span></div>
+        </div>
+        <div class="farr"><span class="ch">&rarr;</span><i>decide</i></div>
+        <div class="fstack">
+          <div class="fnode"><b>Machines and roads</b><span>physical capital, K</span></div>
+          <div class="fnode"><b>Skills and health</b><span>human capital, H</span></div>
+          <div class="fnode acc"><b>How well they combine</b><span>productivity, A</span></div>
+        </div>
+        <div class="farr"><span class="ch">&rarr;</span><i>produce</i></div>
+        <div class="fstack">
+          <div class="fnode acc"><b>Output per person</b><span>real GDP per head, the yardstick from session 3</span></div>
+          <div class="fnode bad"><b>A 38&times; gap that is not closing</b><span>Canada vs Malawi, and widening</span></div>
+        </div>
+      </div>
+    </div>
+    <figcaption>Left column is the deep causes, middle is the proximate causes, right is the result. Almost every argument in this session is a fight about the left column.</figcaption>
+  </figure>
+  <div class="note acc"><b>The move that earns marks.</b> When someone names a cause, ask which column it sits in. Most answers in class will be middle-column answers ("they need more capital"), which just restates the question. The interesting answer is always why the middle column is empty.</div>
+</section>
+
+<!-- ============ BUILDING BLOCKS ============ -->
+<section id="blocks">
+  <h2>Building blocks</h2>
+  <p class="lede">Every term the rest of this page uses, defined once, with something concrete attached. Read the families as a sequence: what we measure, what makes it, what decides that, and why it stays stuck.</p>
+  <figure class="rv">
+    <div class="dg pad0">
+      <div class="chain">
+        <div class="fnode mute"><em>Family A</em><b>The yardstick</b><span>what "rich" means here</span></div>
+        <div class="farr"><span class="ch">&rarr;</span></div>
+        <div class="fnode"><em>Family B</em><b>The three inputs</b><span>what actually makes output</span></div>
+        <div class="farr"><span class="ch">&rarr;</span></div>
+        <div class="fnode acc"><em>Family C</em><b>The deep causes</b><span>what sets the inputs</span></div>
+        <div class="farr"><span class="ch">&rarr;</span></div>
+        <div class="fnode bad"><em>Family D</em><b>The traps</b><span>why it does not fix itself</span></div>
+      </div>
+    </div>
+    <figcaption>Each family rests on the one before it. Skip a layer and the argument in section 8 stops making sense.</figcaption>
+  </figure>
+
+  <div class="fam"><span class="fn">Family A</span><span class="ft">The yardstick</span><span class="ln"></span></div>
+  <div class="blocks">
+    <div class="blk"><div class="bn">Real GDP per person</div><div class="bp">Output, stripped of price rises, divided by heads.</div><div class="ba">Malawi 2025: $1,758 PPP</div><div class="bu">used in <a href="#gap">&sect;1</a></div></div>
+    <div class="blk"><div class="bn">PPP</div><div class="bp">Purchasing power parity. Repriced so a haircut costs the same everywhere, which stops cheap countries looking poorer than they are.</div><div class="ba">Malawi: $580 market, $1,758 PPP</div><div class="bu">used in <a href="#gap">&sect;1</a></div></div>
+    <div class="blk"><div class="bn">Growth per person</div><div class="bp">GDP growth minus population growth. The only growth that changes a life.</div><div class="ba">1.9% &minus; 2.6% = &minus;0.7%</div><div class="bu">used in <a href="#mwi">&sect;7</a></div></div>
+    <div class="blk"><div class="bn">Rule of 70</div><div class="bp">Years to double, roughly, is 70 divided by the yearly percentage rate.</div><div class="ba">70 &divide; 0.7 = 100 yrs to halve</div><div class="bu">used in <a href="#conv">&sect;5</a></div></div>
+  </div>
+
+  <div class="fam"><span class="fn">Family B</span><span class="ft">The three inputs</span><span class="ln"></span></div>
+  <div class="blocks">
+    <div class="blk"><div class="bn">Physical capital, K</div><div class="bp">Machines, buildings, roads, ports, power lines. Anything made in order to make other things.</div><div class="ba">Malawi grid reach: 15.6% of people, 2023</div><div class="bu">used in <a href="#prox">&sect;2</a></div></div>
+    <div class="blk"><div class="bn">Human capital, H</div><div class="bp">Schooling, skills and health carried by workers.</div><div class="ba">Malawi: 4.7 mean years of school</div><div class="bu">used in <a href="#prox">&sect;2</a></div></div>
+    <div class="blk"><div class="bn">Productivity, A</div><div class="bp">Total factor productivity. How much output the same K and H yield. Technology, organisation, and how sensibly resources get allocated.</div><div class="ba">The residual: what K and H fail to explain</div><div class="bu">used in <a href="#prox">&sect;2</a></div></div>
+    <div class="blk"><div class="bn">Diminishing returns</div><div class="bp">The tenth tractor adds less than the first. Why piling on capital cannot close a large gap.</div><div class="ba">Double K, output rises only 26%</div><div class="bu">used in <a href="#prox">&sect;2</a></div></div>
+    <div class="blk"><div class="bn">Structural transformation</div><div class="bp">Workers moving out of subsistence farming into firms that use machines. The core of every takeoff on record.</div><div class="ba">Malawi: over 80% still in agriculture</div><div class="bu">used in <a href="#kick">&sect;9</a></div></div>
+  </div>
+
+  <div class="fam"><span class="fn">Family C</span><span class="ft">The deep causes</span><span class="ln"></span></div>
+  <div class="blocks">
+    <div class="blk"><div class="bn">Institutions</div><div class="bp">The rules that decide who can own, enforce a contract, and keep what they earn.</div><div class="ba">Nogales: one fence, two incomes</div><div class="bu">used in <a href="#inst">&sect;4</a></div></div>
+    <div class="blk"><div class="bn">Inclusive institutions</div><div class="bp">Broad property rights, open entry, a state that both enforces rules and is bound by them.</div><div class="ba">Botswana: $20,732 PPP</div><div class="bu">used in <a href="#inst">&sect;4</a></div></div>
+    <div class="blk"><div class="bn">Extractive institutions</div><div class="bp">Rules built to move income to whoever holds power. Investment is pointless if the gains get taken.</div><div class="ba">Forex given by permission, not price</div><div class="bu">used in <a href="#stuck">&sect;10</a></div></div>
+    <div class="blk"><div class="bn">Geography</div><div class="bp">Coastline, climate, soil, disease, distance to a market. Real, but it fixes nothing on its own.</div><div class="ba">Malawi: landlocked, 800 km to Nacala</div><div class="bu">used in <a href="#deep">&sect;3</a></div></div>
+    <div class="blk"><div class="bn">Integration</div><div class="bp">How much trade, investment and know-how crosses the border. The channel copying arrives through.</div><div class="ba">Malawi goods exports: $880m, 2025</div><div class="bu">used in <a href="#deep">&sect;3</a></div></div>
+    <div class="blk"><div class="bn">Catch-up growth</div><div class="bp">Growing fast by copying what already works elsewhere. Only available to countries far behind the frontier.</div><div class="ba">Korea ran about 6.5% per person</div><div class="bu">used in <a href="#conv">&sect;5</a></div></div>
+  </div>
+
+  <div class="fam"><span class="fn">Family D</span><span class="ft">Why it stays stuck</span><span class="ln"></span></div>
+  <div class="blocks">
+    <div class="blk"><div class="bn">Binding constraint</div><div class="bp">The one shortage that stops growth right now. Fixing anything else changes nothing until it is lifted.</div><div class="ba">Malawi: foreign exchange</div><div class="bu">used in <a href="#bind">&sect;6</a></div></div>
+    <div class="blk"><div class="bn">Balance of payments constraint</div><div class="bp">You can only import as much as you export, borrow or are given. Run out of dollars and production stops.</div><div class="ba">Reserves under 1 month of imports</div><div class="bu">used in <a href="#cons">&sect;8</a></div></div>
+    <div class="blk"><div class="bn">Overvalued exchange rate</div><div class="bp">An official price for the currency above the market's. Makes exports unprofitable and imports a prize worth queueing for.</div><div class="ba">Kwacha pegged at 1,716 since Mar 2024</div><div class="bu">used in <a href="#cons">&sect;8</a></div></div>
+    <div class="blk"><div class="bn">Rent</div><div class="bp">Income from holding a permission rather than producing anything.</div><div class="ba">Buy at 1,716, sell at the street rate</div><div class="bu">used in <a href="#stuck">&sect;10</a></div></div>
+    <div class="blk"><div class="bn">Elite capture</div><div class="bp">A reform is blocked because a small group loses a lot and a large group gains a little each.</div><div class="ba">Who gets the official-rate dollars</div><div class="bu">used in <a href="#stuck">&sect;10</a></div></div>
+    <div class="blk"><div class="bn">Concentrated exports</div><div class="bp">One crop or mineral carries the whole foreign earnings of a country. One bad season becomes a macro crisis.</div><div class="ba">Tobacco: 55% of Malawi's exports</div><div class="bu">used in <a href="#cons">&sect;8</a></div></div>
+    <div class="blk"><div class="bn">Aid dependence</div><div class="bp">Donor money covering the gap year after year, which keeps the lights on and takes the pressure off reform.</div><div class="ba">About 7% of GDP a year, for decades</div><div class="bu">used in <a href="#stuck">&sect;10</a></div></div>
+    <div class="blk"><div class="bn">Debt distress</div><div class="bp">Owing more than can plausibly be serviced, so new lending dries up.</div><div class="ba">Malawi: in distress since 2022</div><div class="bu">used in <a href="#cons">&sect;8</a></div></div>
+  </div>
+</section>
+
+<!-- ============ 1 GAP ============ -->
+<section id="gap">
+  <h2><span class="no">1</span> How big the gap really is</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>Take output per person, reprice it so a haircut costs the same everywhere, and <b>the top of the table is roughly 40 to 50 times the bottom</b>.</div></div>
+  <figure class="rv">
+    <div class="dg">
+      <div class="bars">
+        <div class="bar"><span class="bl">Norway</span><span class="bt"><i class="bf lo" style="--w:100%;width:100%"></i><span class="bc">$111,545</span></span></div>
+        <div class="bar"><span class="bl">United States</span><span class="bt"><i class="bf lo" style="--w:80.7%;width:80.7%"></i><span class="bc">$89,991</span></span></div>
+        <div class="bar"><span class="bl">Canada</span><span class="bt"><i class="bf lo" style="--w:60.1%;width:60.1%"></i><span class="bc">$67,013</span></span></div>
+        <div class="bar"><span class="bl">South Korea</span><span class="bt"><i class="bf lo" style="--w:58.6%;width:58.6%"></i><span class="bc">$65,405</span></span></div>
+        <div class="bar"><span class="bl">China</span><span class="bt"><i class="bf md" style="--w:26.3%;width:26.3%"></i><span class="bc">$29,352</span></span></div>
+        <div class="bar"><span class="bl">Botswana</span><span class="bt"><i class="bf md" style="--w:18.6%;width:18.6%"></i><span class="bc">$20,732</span></span></div>
+        <div class="bar"><span class="bl">Bangladesh</span><span class="bt"><i class="bf md" style="--w:9.2%;width:9.2%"></i><span class="bc">$10,271</span></span></div>
+        <div class="bar"><span class="bl">Ghana</span><span class="bt"><i class="bf md" style="--w:7.7%;width:7.7%"></i><span class="bc">$8,613</span></span></div>
+        <div class="bar"><span class="bl">Haiti</span><span class="bt"><i class="bf hi" style="--w:2.7%;width:2.7%"></i><span class="bc">$2,999</span></span></div>
+        <div class="bar"><span class="bl">DR Congo</span><span class="bt"><i class="bf hi" style="--w:1.8%;width:1.8%"></i><span class="bc">$2,033</span></span></div>
+        <div class="bar"><span class="bl">Malawi</span><span class="bt"><i class="bf hi" style="--w:1.6%;width:1.6%"></i><span class="bc">$1,758</span></span></div>
+        <div class="bar"><span class="bl">Burundi</span><span class="bt"><i class="bf hi" style="--w:0.9%;width:0.9%"></i><span class="bc">$994</span></span></div>
+      </div>
+      <p class="gapnote">GDP per person, PPP, IMF estimates for 2025. Bars are to scale against Norway.</p>
+    </div>
+    <figcaption>The bottom four bars look like printing errors. They are not. That is what a 50 to 100 fold gap looks like when you draw it honestly.</figcaption>
+  </figure>
+
+  <h3>The same bottom five, rescaled</h3>
+  <figure class="rv">
+    <div class="dg">
+      <div class="bars">
+        <div class="bar"><span class="bl">Bangladesh</span><span class="bt"><i class="bf md" style="--w:100%;width:100%"></i><span class="bc">$10,271</span></span></div>
+        <div class="bar"><span class="bl">Ghana</span><span class="bt"><i class="bf md" style="--w:83.9%;width:83.9%"></i><span class="bc">$8,613</span></span></div>
+        <div class="bar"><span class="bl">Haiti</span><span class="bt"><i class="bf hi" style="--w:29.2%;width:29.2%"></i><span class="bc">$2,999</span></span></div>
+        <div class="bar"><span class="bl">DR Congo</span><span class="bt"><i class="bf hi" style="--w:19.8%;width:19.8%"></i><span class="bc">$2,033</span></span></div>
+        <div class="bar"><span class="bl">Malawi</span><span class="bt"><i class="bf hi" style="--w:17.1%;width:17.1%"></i><span class="bc">$1,758</span></span></div>
+        <div class="bar"><span class="bl">Burundi</span><span class="bt"><i class="bf hi" style="--w:9.7%;width:9.7%"></i><span class="bc">$994</span></span></div>
+      </div>
+      <p class="gapnote">Same figures, now scaled against Bangladesh.</p>
+    </div>
+    <figcaption>Zoom in and the poor countries are not one block either. Bangladesh is six times Malawi, and in 1972 it was the country people used as a byword for hopeless.</figcaption>
+  </figure>
+
+  <div class="ex">
+    <span class="lb">Do the ratios yourself</span>
+    <div class="calc-line">Canada &divide; Malawi = 67,013 &divide; 1,758 = <b>38.1&times;</b></div>
+    <div class="calc-line">United States &divide; Malawi = 89,991 &divide; 1,758 = <b>51.2&times;</b></div>
+    <div class="calc-line">United States &divide; Burundi = 89,991 &divide; 994 = <b>90.5&times;</b></div>
+    <p>The class figure of 40 to 50 fold is the middle of that range. Take the extremes and you get past 100.</p>
+  </div>
+
+  <div class="note"><b>Say it in human terms.</b> 38 times is not "Canadians have nicer phones". It is the difference between a life where a bad harvest is an inconvenience and one where it is a funeral. Malawi's poverty rate is projected at 76.6% for 2026, and 76% live on under $3 a day.</div>
+</section>
+
+<!-- ============ 2 PROXIMATE ============ -->
+<section id="prox">
+  <h2><span class="no">2</span> The three inputs, and why two of them cannot explain it</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>Output comes from machines, skills, and how well they are combined. <b>The first two are nowhere near enough to explain a 38&times; gap, so the third is doing the work.</b></div></div>
+  <figure class="rv">
+    <div class="dg">
+      <div class="flow f3">
+        <div class="fstack">
+          <div class="fnode"><b>K, machines and roads</b><span>you can build or import these</span></div>
+          <div class="fnode"><b>H, skills and health</b><span>you can school and vaccinate for these</span></div>
+          <div class="fnode acc"><b>A, how well they combine</b><span>you cannot buy this</span></div>
+        </div>
+        <div class="farr"><span class="ch">&rarr;</span><i>gives</i></div>
+        <div class="fnode acc"><b>Output per worker</b><span>Y = A &times; K<sup>&#8531;</sup> &times; H<sup>&#8532;</sup>, the standard textbook form. Raise A and everything else gets more productive at once</span></div>
+      </div>
+    </div>
+    <figcaption>A is the residual: whatever output is left over once you have counted the machines and the schooling. It absorbs technology, management, and whether resources sit where they are useful.</figcaption>
+  </figure>
+
+  <h3>Why capital alone is a dead end</h3>
+  <p class="lede">Capital has <strong>diminishing returns</strong>. With the standard one-third exponent, output rises with the cube root of capital, so the arithmetic gets absurd fast.</p>
+  <div class="steps">
+    <div class="step">
+      <div class="num">1</div>
+      <div class="sb">
+        <h4>Double the machines, see what you get</h4>
+        <p>Hold skills and productivity fixed, give every worker twice the equipment.</p>
+        <pre class="math">Y &prop; K<sup>&#8531;</sup>
+Output multiple = 2<sup>&#8531;</sup>
+                = <b>1.26, i.e. 26% more output</b>   <i>for 100% more capital</i></pre>
+      </div>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <div class="sb">
+        <h4>Now run it backwards to close the Canada gap</h4>
+        <p>If capital were the only difference, how much more of it would Malawi need? Invert the exponent.</p>
+        <pre class="math">Y multiple needed = 38.1
+K multiple        = 38.1<sup>3</sup>
+                  = 38.1 &times; 38.1 &times; 38.1
+                  = <b>55,306&times; the capital per worker</b></pre>
+        <p>Fifty-five thousand times. No country has ever been short of capital by that factor, and no amount of aid or foreign investment could supply it. <strong>Capital is not the explanation.</strong></p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <div class="sb">
+        <h4>Schooling has the same problem, in miniature</h4>
+        <p>Malawi averages 4.7 years of schooling, Canada roughly 13.5. An extra year of school is usually worth about 8% more earnings, so run the whole gap through that.</p>
+        <pre class="math">Extra years        = 13.5 &minus; 4.7 = 8.8
+Output multiple    = 1.08<sup>8.8</sup>
+                   = <b>about 2.0&times;</b>   <i>illustrative, standard Mincer return</i></pre>
+        <p>Doubling. Against a gap of 38 times. Add capital's plausible contribution and you have explained maybe a quarter of it.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="num">4</div>
+      <div class="sb">
+        <h4>So the residual is the story</h4>
+        <p>Whatever is left after K and H is A: productivity. The question "why are some places poor" is really <strong>"why is A so low", and A is about rules, not resources.</strong></p>
+      </div>
+    </div>
+  </div>
+  <p class="src">The one-third exponent and the 8% return to a year of schooling are the standard textbook values, used here to show the shape of the argument. Treat the 2.0&times; as illustrative, not as a Malawi measurement.</p>
+</section>
+
+<!-- ============ 3 DEEP ============ -->
+<section id="deep">
+  <h2><span class="no">3</span> What sits behind the inputs: three rival explanations</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>Geography, institutions and integration all claim to explain low productivity. <b>They are not equally good, and the disagreement is the examinable part.</b></div></div>
+  <div class="sc rv">
+    <div class="scrow sch"><div class="cl">Claim</div><div class="sides"><div class="sd">The case for</div><div class="sd">The case against</div></div><div class="vd">Verdict</div></div>
+    <div class="scrow">
+      <div class="cl">Geography did it</div>
+      <div class="sides">
+        <div class="sd a">Tropics, malaria, poor soil, no coast. <b>Landlocked countries trade less</b> and pay more for everything.</div>
+        <div class="sd b">Singapore is tropical and rich. Switzerland is landlocked. <b>Korea's land did not change in 1960.</b></div>
+      </div>
+      <div class="vd d">Real, not decisive</div>
+    </div>
+    <div class="scrow">
+      <div class="cl">Institutions did it</div>
+      <div class="sides">
+        <div class="sd a">Rules decide whether investing is worth it. <b>Borders split identical places into rich and poor sides.</b></div>
+        <div class="sd b">Hard to measure, and rich countries may just afford better rules. <b>China grew fast without them.</b></div>
+      </div>
+      <div class="vd a">The strongest</div>
+    </div>
+    <div class="scrow">
+      <div class="cl">Integration did it</div>
+      <div class="sides">
+        <div class="sd a">Every takeoff on record was export-led. <b>Copying is faster than inventing.</b></div>
+        <div class="sd b">Openness without rules gives you a mine and an airstrip. <b>Order of causation is disputed.</b></div>
+      </div>
+      <div class="vd d">Channel, not cause</div>
+    </div>
+  </div>
+  <div class="note acc"><b>The synthesis to carry into class.</b> Geography sets the starting difficulty. Institutions decide whether a country beats it. Integration is the pipe good rules use to import other people's productivity. Naming all three and ranking them beats naming one.</div>
+</section>
+
+<!-- ============ 4 INSTITUTIONS ============ -->
+<section id="inst">
+  <h2><span class="no">4</span> One town, one fence, two incomes</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>Nogales, Arizona and Nogales, Sonora are the same town split by a border. <b>Same desert, same people, same food, and incomes several times apart.</b></div></div>
+  <figure class="rv">
+    <div class="dg">
+      <div class="flow f3">
+        <div class="fstack">
+          <div class="fnode mute"><b>Identical</b><span>climate, soil, disease, ancestry, language, cuisine</span></div>
+          <div class="fnode acc"><b>Different</b><span>property rights, courts, policing, who can start a firm</span></div>
+        </div>
+        <div class="farr"><span class="ch">&rarr;</span><i>result</i></div>
+        <div class="fstack">
+          <div class="fnode acc"><b>Nogales, Arizona</b><span>high income, schooling, public order</span></div>
+          <div class="fnode bad"><b>Nogales, Sonora</b><span>a fraction of the income, worse of everything else</span></div>
+        </div>
+      </div>
+    </div>
+    <figcaption>Acemoglu, Johnson and Robinson's opening example. They shared the 2024 Nobel for this line of work. It is the cleanest natural experiment in the subject because geography is held fixed by construction.</figcaption>
+  </figure>
+  <div class="grid2">
+    <div class="card">
+      <h4>Inclusive institutions</h4>
+      <p>Broad property rights, open entry, courts that bind the powerful too.</p>
+      <ul class="t">
+        <li><strong>You invest</strong> because you keep the gains</li>
+        <li><strong>New firms enter</strong> and old ones can fail</li>
+        <li><strong>Talent sorts</strong> by ability, not connection</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Extractive institutions</h4>
+      <p>Rules that move income to whoever holds power.</p>
+      <ul class="t">
+        <li><strong>You do not invest</strong> because it can be taken</li>
+        <li><strong>Entry is blocked</strong> to protect incumbents</li>
+        <li><strong>Talent sorts</strong> into getting permissions</li>
+      </ul>
+    </div>
+  </div>
+  <div class="ex">
+    <span class="lb">The mechanism, concretely</span>
+    <p>A Malawian trader who could earn a fortune importing fertiliser at the official rate is not producing fertiliser. <strong>She is producing an application.</strong> The talent is real, the effort is real, the output is zero. That is what low A looks like on the ground.</p>
+  </div>
+</section>
+
+<!-- ============ 5 CATCH-UP ============ -->
+<section id="conv">
+  <h2><span class="no">5</span> Catching up is arithmetically possible and historically rare</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>A poor country can grow faster than a rich one because copying beats inventing. <b>Most do not, and the ones that do not fall further behind every year.</b></div></div>
+  <div class="ia rv">
+    <div class="ia-top">
+      <div class="ttl">How long until Malawi reaches Canada?</div>
+      <div class="hint">Drag the sliders</div>
+    </div>
+    <div class="ia-body">
+      <div class="seg" id="cSeg" style="margin-bottom:16px">
+        <button type="button" data-k="now">Malawi today</button>
+        <button type="button" data-k="afr">Regional average</button>
+        <button type="button" data-k="bng" aria-pressed="true">Bangladesh pace</button>
+        <button type="button" data-k="kor">Korea 1960&ndash;2000</button>
+        <button type="button" data-k="chn">China 1990&ndash;2010</button>
+      </div>
+      <div class="slider" style="margin-bottom:12px">
+        <label for="cGrow">Malawi, per person</label>
+        <input type="range" id="cGrow" min="-2" max="10" step="0.1" value="4.5">
+        <span class="val" id="cGrowV">4.5% / yr</span>
+      </div>
+      <div class="slider">
+        <label for="cCan">Canada, per person</label>
+        <input type="range" id="cCan" min="0" max="3" step="0.1" value="1.5">
+        <span class="val" id="cCanV">1.5% / yr</span>
+      </div>
+      <figure style="margin-top:18px">
+        <svg id="cChart" class="d" viewBox="0 0 780 215" role="img" aria-label="Malawi income as a share of Canada's over time"></svg>
+      </figure>
+      <div class="kpis" id="cKpis"></div>
+      <p class="fb" id="cNote" style="margin-top:14px"></p>
+    </div>
+  </div>
+  <p class="src">Starting points are the IMF 2025 PPP estimates: Malawi $1,758, Canada $67,013, a ratio of 38.1. Growth rates on the sliders are yours to set; the presets are rough historical averages, not forecasts.</p>
+
+  <h3>The one fact that makes catch-up believable</h3>
+  <div class="ex">
+    <span class="lb">Korea and Ghana</span>
+    <p>In 1960 South Korea and Ghana had <strong>roughly the same income per person</strong>. Korea had no oil, no diamonds, no coastline advantage over Ghana, and had just been flattened by a war.</p>
+    <div class="calc-line">2025: Korea $65,405 &nbsp;vs&nbsp; Ghana $8,613 = <b>7.6&times;</b></div>
+    <p>Nothing about the land changed. Everything about the rules did. <strong>This is the single best rebuttal to "they are poor because of where they are".</strong></p>
+  </div>
+</section>
+
+<!-- ============ 6 BINDING CONSTRAINT ============ -->
+<section id="bind">
+  <h2><span class="no">6</span> Finding the one thing that is actually binding</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>A poor country fails a hundred tests at once. <b>Fixing the wrong one changes nothing, so the job is to find the shortage that is biting right now.</b></div></div>
+  <figure class="rv">
+    <div class="dg">
+      <div class="flow f3">
+        <div class="fnode"><b>Too little private investment</b><span>the thing you actually observe</span></div>
+        <div class="farr"><span class="ch">&rarr;</span><i>because</i></div>
+        <div class="fstack">
+          <div class="fnode"><b>Returns are low</b><span>no power, no roads, no skills, no market to sell into</span></div>
+          <div class="fnode acc"><b>You cannot keep the returns</b><span>tax, seizure, inflation, a rate you cannot convert at</span></div>
+          <div class="fnode"><b>Money is too dear</b><span>no banks, no savings, government eating the credit</span></div>
+        </div>
+      </div>
+    </div>
+    <figcaption>The growth diagnostics fork, from Hausmann, Rodrik and Velasco. Work down the branch where the price of the missing thing is highest. In Malawi that price is the gap between the official and street exchange rate.</figcaption>
+  </figure>
+
+  <h3>Sort these nine into the right column</h3>
+  <p class="lede">Deep causes are rules and geography. Proximate causes are the missing inputs. Symptoms are what you see when both are broken, and <strong>most class answers are symptoms</strong>.</p>
+  <div class="ia rv">
+    <div class="ia-top"><div class="ttl">Cause or symptom?</div><div class="hint">Pick a card, then a column</div></div>
+    <div class="ia-body">
+      <div class="tray" id="bTray"></div>
+      <div class="buckets">
+        <div class="col"><div class="bh a">Deep cause</div><div class="qd" data-b="deep"></div></div>
+        <div class="col"><div class="bh c">Proximate cause</div><div class="qd" data-b="prox"></div></div>
+        <div class="col"><div class="bh b">Symptom</div><div class="qd" data-b="symp"></div></div>
+      </div>
+      <p class="fb" id="bFb" style="margin-top:14px">Nine cards. Start anywhere.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7 MALAWI FACTS ============ -->
+<section id="mwi">
+  <h2><span class="no">7</span> The country: Malawi</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>21 million people, landlocked, 80% farming, one export crop, and <b>an economy that has shrunk per person for four years running</b>.</div></div>
+  <div class="kv rv">
+    <div class="c a"><div class="k">Output per person</div><div class="v">$1,758</div><div class="s">PPP, 2025. $580 at market rates</div></div>
+    <div class="c b"><div class="k">Growth per person</div><div class="v">&minus;0.7%</div><div class="s">1.9% GDP, 2.6% population</div></div>
+    <div class="c b"><div class="k">Poverty</div><div class="v">76.6%</div><div class="s">projected 2026 headcount</div></div>
+    <div class="c c"><div class="k">Inflation</div><div class="v">28.4%</div><div class="s">2025 average</div></div>
+    <div class="c b"><div class="k">Goods exports</div><div class="v">$880m</div><div class="s">for a $15bn economy</div></div>
+    <div class="c c"><div class="k">Tobacco</div><div class="v">55%</div><div class="s">of those exports</div></div>
+    <div class="c b"><div class="k">Reserves</div><div class="v">&lt;1 mo</div><div class="s">of import cover, official</div></div>
+    <div class="c c"><div class="k">Fiscal deficit</div><div class="v">8.4%</div><div class="s">of GDP, 2025</div></div>
+    <div class="c a"><div class="k">On the grid</div><div class="v">15.6%</div><div class="s">of people, 2023</div></div>
+    <div class="c a"><div class="k">Schooling</div><div class="v">4.7 yrs</div><div class="s">mean for adults</div></div>
+    <div class="c b"><div class="k">In agriculture</div><div class="v">80%+</div><div class="s">of the workforce</div></div>
+    <div class="c b"><div class="k">Informal work</div><div class="v">91%</div><div class="s">of the labour market</div></div>
+  </div>
+
+  <h3>How it got here</h3>
+  <div class="tl">
+    <div class="e"><div class="dt">1964</div><div class="bd">Independence. <b>Cash crops for export, smallholder maize for eating.</b> That split has never really changed.</div></div>
+    <div class="e"><div class="dt">2005</div><div class="bd">The fertiliser subsidy launches. Maize harvests jump, <b>and the programme becomes politically impossible to cut.</b></div></div>
+    <div class="e"><div class="dt">2013</div><div class="bd">Cashgate. Looting of the state payments system; <b>donors freeze budget support</b> and never fully return.</div></div>
+    <div class="e"><div class="dt">2022</div><div class="bd">Debt distress declared. Reserves drain, <b>importers start queueing for dollars.</b></div></div>
+    <div class="e"><div class="dt">Mar 2024</div><div class="bd">Kwacha fixed at 1,716 to the dollar and <b>held there while prices rose 28% a year.</b></div></div>
+    <div class="e"><div class="dt">May 2025</div><div class="bd">The IMF programme lapses without a single review completed. <b>The seal donors rely on is gone.</b></div></div>
+    <div class="e now"><div class="dt">Sep 2025</div><div class="bd">Mutharika wins 56.8% against an incumbent, <b>on fuel queues, food prices and the dollar shortage.</b></div></div>
+  </div>
+  <p class="src">Sources: World Bank Malawi overview and Economic Monitor, IMF 2025 Article IV, AfDB outlook, Al Jazeera and Chatham House on the September 2025 election. Election result: Mutharika 3,035,249 votes to Chakwera's 1,765,170.</p>
+</section>
+
+<!-- ============ 8 CONSTRAINTS ============ -->
+<section id="cons">
+  <h2><span class="no">8</span> What is constraining growth</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>Six things are wrong. <b>One of them, the price of foreign exchange, is stopping the other five from being fixable.</b></div></div>
+  <div class="ladder rv">
+    <div class="r key">
+      <div class="n">1</div>
+      <div class="bd"><b>Foreign exchange, the binding one</b><span>Exports of $880m cannot pay for an economy's imports. The official rate has been frozen at 1,716 since March 2024 while prices rose 28%, so the kwacha is badly overvalued. Dollars are rationed by permission. Firms that could produce cannot buy inputs.</span></div>
+    </div>
+    <div class="r">
+      <div class="n">2</div>
+      <div class="bd"><b>One crop carries the country</b><span>Tobacco is 55% of goods exports, in a world actively trying to smoke less. A bad season is not a bad season, it is a balance of payments crisis.</span></div>
+    </div>
+    <div class="r">
+      <div class="n">3</div>
+      <div class="bd"><b>The state is borrowing what firms need</b><span>A deficit of 8.4% of GDP, financed at home, pushes up yields and crowds private borrowers out. Debt distress since 2022 means no cheap money from abroad either.</span></div>
+    </div>
+    <div class="r">
+      <div class="n">4</div>
+      <div class="bd"><b>Farming is rain-fed and flat</b><span>Over 80% of workers, almost no irrigation, depleted soils, and a fertiliser subsidy that eats the budget without lifting yields much. Cyclone Freddy in 2023 showed how thin the margin is.</span></div>
+    </div>
+    <div class="r">
+      <div class="n">5</div>
+      <div class="bd"><b>Power and distance</b><span>15.6% of people on the grid, hydro that fails in drought, and 800 km of bad road to the nearest port. Every imported input arrives dear and every export leaves dear.</span></div>
+    </div>
+    <div class="r">
+      <div class="n">6</div>
+      <div class="bd"><b>The denominator keeps growing</b><span>Population up 2.6% a year with 41% under 14. The economy has to grow 2.6% just to stand still, and it grew 1.9%.</span></div>
+    </div>
+  </div>
+
+  <h3>Why number one is the binding one</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="num">1</div>
+      <div class="sb">
+        <h4>Look for the highest shadow price</h4>
+        <p>The binding constraint is whatever people are paying the biggest premium to get around. In Malawi that is a dollar.</p>
+        <pre class="math">Official rate   = 1,716 MWK per USD      <i>frozen since Mar 2024</i>
+Street rate     = far above it, depending on the week
+Premium         = <b>the pure profit in holding an import licence</b></pre>
+        <p>Nobody pays a premium for schooling or roads. <strong>They pay it for dollars.</strong></p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <div class="sb">
+        <h4>Check the chain it breaks</h4>
+        <p>Trace one input through. The farmer is not short of ambition, and the constraint bites three steps upstream of him.</p>
+        <pre class="math">No dollars  &rarr;  no fertiliser imported
+            &rarr;  yields fall
+            &rarr;  less to eat and less to sell
+            &rarr;  less foreign currency next year
+            &rarr;  <b>fewer dollars still</b></pre>
+        <p>It is a loop, not a line. That is why it has not self-corrected.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <div class="sb">
+        <h4>Confirm the other constraints are downstream</h4>
+        <p>Build a road and the trucks still need diesel you cannot import. Train a machinist and the factory still cannot buy the machine. <strong>Every other fix runs through the same missing dollar.</strong> That is the test of a binding constraint, and this one passes it.</p>
+      </div>
+    </div>
+  </div>
+  <div class="note"><b>Careful with the word cause.</b> The dollar shortage is the binding constraint, not the deep cause. The deep cause is a rule that sets a price by decree and hands out the difference. Say both.</div>
+</section>
+
+<!-- ============ 9 KICKSTART ============ -->
+<section id="kick">
+  <h2><span class="no">9</span> What would actually kickstart a transition</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>Free the exchange rate first, use the credibility that buys to get a programme and a debt deal, <b>then spend the room on exports rather than on subsidised maize</b>.</div></div>
+  <figure class="rv">
+    <div class="dg pad0">
+      <div class="chain">
+        <div class="fnode acc"><em>Step 1</em><b>Let the kwacha find its price</b><span>with fuel and fertiliser cover for the poorest</span></div>
+        <div class="farr"><span class="ch">&rarr;</span></div>
+        <div class="fnode"><em>Step 2</em><b>Programme and debt deal</b><span>an IMF facility, then restructuring</span></div>
+        <div class="farr"><span class="ch">&rarr;</span></div>
+        <div class="fnode"><em>Step 3</em><b>Spend on exports</b><span>irrigation, corridors, power, not blanket subsidy</span></div>
+        <div class="farr"><span class="ch">&rarr;</span></div>
+        <div class="fnode bad"><em>Step 4</em><b>Something to sell</b><span>minerals, legumes, labour-intensive manufacturing</span></div>
+      </div>
+    </div>
+    <figcaption>The order matters. Doing step 3 before step 1 is how the last twenty years were spent.</figcaption>
+  </figure>
+
+  <div class="tw">
+    <table>
+      <caption>The four moves, and what each is actually for</caption>
+      <thead><tr><th>Move</th><th>What it fixes</th><th>Who pays for it</th><th>Payback</th></tr></thead>
+      <tbody>
+        <tr><td><b>Float the kwacha</b></td><td>Rationing, the parallel premium, export losses</td><td>Urban consumers, importers with licences</td><td class="n">Months</td></tr>
+        <tr><td><b>Get an IMF programme back</b></td><td>The seal donors and lenders need</td><td>Fiscal discipline, subsidy reform</td><td class="n">1&ndash;2 yrs</td></tr>
+        <tr><td><b>Restructure the debt</b></td><td>Room in the budget, access to credit</td><td>Creditors, and political capital</td><td class="n">2&ndash;3 yrs</td></tr>
+        <tr><td><b>Shift subsidy to irrigation and roads</b></td><td>Yields, trade costs, drought exposure</td><td>Farmers who lose the annual handout</td><td class="n">5&ndash;10 yrs</td></tr>
+        <tr class="tot"><td><b>Then: sell something new</b></td><td>The export base itself</td><td>Requires all four above first</td><td class="n">10 yrs+</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>What Malawi could plausibly sell</h3>
+  <div class="grid3">
+    <div class="card">
+      <h4>Minerals</h4>
+      <p>Large rutile and graphite deposits at Kasiya. One mine could exceed total current goods exports.</p>
+      <ul class="t"><li>Needs power, rail and a credible contract regime</li></ul>
+    </div>
+    <div class="card">
+      <h4>Higher value crops</h4>
+      <p>Soy, pigeon pea, groundnut, macadamia, tea. Less exposed than tobacco and already grown.</p>
+      <ul class="t"><li>Needs irrigation, storage and predictable export rules</li></ul>
+    </div>
+    <div class="card">
+      <h4>Labour-intensive assembly</h4>
+      <p>The Bangladesh route. Wages are low enough; almost nothing else is in place.</p>
+      <ul class="t"><li>Needs power, ports and an importable input at a real price</li></ul>
+    </div>
+  </div>
+  <div class="note"><b>Do not promise the mine as the answer.</b> A landlocked country with weak contracts and no power is exactly where a resource find turns into a rent to be fought over. The mine only helps <i>after</i> steps 1 to 3, which is the same institutions argument again.</div>
+</section>
+
+<!-- ============ 10 WHY NOT ============ -->
+<section id="stuck">
+  <h2><span class="no">10</span> Why it hasn't happened</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>Everybody in Lilongwe knows the diagnosis. <b>The reform concentrates its losses on people with power and spreads its gains across people without any.</b></div></div>
+  <div class="why rv">
+    <div class="r"><div class="a">The rents are the point</div><div class="b">A frozen rate is not an accident. <b>Whoever is allocated dollars at 1,716 pockets the gap.</b> Floating the currency deletes that income overnight, and the people holding it are close to the people deciding.</div></div>
+    <div class="r"><div class="a">Fuel and maize are the two most visible prices</div><div class="b">A devaluation shows up at the pump and in the fertiliser bag within days. <b>The benefit, an export sector, shows up after the next election.</b> No government survives that trade voluntarily.</div></div>
+    <div class="r"><div class="a">The subsidy is the state's one visible service</div><div class="b">For 80% of the population the fertiliser programme is what government <i>is</i>. <b>Cutting it to fund irrigation is correct and unelectable.</b></div></div>
+    <div class="r"><div class="a">Aid removes the deadline</div><div class="b">Inflows have averaged around 7% of GDP a year for decades. <b>Enough to avoid collapse, never enough to force the reform.</b> The crisis is chronic, so it is never urgent.</div></div>
+    <div class="r"><div class="a">Reform needs the thing reform destroys</div><div class="b">A float without reserves overshoots and inflation spikes. Reserves need a programme, a programme needs reform. <b>The lapsed 2025 facility removed the one lever that breaks the circle.</b></div></div>
+    <div class="r"><div class="a">Elections reset the clock</div><div class="b">September 2025 turned out an incumbent on exactly these grievances. <b>The new government inherits the same arithmetic and the same first year to spend political capital in.</b></div></div>
+  </div>
+  <div class="tug rv" style="margin-top:6px">
+    <div class="row">
+      <div class="lb l">Importers holding licences, connected traders, urban consumers facing a fuel price</div>
+      <div class="mid"><i class="l" style="width:41%"></i><i class="r" style="width:13%"></i></div>
+      <div class="lb">Smallholder exporters, future factory workers, anyone not yet born</div>
+    </div>
+    <div class="net">
+      <div class="lb l">Concentrated, organised, voting now</div>
+      <div class="mid" style="color:var(--credit)">Reform loses</div>
+      <div class="lb">Diffuse, unorganised, mostly silent</div>
+    </div>
+  </div>
+  <p class="src">Widths are illustrative of political weight, not measured shares. The point is the asymmetry, which is the standard reason good economics loses to good politics.</p>
+  <div class="note acc"><b>This is the answer the professor is fishing for.</b> "Why hasn't it happened" is almost never a knowledge problem. It is a distribution problem. <b>Name who loses, and name why they can stop it.</b></div>
+</section>
+
+<!-- ============ 11 COMPARATORS ============ -->
+<section id="comp">
+  <h2><span class="no">11</span> Three countries that answer back</h2>
+  <div class="oneline"><span class="tag">In one line</span><div>Bangladesh proves poor countries can move, Botswana proves geography is not destiny, <b>and Haiti proves that without a functioning state nothing else matters</b>.</div></div>
+  <div class="tw rv">
+    <table>
+      <caption>Same starting problem, three different endings</caption>
+      <thead><tr><th>Country</th><th class="n">PPP per person</th><th>What it did</th><th>The lesson for Malawi</th></tr></thead>
+      <tbody>
+        <tr><td><b>Bangladesh</b></td><td class="n">$10,271</td><td>One labour-intensive export, scaled for 40 years</td><td>Clothing alone earns $48.6bn, more than 3&times; Malawi's whole economy</td></tr>
+        <tr><td><b>Botswana</b></td><td class="n">$20,732</td><td>Landlocked, diamond-rich, kept the contracts and the institutions</td><td>Landlocked is survivable; a resource find without rules is not</td></tr>
+        <tr><td><b>Haiti</b></td><td class="n">$2,999</td><td>Coastal, close to the largest market on earth, no functioning state</td><td>Geography and access are worthless without order</td></tr>
+        <tr class="tot"><td><b>Malawi</b></td><td class="n">$1,758</td><td>Aid, one crop, and a fixed exchange rate</td><td>Has the labour cost advantage and none of the preconditions</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="scales rv">
+    <div class="scale"><span class="sl">Geography</span><div class="tr"><span class="e l">hostile</span><span class="e r">favourable</span><span class="ln"></span><span class="dot b" style="left:22%"></span><span class="dot s" style="left:70%"></span></div></div>
+    <div class="scale"><span class="sl">Institutions</span><div class="tr"><span class="e l">extractive</span><span class="e r">inclusive</span><span class="ln"></span><span class="dot b" style="left:30%"></span><span class="dot s" style="left:18%"></span></div></div>
+    <div class="scale"><span class="sl">Outcome</span><div class="tr"><span class="e l">$1,000</span><span class="e r">$21,000, Botswana</span><span class="ln"></span><span class="dot b" style="left:4%"></span><span class="dot s" style="left:10%"></span></div></div>
+    <div class="legend"><i><span class="dot b"></span>Malawi</i><i><span class="dot s"></span>Haiti</i></div>
+  </div>
+  <p class="src">Haiti has far better geography than Malawi and lands in almost the same place. Botswana, the right-hand end of the bottom axis, has worse geography than Haiti and seven times the income. Positions are judgement calls, not an index. Geography moves the dots a little, institutions move them a lot.</p>
+</section>
+
+<!-- ============ 12 SAY ============ -->
+<section id="say">
+  <h2><span class="no">12</span> What to say when called on</h2>
+  <button class="toggle" id="quizBtn" type="button" aria-pressed="false"><span class="pip"></span>Quiz me</button>
+  <div class="say">
+    <span class="tag">Sixty seconds, out loud</span>
+    <p id="sayBody">I looked at Malawi. Output per person is about $1,758 at PPP, roughly a thirty-eighth of Canada's, and it has fallen four years running because the economy grows 1.9% while the population grows 2.6%. The constraint that is actually binding is foreign exchange. Goods exports are $880 million, tobacco is 55% of that, and the kwacha has been held at 1,716 to the dollar since March 2024 while inflation ran at 28%. So dollars are rationed by permission rather than price, importers cannot buy fertiliser or fuel, and every other fix runs through that same missing dollar. What would start a transition is floating the currency, getting an IMF programme and a debt deal back, and moving the fertiliser subsidy into irrigation and export corridors. It has not happened because the reform takes a large concentrated income away from people who hold import permissions and gives a small diffuse gain to smallholders and workers who do not exist yet. That is a distribution problem, not a knowledge problem.</p>
+    <span class="wc" id="sayWc"></span>
+  </div>
+
+  <h3>The three prep questions, answered</h3>
+
+  <div class="qtext">
+    <div class="lbl">Question, as set</div>
+    <div class="body">Pick a poor country, and do some research on it.</div>
+    <ol type="a">
+      <li>What factors are constraining its growth?</li>
+      <li>What would be needed to kickstart a transition for this country?</li>
+      <li>Why hasn't that happened?</li>
+    </ol>
+  </div>
+
+  <div class="q">
+    <div class="q-meta">Part (a) &middot; what is constraining growth</div>
+    <button class="reveal" type="button" data-t="a1">Show the answer</button>
+    <div class="ans" id="a1">
+      <p><strong>Lead with the binding one, then rank the rest.</strong> Foreign exchange is binding: $880m of goods exports against a $15bn economy, reserves under one month of cover, and an official rate frozen at 1,716 while prices rose 28.4%. Behind it sit five others: a single export crop at 55%, an 8.4% deficit crowding out credit, rain-fed agriculture holding 80% of workers, 15.6% grid access with 800 km to a port, and 2.6% population growth.</p>
+      <div class="calc-line">Growth per person = 1.9% &minus; 2.6% = <b>&minus;0.7% a year</b></div>
+      <p>Then go one level down: the frozen rate is a <strong>policy choice that creates a rent</strong>, and that is the institutional cause behind the macro symptom. <a href="#cons">Worked in &sect;8</a>.</p>
+    </div>
+  </div>
+
+  <div class="q">
+    <div class="q-meta">Part (b) &middot; what would kickstart it</div>
+    <button class="reveal" type="button" data-t="a2">Show the answer</button>
+    <div class="ans" id="a2">
+      <p><strong>Sequence it, because the order is the answer.</strong> Float the kwacha with targeted cover for fuel and fertiliser. Use the credibility to restore an IMF facility, which lapsed in May 2025 without a review. Restructure the debt to reopen fiscal room. Then move the fertiliser subsidy into irrigation, the Nacala corridor and power.</p>
+      <p>Only then does a new export base become real: Kasiya rutile and graphite, higher value crops, or labour-intensive assembly. <strong>Doing the spending before the exchange rate is what the last twenty years were.</strong> <a href="#kick">Worked in &sect;9</a>.</p>
+    </div>
+  </div>
+
+  <div class="q">
+    <div class="q-meta">Part (c) &middot; why it hasn't happened</div>
+    <button class="reveal" type="button" data-t="a3">Show the answer</button>
+    <div class="ans" id="a3">
+      <p><strong>Because the losers are concentrated and the winners are diffuse.</strong> A float deletes the rent earned by anyone allocated dollars at the official rate, and raises fuel and maize prices within days. The gain, an export sector, arrives after the next election.</p>
+      <p>Two things keep the circle closed: aid at roughly 7% of GDP a year removes the deadline, and a float without reserves overshoots, so reform needs a programme that reform is the precondition for. September 2025 turned out an incumbent over exactly these grievances, and <strong>the arithmetic facing the new government is identical</strong>. <a href="#stuck">Worked in &sect;10</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRAPS ============ -->
+<section id="traps">
+  <h2>Traps</h2>
+  <div class="tw">
+    <table>
+      <caption>What goes wrong in this discussion</caption>
+      <thead><tr><th>The mistake</th><th>What to do instead</th></tr></thead>
+      <tbody>
+        <tr><td>"They need more capital"</td><td>Restates the question. Ask why capital is not already there</td></tr>
+        <tr><td>Comparing at market exchange rates</td><td>Use PPP. Malawi is $580 market, $1,758 PPP</td></tr>
+        <tr><td>Quoting GDP growth as progress</td><td>Subtract population. 1.9% minus 2.6% is a decline</td></tr>
+        <tr><td>Treating geography as destiny</td><td>Korea and Ghana started level. Botswana is landlocked and rich</td></tr>
+        <tr><td>Listing ten constraints equally</td><td>Name the binding one, then rank</td></tr>
+        <tr><td>Calling the dollar shortage the cause</td><td>It is the symptom of a price set by decree</td></tr>
+        <tr><td>Answering "why not" with ignorance</td><td>They know. Name who loses from the fix</td></tr>
+        <tr><td>Promising a mine will fix it</td><td>Resources without contracts become something to fight over</td></tr>
+        <tr><td>Confusing GDP and GNI for aid flows</td><td>Aid is income, not production. It lifts GNI, not GDP</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ FORMULA ============ -->
+<section id="fx">
+  <h2>Formula sheet</h2>
+  <div class="tw">
+    <table>
+      <caption>Everything quantitative on this page</caption>
+      <thead><tr><th>What</th><th>How</th></tr></thead>
+      <tbody>
+        <tr><td>Growth per person</td><td><span class="fx">GDP growth &minus; population growth</span></td></tr>
+        <tr><td>Rule of 70</td><td><span class="fx">years to double &asymp; 70 &divide; g%</span></td></tr>
+        <tr><td>Production function</td><td><span class="fx">Y = A &times; K<sup>&#8531;</sup> &times; H<sup>&#8532;</sup></span></td></tr>
+        <tr><td>Capital needed to close a gap</td><td><span class="fx">K multiple = (Y multiple)<sup>3</sup></span></td></tr>
+        <tr><td>Years to catch up</td><td><span class="fx">t = ln(ratio) &divide; ln((1+g) &divide; (1+c))</span></td></tr>
+        <tr><td>Level after t years</td><td><span class="fx">Y<sub>t</sub> = Y<sub>0</sub> &times; (1+g)<sup>t</sup></span></td></tr>
+        <tr><td>Parallel market premium</td><td><span class="fx">(street rate &divide; official rate) &minus; 1</span></td></tr>
+        <tr><td>Import cover</td><td><span class="fx">reserves &divide; monthly imports</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ GLOSSARY ============ -->
+<section id="gloss">
+  <h2>Glossary</h2>
+  <div class="tw">
+    <table>
+      <caption>Course word on the left, plain words on the right</caption>
+      <thead><tr><th>Term</th><th>Plain words</th></tr></thead>
+      <tbody>
+        <tr><td>PPP</td><td>Repriced so the same basket costs the same everywhere</td></tr>
+        <tr><td>Total factor productivity = TFP = A</td><td>Output the machines and schooling do not explain</td></tr>
+        <tr><td>Proximate cause</td><td>The missing input</td></tr>
+        <tr><td>Deep cause = fundamental cause</td><td>The reason the input is missing</td></tr>
+        <tr><td>Inclusive institutions</td><td>Rules that let anyone own, build and keep</td></tr>
+        <tr><td>Extractive institutions</td><td>Rules that funnel income to whoever holds power</td></tr>
+        <tr><td>Binding constraint</td><td>The shortage stopping growth right now</td></tr>
+        <tr><td>Shadow price</td><td>What people pay to get around a shortage</td></tr>
+        <tr><td>Overvalued currency</td><td>An official price above what the market would pay</td></tr>
+        <tr><td>Parallel market = street rate = black market</td><td>What a dollar actually trades at</td></tr>
+        <tr><td>Rent</td><td>Income from a permission, not from producing</td></tr>
+        <tr><td>Import cover</td><td>Months of imports the reserves could pay for</td></tr>
+        <tr><td>Structural transformation</td><td>Workers leaving farms for firms</td></tr>
+        <tr><td>Convergence</td><td>Poor countries growing faster and closing the gap</td></tr>
+        <tr><td>Catch-up growth</td><td>Growing fast by copying, not inventing</td></tr>
+        <tr><td>Elite capture</td><td>A small powerful group blocking a fix that costs them</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ MATERIALS ============ -->
+<section id="mat">
+  <h2>Materials</h2>
+  <div class="grid2">
+    <div class="card">
+      <h4>In the repo</h4>
+      <ul class="t">
+        <li><code>4505-Global-Macroeconomics-for-Managers/README.md</code></li>
+        <li><code>notes/session-03-prosperity-and-progress.html</code>, the GDP yardstick this page assumes</li>
+        <li><code>notes/session-02-headwinds-tailwinds.html</code></li>
+        <li><code>notes/macro-foundations.html</code></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Sources used here</h4>
+      <ul class="t">
+        <li>IMF World Economic Outlook, 2025 PPP per capita estimates</li>
+        <li>World Bank, <i>Malawi Country Overview</i> and <i>Malawi Economic Monitor: Getting Reforms Right</i></li>
+        <li>IMF, <i>Malawi 2025 Article IV Consultation</i></li>
+        <li>AfDB, <i>Malawi Economic Outlook</i></li>
+        <li>Chatham House and Al Jazeera on the September 2025 election</li>
+        <li>Acemoglu, Johnson and Robinson, <i>Why Nations Fail</i>; Hausmann, Rodrik and Velasco on growth diagnostics</li>
+      </ul>
+    </div>
+  </div>
+  <div class="note">No readings were assigned for this session. The Canvas note says to keep up your reps on the economics news, so the Malawi material here is deliberately current to September 2026.</div>
+</section>
+
+<!-- ============ Q&A ============ -->
+<section id="qa">
+  <h2>Q&amp;A log</h2>
+
+  <div class="q">
+    <div class="q-meta">Follow-up &middot; September 21, 2026</div>
+    <blockquote>Give me the reasons in bullet points.</blockquote>
+    <p>Ordered deepest first. <strong>The further down the list you go, the more you are describing the symptom rather than the cause</strong>, which is exactly the mistake section 6 is built to catch.</p>
+
+    <figure class="rv">
+      <div class="dg">
+        <div class="spec">
+          <div class="sn ok"><b>1 &middot; Rules</b><span>who can own, enforce and keep</span></div>
+          <div class="sn ok"><b>2 &middot; Order</b><span>a state that works and is bound</span></div>
+          <div class="sn ok"><b>3 &middot; Openness</b><span>trade, investment, copied ideas</span></div>
+          <div class="sn"><b>4 &middot; Geography</b><span>coast, climate, disease, distance</span></div>
+          <div class="sn"><b>5 &middot; Inputs</b><span>machines, roads, schooling, power</span></div>
+          <div class="specline"><span class="lbl">below this line you are naming symptoms, not causes</span><span class="rule"></span></div>
+          <div class="sn no"><b>6 &middot; Macro mess</b><span>inflation, deficits, no reserves</span></div>
+          <div class="sn no"><b>7 &middot; One export</b><span>tobacco, copper, oil, cocoa</span></div>
+          <div class="sn no"><b>8 &middot; Poverty itself</b><span>no savings, so no investment</span></div>
+        </div>
+      </div>
+      <figcaption>Ranked by how much of the 38-fold gap each one actually explains. Items 1 to 3 do most of the work, 4 sets the difficulty, 5 is the visible shortfall, and 6 to 8 are consequences that get mistaken for causes.</figcaption>
+    </figure>
+
+    <h4 style="margin-top:6px">Why rich places are rich</h4>
+    <ul class="t">
+      <li><strong>Property rights that hold.</strong> You invest because you keep the return. Everything else follows from this one</li>
+      <li><strong>Contracts a stranger will honour.</strong> Lets firms grow past the family, which is the whole difference between a stall and a factory</li>
+      <li><strong>Open entry.</strong> New firms can start, old ones can fail, and talent sorts by ability rather than connection</li>
+      <li><strong>Power that is bound by the rules it sets.</strong> The state is strong enough to enforce and constrained enough not to loot</li>
+      <li><strong>Openness to the outside.</strong> Trade, investment and imported know-how. Copying is far faster than inventing</li>
+      <li><strong>Productivity, not stuff.</strong> The same worker with the same machine simply produces more, because the surrounding system works</li>
+    </ul>
+
+    <h4>Why poor places are poor</h4>
+    <ul class="t">
+      <li><strong>Rules built to extract.</strong> Income flows to whoever holds power, so investing is irrational and getting a permission is rational</li>
+      <li><strong>Talent pointed at permissions.</strong> The able person applies for an import licence instead of building something</li>
+      <li><strong>Prices set by decree.</strong> A fixed exchange rate or a controlled price creates a queue, and a queue creates a rent</li>
+      <li><strong>Nothing to sell abroad.</strong> Thin exports mean no foreign currency, and no foreign currency means no imported inputs</li>
+      <li><strong>Hostile geography, uncompensated.</strong> Landlocked, tropical, distant. Real, but Botswana and Switzerland show it is survivable</li>
+      <li><strong>Too many workers in subsistence farming.</strong> No takeoff on record happened without moving people out of it</li>
+      <li><strong>Population outrunning output.</strong> Malawi grows 1.9% with 2.6% more people, so living standards fall</li>
+    </ul>
+
+    <h4>Why poor places stay poor</h4>
+    <ul class="t">
+      <li><strong>The fix has concentrated losers.</strong> Reform deletes a large income for a few and gives a small gain to many. The few are organised</li>
+      <li><strong>Costs land before benefits.</strong> Fuel and food prices move in days, an export sector takes a decade, elections take four years</li>
+      <li><strong>Loops, not lines.</strong> No dollars, no fertiliser, worse harvest, fewer dollars. Nothing self-corrects</li>
+      <li><strong>Aid removes the deadline.</strong> Enough to avoid collapse, never enough to force the change</li>
+      <li><strong>Reform needs what reform creates.</strong> A float needs reserves, reserves need a programme, a programme needs the float</li>
+      <li><strong>Resources make it worse, not better.</strong> Without contracts a discovery becomes something to fight over</li>
+    </ul>
+
+    <div class="ex">
+      <span class="lb">The one-line version</span>
+      <p>Rich places are not rich because they have more. <strong>They are rich because the rules make producing worth more than capturing</strong>, and poor places stay poor because the people who capture are the people who would have to change the rules.</p>
+    </div>
+  </div>
+
+  <div class="q">
+    <div class="q-meta">Asked in prep</div>
+    <blockquote>If institutions are the answer, why did China grow 10% a year with bad ones?</blockquote>
+    <p>Two replies, and use both. First, <strong>China's institutions changed enormously</strong> after 1978: household farming, private firms, land use rights, and entry into world trade. Judged against 1976 China they became far more inclusive, even though they never became democratic.</p>
+    <p>Second, <strong>catch-up growth and frontier growth need different things.</strong> Copying an existing technology needs order, savings and open trade, which an authoritarian state can supply. Inventing the next one needs entry, failure and contestable power. China grew fast on the first and the argument now is whether it can do the second.</p>
+    <div class="ex">
+      <span class="lb">The line to say</span>
+      <p>China is not a counterexample to institutions. It is evidence that <strong>the institutions required to catch up are a lower bar than the ones required to lead.</strong></p>
+    </div>
+  </div>
+</section>
+
+</main>
+</div>
+
+<footer>
+  <div class="wrap">
+    Worked solutions and positions on this page are my own. Check them against the posted key and the class discussion before relying on them.
+    Figures are sourced where stated; anything marked illustrative was chosen to show a mechanism, not measured.
+    4505 GMM &middot; Session 4 &middot; September 21, 2026.
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var NS="http://www.w3.org/2000/svg";
+function E(n,a,t){var e=document.createElementNS(NS,n);for(var k in a){e.setAttribute(k,a[k]);}if(t!==undefined)e.textContent=t;return e;}
+function clear(s){while(s.firstChild)s.removeChild(s.firstChild);}
+function f1(v){return (Math.round(v*10)/10).toFixed(1);}
+function money(v){return "$"+Math.round(v).toLocaleString("en-CA");}
+function kpi(host,items){
+  host.innerHTML="";
+  items.forEach(function(it){
+    var d=document.createElement("div");d.className="kpi"+(it.tone?" "+it.tone:"");
+    d.innerHTML='<div class="k"></div><div class="v"></div><div class="s"></div>';
+    d.querySelector(".k").textContent=it.k;d.querySelector(".v").textContent=it.v;d.querySelector(".s").textContent=it.s||"";
+    host.appendChild(d);
+  });
+}
+function seg(id,cb){
+  var el=document.getElementById(id);if(!el)return;
+  el.addEventListener("click",function(e){
+    var b=e.target.closest("button");if(!b)return;
+    [].forEach.call(el.querySelectorAll("button"),function(x){x.setAttribute("aria-pressed",String(x===b));});
+    cb(b.dataset.k);
+  });
+}
+function segClear(id){var el=document.getElementById(id);if(!el)return;
+  [].forEach.call(el.querySelectorAll("button"),function(x){x.setAttribute("aria-pressed","false");});}
+
+/* ---- catch-up model ---- */
+(function(){
+  var G=document.getElementById("cGrow");if(!G)return;
+  var C=document.getElementById("cCan");
+  var M0=1758,C0=67013,YRS=80;
+  var PRE={now:[-0.7,1.5],afr:[1.2,1.5],bng:[4.5,1.5],kor:[6.5,1.5],chn:[8.5,1.5]};
+  function draw(){
+    var g=+G.value,c=+C.value,gr=g/100,cr=c/100;
+    document.getElementById("cGrowV").textContent=f1(g)+"% / yr";
+    document.getElementById("cCanV").textContent=f1(c)+"% / yr";
+    var rel=(1+gr)/(1+cr), r0=M0/C0;
+    var catchYrs=rel>1?Math.log(C0/M0)/Math.log(rel):Infinity;
+
+    var svg=document.getElementById("cChart");clear(svg);
+    var L=64,Rt=716,T=20,B=172;
+    function X(t){return L+(t/YRS)*(Rt-L);}
+    function Y(p){return B-(Math.min(p,105)/105)*(B-T);}
+    svg.appendChild(E("line",{x1:L,y1:B,x2:Rt,y2:B,stroke:"var(--rule-strong)","stroke-width":1.5}));
+    svg.appendChild(E("line",{x1:L,y1:T,x2:L,y2:B,stroke:"var(--rule-strong)","stroke-width":1.5}));
+    [0,25,50,75,100].forEach(function(p){
+      var y=Y(p);
+      if(p>0)svg.appendChild(E("line",{x1:L,y1:y,x2:Rt,y2:y,stroke:"var(--rule)","stroke-width":1}));
+      svg.appendChild(E("text",{x:L-9,y:y+4,"text-anchor":"end",class:"d-s"},p+"%"));
+    });
+    svg.appendChild(E("line",{x1:L,y1:Y(100),x2:Rt,y2:Y(100),stroke:"var(--rule-strong)","stroke-width":1.6,"stroke-dasharray":"6 5"}));
+    svg.appendChild(E("text",{x:Rt-4,y:Y(100)-8,"text-anchor":"end",class:"d-s"},"Canada"));
+
+    var pts=[],cross=-1;
+    for(var t=0;t<=YRS;t++){
+      var p=r0*Math.pow(rel,t)*100;
+      if(cross<0&&p>=100)cross=t;
+      pts.push(X(t).toFixed(1)+","+Y(p).toFixed(1));
+    }
+    var good=g>c;
+    svg.appendChild(E("polyline",{points:pts.join(" "),class:"d-link "+(good?"acc":"bad"),"stroke-width":2.6}));
+
+    var endP=r0*Math.pow(rel,YRS)*100;
+    if(cross>=0){
+      svg.appendChild(E("circle",{cx:X(cross),cy:Y(100),r:4.5,fill:"var(--accent)"}));
+      svg.appendChild(E("text",{x:X(cross),y:Y(100)-14,"text-anchor":"middle",class:"d-t t2",fill:"var(--accent)"},"caught up, year "+cross));
+    }else{
+      svg.appendChild(E("text",{x:Rt-4,y:Math.min(Y(endP)-11,B-8),"text-anchor":"end",class:"d-t t2",
+        fill:good?"var(--accent)":"var(--credit)"},f1(endP)+"% of Canada"));
+    }
+    svg.appendChild(E("text",{x:L,y:B+20,"text-anchor":"middle",class:"d-s"},"2025"));
+    svg.appendChild(E("text",{x:Rt,y:B+20,"text-anchor":"end",class:"d-s"},"+80 yrs"));
+    svg.appendChild(E("text",{x:(L+Rt)/2,y:B+40,"text-anchor":"middle",class:"d-s"},"Malawi's output per person, as a share of Canada's"));
+
+    var in25=M0*Math.pow(1+gr,25);
+    var dbl=gr>0?70/g:Infinity;
+    kpi(document.getElementById("cKpis"),[
+      {k:"Years to match Canada",v:catchYrs===Infinity?"never":Math.round(catchYrs)+" yrs",
+        s:catchYrs===Infinity?"gap widens every year":"from 2025",tone:catchYrs<80?"on":"warn"},
+      {k:"Malawi in 2050",v:money(in25),s:"PPP per person",tone:in25>M0*1.5?"on":"warn"},
+      {k:"Doubling time",v:dbl===Infinity?"never":Math.round(dbl)+" yrs",s:"70 ÷ "+f1(g),tone:dbl<=35?"on":"warn"},
+      {k:"Share of Canada, 2050",v:f1(r0*Math.pow(rel,25)*100)+"%",s:"today it is 2.6%",tone:good?"on":"warn"}
+    ]);
+
+    var m,note=document.getElementById("cNote");
+    if(g<=0){m="<b>This is roughly where Malawi is.</b> Output per person falls, so the gap widens every single year. Nothing dramatic has to happen. The population simply grows faster than the economy.";}
+    else if(g<=1.5){m="Growth, but slower than Canada's, so <b>the gap still widens.</b> Catching up is not about growing, it is about growing faster than the country ahead of you.";}
+    else if(g<3){m="Faster than Canada at last, and still <b>"+Math.round(catchYrs)+" years to converge.</b> A child born today would not see it, nor would their grandchildren.";}
+    else if(g<5.5){m="Roughly the Bangladesh pace. Convergence in <b>"+Math.round(catchYrs)+" years</b>, and Malawi reaches "+money(in25)+" by 2050, which is around where Ghana is now. Transformative, and still not Canada.";}
+    else if(g<7.5){m="Korean territory, sustained for forty years. Even this takes <b>"+Math.round(catchYrs)+" years</b> to close a 38-fold gap. <b>Only a handful of countries have ever done it.</b>";}
+    else {m="Peak-China pace. Converging in <b>"+Math.round(catchYrs)+" years</b>. No country has ever run this rate from Malawi's starting point, and it assumes the frontier stands relatively still.";}
+    note.innerHTML=m;
+  }
+  [G,C].forEach(function(el){el.addEventListener("input",function(){segClear("cSeg");draw();});});
+  seg("cSeg",function(k){var v=PRE[k]||PRE.bng;G.value=v[0];C.value=v[1];draw();});
+  draw();
+})();
+
+/* ---- cause or symptom sorter ---- */
+(function(){
+  var tray=document.getElementById("bTray");if(!tray)return;
+  var ITEMS=[
+    {t:"Landlocked, 800 km to a port",b:"deep",w:"Geography. Real and permanent, and Botswana is landlocked too."},
+    {t:"The official rate frozen since March 2024",b:"deep",w:"A rule, chosen. Every shortage downstream follows from it."},
+    {t:"Dollars given by permission, not price",b:"deep",w:"The institution itself. It decides who gets rich from the shortage."},
+    {t:"Almost no irrigation per farm worker",b:"prox",w:"Missing physical capital. The K in the production function."},
+    {t:"4.7 mean years of schooling",b:"prox",w:"Missing human capital. Worth maybe a doubling, not a 38-fold gap."},
+    {t:"15.6% of people on the grid",b:"prox",w:"Missing infrastructure. Also capital, and it caps what any firm can do."},
+    {t:"Tobacco is 55% of exports",b:"symp",w:"Trap. It looks like a cause, but concentration is what you get when nothing else is worth producing."},
+    {t:"Reserves under one month of imports",b:"symp",w:"The scoreboard, not the game. It follows from thin exports and a rate nobody will sell at."},
+    {t:"Inflation averaged 28.4% in 2025",b:"symp",w:"Downstream of the deficit and the currency. Fixing inflation alone fixes nothing."}
+  ];
+  var armed=null,done=0,fb=document.getElementById("bFb");
+  ITEMS.forEach(function(it,i){
+    var b=document.createElement("button");
+    b.className="chip";b.type="button";b.textContent=it.t;b.dataset.i=i;b.setAttribute("aria-pressed","false");
+    b.addEventListener("click",function(){
+      [].forEach.call(tray.querySelectorAll(".chip"),function(x){x.setAttribute("aria-pressed","false");});
+      if(armed===b){armed=null;return;}
+      b.setAttribute("aria-pressed","true");armed=b;
+      fb.className="fb";fb.textContent="Now pick the column it belongs in.";
+      [].forEach.call(document.querySelectorAll(".qd"),function(q){q.classList.add("armed");});
+    });
+    tray.appendChild(b);
+  });
+  [].forEach.call(document.querySelectorAll(".qd"),function(zone){
+    zone.addEventListener("click",function(){
+      if(!armed)return;
+      var it=ITEMS[+armed.dataset.i];
+      if(zone.dataset.b===it.b){
+        var d=document.createElement("div");d.className="placed";
+        d.innerHTML='<b></b><span></span>';
+        d.querySelector("b").textContent=it.t;d.querySelector("span").textContent=it.w;
+        zone.appendChild(d);
+        armed.classList.add("done");armed.setAttribute("aria-pressed","false");
+        zone.classList.remove("hit");void zone.offsetWidth;zone.classList.add("hit");
+        armed=null;done++;
+        [].forEach.call(document.querySelectorAll(".qd"),function(q){q.classList.remove("armed");});
+        fb.className="fb good";
+        fb.textContent=done===ITEMS.length?"All nine. The right column is the one to watch: three of the most quoted facts about Malawi are symptoms, and fixing any of them directly would change nothing.":it.w;
+      }else{
+        zone.classList.remove("miss");void zone.offsetWidth;zone.classList.add("miss");
+        fb.className="fb bad";fb.textContent="Not that column. Ask whether it is a rule, a missing input, or just what you see when both are broken.";
+      }
+    });
+  });
+})();
+
+/* ---- quiz toggle ---- */
+(function(){
+  var btn=document.getElementById("quizBtn");if(!btn)return;
+  btn.addEventListener("click",function(){
+    var on=document.body.classList.toggle("quiz");
+    btn.setAttribute("aria-pressed",String(on));
+    btn.lastChild.nodeValue=on?"Answers hidden":"Quiz me";
+    if(!on)[].forEach.call(document.querySelectorAll(".ans"),function(a){a.classList.remove("open");});
+    [].forEach.call(document.querySelectorAll("button.reveal"),function(b){b.classList.remove("gone");});
+  });
+  [].forEach.call(document.querySelectorAll("button.reveal"),function(b){
+    b.addEventListener("click",function(){
+      var t=document.getElementById(b.dataset.t);if(t)t.classList.add("open");
+      b.classList.add("gone");
+    });
+  });
+})();
+
+/* ---- live word count on the spoken answer ---- */
+(function(){
+  var p=document.getElementById("sayBody"),w=document.getElementById("sayWc");if(!p||!w)return;
+  var n=(p.textContent.trim().match(/\S+/g)||[]).length;
+  w.textContent=n+" words, roughly "+Math.round(n/2.6)+" seconds spoken";
+})();
+
+/* ---- motion: reveal + count up ---- */
+(function(){
+  document.documentElement.classList.add("js");
+  var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function countUp(el){
+    var to=parseFloat(el.dataset.to),dp=el.dataset.dp?+el.dataset.dp:0,
+        pre=el.dataset.pre||"",suf=el.dataset.suf||"",dur=560,t0=0;
+    if(isNaN(to))return;
+    if(reduce){el.textContent=pre+to.toFixed(dp)+suf;return;}
+    function tick(t){
+      if(!t0)t0=t;
+      var k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,3);
+      el.textContent=pre+(to*e).toFixed(dp)+suf;
+      if(k<1)requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  var nodes=[].slice.call(document.querySelectorAll(".rv,.count"));
+  if(!nodes.length)return;
+  if(!("IntersectionObserver" in window)){
+    nodes.forEach(function(n){n.classList.add("in");if(n.classList.contains("count"))countUp(n);});return;
+  }
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      e.target.classList.add("in");
+      if(e.target.classList.contains("count"))countUp(e.target);
+      if(e.target.querySelectorAll)[].forEach.call(e.target.querySelectorAll(".count:not(.done)"),function(c){c.classList.add("done");countUp(c);});
+      io.unobserve(e.target);
+    });
+  },{rootMargin:"0px 0px -8% 0px",threshold:.12});
+  nodes.forEach(function(n){io.observe(n);});
+
+  function finalise(el){
+    var to=parseFloat(el.dataset.to);if(isNaN(to))return;
+    el.textContent=(el.dataset.pre||"")+to.toFixed(el.dataset.dp?+el.dataset.dp:0)+(el.dataset.suf||"");
+  }
+  function settle(n){
+    n.classList.add("in");
+    if(n.classList.contains("count")&&!n.classList.contains("done")){n.classList.add("done");finalise(n);}
+    if(n.querySelectorAll)[].forEach.call(n.querySelectorAll(".count:not(.done)"),function(c){c.classList.add("done");finalise(c);});
+    io.unobserve(n);
+  }
+  function sweep(){
+    nodes.forEach(function(n){
+      if(n.classList.contains("in"))return;
+      if(n.getBoundingClientRect().bottom<=0)settle(n);
+    });
+  }
+  var pending=false;
+  function queue(){if(pending)return;pending=true;requestAnimationFrame(function(){pending=false;sweep();});}
+  sweep();
+  window.addEventListener("scroll",queue,{passive:true});
+  window.addEventListener("load",function(){setTimeout(sweep,80);setTimeout(sweep,400);});
+  window.addEventListener("hashchange",function(){setTimeout(sweep,60);});
+})();
+
+/* ---- scroll spy ---- */
+(function(){
+  var links=[].slice.call(document.querySelectorAll("nav.toc a"));
+  if(!links.length||!("IntersectionObserver" in window))return;
+  var map={},targets=[];
+  links.forEach(function(a){
+    var h=a.getAttribute("href");if(!h||h.charAt(0)!=="#")return;
+    var el=document.getElementById(h.slice(1));
+    if(el){map[h.slice(1)]=a;targets.push(el);}
+  });
+  var seen=[];
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      var i=seen.indexOf(e.target);
+      if(e.isIntersecting&&i<0)seen.push(e.target);
+      if(!e.isIntersecting&&i>=0)seen.splice(i,1);
+    });
+    if(!seen.length)return;
+    seen.sort(function(a,b){return a.getBoundingClientRect().top-b.getBoundingClientRect().top;});
+    links.forEach(function(l){l.classList.remove("on");});
+    var a=map[seen[0].id];if(!a)return;
+    a.classList.add("on");
+  },{rootMargin:"-72px 0px -55% 0px",threshold:0});
+  targets.forEach(function(t){io.observe(t);});
+})();
+})();
+</script>
